@@ -1,0 +1,451 @@
+# CLB
+
+##############################
+# Spicy Fall Morning ideas
+##############################
+# Made by AmCath and Wicked
+##############################
+
+ideas = {
+
+	country = {
+
+		CLB_enemies_on_all_sides = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_enemies_on_all_sides"}
+			picture = CLB_surounded
+			targeted_modifier = {
+				tag = NAR
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+			targeted_modifier = {
+				tag = MEX
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+			targeted_modifier = {
+				tag = SRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+				targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+				targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
+			}
+			modifier = {
+            acclimatization_cold_climate_gain_factor = 0.25
+			}
+		}
+
+		CLB_beginings_of_commonwealth = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_beginings_of_commonwealth"}
+			picture = KTG_Gold_Trade
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = -0.2
+			}
+		}
+
+		CLB_the_ward_system = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_the_ward_system"}
+			picture = SAF_apartheid_idea
+			modifier = {
+				recruitable_population_factor = -0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		CLB_democracy_in_limbo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_democracy_in_limbo"}
+			picture = PHI_promises_of_elections
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.10
+			}
+		}
+
+		CLB_spliting_at_seems = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_spliting_at_seems"}
+			picture = HAI_demoralized_people
+			modifier = {
+				stability_factor = -0.35
+				political_power_cost = 0.15
+			}
+		}
+		CLB_American_Steel = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_American_Steel"}
+			picture = generic_war_preparation
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				} 
+			}
+		}
+			CLB_Stabalized_Economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Stabalized_Economy"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+		
+		CLB_German_Styled_Industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_German_Styled_Industry"}
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		CLB_Bolster_Military_Industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Bolster_Military_Industry"}
+			picture = generic_production_bonus
+			modifier = {	
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+			
+		CLB_Rhodesian_Styled = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea Rhodesian_Styled"}
+			picture = generic_pp_unity_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.20
+				min_export = -0.25
+			}
+		}
+			CLB_Quality_Tanks = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Quality_Tanks"}
+			picture = generic_intel_bonus
+			modifier = {
+				army_armor_speed_factor = 0.1
+				army_armor_attack_factor = 0.1
+				motorized_attack_factor = 0.15
+				motorized_defence_factor = 0.15
+			}
+		}
+			CLB_The_Folk_Awakening = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_The_Folk_Awakening"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				war_support_weekly = 0.01
+				command_power_gain_mult = 0.1
+			}
+		}
+		CLB_Guided_by_God = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Guided_by_God"}
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+			CLB_Unstoppable_War = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_The_Folk_Awakening"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+			    justify_war_goal_when_in_major_war_time = -0.5
+				war_support_weekly = 0.025
+			    production_factory_start_efficiency_factor = 0.25
+			    production_lack_of_resource_penalty_factor = -0.25
+			    line_change_production_efficiency_factor = 0.2
+				max_command_power = 50
+				surrender_limit = 0.10
+			}
+		}
+			CLB_AFA_Established = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_AFA_Established"}
+			picture = CLB_AFABadge
+			modifier = {
+				
+				valkist_drift = 0.10
+				surrender_limit = 0.05
+			}
+		}
+			CLB_Marxist_Infiltraitors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Marxist_Infiltraitors"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				
+				collectivist_drift = 0.05
+				stability_factor = -0.10 
+				political_power_factor = -0.10
+			}
+		}
+			CLB_Degenerate_Filth = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Degenerate_Filth"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				
+				stability_factor = -0.10 
+				political_power_factor = -0.10
+			}
+		}
+			CLB_Easy_On_Life = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Easy_On_Life"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				consumer_goods_factor = -0.1
+				
+			}
+		}
+			CLB_Nationalization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Nationalization"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				
+			}
+		}
+			CLB_Land_Reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Land_Reform"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				consumer_goods_factor = 0.05
+				
+				
+			}
+		}
+			CLB_Land_Reformiaton = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Land_Reformiaton"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				consumer_goods_factor = -0.1
+				command_power_gain = 0.25
+				max_command_power = 50
+				
+			}
+		}
+			CLB_A_New_America = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_A_New_America"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				training_time_factor = -0.1
+				
+				
+			}
+		}
+			CLB_Beauty_of_Nature = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Beauty_of_Nature"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				consumer_goods_factor = -0.05
+				
+				
+			}
+		}
+			CLB_Rural_Areas= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Rural_Areas"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				supply_consumption_factor = -0.1
+			    army_core_defence_factor = 0.05
+                army_core_attack_factor = 0.05
+				
+				
+			}
+		}
+			CLB_Greater_Family= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Greater_Family"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+			MONTHLY_POPULATION = 0.05
+			experience_loss_factor = -0.1
+				
+			}
+		}
+			CLB_Ein_Republik= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Ein_Republik"}
+			picture = generic_constitutional_guarantees
+			modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			defensive_war_stability_factor = 0.5
+			}
+		}
+		CLB_Kerberos = {
+                on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Kerberos"}
+			picture = CLB_AFABadge
+			modifier = {
+				compliance_growth = -0.05
+				required_garrison_factor = -0.40
+				resistance_growth = -0.1
+			}
+		}
+
+		CLB_The_New_Offensives = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = CLB_The_New_Offensives"}
+			picture = CLB_surounded
+			modifier = {
+				army_core_attack_factor = 0.10
+            }
+		}
+
+		CLB_American_Evacuation_1 = {
+			picture = ger_revive_the_kaiserreich									
+			modifier = {
+				weekly_manpower = -2500
+			}
+
+		}
+		CLB_American_Evacuation_2 = {
+			picture = ger_revive_the_kaiserreich									
+			modifier = {
+				weekly_manpower = 2500
+			}
+
+		}
+		CLB_Retaining_Our_hope = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = CLB_Retaining_Our_hope"}
+			picture = CLB_surounded
+			modifier = {
+				army_core_attack_factor = 0.025
+				land_night_attack = 0.05
+            }
+		}
+		CLB_The_New_Strategy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = CLB_The_New_Strategy"}
+			picture = CLB_surounded
+			modifier = {
+				army_core_attack_factor = 0.025
+				army_morale_factor = 0.0025
+                army_org_factor = 0.025
+                planning_speed  = 0.025
+            }
+		}
+		CLB_The_Newer_Strategy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = CLB_The_Newer_Strategy"}
+			picture = CLB_surounded
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.05
+                army_org_factor = 0.05
+                planning_speed  = 0.05
+            }
+		}
+			CLB_The_Newest_Strategy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = CLB_The_Newest_Strategy"}
+			picture = CLB_surounded
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.1
+                army_org_factor = 0.075
+                planning_speed  = 0.1
+            }
+		}
+			CLB_American_Terror_Campaign = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_American_Terror_Campaign"}
+			picture = CLB_surounded									
+			modifier = {
+				weekly_manpower = -750
+			}
+
+		}
+			CLB_Scorched_Cities = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Scorched_Cities"}
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+				resistance_damage_to_garrison = -0.1
+			}
+			picture = general_staff
+		}
+			CLB_Scorched_Urbans = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Scorched_Cities"}
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+				resistance_damage_to_garrison = -0.1
+			}
+			picture = general_staff
+		}
+			CLB_Ward_Reformed = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Ward_Reformed"}
+			modifier = {
+				recruitable_population_factor = -0.10
+				production_speed_buildings_factor = 0.10
+			}
+			picture = general_staff
+		}
+			CLB_Ward_Prosperity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Ward_Prosperity"}
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+			picture = general_staff
+		}
+			CLB_Ward_Neglected = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Ward_Neglected"}
+			modifier = {
+				recruitable_population_factor = -0.20
+				production_speed_buildings_factor = 0.15
+			}
+			picture = general_staff
+		}
+			CLB_Ward_Hell = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Ward_Hell"}
+			modifier = {
+				recruitable_population_factor = -0.35
+				production_speed_buildings_factor = 0.20
+			}
+			picture = general_staff
+		}
+			CLB_ISA_Bolsterd = {
+			picture = general_staff
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_ISA_Bolsterd"}
+			modifier = {
+				agency_upgrade_time = -0.2
+				intelligence_agency_defense = 0.2
+				root_out_resistance_effectiveness_factor = 0.5
+				operative_slot = 1
+				consumer_goods_factor = 0.05
+			}
+		}
+		CLB_Asatrufolken = { ##SS Militia 
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CLB_Asatrufolken"}
+			picture = generic_research_bonus
+			modifier = {
+				experience_gain_army_factor = 0.1
+				recon_factor = 0.2
+				initiative_factor = 0.1
+			}
+		}
+	}
+}

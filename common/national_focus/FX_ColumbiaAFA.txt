@@ -1,0 +1,3014 @@
+﻿###Made by Wickedonezz
+###Speedstealth is a OG https://youtube.com/@speedstealth5926
+###God gives his siliest people his siliest battles
+###Is the Folk Assembly just a self insert to larp as a neo fasicst neco arc? maybe. or is it to show the true spirit of the individuality in each person?
+###Youre the one reading this probably from the github ping that just popped up you decide
+#⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡔⣻⠁⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⢀⣾⠳⢶⣦⠤⣀⠀⠀⠀⠀⠀⠀⠀⣾⢀⡇⡴⠋⣀⠴⣊⣩⣤⠶⠞⢹⣄⠀⠀⠀
+#⠀⠀⠀⠀⢸⠀⠀⢠⠈⠙⠢⣙⠲⢤⠤⠤⠀⠒⠳⡄⣿⢀⠾⠓⢋⠅⠛⠉⠉⠝⠀⠼⠀⠀⠀
+#⠀⠀⠀⠀⢸⠀⢰⡀⠁⠀⠀⠈⠑⠦⡀⠀⠀⠀⠀⠈⠺⢿⣂⠀⠉⠐⠲⡤⣄⢉⠝⢸⠀⠀⠀
+#⠀⠀⠀⠀⢸⠀⢀⡹⠆⠀⠀⠀⠀⡠⠃⠀⠀⠀⠀⠀⠀⠀⠉⠙⠲⣄⠀⠀⠙⣷⡄⢸⠀⠀⠀
+#⠀⠀⠀⠀⢸⡀⠙⠂⢠⠀⠀⡠⠊⠀⠀⠀⠀⢠⠀⠀⠀⠀⠘⠄⠀⠀⠑⢦⣔⠀⢡⡸⠀⠀⠀
+#⠀⠀⠀⠀⢀⣧⠀⢀⡧⣴⠯⡀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⢸⡠⠔⠈⠁⠙⡗⡤⣷⡀⠀⠀
+#⠀⠀⠀⠀⡜⠈⠚⠁⣬⠓⠒⢼⠅⠀⠀⠀⣠⡇⠀⠀⠀⠀⠀⠀⣧⠀⠀⠀⡀⢹⠀⠸⡄⠀⠀
+#⠀⠀⠀⡸⠀⠀⠀⠘⢸⢀⠐⢃⠀⠀⠀⡰⠋⡇⠀⠀⠀⢠⠀⠀⡿⣆⠀⠀⣧⡈⡇⠆⢻⠀⠀
+#⠀⠀⢰⠃⠀⠀⢀⡇⠼⠉⠀⢸⡤⠤⣶⡖⠒⠺⢄⡀⢀⠎⡆⣸⣥⠬⠧⢴⣿⠉⠁⠸⡀⣇⠀
+#⠀⠀⠇⠀⠀⠀⢸⠀⠀⠀⣰⠋⠀⢸⣿⣿⠀⠀⠀⠙⢧⡴⢹⣿⣿⠀⠀⠀⠈⣆⠀⠀⢧⢹⡄
+#⠀⣸⠀⢠⠀⠀⢸⡀⠀⠀⢻⡀⠀⢸⣿⣿⠀⠀⠀⠀⡼⣇⢸⣿⣿⠀⠀⠀⢀⠏⠀⠀⢸⠀⠇
+#⠀⠓⠈⢃⠀⠀⠀⡇⠀⠀⠀⣗⠦⣀⣿⡇⠀⣀⠤⠊⠀⠈⠺⢿⣃⣀⠤⠔⢸⠀⠀⠀⣼⠑⢼
+#⠀⠀⠀⢸⡀⣀⣾⣷⡀⠀⢸⣯⣦⡀⠀⠀⠀⢇⣀⣀⠐⠦⣀⠘⠀⠀⢀⣰⣿⣄⠀⠀⡟⠀⠀
+#⠀⠀⠀⠀⠛⠁⣿⣿⣧⠀⣿⣿⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⣿⣿⡿⠈⠢⣼⡇⠀⠀
+#⠀⠀⠀⠀⠀⠀⠈⠁⠈⠻⠈⢻⡿⠉⣿⠿⠛⡇⠒⠒⢲⠺⢿⣿⣿⠉⠻⡿⠁⠀⠀⠈⠁⠀⠀
+#⢀⠤⠒⠦⡀⠀⠀⠀⠀⠀⠀⠀⢀⠞⠉⠆⠀⠀⠉⠉⠉⠀⠀⡝⣍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#⡎⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⡰⠋⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⢡⠈⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#⡇⠀⠀⠸⠁⠀⠀⠀⠀⢀⠜⠁⠀⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⠘⡄⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀
+#⡇⠀⠀⢠⠀⠀⠀⠀⠠⣯⣀⠀⠀⠀⡰⡇⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀⢀⡦⠤⢄⡀⠀⠀⠀⠀
+#⢱⡀⠀⠈⠳⢤⣠⠖⠋⠛⠛⢷⣄⢠⣷⠁⠀⠀⠀⠀⠀⠀⠀⠀⠘⡾⢳⠃⠀⠀⠘⢇⠀⠀⠀
+#⠀⠙⢦⡀⠀⢠⠁⠀⠀⠀⠀⠀⠙⣿⣏⣀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣧⡃⠀⠀⠀⠀⣸⠀⠀⠀
+#⠀⠀⠀⠈⠉⢺⣄⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⣤⣀⣠⡾⠃⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠣⢅⡤⣀⣀⣠⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠉⠉⠉⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠁⠀⠉⣿⣿⣿⣿⣿⡿⠻⣿⣿⣿⣿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⠀⠀⠀⠀⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣟⠀⠀⢠⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⠀⠀⢸⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⡏⠀⠀⢸⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⠀⠀⠀⢺⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠈⠉⠻⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⠏
+
+focus_tree = {
+	id = afa_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = CLB
+		}
+
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 3000 }
+	##########################INDUSTRY#############################
+	focus = {
+		id = CLB_Reinstate_The_Gold_Standard
+		icon = GFX_goal_generic_debt_negotiations
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Reinstate_The_Gold_Standard"
+			add_ideas = CLB_Stabalized_Economy
+			add_political_power = 25
+			add_stability = 0.05
+		}
+		x = 7
+		y = 12
+	}
+	focus = {
+		id = CLB_Bolster_The_Military_Sector
+		icon = GFX_goal_generic_improve_industry
+		cost = 5
+		prerequisite = { focus = CLB_Reinstate_The_Gold_Standard }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Bolster_The_Military_Sector"
+			add_ideas = CLB_Bolster_Military_Industry
+			add_political_power = 10
+			add_stability = 0.05
+		}
+		x = 7
+		y = 13
+	}
+	focus = {
+		id = CLB_Guns_Made_of_American_Steel
+		icon = GFX_goal_USA_auto_industry
+		cost = 5
+		prerequisite = { focus = CLB_Bolster_The_Military_Sector }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Guns_Made_of_American_Steel"
+			add_ideas = CLB_American_Steel
+			add_political_power = 10
+		}
+		x = 6
+		y = 14
+	}
+	focus = {
+		id = CLB_Factories_Built_In_A_Day
+		icon = GFX_goal_construction_engineering
+		cost = 5
+		prerequisite = { focus = CLB_Bolster_The_Military_Sector }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Factories_Built_In_A_Day"
+			random_owned_state = {
+				limit = {
+					is_controlled_by = CLB
+					is_core_of = CLB
+					OR = {
+						industrial_complex > 0
+						arms_factory > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = CLB
+					is_core_of = CLB
+					OR = {
+						industrial_complex > 0
+						arms_factory > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+
+
+		x = 8
+		y = 14
+	}
+	focus = {
+		id = CLB_Massive_Military_Build_Up
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 7
+		prerequisite = { focus = CLB_Factories_Built_In_A_Day }
+		prerequisite = { focus = CLB_Guns_Made_of_American_Steel }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Massive_Military_Build_Up"
+			random_owned_state = {
+				limit = {
+					is_controlled_by = CLB
+					is_core_of = CLB
+					OR = {
+						industrial_complex > 0
+						arms_factory > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = CLB
+					is_core_of = CLB
+					OR = {
+						industrial_complex > 0
+						arms_factory > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 7
+		y = 15
+	}
+	focus = {
+		id = CLB_Ramp_Up_Production
+		icon = GFX_goal_generic_autarky
+		cost = 5
+		prerequisite = { focus = CLB_Massive_Military_Build_Up }
+		available = {
+			controls_state = 919
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Ramp_Up_Production"
+			add_tech_bonus = {
+				category = synth_resources
+				bonus = 0.75
+				uses = 2
+			}
+		}
+		x = 7
+		y = 16
+	}
+	focus = {
+		id = CLB_Quality_Production_Tanks
+		icon = GFX_goal_American_Armor
+		cost = 5
+		prerequisite = { focus = CLB_Ramp_Up_Production }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Quality_Production_Tanks"
+			add_ideas = CLB_Quality_Tanks
+		}
+		x = 6
+		y = 17
+	}
+	focus = {
+		id = CLB_Rhodesian_Styled_Build_Up
+		icon = GFX_goal_gold_up
+		cost = 5
+		prerequisite = {
+			focus = CLB_Ramp_Up_Production
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Rhodesian_Styled_Build_Up"
+			add_ideas = CLB_Rhodesian_Styled
+		}
+		x = 8
+		y = 17
+	}
+	focus = {
+		id = CLB_The_Folk_Awakens
+		icon = GFX_goal_USA_enter_the_fray
+		cost = 5
+		prerequisite = { focus = CLB_Rhodesian_Styled_Build_Up }
+		prerequisite = { focus = CLB_Quality_Production_Tanks }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Folk_Awakens"
+			add_ideas = CLB_The_Folk_Awakening
+			random_state = {
+				limit = {
+					AND = {
+						NOT = {
+							is_core_of = CLB
+						}
+						controller = { tag = CLB }
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		x = 7
+		y = 18
+	}
+	#those are just the things I wanted to say after I reviewed DEEZ NUTZ content.
+	############CIVILIAN#######################
+	focus = {
+		id = CLB_Feed_The_People
+		icon = GFX_goal_famine
+		cost = 5
+		prerequisite = { focus = CLB_Reinstate_The_Gold_Standard }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Feed_The_People"
+			add_stability = 0.1
+		}
+		x = 3
+		y = 13
+	}
+	focus = {
+		id = CLB_A_Home_For_Everyone
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		cost = 5
+		prerequisite = { focus = CLB_Feed_The_People }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Home_For_Everyone"
+			add_ideas = GER_youth_infrastructure
+		}
+		x = 2
+		y = 14
+	}
+	focus = {
+		id = CLB_A_Reason_To_Be_Patriotic
+		icon = GFX_goal_USA_fortress
+		cost = 5
+		prerequisite = {
+			focus = CLB_Feed_The_People
+		}
+		completion_reward = {
+			add_ideas = CAN_basic_income
+			add_political_power = 10
+			add_stability = 0.10
+		}
+		x = 4
+		y = 14
+	}
+	focus = {
+		id = CLB_Local_Family_Farms
+		icon = GFX_focus_AUS_agriculture
+		cost = 5
+		prerequisite = { focus = CLB_A_Home_For_Everyone }
+		prerequisite = { focus = CLB_A_Reason_To_Be_Patriotic  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Local_Family_Farms"
+			add_ideas = GER_youth_farms
+			add_stability = 0.05
+		}
+		x = 3
+		y = 15
+	}
+	focus = {
+		id = CLB_German_Stlyed_Industrial_Sectors
+		icon = GFX_Germany_Pan
+		cost = 5
+		prerequisite = { focus = CLB_Local_Family_Farms }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_German_Stlyed_Industrial_Sectors"
+			add_ideas = CLB_German_Styled_Industry
+		}
+		x = 3
+		y = 16
+	}
+	focus = {
+		id = CLB_A_Satisfying_Job_For_Everyone
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 5
+		prerequisite = { focus = CLB_German_Stlyed_Industrial_Sectors }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Satisfying_Job_For_Everyone"
+			add_political_power = 10
+			add_stability = 0.05
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 2
+		y = 17
+	}
+	focus = {
+		id = CLB_Never_Another_Depression
+		icon = GFX_focus_mex_privatisation
+		cost = 5
+		prerequisite = { focus = CLB_German_Stlyed_Industrial_Sectors }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Never_Another_Depression"
+			add_political_power = 10
+			add_stability = 0.05
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 4
+		y = 17
+	}
+	focus = {
+		id = CLB_Destroy_Liberal_Economic_Policies
+		icon = GFX_goal_CLB_Destroy_Liberal_Economic_Policies
+		cost = 5
+		prerequisite = { focus = CLB_A_Satisfying_Job_For_Everyone }
+		prerequisite = { focus = CLB_Never_Another_Depression }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Destroy_Liberal_Economic_Policies"
+			add_political_power = 25
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.25
+				uses = 4
+				category = construction_tech
+			}
+
+		}
+		x = 3
+		y = 18
+	}
+	###############RESEARCH#################
+	focus = {
+		id = CLB_Replace_Public_Schools
+		icon = GFX_goal_CLB_Replace_Public_Schools
+		cost = 5
+		prerequisite = { focus = CLB_Reinstate_The_Gold_Standard }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Replace_Public_Schools"
+			add_political_power = 10
+			add_stability = 0.05
+		}
+		x = 11
+		y = 13
+	}
+	focus = {
+		id = CLB_Teach_The_Way_of_Asatru
+		icon = GFX_goal_USA_no_valkist
+		cost = 5
+		prerequisite = { focus = CLB_Replace_Public_Schools }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Teach_The_Way_of_Asatru"
+			add_ideas = GER_youth_support_role
+			add_stability = 0.05
+		}
+		x = 10
+		y = 14
+	}
+	focus = {
+		id = CLB_A_Boost_In_Private_Schools
+		icon = GFX_goal_generic_banking_legislation
+		cost = 5
+		prerequisite = { focus = CLB_Replace_Public_Schools }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Boost_In_Private_Schools"
+			add_tech_bonus = {
+				category = signal_company_tech
+				category = electronics
+				bonus = 0.25
+				uses = 1
+			}
+			add_political_power = 10
+			add_stability = 0.05
+		}
+		x = 12
+		y = 14
+	}
+	focus = {
+		id = CLB_Educate_The_Masses
+		icon = GFX_goal_KTG_Bookstack
+		cost = 5
+		prerequisite = { focus = CLB_A_Boost_In_Private_Schools }
+		prerequisite = { focus = CLB_Teach_The_Way_of_Asatru }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Educate_The_Masses"
+			add_research_slot = 1
+			add_stability = 0.05
+		}
+		x = 11
+		y = 15
+	}
+	focus = {
+		id = CLB_Provide_Funding_For_Labs
+		icon = GFX_focus_research4
+		cost = 5
+		prerequisite = { focus = CLB_Educate_The_Masses }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Provide_Funding_For_Labs"
+			add_ideas = MEX_research_primacy
+		}
+		x = 11
+		y = 16
+	}
+	focus = {
+		id = CLB_Engineering_Centers
+		icon = GFX_goal_generic_support_equipment
+		cost = 5
+		prerequisite = { focus = CLB_Provide_Funding_For_Labs }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Engineering_Centers"
+			add_tech_bonus = {
+				category = signal_company_tech
+				category = electronics
+				bonus = 0.75
+				uses = 2
+			}
+		}
+		x = 10
+		y = 17
+	}
+	focus = {
+		id = CLB_Studies_Guided_by_God
+		icon = GFX_goal_liberty
+		cost = 5
+		prerequisite = { focus = CLB_Provide_Funding_For_Labs }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Studies_Guided_by_God"
+			add_ideas = CLB_Guided_by_God
+		}
+		x = 12
+		y = 17
+	}
+	focus = {
+		id = CLB_Literature_Rates
+		icon = GFX_focus_research3
+		cost = 5
+		prerequisite = { focus = CLB_Studies_Guided_by_God }
+		prerequisite = { focus = CLB_Engineering_Centers }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Literature_Rates"
+			add_research_slot = 1
+			add_political_power = 10
+
+		}
+		x = 11
+		y = 18
+	}
+
+	focus = {
+		id = CLB_Unstoppable_War_Machine
+		icon = GFX_goal_CLB_Unstoppable_War_Machine
+		cost = 5
+		prerequisite = { focus = CLB_Literature_Rates }
+		prerequisite = { focus = CLB_Destroy_Liberal_Economic_Policies  }
+		prerequisite = { focus = CLB_The_Folk_Awakens }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Unstoppable_War_Machine"
+			set_major = yes
+			add_ideas = CLB_Unstoppable_War
+			add_political_power = 100
+		}
+		x = 7
+		y = 19
+	}
+
+	#################Speacil Army#######################################
+	########################This should take half of americas political cabinet but idk how prob recruit character or somethin
+	#focus = {
+		#id = CLB_Bribe_Macarthur
+		#icon = GFX_
+		#cost = 5
+		#prerequisite = {
+			#focus = CLB_Panzercops
+			#focus =  CLB_Recruit_DoMoRian_Mercenarys
+			#}
+		#completion_reward = {
+			#add_political_power = 10
+			#add_stability = 0.15
+			#}
+
+		#x = 34
+		#y = 22
+		#}
+	#################Stability in the nation#########
+	focus = {
+		id = CLB_Establish_The_AFA
+		icon = GFX_goal_CLB_Establish_The_AFA
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Establish_The_AFA"
+			add_political_power = 100
+			add_stability = 0.05
+			add_ideas = CLB_AFA_Established
+		}
+		x = 7
+		y = 1
+	}
+	focus = {
+		id = CLB_Taxless_Cigars
+		icon = GFX_goal_CLB_Taxless_Cigars
+		cost = 5
+		prerequisite = { focus = CLB_Establish_The_AFA }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Taxless_Cigars"
+			add_ideas = CLB_Easy_On_Life
+			add_political_power = 10
+		}
+		x = 9
+		y = 2
+	}
+	focus = {
+		id = CLB_Eliminate_Degeneracy
+		icon = GFX_goal_CLB_Eliminate_Degeneracy
+		cost = 5
+		prerequisite = { focus = CLB_Establish_The_AFA }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Eliminate_Degeneracy"
+			remove_ideas = CLB_Degenerate_Filth
+			add_political_power = 10
+			add_stability = 0.05
+		}
+		x = 5
+		y = 2
+	}
+	focus = {
+		id = CLB_Exterminate_Communist_Sympathisers
+		icon = GFX_goal_CLB_Exterminate_Communist_Sympathisers
+		cost = 5
+		prerequisite = { focus = CLB_Establish_The_AFA }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Exterminate_Communist_Sympathisers"
+			add_stability = 0.1
+			add_timed_idea = {
+				idea = GER_purge_started
+				days = 100
+			}
+			remove_ideas = CLB_Marxist_Infiltraitors
+			add_political_power = 10
+			add_stability = 0.05
+		}
+		x = 7
+		y = 2
+	}
+	focus = {
+		id = CLB_A_Unified_Militia
+		icon = GFX_goal_CLB_A_Unified_Militia
+		cost = 5
+		prerequisite = { focus = CLB_Establish_The_AFA }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Unified_Militia"
+			add_ideas = CLB_Asatrufolken
+			add_political_power = 10
+		}
+
+		x = 6
+		y = 3
+	}
+	focus = {
+		id = CLB_Reinstate_Prohbition
+		icon = GFX_goal_CLB_Reinstate_Prohbition
+		cost = 5
+		prerequisite = { focus = CLB_Establish_The_AFA }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Reinstate_Prohbition"
+			random_owned_state = {
+				limit = {
+					is_controlled_by = CLB
+					is_core_of = CLB
+					OR = {
+						industrial_complex > 0
+						arms_factory > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+
+			}
+			add_political_power = 10
+			add_stability = 0.05
+		}
+		x = 8
+		y = 3
+	}
+	focus = {
+		id = CLB_A_New_American_Culture
+		icon = GFX_goal_CLB_A_New_American_Culture
+		cost = 5
+		prerequisite = { focus = CLB_A_Unified_Militia }
+		prerequisite = { focus = CLB_Reinstate_Prohbition }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_New_American_Culture"
+			add_ideas = CLB_A_New_America
+			add_political_power = 10
+			add_stability = 0.05
+		}
+		relative_position_id = CLB_Establish_The_AFA
+		x = 0
+		y = 3
+	}
+	focus = {
+		id = CLB_Accessing_The_Ward_System
+		icon = GFX_goal_tax_slave
+		cost = 5
+		prerequisite = {
+			focus = CLB_Ein_Republik_Ein_Folk
+			focus = CLB_Rejuvination_of_Rural_Life
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Accessing_The_Ward_System"
+			add_political_power = -250
+		}
+		relative_position_id = CLB_Establish_The_AFA
+		x = 0
+		y = 7
+	}
+	focus = {
+		id = CLB_Create_The_OSHA_Department
+		icon = GFX_goal_generic_medical
+		cost = 3
+		prerequisite = {
+			Focus= CLB_Accessing_The_Ward_System
+		}
+		mutually_exclusive = { focus = CLB_Turning_A_Blind_Eye }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Create_The_OSHA_Department"
+			swap_ideas = {
+				remove_idea = CLB_the_ward_system
+				add_idea = CLB_Ward_Reformed
+			}
+		}
+		relative_position_id = CLB_Accessing_The_Ward_System
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = CLB_A_Healthy_Work_Enviroment
+		icon = GFX_goal_generic_pipeline
+		cost = 3
+		prerequisite { focus = CLB_Create_The_OSHA_Department }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Healthy_Work_Enviroment"
+			swap_ideas = {
+				remove_idea = CLB_Ward_Reformed
+				add_idea = CLB_Ward_Prosperity
+			}
+		}
+		relative_position_id = CLB_Accessing_The_Ward_System
+		x = -2
+		y = 2
+	}
+	focus = {
+		id = CLB_Turning_A_Blind_Eye
+		icon = GFX_goal_generic_investigate_corruption
+		cost = 3
+		prerequisite = { Focus = CLB_Accessing_The_Ward_System }
+		mutually_exclusive = { focus = CLB_Create_The_OSHA_Department }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Turning_A_Blind_Eye"
+			swap_ideas = {
+				remove_idea = CLB_the_ward_system
+				add_idea = CLB_Ward_Neglected
+			}
+		}
+		relative_position_id = CLB_Accessing_The_Ward_System
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = CLB_Crushing_The_Unions
+		icon = GFX_goal_generic_crush_unions
+		cost = 3
+		prerequisite = { Focus = CLB_Turning_A_Blind_Eye }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Crushing_The_Unions"
+			swap_ideas = {
+				remove_idea = CLB_Ward_Neglected
+				add_idea = CLB_Ward_Hell
+			}
+		}
+		relative_position_id = CLB_Accessing_The_Ward_System
+		x = 2
+		y = 2
+	}
+
+	#focus = {
+		#id = CLB_Every_Town_A_Church
+		#icon = GFX_Church
+		#cost = 5
+		#prerequisite = {
+			#focus = CLB_Ein_Republik_Ein_Folk
+			#focus = CLB_Rejuvination_of_Rural_Life
+			#}
+		#prerequisite = {
+			#focus = CLB_The_Religous_Folk
+			#}
+
+		#completion_reward = {
+			#add_political_power = 100
+			#add_stability = 0.05
+			#}
+
+		#x = 7
+		#y = 9
+		#}
+	#focus = {
+		#id = CLB_Integrate_Smaller_Religions
+		#icon = GFX_CLB_
+		#cost = 2
+		#prerequisite = {
+			#focus = CLB_Every_Town_A_Church
+
+
+			#}
+
+		#completion_reward = {
+			#add_political_power = 100
+			#add_stability = 0.05
+			#}
+
+		#x = 7
+		#y = 10
+		#}
+	#focus = {
+		#id = CLB_Venerate_Our_Ancestors
+		#icon = GFX_goal_PHI_knights
+		#cost = 2
+		#prerequisite = {
+			#focus = CLB_Every_Town_A_Church
+
+
+			#}
+
+		#completion_reward = {
+			#add_political_power = 25
+			#add_stability = 0.05
+			#}
+
+		#x = 9
+		#y = 10
+		#}
+	#focus = {
+		#id = CLB_Local_Rallys_of_Democracy
+		#icon = GFX_CLB_
+		#cost = 2
+		#prerequisite = {
+			#focus = CLB_Every_Town_A_Church
+
+			#}
+
+		#completion_reward = {
+			#add_political_power = 25
+			#add_stability = -0.10
+			#}
+
+		#x = 5
+		#y = 10
+		#}
+	focus = {
+		id = CLB_A_New_United_and_Prosperous_State
+		icon = GFX_goal_DOM_The_Phoenix
+		cost = 5
+		prerequisite = {
+			focus = CLB_Accessing_The_Ward_System
+		}
+		#prerequisite = {
+			#focus = CLB_Local_Rallys_of_Democracy
+			#}
+		#prerequisite = {
+			#focus = CLB_Venerate_Our_Ancestors
+			#}
+		#prerequisite = {
+			#focus = CLB_Integrate_Smaller_Religions
+			#}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_New_United_and_Prosperous_State"
+			add_political_power = 50
+			add_stability = 0.10
+			add_ideas = GER_nation_reborn
+			remove_ideas = CLB_spliting_at_seems
+		}
+
+		relative_position_id = CLB_Establish_The_AFA
+		x = 0
+		y = 9
+	}
+	#############Left
+	focus = {
+		id = CLB_Nationalize_The_Industry
+		icon = GFX_goal_generic_seize_investments
+		cost = 5
+		prerequisite = { focus = CLB_A_New_American_Culture }
+		mutually_exclusive = { focus = CLB_Regional_Land_Reforms }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Nationalize_The_Industry"
+			add_ideas = CLB_Nationalization
+		}
+		relative_position_id = CLB_Establish_The_AFA
+		x = -1
+		y = 4
+	}
+	focus = {
+		id = CLB_The_Beauty_of_Nature
+		icon = GFX_goal_CLB_The_Beauty_of_Nature
+		cost = 5
+		prerequisite = { focus = CLB_Nationalize_The_Industry }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Beauty_of_Nature"
+			add_ideas = CLB_Beauty_of_Nature
+			add_political_power = 10
+			add_stability = 0.05
+		}
+
+		relative_position_id = CLB_Establish_The_AFA
+		x = -1
+		y = 5
+	}
+	focus = {
+		id = CLB_The_Independent_Folk
+		icon = GFX_goal_CLB_The_Independent_Folk
+		cost = 5
+		prerequisite = { focus = CLB_Nationalize_The_Industry }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Independent_Folk"
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_political_power = 10
+		}
+
+		relative_position_id = CLB_Establish_The_AFA
+		x = -3
+		y = 5
+	}
+	focus = {
+		id = CLB_Rejuvination_of_Rural_Life
+		icon = GFX_goal_CLB_Rejuvination_of_Rural_Life
+		cost = 5
+		prerequisite = { focus = CLB_The_Beauty_of_Nature }
+		prerequisite = { focus = CLB_The_Independent_Folk }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Rejuvination_of_Rural_Life"
+			add_ideas = CLB_Rural_Areas
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 10
+
+		}
+
+		relative_position_id = CLB_Establish_The_AFA
+		x = -2
+		y = 6
+	}
+	########RIGHT
+	focus = {
+		id = CLB_Regional_Land_Reforms
+		icon = GFX_goal_generic_lightbulb
+		cost = 5
+		prerequisite = { focus = CLB_A_New_American_Culture }
+		mutually_exclusive = { focus = CLB_Nationalize_The_Industry }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Regional_Land_Reforms"
+			add_ideas = CLB_Land_Reform
+			add_political_power = 10
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		relative_position_id = CLB_Establish_The_AFA
+		x = 1
+		y = 4
+	}
+	focus = {
+		id = CLB_Crush_Urban_Holdouts
+		icon = GFX_goal_CLB_Crush_Urban_Holdouts
+		cost = 5
+		prerequisite = { focus = CLB_Regional_Land_Reforms }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Crush_Urban_Holdouts"
+			swap_ideas = {
+				remove_idea = CLB_Land_Reform
+				add_idea = CLB_Land_Reformiaton
+			}
+			add_stability = -0.10
+		}
+		relative_position_id = CLB_Establish_The_AFA
+		x = 1
+		y = 5
+	}
+	focus = {
+		id = CLB_Subsidize_The_Greater_Family
+		icon = GFX_goal_CLB_Subsidize_The_Greater_Family
+		cost = 5
+		prerequisite = { focus = CLB_Regional_Land_Reforms }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Subsidize_The_Greater_Family"
+			add_ideas = CLB_Greater_Family
+			add_political_power = 10
+			add_stability = 0.05
+		}
+
+		relative_position_id = CLB_Establish_The_AFA
+		x = 3
+		y = 5
+	}
+	focus = {
+		id = CLB_Ein_Republik_Ein_Folk
+		icon = GFX_goal_CLB_The_Religous_Folk
+		cost = 5
+		prerequisite = { focus = CLB_Subsidize_The_Greater_Family }
+		prerequisite = { focus = CLB_Crush_Urban_Holdouts }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Ein_Republik_Ein_Folk"
+			add_ideas = CLB_Ein_Republik
+			add_war_support = 0.10
+		}
+
+		relative_position_id = CLB_Establish_The_AFA
+		x = 2
+		y = 6
+	}
+
+
+	#Election nonsense
+	#	focus = {
+		#		id = CLB_Christian_Pagan_Cooperation
+		#		icon = GFX_goal_CLB_Christian_Pagan_Cooperation
+		#		cost = 3
+		#		completion_reward = {
+			#			add_political_power = 50
+			#                        add_stability = 0.05
+			#		}
+		#		available = { has_idea = CLB_A_New_America }
+		#		x = 16
+		#		y = 1
+		#}
+
+
+	#focus = {
+		#id = CLB_Ask_For_Buddhist_Cooperation
+		#icon = GFX_goal_CLB_Ask_For_Buddhist_Cooperation
+		#cost = 3
+		#prerequisite = {
+			#focus = CLB_Christian_Pagan_Cooperation
+			#}
+
+		#completion_reward = {
+			#add_political_power = 100
+			#add_stability = 0.10
+			#}
+		#x = 16
+		#y = 2
+		#}
+	#focus = {
+		#id = CLB_Suffocate_Religous_Opponents
+		#icon = GFX_
+		#cost = 3
+		#completion_reward = {
+			#	add_political_power = 50
+			#                add_stability = 0.05
+			#}
+		#x = 17
+		#y = 1
+		#}
+
+	focus = {
+		id = CLB_Snap_Elections
+		icon = GFX_goal_USA_new_deal
+		cost = 5
+		available = { has_idea = CLB_A_New_America }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Snap_Elections"
+			CLB = {
+				country_event = afadec.1
+			}
+			add_political_power = 10
+			add_stability = 0.15
+		}
+		x = 16
+		y = 1
+	}
+	focus = {
+		id = CLB_Pagan_Oriented_Stances
+		icon = GFX_goal_valkist_star
+		cost = 0
+		prerequisite = { focus = CLB_Snap_Elections }
+		available = {
+			CLB = {
+				has_government = social_conservative
+			}
+
+		}
+		mutually_exclusive = {
+			focus = CLB_Christian_Oriented_Stances
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Pagan_Oriented_Stances"
+			add_political_power = 10
+		}
+		x = 14
+		y = 2
+	}
+	focus = {
+		id = CLB_Christian_Oriented_Stances
+		icon = GFX_goal_CRU_church
+		cost = 0
+		prerequisite = { focus = CLB_Snap_Elections }
+		available = {
+			CLB = {
+				has_government = authoritarian_democrat
+			}
+		}
+		mutually_exclusive = {
+			focus = CLB_Pagan_Oriented_Stances
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Christian_Oriented_Stances"
+			add_political_power = 10
+		}
+		x = 18
+		y = 2
+	}
+	focus = {
+		id = CLB_Draining_The_Swamps
+		icon = GFX_Execute_Democracy
+		cost = 5
+		prerequisite = {
+			focus = CLB_Pagan_Oriented_Stances
+			focus = CLB_Christian_Oriented_Stances
+
+		}
+		available = {
+			controls_state = 361
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Draining_The_Swamps"
+			country_event = afadec.8
+			add_political_power = 10
+		}
+		x = 16
+		y = 3
+	}
+	focus = {
+		id = CLB_Bastion_of_Democracy
+		icon = GFX_goal_CLB_Titan_of_Propaganda #thanks Raus
+		cost = 3
+		prerequisite = { Focus= CLB_Draining_The_Swamps }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Bastion_of_Democracy"
+			remove_ideas = CLB_democracy_in_limbo
+		}
+		x = 16
+		y = 4
+	}
+
+	######ENDSEIG OH GOD HELP########
+	focus = {
+		id = CLB_Our_Setting_Sun
+		icon = GFX_goal_CLB_Our_Setting_Sun
+		cost = 5
+		available = {
+			surrender_progress > 0.25
+			date > 1940.1.1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Our_Setting_Sun"
+			add_political_power = -250
+			add_war_support = -0.10
+		}
+		x = 43
+		y = 1
+
+	}
+	focus = {
+		id = CLB_Scorch_The_Prairies
+		icon = GFX_goal_CLB_Scorch_The_Prairies
+		cost = 3
+		prerequisite = { focus = CLB_Our_Setting_Sun }
+		available = {
+			surrender_progress > 0.25
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Scorch_The_Prairies"
+			add_political_power = -50
+			add_ideas = SAF_Scorched_Earth
+
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Scorch_The_Cities
+		icon = GFX_goal_CLB_Scorch_The_Cities
+		cost = 3
+		prerequisite = { focus = CLB_Our_Setting_Sun }
+		available = { surrender_progress > 0.25 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Scorch_The_Cities"
+			add_ideas = CLB_Scorched_Cities
+			add_political_power = -50
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Kill_Everything
+		icon = GFX_goal_CLB_KILL_EVERYTHING
+		cost = 3
+		prerequisite = { focus = CLB_Our_Setting_Sun }
+		available = { surrender_progress > 0.25 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Kill_Everything"
+			add_ideas = CLB_Scorched_Urbans
+			add_political_power = -50
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = CLB_A_Final_Call
+		icon = GFX_goal_CLB_A_Final_Call
+		cost = 5
+		prerequisite = { focus = CLB_Kill_Everything }
+		prerequisite = { focus = CLB_Scorch_The_Cities }
+		prerequisite = { focus = CLB_Scorch_The_Prairies }
+		available = {
+			surrender_progress > 0.25
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Final_Call"
+			add_political_power = 50
+
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = CLB_Dig_In_Deep
+		icon = GFX_goal_CLB_Dig_In_Deep
+		cost = 5
+		prerequisite = { focus = CLB_A_Final_Call }
+		mutually_exclusive = { focus = CLB_The_Final_Offensive }
+		available = { surrender_progress > 0.50 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Dig_In_Deep"
+			add_political_power = -100
+			add_timed_idea = {
+				idea = GER_bunker_focus
+				days = 270
+			}
+
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = CLB_The_Final_Offensive
+		icon = GFX_goal_CLB_The_Final_Offensive
+		cost = 5
+		prerequisite = { focus = CLB_A_Final_Call }
+		available = { surrender_progress > 0.50 }
+		mutually_exclusive = { focus = CLB_Dig_In_Deep }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Final_Offensive"
+			add_political_power = -100
+			add_timed_idea = {
+				idea = CLB_The_New_Offensives
+				days = 180
+			}
+
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = CLB_Retain_Our_Hope
+		icon = GFX_goal_CLB_Retain_Our_Hope
+		cost = 5
+		prerequisite = {
+			focus = CLB_The_Final_Offensive
+			focus = CLB_Dig_In_Deep
+		}
+		available = { surrender_progress > 0.50 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Retain_Our_Hope"
+			add_political_power = -100
+			add_ideas = CLB_Retaining_Our_hope
+
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = { #If columbia lives give events of unstable reactors going off k cool
+		id = CLB_Destroyer_of_Worlds
+		icon = GFX_goal_CLB_TheVoid
+		cost = 5
+		prerequisite = { focus = CLB_Retain_Our_Hope }
+		available = { surrender_progress > 0.9 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Destroyer_of_Worlds"
+			add_political_power = -100
+			add_tech_bonus = {
+				category = nuclear
+				ahead_reduction = 3
+				bonus = 2.0
+				uses = 2
+			}
+		}
+		x = 43
+		y = 6
+
+	}
+	###########Baller isa
+	focus = {
+		id = CLB_Bolster_ISA_Ranks
+		icon = GFX_goal_CLB_ISAWolf
+		cost = 10
+		available = {
+			OR = {
+				controls_state = 360
+				controls_state = 361
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Bolster_ISA_Ranks"
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				add_ideas = CLB_ISA_Bolsterd
+			}
+		}
+		x = 16
+		y = 8
+	}
+	focus = {
+		id = CLB_Artic_Winter
+		icon = GFX_goal_CLB_ArticWinter
+		cost = 3
+		available = {
+			AND = {
+				CLB = {
+					has_war_with = SOV
+				}
+				SOV = { controls_state = 637 }
+			}
+		}
+		prerequisite = { Focus= CLB_Bolster_ISA_Ranks }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Artic_Winter"
+			country_event = afathreat.22
+		}
+		relative_position_id = CLB_Bolster_ISA_Ranks
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = CLB_Crimson_Ocean
+		icon = GFX_goal_CLB_CrimsonHank
+		cost = 3
+		available = {
+			AND = {
+				CLB = { has_war_with = ENG }
+				ENG = { controls_state = 119 }
+			}
+		}
+		prerequisite = { Focus= CLB_Bolster_ISA_Ranks }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Crimson_Ocean"
+			country_event = afathreat.24
+		}
+		relative_position_id = CLB_Bolster_ISA_Ranks
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = CLB_Ash_Field
+		icon = GFX_goal_CLB_AshFields
+		cost = 3
+		available = {
+			AND = {
+				CLB = { has_war_with = FRA }
+				FRA = { controls_state = 699 }
+			}
+		}
+		prerequisite = { Focus= CLB_Bolster_ISA_Ranks }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Ash_Field"
+			country_event = afathreat.23
+		}
+		relative_position_id = CLB_Bolster_ISA_Ranks
+		x = 0
+		y = 2
+	}
+	###################The blow reactors thing doesnt really work ya know how you would want it to work but thats alot more work ya know The Tno method would probably be the thing to do here if it is made to work yada yada
+	#focus = {
+		#id = CLB_Blow_The_Western_Reactors
+		#icon = GFX_Split_the_Atom
+		#cost = 0
+		#prerequisite = {
+			#focus = CLB_Evacuate_The_Civilians
+			#focus = CLB_Retain_Our_Hope
+			#}
+		#available = {
+			#surrender_progress > 0.50
+			#controls_state = 376
+			#controls_state = 382
+			#controls_state = 381
+			#controls_state = 388
+			#}
+
+
+		#completion_reward = {
+			#376 = { set_demilitarized_zone = yes }
+			#382 = { set_demilitarized_zone = yes }
+			#381 = { set_demilitarized_zone = yes }
+			#388 = { set_demilitarized_zone = yes }
+
+			#}
+		#x = 41
+		#y = 8
+
+		#}
+	##############Reactor stuff needs change
+	#focus = {
+		#id = CLB_Blow_The_Eastern_Reactors
+		#icon = GFX_Split_the_Atom
+		#cost = 0
+		#prerequisite = {
+			#focus = CLB_Evacuate_The_Civilians
+			#focus = CLB_Retain_Our_Hope
+			#}
+		#available = {
+			#surrender_progress > 0.50
+			#controls_state = 369
+			#controls_state = 362
+			#}
+
+
+		#completion_reward = {
+			#369 = { set_demilitarized_zone = yes }
+			#362 = { set_demilitarized_zone = yes }
+
+
+			#}
+		#x = 45
+		#y = 8
+
+		#}
+	#################NuclearArmagedon#############
+	focus = {
+		id = CLB_Secret_Weaponry
+		icon = GFX_goal_generic_grim_reaper
+		cost = 0
+		available = { date > 1940.1.1 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Secret_Weaponry"
+		}
+		x = 34
+		y = 1
+	}
+	focus = {
+		id = CLB_A_Blank_Check
+		icon = GFX_DAH_Topke
+		cost = 5
+		prerequisite = { Focus= CLB_Secret_Weaponry }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Blank_Check"
+			add_political_power = -150
+		}
+		x = 36
+		y = 2
+	}
+	focus = {
+		id = CLB_Experimental_Research
+		icon = GFX_goal_double_research
+		cost = 5
+		prerequisite = { Focus= CLB_Secret_Weaponry }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Experimental_Research"
+			add_stability = -0.1
+		}
+		x = 32
+		y = 2
+	}
+	focus = {
+		id = CLB_Breakthrough_In_Scientology
+		icon = GFX_goal_CLB_Breakthrough_In_Scientology
+		cost = 5
+		prerequisite = { Focus= CLB_Experimental_Research }
+		prerequisite = { Focus= CLB_A_Blank_Check }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Breakthrough_In_Scientology"
+			add_political_power = 100
+		}
+		x = 34
+		y = 3
+	}
+	focus = {
+		id = CLB_Open_Uranium_Mines
+		icon = GFX_goal_nuclear
+		cost = 5
+		prerequisite = { Focus= CLB_Breakthrough_In_Scientology }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Open_Uranium_Mines"
+			add_tech_bonus = {
+				category = nuclear
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		x = 32
+		y = 4
+	}
+	#	focus = {
+		#		id = CLB_NUCLEAR_ARMAGEDON
+		#		icon = GFX_goal_nuclear
+		#		cost = 5
+		#		prerequisite = {
+			#               Focus= CLB_Open_Uranium_Mines
+			#
+			#		}
+		#                completion_reward = {
+			#                add_tech_bonus = {
+				#                category = nuclear
+				#                ahead_reduction = 1
+				#                bonus = 1.0
+				#                uses = 1
+				#           }
+			#       }
+		#		x = 32
+		#		y = 5
+		#}
+	focus = {
+		id = CLB_Jet_Engines
+		icon = GFX_goal_generic_build_airforce
+		cost = 5
+		prerequisite = { Focus= CLB_Breakthrough_In_Scientology }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Jet_Engines"
+			add_tech_bonus = {
+				name = air_fighter_bonus
+				bonus = 0.75
+				uses = 1
+				ahead_reduction = 1
+				technology = jet_engines
+			}
+		}
+		x = 34
+		y = 4
+	}
+	focus = {
+		id = CLB_Propulsion_Systems
+		icon = GFX_focus_rocketry
+		cost = 5
+		prerequisite = { Focus= CLB_Breakthrough_In_Scientology }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Propulsion_Systems"
+			add_tech_bonus = {
+				name = air_fighter_bonus
+				bonus = 0.75
+				uses = 1
+				ahead_reduction = 3
+				technology = experimental_rockets
+			}
+		}
+		x = 36
+		y = 4
+	}
+	#	focus = {
+		#		id = CLB_In_Range_of_Moscow
+		#		icon = GFX_focus_rocketry
+		#		cost = 5
+		#		prerequisite = {
+			#               Focus= CLB_Breakthrough_In_Scientology
+			#
+			#		}
+		#		completion_reward = {
+			#			add_tech_bonus = {
+				#				name = air_fighter_bonus
+				#				bonus = 0.5
+				#				uses = 3
+				#                                ahead_reduction = 2
+				#				technology = rocket_engines
+				#			}
+			#		}
+		#		x = 36
+		#		y = 5
+		#}
+
+
+	##########Ilya got the drippy###
+
+
+	################EXPANSIONISTTREE#########################
+
+	focus = {
+		id = CLB_Operation_Folkstrum
+		icon = GFX_goal_CLB_Operation_Folkstrum
+		cost = 3
+		available = { has_war = no }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Operation_Folkstrum"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4000
+				producer = USA
+			}
+			add_political_power = 100
+			add_war_support = 0.10
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = CLB_Crush_The_Fake_Republic
+		icon = GFX_goal_CLB_Crush_The_Fake_Republic
+		cost = 5
+		prerequisite = { focus = CLB_Light_The_Matches }
+		bypass = {
+			USA = {
+				OR = {
+					has_war_with = CLB
+					is_in_faction_with = CLB
+					is_puppet_of = CLB
+					exists = no
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Crush_The_Fake_Republic"
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+
+		}
+
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = CLB_Sea_To_Sea
+		icon = GFX_goal_CLB_Sea_To_Sea
+		cost = 4
+		prerequisite = { focus = CLB_Operation_Folkstrum }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Sea_To_Sea"
+			annex_country = { target = ORE transfer_troops = yes }
+			385 = { add_core_of = CLB }
+			386 = { add_core_of = CLB }
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Light_The_Matches
+		icon = GFX_goal_CLB_Light_The_Matches
+		cost = 5
+		prerequisite = { focus = CLB_Operation_Folkstrum }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Light_The_Matches"
+			hidden_effect = {
+				372 = { add_core_of = CLB }
+				368 = { add_core_of = CLB }
+				371 = { add_core_of = CLB }
+				370 = { add_core_of = CLB }
+				367 = { add_core_of = CLB }
+				366 = { add_core_of = CLB }
+				365 = { add_core_of = CLB }
+				364 = { add_core_of = CLB }
+				363 = { add_core_of = CLB }
+				361 = { add_core_of = CLB }
+				842 = { add_core_of = CLB }
+				374 = { add_core_of = CLB }
+				919 = { add_core_of = CLB }
+				920 = { add_core_of = CLB }
+				463 = { add_core_of = CLB }
+				650 = { add_core_of = CLB }
+				685 = { add_claim_by = CLB }
+				686 = { add_claim_by = CLB }
+				947 = { add_claim_by = CLB }
+			}
+			USA = {
+				country_event = afathreat.17
+			}
+		}
+
+		x = 22
+		y = 2
+
+
+	}
+	focus = {
+		id = CLB_Reclaim_The_Eastern_lands
+		icon = GFX_goal_CLB_Reclaim_The_Eastern_lands
+		cost = 5
+		prerequisite = { focus = CLB_Operation_Folkstrum }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Reclaim_The_Eastern_lands"
+			declare_war_on = {
+				target = NAR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SRA
+				type = annex_everything
+			}
+			hidden_effect = {
+				394 = { add_core_of = CLB }
+				395 = { add_core_of = CLB }
+				396 = { add_core_of = CLB }
+				393 = { add_core_of = CLB }
+				261 = { add_core_of = CLB }
+				369 = { add_core_of = CLB }
+				843 = { add_core_of = CLB }
+				360 = { add_core_of = CLB }
+				362 = { add_core_of = CLB }
+				359 = { add_core_of = CLB }
+			}
+		}
+
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Back_Into_The_Fold
+		icon = GFX_goal_CLB_Back_Into_The_Fold
+		cost = 3
+		prerequisite = { focus = CLB_Reclaim_The_Eastern_lands }
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Back_Into_The_Fold"
+			NEE = {
+				country_event = afathreat.1
+			}
+			hidden_effect = {
+				358 = { add_core_of = CLB }
+				357 = { add_core_of = CLB }
+				841 = { add_core_of = CLB }
+				840 = { add_core_of = CLB }
+				839 = { add_core_of = CLB }
+				838 = { add_core_of = CLB }
+				837 = { add_core_of = CLB }
+			}
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = CLB_The_Final_Drug_War
+		icon = GFX_goal_CLB_The_Final_Drug_War ##########isnt this a tno frame? i swear it is
+		cost = 5
+
+		available = {
+			USA = {
+				exists = no
+			}
+			NEE = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = CLB_Crush_The_Fake_Republic
+		}
+
+		prerequisite = {
+			focus = CLB_Back_Into_The_Fold
+		}
+		available = {
+			has_army_manpower = { size > 249999 }
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Final_Drug_War"
+			declare_war_on = {
+				target = MEX
+				type = annex_everything
+			}
+			add_political_power = 100
+			add_war_support = 0.25
+			375 = { add_core_of = CLB }
+			376 = { add_core_of = CLB }
+			380 = { add_core_of = CLB }
+			379 = { add_core_of = CLB }
+			927 = { add_core_of = CLB }
+			928 = { add_core_of = CLB }
+			926 = { add_core_of = CLB }
+			377 = { add_core_of = CLB }
+			378 = { add_core_of = CLB }
+			484 = { add_core_of = CLB }
+			921 = { add_core_of = CLB }
+			483 = { add_claim_by = CLB }
+			482 = { add_claim_by = CLB }
+			480 = { add_claim_by = CLB }
+		}
+
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = CLB_Found_The_NDC
+		icon = GFX_goal_CLB_Found_The_NDC
+		cost = 2
+		prerequisite = { focus = CLB_Sea_To_Sea }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLB_Found_The_NDC"
+			CLB = {
+				create_faction = "National Defense Comand"
+			}
+		}
+		x = 25
+		y = 3
+
+	}
+	# focus = (
+	#id = CLB_Hands_of_God
+	#icon = GFX_goal_CLB_Light_The_Matches
+	#cost = 2
+	#prerequisite = {
+		#focus = CLB_The_Final_Drug_War
+		#}
+	#completion_reward = {
+		#}
+
+
+	#x = 28
+	#y = 5
+
+	#}
+focus = {
+	id = CLB_FrostBlitz
+	icon = GFX_goal_SHO_Saws_Revin
+	cost = 5
+	prerequisite = { focus = CLB_The_Final_Drug_War }
+	available = {
+		has_army_manpower = { size > 349999 }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_FrostBlitz"
+		CAN = {
+			country_event = afathreat.3
+		}
+		add_political_power = 250
+		add_war_support = 0.10
+		hidden_effect = {
+			473 = { add_core_of = CLB }
+			740 = { add_core_of = CLB }
+			480 = { add_core_of = CLB }
+			739 = { add_core_of = CLB }
+			463 = { add_core_of = CLB }
+			471 = { add_core_of = CLB }
+			470 = { add_core_of = CLB }
+			472 = { add_core_of = CLB }
+			683 = { add_core_of = CLB }
+			469 = { add_core_of = CLB }
+			467 = { add_core_of = CLB }
+			468 = { add_core_of = CLB }
+			465 = { add_core_of = CLB }
+			464 = { add_core_of = CLB }
+			696 = { add_core_of = CLB }
+		}
+
+	}
+	x = 25
+	y = 5
+
+
+}
+
+focus = {
+	id = CLB_A_Trade_Offer_For_Cruzoob
+	icon = GFX_goal_CLB_Free_The_Central_Americans
+	cost = 4
+	prerequisite = { focus = CLB_FrostBlitz }
+	available = {
+		MEX = {
+			NOT = {
+				has_war_with = CLB
+			}
+		}
+		CRU = {
+			NOT = {
+				has_war_with = CLB
+			}
+		}
+	}
+	bypass = {
+		CRU = {
+			OR = {
+				is_puppet_of = CLB
+				is_in_faction_with = CLB
+				exists = no
+			}
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Trade_Offer_For_Cruzoob"
+		hidden_effect = {
+			313 = { add_claim_by = CRU }
+			312 = { add_claim_by = CRU }
+			314 = { add_claim_by = CRU }
+			317 = { add_claim_by = CRU }
+			316 = { add_claim_by = CRU }
+			304 = { add_claim_by = CRU }
+			493 = { add_claim_by = CRU }
+			486 = { add_claim_by = CRU }
+			306 = { add_claim_by = CRU }
+			889 = { add_claim_by = CRU }
+			900 = { add_claim_by = CRU }
+			489 = { add_claim_by = CRU }
+			695 = { add_claim_by = CRU }
+			307 = { add_claim_by = CRU }
+			488 = { add_claim_by = CRU }
+			971 = { add_claim_by = CRU }
+			687 = { add_claim_by = CRU }
+			970 = { add_claim_by = CRU }
+			309 = { add_claim_by = CRU }
+			969 = { add_claim_by = CRU }
+			310 = { add_claim_by = CRU }
+			753 = { add_claim_by = CRU }
+			490 = { add_claim_by = CRU }
+			305 = { add_claim_by = CRU }
+			491 = { add_claim_by = CRU }
+			303 = { add_claim_by = CRU }
+			494 = { add_claim_by = CRU }
+			492 = { add_claim_by = CRU }
+			876 = { add_claim_by = CRU }
+			487 = { add_claim_by = CRU }
+			302 = { add_claim_by = CRU }
+			688 = { add_claim_by = CRU }
+			301 = { add_claim_by = CRU }
+			506 = { add_claim_by = CRU }
+			877 = { add_claim_by = CRU }
+			878 = { add_claim_by = CRU }
+			279 = { add_claim_by = CRU }
+			875 = { add_claim_by = CRU }
+			507 = { add_claim_by = CRU }
+			512 = { add_claim_by = CRU }
+			278 = { add_claim_by = CRU }
+			761 = { add_claim_by = CRU }
+			511 = { add_claim_by = CRU }
+			508 = { add_claim_by = CRU }
+			509 = { add_claim_by = CRU }
+			835 = { add_claim_by = CRU }
+			759 = { add_claim_by = CRU }
+			760 = { add_claim_by = CRU }
+			300 = { add_claim_by = CRU }
+			836 = { add_claim_by = CRU }
+			311 = { add_claim_by = CRU }
+		}
+		CRU = {
+			country_event = afathreat.6
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+	x = 27
+	y = 6
+
+}
+focus = {
+	id = CLB_A_Pagan_Paradise
+	icon = GFX_goal_COR_goods_of_cuba
+	cost = 3
+	prerequisite = { focus = CLB_A_Trade_Offer_For_Cruzoob }
+	bypass = {
+		CUB = {
+			OR = {
+				has_war_with = CLB
+				is_in_faction_with = CLB
+				is_puppet_of = CLB
+				exists = no
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Pagan_Paradise"
+		declare_war_on = {
+			target = CUB
+			type = annex_everything
+		}
+		add_stability = 0.05
+
+
+	}
+	x = 26
+	y = 7
+}
+
+##Russia bs
+focus = {
+	id = CLB_Anti_Marxist_Crusade
+	icon = GFX_goal_CLB_Sunrise_Horizion
+	cost = 5
+	will_lead_to_war_with = SOV
+	prerequisite = { focus = CLB_Brazilian_Intervention }
+	prerequisite = { focus = CLB_A_Pacific_Empire }
+	#prerequisite = { focus = CLB_The_Grip_On_Denmark }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Anti_Marxist_Crusade"
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SPA
+			type = annex_everything
+		}
+	}
+	x = 25
+	y = 9
+
+}
+focus = {
+	id = CLB_A_Russian_Asset
+	icon = GFX_goal_RUS_Only_Russian_Workers
+	cost = 4
+	prerequisite = { focus = CLB_FrostBlitz }
+	available = {
+		RUS = {
+			OR = {
+				is_in_faction = no
+				is_puppet = no
+			}
+		}
+		CLB = {
+			OR = {
+				is_in_faction = yes
+			}
+		}
+	}
+
+	bypass = {
+		RUS = {
+			OR = {
+				has_war_with = CLB
+				is_in_faction_with = CLB
+				is_puppet_of = CLB
+				exists = no
+			}
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Russian_Asset"
+		add_political_power = 100
+		add_war_support = 0.10
+		RUS = { country_event = afadec.2 }
+	}
+	x = 25
+	y = 6
+
+}
+focus = {
+	id = CLB_Demand_All_American_Colonies
+	icon = GFX_goal_CLB_Demand_All_American_Colonies
+	cost = 3
+	prerequisite = { focus = CLB_A_Trade_Offer_For_Cruzoob }
+	bypass = {
+		FRA = {
+			OR = {
+				has_war_with = CLB
+				is_in_faction_with = CLB
+				is_puppet_of = CLB
+				exists = no
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Demand_All_American_Colonies"
+		FRA = { country_event = afathreat.20 }
+	}
+	x = 28
+	y = 7
+
+}
+#		focus = {
+	#		id = CLB_Threaten_The_Aussies
+	#		icon = GFX_goal_PHI_attack_australia
+	#		cost = 4
+	#		prerequisite = {
+		#			focus = CLB_Steal_The_Kiwis
+		#		}
+	#		completion_reward = {
+		#				        AST = {
+			#				country_event = afathreat.11
+			#			}
+		#                        add_war_support = 0.05
+		#		}
+	#		x = 23
+	#		y = 8
+	#
+	#	}
+#		focus = {
+	#		id = CLB_Set_Apon_Taiwan
+	#		icon = GFX_goal_CLB_Set_Apon_Taiwan
+	#		cost = 4
+	#		prerequisite = {
+		#			focus = CLB_Retake_The_Traitors
+		#		}
+	#		completion_reward = {
+		#			        JAP = {
+			#				country_event = afathreat.13
+			#			}
+		#			add_political_power = 25
+		#                        add_war_support = 0.05
+		#		}
+	#		x = 21
+	#		y = 8
+	#
+	#	}
+
+#		focus = {
+	#		id = CLB_East_Wind_Rains
+	#		icon = GFX_goal_CLB_East_Wind_Rains
+	#		cost = 5
+	#		prerequisite = {
+		#			focus = CLB_Set_Apon_Taiwan
+		#		}
+	#			prerequisite = {
+		#			focus = CLB_Threaten_The_Aussies
+		#		}
+	#		completion_reward = {
+		#               			 declare_war_on = {
+			#            target = JAP
+			#             type = annex_everything
+			#             }
+		#			add_political_power = 50
+		#            add_war_support = 0.10
+		#		}
+	#		x = 22
+	#		y = 9
+	#
+	#	}
+focus = {
+	id = CLB_A_Pacific_Empire
+	icon = GFX_goal_USA_pacific_guardian
+	cost = 5
+	prerequisite = { focus = CLB_Retake_The_Traitors }
+	prerequisite = { focus = CLB_Steal_The_Kiwis }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Pacific_Empire"
+		add_ideas = { USA_america_rules_the_waves }
+		add_political_power = 100
+		add_war_support = 0.10
+	}
+	x = 23
+	y = 8
+
+}
+
+
+#		focus = {
+	#		id = CLB_The_Grip_On_Denmark
+	#		icon = GFX_goal_CLB_Seize_Alantic_Assets
+	#		cost = 3
+	#		prerequisite = { focus = CLB_Steal_The_Kiwis }
+	#		prerequisite = { focus = CLB_A_Pagan_Paradise }
+	#			 completion_reward = {
+		#			 911 = { add_core_of = CLB }
+		#			 100 = { add_core_of = CLB }
+		#			 101 = { add_core_of = CLB }
+		#			}
+	#		x = 25
+	#		y = 8
+	#
+	#	}
+#####Northern Europa
+######
+
+focus = {
+	id = CLB_Seize_Pacific_Assets
+	icon = GFX_goal_USA_guam_base
+	cost = 3
+	prerequisite = { focus = CLB_FrostBlitz }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Seize_Pacific_Assets"
+		annex_country = { target = HAW transfer_troops = yes }
+		629 = { add_core_of = CLB }
+		630 = { add_core_of = CLB }
+		631 = { add_core_of = CLB }
+		632 = { add_core_of = CLB }
+		727 = { add_core_of = CLB }
+		642 = { add_core_of = CLB }
+	}
+	x = 23
+	y = 6
+
+}
+
+
+focus = {
+	id = CLB_Retake_The_Traitors
+	icon = GFX_goal_CLB_Retake_The_traitors
+	cost = 3
+	will_lead_to_war_with = PHI
+	prerequisite = { focus = CLB_Seize_Pacific_Assets }
+	bypass = {
+		PHI = {
+			OR = {
+				has_war_with = CLB
+				is_in_faction_with = CLB
+				is_puppet_of = CLB
+				exists = no
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Retake_The_Traitors"
+		declare_war_on = {
+			target = PHI
+			type = annex_everything
+		}
+		add_stability = 0.05
+	}
+	x = 22
+	y = 7
+
+}
+focus = {
+	id = CLB_Steal_The_Kiwis
+	icon = GFX_goal_VIN_increase_pacification_efforts
+	cost = 3
+	prerequisite = { focus = CLB_Seize_Pacific_Assets }
+	bypass = {
+		NZL = {
+			OR = {
+				is_in_faction_with = CLB
+				is_puppet_of = CLB
+				exists = no
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Steal_The_Kiwis"
+		NZL = { country_event = afathreat.9 }
+
+	}
+	x = 24
+	y = 7
+
+}
+focus = {
+	id = CLB_Brazilian_Intervention
+	icon = GFX_goal_CLB_Brazilian_Intervention
+	cost = 5
+	will_lead_to_war_with = BRA
+	prerequisite = { focus = CLB_Demand_All_American_Colonies }
+	prerequisite = { focus = CLB_A_Pagan_Paradise }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Brazilian_Intervention"
+		create_wargoal = {
+			type = annex_everything
+			target = BRA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = UBR
+		}
+		add_stability = 0.05
+	}
+	x = 27
+	y = 8
+
+}
+#		    focus = {
+	#		id = CLB_Fold_In_On_Latin_America
+	#		icon = GFX_goal_CLB_Fold_In_On_Latin_America
+	#		cost = 5
+	#		prerequisite = {
+		#			focus = CLB_A_Trade_Offer_For_Cruzoob
+		#		}
+	#
+	#		completion_reward = {
+		#		COL = {
+			#			country_event = afathreat.15
+			#			}
+		#		VEN = {
+			#			country_event = afathreat.15
+			#			}
+		#		ECU = {
+			#			country_event = afathreat.15
+			#			}
+		#		PRU = {
+			#			country_event = afathreat.15
+			#			}
+		#		BOL = {
+			#			country_event = afathreat.15
+			#			}
+		#		PAR = {
+			#			country_event = afathreat.15
+			#			}
+		#		ARG = {
+			#			country_event = afathreat.15
+			#			}
+		#		URG = {
+			#			country_event = afathreat.15
+			#			}
+		#		CHL = {
+			#			country_event = afathreat.15
+			#			}
+		#		GUA = {
+			#			country_event = afathreat.15
+			#			}
+		#		HON = {
+			#			country_event = afathreat.15
+			#			}
+		#		ELS = {
+			#			country_event = afathreat.15
+			#			}
+		#		NIC = {
+			#			country_event = afathreat.15
+			#			}
+		#		COS = {
+			#			country_event = afathreat.15
+			#			}
+		#		PAN = {
+			#			country_event = afathreat.15
+			#			}
+		#        add_stability = 0.05
+		#    }
+	#	    x = 24
+	#		y = 7
+	#
+	#}
+
+#		    focus = {
+	#		id = CLB_Reclaim_The_Lost_Hoffs
+	#		icon = GFX_goal_CLB_Reclaim_The_Lost_Hoffs
+	#		cost = 5
+	#		prerequisite = { focus = CLB_Anti_Marxist_Crusade }
+	#
+	#
+	#		completion_reward = {
+		#				CLB = {
+			#			country_event = afadec.3
+			#			}
+		#        add_stability = 0.40
+		#    }
+	#	    x = 25
+	#		y = 10
+	#
+	#}
+#####StolenArmyTreeFromGermanyBasicallyItsAGoodTreeForArmy
+focus = {
+	id = CLB_Lessons_From_The_Mexican_War
+	icon = GFX_goal_GER_army
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Lessons_From_The_Mexican_War"
+		army_experience = 50
+	}
+	x = 34
+	y = 12
+}
+focus = {
+	id = CLB_Lives_Have_Value
+	icon = GFX_goal_generic_army_superior_firepower
+	cost = 5
+	prerequisite = {
+		focus = CLB_Lessons_From_The_Mexican_War
+	}
+	mutually_exclusive = { focus = CLB_Long_Term_Initiatives focus = CLB_FrostBlitz_Doctrine }
+	available = {
+		OR = {
+			NOT = {
+				has_tech = mobile_warfare
+				has_tech = trench_warfare
+				has_tech = mass_assault
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Lives_Have_Value"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.75
+			uses = 2
+			category = cat_superior_firepower
+		}
+	}
+	x = 32
+	y = 13
+}
+focus = {
+	id = CLB_Modernize_Our_Equipment
+	icon = GFX_goal_generic_military_equipment
+	cost = 5
+	prerequisite = { focus = CLB_Lives_Have_Value }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Modernize_Our_Equipment"
+		add_ideas = GER_standardize_equipment
+	}
+	x = 32
+	y = 14
+}
+focus = {
+	id = CLB_Doubletime_On_ISGs
+	icon = GFX_goal_generic_design_equipment_standards
+	cost = 5
+	prerequisite = { focus = CLB_Modernize_Our_Equipment }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Doubletime_On_ISGs"
+		add_tech_bonus = {
+			name = infantry_bonus
+			bonus = 0.75
+			uses = 3
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+	x = 32
+	y = 15
+}
+focus = {
+	id = CLB_Long_Term_Initiatives
+	icon = GFX_goal_generic_army_grand_battleplan
+	cost = 5
+	prerequisite = { focus = CLB_Lessons_From_The_Mexican_War }
+	mutually_exclusive = { focus = CLB_Lives_Have_Value focus = CLB_FrostBlitz_Doctrine }
+	available = {
+		OR = {
+			NOT = {
+				has_tech = mobile_warfare
+				has_tech = superior_firepower
+				has_tech = mass_assault
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Long_Term_Initiatives"
+		add_doctrine_cost_reduction = {
+			name = doctrine_bonus
+			cost_reduction = 0.75
+			uses = 2
+			category = cat_grand_battle_plan
+		}
+	}
+	x = 34
+	y = 13
+}
+focus = {
+	id = CLB_Decentralize_The_Command_Structure
+	icon = GFX_goal_generic_army_high_command
+	cost = 5
+	prerequisite = { focus = CLB_Long_Term_Initiatives }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Decentralize_The_Command_Structure"
+		add_ideas = GER_command_structure
+	}
+	x = 34
+	y = 14
+}
+focus = {
+	id = CLB_The_Grand_Plan
+	icon = GFX_goal_generic_position_armies
+	cost = 5
+	prerequisite = { focus = CLB_Decentralize_The_Command_Structure }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Grand_Plan"
+		add_ideas = GER_strategic_planning_school
+	}
+	x = 34
+	y = 15
+}
+focus = {
+	id = CLB_FrostBlitz_Doctrine
+	icon = GFX_goal_generic_army_mobile_warfare
+	cost = 5
+	prerequisite = { focus = CLB_Lessons_From_The_Mexican_War  }
+	mutually_exclusive = { focus = CLB_Lives_Have_Value focus = CLB_Long_Term_Initiatives }
+	available = {
+		OR = {
+			NOT = {
+				has_tech = trench_warfare
+				has_tech = superior_firepower
+				has_tech = mass_assault
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_FrostBlitz_Doctrine"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.75
+			uses = 2
+			category = cat_mobile_warfare
+		}
+	}
+	x = 36
+	y = 13
+}
+focus = {
+	id = CLB_Wave_of_Steel
+	icon = GFX_goal_generic_army_tanks
+	cost = 5
+	prerequisite = { focus = CLB_FrostBlitz_Doctrine }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Wave_of_Steel"
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.75
+			uses = 2
+			category = armor
+		}
+	}
+	x = 36
+	y = 14
+}
+focus = {
+	id = CLB_Exploit_The_Breakthroughs
+	icon = GFX_goal_generic_army_tanks2
+	cost = 5
+	prerequisite = { focus = CLB_Wave_of_Steel }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Exploit_The_Breakthroughs"
+		add_ideas = GER_blitzkrieg
+	}
+
+	x = 36
+	y = 15
+}
+focus = {
+	id = CLB_Bring_Up_The_Reserves
+	icon = GFX_goal_conscription
+	cost = 5
+	prerequisite = {
+		focus = CLB_The_Grand_Plan
+		focus = CLB_Doubletime_On_ISGs
+		focus = CLB_Exploit_The_Breakthroughs
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Bring_Up_The_Reserves"
+		add_ideas = extensive_conscription
+	}
+	bypass = {
+		OR = {
+			has_idea = extensive_conscription
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		}
+	}
+	x = 33
+	y = 16
+}
+focus = {
+	id = CLB_Dominoes_of_War
+	icon = GFX_goal_generic_cash_stimulus_plan
+	cost = 5
+	prerequisite = {
+		focus = CLB_The_Grand_Plan
+		focus = CLB_Doubletime_On_ISGs
+		focus = CLB_Exploit_The_Breakthroughs
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Dominoes_of_War"
+		add_ideas = war_economy
+	}
+	bypass = {
+		OR = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+		}
+	}
+	x = 35
+	y = 16
+}
+focus = {
+	id = CLB_A_New_FolkWave
+	icon = GFX_goal_generic_barricades
+	cost = 5
+	prerequisite = {
+		focus = CLB_Dominoes_of_War
+		focus = CLB_Bring_Up_The_Reserves
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_New_FolkWave"
+		add_ideas = GER_new_wehrmacht
+	}
+
+	x = 34
+	y = 17
+}
+focus = {
+	id = CLB_Panzercops
+	icon = GFX_goal_CLB_Panzercops
+	cost = 5
+	prerequisite = { focus = CLB_A_New_FolkWave }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Panzercops"
+		add_ideas = CLB_Kerberos
+		add_political_power = -50
+		add_stability = 0.05
+	}
+
+	x = 34
+	y = 18
+}
+###################################AIRFORCE
+focus = {
+	id = CLB_Seperate_The_Airforce
+	icon = GFX_goal_generic_airports
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Seperate_The_Airforce"
+		add_ideas = FRA_full_independance
+		air_experience = 50
+	}
+	x = 25
+	y = 12
+}
+focus = {
+	id = CLB_Towers_of_Flak
+	icon = GFX_goal_nested_fortifications
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Towers_of_Flak"
+		add_ideas = GER_air_defense
+	}
+	x = 25
+	y = 14
+}
+focus = {
+	id = CLB_Dominate_The_Skies
+	icon = GFX_goal_generic_air_fighter
+	cost = 5
+	prerequisite = {
+		focus = CLB_Seperate_The_Airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Dominate_The_Skies"
+		air_experience = 25
+		if = {
+			limit = { has_dlc_bba = yes }
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1
+				variant_name = "Bf 109 D"
+				amount = 250
+			}
+			else = {
+				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 300 }
+			}
+		}
+	}
+	x = 24
+	y = 13
+}
+focus = {
+	id = CLB_A_Modern_Strike_Force
+	icon = GFX_goal_generic_air_fighter2_new
+	cost = 5
+	prerequisite = { focus = CLB_Dominate_The_Skies }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Modern_Strike_Force"
+		air_experience = 10
+		add_tech_bonus = {
+			name = air_fighter_bonus
+			bonus = 0.5
+			uses = 2
+			technology = fighter2
+			technology = fighter3
+			technology = CAS2
+			technology = CAS3
+		}
+	}
+	x = 23
+	y = 14
+}
+focus = {
+	id = CLB_Bait_and_Hook
+	icon = GFX_focus_generic_air_defense
+	cost = 5
+	prerequisite = {
+		focus = CLB_A_Modern_Strike_Force
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Bait_and_Hook"
+		air_experience = 10
+		add_ideas = GER_rule_the_skies
+	}
+	x = 23
+	y = 15
+}
+focus = {
+	id = CLB_Guardian_Angels
+	icon = GFX_goal_generic_air_bomber
+	cost = 5
+	prerequisite = {
+		focus = CLB_Seperate_The_Airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Guardian_Angels"
+		air_experience = 25
+		if = {
+			limit = { has_dlc_bba = yes }
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_1
+				variant_name = "He 111"
+				amount = 300
+			}
+			else = {
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 300 }
+			}
+		}
+
+
+	}
+	x = 26
+	y = 13
+}
+focus = {
+	id = CLB_A_Modern_Bomber
+	icon = GFX_goal_generic_air_naval_bomber2_new
+	cost = 5
+	prerequisite = {
+		focus = CLB_Guardian_Angels
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Modern_Bomber"
+		air_experience = 10
+		add_tech_bonus = {
+			name = air_fighter_bonus
+			bonus = 0.5
+			uses = 2
+			technology = tactical_bomber2
+			technology = tactical_bomber3
+			technology = strategic_bomber2
+			technology = strategic_bomber3
+		}
+
+	}
+	x = 27
+	y = 14
+}
+focus = {
+	id = CLB_Bombs_To_Ashes
+	icon = GFX_goal_GER_airforce
+	cost = 5
+	prerequisite = {
+		focus = CLB_A_Modern_Bomber
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Bombs_To_Ashes"
+		add_ideas = GER_rain_of_fire
+		air_experience = 10
+	}
+	x = 27
+	y = 15
+
+}
+
+##################NAVY########################
+focus = {
+	id = CLB_The_Brewing_Storm
+	icon = GFX_goal_generic_navy_battleship3
+	cost = 5
+	available = {
+		OR = {
+			controls_state = 360
+			controls_state = 361
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Brewing_Storm"
+		navy_experience = 250
+	}
+	x = 43
+	y = 12
+}
+focus = {
+	id = CLB_Big_Gun_Diplomacy
+	icon = GFX_GEA_status_of_admirality
+	cost = 5
+
+	prerequisite = {
+		focus = CLB_The_Brewing_Storm
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Big_Gun_Diplomacy"
+		add_ideas = FRA_heavy_ships
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = -2
+	y = 1
+}
+focus = {
+	id = CLB_Airstrips_of_Pykrete
+	icon = GFX_goal_generic_occupy_states_coastal
+	cost = 5
+	prerequisite = { focus = CLB_Big_Gun_Diplomacy }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Airstrips_of_Pykrete"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cv_tech
+		}
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = -1
+	y = 2
+}
+focus = {
+	id = CLB_Mobile_Airstrips
+	icon = GFX_goal_generic_navy_carrier
+	cost = 5
+	prerequisite = { focus = CLB_Airstrips_of_Pykrete }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Mobile_Airstrips"
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cv_tech
+		}
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = -1
+	y = 3
+}
+focus = {
+	id = CLB_The_American_Bismarks
+	icon = GFX_goal_generic_navy_battleship
+	cost = 5
+	prerequisite = {focus = CLB_Big_Gun_Diplomacy }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_The_American_Bismarks"
+		add_ideas = FRA_BB_rebuild
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = -3
+	y = 2
+}
+focus = {
+	id = CLB_The_Titanic_of_Battleships
+	icon = GFX_goal_generic_naval_cruiser2
+	cost = 5
+
+	prerequisite = { focus = CLB_The_American_Bismarks }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Titanic_of_Battleships"
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 1
+			category = bb_tech
+		}
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = -3
+	y = 3
+}
+focus = {
+	id = CLB_A_Navy_To_Be_Feared
+	icon = GFX_goal_generic_coastal_navy
+	cost = 5
+
+	prerequisite = { focus = CLB_Mobile_Airstrips }
+	prerequisite = { focus = CLB_The_Titanic_of_Battleships }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_A_Navy_To_Be_Feared"
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_fleet_in_being
+			add_ideas = USA_the_waves_idea
+		}
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = -2
+	y = 4
+}
+############Right path homie
+focus = {
+	id = CLB_From_The_Depths
+	icon = GFX_goal_generic_navy_cruiser
+	cost = 5
+
+	prerequisite = {
+		focus = CLB_The_Brewing_Storm
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_From_The_Depths"
+		add_ideas = FRA_we_alone
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = 2
+	y = 1
+}
+focus = {
+	id = CLB_Packs_of_Hounds
+	icon = GFX_goal_generic_sea_focused_navy2
+	cost = 5
+
+	prerequisite = {
+		focus = CLB_From_The_Depths
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Packs_of_Hounds"
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = ss_tech
+		}
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = 1
+	y = 2
+}
+########Imagine self inserting ur politics into a game about larping that would be a very sad person especially if its a knockoff of another thing
+focus = {
+	id = CLB_Tear_Them_To_Shreds
+	icon = GFX_goal_generic_wolf_pack
+	cost = 5
+
+	prerequisite = { focus = CLB_Packs_of_Hounds }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Tear_Them_To_Shreds"
+		add_ideas = FRA_armada
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = 1
+	y = 3
+}
+focus = {
+	id = CLB_Anti_Submarine_Defenses
+	icon = GFX_goal_generic_navy_battleship3alt
+	cost = 5
+	prerequisite = { focus = CLB_From_The_Depths }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Anti_Submarine_Defenses"
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = dd_tech
+		}
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = 3
+	y = 2
+}
+focus = {
+	id = CLB_A_Naval_Wall
+	icon = GFX_goal_generic_sea_focused_navy
+	cost = 5
+
+	prerequisite = { focus = CLB_Anti_Submarine_Defenses }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_Anti_Submarine_Defenses"
+		add_ideas = FRA_fast_destroyers
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = 3
+	y = 3
+}
+focus = {
+	id = CLB_The_Zimmerman_Strategy
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	cost = 5
+
+	prerequisite = {
+		focus = CLB_A_Naval_Wall
+	}
+	prerequisite = {
+		focus = CLB_Tear_Them_To_Shreds
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLB_The_Zimmerman_Strategy"
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_trade_interdiction
+			add_ideas = USA_maritime_industry_idea
+		}
+	}
+	relative_position_id = CLB_The_Brewing_Storm
+	x = 2
+	y = 4
+}
+}

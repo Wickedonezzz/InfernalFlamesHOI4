@@ -1,0 +1,42 @@
+division_template = {
+	name = "Operation Torch"
+	division_names_group = USA_INF_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+}
+
+units = {
+    division = {
+		name = "PPR"
+		location = 10875
+		division_template = "Operation Torch"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "WDF"
+		location = 8038
+		division_template = "Operation Torch"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "SAW"
+		location = 5012
+		division_template = "Operation Torch"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

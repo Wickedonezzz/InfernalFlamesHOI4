@@ -1,0 +1,882 @@
+add_namespace = afadec
+add_namespace = afathreat
+add_namespace = afathreatcos
+add_namespace = afanews
+
+country_event = {
+  id = afadec.1
+  picture = "GFX_report_event_election_vote"
+  title = afadec.1.t 
+  desc = afadec.1.d
+  is_triggered_only = yes
+
+  option = { #Unity
+    name = afadec.1.a
+    set_politics = {
+    ruling_party = social_conservative
+    elections_allowed = yes
+    last_election = "1935.12.17"
+    election_frequency = 48 #in months
+    long_name = "Folkisch Republikan Partei" 
+    name = "FKR"
+	}
+	set_popularities = {
+    social_conservative = 96
+    collectivist = 0
+    national_populist = 0
+    valkist = 4
+  }
+ }
+  option = { #
+    name = afadec.1.b 
+    set_politics = {
+    ruling_party = authoritarian_democrat
+    elections_allowed = no
+    last_election = "1935.12.17"
+    election_frequency = 48 #in months
+    }
+	set_popularities = {
+    social_conservative = 6
+    collectivist = 4
+    national_populist = 2
+    authoritarian_democrat = 90
+}
+  }
+  }
+#russoa joins ndc
+country_event = { 
+    id = afadec.2
+    immediate = {log = "[GetDateText]: [Root.GetName]: event afadec.2"}
+    title = afadec.2.t
+    desc = afadec.2.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = afadec.2.a 
+        ai_chance = { factor = 100 }
+		CLB = {
+            add_to_faction = RUS
+			}
+        }
+    option = {
+        name = afadec.2.b 
+        ai_chance = { factor = 0 }
+    }
+}
+country_event = { # Punished Matsodtter ##unused trash!1!
+	id = afadec.4 
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.4.a"}
+	title = "The Return of Matsdotter"
+	desc = afadec.4.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Close call
+	name = "Thank God Hes Back."
+	ai_chance = { factor = 100 }
+
+
+	}
+}
+country_event = { # Punished Matsodtter ##unused trash!1!
+	id = afadec.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.5.a"}
+	title = "The Sun Rises Once More."
+	desc = afadec.5.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Sunrise
+	name = "The Day Will Never End."
+	ai_chance = { factor = 100 }
+
+
+	}
+}
+#######Why dont you hang up that computer call and kiss me? im feeling romantical
+country_event = { # move capital
+	id = afadec.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.8."}
+	title = afadec.8.t 
+	desc = afadec.8.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # keep
+	name = afadec.8.a
+	ai_chance = { factor = 10 }
+	}
+	option = { # washington
+	name = afadec.8.b
+	ai_chance = { factor = 60 }
+	set_capital = {state = 361}
+	}
+	option = { # minniesota
+	name = afadec.8.c
+	ai_chance = { factor = 20 }
+	set_capital = {state = 391}
+	}
+}
+###########Threat
+country_event = { # Fate of NEW ENGLAND
+	id = afathreat.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.1."}
+	title = afathreat.1.t 
+	desc = afathreat.1.d
+	picture = GFX_report_event_communists_cheer
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # rip annexed
+	name = afathreat.1.a
+	ai_chance = { factor = 65 }
+		CLB = { country_event = afathreatcos.1
+		annex_country = { target = NEE transfer_troops = yes }
+		}
+	}
+	option = { # War
+	name = afathreat.1.b
+		ai_chance = { factor = 35 }
+		add_political_power = 100
+		CLB = {
+			country_event = afathreat.2
+		}
+	}
+}
+country_event = { # Fate of NEW ENGLAND
+	id = afathreatcos.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreatcos.1"}
+	title = afathreatcos.1.t
+	desc = afathreatcos.1.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rip annexed
+	name = "They Came To Their Senses"
+	ai_chance = { factor = 100 }
+
+
+	}
+}
+
+country_event = {
+	id = afathreat.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.2"}
+	title = afathreat.2.t
+	desc = afathreat.2.d
+	picture = GFX_report_event_NFA_event_NFAGenericArmy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.2.a 
+		declare_war_on = {
+			target = NEE
+			type = annex_everything
+		}
+	}
+	}
+country_event = { # Kill the mapel candardinasisdnia
+	id = afathreat.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.3"}
+	title = afathreat.3.t 
+	desc = afathreat.3.d
+	picture = GFX_report_event_chinese_army_training
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rightful land ig
+	name = afathreat.3.a 
+	ai_chance = { factor = 20 }
+		CLB = {
+			transfer_state = 463
+                transfer_state = 471
+                transfer_state = 473
+                transfer_state = 386
+                transfer_state = 740
+                transfer_state = 739
+                transfer_state = 740
+				transfer_state = 740
+				transfer_state = 385
+		}
+
+		CLB = {
+			country_event = afathreat.5
+		}
+}
+	option = { # War
+	name = afathreat.3.b 
+		ai_chance = { factor = 80 }
+		add_political_power = 50
+		CLB = {
+			country_event = afathreat.4
+		}
+	}
+}
+
+country_event = { #candada say no
+	id = afathreat.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.4"}
+	title = afathreat.4.t
+	desc = afathreat.4.d
+	picture = GFX_report_event_chinese_army_training
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.4.a
+		declare_war_on = {
+			target = CAN
+			type = annex_everything
+		}
+	}
+}
+country_event = { #candada fell for it
+	id = afathreat.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.4"}
+	title = afathreat.5.t
+	desc = afathreat.5.d
+	picture = GFX_report_event_chinese_army_training
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.5.a
+		declare_war_on = {
+			target = CAN
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { # Trade offer for cruzooby
+	id = afathreat.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.6"}
+	title = afathreat.6.t 
+	desc = afathreat.6.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # puppet
+	name = afathreat.6.a 
+	ai_chance = { factor = 100 }
+		CLB = {
+			puppet = CRU
+		}
+		#CLB = {
+		#country_event = afathreatcos.2
+		#}
+		CRU = {
+		add_ideas = { CLB_Stabalized_Economy }
+			annex_country = { target = MEX transfer_troops = yes }
+		}
+
+	}
+
+	option = { # cruzooby says no
+	name = afathreat.6.b 
+		ai_chance = { factor = 0 }
+		add_political_power = 100
+		CLB = {
+			country_event = afathreat.7
+		}
+	}
+}
+
+country_event = {
+	id = afathreat.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.7"}
+	title = afathreat.7.t
+	desc = afathreat.7.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.7.a 
+		declare_war_on = {
+			target = CRU
+			type = annex_everything
+		}
+	}
+}
+country_event = { # Fate of cruzoob acc
+	id = afathreatcos.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreatcos.6"}
+	title = afathreatcos.6.t 
+	desc = afathreatcos.6.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rip annexed
+	name = afathreatcos.6.a
+	ai_chance = { factor = 100 }
+	}
+}
+country_event = { #
+	id = afathreat.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.8"}
+	title = "America Demands We Flank South."
+	desc = afathreat.8.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #unused
+	name = "It Was Part of The Offer After All."
+	CRU = {
+		declare_war_on = {
+			target = GUA
+			type = annex_everything
+		}
+				declare_war_on = {
+			target = HON
+			type = annex_everything
+		}
+				declare_war_on = {
+			target = ELS
+			type = annex_everything
+		}
+				declare_war_on = {
+			target = NIC
+			type = annex_everything
+		}
+				declare_war_on = {
+			target = COS
+			type = annex_everything
+		}
+				declare_war_on = {
+			target = PAN
+			type = annex_everything
+		}
+	}
+}
+}
+country_event = { # Fate of dumb new zeland why tf is it called new zeland did they just want a country with a z in its name actual idiots i stg
+	id = afathreat.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.9"}
+	title = afathreat.9.t 
+	desc = afathreat.9.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # puppet
+	name = afathreat.9.a 
+	ai_chance = { factor = 60 }
+		CLB = {
+			country_event = afathreatcos.9
+			puppet = NZL
+		}
+	}
+
+	option = { # Fuck off americas dumb america
+	name = afathreat.9.b 
+		ai_chance = { factor = 40 }
+		add_political_power = 100
+		CLB = {
+			country_event = afathreat.10
+		}
+	}
+}
+
+country_event = { #####FOR NEW ZEALAND
+	id = afathreat.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.10"}
+	title = afathreat.10.t 
+	desc = afathreat.10.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.10.a 
+		declare_war_on = {
+			target = NZL
+			type = annex_everything
+		}
+	}
+}
+country_event = { # Fate of nz
+	id = afathreatcos.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreatcos.9"}
+	title = afathreatcos.9.t 
+	desc = afathreatcos.9.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rip annexed
+	name = "A Wise Choice."
+	ai_chance = { factor = 100 }
+	}
+}
+country_event = { # Fate of aus
+	id = afathreat.11#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.11"}
+	title = "America Wants Our Islands"
+	desc = afathreat.11.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Steal aussie land god bless the afa
+	name = "Only Canibals Live On Them, Have fun"
+	ai_chance = { factor = 60 }
+		CLB = {
+		country_event = afathreat.10
+			transfer_state = 669
+			transfer_state = 846
+			transfer_state = 856
+			transfer_state = 845
+			transfer_state = 523
+            transfer_state = 737
+			transfer_state = 634
+			transfer_state = 734
+			transfer_state = 725
+		}
+	}
+
+	option = { # Yeah We Can Totally Beat America
+	name = "No Way In Hell Yanks!"
+		ai_chance = { factor = 40 }
+		add_political_power = 100
+		CLB = {
+			country_event = afathreat.12
+		}
+	}
+}
+
+country_event = {
+	id = afathreat.12#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.12"}
+	title = "The Aussies Refuse"
+	desc = afathreat.12.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = "Those British Hounds..."
+		declare_war_on = {
+			target = AST
+			type = annex_everything
+		}
+	}
+}
+country_event = { # Fate of AUS
+	id = afathreatcos.11#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreatcos.11"}
+	title = "The Aussies Give Up Their Islands."
+	desc = afathreatcos.11.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rip annexed
+	name = "They Know Their Place."
+	ai_chance = { factor = 100 }
+	}
+}
+country_event = { # Fate of taiwaneeseeas
+	id = afathreat.13#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.13"}
+	title = "America Wants Our Islands"
+	desc = afathreat.13.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # japanlandslmao
+	name = "Its Not Worth A War"
+	ai_chance = { factor = 30 }
+		CLB = {
+		    country_event = afathreatcos.13
+			transfer_state = 524
+			transfer_state = 633
+		}
+	}
+
+	option = { # Yeah We Can Totally Beat America
+	name = "No Way In Hell Yanks!"
+		ai_chance = { factor = 70 }
+		add_political_power = 100
+		CLB = {
+			country_event = afathreat.14
+		}
+	}
+}
+
+country_event = {
+	id = afathreat.14#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.14"}
+	title = "The Japs Refuse Our Fair Offers"
+	desc = afathreat.14.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = "They Don't Know Whats Coming."
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+	}
+}
+country_event = { # Fate of jap
+	id = afathreatcos.13#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreatcos.13"}
+	title = "The Japs Give Up Their Islands."
+	desc = afathreatcos.13.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rip annexed
+	name = "This Is Just The Begining."
+	ai_chance = { factor = 100 }
+	}
+}
+country_event = { # Fate south america
+	id = afathreat.15#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.15"}
+	title = "America Demands Our Annexation by Cruzoob"
+	desc = afathreat.15.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = { # imediate annex
+	name = "Its Not Worth A War"
+	ai_chance = { factor = 30 }
+		CRU = {	
+		annex_country = { target = Root transfer_troops = yes }
+		}
+	}
+	option = { # time to die war
+	name = "A Clear Bluff"
+	ai_chance = { factor = 70 }
+	CRU = {
+			declare_war_on = {
+             target = Root
+             type = annex_everything
+			 }
+		}
+	}
+}
+country_event = { # Fate brazil
+	id = afathreat.16#UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.16"}
+	title = "America Demands Our Liberation"
+	desc = afathreat.16.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes		
+	option = { # puppet
+	name = "It May Save The Economy.."
+	ai_chance = { factor = 40 }
+		CLB = {
+		country_event = afathreatcos.16
+		add_ideas = { CLB_Stabalized_Economy }
+			puppet = BRA
+		}
+	}
+		option = {
+	name = "We Will Never Fold!"
+	ai_chance = { factor = 60 }
+		CLB = {
+			declare_war_on = {
+             target = BRA
+             type = annex_everything
+			 }
+		}
+    }
+}
+country_event = { # Fate of bra
+	id = afathreatcos.16 #UNUSED
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreatcos.16"}
+	title = "Brazil Is Free At Last."
+	desc = afathreatcos.16.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rip annexed
+	name = "God Bless America."
+	ai_chance = { factor = 100 }
+	}
+}
+######America threats
+country_event = { # Fate of texas reigon or somethin
+	id = afathreat.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.17"}
+	title = afathreat.17.t 
+	desc = afathreat.17.d
+	picture = GFX_report_event_ast_navy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # America just ignores it
+	name = afathreat.17.a 
+	ai_chance = { factor = 50 }
+		CLB = {
+			transfer_state = 372
+			transfer_state = 371
+			country_event = afathreat.19
+		}
+	}
+
+	option = { # Yeah We Can Win LMao
+	name = afathreat.17.b 
+		ai_chance = { factor = 50 }
+		add_political_power = 100
+		CLB = {
+			country_event = afathreat.18
+		}
+	}
+}
+country_event = {
+	id = afathreat.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.18"}
+	title = afathreat.18.t 
+	desc = afathreat.18.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.18.a
+			USA = {
+					declare_war_on = {
+			target = CLB
+			type = annex_everything
+		}
+	  }
+
+	}
+}
+country_event = {
+	id = afathreat.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.19"}
+	title = afathreat.19.t 
+	desc = afathreat.19.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.19.a 
+	}
+}
+##########Caribean n shit 
+country_event = { # Fate France
+	id = afathreat.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.20"}
+	title = afathreat.20.t 
+	desc = afathreat.20.d
+	picture = GFX_report_event_GER_wehrmacht_poster
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # France says no
+	name = afathreat.20.a 
+	ai_chance = { factor = 50 }
+		CLB = {
+		country_event = afathreatcos.20
+			transfer_state = 694
+			transfer_state = 969
+			transfer_state = 310
+			transfer_state = 730
+		}
+	}
+
+	option = { # Yeah We Can Win LMao
+	name = afathreat.20.b 
+		ai_chance = { factor = 50 }
+		add_political_power = 100
+		CLB = {
+			country_event = afathreat.21
+		}
+	}
+}
+country_event = {
+	id = afathreat.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.21"}
+	title = afathreat.21.t 
+	desc = afathreat.21.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.21.a 
+			CLB = {
+					declare_war_on = {
+			target = FRA
+			type = annex_everything
+		}
+	  }
+
+	}
+}
+country_event = { # Fate of AUS UNUSED
+	id = afathreatcos.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreatcos.20"}
+	title = "The French Give Up Their Colonies."
+	desc = afathreatcos.20.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # rip annexed
+	name = "They Know Their Place."
+	ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = afathreat.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.22"}
+	title = afathreat.22.t 
+	desc = afathreat.22.d
+	picture = GFX_report_event_ast_army
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.22.a 
+			CLB = {
+				set_province_controller = 1823
+				set_province_controller = 4728
+				set_province_controller = 1863
+			}
+			load_oob = CLB_ArticInvasion
+		}
+	  }
+country_event = {
+	id = afathreat.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.23"}
+	title = afathreat.23.t 
+	desc = afathreat.23.d
+	picture = GFX_report_event_ast_army
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.23.a 
+			CLB = {
+				set_province_controller = 5012
+				set_province_controller = 8038
+				set_province_controller = 10875
+			}
+			load_oob = CLB_OperationTorch
+		}
+	  }
+country_event = {
+	id = afathreat.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event afathreat.24"}
+	title = afathreat.24.t 
+	desc = afathreat.24.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = afathreat.24.a
+			CLB = {
+				set_province_controller = 3379
+				set_province_controller = 3329
+				set_province_controller = 276
+			}
+			load_oob = CLB_RunningPitbull
+		}
+	  }
+news_event = { # Nuclear Meltdown
+	id = afanews.1
+	title = "Nuclear Meltdown In California"
+	desc = afanews.1.d
+	picture = GFX_news_event_CLB_Nuclear_Meltdown
+	is_triggered_only = yes
+
+	option = { 
+		name = "A National Tragedy...."
+	}
+}
+
+
+
+
+
+

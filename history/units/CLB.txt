@@ -1,0 +1,244 @@
+division_template = {
+	name = "Christian Legion Division"
+	division_names_group = USA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
+	division_names_group = USA_INF_01
+	regiments = {						
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+    division = {
+		name = "1st Christian Legion Division"
+		location = 4569
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd Christian Legion Division"
+		location = 10717
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Christian Legion Division"
+		location = 4723
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4th Christian Legion Division"
+		location = 1827
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5th Christian Legion Division"
+		location = 1827
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6th Christian Legion Division"
+		location = 1352
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "9th Christian Legion Division"
+		location = 12586
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7th Christian Legion Division"
+		location = 4860
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "8th Christian Legion Division"
+		location = 4860
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "9th Christian Legion Division"
+		location = 10685
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10th Christian Legion Division"
+		location = 10685
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "11th Christian Legion Division"
+		location = 10595
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Minnesotan's 1st Milita"
+		location = 1867
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Minnesotan's 2nd Milita "
+		location = 4664
+		division_template = "Christian Legion Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "27th Asatru Regiment"
+		location = 1770
+		division_template = "Christian Legion Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "American Legion of Veterans"
+		location = 1770
+		division_template = "Christian Legion Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Matsdotter's Personal Gaurd"
+		location = 4807
+		division_template = "National Guard Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Great Lakes Coast Guard N"
+		location = 6767
+		division_template = "National Guard Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Great Lakes Coast Guard NE"
+		location = 6767
+		division_template = "National Guard Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+  division = {
+		name = "Dakotan Legion of Preservation"
+		location = 4759
+		division_template = "National Guard Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+}
+
+instant_effect = {
+  	if = {
+		limit = { has_dlc = "No Step Back" }
+		create_equipment_variant = {
+			name = "M1 Combat Car"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+				tank_nsb_engine_upgrade = 5
+			}
+			icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+		}
+		create_equipment_variant = {
+			name = "M2A2"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_one_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = secondary_turret_hmg
+				special_type_slot_2 = tank_radio_1
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+				tank_nsb_engine_upgrade = 5
+			}
+			icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+		}
+		create_equipment_variant = {
+			name = "T1 Heavy Tank"
+			type = heavy_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_close_support_gun
+				turret_type_slot = tank_medium_two_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = additional_machine_guns
+			}
+			icon = "gfx/interface/technologies/USA_basic_heavy_tank.dds"
+		}
+	}
+    add_equipment_production = {
+        equipment = {
+	    type = infantry_equipment_1
+	    creator = "CLB"
+	}
+	requested_factories = 1
+	progress = 0.19
+	efficiency = 100
+    }
+}

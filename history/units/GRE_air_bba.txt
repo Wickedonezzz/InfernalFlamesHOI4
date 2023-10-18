@@ -1,0 +1,27 @@
+#1045
+#731
+air_wings = {
+	# I will make variants some day...
+	1045 = {
+		small_plane_airframe_1 = {
+			owner = GRE
+			amount = 25
+			creator = ENG
+			version_name = "Gloster Gladiator"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "GRE" 
+			amount = 20
+			creator = "CZE"
+			version_name = "Letov S-16"
+		}
+	}
+	731 = {
+		small_plane_airframe_0 = {
+			owner = "GRE" 
+			amount = 55
+			creator = "ENG"
+			version_name = "Gloster Gladiator" 
+		}
+	}
+}

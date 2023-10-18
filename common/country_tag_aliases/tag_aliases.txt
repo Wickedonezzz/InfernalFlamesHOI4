@@ -1,0 +1,21 @@
+MAN = {
+	original_tag = FNG # TAG REMOVED, IN CASE I MISSED SOMETHING
+}
+BAT = { # LAT, EST, LIT
+	global_event_target = unified_baltic
+}
+CRP = { # ROM, HUN, SLO
+	global_event_target = unified_carpathia
+}
+CAU = { # GEO, GOR, AZR, ARM
+	global_event_target = unified_caucasia
+}
+ARB = {
+	global_event_target = unified_arabia
+}
+CHI = {
+	global_event_target = unified_china
+}
+HYP = { # Hyperborea - Norway, Sweden, Finland, Iceland, Denmark, Greenland
+	global_event_target = unified_hyperborea
+}

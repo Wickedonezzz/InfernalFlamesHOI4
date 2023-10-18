@@ -1,0 +1,23 @@
+KMT_war_decisions = {
+	allowed = {
+		original_tag = KMT
+	}
+}
+KMT_chinese_unification_decisions = {
+    allowed = {
+        original_tag = KMT
+    }
+}
+KMT_zhili_kmt_political_struggle = {
+	visible = {
+		original_tag = KMT
+		ZHI = { exists = no }
+		OR = { 
+			has_country_flag = KMT_kmt_faction_selected
+			has_country_flag = KMT_zhili_faction_selected
+		}
+	}
+	priority = 9999
+	visible_when_empty = yes
+	scripted_gui = five_provinces_decision_gui
+}

@@ -1,0 +1,462 @@
+focus_tree = {
+	id = FX_NewEngland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NEE
+		}
+
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 3000 }
+	focus = {
+		id = NEE_Close_Off_Society
+		icon = GFX_goal_FIN_preparing_economy
+		cost = 7
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Close_Off_Society"
+			add_ideas = closed_economy
+            add_stability = 0.05
+		}
+		x = 7
+		y = 0
+}
+	focus = {
+		id = NEE_Gangster_Police
+		icon = GFX_goal_generic_police_state
+		cost = 7
+		prerequisite = { focus = NEE_Close_Off_Society }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Gangster_Police"
+		add_ideas = NEE_Gangsta_Police
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 2
+		y = 1
+}
+	focus = {
+		id = NEE_Bloody_Murder_Accidents
+		icon = GFX_goal_purge_opposition
+		cost = 7
+		prerequisite = { focus = NEE_Gangster_Police }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Bloody_Murder_Accidents"
+        remove_ideas = NEE_Religious_Counter_Revolution
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 1
+		y = 2
+}
+	focus = {
+		id = NEE_Terrorize_The_People
+		icon = GFX_goal_JAP_peoples_power
+		cost = 7
+		prerequisite = { focus = NEE_Gangster_Police }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Terrorize_The_People"
+		add_ideas = NEE_People_Terror
+			add_political_power = 10
+            add_stability = 0.05
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 3
+		y = 2
+}
+#########Kill whites and old people is what this means
+	focus = {
+		id = NEE_Thin_Skulled
+		icon = GFX_goal_step_on_skull
+		cost = 7
+		prerequisite = { focus = NEE_Gangster_Police }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Terrorize_The_People"
+			add_manpower = -40000
+            add_stability = -0.05
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 2
+		y = 3
+}
+	focus = {
+		id = NEE_Control_The_Airwaves
+		icon = GFX_goal_generic_radar_instillation
+		cost = 7
+		prerequisite = { focus = NEE_Close_Off_Society }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Control_The_Airwaves"
+			add_tech_bonus = { bonus = 0.75 uses = 2 category = radar_tech }
+            add_stability = 0.05
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = -2
+		y = 1
+}
+	focus = {
+		id = NEE_Frankenstein_Controls
+		icon = GFX_goal_economic_control_red
+		cost = 7
+		prerequisite = { focus = NEE_Control_The_Airwaves }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Frankenstein_Controls"
+            add_research_slot = 1
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = -3
+		y = 2
+}
+	focus = {
+		id = NEE_Insanity_Prisions
+		icon = GFX_goal_imprison_opposition
+		cost = 7
+		prerequisite = { focus = NEE_Control_The_Airwaves }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Insanity_Prisions"
+		add_ideas = NEE_Insanity_Prision
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = -1
+		y = 2
+}
+	focus = {
+		id = NEE_Eternal_Doomsday
+		icon = GFX_goal_nuclear
+		cost = 7
+		prerequisite = { focus = NEE_Frankenstein_Controls }
+		prerequisite = { focus = NEE_Insanity_Prisions }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Eternal_Doomsday"
+                add_tech_bonus = {
+                category = nuclear
+                ahead_reduction = 3
+                bonus = 2.0
+                uses = 1
+           }
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = -2
+		y = 3
+}
+	focus = {
+		id = NEE_Synthetic_Skies
+		icon = GFX_goal_air_armada
+		cost = 7
+		prerequisite = { focus = NEE_Thin_Skulled }
+		prerequisite = { focus = NEE_Eternal_Doomsday }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Synthetic_Skies"
+        add_ideas = GER_rain_of_fire
+                add_tech_bonus = {
+                		name = air_fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = fighter2
+				technology = fighter3
+				technology = CAS2
+				technology = CAS3
+			}
+            add_stability = 0.05
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 0
+		y = 4
+}
+	focus = {
+		id = NEE_Atheist_Society
+		icon = GFX_PAP_holy_war
+		cost = 7
+		prerequisite = { focus = NEE_Synthetic_Skies }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Atheist_Society"
+		add_ideas = NEE_God_In_Techno
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 0
+		y = 5
+}
+	focus = {
+		id = NEE_Puppet_The_Government
+		icon = GFX_goal_NFA_end_parliamentarism
+		cost = 7
+		prerequisite = { focus = NEE_Synthetic_Skies }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Atheist_Society"
+		add_ideas = NEE_On_Tight_Strings
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = -2
+		y = 5
+}
+	focus = {
+		id = NEE_Same_Face_Syndrome
+		icon = GFX_goal_skull_treaty2
+		cost = 7
+		prerequisite = { focus = NEE_Synthetic_Skies }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Atheist_Society"
+		add_ideas = NEE_Melting_Pot
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 2
+		y = 5
+}
+	focus = {
+		id = NEE_Only_Hope_For_The_Future
+		icon = GFX_goal_generic_workers_democracy
+		cost = 7
+		prerequisite = { focus = NEE_Puppet_The_Government }
+		prerequisite = { focus = NEE_Atheist_Society }
+		prerequisite = { focus = NEE_Same_Face_Syndrome }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Only_Hope_For_The_Future"
+		add_ideas = tot_economic_mobilisation
+        add_research_slot = 1
+		country_event = needec.1
+		}
+		relative_position_id = NEE_Close_Off_Society
+		x = 0
+		y = 6
+}
+	focus = { ##Attack NAR
+		id = NEE_There_Is_No_Escape
+		icon = GFX_goal_broken_red_star
+		cost = 7
+		available = {
+		OR = {
+		SRA = { exists = yes }
+		has_idea = tot_economic_mobilisation 
+				}
+				}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_There_Is_No_Escape"
+        	 declare_war_on = {
+             target = NAR
+             type = annex_everything
+			 }
+			 hidden_effect = {
+			 394 = { add_core_of = NEE }
+			 395 = { add_core_of = NEE }
+			 396 = { add_core_of = NEE }
+			 393 = { add_core_of = NEE }
+			 261 = { add_core_of = NEE }
+			 369 = { add_core_of = NEE }
+			 843 = { add_core_of = NEE }
+			 360 = { add_core_of = NEE }
+			 362 = { add_core_of = NEE }
+			 359 = { add_core_of = NEE }
+			}
+            add_stability = 0.05
+		}
+		x = 21
+		y = 0
+}
+	focus = { ##Annex SAR
+		id = NEE_Reveal_The_Strings
+		icon = GFX_goal_shadow_government
+		cost = 7
+		prerequisite = { focus = NEE_There_Is_No_Escape }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Only_Hope_For_The_Future"
+         annex_country = { target = SRA transfer_troops = yes }
+            add_stability = 0.05
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = 0
+		y = 1
+}
+	focus = { ##Annex CLB
+		id = NEE_Defy_Their_Gods
+		icon = GFX_goal_CRU_church
+		cost = 7
+		prerequisite = { focus = NEE_Reveal_The_Strings }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Defy_Their_Gods"
+		     declare_war_on = {
+             target = CLB
+             type = annex_everything
+			 }
+		hidden_effect = {
+			 391 = { add_core_of = NEE }
+			 392 = { add_core_of = NEE }
+			 373 = { add_core_of = NEE }
+			 383 = { add_core_of = NEE }
+			 384 = { add_core_of = NEE }
+			 390 = { add_core_of = NEE }
+			 389 = { add_core_of = NEE }
+			 388 = { add_core_of = NEE }
+			 381 = { add_core_of = NEE }
+			 382 = { add_core_of = NEE }
+			 387 = { add_core_of = NEE }
+		}
+            add_stability = 0.05
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = -1
+		y = 2
+}
+	focus = { ##Annex SAR
+		id = NEE_Americas_Nightmare
+		icon = GFX_goal_HOL_night_fighter
+		cost = 7
+		prerequisite = { focus = NEE_Reveal_The_Strings }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Americas_Nightmare"
+		     declare_war_on = {
+             target = USA
+             type = annex_everything
+			 }
+		hidden_effect = {
+			 372 = { add_core_of = NEE }
+			 368 = { add_core_of = NEE }
+			 371 = { add_core_of = NEE }
+			 370 = { add_core_of = NEE }
+			 367 = { add_core_of = NEE }
+			 366 = { add_core_of = NEE }
+			 365 = { add_core_of = NEE }
+			 364 = { add_core_of = NEE }
+			 363 = { add_core_of = NEE }
+			 361 = { add_core_of = NEE }
+			 842 = { add_core_of = NEE }
+			 374 = { add_core_of = NEE }
+			 919 = { add_core_of = NEE }
+			 920 = { add_core_of = NEE }
+			 463 = { add_core_of = NEE }
+			 650 = { add_core_of = NEE }
+             685 = { add_claim_by = NEE }
+             686 = { add_claim_by = NEE }
+			 947 = { add_claim_by = NEE }
+			 862 = { add_claim_by = NEE }
+			 638 = { add_claim_by = NEE }
+		}
+            add_war_support = 0.05
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = 1
+		y = 2
+}
+	focus = { ##Annex SAR
+		id = NEE_One_Way_Trip
+		icon = GFX_goal_revolution_tools
+		cost = 7
+		prerequisite = { focus = NEE_Defy_Their_Gods }
+		prerequisite = { focus = NEE_Americas_Nightmare }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_One_Way_Trip"
+		add_ideas = NEE_Final_Fray
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = 0
+		y = 3
+}
+	focus = { ##
+		id = NEE_Alone_But_Not_Afraid
+		icon = GFX_goal_authority
+		cost = 7
+		prerequisite = { focus = NEE_One_Way_Trip }
+		mutually_exclusive = { focus = NEE_The_World_Wide_Open_Secret }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Alone_But_Not_Afraid"
+		add_ideas = NEE_Never_Scared
+			add_political_power = 10
+            add_war_support = 0.05
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = -1
+		y = 4
+}
+	focus = { ##join Russia
+		id = NEE_The_World_Wide_Open_Secret
+		icon = GFX_goal_Soviet_End
+		cost = 7
+		available = {
+			SOV = {
+				OR = {
+					is_in_faction = yes
+					is_puppet = no
+				}
+			}
+		}
+		prerequisite = { focus = NEE_One_Way_Trip }
+		mutually_exclusive = { focus = NEE_Alone_But_Not_Afraid }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_The_World_Wide_Open_Secret"
+		SOV = { country_event = needec.2 } 
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = 1
+		y = 4
+}
+	focus = { ##mexico
+		id = NEE_Anaconda_Plan
+		icon = GFX_goal_MEX_flag
+		cost = 7
+		prerequisite = { focus = NEE_Alone_But_Not_Afraid focus = NEE_The_World_Wide_Open_Secret }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Anaconda_Plan"
+			 declare_war_on = {
+             target = MEX
+             type = annex_everything
+			 }
+			 add_war_support = 0.25
+			  hidden_effect = {
+			   375 = { add_core_of = NEE }
+			   376 = { add_core_of = NEE }
+			   380 = { add_core_of = NEE }
+			   379 = { add_core_of = NEE }
+			   927 = { add_core_of = NEE }
+			   928 = { add_core_of = NEE }
+			   926 = { add_core_of = NEE }
+               377 = { add_core_of = NEE }
+			   378 = { add_core_of = NEE }
+			   484 = { add_core_of = NEE }
+               921 = { add_core_of = NEE }
+		     }
+	}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = -1
+		y = 5
+}
+	focus = { ##mexico
+		id = NEE_Home_of_The_Revolution
+		icon = GFX_goal_GBR_britannia
+		cost = 7
+		prerequisite = { focus = NEE_Alone_But_Not_Afraid focus = NEE_The_World_Wide_Open_Secret }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_Anaconda_Plan"
+			 declare_war_on = {
+             target = CAN
+             type = annex_everything
+			 }
+			 hidden_effect = {
+			   468 = { add_core_of = NEE }
+			   465 = { add_core_of = NEE }
+			   464 = { add_core_of = NEE }
+			   825 = { add_core_of = NEE }
+			   }
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = 1
+		y = 5
+}
+	focus = { ##mexico
+		id = NEE_A_Corupted_Soul
+		icon = GFX_goal_burning_globe
+		cost = 7
+		prerequisite = { focus = NEE_Anaconda_Plan }
+		prerequisite = { focus = NEE_Home_of_The_Revolution }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEE_A_Corupted_Soul"
+			 declare_war_on = {
+             target = GER
+             type = annex_everything
+			 }
+		}
+		relative_position_id = NEE_There_Is_No_Escape
+		x = 0
+		y = 6
+}
+}

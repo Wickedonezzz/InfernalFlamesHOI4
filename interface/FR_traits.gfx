@@ -1,0 +1,23 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_trait_artillery_officer"
+		texturefile = "gfx/interface/traits/trait_artillery_officer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_artillery_specialist"
+		texturefile = "gfx/interface/traits/trait_artillery_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_artillery_expert"
+		texturefile = "gfx/interface/traits/trait_artillery_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_JAP_samurai_lineage"
+		texturefile = "gfx/interface/traits/personal/trait_samurai_lineage.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_police_officer"
+		texturefile = "gfx/interface/traits/trait_police_officer.dds"
+	}
+}

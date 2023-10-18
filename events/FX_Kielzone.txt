@@ -1,0 +1,734 @@
+add_namespace = shodec
+add_namespace = shofrei
+add_namespace = shonews
+add_namespace = kielhell
+country_event = { # Controlling stockholm syndrome
+	id = shodec.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shodec.1"}
+	title = shodec.1.t
+	desc = shodec.1.d
+	picture = GFX_report_event_GER_wehrmacht_poster
+
+	trigger = {
+		AND = {
+			original_tag = SHO
+			has_war_with = SWE
+			SWE = {
+				NOT = {
+					controls_state = 141
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+	ai_chance = { factor = 0 }
+	name = shodec.1.a
+	SWE = {
+	country_event = { days = 7 id = shodec.2 }
+	}
+		add_political_power = 200
+	}
+	option = {
+	ai_chance = { factor = 100 }
+	name = shodec.1.b
+		add_political_power = 100
+	}
+}
+country_event = { # Sweden peace
+	id = shodec.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shodec.2.a"}
+	title = shodec.2.t
+	desc = shodec.2.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = shodec.2.a
+	SWE = {
+	white_peace = SHO
+	}
+	SHO = { 
+	transfer_state = 139
+	transfer_state = 138
+	transfer_state = 124
+	country_event = { days = 7 id = shodec.3 }
+	}
+	ai_chance = { factor = 80 }
+	
+	}
+	option = { # 
+	name = shodec.2.b
+	country_event = { days = 7 id = shodec.4 }
+	ai_chance = { factor = 20 }
+	
+	}
+
+}
+country_event = { # Sweden peace 2k
+	id = shodec.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shodec.3.a"}
+	title = shodec.3.t
+	desc = shodec.3.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = shodec.3.a
+    ai_chance = { factor = 100 }
+	}
+
+}
+country_event = { # Sweden war decline kiel response
+	id = shodec.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shodec.4.a"}
+	title = shodec.4.t
+	desc = shodec.4.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = shodec.4.a
+    ai_chance = { factor = 100 }
+	}
+
+}
+country_event = { # Controlling Berlin
+	id = shodec.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shodec.5"}
+	title = shodec.5.t
+	desc = shodec.5.d
+	picture = GFX_report_event_SHO_WarTornBerlin
+
+	trigger = {
+		AND = {
+			original_tag = SHO
+			has_war_with = GER
+			SHO = {
+					controls_state = 64
+				}
+			}
+		}
+
+	fire_only_once = yes
+
+	option = {
+	ai_chance = { factor = 0 }
+	name = shodec.5.a
+		add_political_power = 250
+	}
+}
+country_event = { # dutch beligum
+	id = shofrei.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.1"}
+	title = shofrei.1.t
+	desc = shofrei.1.d
+	picture = GFX_report_event_GER_wehrmacht_poster
+
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	ai_chance = { factor = 100 }
+	name = shofrei.1.a
+	BEL = { 
+	country_event = { days = 7 id = shofrei.3 }
+	}
+	SHO = {
+		add_to_faction = KNE
+		country_event = { id = shofrei.2 }
+			}
+	}
+
+	option = {
+	ai_chance = { factor = 0 }
+	name = shofrei.2.b
+	}
+}
+country_event = { # dutch join
+	id = shofrei.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.2.a"}
+	title = shofrei.2.t
+	desc = shofrei.2.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = shofrei.2.a
+    ai_chance = { factor = 100 }
+	}
+
+}
+country_event = { # Dutch
+	id = shofrei.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.3.a"}
+	title = shofrei.3.t
+	desc = shofrei.3.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = shofrei.3.a
+    ai_chance = { factor = 100 }
+	KNE = { 
+	transfer_state = 867
+	country_event = { id = shofrei.4 }
+	}
+	}
+	option = { # 
+	name = shofrei.3.b
+	KNE = { 
+	country_event = { id = shofrei.5 }
+	}
+    ai_chance = { factor = 0 }
+	}
+
+
+}
+country_event = { # bel yes
+	id = shofrei.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.4.a"}
+	title = shofrei.4.t
+	desc = shofrei.4.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = shofrei.4.a
+    ai_chance = { factor = 100 }
+	}
+}
+country_event = { # bel no
+	id = shofrei.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.5.a"}
+	title = shofrei.5.t 
+	desc = shofrei.5.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = shofrei.5.a
+    ai_chance = { factor = 100 }
+	}
+}
+country_event = { # west or war #This event has been scrapped
+	id = shofrei.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.6.a"}
+	title = "The Dutch Want The Flemish Lands"
+	desc = shofrei.6.d
+	picture = GFX_report_event_communists_cheer
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # 
+	name = "Fine Have It.. We Didn't Wan't Them Anyways"
+    ai_chance = { factor = 80 }
+	KNE = { 
+	transfer_state = 6
+	transfer_state = 34
+	transfer_state = 867
+	country_event = { id = shofrei.7 }
+	}
+	}
+	option = { # 
+	name = "No Way In Hell Kraut."
+	KNE = { 
+	country_event = { id = shofrei.8 }
+	}
+	SHO = { 
+	country_event = { id = shofrei.8 }
+	}
+	}
+
+
+}
+country_event = { # Dutch #SCRAPPED
+	id = shofrei.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.7.a"}
+	title = "The Belgians Fold!"
+	desc = shofrei.6.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { # 
+	name = ""
+    ai_chance = { factor = 100 }
+	}
+}
+country_event = { # Dutch demand #SCRAPPED
+	id = shofrei.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.8.a"}
+	title = "The Belgians Refuse?!"
+	desc = shofrei.8.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { # 
+	name = "!"
+    ai_chance = { factor = 100 }
+	declare_war_on = {
+	type = annex_everything
+		target = BEL
+		}
+}
+}
+country_event = { #Kiel raises taxes 
+	id = shofrei.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.9"}
+	title = shofrei.9.t
+	desc = shofrei.9.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = shofrei.9.a
+			add_ideas = GER_kiel_fees
+		}
+	}
+country_event = { # Wilhelm Returns
+	id = shofrei.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.10"}
+	title = shofrei.10.t
+	desc = shofrei.10.d
+	picture = GFX_report_event_GER_wehrmacht_poster
+
+	trigger = {
+		AND = {
+			original_tag = SHO
+			SHO = {
+					controls_state = 64
+				}
+			}
+		}
+
+	fire_only_once = yes
+
+	option = {
+	name = shofrei.10.a
+	ai_chance = { factor = 100 }
+	set_cosmetic_tag = SHO_KAISER
+		set_politics = {
+		ruling_party = paternal_autocrat
+		}
+	set_country_flag = WilhelmReturns
+		add_political_power = 500
+	}
+}
+country_event = { # Kaiserschlatt
+	id = shofrei.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.11.a"}
+	title = shofrei.11.t
+	desc = shofrei.11.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+
+	is_triggered_only = yes
+
+	option = { #Small
+	name = shofrei.11.a
+    ai_chance = { factor = 50 }
+	declare_war_on = {
+	type = annex_everything
+	target = BEL
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = HOL
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = FRA
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = RHI
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = LUX
+		}
+    }
+	option = { #Big
+	name = shofrei.11.b
+    ai_chance = { factor = 50 }
+	declare_war_on = {
+	type = annex_everything
+	target = HOL
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = FRA
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = RHI
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = LUX
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = SWI
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = BEL
+		}
+    }
+}
+country_event = { #Overthrowing latvia# Scrapped
+	id = shofrei.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.12"}
+	title = shofrei.12.t
+	desc = shofrei.12.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = shofrei.12.a
+		}
+	option = {
+		name = shofrei.12.b
+		}
+	}
+###i shouldve stayed independent. No need to get bossed around with things that dont matter
+country_event = { #Jawbreaker
+	id = shofrei.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.13"}
+	title = shofrei.13.t
+	desc = shofrei.13.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = shofrei.13.a
+		ai_chance = { factor = 50 }
+    declare_war_on = {
+	type = annex_everything
+	target = POL
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = LIT
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = SOV
+		}
+		}
+	option = {
+		name = shofrei.13.b 
+		ai_chance = { factor = 50 }
+    declare_war_on = {
+	type = annex_everything
+	target = POL
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = LIT
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = BLR
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = UKR
+		}
+	declare_war_on = {
+	type = annex_everything
+	target = SOV
+		}
+	}
+}
+country_event = { #latviaoverthrow
+	id = shofrei.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.14"}
+	title = shofrei.14.t
+	desc = shofrei.14.d
+	picture = GFX_report_event_SHO_LatviaStrikesPM
+
+	is_triggered_only = yes
+		
+	fire_only_once = yes
+	
+	option = {
+		name = shofrei.14.a			
+		hidden_effect = {
+			SHO = {
+				set_province_controller = 9262
+				set_province_controller = 3319
+				set_province_controller = 3296
+				set_province_controller = 9240
+				load_oob = SHO_LatviaOverthrow
+			}
+			}
+			LAT = {
+        		declare_war_on = {
+			    type = annex_everything
+			    target = SHO
+		}
+			}
+			LAT = {
+				country_event = shofrei.15	
+				}
+		}
+	}
+country_event = { #latvia react
+	id = shofrei.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.15"}
+	title = shofrei.15.t
+	desc = shofrei.15.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = shofrei.15.a
+		}
+	}
+country_event = { #Endsieg 1 FK infighting #Should be 3 total
+	id = shofrei.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.16"}
+	title = shofrei.16.t
+	desc = shofrei.16.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+			original_tag = SHO
+			SHO = {
+					surrender_progress > 0.75
+				}
+		}
+	option = {
+		name = shofrei.16.a
+		add_ideas = SHO_Mass_Hysteria
+		set_country_flag = MassHysteria
+		}
+	}
+country_event = { #Austria alliance
+    id = shofrei.17
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.17"}
+    title = shofrei.17.t
+    desc = shofrei.17.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = shofrei.17.a
+        ai_chance = { factor = 95 }
+		SHO = {
+            country_event = shofrei.18
+            add_to_faction = AUS
+			}
+        }
+    option = {
+        name = shofrei.17.b
+        ai_chance = { factor = 5 }
+				SHO = {
+            country_event = shofrei.19
+           }
+    }
+}
+country_event = { #austria accepted
+	id = shofrei.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.18"}
+	title = shofrei.18.t
+	desc = shofrei.18.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shofrei.18.a
+		}
+	}
+country_event = { #austria said no
+	id = shofrei.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.19"}
+	title = shofrei.19.t
+	desc = shofrei.19.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shofrei.19.a
+		}
+	}
+country_event = { #America War
+	id = shofrei.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.20"}
+	title = shofrei.20.t
+	desc = shofrei.20.d
+	picture = GFX_report_event_SHO_AmericanATKFreikorps
+    is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			original_tag = SHO
+			has_war_with = USA
+			has_country_flag = FreiKorpsVictory
+			}
+		}
+	option = {
+		name = shofrei.20.a
+		add_war_support = 0.1
+		}
+	}
+country_event = { #Demand Brit colony
+	id = shofrei.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.21"}
+	title = shofrei.21.t
+	desc = shofrei.21.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #give back colonies
+		name = shofrei.21.a
+	ai_chance = { factor = 80 }
+    	SHO = { 
+	transfer_state = 994
+	transfer_state = 546
+	country_event = { id = shofrei.22 }
+	}
+		}
+	option = { #refuse
+		name = shofrei.21.b
+	ai_chance = { factor = 20 }
+	country_event = { id = shofrei.23 }
+		}
+	}
+country_event = { #Demand Brit colony WIN!!!
+	id = shofrei.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.22"}
+	title = shofrei.22.t
+	desc = shofrei.22.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shofrei.22.a
+	}
+}
+country_event = { #Demand Brit colony KILL THEM ALL!!!
+	id = shofrei.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.23"}
+	title = shofrei.23.t
+	desc = shofrei.23.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shofrei.23.a
+	declare_war_on = {
+	type = annex_everything
+		target = ENG
+		}
+	}
+	option = {
+		name = shofrei.23.b
+	}
+}
+country_event = { #GTFO to Rhine!
+	id = shofrei.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.24"}
+	title = shofrei.24.t
+	desc = shofrei.24.d
+	picture = GFX_report_event_SHO_LatviaStrikesPM
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Bailout
+	    ai_chance = { factor = 100 }
+		name = shofrei.24.a
+	    add_ideas = SHO_Kiel_FK_Remnants
+			SHO = {
+        country_event = shofrei.25
+ 	}
+	}
+	option = { #Punish
+		name = shofrei.24.b
+		ai_chance = { factor = 0 }
+			SHO = {
+        country_event = shofrei.26
+ 	}
+	}
+}
+
+country_event = { #GTFO to Rhine! Win!!!
+	id = shofrei.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.25"}
+	title = shofrei.25.t
+	desc = shofrei.25.d
+	picture = GFX_report_event_SHO_LatviaStrikesPM
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #gtfo
+		name = shofrei.25.a
+		add_ideas = SHO_Fleeing_The_Rubble
+		RHI = { change_tag_from = SHO }
+	}
+}
+country_event = { #GTFO to Rhine! FAIL
+	id = shofrei.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shofrei.26"}
+	title = shofrei.26.t
+	desc = shofrei.26.d
+	picture = GFX_report_event_SHO_LatviaStrikesPM
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #gtfo
+		name = shofrei.26.a
+	}
+}
+###Ill add this later smiley face
+country_event = { # Kielhell
+	id = kielhell.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kielhell.1.a"}
+	title = "Toll The Five Bells Loud and Clear"
+	desc = kielhell.1.d
+	picture = GFX_report_event_SHO_thewiperswork
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # 
+	name = "Well At Least The Wipers Work... Who?"
+    ai_chance = { factor = 100 }
+	}
+
+}
+
+
+
+
+

@@ -1,0 +1,3691 @@
+#################################################################
+## 						Turkey Focus Tree 		 			   ##
+#################################################################
+## Created by VirtualHummingbird, with additions by SuperMarks ##
+#################################################################
+#################################################################
+##             Redesigned by me, Denis_MD                      ##
+#################################################################
+focus_tree = {
+	id = turkey_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 420
+			tag = TUR
+		}
+	}
+	
+	# default = no
+	
+	continuous_focus_position = { x = 50 y = 1800 }
+	
+	
+	focus = {
+		id = TUR_emergency_session
+		icon = GFX_focus_rom_handle_king
+		x = 3
+		y = 1
+		available = {
+			has_country_flag = TUR_assassination_of_the_sultan
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			custom_effect_tooltip = TUR_emergency_session_tt
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_emergency_session"
+		}	
+	}
+	
+	focus = { 
+		id = TUR_end_of_the_empire 
+		icon = GFX_goal_crush_monarchy
+		mutually_exclusive = { focus = TUR_secure_imperial_power }
+		prerequisite = {
+			focus = TUR_emergency_session
+		}
+		x = -8
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		relative_position_id = TUR_emergency_session
+		completion_reward = {
+			country_event = { id = tur.4 days = 2 }
+			add_political_power = 20
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_end_of_the_empire"
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = TUR_political_turmoil
+					}
+					remove_ideas = TUR_political_turmoil
+				}
+				start_civil_war = {
+				ruling_party = authoritarian_democrat
+				ideology = social_liberal
+				size = 0.35
+				capital = 341
+				states = { 343 777 347 776 341 349 778 }
+			}
+			}
+		}	
+	}  
+	
+	
+	
+	focus = { 
+		id = TUR_turanist_victory 
+		icon = GFX_focus_OTT_turanist_ambition
+		relative_position_id = TUR_end_of_the_empire
+		prerequisite = { focus = TUR_end_of_the_empire }
+		mutually_exclusive = { focus = TUR_kemalist_victory }
+		x = -5 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_turanist_victory"
+			custom_effect_tooltip = TUR_turanist_victory_tt
+			remove_sick_man_idea = yes
+		}  
+	}
+	
+	focus = { 
+		id = TUR_promote_pan_turkism 
+		icon = GFX_focus_generic_support_the_left_right
+		relative_position_id = TUR_turanist_victory
+		prerequisite = { focus = TUR_turanist_victory }
+		x = -1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_promote_pan_turkism"
+			AZR = {
+				country_event = { id = tur.44 days = 5 }
+			}
+			TRK = {
+				country_event = { id = tur.47 days = 5 }
+			}
+			KAZ = {
+				country_event = { id = tur.50 days = 5 }
+			}
+		}  
+	}
+	
+	
+	focus = { 
+		id = TUR_empower_republican_forces
+		icon = GFX_goal_generic_paramilitary
+		relative_position_id = TUR_turanist_victory
+		prerequisite = { focus = TUR_turanist_victory }
+		x = 1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_empower_republican_forces"
+			country_event = { id = tur.56 days = 3 }
+		}  
+	}
+	
+	focus = { 
+		id = TUR_found_youth_movement
+		icon = GFX_goal_army_guy_2
+		relative_position_id = TUR_promote_pan_turkism
+		prerequisite = { focus = TUR_promote_pan_turkism }
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_ideas = TUR_indoctrination_idea
+			add_research_slot = 1
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_found_youth_movement"
+		}  
+	}
+	focus = { 
+		id = TUR_work_with_the_masses
+		icon = GFX_goal_workers_rights
+		relative_position_id = TUR_empower_republican_forces
+		prerequisite = { focus = TUR_empower_republican_forces }
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 40
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_work_with_the_masses"
+		}  
+	}
+	
+	focus = { 
+		id = TUR_promote_industrialism
+		icon = GFX_goal_generic_improve_industry
+		relative_position_id = TUR_work_with_the_masses
+		prerequisite = { focus = TUR_work_with_the_masses }	
+		x = 1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+				random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_promote_industrialism"
+			}		
+		}  
+	}
+	focus = { 
+		id = TUR_crush_internal_enemies
+		icon = GFX_goal_generic_police_state
+		relative_position_id = TUR_work_with_the_masses
+		prerequisite = { focus = TUR_work_with_the_masses }
+		prerequisite = { focus = TUR_found_youth_movement }		
+		x = -1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_political_power = -100
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.05
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_crush_internal_enemies"
+			remove_sick_man_idea = yes
+		}  
+	}
+	focus = { 
+		id = TUR_militiaristic_educational_reforms
+		icon = GFX_goal_KTG_Educate_natives
+		relative_position_id = TUR_found_youth_movement
+		prerequisite = { focus = TUR_found_youth_movement }		
+		x = -1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_war_support = 0.1
+			add_manpower = 30000
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_militiaristic_educational_reforms"
+		}  
+	}
+	focus = { 
+		id = TUR_establish_judical_control
+		icon = GFX_department_of_religious_affairs  
+		relative_position_id = TUR_militiaristic_educational_reforms
+		prerequisite = { focus = TUR_militiaristic_educational_reforms }		
+		prerequisite = { focus = TUR_crush_internal_enemies }		
+		x = 1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			country_event = { id = tur.63 days = 3 }
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_establish_judical_control"
+		}  
+	}
+	focus = { 
+		id = TUR_found_national_board_of_cooperations
+		icon = GFX_IRE_heavy_industry  
+		relative_position_id = TUR_militiaristic_educational_reforms
+		prerequisite = { focus = TUR_promote_industrialism }		
+		prerequisite = { focus = TUR_crush_internal_enemies }		
+		x = 3 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_ideas = TUR_national_board_of_cooperations_ideas
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_found_national_board_of_cooperations"
+		}  
+	}
+	
+	focus = { 
+		id = TUR_establish_intelligence_agency
+		icon = GFX_goal_secret_agents
+		relative_position_id = TUR_establish_judical_control
+		prerequisite = { focus = TUR_establish_judical_control }			
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = yes
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_establish_intelligence_agency"
+		}  
+	}
+	focus = { 
+		id = TUR_reform_our_beurocracy
+		icon = GFX_goal_government_icon 
+		relative_position_id = TUR_establish_judical_control
+		prerequisite = { focus = TUR_establish_judical_control }			
+		x = -2 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_ideas = TUR_reformed_beurocracy
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reform_our_beurocracy"
+		}  
+	}
+	focus = { 
+		id = TUR_begin_land_reforms
+		icon = GFX_goal_generic_land_reform
+		relative_position_id = TUR_reform_our_beurocracy
+		prerequisite = { focus = TUR_reform_our_beurocracy }			
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2			
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2			
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1			
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1			
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_begin_land_reforms"
+		}  
+	}
+	focus = { 
+		id = TUR_found_ministry_of_propaganda
+		icon = GFX_goal_JAP_mil_parl
+		relative_position_id = TUR_establish_intelligence_agency
+		prerequisite = { focus = TUR_establish_intelligence_agency }			
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_ideas = TUR_propaganda_ministry
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_found_ministry_of_propaganda"
+		}  
+	}
+	
+	focus = { 
+		id = TUR_nationalise_key_industries
+		icon = GFX_goal_manage_industries
+		relative_position_id = TUR_found_national_board_of_cooperations
+		prerequisite = { focus = TUR_found_national_board_of_cooperations }		
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_ideas = TUR_nationalise_key_industries_idea
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_nationalise_key_industries"
+		}  
+	}
+	focus = { 
+		id = TUR_establish_a_new_constitution
+		icon = GFX_goal_OTT_constitution  
+		relative_position_id = TUR_nationalise_key_industries
+		prerequisite = { focus = TUR_nationalise_key_industries }		
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.15
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_establish_a_new_constitution"
+		}  
+	}
+	
+	
+	focus = { 
+		id = TUR_curb_the_influence_of_religion
+		icon = GFX_goal_islamic_government
+		relative_position_id = TUR_found_national_board_of_cooperations
+		prerequisite = { focus = TUR_found_national_board_of_cooperations }		
+		x = 2 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_ideas = TUR_curb_the_influence_of_religion_idea
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_curb_the_influence_of_religion"
+		}  
+	}
+	focus = { 
+		id = TUR_propaganda_turanism
+		icon = GFX_goal_generic_army_cooperation
+		relative_position_id = TUR_curb_the_influence_of_religion
+		prerequisite = { focus = TUR_curb_the_influence_of_religion }		
+		x = 0 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_ideas = TUR_turkic_volunteers_from_abroad
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}			
+log = "[GetDateText]: [Root.GetName]: Focus TUR_propaganda_turanism"			
+		}  
+	}
+	
+	focus = { 
+		id = TUR_establish_popular_dictatorship
+		icon = GFX_focus_rom_royal_dictatorship
+		relative_position_id = TUR_propaganda_turanism
+		prerequisite = { focus = TUR_propaganda_turanism }	
+		prerequisite = { focus = TUR_establish_a_new_constitution }	
+		prerequisite = { focus = TUR_found_ministry_of_propaganda }	
+		prerequisite = { focus = TUR_begin_land_reforms }		
+		x = -3 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.15
+			add_war_support = 0.1
+			remove_sick_man_idea = yes
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_establish_popular_dictatorship"		
+		}  
+	}
+
+	focus = { 
+		id = TUR_kemalist_victory
+		icon = GFX_focus_OTT_ratify_the_six_arrows  
+		relative_position_id = TUR_end_of_the_empire
+		prerequisite = { focus = TUR_end_of_the_empire }
+		mutually_exclusive = { focus = TUR_turanist_victory }
+		x = 5
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			custom_effect_tooltip = TUR_kemalist_victory_tt
+			remove_sick_man_idea = yes
+					log = "[GetDateText]: [Root.GetName]: Focus TUR_kemalist_victory"		
+		}  
+	}
+	
+	focus = { 
+		id = TUR_new_alphabet
+		icon = GFX_goal_KTG_Bookstack
+		relative_position_id = TUR_kemalist_victory
+		prerequisite = { focus = TUR_kemalist_victory }
+		x = -1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			country_event = { id = tur.25 }
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_new_alphabet"		
+		}  
+	}
+	
+	
+	focus = { 
+		id = TUR_institute_laicism
+		icon = GFX_goal_laicism
+		relative_position_id = TUR_kemalist_victory
+		prerequisite = { focus = TUR_kemalist_victory }
+		x = 1 
+		y = 1  
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_institute_laicism"		
+			add_ideas = TUR_laicism_idea
+			add_stability = -0.1
+			
+}  
+}
+
+focus = { 
+	id = TUR_western_legal_code
+	icon = GFX_goal_A_People_At_Sea
+	relative_position_id = TUR_new_alphabet
+	prerequisite = { focus = TUR_new_alphabet }
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.27 days = 3 }
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_western_legal_code"	
+	}  
+}
+focus = { 
+	id = TUR_use_gregorian_calendar
+	icon = GFX_goal_new_treaty  
+	relative_position_id = TUR_institute_laicism
+	prerequisite = { focus = TUR_institute_laicism }
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.28 }
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_use_gregorian_calendar"	
+}  
+}
+
+focus = { 
+	id = TUR_reorganise_our_beurocracy
+	icon = GFX_goal_generic_parliament
+	relative_position_id = TUR_use_gregorian_calendar
+	prerequisite = { focus = TUR_use_gregorian_calendar }	
+	x = 1 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.38 }
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reorganise_our_beurocracy"	
+	}  
+}
+focus = { 
+	id = TUR_social_equality
+	icon = GFX_goal_generic_national_unity_red
+	relative_position_id = TUR_use_gregorian_calendar
+	prerequisite = { focus = TUR_use_gregorian_calendar }
+	prerequisite = { focus = TUR_western_legal_code }		
+	x = -1 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.1
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_social_equality"	
+	}  
+}
+focus = { 
+	id = TUR_ban_the_fez
+	icon = GFX_goal_OTT_ferman
+	relative_position_id = TUR_western_legal_code
+	prerequisite = { focus = TUR_western_legal_code }		
+	x = -1 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ban_the_fez"	
+}  
+}
+focus = { 
+	id = TUR_woman_rights
+	icon = GFX_goal_red_unity
+	relative_position_id = TUR_ban_the_fez
+	prerequisite = { focus = TUR_ban_the_fez }		
+	prerequisite = { focus = TUR_social_equality }		
+	x = 1 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.29 }
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_woman_rights"	
+}  
+}
+focus = { 
+	id = TUR_paramilitary_democracy
+	icon = GFX_goal_generic_bastion_of_democracy
+	relative_position_id = TUR_reorganise_our_beurocracy
+	prerequisite = { focus = TUR_reorganise_our_beurocracy }				
+	x = -1 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_ideas = TUR_parliamentary_democracy_idea
+		remove_sick_man_idea = yes
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_paramilitary_democracy"	
+	}  
+}
+
+focus = { 
+	id = TUR_land_reforms
+	icon = GFX_goal_generic_build_housing
+	relative_position_id = TUR_woman_rights
+	prerequisite = { focus = TUR_woman_rights }			
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_ideas = TUR_land_reform_idea
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+
+			}	
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_land_reforms"				
+	}  
+}
+focus = { 
+	id = TUR_solidarism
+	icon = GFX_goal_soldiers  
+	relative_position_id = TUR_woman_rights
+	prerequisite = { focus = TUR_woman_rights }			
+	x = -2 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_ideas = TUR_solidarism_idea
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_solidarism"	
+	}  
+}
+focus = { 
+	id = TUR_reform_education
+	icon = GFX_goal_double_research  
+	relative_position_id = TUR_solidarism
+	prerequisite = { focus = TUR_solidarism }			
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_better_education
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_reform_education"	
+	}  
+}
+focus = { 
+	id = TUR_boister_the_armed_forces
+	icon = GFX_goal_generic_army_training
+	relative_position_id = TUR_land_reforms
+	prerequisite = { focus = TUR_land_reforms }			
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_ideas = TUR_bolstering_armed_forces_idea
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_boister_the_armed_forces"	
+	}  
+}
+
+focus = { 
+	id = TUR_support_the_sciences
+	icon = GFX_goal_great_science
+	relative_position_id = TUR_paramilitary_democracy
+	prerequisite = { focus = TUR_paramilitary_democracy }		
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_research_slot = 1
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_support_the_sciences"	
+	}  
+}
+focus = { 
+	id = TUR_financial_reforms
+	icon = GFX_goal_generic_financial_markets
+	relative_position_id = TUR_support_the_sciences
+	prerequisite = { focus = TUR_support_the_sciences }		
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_ideas = TUR_financial_reform_idea
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_financial_reforms"	
+	}  
+}
+
+focus = { 
+	id = TUR_promote_turkism_nationalism
+	icon = GFX_goal_national_mobilization
+	relative_position_id = TUR_paramilitary_democracy
+	prerequisite = { focus = TUR_paramilitary_democracy }		
+	x = 2 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_ideas = TUR_promote_nationalism
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_promote_turkism_nationalism"	
+	}  
+}
+
+focus = { 
+	id = TUR_expand_the_anadolou_agency_cooperation
+	icon = GFX_goal_generic_espionage
+	relative_position_id = TUR_promote_turkism_nationalism
+	prerequisite = { focus = TUR_promote_turkism_nationalism }		
+	x = 0 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = yes
+				}
+				add_ideas = TUR_a_small_boost_to_spies_with_lar
+				gain_random_agency_upgrade = yes
+			}
+			else = {
+				add_ideas = TUR_a_small_boost_to_spies
+			} 
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_the_anadolou_agency_cooperation"			
+	}  
+}
+
+focus = { 
+	id = TUR_the_new_turkish_constitution
+	icon = GFX_goal_generic_parliament2
+	relative_position_id = TUR_expand_the_anadolou_agency_cooperation
+	prerequisite = { focus = TUR_reform_education }	
+	prerequisite = { focus = TUR_expand_the_anadolou_agency_cooperation }	
+	prerequisite = { focus = TUR_boister_the_armed_forces }	
+	prerequisite = { focus = TUR_financial_reforms }		
+	x = -3 
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+		country_event = { id = tur.41 days = 3 }
+		remove_sick_man_idea = yes
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_new_turkish_constitution"			
+	}  
+}
+
+focus = { 
+	id = TUR_secure_imperial_power
+	icon = GFX_goal_Elect_a_Rashidi
+	mutually_exclusive = { focus = TUR_end_of_the_empire }
+	prerequisite = {
+		focus = TUR_emergency_session
+	}
+	x = 8
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	relative_position_id = TUR_emergency_session
+	completion_reward = {
+		country_event = { id = tur.5 days = 2 }
+		add_political_power = 20
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_secure_imperial_power"			
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = TUR_political_turmoil
+				}
+				remove_ideas = TUR_political_turmoil
+			}
+			start_civil_war = {
+				ruling_party = social_liberal
+				ideology = authoritarian_democrat
+				size = 0.65
+				capital = 49
+				states = { 49 779 356 355 780 348 346 }
+			}
+		}
+	}  
+}
+focus = { 
+	id = TUR_the_moderates_secure_the_throne
+	icon = GFX_goal_OTT_gendarmerie
+	relative_position_id = TUR_secure_imperial_power
+	prerequisite = { focus = TUR_secure_imperial_power }
+	mutually_exclusive = { focus = TUR_the_absolutists_secure_the_throne }
+	x = -5
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+     add_ideas = TUR_a_moderate_empire_idea
+	 	log = "[GetDateText]: [Root.GetName]: Focus TUR_the_moderates_secure_the_throne"			
+	}  
+}
+focus = { 
+	id = TUR_reform_the_banking_system
+	icon = GFX_goal_generic_banking_legislation 
+	relative_position_id = TUR_the_moderates_secure_the_throne
+	
+	prerequisite = { focus = TUR_the_moderates_secure_the_throne }
+	x = -2
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.12 days = 3 }
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reform_the_banking_system"			
+	}  
+}
+focus = { 
+	id = TUR_finish_tanzmitat_reforms
+	icon = GFX_goal_OTT_reform
+	relative_position_id = TUR_the_moderates_secure_the_throne
+	
+	prerequisite = { focus = TUR_the_moderates_secure_the_throne }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_political_power = 75
+		remove_sick_man_idea = yes
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_finish_tanzmitat_reforms"			
+	}  
+}
+focus = { 
+	id = TUR_dealing_with_the_beaucracy
+	icon = GFX_goal_ottoman
+	relative_position_id = TUR_the_moderates_secure_the_throne
+	
+	prerequisite = { focus = TUR_the_moderates_secure_the_throne }
+	x = 2
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.10 days = 3 }
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_dealing_with_the_beaucracy"			
+	
+	}  
+}
+focus = { 
+	id = TUR_rewrtite_the_constitution
+	icon = GFX_goal_government
+	relative_position_id = TUR_dealing_with_the_beaucracy
+	
+	prerequisite = { focus = TUR_dealing_with_the_beaucracy }
+	x = 0
+	y = 2  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.9 days = 3 }
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_rewrtite_the_constitution"			
+	}  
+}
+focus = { 
+	id = TUR_multiparty_system
+	icon = GFX_goal_generic_council
+	relative_position_id = TUR_reform_the_banking_system
+	
+	prerequisite = { focus = TUR_reform_the_banking_system }
+	x = 0
+	y = 2  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_timed_idea = {
+			idea = TUR_multi_party_system_idea
+			days = 250
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_multiparty_system"			
+	}  
+}
+focus = { 
+	id = TUR_work_to_pay_off_debt
+	icon = GFX_goal_generic_capitalist_system
+	relative_position_id = TUR_reform_the_banking_system
+	
+	prerequisite = { focus = TUR_reform_the_banking_system }
+	prerequisite = { focus = TUR_finish_tanzmitat_reforms }
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_timed_idea = { 
+			idea = TUR_paying_off_our_debts_idea days = 90 
+		}
+		hidden_effect = {
+			ENG  = {
+				country_event = { id = tureco.16 days = 1 }
+				add_timed_idea = { 
+					idea = TUR_payment_from_ottomans_idea days = 90 
+				}
+			}
+			FRA  = {
+				country_event = { id = tureco.16 days = 1 }
+				add_timed_idea = { 
+					idea = TUR_payment_from_ottomans_idea days = 90 
+				}
+			}
+			ITA  = {
+				country_event = { id = tureco.16 days = 1 }
+				add_timed_idea = { 
+					idea = TUR_payment_from_ottomans_idea days = 90 
+				}
+			}
+		}
+	add_offsite_building = { type = industrial_complex level = 2 }
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_work_to_pay_off_debt"			
+	}  
+
+focus = { 
+	id = TUR_decentralised_rule
+	icon = GFX_goal_RAJ_Decentralized_Land_Reform
+	relative_position_id = TUR_reform_the_banking_system
+	
+	prerequisite = { focus = TUR_dealing_with_the_beaucracy }
+	prerequisite = { focus = TUR_finish_tanzmitat_reforms }
+	x = 3
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.42 days = 3 }
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_decentralised_rule"			
+	
+	}  
+}
+focus = { 
+	id = TUR_provide_education
+	icon = GFX_goal_ARB_islamic_education
+	relative_position_id = TUR_decentralised_rule
+	
+	prerequisite = { focus = TUR_decentralised_rule }
+	prerequisite = { focus = TUR_work_to_pay_off_debt }
+	x = -1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_research_slot = 1
+	remove_sick_man_idea = yes
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_provide_education"			
+	}  
+}
+focus = { 
+	id = TUR_reform_courts
+	icon = GFX_focus_generic_the_giant_wakes
+	relative_position_id = TUR_provide_education
+	
+	prerequisite = { focus = TUR_provide_education }
+	prerequisite = { focus = TUR_multiparty_system }
+	x = -1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_reformed_courts
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_reform_courts"			
+	}  
+}
+focus = { 
+	id = TUR_fight_corruption
+	icon = GFX_goal_generic_oppression
+	relative_position_id = TUR_provide_education
+	
+	prerequisite = { focus = TUR_provide_education }
+	prerequisite = { focus = TUR_rewrtite_the_constitution }
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_fight_corruption
+	add_political_power = 50	
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_fight_corruption"		
+	}  
+}
+focus = { 
+	id = TUR_ensure_loyalty_army
+	icon = GFX_goal_RAJ_Question_The_Army
+	relative_position_id = TUR_fight_corruption
+	
+	prerequisite = { focus = TUR_fight_corruption }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_army_loyalty
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_ensure_loyalty_army"	
+	}  
+}
+focus = { 
+	id = TUR_social_reforms
+	icon = GFX_focus_generic_treaty
+	relative_position_id = TUR_reform_courts
+	
+	prerequisite = { focus = TUR_reform_courts }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_stability = 0.1
+	add_political_power = 75
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_social_reforms"	
+	}  
+}
+focus = { 
+	id = TUR_consitutional_monarchy_transmission
+	icon = GFX_GRE_empower_monarchy
+	relative_position_id = TUR_social_reforms
+	
+	prerequisite = { focus = TUR_ensure_loyalty_army }
+	prerequisite = { focus = TUR_social_reforms }
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.13 days = 3 }
+		remove_sick_man_idea = yes
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_consitutional_monarchy_transmission"	
+	}  
+}
+focus = { 
+	id = TUR_inclusive_empire
+	icon = GFX_goal_OTT_coat_of_arms
+	relative_position_id = TUR_consitutional_monarchy_transmission
+	
+	prerequisite = { focus = TUR_consitutional_monarchy_transmission }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		swap_ideas = { 
+			remove_idea = TUR_ottoman_constitution_idea 
+			add_idea = TUR_an_inclusive_empire_idea 
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_inclusive_empire"	
+
+	}  
+}
+
+focus = { 
+	id = TUR_the_absolutists_secure_the_throne
+	icon = GFX_goal_OTT_caliph  
+	relative_position_id = TUR_secure_imperial_power
+	prerequisite = { focus = TUR_secure_imperial_power }
+	mutually_exclusive = { focus = TUR_the_moderates_secure_the_throne}
+	x = 5
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_a_revanchist_empire_idea
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_the_absolutists_secure_the_throne"	
+
+	}  
+}
+focus = { 
+	id = TUR_nationalise_banks
+	icon = GFX_goal_generic_debt_negotiations  
+	relative_position_id = TUR_the_absolutists_secure_the_throne
+	
+	prerequisite = { focus = TUR_the_absolutists_secure_the_throne }
+	x = -2
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_nationalised_banks
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_nationalise_banks"	
+	}  
+}
+focus = { 
+	id = TUR_reform_politcal_spectrum
+	icon = GFX_goal_generic_positive_trade_relations_gold
+	relative_position_id = TUR_the_absolutists_secure_the_throne
+	
+	prerequisite = { focus = TUR_the_absolutists_secure_the_throne }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_reformed_political_system_idea
+	remove_sick_man_idea = yes
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_reform_politcal_spectrum"	
+	}  
+}
+focus = { 
+	id = TUR_royal_youth_movement
+	icon = GFX_goal_generic_military_equipment
+	relative_position_id = TUR_the_absolutists_secure_the_throne
+	
+	prerequisite = { focus = TUR_the_absolutists_secure_the_throne }
+	x = 2
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_forced_conscription_idea
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_royal_youth_movement"	
+	}  
+}
+focus = { 
+	id = TUR_establish_nationalist_millitia
+	icon = GFX_goal_generic_mountain_warfare2
+	relative_position_id = TUR_royal_youth_movement
+	
+	prerequisite = { focus = TUR_royal_youth_movement }
+	x = 0
+	y = 2  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	hidden_effect = {
+				division_template = {
+					name = "National Militia"
+					priority = 2
+					division_names_group = GRE_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 2 y = 1 }
+						
+						
+					
+										
+					}
+				}			
+			}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 780 }
+					create_unit = {
+						division = "name = \"1. National Militia\" division_template = \"National Militia\" start_experience_factor = 1.0" 
+						owner = TUR
+					}
+					create_unit = {
+						division = "name = \"2. National Militia\" division_template = \"National Militia\" start_experience_factor = 1.0" 
+						owner = TUR
+					}
+					create_unit = {
+						division = "name = \"3. National Militia\" division_template = \"National Militia\" start_experience_factor = 1.0" 
+						owner = TUR
+					}
+				
+				}
+						log = "[GetDateText]: [Root.GetName]: Focus TUR_establish_nationalist_millitia"	
+	}  
+}
+focus = { 
+	id = TUR_royal_education_reforms
+	icon = GFX_goal_PHI_papal_research  
+	relative_position_id = TUR_nationalise_banks
+	
+	prerequisite = { focus = TUR_nationalise_banks }
+	x = 0
+	y = 2  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+			add_research_slot = 1
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_royal_education_reforms"	
+	}  
+}
+focus = { 
+	id = TUR_restore_loyal_beaucracy
+	icon = GFX_goal_HOL_CNA_restored_stability
+	relative_position_id = TUR_nationalise_banks
+	
+	prerequisite = { focus = TUR_nationalise_banks }
+	prerequisite = { focus = TUR_reform_politcal_spectrum }
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_stability = 0.1
+	add_political_power = 80
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_restore_loyal_beaucracy"	
+	}  
+}
+focus = { 
+	id = TUR_solidify_power_of_sultan
+	icon = GFX_focus_generic_diplomatic_treaty
+	relative_position_id = TUR_nationalise_banks
+	
+	prerequisite = { focus = TUR_reform_politcal_spectrum }
+	prerequisite = { focus = TUR_royal_youth_movement }
+	x = 3
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_power_solidified
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_solidify_power_of_sultan"	
+	}  
+}
+focus = { 
+	id = TUR_silence_opposition
+	icon = GFX_goal_imprison_opposition
+	relative_position_id = TUR_solidify_power_of_sultan
+	
+	prerequisite = { focus = TUR_solidify_power_of_sultan }
+	prerequisite = { focus = TUR_restore_loyal_beaucracy }
+	x = -1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		add_political_power = -120
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.05
+		}
+		remove_sick_man_idea = yes
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_silence_opposition"	
+	}  
+}
+focus = { 
+	id = TUR_nationalise_failing_bussinesses
+	icon = GFX_IRE_medium_industry  
+	relative_position_id = TUR_silence_opposition
+	
+	prerequisite = { focus = TUR_royal_education_reforms }
+	prerequisite = { focus = TUR_silence_opposition }
+	x = -1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_nationalised_bussineses
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_nationalise_failing_bussinesses"	
+	}  
+}
+focus = { 
+	id = TUR_control_state_media
+	icon = GFX_goal_generic_media_controls
+	relative_position_id = TUR_silence_opposition
+	
+	prerequisite = { focus = TUR_silence_opposition }
+	prerequisite = { focus = TUR_establish_nationalist_millitia }
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_manpower = 15000
+	add_war_support = 0.1
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_control_state_media"	
+	}  
+}
+focus = { 
+	id = TUR_appoiny_loyal_grand_vizir
+	icon = GFX_goal_VIN_New_Militarism
+	relative_position_id = TUR_control_state_media
+	
+	prerequisite = { focus = TUR_control_state_media }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		country_event = { id = tur.22 days = 3 }
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_appoiny_loyal_grand_vizir"	
+	}  
+}
+focus = { 
+	id = TUR_judical_control
+	icon = GFX_goal_DOM_End_Judicial_Corruption  
+	relative_position_id = TUR_nationalise_failing_bussinesses
+	
+	prerequisite = { focus = TUR_nationalise_failing_bussinesses }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {add_ideas = TUR_judicial_control_idea
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_judical_control"	
+	}  
+}
+focus = { 
+	id = TUR_dissolve_parliament
+	icon = GFX_goal_absolute_destroy_parliament
+	relative_position_id = TUR_judical_control
+	
+	prerequisite = { focus = TUR_judical_control }
+	prerequisite = { focus = TUR_appoiny_loyal_grand_vizir }
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		custom_effect_tooltip = TUR_disbanding_parliament_tt
+		hidden_effect = {
+			country_event = { id = tur.23 days = 3 }
+		}
+		remove_sick_man_idea = yes
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_dissolve_parliament"	
+	}  
+}
+focus = { 
+	id = TUR_phoenix_arises
+	icon = GFX_goal_DOM_The_Phoenix
+	relative_position_id = TUR_dissolve_parliament
+	
+	prerequisite = { focus = TUR_dissolve_parliament }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		swap_ideas = { 
+			remove_idea = TUR_ottoman_constitution_idea 
+			add_idea = TUR_risen_from_the_ashes_idea 
+		}
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_phoenix_arises"
+	
+	}  
+}
+
+focus = { 
+	id = TUR_reclaim_our_empire
+	icon = GFX_focus_OTT_reforged  
+	
+	x = 10
+	y = 15  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_war_support = 0.1
+	add_manpower = 60000
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_reclaim_our_empire"
+	}  
+}
+focus = { 
+	id = TUR_appeal_to_old_allies
+	icon = GFX_focus_OTT_germany_of_mideast  
+	mutually_exclusive = { focus = TUR_search_for_new_friends }	
+	relative_position_id = TUR_reclaim_our_empire
+	mutually_exclusive = { focus = TUR_on_our_own }	
+	prerequisite = { focus = TUR_reclaim_our_empire }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	GER = { country_event = { id = trt.31 days = 1 } }
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_appeal_to_old_allies"
+	}
+}
+focus = { 
+	id = TUR_on_our_own
+	icon = GFX_focus_OTT_Association_of_Muslim_Nations  
+	relative_position_id = TUR_reclaim_our_empire
+	mutually_exclusive = { focus = TUR_appeal_to_old_allies }
+	mutually_exclusive = { focus = TUR_search_for_new_friends }	
+	prerequisite = { focus = TUR_reclaim_our_empire }
+	x = -5
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {	
+	
+	add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_on_our_own"
+	}
+}
+
+focus = { 
+	id = TUR_search_for_new_friends
+	icon = GFX_goal_OTT_camels
+	relative_position_id = TUR_reclaim_our_empire
+	mutually_exclusive = { focus = TUR_appeal_to_old_allies }
+	mutually_exclusive = { focus = TUR_on_our_own }	
+	prerequisite = { focus = TUR_reclaim_our_empire }
+	x = 5
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	set_rule = { can_create_factions = yes }
+		add_political_power = 100
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_search_for_new_friends"
+	}
+}
+focus = { 
+	id = TUR_our_claims_in_the_east
+	icon = GFX_focus_OTT_permanent_mission  
+	relative_position_id = TUR_appeal_to_old_allies
+	prerequisite = { 
+		focus = TUR_appeal_to_old_allies 
+		focus = TUR_on_our_own 
+		focus = TUR_search_for_new_friends 
+	}
+	x = 5
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	    902 = { add_core_of = TUR }	
+		231 = { add_core_of = TUR }
+		903 = { add_core_of = TUR }
+		230 = { add_core_of = TUR }		
+		353 = { add_core_of = TUR }	
+		
+	    352 = { add_core_of = TUR }	
+		904 = { add_core_of = TUR }
+		229 = { add_core_of = TUR }
+		858 = { add_core_of = TUR }		
+		905 = { add_core_of = TUR }	
+
+	    419 = { add_core_of = TUR }	
+		1051 = { add_core_of = TUR }
+		855 = { add_core_of = TUR }
+		420 = { add_core_of = TUR }		
+		421 = { add_core_of = TUR }		
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_our_claims_in_the_east"		
+	}
+}
+focus = { 
+	id = TUR_crush_armenia
+	icon = GFX_goal_Cutdown_Armenia
+	relative_position_id = TUR_our_claims_in_the_east
+	prerequisite = { focus =  TUR_our_claims_in_the_east }
+	mutually_exclusive = { focus = TUR_armenian_peblisicite }
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = ARM
+				expire = 0
+			}
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_crush_armenia"		
+	}
+}
+focus = { 
+	id = TUR_armenian_peblisicite
+	icon = GFX_goal_flag_armenia
+	relative_position_id = TUR_our_claims_in_the_east
+	prerequisite = { focus =  TUR_our_claims_in_the_east }
+	mutually_exclusive = { focus = TUR_crush_armenia }
+	x = -1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	ARM = { country_event = { id = otee.5  } }
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_armenian_peblisicite"	
+	}
+}
+focus = { 
+	id = TUR_destroy_the_kurds
+	icon = GFX_goal_ARB_approach_kurdestan
+	relative_position_id = TUR_armenian_peblisicite
+	prerequisite = {  
+		focus = TUR_armenian_peblisicite 
+		focus = TUR_crush_armenia 
+	}
+	x = 1
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = KUR
+				expire = 0
+			}
+			add_ideas = TUR_war_for_heartland4
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_destroy_the_kurds"	
+	}
+}
+focus = { 
+	id = TUR_unify_with_azerbaijan
+	icon = GFX_goal_flag_azerbaijan
+	relative_position_id = TUR_destroy_the_kurds
+	prerequisite = { focus =  TUR_destroy_the_kurds }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	AZR = { country_event = { id = otee.4  } }
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_unify_with_azerbaijan"	
+	}
+}
+
+
+
+focus = { 
+	id = TUR_regain_control_of_constantinople
+	icon = GFX_focus_OTT_Constantinople_Agreement  
+	relative_position_id = TUR_appeal_to_old_allies
+	prerequisite = { 
+		focus = TUR_appeal_to_old_allies 
+		focus = TUR_on_our_own 
+		focus = TUR_search_for_new_friends 
+	}
+	x = -5
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+			start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 341
+				num_provinces = 1
+			}
+			
+			defender = {
+				state = 342
+				num_provinces = 1
+			}
+			}
+					log = "[GetDateText]: [Root.GetName]: Focus TUR_regain_control_of_constantinople"	
+	}
+}
+focus = { 
+	id = TUR_question_of_thrace
+	icon = GFX_focus_OTT_the_question_of_thrace  
+	relative_position_id = TUR_regain_control_of_constantinople
+	prerequisite = { focus = TUR_regain_control_of_constantinople  }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		184 = { add_core_of = TUR }	
+		1066 = { add_core_of = TUR }		
+		763 = { add_core_of = TUR }	
+		342 = { add_core_of = TUR }
+		1067 = { add_core_of = TUR }	
+		
+		341 = { add_core_of = TUR }	
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_question_of_thrace"	
+	
+	}
+}
+focus = { 
+	id = TUR_save_bulgarian_turks
+	icon = GFX_goal_BUL_National_Catastrophe
+	relative_position_id = TUR_question_of_thrace
+	prerequisite = { focus = TUR_question_of_thrace  }
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BUL
+				expire = 0
+			}
+		764 = { add_core_of = TUR }	
+		211 = { add_core_of = TUR }		
+		212 = { add_core_of = TUR }	
+		48 = { add_core_of = TUR }
+		766 = { add_core_of = TUR }		
+log = "[GetDateText]: [Root.GetName]: Focus TUR_save_bulgarian_turks"			
+	}
+}
+focus = { 
+	id = TUR_regognise_balkan_holdings
+	icon = GFX_goal_balkan_fist
+	relative_position_id = TUR_save_bulgarian_turks
+	prerequisite = { focus = TUR_save_bulgarian_turks  }
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = YUG
+				expire = 0
+						
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ROM
+				expire = 0
+						
+			}			
+		787 = { add_core_of = TUR }	
+		106 = { add_core_of = TUR }		
+		942 = { add_core_of = TUR }	
+		108 = { add_core_of = TUR }
+		1038 = { add_core_of = TUR }	
+		105 = { add_core_of = TUR }		
+		931 = { add_core_of = TUR }	
+		941 = { add_core_of = TUR }
+		107 = { add_core_of = TUR }	
+		1037 = { add_core_of = TUR }		
+		1034 = { add_core_of = TUR }	
+		789 = { add_core_of = TUR }
+		1036 = { add_core_of = TUR }	
+		1035 = { add_core_of = TUR }		
+		81 = { add_core_of = TUR }	
+		46 = { add_core_of = TUR }		
+		
+		861 = { add_core_of = TUR }	
+		77 = { add_core_of = TUR }		
+		82 = { add_core_of = TUR }	
+		750 = { add_core_of = TUR }		
+
+		985 = { add_core_of = TUR }		
+		45 = { add_core_of = TUR }	
+		104 = { add_core_of = TUR }			
+		1039 = { add_core_of = TUR }	
+log = "[GetDateText]: [Root.GetName]: Focus TUR_regognise_balkan_holdings"			
+	}
+}
+focus = { 
+	id = TUR_secure_our_heartland
+	icon = GFX_focus_OTT_ratify_sevres  
+	relative_position_id = TUR_appeal_to_old_allies
+	prerequisite = { 
+		focus = TUR_appeal_to_old_allies 
+		focus = TUR_on_our_own 
+		focus = TUR_search_for_new_friends 
+	}
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_war_for_heartland
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_secure_our_heartland"	
+	}
+}
+focus = { 
+	id = TUR_demand_aydin_from_greece
+	icon = GFX_goal_MAC_visit_greece
+	relative_position_id = TUR_secure_our_heartland
+	prerequisite = { focus = TUR_secure_our_heartland }
+	x = -2
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	GRE = { country_event = { id = otee.1  } }
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_demand_aydin_from_greece"	
+	}
+}
+focus = { 
+	id = TUR_liberate_west_coast
+	icon = GFX_goal_generic_aegean_sea
+	relative_position_id = TUR_demand_aydin_from_greece
+	prerequisite = { focus = TUR_demand_aydin_from_greece }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+					create_wargoal = {
+						type = take_state_focus
+						target = GRE
+						expire = 0
+						generator = { 340 339 499 496 500 501 }
+					}
+							log = "[GetDateText]: [Root.GetName]: Focus TUR_liberate_west_coast"
+	}
+}
+focus = { 
+	id = TUR_secure_turks_in_greece
+	icon = GFX_goal_generic_attack_greece
+	relative_position_id = TUR_liberate_west_coast
+	prerequisite = { focus = TUR_liberate_west_coast }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_war_for_heartland2
+		765 = { add_core_of = TUR }	
+		185 = { add_core_of = TUR }		
+		1045 = { add_core_of = TUR }	
+		186 = { add_core_of = TUR }
+		731 = { add_core_of = TUR }	
+		
+		47 = { add_core_of = TUR }		
+		1046 = { add_core_of = TUR }	
+
+		44 = { add_core_of = TUR }		
+		769 = { add_core_of = TUR }	
+log = "[GetDateText]: [Root.GetName]: Focus TUR_secure_turks_in_greece"		
+	}
+}
+
+focus = { 
+	id = TUR_italy
+	icon = GFX_focus_OTT_attack_italy  
+	relative_position_id = TUR_secure_our_heartland
+	prerequisite = { focus = TUR_secure_our_heartland }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+						create_wargoal = {
+						type = take_state_focus
+						target = ITA
+						expire = 0
+						generator = { 345 1030 164 }
+					}
+					log = "[GetDateText]: [Root.GetName]: Focus TUR_italy"	
+	}
+}
+focus = { 
+	id = TUR_secure_southern_flank
+	icon = GFX_focus_OTT_the_great_siege  
+	relative_position_id = TUR_italy
+	prerequisite = { focus = TUR_italy }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_ideas = TUR_war_for_heartland3
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_secure_southern_flank"	
+	}
+}
+focus = { 
+	id = TUR_revenge_for_libya
+	icon = GFX_focus_OTT_libyan_war  
+	relative_position_id = TUR_secure_southern_flank
+	prerequisite = { focus = TUR_secure_southern_flank }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		451 = { add_core_of = TUR }	
+		663 = { add_core_of = TUR }
+		662 = { add_core_of = TUR }
+		449 = { add_core_of = TUR }		
+		661 = { add_core_of = TUR }	
+		448 = { add_core_of = TUR }		
+		450 = { add_core_of = TUR }	
+		273 = { add_core_of = TUR }
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_revenge_for_libya"	
+	}
+}
+
+focus = { 
+	id = TUR_deal_With_french
+	icon = GFX_focus_OTT_Reeling_in_Arab_Vilayets
+	relative_position_id = TUR_secure_our_heartland
+	prerequisite = { focus = TUR_secure_our_heartland }
+	x = 2
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				expire = 0
+				generator = { 344 677 553 }
+		}
+		677 = { add_core_of = TUR }	
+		553 = { add_core_of = TUR }		
+		450 = { add_core_of = TUR }	
+		273 = { add_core_of = TUR }			
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_deal_With_french"			
+	}
+}
+focus = { 
+	id = TUR_begin_talks_for_cyprus
+	icon = GFX_focus_OTT_enosis_but_turks  
+	relative_position_id = TUR_deal_With_french
+	prerequisite = { focus = TUR_deal_With_french }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_begin_talks_for_cyprus"	
+	}
+}
+focus = { 
+	id = TUR_buy_back_the_islands
+	icon = GFX_focus_OTT_secure_sea_and_skies  
+	relative_position_id = TUR_begin_talks_for_cyprus
+	prerequisite = { focus = TUR_begin_talks_for_cyprus }
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		164 = { add_core_of = TUR }	
+		1068 = { add_core_of = TUR }
+		182 = { add_core_of = TUR }
+		187 = { add_core_of = TUR }		
+		1070 = { add_core_of = TUR }	
+		183 = { add_core_of = TUR }		
+		1069 = { add_core_of = TUR }	
+log = "[GetDateText]: [Root.GetName]: Focus TUR_buy_back_the_islands"			
+	}
+}
+focus = { 
+	id = TUR_the_heartland_is_secured
+	icon = GFX_focus_OTT_secured  
+	relative_position_id = TUR_buy_back_the_islands
+	prerequisite = { focus = TUR_buy_back_the_islands }
+	prerequisite = { focus = TUR_revenge_for_libya }
+	prerequisite = { focus = TUR_unify_with_azerbaijan }
+	prerequisite = { focus = TUR_secure_turks_in_greece }
+	prerequisite = { focus = TUR_regognise_balkan_holdings }	
+	x = -2
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+	add_stability = 0.1
+	add_war_support = 0.1
+	add_political_power = 100
+	add_manpower = 150000
+	
+		72 = { add_core_of = TUR }	
+		137 = { add_core_of = TUR }		
+		196 = { add_core_of = TUR }	
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_heartland_is_secured"	
+	}
+}
+focus = { 
+	id = TUR_coqnuer_the_levant_and_egypt
+	icon = GFX_goal_EGY_nile_proc
+	relative_position_id = TUR_the_heartland_is_secured
+	prerequisite = { focus = TUR_the_heartland_is_secured }
+	
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+		456 = { add_core_of = TUR }	
+		457 = { add_core_of = TUR }		
+		466 = { add_core_of = TUR }	
+		452 = { add_core_of = TUR }
+		477 = { add_core_of = TUR }		
+		
+		813 = { add_core_of = TUR }		
+		955 = { add_core_of = TUR }	
+		454 = { add_core_of = TUR }
+		453 = { add_core_of = TUR }	
+log = "[GetDateText]: [Root.GetName]: Focus TUR_coqnuer_the_levant_and_egypt"	
+		680 = { add_core_of = TUR }		
+		1050 = { add_core_of = TUR }	
+		554 = { add_core_of = TUR }
+		552 = { add_core_of = TUR }			
+		769 = { add_core_of = TUR }			
+	}
+}
+focus = { 
+	id = TUR_crush_the_arabs
+	icon = GFX_goal_United_Arab_Emirates
+	relative_position_id = TUR_coqnuer_the_levant_and_egypt
+	prerequisite = { focus = TUR_coqnuer_the_levant_and_egypt }
+	
+	x = 0
+	y = 1  
+	cost = 5
+	ai_will_do = {
+		factor = 20
+	}  
+	completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ARB
+				expire = 0
+						
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YEM
+				expire = 0
+						
+			}	
+			create_wargoal = {
+				type = annex_everything
+				target = IRQ
+				expire = 0
+						
+			}	
+			create_wargoal = {
+				type = annex_everything
+				target = ISR
+				expire = 0
+						
+			}	
+		455 = { add_core_of = TUR }	
+		1031 = { add_core_of = TUR }		
+		831 = { add_core_of = TUR }	
+		679 = { add_core_of = TUR }
+		293 = { add_core_of = TUR }	
+		
+		656 = { add_core_of = TUR }	
+		675 = { add_core_of = TUR }		
+		291 = { add_core_of = TUR }	
+		1047 = { add_core_of = TUR }
+		676 = { add_core_of = TUR }		
+log = "[GetDateText]: [Root.GetName]: Focus TUR_crush_the_arabs"	
+		1049 = { add_core_of = TUR }	
+		1048 = { add_core_of = TUR }		
+		744 = { add_core_of = TUR }	
+		658 = { add_core_of = TUR }
+		945 = { add_core_of = TUR }			
+				
+	}
+}
+
+
+
+focus = { 
+		id = TUR_inspecting_the_military 
+		icon = GFX_goal_OTT_army
+		prerequisite = { focus = TUR_emergency_session }  
+		available = {
+			OR = {
+				has_completed_focus = TUR_end_of_the_empire
+				has_completed_focus = TUR_secure_imperial_power
+			}
+		}
+		x = 30
+		y = 1
+        relative_position_id = TUR_emergency_session	
+		cost = 5
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				NOT = {
+					OR = {
+						has_completed_focus = TUR_death_of_an_empire
+						has_completed_focus = TUR_consolidation_of_power
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_inspecting_the_military"
+			army_experience = 25
+		}
+	}
+
+	focus = { 
+		id = TUR_military_colleges 
+		prerequisite = { focus = TUR_inspecting_the_military }
+		icon = GFX_goal_military_academy  
+		x =	4
+		y = 1  
+        relative_position_id = TUR_inspecting_the_military			
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_military_colleges"
+			army_experience = 30
+		}    
+	}
+
+	focus = { 
+		id = TUR_rearmament
+		prerequisite = { focus = TUR_military_colleges }
+		icon = GFX_focus_generic_license_production  
+		x =	3
+		y = 2  
+        relative_position_id = TUR_inspecting_the_military		
+		cost = 5 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_rearmament"
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 
+				amount = 1500 
+				producer = TUR 
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 500
+				producer = TUR
+			}
+		}   
+	}
+
+	focus = { 
+		id = TUR_maintaining_readiness
+		prerequisite = { focus = TUR_rearmament }
+		icon = GFX_goal_conscription  
+		x =	0
+		y = 1
+		relative_position_id = TUR_rearmament
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_maintaining_readiness"
+			increase_conscription = yes
+		} 
+	}
+
+	focus = { 
+		id = TUR_professionalization_of_the_military 
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = TUR_inspecting_the_military }   
+		x = -4
+		y = 1 
+        relative_position_id = TUR_inspecting_the_military			
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_professionalization_of_the_military"
+			army_experience = 10
+			add_political_power = 25
+		} 
+	}
+
+	focus = { 
+		id = TUR_field_exercises 
+		icon = GFX_goal_generic_position_armies 
+		prerequisite = { focus = TUR_inspecting_the_military }  
+		x = -1
+		y = 1
+        relative_position_id = TUR_inspecting_the_military			
+		cost = 5  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_field_exercises"
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_equipment_modernization 
+		icon = GFX_goal_national_arsenal
+		prerequisite = { focus = TUR_inspecting_the_military }  
+		x = 1 
+		y = 1 
+        relative_position_id = TUR_inspecting_the_military			
+		cost = 5  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_equipment_modernization"
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_british_assistance 
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = TUR_professionalization_of_the_military }
+		mutually_exclusive = { focus = TUR_german_assistance } 
+		available = {
+			OR = {
+				has_government = social_liberal
+				has_government = authoritarian_democrat
+			}
+			ENG = {
+				exists = yes
+			}
+		}
+		bypass = {
+			ENG = {
+				exists = no
+			}
+		}
+		x = -1
+		y = 1   
+		        relative_position_id = TUR_professionalization_of_the_military	
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_british_assistance"
+			ENG = {
+				country_event = { id = tur.67 days = 5 }
+			}
+		} 
+	}
+
+	focus = { 
+		id = TUR_german_assistance 
+		icon = GFX_goal_generic_military_deal 
+		prerequisite = { focus = TUR_professionalization_of_the_military } 
+		mutually_exclusive = { focus = TUR_british_assistance } 
+		available = {
+			OR = {
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+			GER = {
+				exists = yes
+			}
+		}
+		bypass = {
+			GER = {
+				exists = no
+			}
+		}
+		relative_position_id = TUR_professionalization_of_the_military
+		x = 1
+		y = 1  
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_german_assistance"
+			GER = {
+				country_event = { id = tur.70 days = 5 }
+			}
+		} 
+	}
+
+	focus = { 
+		id = TUR_gendarmerie_general_command 
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = TUR_field_exercises }  
+		x = 0
+		y = 1
+		relative_position_id = TUR_field_exercises
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_gendarmerie_general_command"
+			add_ideas = TUR_gendarmerie_general_command_idea
+		} 
+	}
+
+	focus = { 
+		id = TUR_field_artillery 
+		icon = GFX_goal_national_artillery
+		prerequisite = { focus = TUR_equipment_modernization }  
+		x = 0
+		y = 1
+		relative_position_id = TUR_equipment_modernization
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_field_artillery"
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		} 
+	}
+
+	focus = { 
+		id = TUR_general_staff 
+		icon = GFX_goal_government_icon 
+		prerequisite = { focus = TUR_military_colleges }  
+		x = 1
+		y = 1   
+		cost = 5   
+		relative_position_id = TUR_military_colleges
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_general_staff"
+			add_ideas = TUR_general_staff_idea
+		} 
+	}
+
+	focus = { 
+		id = TUR_special_forces_command
+		icon = GFX_goal_volunteer_alliance 
+		prerequisite = { focus = TUR_general_staff }  
+		x = 0
+		y = 1
+		relative_position_id = TUR_general_staff
+		cost = 5    
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_special_forces_command"
+			add_ideas = TUR_special_forces_command_idea
+		}
+	}
+
+	focus = { 
+		id = TUR_contracts_with_royal_arsenal 
+		icon = GFX_goal_generic_small_arms 
+		prerequisite = { focus = TUR_british_assistance } 
+		available = {
+			OR = {
+				has_government = social_liberal
+				has_government = authoritarian_democrat
+			}
+		}
+		relative_position_id = TUR_british_assistance
+		x = 0
+		y = 1
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_contracts_with_royal_arsenal"
+			custom_effect_tooltip = TUR_royal_arsenal_tt
+		} 
+	}
+
+	focus = { 
+		id = TUR_contracts_with_mauser 
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = TUR_german_assistance } 
+		available = {
+			OR = {
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		} 
+		x = 0
+		y = 1
+		relative_position_id = TUR_german_assistance
+		cost = 5  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_contracts_with_mauser"
+			custom_effect_tooltip = TUR_mauser_tt
+		}  
+	}
+
+	focus = { 
+		id = TUR_support_equipment 
+		icon = GFX_goal_munitions_factories  
+		prerequisite = { focus = TUR_gendarmerie_general_command } 
+		x = 0
+		y = 1  
+		cost = 5
+        relative_position_id = 	TUR_gendarmerie_general_command	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_support_equipment"
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 0.5
+				uses = 1
+				category = support_tech
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_engineering_schools 
+		icon = GFX_goal_generic_production  
+		prerequisite = { focus = TUR_support_equipment } 
+		x = 0
+		y = 1
+		relative_position_id = TUR_support_equipment	
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_engineering_schools"
+			if = {
+				limit = {
+					NOT = {
+						TUR = {
+							has_tech = tech_engineers
+						}
+					}
+				}
+				set_technology = {
+					tech_engineers = 1
+				}
+				else = {
+					if = {
+						limit = {
+							NOT = {
+								TUR = {
+									has_tech = tech_engineers2
+								}
+							}
+						}
+						set_technology = {
+							tech_engineers2 = 1
+						}
+						else = {
+							if = {
+								limit = {
+									NOT = {
+										TUR = {
+											has_tech = tech_engineers3
+										}
+									}
+								}
+								set_technology = {
+									tech_engineers3 = 1
+								}
+								else = {
+									if = {
+										limit = {
+											NOT = {
+												TUR = {
+													has_tech = tech_engineers4
+												}
+											}
+										}
+										set_technology = {
+											tech_engineers4 = 1
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		} 
+	}
+
+	focus = { 
+		id = TUR_armoured_vehicles 
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = TUR_field_artillery }    
+		x = 0
+		y = 1  
+		relative_position_id = TUR_field_artillery
+		cost = 5   
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_armoured_vehicles"
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				uses = 1
+				technology = motorised_infantry
+			}
+		} 
+	}
+
+	focus = { 
+		id = TUR_tank_research 
+		prerequisite = { focus = TUR_armoured_vehicles }
+		icon = GFX_goal_RUS_Markov_plan  
+		x =	0
+		y = 1  
+		relative_position_id = TUR_armoured_vehicles
+		cost = 5  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_tank_research"
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_naval_considerations 
+		icon = GFX_goal_OTT_navy
+		prerequisite = { focus = TUR_emergency_session }
+		available = {
+			OR = {
+				has_completed_focus = TUR_end_of_the_empire
+				has_completed_focus = TUR_secure_imperial_power
+			}
+		}
+		x = 40 
+		y = 1
+		relative_position_id = TUR_emergency_session
+		cost = 5
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				NOT = {
+					OR = {
+						has_completed_focus = TUR_death_of_an_empire
+						has_completed_focus = TUR_consolidation_of_power
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_naval_considerations"
+			navy_experience = 25
+		}   
+	}
+
+	focus = { 
+		id = TUR_naval_infantry 
+		icon = GFX_goal_generic_amphibious_assault 
+		prerequisite = { focus = TUR_naval_considerations }  
+		x = -3
+		y = 1
+		relative_position_id = TUR_naval_considerations
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		} 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_naval_infantry"
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = marines
+				technology = marines2
+			}
+		}   
+	}
+
+	focus = { 
+		id = TUR_commission_naval_cruisers 
+		icon = GFX_goal_generic_navy_cruiser  
+		prerequisite = { focus = TUR_naval_considerations }
+		x = -1
+		y = 1
+        relative_position_id = TUR_naval_considerations		
+		cost = 5 
+		ai_will_do = {
+			factor = 30
+		} 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_commission_naval_cruisers"
+			custom_effect_tooltip = TUR_building_naval_cruisers_tt
+			add_timed_idea = {
+				idea = TUR_naval_costs_idea
+				days = 90
+			}
+			hidden_effect = {
+				country_event = { id = tur.66 days = 90 }
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_sabotaging_enemy_supply_lines 
+		icon = GFX_goal_generic_navy_submarine 
+		prerequisite = { focus = TUR_naval_considerations }  
+		x = 1
+		y = 1  
+		relative_position_id = TUR_naval_considerations
+		cost = 5
+		ai_will_do = {
+			factor = 25
+		}  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_sabotaging_enemy_supply_lines"
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_pendik_naval_shipyard 
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = TUR_naval_considerations }  
+		x = 3 
+		y = 1   
+		relative_position_id = TUR_naval_considerations
+		cost = 5  
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_pendik_naval_shipyard"
+			347 = {
+				if = {
+					limit = {
+						is_controlled_by = TUR
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_naval_doctrines 
+		icon = GFX_goal_generic_sea_focused_navy 
+		prerequisite = { focus = TUR_sabotaging_enemy_supply_lines } 
+		prerequisite = { focus = TUR_commission_naval_cruisers }  
+		x = 1
+		y = 1
+		cost = 5 
+		ai_will_do = {
+			factor = 30
+		} 
+		relative_position_id = TUR_commission_naval_cruisers
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_naval_doctrines"
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_building_destroyers
+		icon = GFX_goal_generic_wolf_pack  
+		prerequisite = { focus = TUR_naval_infantry }
+		x = 0
+		y = 2   
+		cost = 5 
+		ai_will_do = {
+			factor = 20
+		} 
+		relative_position_id = TUR_naval_infantry
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_building_destroyers"
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_naval_air_coordination 
+		icon = GFX_goal_generic_navy_carrier  
+		prerequisite = { focus = TUR_naval_doctrines }
+		mutually_exclusive = { focus = TUR_reliance_on_battleships } 
+		x = -1 
+		y = 1  
+		cost = 5  
+		ai_will_do = {
+			factor = 15
+		}
+		relative_position_id = TUR_naval_doctrines
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_naval_air_coordination"
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_reliance_on_battleships 
+		icon = GFX_goal_generic_navy_battleship 
+		prerequisite = { focus = TUR_naval_doctrines }  
+		mutually_exclusive = { focus = TUR_naval_air_coordination }
+		x = 1
+		y = 1  
+		cost = 5  
+		ai_will_do = {
+			factor = 20
+		}
+		relative_position_id = TUR_naval_doctrines
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reliance_on_battleships"
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_bartin_naval_base 
+		icon = GFX_goal_generic_build_navy  
+		prerequisite = { focus = TUR_pendik_naval_shipyard } 
+		x = 0 
+		y = 2  
+		cost = 5 
+		relative_position_id = TUR_pendik_naval_shipyard
+		ai_will_do = {
+			factor = 15
+		} 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_bartin_naval_base"
+			hidden_effect = {
+				goto_province = 9783
+			}
+			777 = {
+				if = {
+					limit = {
+						is_owned_by = TUR
+					}
+					add_building_construction = {
+						type = naval_base
+						province = 11866
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_directorate_of_naval_affairs 
+		icon = GFX_goal_generic_scientific_exchange 
+		prerequisite = { focus = TUR_reliance_on_battleships focus = TUR_naval_air_coordination }
+		prerequisite = { focus = TUR_bartin_naval_base} 
+		prerequisite = { focus = TUR_building_destroyers }  
+		x = 3
+		y = 1 
+        relative_position_id = TUR_building_destroyers		
+		cost = 5 
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_directorate_of_naval_affairs"
+			add_ideas = TUR_directorate_of_naval_affairs_idea
+		}   
+	}
+
+	focus = { 
+		id = TUR_examining_the_air_force 
+		icon = GFX_goal_OTT_air_command
+		prerequisite = { focus = TUR_emergency_session }  
+		available = {
+			OR = {
+				has_completed_focus = TUR_end_of_the_empire
+				has_completed_focus = TUR_secure_imperial_power
+			}
+		}
+		x = 48
+		y = 1
+		relative_position_id = TUR_emergency_session
+		cost = 5
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				NOT = {
+					OR = {
+						has_completed_focus = TUR_death_of_an_empire
+						has_completed_focus = TUR_consolidation_of_power
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_examining_the_air_force"
+			air_experience = 25
+		}
+	}
+
+	focus = { 
+		id = TUR_invest_in_fighters 
+		icon = GFX_goal_generic_air_fighter 
+		prerequisite = { focus = TUR_examining_the_air_force } 
+		mutually_exclusive = { focus = TUR_bomber_research } 
+		x = -1 
+		y = 1  
+		relative_position_id = TUR_examining_the_air_force
+		cost = 5
+		ai_will_do = {
+			factor = 25
+		}  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_invest_in_fighters"
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_bomber_research 
+		icon = GFX_goal_generic_air_bomber 
+		prerequisite = { focus = TUR_examining_the_air_force } 
+		mutually_exclusive = { focus = TUR_invest_in_fighters } 
+		relative_position_id = TUR_examining_the_air_force
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_bomber_research"
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_close_air_support 
+		icon = GFX_goal_generic_CAS  
+		prerequisite = { focus = TUR_konya_airbase }
+		prerequisite = { focus = TUR_invest_in_fighters } 
+		x = -1
+		y = 1
+		cost = 5 
+		ai_will_do = {
+			factor = 15
+		}
+		relative_position_id = TUR_konya_airbase
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_close_air_support"
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 0.5
+				uses = 1
+				category = cas_bomber
+			}
+		}   
+	}
+
+	focus = { 
+		id = TUR_konya_airbase 
+		icon = GFX_goal_generic_air_production 
+		prerequisite = { focus = TUR_bomber_research focus = TUR_invest_in_fighters } 
+		x = 1
+		y = 1  
+		cost = 5 
+		ai_will_do = {
+			factor = 20
+		}
+		relative_position_id = TUR_invest_in_fighters
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_konya_airbase"
+			346 = {
+				if = {
+					limit = {
+						is_owned_by = TUR
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}   
+	}
+
+	focus = { 
+		id = TUR_naval_bombers 
+		icon = GFX_goal_generic_air_naval_bomber  
+		prerequisite = { focus = TUR_konya_airbase }
+		prerequisite = { focus = TUR_bomber_research } 
+		x = 1
+		y = 1  
+		cost = 5 
+		ai_will_do = {
+			factor = 15
+		} 
+		relative_position_id = TUR_konya_airbase
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_naval_bombers"
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_aerial_doctrines 
+		icon = GFX_goal_generic_air_doctrine  
+		prerequisite = { focus = TUR_konya_airbase }
+		prerequisite = { focus = TUR_close_air_support focus = TUR_naval_bombers } 
+		x = 0
+		y = 2  
+		cost = 5 
+		ai_will_do = {
+			factor = 30
+		}
+		relative_position_id = TUR_konya_airbase
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_aerial_doctrines"
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}  
+	}
+
+	focus = { 
+		id = TUR_light_aircraft_focus 
+		icon = GFX_goal_generic_air_fighter2  
+		prerequisite = { focus = TUR_close_air_support } 
+		prerequisite = { focus = TUR_aerial_doctrines }  
+		x = 0
+		y = 2  
+		cost = 5 
+		ai_will_do = {
+			factor = 25
+		}
+		relative_position_id = TUR_close_air_support
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_light_aircraft_focus"
+			add_ideas = TUR_light_aircraft_idea
+		}   
+	}
+
+	focus = { 
+		id = TUR_heavy_aircraft_focus 
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = TUR_naval_bombers }  
+		prerequisite = { focus = TUR_aerial_doctrines }   
+		x = 0
+		y = 2  
+		relative_position_id = TUR_naval_bombers
+		cost = 5 
+		ai_will_do = {
+			factor = 25
+		} 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_heavy_aircraft_focus"
+			add_ideas = TUR_heavy_aircraft_idea
+		}   
+	}
+
+	focus = { 
+		id = TUR_eskisehir_air_school 
+		icon = GFX_goal_tfv_generic_tech_sharing  
+		prerequisite = { focus = TUR_aerial_doctrines }
+		prerequisite = { focus = TUR_heavy_aircraft_focus focus = TUR_light_aircraft_focus }
+		x = -1 
+		y = 1  
+		relative_position_id = TUR_heavy_aircraft_focus
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_eskisehir_air_school"
+			add_ideas = TUR_eskisehir_air_school_idea
+		}  
+	}
+
+
+focus = { 
+	id = TUR_ecconomic_affairs
+	icon = GFX_goal_economic_control
+	x = 20
+	y = 2
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	prerequisite = { focus = TUR_emergency_session }
+	relative_position_id = TUR_emergency_session
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_economic_affairs"
+		custom_effect_tooltip = TUR_economic_downturn_tt	
+		hidden_effect = {country_event = { id = trteco.1 months = 3 }
+		}
+	}   
+}
+focus = { 
+	id = TUR_issue_of_unemployment
+	icon = GFX_goal_generic_agriculture
+	relative_position_id = TUR_ecconomic_affairs
+	prerequisite = { focus = TUR_ecconomic_affairs } 
+	x = -2
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	add_stability = 0.08
+			add_ideas = TUR_agricultural_methods_idea	
+				log = "[GetDateText]: [Root.GetName]: Focus TUR_issue_of_unemployment"
+	}   
+}
+focus = { 
+	id = TUR_deal_With_collapsing_industry
+	icon = GFX_goal_factory_complex
+	relative_position_id = TUR_ecconomic_affairs
+	prerequisite = { focus = TUR_ecconomic_affairs } 
+	x = 0
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	add_political_power = -75
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_deal_With_collapsing_industry"
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_controlled_by = TUR
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}   
+}
+focus = { 
+	id = TUR_face_our_debt_crisis
+	icon = GFX_goal_generic_loans
+	relative_position_id = TUR_ecconomic_affairs
+	prerequisite = { focus = TUR_ecconomic_affairs } 
+	x = 2
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	country_event = { id = trteco.9 months = 3 }
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_face_our_debt_crisis"
+	}   
+}
+focus = { 
+	id = TUR_establish_national_labour_union
+	icon = GFX_goal_listen_unions 
+	relative_position_id = TUR_issue_of_unemployment
+	prerequisite = { focus = TUR_issue_of_unemployment } 
+	x = -1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_establish_national_labour_union"
+            if = {
+				limit = {
+					has_idea = TUR_opda_idea
+				}
+				swap_ideas = {
+					remove_idea = TUR_opda_idea
+					add_idea = TUR_opda_idea2
+				}
+				else = {
+					if = {
+						limit = {
+							has_idea = TUR_opda_idea2
+						}
+						remove_ideas = TUR_opda_idea2
+					}
+				}
+			}
+	
+	}   
+}
+focus = { 
+	id = TUR_state_investment_programs
+	icon = GFX_goal_generic_foreign_investments
+	relative_position_id = TUR_issue_of_unemployment
+	prerequisite = { focus = TUR_issue_of_unemployment } 
+	prerequisite = { focus = TUR_deal_With_collapsing_industry }
+	x = 1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_state_investment_programs"
+				random_owned_state = {
+				limit = {
+					is_core_of = TUR 
+					is_on_continent = europe
+					is_controlled_by = TUR
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR 
+					is_on_continent = middle_east
+					is_controlled_by = TUR
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR 
+					is_on_continent = middle_east
+					is_controlled_by = TUR
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+	}   
+}
+focus = { 
+	id = TUR_austerity_program
+	icon = GFX_goal_generic_austerity_measures
+	relative_position_id = TUR_issue_of_unemployment
+	prerequisite = { focus = TUR_face_our_debt_crisis } 
+	prerequisite = { focus = TUR_deal_With_collapsing_industry }
+	x = 3
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	add_political_power = -150
+			add_offsite_building = { type = industrial_complex level = 2 }	
+log = "[GetDateText]: [Root.GetName]: Focus TUR_austerity_program"			
+	}   
+}
+focus = { 
+	id = TUR_nationalise_bussinesses
+	icon = GFX_goal_workers_for_business
+	relative_position_id = TUR_issue_of_unemployment
+	prerequisite = { focus = TUR_face_our_debt_crisis } 
+	x = 5
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_controlled_by = TUR
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = middle_east
+				is_controlled_by = TUR
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+log = "[GetDateText]: [Root.GetName]: Focus TUR_nationalise_bussinesses"				
+	}   
+}
+focus = { 
+	id = TUR_subsidesize_the_industry
+	icon = GFX_focus_generic_industry_3
+	relative_position_id = TUR_state_investment_programs
+	prerequisite = { focus = TUR_state_investment_programs }
+	prerequisite = { focus = TUR_austerity_program }
+	x = 1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_subsidesize_the_industry"	
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.75
+			uses = 2
+			category = industry
+		}
+				if = {
+					limit = {
+						has_idea = TUR_economic_downturn_idea
+					}
+					remove_ideas = TUR_economic_downturn_idea
+					else = {
+						if = {
+							limit = {
+								has_idea = TUR_economic_downturn_idea2
+							}
+							remove_ideas = TUR_economic_downturn_idea2
+							else = {
+								if = {
+									limit = {
+										has_idea = TUR_economic_downturn_idea3
+									}
+									remove_ideas = TUR_economic_downturn_idea3
+								}
+							}
+						}
+					}
+				}
+			
+	}   
+}
+focus = { 
+	id = TUR_subsidesize_our_agriculture
+	icon = GFX_focus_AUS_agriculture 
+	relative_position_id = TUR_establish_national_labour_union
+	prerequisite = { focus = TUR_establish_national_labour_union }
+	x = 0
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	swap_ideas = {
+		remove_idea = TUR_agricultural_methods_idea
+		add_idea = TUR_land_redistribution_idea
+				
+       }
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_subsidesize_our_agriculture"	
+	   
+	}   
+}
+focus = { 
+	id = TUR_foundation_of_defence_industry
+	icon = GFX_goal_RAJ_Autonomous_Industry
+	relative_position_id = TUR_nationalise_bussinesses
+	prerequisite = { focus = TUR_nationalise_bussinesses }
+	x = 0
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_foundation_of_defence_industry"
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = middle_east
+				is_controlled_by = TUR
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = middle_east
+				is_controlled_by = TUR
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}   
+}
+focus = { 
+	id = TUR_nationalise_railways
+	icon = GFX_goal_generic_railroad
+	relative_position_id = TUR_subsidesize_the_industry
+	prerequisite = { focus = TUR_subsidesize_the_industry }
+	x = -1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_nationalise_railways"	
+		if = {
+			limit = {
+				has_idea = TUR_opda_idea
+			}
+			swap_ideas = {
+				remove_idea = TUR_opda_idea
+				add_idea = TUR_opda_idea2
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = TUR_opda_idea2
+					}
+					remove_ideas = TUR_opda_idea2
+				}
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = europe
+				is_controlled_by = TUR
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = middle_east
+				is_controlled_by = TUR
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = middle_east
+				is_controlled_by = TUR
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = TUR_opda_idea
+						has_idea = TUR_opda_idea2
+					}
+				}
+				ENG = {
+					country_event = { id = tureco.3 days = 5 }
+				}
+				FRA = {
+					country_event = { id = tureco.4 days = 5 }
+				}
+				ITA = {
+					country_event = { id = tureco.5 days = 5 }
+				}
+			}
+		}	
+	}   
+}
+focus = { 
+	id = TUR_exploite_natural_resources
+	icon = GFX_goal_steel
+	relative_position_id = TUR_subsidesize_the_industry
+	prerequisite = { focus = TUR_subsidesize_the_industry }
+	x = 1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_resource_exploitation"
+		add_resource = {
+			type = steel
+			amount = 18
+			state = 348
+		}	
+		add_resource = {
+			type = tungsten
+			amount = 12
+			state = 779
+		}			
+	}   
+}
+focus = { 
+	id = TUR_koc_holdings
+	icon = GFX_goal_oil 
+	relative_position_id = TUR_nationalise_railways
+	prerequisite = { focus = TUR_nationalise_railways }
+	prerequisite = { focus = TUR_exploite_natural_resources}
+	x = 1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_koc_holdings"
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = middle_east
+				is_controlled_by = TUR
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = TUR 
+				is_on_continent = middle_east
+				is_controlled_by = TUR
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}   
+}
+focus = { 
+	id = TUR_kirikale_steel
+	icon = GFX_focus_generic_steel
+	relative_position_id = TUR_subsidesize_our_agriculture
+	prerequisite = { focus = TUR_subsidesize_our_agriculture }
+	
+	x = 1
+	y = 2
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		add_resource = {
+			type = steel
+			amount = 26
+			state = 49
+		}	
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_kirikale_steel"
+	}   
+}
+focus = { 
+	id = TUR_fund_research_insitution
+	icon = GFX_focus_research3
+	relative_position_id = TUR_foundation_of_defence_industry
+	prerequisite = { focus = TUR_foundation_of_defence_industry }
+	
+	x = -1
+	y = 2
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus TUR_fund_research_insitution"
+	add_research_slot = 1
+	}   
+}
+focus = { 
+	id = TUR_new_central_bank
+	icon = GFX_goal_gold_reserve 
+	relative_position_id = TUR_kirikale_steel
+	prerequisite = { focus = TUR_kirikale_steel }
+	prerequisite = { focus = TUR_koc_holdings }
+	x = 1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		add_ideas = TUR_central_bank_idea	
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_new_central_bank"
+	}   
+}
+focus = { 
+	id = TUR_state_broadcasting_station
+	icon = GFX_goal_generic_radio_equipment
+	relative_position_id = TUR_fund_research_insitution
+	prerequisite = { focus = TUR_fund_research_insitution }
+	prerequisite = { focus = TUR_koc_holdings }
+	x = -1
+	y = 1
+	cost = 5 
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = research_bonus
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_state_broadcasting_station"		
+	}   
+	
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

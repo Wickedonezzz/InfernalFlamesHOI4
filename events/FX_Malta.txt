@@ -1,0 +1,148 @@
+﻿###########################
+# Maltese Events
+###########################
+
+add_namespace = mlt
+
+country_event = {
+	id = mlt.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mlt.5"}
+	title = "Maltese Future"
+	desc = mlt.5.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes	
+
+	option = { 
+		name = "Declare elections"
+		add_stability = 0.05
+		add_political_power = 25
+		country_event = {
+			id = mlt.6 
+			days = 1
+		}
+	}
+	option = { 
+		name = "Labour Radicals Revolution"
+		add_stability = 0.05
+		add_political_power = 25|
+		set_politics = {
+			ruling_party = vanguardist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = vanguardist
+			popularity = 0.3
+		}
+	}
+	option = { 
+		name = "The Church Takeover"
+		add_stability = 0.05
+		add_political_power = 25|
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.3
+		}
+	}
+	option = { 
+		name = "The Order returns"
+		add_stability = 0.05
+		add_political_power = 25|
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
+		}
+	}
+	option = { 
+		name = "Italian Fasci control the state"
+		add_stability = 0.05
+		add_political_power = 25|
+		set_politics = {
+			ruling_party = valkist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = valkist
+			popularity = 0.3
+		}
+	}
+}
+country_event = {
+	id = mlt.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mlt.6"}
+	title = "Maltese Elections"
+	desc = mlt.6.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes	
+	option = { 
+		name = "Labourists wins"
+		add_stability = 0.05
+		add_political_power = 25|
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}
+	}
+	option = { 
+		name = "Constitutionalists wins"
+		add_stability = 0.05
+		add_political_power = 25|
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.3
+		}
+	}
+	option = { 
+		name = "Nationalists wins"
+		add_stability = 0.05
+		add_political_power = 25|
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.3
+		}
+	}
+	option = { 
+		name = "The British Cancel Elections"
+		add_stability = 0.05
+		add_political_power = 25|
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+	}
+}

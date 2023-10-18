@@ -1,0 +1,51 @@
+﻿l_english:
+  #Country Names
+  ISC_vanguardist: "International Straits Commision"
+  ISC_vanguardist_DEF: "The International Straits Commision"
+  ISC_vanguardist_ADJ: "International-Straits-Commision"
+
+  ISC_collectivist: "International Straits Commision"
+  ISC_collectivist_DEF: "The International Straits Commision"
+  ISC_collectivist_ADJ: "International-Straits-Commision"
+
+  ISC_libertarian_socialist: "International Straits Commision"
+  ISC_libertarian_socialist_DEF: "The International Straits Commision"
+  ISC_libertarian_socialist_ADJ: "International-Straits-Commision"
+
+  ISC_social_democrat: "International Straits Commision"
+  ISC_social_democrat_DEF: "The International Straits Commision"
+  ISC_social_democrat_ADJ: "International-Straits-Commision"
+
+  ISC_social_liberal: "International Straits Commision"
+  ISC_social_liberal_DEF: "The International Straits Commision"
+  ISC_social_liberal_ADJ: "International-Straits-Commision"
+
+  ISC_market_liberal: "International Straits Commision"
+  ISC_market_liberal_DEF: "The International Straits Commision"
+  ISC_market_liberal_ADJ: "International-Straits-Commision"
+
+  ISC_social_conservative: "International Straits Commision"
+  ISC_social_conservative_DEF: "The International Straits Commision"
+  ISC_social_conservative_ADJ: "International-Straits-Commision"
+
+  ISC_authoritarian_democrat: "International Straits Commision"
+  ISC_authoritarian_democrat_DEF: "The International Straits Commision"
+  ISC_authoritarian_democrat_ADJ: "International-Straits-Commision"
+
+  ISC_paternal_autocrat: "International Straits Commision"
+  ISC_paternal_autocrat_DEF: "The International Straits Commision"
+  ISC_paternal_autocrat_ADJ: "International-Straits-Commision"
+
+  ISC_national_populist: "International Straits Commision"
+  ISC_national_populist_DEF: "The International Straits Commision"
+  ISC_national_populist_ADJ: "International-Straits-Commision"
+
+  ISC_valkist: "International Straits Commision"
+  ISC_valkist_DEF: "The International Straits Commision"
+  ISC_valkist_ADJ: "International-Straits-Commision"
+  # Leader name, for now generic :>
+  POLITICS_ISC_DESC: "[ISC.GetName]"
+  #Ideas names
+  ISC_the_patriarchate: "The Patriarchate"
+  ISC_free_zone: "Free Zone"
+  

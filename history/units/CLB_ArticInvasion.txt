@@ -1,0 +1,42 @@
+division_template = {
+	name = "Artic Invasion"
+	division_names_group = USA_INF_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+}
+
+units = {
+    division = {
+		name = "East Artic Invasion"
+		location = 1863
+		division_template = "Artic Invasion"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "South Artic Invasion"
+		location = 4728
+		division_template = "Artic Invasion"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "North Artic Invasion"
+		location = 1823
+		division_template = "Artic Invasion"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

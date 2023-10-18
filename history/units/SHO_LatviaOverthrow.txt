@@ -1,0 +1,52 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+  division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+	}
+	
+	support = {
+    engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+
+	##### GROUND FORCES #####
+
+	#### INFANTRY ####
+	division= {	
+		name = "FK REV Flower"
+		location = 9262
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "FK REV BloodSaw"
+		location = 3319
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "FK REV BTLAX"
+		location = 3296
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "FK REV Eastfellen"
+		location = 9240
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.40
+	}
+}

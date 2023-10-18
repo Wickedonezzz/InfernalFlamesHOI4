@@ -1,0 +1,12 @@
+scripted_gui = {
+	GRE_golden_dawn_gui = {
+		context_type = decision_category
+		window_name = "golden_dawn_gui_PLEASEWORK"
+
+		properties = {
+			shitshitcum = {
+				image = "start working you fucker"
+			}
+		}
+	}
+}

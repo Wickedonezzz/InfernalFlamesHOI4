@@ -1,0 +1,48 @@
+add_namespace = needec
+
+country_event = {
+  id = needec.1
+  picture = "GFX_report_event_election_vote"
+  title = needec.1.t 
+  desc = needec.1.d
+  is_triggered_only = yes
+  option = { #Unity
+    name = needec.1.a
+    set_politics = {
+    ruling_party = collectivist
+    elections_allowed = no
+    last_election = "1935.12.17"
+	}
+	set_popularities = {
+    collectivist = 96
+  }
+ }
+}
+country_event = { 
+    id = needec.2
+    immediate = {log = "[GetDateText]: [Root.GetName]: event needec.2"}
+    title = needec.2.t
+    desc = needec.2.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = needec.2.a 
+        ai_chance = { factor = 100 }
+		SOV = {
+            add_to_faction = NEE
+			}
+        }
+    option = {
+        name = needec.2.b 
+        ai_chance = { factor = 0 }
+    }
+}
+
+
+
+
+

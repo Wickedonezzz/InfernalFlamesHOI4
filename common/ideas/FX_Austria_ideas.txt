@@ -1,0 +1,594 @@
+####################
+## Austrian Ideas ##
+################################
+## Developed by Steffplays123 ##
+################################
+ideas = {
+	country = {
+		AUS_treaty_saint_germain_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_treaty_saint_germain_idea"}
+			modifier = {
+				consumer_goods_factor = 0.10
+				conscription_factor = -0.40
+				industrial_capacity_factory = -0.50
+				mobilization_speed = -0.50
+			}
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+		}
+		
+		AUS_pan_german_sentiments_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_pan_german_sentiments_idea"}
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.10
+				army_morale_factor = -0.15
+				army_defence_factor = -0.10
+				valkist_drift = 0.02
+			}
+			picture = ger_rebuild_the_nation
+			removal_cost = -1
+		}
+		
+		AUS_counter_valkist_influence_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_counter_valkist_influence_idea"}
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+				army_morale_factor = -0.10
+				army_defence_factor = -0.05
+				valkist_drift = 0.01
+			}
+			picture = ger_rebuild_the_nation
+			removal_cost = -1
+		}
+		
+		AUS_paramilitary_troubles_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_paramilitary_troubles_idea"}
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.10
+				drift_defence_factor = -0.25
+			}
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+		}
+		
+		AUS_limit_militia_influences_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_limit_militia_influences_idea"}
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.07
+				drift_defence_factor = -0.15
+			}
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+		}
+		
+		AUS_austrian_recession_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_austrian_recession_idea"}
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.25
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_negotiations_successful_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_negotiations_successful_idea"}
+			modifier = {
+				consumer_goods_factor = 0.10
+				conscription_factor = -0.20
+				industrial_capacity_factory = -0.30
+				mobilization_speed = -0.30
+			}
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+		}
+		
+		AUS_modernizing_army_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_modernizing_army_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.10
+				industrial_capacity_factory = -0.15
+				mobilization_speed = -0.15
+			}
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+		}
+		
+		AUS_bundesheer_recruitment_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_bundesheer_recruitment_idea"}
+			modifier = {
+				conscription_factor = 0.10
+				mobilization_speed = 0.05
+			}
+			picture = generic_infantry_bonus
+			removal_cost = -1
+		}
+		
+		AUS_school_of_planning_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_school_of_planning_idea"}
+			modifier = {
+				army_org_factor = 0.03
+				planning_speed = 0.15
+			}
+			picture = CZE_planning_bonus
+			removal_cost = -1
+		}
+		
+		AUS_improve_supply_lines_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_improve_supply_lines_idea"}
+			modifier = {
+				army_org_factor = 0.06
+				planning_speed = 0.15
+				supply_consumption_factor = -0.10
+			}
+			picture = CZE_planning_bonus
+			removal_cost = -1
+		}
+		
+		AUS_proper_pilot_training_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_proper_pilot_training_idea"}
+			modifier = {
+				air_accidents_factor = -0.10
+				air_ace_generation_chance_factor = 0.15
+			}
+			picture = generic_air_bonus
+			removal_cost = -1
+		}
+		
+		AUS_defensive_air_doctrines_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_defensive_air_doctrines_idea"}
+			modifier = {
+				air_accidents_factor = -0.10
+				air_ace_generation_chance_factor = 0.15
+				air_defence_factor = 0.15
+			}
+			picture = generic_air_bonus
+			removal_cost = -1
+		}
+		
+		AUS_aggressive_austrian_wings_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_aggressive_austrian_wings_idea"}
+			modifier = {
+				air_accidents_factor = -0.10
+				air_ace_generation_chance_factor = 0.15
+				air_attack_factor = 0.15
+			}
+			picture = generic_air_bonus
+			removal_cost = -1
+		}
+		
+		#London Crash Ideas
+		
+		AUS_london_crash_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_london_crash_idea"}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = -0.05
+				stability_weekly = -0.0010
+				industrial_capacity_factory = -0.30
+				production_speed_buildings_factor = -0.35
+				production_factory_max_efficiency_factor = -0.10
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		#Valkist
+		
+		AUS_volkgemeinschaft_osterreich_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_volkgemeinschaft_osterreich_idea"}
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.10
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		#SocDem
+		
+		AUS_labour_recovery_plans_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_labour_recovery_plans_idea"}
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+				stability_weekly = -0.0005
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.30
+				production_factory_max_efficiency_factor = -0.10
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_projects_for_public_good_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_projects_for_public_good_idea"}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.20
+				production_factory_max_efficiency_factor = -0.05
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_strengthen_cooperative_movement_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_strengthen_cooperative_movement_idea"}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = -0.02
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.20
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		#SocCon
+		
+		AUS_national_austerity_plan_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_national_austerity_plan_idea"}
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+				stability_weekly = -0.0005
+				industrial_capacity_factory = -0.30
+				production_speed_buildings_factor = -0.30
+				production_factory_max_efficiency_factor = -0.10
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_higher_taxes_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_higher_taxes_idea"}
+			modifier = {
+				consumer_goods_factor = 0.07
+				stability_factor = -0.05
+				stability_weekly = -0.0004
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.05
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_tackle_deficit_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_tackle_deficit_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				stability_weekly = -0.0002
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.20
+				production_factory_max_efficiency_factor = -0.05
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		#AutDem/NatPop
+		
+		AUS_recovering_fatherland_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_recovering_fatherland_idea"}
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+				stability_weekly = -0.0005
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.30
+				production_factory_max_efficiency_factor = -0.10
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_cut_spendings_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_cut_spendings_idea"}
+			modifier = {
+				consumer_goods_factor = 0.07
+				stability_factor = -0.05
+				stability_weekly = -0.0004
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.10
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_anti_deficit_measures_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_anti_deficit_measures_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				stability_weekly = -0.0002
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.20
+				production_factory_max_efficiency_factor = -0.10
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_urban_industrial_recovery_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_urban_industrial_recovery_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.03
+				stability_weekly = -0.0001
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.10
+				production_factory_max_efficiency_factor = -0.05
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		AUS_revive_rural_austria_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_revive_rural_austria_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.03
+				stability_weekly = -0.0001
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.10
+				production_factory_max_efficiency_factor = -0.05
+			}
+			picture = great_depression
+			removal_cost = -1
+		}
+		
+		#Other Recovery Ideas
+		
+		AUS_protect_unemployed_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_protect_unemployed_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				MONTHLY_POPULATION = 0.05
+			}
+			picture = HOL_welfare_state
+			removal_cost = -1
+		}
+		
+		AUS_end_agrarian_foreclosures_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_end_agrarian_foreclosures_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				MONTHLY_POPULATION = 0.10
+			}
+			picture = HOL_welfare_state
+			removal_cost = -1
+		}
+		
+		AUS_nationalize_failing_businesses_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_nationalize_failing_businesses_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.10
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+			picture = state_economy
+			removal_cost = -1
+		}
+		
+		AUS_cut_social_benefits_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_cut_social_benefits_idea"}
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.05
+				MONTHLY_POPULATION = -0.10
+			}
+			picture = raj_risk_of_famine
+			removal_cost = -1
+		}
+		
+		AUS_encourage_private_businesses_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_encourage_private_businesses_idea"}
+			modifier = {
+				political_power_gain = -0.10
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.10
+			}
+			picture = state_economy
+			removal_cost = -1
+		}
+		
+		AUS_establish_corporate_guilds_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_establish_corporate_guilds_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+			picture = generic_production_bonus
+			removal_cost = -1
+		}
+		
+		AUS_save_agricultural_soul_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_save_agricultural_soul_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				global_building_slots_factor = 0.10
+				MONTHLY_POPULATION = 0.05
+			}
+			picture = generic_agrarian_society
+			removal_cost = -1
+		}
+		
+		AUS_catholic_economic_principles_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_catholic_economic_principles_idea"}
+			modifier = {
+				consumer_goods_factor = -0.02
+				global_building_slots_factor = 0.10
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				MONTHLY_POPULATION = 0.10
+			}
+			picture = generic_agrarian_society
+			removal_cost = -1
+		}
+		
+		# Economy
+		
+		AUS_vienna_circle_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_vienna_circle_idea"}
+			modifier = {
+				research_speed_factor = 0.10
+				political_power_gain = -0.05
+			}
+			picture = generic_research_bonus
+			removal_cost = -1
+		}
+		
+		AUS_favour_industrialization_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_favour_industrialization_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.15
+				MONTHLY_POPULATION = -0.15
+				production_speed_buildings_factor = 0.05
+			}
+			picture = economic_control_icon
+			removal_cost = -1
+		}
+		
+		AUS_protect_austrian_farmers_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_protect_austrian_farmers_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.05
+				MONTHLY_POPULATION = 0.10
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = -0.05
+			}
+			picture = prc_low_popular_support2
+			removal_cost = -1
+		}
+		
+		# Austronationalist
+		
+		AUS_catholic_nation_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_catholic_nation_idea"}
+			modifier = {
+				army_morale_factor = 0.03
+				drift_defence_factor = 0.10
+				MONTHLY_POPULATION = 0.10
+			}
+			picture = IRE_catholic
+			removal_cost = -1
+		}
+		
+		AUS_quadragesimo_anno_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_quadragesimo_anno_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				army_morale_factor = 0.08
+				drift_defence_factor = 0.15
+				MONTHLY_POPULATION = 0.15
+			}
+			picture = IRE_catholic
+			removal_cost = -1
+		}
+		
+		AUS_agrarian_nation_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_agrarian_nation_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				local_resources_factor = 0.15
+				MONTHLY_POPULATION = 0.05
+			}
+			picture = generic_agrarian_society
+			removal_cost = -1
+		}
+		
+		AUS_neues_leben_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_neues_leben_idea"}
+			modifier = {
+				conscription_factor = 0.10
+				army_morale_factor = 0.03
+				consumer_goods_factor = 0.03
+				local_resources_factor = 0.15
+				MONTHLY_POPULATION = 0.10
+			}
+			picture = generic_agrarian_society
+			removal_cost = -1
+		}
+		
+		# Democracy
+		
+		AUS_moderate_austromarxist_policies_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_moderate_austromarxist_policies_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				drift_defence_factor = 0.10
+				MONTHLY_POPULATION = 0.05
+			}
+			picture = economic_control_icon
+			removal_cost = -1
+		}
+		
+		AUS_extend_workers_rights_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_extend_workers_rights_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				drift_defence_factor = 0.10
+				MONTHLY_POPULATION = 0.05
+			}
+			picture = economic_control_icon
+			removal_cost = -1
+		}
+		
+		AUS_broader_austrian_nationalism_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_broader_austrian_nationalism_idea"}
+			modifier = {
+				conscription_factor = 0.05
+				army_morale_factor = 0.10
+				drift_defence_factor = 0.10
+			}
+			picture = totalist_charta
+			removal_cost = -1
+		}
+		
+		AUS_bipartisan_cooperation_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_bipartisan_cooperation_idea"}
+			modifier = {
+				political_power_gain = -0.10
+				drift_defence_factor = 0.15
+			}
+			picture = totalist_charta
+			removal_cost = -1
+		}
+		
+		AUS_social_market_consensus_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_social_market_consensus_idea"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.10
+				drift_defence_factor = 0.25
+				MONTHLY_POPULATION = 0.05
+			}
+			picture = totalist_charta
+			removal_cost = -1
+		}
+	}
+}

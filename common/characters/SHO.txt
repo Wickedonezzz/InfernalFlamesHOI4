@@ -1,0 +1,228 @@
+characters = {
+	SHO_Christian_Kryssing = {
+		name = "Christian Kryssing"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHO/Portrait_SHO_Christian_Kryssing.png"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democrat_subtype
+			traits = { }
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+				brilliant_strategist
+				career_officer
+				media_personality
+				politically_connected
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	SHO_Frederick_Wilhelm_Albert_von_Hohenzollern = {
+		name = "Wilhelm II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHO/Portrait_SHO_Wilhelm_II.png"
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+	}
+	SHO_Heinrich_Laufenberg = {
+		name = "Heinrich Laufenberg"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHO/Portrait_SHO_Heinrich_Laufenberg.png"
+			}
+		}
+		country_leader = {
+			ideology = libertarian_socialist_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = collectivist_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = vanguardist_subtype
+			traits = { }
+		}
+	}
+	SHO_Nationalrat = {
+		name = "Nationalrat"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHO/Portrait_SHO_Nationalrat.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = social_liberal_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = market_liberal_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			traits = { }
+		}
+	}
+  SHO_Reinhard_Heydrich = {
+    name = "Reinhard Heydrich"
+    portraits = {
+      navy = {
+        large = "gfx/leaders/SHO/Portrait_SHO_Reinhard_Heydrich.png"
+				small = "gfx/interface/ministers/SHO/SHO_Reinhard_Heydrich.png"
+      }
+    }
+    navy_leader = {
+      traits = { naval_liason naval_invader }
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      maneuvering_skill = 1
+      coordination_skill = 1
+    }
+    advisor = {
+      cost = 150
+      slot = navy_chief
+      idea_token = SHO_Reinhard_Heydrich_cnav
+      traits = {
+        cnav_open_seas_doctrine
+      }
+    }
+  }
+	SHO_Nikolaus_von_Falkenhorst = {
+		name = "Nikolaus von Falkenhorst"
+		portraits = {
+      army = {
+        large = "gfx/leaders/SHO/Portrait_SHO_Nikolaus_von_Falkenhorst.png"
+      }
+    }
+		corps_commander = {
+			traits = { commando winter_specialist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+		advisor = {
+      cost = 150
+      slot = army_chief
+      idea_token = SHO_Nikolaus_von_Falkenhorst_carm
+      traits = {
+        carm_decisive_battle_doctrine
+      }
+    }
+	}
+	SHO_Kurt_von_Hammerstein_Equord = {
+		name = "Kurt von Hammerstein-Equord"
+		portraits = {
+      army = {
+        large = "gfx/leaders/SHO/Portrait_SHO_Kurt_von_Hammerstein_Equord.png"
+      }
+    }
+		corps_commander = {
+			traits = { politically_connected brilliant_strategist defensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor = {
+      cost = 150
+      slot = army_chief
+      idea_token = SHO_Kurt_von_Hammerstein_Equord_carm
+      traits = {
+        carm_doctrine_of_autonomy
+      }
+    }
+	}
+	SHO_Wilhelm_Heye = {
+		name = "Wilhelm Heye"
+		portraits = {
+      army = {
+        large = "gfx/leaders/SHO/Portrait_SHO_Wilhelm_Heye.png"
+      }
+    }
+		corps_commander = {
+			traits = {
+				war_hero
+				organizer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		advisor = {
+      cost = 150
+      slot = army_chief
+      idea_token = SHO_Wilhelm_Heye_carm
+      traits = {
+        carm_armoured_spearhead_doctrine
+      }
+    }
+	}
+	SHO_Henning_von_Tresckow = {
+		name = "Henning von Tresckow"
+		portraits = {
+      army = {
+        large = "gfx/leaders/SHO/Portrait_SHO_Henning_von_Tresckow.png"
+      }
+    }
+		field_marshal = {
+			traits = {
+				war_hero
+				politically_connected
+				cavalry_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+      cost = 150
+      slot = high_command
+      idea_token = SHO_Henning_von_Tresckow_cos
+      traits = {
+        cos_school_of_psychology
+      }
+    }
+	}
+	SHO_Hellmuth_von_Mucke = {
+		name = "Hellmuth von Mucke"
+		portraits = {
+      navy = {
+        large = "gfx/leaders/SHO/Portrait_SHO_Hellmuth_von_Mucke.png"
+      }
+    }
+		navy_leader = {
+			traits = { }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+}

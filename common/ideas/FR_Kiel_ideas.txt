@@ -1,0 +1,280 @@
+################
+## Kiel Ideas ##
+################
+## By CIA Finished by Wicked ##
+############
+ideas = {
+
+	## Kiel Ideas ##
+
+	country = {
+
+		SHO_hamburg_legacy = {#Legacy of the Hamburg Commune
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_hamburg_legacy"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.05
+				resistance_damage_to_garrison = 0.3
+				foreign_subversive_activites = 0.3
+				libertarian_socialist_drift = 0.02
+				collectivist_drift = 0.02
+				vanguardist_drift = 0.02
+				political_power_gain = -0.15
+			}
+			picture = FRA_liberte_egalite_solidarite
+			removal_cost = -1
+		}
+
+		SHO_nazbol_gang = {#National Collectivism
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_nazbol_gang"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				vanguardist_drift = 0.05
+			}
+			picture = POL_the_peasants_strike #generic_vanguardism_rising
+			removal_cost = -1
+		}
+
+		SHO_political_repression = {#Political Repression
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_political_repression"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.05
+				libertarian_socialist_drift = -0.02
+				collectivist_drift = -0.02
+				vanguardist_drift = -0.02
+				political_power_gain = -0.15
+			}
+			picture = SPR_political_violence #generic_collectivism_banned
+			removal_cost = -1
+		}
+
+		SHO_integrating_denmark = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_integrating_denmark"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = -1.0
+			}
+			picture = generic_spy_political 
+			removal_cost = -1
+		}
+
+		SHO_industrial_burdens = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_industrial_burdens"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.1
+			}
+			picture = generic_collectivism_rising
+			removal_cost = -1
+		}
+			SHO_German_Imposter = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_German_Imposter"}
+			picture = generic_constitutional_guarantees
+				targeted_modifier = {
+				tag = SHO
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+		SHO_Profits_From_The_Raids = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_Profits_From_The_Raids"}
+			picture = KTG_Gold_Trade
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		SHO_Freikorp_Raids = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_Freikorp_Raids"}
+			picture = KTG_Gold_Trade
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		SHO_Extreme_Canal_Taxes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_Extreme_Canal_Taxes"}
+			picture = KTG_Gold_Trade
+			modifier = {
+				consumer_goods_factor = -0.10
+				trade_opinion_factor = -0.40
+			}
+		}
+		 SHO_Foreign_Volunteers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Foreign_Volunteers"}
+			picture = general_staff
+			modifier = {
+				weekly_manpower = 100
+				paternal_autocrat_drift = 0.2
+            }
+		}
+		SHO_extreme_political_repression = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_extreme_political_repression"}
+			picture = death_men
+			modifier = {
+				libertarian_socialist_drift = -0.05
+				collectivist_drift = -0.05
+				vanguardist_drift = -0.05
+				political_power_gain = -0.2
+				weekly_manpower = -10
+            }
+		}
+		 SHO_General_Military_Training = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_General_Military_Training"}
+			picture = general_staff
+			modifier = {
+				experience_gain_air = 0.02
+				experience_gain_army = 0.02
+				experience_gain_navy = 0.02
+            }
+		}
+		 SHO_Reconstructed_Military = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Reconstructed_Military"}
+			picture = general_staff
+			modifier = {
+			max_planning = 0.10
+			planning_speed = 0.10
+			army_morale_factor = 0.1
+			supply_consumption_factor = -0.05
+            }
+		}
+		 SHO_Dual_Reserve_System = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Dual_Reserve_System"}
+			picture = general_staff
+			modifier = {
+			conscription = 0.015
+			training_time_factor = -0.25
+            }
+		}
+		 SHO_Triple_Threat = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Triple_Threat"}
+			picture = general_staff
+			modifier = {
+			army_infantry_attack_factor = 0.05
+			air_air_superiority_agility_factor = 0.05
+			navy_screen_attack_factor = 0.075
+			offensive_war_stability_factor = 0.25
+            }
+		}
+		 SHO_underground_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_underground_industry"}
+			picture = man_five_year_plan_industry
+			modifier = {
+				industry_air_damage_factor = -0.15
+				industry_repair_factor = 0.2
+            }
+		}
+		 SHO_The_True_Germany = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_The_True_Germany"}
+			picture = ger_revive_the_kaiserreich	
+			modifier = {
+			stability_factor = 0.10 
+			political_power_factor = 0.1
+	        army_core_defence_factor = 0.05
+            army_core_attack_factor = 0.05
+            }
+		}
+		 SHO_Finishing_The_Troubles = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Finishing_The_Troubles"}
+			picture = ger_revive_the_kaiserreich	
+			modifier = {
+			production_factory_max_efficiency_factor = 0.10
+			war_support_weekly = 0.0025
+			surrender_limit = 0.025
+            }
+		}
+		 SHO_Saws_Revd = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Saws_Revd"}
+			picture = ger_mefo_bills
+			modifier = {
+		    production_factory_start_efficiency_factor = 0.3
+			production_lack_of_resource_penalty_factor = -0.3
+			line_change_production_efficiency_factor = 0.2
+			production_factory_max_efficiency_factor = 0.1
+			army_attack_against_major_factor = 0.05
+            }
+		}
+		 SHO_A_Nation_Avenged = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_A_Nation_Avenged"}
+			picture = generic_license_production
+			modifier = {
+			stability_weekly = 0.005
+			war_support_weekly = 0.0025
+			surrender_limit = 0.025
+            }
+		}
+		 SHO_Fight_For_Our_Lives = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Fight_For_Our_Lives"}
+			picture = generic_license_production
+			modifier = {
+			army_defence_against_major_factor = 0.05
+            resistance_damage_to_garrison_on_our_occupied_states = 0.3
+			surrender_limit = 0.025
+            }
+		}
+		 SHO_FK_Patrols = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_FK_Patrols"}
+			picture = generic_license_production
+			modifier = {
+			resistance_damage_to_garrison = -0.4
+			required_garrison_factor = -0.05
+			compliance_growth = -0.05
+            }
+		}
+		 SHO_Rip_Tide = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Rip_Tide"}
+			picture = generic_license_production
+			modifier = {
+			local_non_core_manpower = 0.1
+            }
+		}
+		SHO_Mass_Hysteria = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHO_Mass_Hysteria"}
+			modifier = {
+				stability_factor = -0.2
+				resistance_damage_to_garrison = 0.5
+				foreign_subversive_activites = 0..5
+				libertarian_socialist_drift = 0.1
+				collectivist_drift = 0.1
+				vanguardist_drift = 0.1
+				required_garrison_factor = 0.1
+				compliance_growth = -0.05
+				surrender_limit = 0.025
+				political_power_gain = -0.5
+			}
+			picture = chi_war_of_resistance2
+			removal_cost = -1
+		}
+		 SHO_Breakin_Jaws = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Breakin_Jaws"}
+			picture = chi_war_of_resistance2
+			modifier = {
+			planning_speed = 0.10
+			local_non_core_manpower = 0.05
+			army_attack_against_minor_factor = 0.075
+            }
+		}
+		 SHO_Kiel_FK_Remnants = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Kiel_FK_Remnants"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				weekly_manpower = 150
+            }
+		}
+		 SHO_Fleeing_The_Rubble = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Fleeing_The_Rubble"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				surrender_limit = -1.0
+            }
+		}
+	}
+
+}

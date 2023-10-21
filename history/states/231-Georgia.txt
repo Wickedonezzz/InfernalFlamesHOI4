@@ -5,7 +5,7 @@ state={
 		steel=4.0
 	}
 	history={
-		owner = SOV
+		owner = GEO
 		victory_points = {
 			1599 8 
 		}

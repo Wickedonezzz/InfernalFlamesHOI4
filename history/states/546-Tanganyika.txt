@@ -8,7 +8,7 @@ state={
 
 	history={
 		add_core_of = TZN
-		owner = GER
+		owner = TZN
 		add_core_of = KEN
 		add_core_of = GER
     add_claim_by = ENG

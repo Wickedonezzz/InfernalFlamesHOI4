@@ -14,7 +14,7 @@ state={
 
 		}
 		add_core_of = SHO
-
+		set_demilitarized_zone = yes
 	}
 	provinces={
 		9347 

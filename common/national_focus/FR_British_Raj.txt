@@ -1084,7 +1084,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Petition_Parliament_Change
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_martial_law
 
 		x = 23
 		y = 4

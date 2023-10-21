@@ -7,11 +7,11 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		FIC = { add_ideas = vietnamese_revolutionary_in_territory }
-		ICR = { 
+		ICR = {
 			add_ideas = {
 				fight_with_revolutionary_movement
 				revolutionary_movement
-			} 
+			}
 		}
 		every_state = {
 			limit = { is_core_of = FIC }
@@ -62,7 +62,7 @@ country_event = {
 			add_equipment_to_stockpile = {
 				type = var:gun
 				amount = infantry_eq
-			}			
+			}
 			add_manpower = manp
 			declare_war_on = {
 				target = FIC
@@ -103,7 +103,7 @@ country_event = {
 				ICR = { transfer_state = PREV }
 			}
 		}
-		##France dissolves the French Indochinese Government 
+		##France dissolves the French Indochinese Government
 		FRA = {
 			set_autonomy = {
 				target = FIC
@@ -128,7 +128,7 @@ country_event = {
 				THIS = { transfer_state = 728 }
 			}
 		}
-		##White Peace with every country 
+		##White Peace with every country
 		every_country = {
 			limit = {
 				AND = {

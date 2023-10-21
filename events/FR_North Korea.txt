@@ -37,8 +37,8 @@ country_event = { #South Korea provokes border dispute
 		name = nkr.1.a
 		KOR = {
 			declare_war_on = {
-    			target = NKR
-    			type = annex_everything
+				target = NKR
+				type = annex_everything
 			}
 		}
 	}

@@ -519,7 +519,7 @@ USA_guam_forward_base_desc: "Just like Hawaii, Guam is also an ideal location an
 USA_strike_japan: "Strike Japan"
 USA_strike_japan_desc: "It is time to strike our largest opponent in the Pacific, the Japanese Empire itself. We will make them friendly to our interests through force for it is the only option left for our main Eastern rival."
 USA_support_the_kuomintang: "Support the Kuomintang"
-USA_support_the_kuomintang_desc: "The Kuomintang Government, lead by [CHI.GetLeader] are one of the many warlord cliques that exist in the Chinese mainland. However, the beliefs of the Kuomintang aligns with our own; safeguarding liberty of the people; and they are in a crusade in stopping imperialism on China. We must aid them on their fight.`"
+USA_support_the_kuomintang_desc: "The Kuomintang Government, lead by [KMT.GetLeader] are one of the many warlord cliques that exist in the Chinese mainland. However, the beliefs of the Kuomintang aligns with our own; safeguarding liberty of the people; and they are in a crusade in stopping imperialism on China. We must aid them on their fight.`"
 USA_intervene_in_india: "Intervene in India"
 USA_intervene_in_india_desc: ""
 USA_pacific_guardian: "Pacific Guardian"

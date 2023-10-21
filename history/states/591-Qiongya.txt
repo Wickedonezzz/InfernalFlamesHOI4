@@ -6,7 +6,8 @@ state={
 
 	history={
 		owner = KMT
-		
+		add_claim_by = FNG
+		add_claim_by = ZHI
 		victory_points = {
 			1070 1 
 		}

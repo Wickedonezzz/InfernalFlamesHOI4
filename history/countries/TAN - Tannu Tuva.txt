@@ -8,7 +8,6 @@ set_technology = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	limited_conscription
 	parliamentary_republic
 }

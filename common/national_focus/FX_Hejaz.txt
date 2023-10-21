@@ -303,7 +303,7 @@ focus_tree = {
 
   focus = { # Export Tariffs
     id = HEJ_export_tariffs
-    icon = GFX_goal_generic_trade
+    icon = GFX_goal_generic_capitalist_system
     x = -1
     y = 1
     cost = 6
@@ -416,7 +416,7 @@ focus_tree = {
         add_extra_state_shared_building_slots = 2
       }
     }
-    search_filters = { FOCUS_FILTER_FNGPOWER FOCUS_FILTER_INDUSTRY }
+    search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
   }
 
   focus = { # Modernize Our Ports
@@ -531,7 +531,7 @@ focus_tree = {
     completion_reward = {
       add_ideas = HEJ_food_imports
     }
-    search_filters = { FOCUS_FILTER_FNGPOWER FOCUS_FILTER_PRODUCTION }
+    search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_PRODUCTION }
   }
 
   focus = { # Request German Support
@@ -618,15 +618,13 @@ focus_tree = {
           }
         }
       }
-      custom_effect_tooltip = available_designer
-      show_ideas_tooltip = HEJ_ig_farben_company
     }
     search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
   }
 
   focus = { # Import Industrial Tools
     id = HEJ_import_industrial_tools
-    icon = GFX_goal_generic_production2
+    icon = GFX_goal_generic_design_equipment_standards
     x = 1
     y = 1
     cost = 6
@@ -723,7 +721,7 @@ focus_tree = {
 
   focus = { # State of the Kingdom
     id = HEJ_state_of_the_kingdom
-    icon = GFX_focus_generic_home_defense
+    icon = GFX_goal_HEJ_state_kingdom
     x = 16
     y = 0
     cost = 6
@@ -757,7 +755,7 @@ focus_tree = {
 
   focus = { # Discredit the Saudis
     id = HEJ_discredit_the_saudis
-    icon = GFX_goal_conspiracy
+    icon = GFX_goal_generic_attack_nejd
     x = -2
     y = 1
     cost = 6
@@ -796,12 +794,12 @@ focus_tree = {
         country_event = { id = hejaz.35 days = 60 }
       }
     }
-    search_filters = { FOCUS_FILTER_FNGPOWER FOCUS_FILTER_STABILITY }
+    search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
   }
 
   focus = { # Discredit the Rashidis
     id = HEJ_discredit_the_rashidis
-    icon = GFX_goal_skull_treaty
+    icon = GFX_goal_generic_attack_rashid
     x = 0
     y = 2
     cost = 6
@@ -1097,7 +1095,7 @@ focus_tree = {
         load_oob = "HEJ_motorized"
       }
     }
-    search_filters = { FOCUS_FILTER_FNGPOWER FOCUS_FILTER_ARMY_BONUS }
+    search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_BONUS }
   }
 
   focus = { # Royal Hashemite Coast Guard
@@ -1196,7 +1194,7 @@ focus_tree = {
 
   focus = { # Anti-Air Installations
     id = HEJ_anti_air_installations
-    icon = GFX_focus_generic_air_defense
+    icon = GFX_goal_generic_air_defense2
     x = -1
     y = 1
     cost = 6
@@ -1357,7 +1355,9 @@ focus_tree = {
     y = 1
     cost = 6
     available = {
+      hidden_trigger = {
         always = no
+      }
     }
     mutually_exclusive = {
       focus = HEJ_obdience_to_westminster
@@ -1630,7 +1630,9 @@ focus_tree = {
     y = 1
     cost = 6
     available = {
+      hidden_trigger = {
         always = no
+      }
     }
     mutually_exclusive = {
       focus = HEJ_distance_from_london
@@ -1678,7 +1680,7 @@ focus_tree = {
     completion_reward = {
       add_ideas = HEJ_british_migration
     }
-    search_filters = { FOCUS_FILTER_FNGPOWER }
+    search_filters = { FOCUS_FILTER_MANPOWER }
   }
 
   focus = {

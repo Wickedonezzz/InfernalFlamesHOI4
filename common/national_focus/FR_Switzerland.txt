@@ -1257,7 +1257,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWI_economic_mobilization"
-			increase_mobilisation = yes
+			increase_mobilization = yes
 			add_political_power = -50
 		}
 	}

@@ -1295,9 +1295,7 @@ focus_tree = {
 		x = 13
 		y = 2
 		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
+			has_capitulated = no
 		}
 		ai_will_do = {
 			factor = 10
@@ -1322,9 +1320,7 @@ focus_tree = {
 		x = 12
 		y = 3
 		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
+			has_capitulated = no
 		}
 		ai_will_do = {
 			factor = 10
@@ -1351,9 +1347,7 @@ focus_tree = {
 		x = 14
 		y = 3
 		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
+			has_capitulated = no
 		}
 		ai_will_do = {
 			factor = 10
@@ -1385,9 +1379,7 @@ focus_tree = {
 		x = 13
 		y = 4
 		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
+			has_capitulated = no
 		}
 		ai_will_do = {
 			factor = 10
@@ -1420,9 +1412,7 @@ focus_tree = {
 		y = 5
 		available = {
 			is_in_faction_with = ENG
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
+			has_capitulated = no
 		}
 		ai_will_do = {
 			factor = 10
@@ -1447,11 +1437,6 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
-		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1479,11 +1464,6 @@ focus_tree = {
 		}
 		x = 16
 		y = 3
-		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1509,11 +1489,6 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
-		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1538,11 +1513,6 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
-		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1570,11 +1540,6 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
-		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1600,11 +1565,6 @@ focus_tree = {
 		}
 		x = 17
 		y = 4
-		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1629,11 +1589,6 @@ focus_tree = {
 		}
 		x = 18
 		y = 5
-		available = {
-			NOT = {
-				has_country_flag = AST_economy_in_crisis_flag
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -2404,6 +2359,9 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		relative_position_id = AST_united_australia
+		completion_reward = {
+			add_war_support = 0.1
+		}
 	}
 
 	focus = {
@@ -3286,6 +3244,27 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_burn_union_jack"
 			increase_ruling_party_popularity_by_15 = yes
+			if = {
+				limit = {
+					OR = {
+						has_idea = AST_memories_of_galipoli_idea
+						has_idea = AST_memories_of_galipoli_idea_1
+					}
+				}
+				effect_tooltip = {
+					remove_ideas = AST_memories_of_galipoli_idea
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_idea = AST_memories_of_galipoli_idea }
+						remove_ideas = AST_memories_of_galipoli_idea
+					}
+					else_if = {
+						limit = { has_idea = AST_memories_of_galipoli_idea_1 }
+						remove_ideas = AST_memories_of_galipoli_idea_1
+					}
+				}
+			}
 		}
 	}
 
@@ -3310,6 +3289,27 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_rule_britannia"
 			add_war_support = 0.15
+			if = {
+				limit = {
+					OR = {
+						has_idea = AST_memories_of_galipoli_idea
+						has_idea = AST_memories_of_galipoli_idea_1
+					}
+				}
+				effect_tooltip = {
+					remove_ideas = AST_memories_of_galipoli_idea
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_idea = AST_memories_of_galipoli_idea }
+						remove_ideas = AST_memories_of_galipoli_idea
+					}
+					else_if = {
+						limit = { has_idea = AST_memories_of_galipoli_idea_1 }
+						remove_ideas = AST_memories_of_galipoli_idea_1
+					}
+				}
+			}
 		}
 	}
 
@@ -3737,6 +3737,14 @@ focus_tree = {
 				idea = AST_great_purge
 				days = 480
 			}
+			if = {
+				limit = { has_idea = AST_auralia_movement_idea }
+				remove_ideas = AST_auralia_movement_idea
+			}
+			else_if = {
+				limit = { has_idea = AST_strong_auralia_movement_idea }
+				remove_ideas = AST_strong_auralia_movement_idea
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -3754,6 +3762,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_power_to_chairman"
 			add_political_power = 200
+			if = {
+				limit = { has_idea = AST_internal_divisions_idea }
+				remove_ideas = AST_internal_divisions_idea
+			}
+			else_if = {
+				limit = { has_idea = AST_more_internal_divisions_idea }
+				remove_ideas = AST_more_internal_divisions_idea
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -4009,6 +4025,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_hail_president"
 			add_political_power = 200
+			if = {
+				limit = { has_idea = AST_internal_divisions_idea }
+				remove_ideas = AST_internal_divisions_idea
+			}
+			else_if = {
+				limit = { has_idea = AST_more_internal_divisions_idea }
+				remove_ideas = AST_more_internal_divisions_idea
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -4072,6 +4096,14 @@ focus_tree = {
 		relative_position_id = AST_guard_the_empire
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_purge_traitors"
+			if = {
+				limit = { has_idea = AST_internal_divisions_idea }
+				remove_ideas = AST_internal_divisions_idea
+			}
+			else_if = {
+				limit = { has_idea = AST_more_internal_divisions_idea }
+				remove_ideas = AST_more_internal_divisions_idea
+			}
 			add_stability = 0.05
 			add_manpower = -1420
 			add_popularity = { ideology = vanguardist popularity = -0.1 }
@@ -4270,6 +4302,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_australian_nationalism"
 			add_political_power = 200
+			if = {
+				limit = { has_idea = AST_auralia_movement_idea }
+				remove_ideas = AST_auralia_movement_idea
+			}
+			else_if = {
+				limit = { has_idea = AST_strong_auralia_movement_idea }
+				remove_ideas = AST_strong_auralia_movement_idea
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

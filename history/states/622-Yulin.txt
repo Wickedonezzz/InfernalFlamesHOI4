@@ -10,8 +10,9 @@ state={
 	history={
 		owner = SHX
 		add_core_of = SHX
-		add_core_of = KMT
-		add_core_of = FNG
+		add_claim_by = KMT
+		add_claim_by = ZHI
+		add_claim_by = FNG
 		victory_points = {
 			8049 3 
 		}
@@ -44,6 +45,6 @@ state={
 	}
 	manpower=7906200
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

@@ -213,7 +213,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available = {
-			hidden_trigger = { always = no }
+			has_capitulated = no
 		}
 		prerequisite = {
 			focus = ITA_capitalists_support
@@ -3470,7 +3470,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_ally_falangist
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_SPF_flag
 		x = 0
 		y = 2
 		cost = 5
@@ -4035,7 +4035,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_graziani_plan"
 			add_political_power = -100
-			
+			LBA = {
+			set_country_flag = LBA_Italian_admin
+			}
 			if = {
 				limit = {
 					has_idea = ITA_colonial_administration2
@@ -5042,7 +5044,10 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				controls_state = 345
+				OR = {
+					controls_state = 345
+					controls_state = 1030
+				}
 			}
 		}
 		prerequisite = {
@@ -5050,7 +5055,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_panfilla_issue"
-			country_event = ita.227
+			# country_event = ita.227
 		}
 	}
 	
@@ -5134,7 +5139,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_west_africa
-		icon = GFX_goal_pile_of_money
+		icon = GFX_goal_KTG_Jungle_Railroad
 		x = 0
 		y = 1
 		cost = 5
@@ -5178,7 +5183,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_east_africa
-		icon = GFX_goal_pile_of_money
+		icon = GFX_goal_KTG_Rubber_Farming
 		x = 0
 		y = 1
 		cost = 5
@@ -6374,6 +6379,35 @@ focus_tree = {
 		}
 	}
 
+	# ARMY AND AIR TREE
+
+	focus = {
+		id = ITA_mare_nostrum
+		icon = GFX_focus_ITA_mare_nostrum
+		x = 23
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 2
+				has_war_with = ENG
+			}
+		}
+		available = {
+			has_completed_focus = ITA_italian_election	
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_mare_nostrum"
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
 	#########################################################
 	#																												#
 	#									  	 	AIR TREE						   					#
@@ -6383,9 +6417,10 @@ focus_tree = {
 	focus = {
 		id = ITA_air_innovations
 		icon = GFX_goal_ITA_air_force
-		x = 20
-		y = 13
+		x = -4
+		y = 1
 		cost = 5
+		relative_position_id = ITA_mare_nostrum
 		available = {
 			has_completed_focus = ITA_italian_election
 		}
@@ -6427,50 +6462,46 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
+		available = {
+			controls_state = 158
+			controls_state = 160
+			controls_state = 114
+			controls_state = 156
+		}
 		prerequisite = { focus = ITA_air_innovations }
 		relative_position_id = ITA_air_innovations
+		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 40
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_air_bases"
-			if = {
-				limit = {
-					has_completed_focus = ITA_north_bases
-				}
-				158 = {
-					add_building_construction = { 
-						type = air_base
-						level = 3 
-						instant_build = yes 
-					}
-				}
-				160 = {
-					add_building_construction = { 
-						type = air_base
-						level = 3 
-						instant_build = yes 
-					}
+			158 = {
+				add_building_construction = { 
+					type = air_base
+					level = 3 
+					instant_build = yes 
 				}
 			}
-			
-			if = {
-				limit = {
-					has_completed_focus = ITA_south_bases
+			160 = {
+				add_building_construction = { 
+					type = air_base
+					level = 3 
+					instant_build = yes 
 				}
-				114 = {
-					add_building_construction = { 
-						type = air_base
-						level = 3 
-						instant_build = yes 
-					}
+			}
+			114 = {
+				add_building_construction = { 
+					type = air_base
+					level = 3 
+					instant_build = yes 
 				}
-				156 = {
-					add_building_construction = { 
-						type = air_base
-						level = 3 
-						instant_build = yes 
-					}
+			}
+			156 = {
+				add_building_construction = { 
+					type = air_base
+					level = 3 
+					instant_build = yes 
 				}
 			}
 		}
@@ -6574,8 +6605,8 @@ focus_tree = {
 	focus = {
 		id = ITA_regia_aeromarina
 		icon = GFX_goal_generic_air_fighter
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		cost = 5
 		relative_position_id = ITA_air_innovations
 		ai_will_do = {
@@ -6660,32 +6691,6 @@ focus_tree = {
 	#																												#
 	#########################################################
 
-	focus = {
-		id = ITA_mare_nostrum
-		icon = GFX_focus_ITA_mare_nostrum
-		x = 23
-		y = 13
-		cost = 5
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_war_with = ENG
-			}
-		}
-		available = {
-			has_completed_focus = ITA_italian_election	
-		}
-		search_filters = { FOCUS_FILTER_NAVY_BONUS }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ITA_mare_nostrum"
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-	}
 
 	focus = {
 		id = ITA_dockyards_construction

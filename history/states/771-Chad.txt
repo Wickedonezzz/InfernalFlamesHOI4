@@ -3,8 +3,9 @@ state={
 	name="STATE_771"
 
 	history={
-		owner = NFQ
+		owner = NFA
 		add_core_of = NFQ
+		add_core_of = NFA
 		add_core_of = CHA
 		buildings = {
 			infrastructure = 3

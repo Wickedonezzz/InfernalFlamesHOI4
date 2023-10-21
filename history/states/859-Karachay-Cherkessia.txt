@@ -12,6 +12,7 @@ state={
 
 		}
 		add_core_of = GOR
+		add_core_of = SOV
 
 	}
 

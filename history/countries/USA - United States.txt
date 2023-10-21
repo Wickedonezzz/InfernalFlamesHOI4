@@ -16,6 +16,7 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 	electronic_mechanical_engineering = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	radio = 1
 	marines = 1
@@ -136,10 +137,10 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_20
 	USA_the_greater_depression
 	USA_malnourished_populace
 	USA_failed_offensive
+	jap_wnt
 
 	limited_conscription
 	presidential_republic
@@ -364,6 +365,14 @@ activate_advisor = USA_Charles_Curtis_hog_mli
 activate_advisor = USA_Henry_Morgenthau_Jr_for_mli
 activate_advisor = USA_Daniel_Calhoun_Roper_eco_mli
 activate_advisor = USA_Robert_Ferdinand_Wagner_I_sec_mli
+
+set_nationality = {
+	target_country = PHI
+	character = USA_Douglas_MacArthur
+}
+PHI = {
+	activate_advisor = USA_Douglas_MacArthur_cos_sco
+}
 
 ### Operatives ###
 if = {

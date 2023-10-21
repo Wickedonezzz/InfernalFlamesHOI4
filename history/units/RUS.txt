@@ -76,7 +76,7 @@ units = {
 
     division = {
 		name = "1. Uland Ude Russian Liberation Division"
-		location = 7835 # Ulan Ude
+		location = 7785 # Ulan Ude
 		division_template = "Russian Liberation Division"
 		start_experience_factor = 0.4
 
@@ -100,7 +100,7 @@ units = {
 
     division = {
 		name = "4. Siberian Far Eastern Cavalry"
-		location = 12575 # Bodayabo
+		location = 7785 # Bodayabo
 		division_template = "Far Eastern Cavalry"
 		start_experience_factor = 0.4
 		}

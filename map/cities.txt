@@ -8,7 +8,7 @@ city_group = {
 	density = 0.9 # 0.1 # in fraction of pixels. Negative=less dense.
 
 	# The following should be sorted by distance (growing)
-	building = {
+	building = {	
 		distance = 1 # distance to the edge of urban area (in map pixels)
 		mesh = {
 			"westerngfx_house_1_1"

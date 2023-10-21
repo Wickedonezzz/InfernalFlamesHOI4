@@ -85,6 +85,10 @@ TS_OR_PM2: "Prime Minister of  [FROM.GetNameWithFlag]"
 CH_OR_PM2: "Prime Minister of  [FROM.GetNameWithFlag]"
 SUL_OR_PM2: "Prime Minister of  [FROM.GetNameWithFlag]"
 IMP_OR_NAT2: "Imperial Governor of  [FROM.GetNameWithFlag]"
+LEADER_OR_SHG2: "Emperor of  [FROM.GetNameWithFlag]"
+LEADER_OR_CMS2: "Emperor of  [FROM.GetNameWithFlag]"
+LEADER_OR_SHK2: "Emperor of  [FROM.GetNameWithFlag]"
+LEADER_OR_LSM2: "Emperor of  [FROM.GetNameWithFlag]"
 GRE_KING_OR_PM2: "Vasiléfs of [FROM.GetNameWithFlag]"
 GRE_EM_OR_PM2: "Aftokrátor of [FROM.GetNameWithFlag]"
 
@@ -97,21 +101,5 @@ LEADER_OR_PRE: "Click to switch between §GEmperor§! and §CPresident of Suprem
 
 DAIJO_DAIJIN_TRAIT: "§YChancellor of State§!\n- Stability: §G+10.00%§!\n- War Support: §G+5.00%§!\n- Political Power Gain: §G+7.00%§!"
 
-## Leader Names ##
-Eleftherios_Venizelos_Name: "Elefthérios Kyriákou Venizélos"
-Themistoklis_Sofoulis_Name: "Themistoklís Sofoúlis"
-Sofoklis_Venizelos_Name: "Sofoklís Venizélos"
-Georgios_Papandreou_name: "Geórgios Papandréou"
-Giannis_Ioannidis_name: "Giánnis Ioannídis"
-Miltiadis_Porfyrogenis_name: "Miltiádis Porfyrogénis"
-Pantelis_Pouliopoulos_name: "Pantelís Pouliópoulos"
-Georgios_Kondylis_name: "Geórgios Kondýlis"
-Konstantinos_Tsaldaris_name: "Konstantínos Tsaldáris"
-Sotirios_Gotzamanis_name: "Sotírios Gotzamánis"
-Alexandros_Koryzis_name: "Aléxandros Koryzís"
-Georgios_Poulos_name: "Geórgios Poúlos"
-Manolis_Manoleas_name: "Manólis Manoléas"
-
-Georgios_Kosmidis_Name: "Geórgios Kosmídis"
 
 

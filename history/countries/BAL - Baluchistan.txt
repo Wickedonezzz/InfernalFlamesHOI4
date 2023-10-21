@@ -52,7 +52,6 @@ valkist = 0
 }
 
 add_ideas = {
-	party_pop_0_40
 	absolute_monarchy
 }
 

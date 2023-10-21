@@ -15,7 +15,6 @@ set_war_support = 0.50
 set_research_slots = 2
 
 add_ideas = {
-	party_pop_0_60
 	absolute_monarchy
   SAU_risen_from_ashes
   SAU_the_ikhwan

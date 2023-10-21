@@ -84,7 +84,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_60
 	RAJ_poor_conditions
 	RAJ_poor_training
 	RAJ_colonial_administration

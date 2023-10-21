@@ -4,9 +4,10 @@ state={
 	name="STATE_1022"
 	history={
 		owner = KMT
+		add_claim_by = FNG
+		add_claim_by = ZHI
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 
 		}
 		victory_points = {

@@ -16,7 +16,7 @@ country_event = {
 	picture = GFX_report_event_british_inspect_troops
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = uk.1.a
 		hidden_effect = {	# - Empire Day
@@ -35,7 +35,7 @@ country_event = {
 	desc = uk.2.d
 	picture = GFX_report_event_gathering_protest
 	is_triggered_only = yes
-	
+
 	trigger = {
 		NOT = {
 			has_war_with = FRA
@@ -46,7 +46,7 @@ country_event = {
 			has_war_with = SOV
 		}
 	}
-	
+
 	option = {
 		name = uk.2.a
 		add_political_power = -50
@@ -54,27 +54,22 @@ country_event = {
 
 		custom_effect_tooltip = bw_tt
 		hidden_effect = {
+			set_global_flag = black_wednesday
 			set_country_flag = ENG_stock_crash
 			random_other_country = {
 				news_event = {
-					id = worldnews.2 days = 1
+					id = fxnews.70 days = 1
 				}
 			}
 			IRQ = { country_event = { id = irq.10 } }
-      EGY = { country_event = { id = egypt.1 } }
-			RAJ = { 
-				add_timed_idea = {
-					idea = IMP_black_wednesday
-					days = 365
-				}
-			}
-			NFL = { 
-				add_timed_idea = {
-					idea = IMP_black_wednesday
-					days = 365
-				}
-			}
-			NZL = { 
+			EGY = { country_event = { id = egypt.1 } }
+			ENG = { country_event = { id = cyp.1 } }
+			MLT = { country_event = mlt.1 }
+			add_to_array = { ENG_IMP_BLACK_WED = RAJ }
+			add_to_array = { ENG_IMP_BLACK_WED = NZL }
+			add_to_array = { ENG_IMP_BLACK_WED = NFL }
+			for_each_scope_loop = {
+				array = ENG_IMP_BLACK_WED
 				add_timed_idea = {
 					idea = IMP_black_wednesday
 					days = 365
@@ -84,11 +79,11 @@ country_event = {
 				news_event = { id = jap.9 }
 			}
 			AST = {
-			 	country_event = { id = australia.5 }
+				country_event = { id = australia.5 }
 			}
-      HEJ = {
-        country_event = { id = hejaz.11 days = 1 }
-      }
+			HEJ = {
+				country_event = { id = hejaz.11 days = 1 }
+			}
 			PHI = {
 				country_event = { id = philippines.19 days = 2 }
 			}
@@ -114,21 +109,21 @@ country_event = { # A Peaceful Ending at Midnight
 			}
 		}
 	}
-	
+
 	option = { # More than a King, a father of a great family.
 		name = uk.3.a
 		custom_effect_tooltip = ENG_crown_edward_as_king_tt
 		hidden_effect = {
 			if = {
 				limit = {
-					is_ai = yes 
+					is_ai = yes
 					has_country_flag = avenging1776
 				}
 				country_event = { id = uk.5 months = 5 }
 			}
 			if = {
 				limit = {
-					is_ai = yes 
+					is_ai = yes
 					has_country_flag = crushcommunism
 				}
 				country_event = { id = uk.4 months = 5 }
@@ -142,7 +137,7 @@ country_event = { # A Peaceful Ending at Midnight
 }
 
 ###########################
-# - Assassination/Survival of Edward VIII 
+# - Assassination/Survival of Edward VIII
 ###########################
 
 country_event = {
@@ -153,7 +148,7 @@ country_event = {
 	picture = GFX_report_event_ENG_edward_windsor
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # The King commands and we obey
 		name = uk.400.a
 		ai_chance = {
@@ -167,11 +162,11 @@ country_event = {
 				add = 50
 			}
 		}
-		hidden_effect = { 
+		hidden_effect = {
 			country_event = { id = uk.4 days = 15 }
 		}
 	}
-	
+
 	option = { # Maintain the number of bodyguards nearby, whether he likes it or not
 		name = uk.400.b
 		ai_chance = {
@@ -185,7 +180,7 @@ country_event = {
 				add = -50
 			}
 		}
-		hidden_effect = { 
+		hidden_effect = {
 			country_event = { id = uk.5 days = 15 }
 		}
 	}
@@ -199,7 +194,7 @@ country_event = { # King Edward VIII assassinated
 	picture = GFX_report_event_ENG_edward_windsor
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Whatever the future brings, Britain will survive!
 		name = uk.4.a
 		add_political_power = -100
@@ -207,11 +202,11 @@ country_event = { # King Edward VIII assassinated
 		hidden_effect = {
 			set_country_flag = edward_assassinated
 			retire_character = ENG_Edward_Windsor
-			
+
 			ENG_add_albert_windsor = yes
 		}
 		hidden_effect = {
-			random_other_country = { 
+			random_other_country = {
 				news_event = { id = fxnews.49 days = 1 }
 			}
 		}
@@ -226,7 +221,7 @@ country_event = { # King Edward VIII survives assassination attempt
 	picture = GFX_report_event_ENG_edward_windsor
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Some luck at last
 		name = uk.5.a
 		add_stability = -0.025
@@ -245,7 +240,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # London
 		name = uk.6.a
 		add_political_power = 50
@@ -269,7 +264,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { # Ottawa
 		name = uk.6.b
 		CAN = {
@@ -322,7 +317,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 }
 
 country_event = { # Fourteenth Imperial Conference Begins
@@ -344,7 +339,7 @@ country_event = { # Fourteenth Imperial Conference Begins
 		}
 		text = uk.7b.d
 	}
-	
+
 	option = { # The Conference of '37 will be long remembered.
 		name = uk.7.a
 		hidden_effect = {
@@ -365,7 +360,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Ensure our place as the workshop of the world!
 		name = uk.8.a
 		ai_chance = {
@@ -424,7 +419,7 @@ country_event = {
 			SAF = { country_event = { id = emp.1 days = 1 } }
 		}
 	}
-	
+
 	option = { # Improving infrastructure will help bind us together
 		name = uk.8.b
 		ai_chance = {
@@ -506,7 +501,7 @@ country_event = {
 			SAF = { country_event = { id = emp.1 days = 1 } }
 		}
 	}
-	
+
 	option = { # Reinforce military bases around the Empire
 		name = uk.8.c
 		ai_chance = {
@@ -569,7 +564,7 @@ country_event = { # Imperial Conference Day 2: Foreign Policy
 	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Imperial interests lie in maintaining our isolation
 		name = uk.9.a
 		ai_chance = {
@@ -585,7 +580,7 @@ country_event = { # Imperial Conference Day 2: Foreign Policy
 			set_country_flag = ENG_c_isol
 		}
 	}
-	
+
 	option = { # Civilisation must be brought to the barbarians of the world!
 		name = uk.9.b
 		ai_chance = {
@@ -628,7 +623,7 @@ country_event = { # Imperial Conference Day 3: Internal Policy
 	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # The Status Quo suits Britain best
 		name = uk.10.a
 		ai_chance = {
@@ -669,7 +664,7 @@ country_event = { # Imperial Conference Day 3: Internal Policy
 			}
 		}
 	}
-	
+
 	option = { # The Dominion states must be granted increasing autonomy
 		name = uk.10.b
 		ai_chance = {
@@ -701,7 +696,7 @@ country_event = { # Imperial Conference Day 3: Internal Policy
 			}
 		}
 	}
-	
+
 	option = { # Propose an Imperial Federation of the Empire
 		name = uk.10.c
 		ai_chance = {
@@ -740,10 +735,10 @@ country_event = { # Imperial Conference Day 4: The Question of Ireland
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.11"}
 	title = uk.11.t
 	desc = uk.11.d
-	picture = GFX_report_event_generic_conference	
+	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Ireland must be fully integrated into the Union
 		name = uk.11.a
 		ai_chance = {
@@ -775,7 +770,7 @@ country_event = { # Imperial Conference Day 4: The Question of Ireland
 			set_country_flag = integration
 		}
 	}
-	
+
 	option = { # Ireland must be given a degree of independence
 		name = uk.11.b
 		ai_chance = {
@@ -805,7 +800,7 @@ country_event = { # Imperial Conference Day 5: Adjournment
 	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
 	is_triggered_only = yes
-	 
+
 	option = { # Our path ahead lays bare, we must tread it lightly.
 		name = uk.12.a
 		add_political_power = 100
@@ -836,7 +831,7 @@ country_event = { # The Jarrow March Begins
 	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Nothing but a mob of revolutionaries
 		name = uk.20.a
 		add_ideas = ENG_jarrow
@@ -855,7 +850,7 @@ country_event = { # Locals Aid Jarrow Marchers
 	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Our people are generous, perhaps too generous
 		name = uk.21.a
 		swap_ideas = { remove_idea = ENG_jarrow2 add_idea = ENG_jarrow3 }
@@ -873,7 +868,7 @@ country_event = { # Prominent Clergyman Supports Marchers
 	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # This is quickly becoming a political nightmare
 		name = uk.22.a
 		swap_ideas = { remove_idea = ENG_jarrow add_idea = ENG_jarrow2 }
@@ -891,7 +886,7 @@ country_event = { # Supposed Marxist Infiltration
 	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Let it run its course
 		name = uk.23.a
 		add_political_power = -25
@@ -902,7 +897,7 @@ country_event = { # Supposed Marxist Infiltration
 			}
 		}
 	}
-	
+
 	option = { # It's time to put an end to this nonsense!
 		name = uk.32.b
 		add_political_power = -50
@@ -920,7 +915,7 @@ country_event = { # Clashes with Police
 	picture = GFX_report_event_generic_riot
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # This gets worse every day
 		name = uk.24.a
 		add_stability = -0.025
@@ -946,7 +941,7 @@ country_event = { # Marchers reach Westminster
 	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Those placards won't help them!
 		name = uk.25.a
 		hidden_effect = {
@@ -963,7 +958,7 @@ country_event = { # Police Break Up Jarrow March
 	picture = GFX_report_event_generic_riot
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # A necessary act to prevent further complications
 		name = uk.26.a
 		add_political_power = -50
@@ -979,7 +974,7 @@ country_event = { # The Jarrow March Ends
 	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Re-open Palmer's shipyard and other industries
 		name = uk.27.a
 		add_political_power = -100
@@ -989,7 +984,7 @@ country_event = { # The Jarrow March Ends
 			days = 30
 		}
 	}
-	
+
 	option = { # Ignore the petition
 		name = uk.27.b
 		add_political_power = -150
@@ -1010,7 +1005,7 @@ country_event = { # Manchester Mill Workers Strike
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Local authorities can handle the situation
 		name = uk.28.a
 		add_political_power = -50
@@ -1029,7 +1024,7 @@ country_event = { # Manchester Strike Expands
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # It's always the trade unions stirring trouble...
 		name = uk.29.a
 		add_stability = -0.025
@@ -1047,7 +1042,7 @@ country_event = { # Manchester Strikers Present Demands
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Time to nip this in the bud, accept their demands
 		name = uk.30.a
 		ai_chance = {
@@ -1071,7 +1066,7 @@ country_event = { # Manchester Strikers Present Demands
 			country_event = { id = uk.31 days = 7 }
 		}
 	}
-	
+
 	option = { # Break up the strike by force
 		name = uk.30.b
 		ai_chance = {
@@ -1100,7 +1095,7 @@ country_event = { # Manchester Strike Ends
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Thank God that's over
 		name = uk.31.a
 		add_stability = 0.025
@@ -1120,7 +1115,7 @@ country_event = { # National Trade Unions Meet
 	picture = GFX_report_event_generic_rally_3
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # That's not a good sign.
 		name = uk.32.a
 		hidden_effect = {
@@ -1137,7 +1132,7 @@ country_event = { # Nation-Wide General Strike Announced
 	picture = GFX_report_event_hitler_handshake
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # We need to negotiate before this gets out of hand!
 		name = uk.33.a
 		ai_chance = {
@@ -1149,7 +1144,7 @@ country_event = { # Nation-Wide General Strike Announced
 			country_event = { id = uk.34 days = 7 }
 		}
 	}
-	
+
 	option = { # Order a Crackdown on Union activity
 		name = uk.33.b
 		ai_chance = {
@@ -1170,7 +1165,7 @@ country_event = { # Return to Normalcy
 	picture = GFX_report_event_generic_rally_3
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Crisis averted, for now
 		name = uk.34.a
 		add_stability = 0.05
@@ -1190,7 +1185,7 @@ country_event = { # Rioting Nation-Wide
 	picture = GFX_report_event_generic_riot
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Declare Martial Law
 		name = uk.35.a
 		add_political_power = -100
@@ -1205,14 +1200,14 @@ country_event = { # Rioting Nation-Wide
 }
 
 country_event = { # Protesters Close on Westminster
-	id = uk.36 
+	id = uk.36
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.36"}
 	title = uk.36.t
 	desc = uk.36.d
 	picture = GFX_report_event_generic_riot
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # This has gone far enough, the Government will step down
 		name = uk.36.a
 		ai_chance = {
@@ -1228,7 +1223,7 @@ country_event = { # Protesters Close on Westminster
 			country_event = { id = uk.37 days = 7 }
 		}
 	}
-	
+
 	option = { # Order the Army to do their job!
 		name = uk.36.b
 		ai_chance = {
@@ -1253,7 +1248,7 @@ country_event = { # The Government Resigns
 	picture = GFX_report_event_generic_sign_treaty2
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Fresh Elections are called
 		name = uk.37.a
 		ai_chance = { base = 0 }
@@ -1262,7 +1257,7 @@ country_event = { # The Government Resigns
 			country_event = { id = uk.41 days = 30 }
 		}
 	}
-	
+
 	option = { # Edward dissolves parliament with the assistance of the military
 		name = uk.37.b
 		ai_chance = { base = 100 }
@@ -1276,18 +1271,18 @@ country_event = { # The Government Resigns
 		}
 		set_portraits = {
 			character = ENG_Edward_Windsor
-			civilian = { 
-				large = "gfx/leaders/ENG/Portrait_ENG_Edward_VIII_autocrat.png" 
+			civilian = {
+				large = "gfx/leaders/ENG/Portrait_ENG_Edward_VIII_autocrat.png"
 				small = "gfx/interface/ministers/ENG/ENG_King_Edward_VIII.png"
 			}
-		} 
-		remove_every_minister = yes
-		add_ideas = {
-			ENG_Edward_Windsor_hog_pau
-			ENG_John_Hugo_Russell_for_pau
-			ENG_Noel_Pemberton_Billing_eco_pau
-			ENG_Jeffrey_Hamm_sec_pau
 		}
+		remove_every_minister = yes
+
+		activate_advisor = ENG_Edward_Windsor_hog_pau
+		activate_advisor = ENG_John_Hugo_Russell_for_pau
+		activate_advisor = ENG_Noel_Pemberton_Billing_eco_pau
+		activate_advisor = ENG_Jeffrey_Hamm_sec_pau
+
 		add_popularity = { ideology = paternal_autocrat popularity = 0.40 }
 		set_country_flag = direct_rule_from_buckingham
 		hidden_effect = {
@@ -1311,9 +1306,9 @@ country_event = { # The Revolution is crushed
 	picture = GFX_report_event_generic_ruins
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Radical problems require radical solutions
-		name = uk.38.a 
+		name = uk.38.a
 		add_political_power = 200
 		remove_ideas = ENG_civil_unrest
 		remove_country_leader_trait = meddler
@@ -1334,7 +1329,7 @@ country_event = { # The Army Revolts!
 	picture = GFX_report_event_ger_civil_war
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Not like this!
 		name = uk.39.a
 		ai_chance = { base = 0 }
@@ -1346,7 +1341,7 @@ country_event = { # The Army Revolts!
 			country_event = { id = uk.40 days = 30 }
 		}
 	}
-	
+
 	option = { # A Charistmatic Officer of the Army storms Parliament with the assistance of the military!
 		name = uk.39.b
 		ai_chance = {
@@ -1358,12 +1353,12 @@ country_event = { # The Army Revolts!
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			ENG_Jack_Churchill_hog_ade
-			ENG_Claude_Auchinleck_for_ade
-			ENG_Louis_Mountbatten_eco_ade
-			ENG_Trafford_Leigh_Mallory_ade
-		}
+
+		activate_advisor = ENG_Jack_Churchill_hog_ade
+		activate_advisor = ENG_Claude_Auchinleck_for_ade
+		activate_advisor = ENG_Louis_Mountbatten_eco_ade
+		activate_advisor = ENG_Trafford_Leigh_Mallory_ade
+
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.40 }
 		set_country_flag = military_control
 		hidden_effect = {
@@ -1387,7 +1382,7 @@ country_event = {	# The Revolution is here!
 	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			USA = {
@@ -1420,7 +1415,7 @@ country_event = {	# The Revolution is here!
 				transfer_state = 636
 				transfer_state = 643
 				transfer_state = 639
-				transfer_state = 270 
+				transfer_state = 270
 				transfer_state = 712
 				transfer_state = 710
 			}
@@ -1502,7 +1497,7 @@ country_event = {	# The Revolution is here!
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Break the chains!"
 		UOB = {
@@ -1551,7 +1546,7 @@ country_event = {	# Snap Elections Results
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = { set_country_flag = political_decision }
-	
+
 	option = { # Tories
 		name = uk.41.a
 		ai_chance = {
@@ -1567,22 +1562,21 @@ country_event = {	# Snap Elections Results
 			remove_ideas = ENG_civil_unrest
 			set_politics = {
 				ruling_party = social_conservative
-				elections_allowed = no
+				elections_allowed = yes
 			}
 			remove_every_minister = yes
-			add_ideas = {
-				ENG_Samuel_Hoare_hog_sco
-				ENG_Robert_Boothby_for_sco
-				ENG_John_Siddeley_eco_sco
-				ENG_John_Anderson_sec_mli
-			}
+
+			activate_advisor = ENG_Samuel_Hoare_hog_sco
+			activate_advisor = ENG_Robert_Boothby_for_sco
+			activate_advisor = ENG_John_Siddeley_eco_sco
+			activate_advisor = ENG_John_Anderson_sec_mli
 
 			increase_ruling_party_popularity_by_15 = yes
 			add_popularity = { ideology = market_liberal popularity = 0.05 }
 			set_country_flag = tory_coal
 		}
 	}
-	
+
 	option = { # Labour
 		name = uk.41.a
 		ai_chance = {
@@ -1598,15 +1592,14 @@ country_event = {	# Snap Elections Results
 			remove_ideas = ENG_civil_unrest
 			set_politics = {
 				ruling_party = social_democrat
-				elections_allowed = no
+				elections_allowed = yes
 			}
 			remove_every_minister = yes
-			add_ideas = {
-				ENG_Arthur_Greenwood_hog_sde
-				ENG_Herbert_Morrison_for_sde
-				ENG_Oswald_Mosley_eco_sde
-				ENG_James_Chuter_Ede_sec_sde
-			}
+
+			activate_advisor = ENG_Arthur_Greenwood_hog_sde
+			activate_advisor = ENG_Herbert_Morrison_for_sde
+			activate_advisor = ENG_Oswald_Mosley_eco_sde
+			activate_advisor = ENG_James_Chuter_Ede_sec_sde
 
 			increase_ruling_party_popularity_by_15 = yes
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
@@ -1624,11 +1617,11 @@ country_event = { # The Government Calls an Election!
 	picture = GFX_report_event_election_vote
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
 		NOT = { has_country_flag = political_decision }
 	}
-	
+
 	option = { # The election will be held in one month's time
 		name = uk.42.a
 		add_political_power = 50
@@ -1646,7 +1639,7 @@ country_event = { # General Elections
 	picture = GFX_report_event_election_vote
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # The Tories secure a majority
 		name = uk.43.a
 		ai_chance = {
@@ -1661,15 +1654,15 @@ country_event = { # General Elections
 		hidden_effect = {
 			set_politics = {
 				ruling_party = social_conservative
-				elections_allowed = no
+				elections_allowed = yes
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			set_country_flag = tory_maj
 		}
 	}
-	
+
 	option = { # A Tory-Liberal National coalition is formed
-		name = uk.43.b 
+		name = uk.43.b
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -1685,18 +1678,18 @@ country_event = { # General Elections
 				elections_allowed = yes
 			}
 			remove_every_minister = yes
-			add_ideas = {
-				ENG_Robert_Cecil_hog_sco
-				ENG_Robert_Boothby_for_sco
-				ENG_John_Siddeley_eco_sco
-				ENG_John_Anderson_sec_mli
-			}
+
+			activate_advisor = ENG_Robert_Cecil_hog_sco
+			activate_advisor = ENG_Robert_Boothby_for_sco
+			activate_advisor = ENG_John_Siddeley_eco_sco
+			activate_advisor = ENG_John_Anderson_sec_mli
+
 			increase_ruling_party_popularity_by_15 = yes
 			add_popularity = { ideology = market_liberal popularity = 0.05 }
 			set_country_flag = tory_coal
 		}
 	}
-	
+
 	option = { # Labour secures power with the backing of the ILP
 		name = uk.43.c
 		ai_chance = {
@@ -1712,16 +1705,16 @@ country_event = { # General Elections
 			remove_ideas = ENG_civil_unrest
 			set_politics = {
 				ruling_party = social_democrat
-				elections_allowed = no
+				elections_allowed = yes
 			}
 			remove_every_minister = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ENG_Arthur_Greenwood_hog_sde
-				ENG_Herbert_Morrison_for_sde
-				ENG_Oswald_Mosley_eco_lib
-				ENG_James_Chuter_Ede_sec_sde
-			}
+
+			activate_advisor = ENG_Arthur_Greenwood_hog_sde
+			activate_advisor = ENG_Herbert_Morrison_for_sde
+			activate_advisor = ENG_Oswald_Mosley_eco_lib
+			activate_advisor = ENG_James_Chuter_Ede_sec_sde
+
 			increase_ruling_party_popularity_by_15 = yes
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 			set_country_flag = labour_ilp
@@ -1738,7 +1731,7 @@ country_event = { # London Beer Flood
 	picture = GFX_report_event_ENG_london_beer_flood
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # By Jove that's a lot of beer!
 		name = uk.44.a
 		custom_effect_tooltip = ENG_beer
@@ -1754,7 +1747,7 @@ country_event = { # The Kikuyu Uprising
 	picture = GFX_report_event_african_soldiers
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Blasted rebels!
 		name = uk.45.a
 		swap_ideas = { remove_idea = ENG_col_unrest add_idea = ENG_col_uprising }
@@ -1768,14 +1761,14 @@ country_event = { # Flag of the new Empire
 	title = uk.50.t
 	desc = uk.50.d
 	picture = GFX_report_event_generic_military_parade
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { # The Union Jack is the symbol of Britain, it cannot be replaced
 		name = uk.50.a
 		ai_chance = { base = 100 }
 	}
-	
+
 	option = { # The Royal Standard, to highlight the new political reality
 		name = uk.50.b
 		ai_chance = { base = 0 }
@@ -1786,14 +1779,14 @@ country_event = { # Flag of the new Empire
 }
 
 country_event = { # The Irish Republican Brotherhood
-	id = uk.60 
+	id = uk.60
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.60"}
 	title = uk.60.t
 	desc = uk.60.d
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # We can't risk failure; use local military units to deal with them
 		name = uk.60.a
 		ai_chance = {
@@ -1823,7 +1816,7 @@ country_event = { # The Irish Republican Brotherhood
 			NFL = { country_event = { id = empire.2 hours = 3 } }
 		}
 	}
-	
+
 	option = { # This is an Irish matter and the RIC should handle it.
 		name = uk.60.b
 		ai_chance = {
@@ -1858,7 +1851,7 @@ country_event = { # Military Units Crush the IRB
 	picture = GFX_report_event_british_artillery
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # A necessary act to ensure stability in Ireland
 		name = uk.61.a
 		add_stability = 0.1
@@ -1875,7 +1868,7 @@ country_event = { # The IRB Escapes!
 	picture = GFX_report_event_generic_ruins
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Why do we even bother paying those incompetent fools!
 		name = uk.62.a
 		add_stability = -0.025
@@ -1895,7 +1888,7 @@ country_event = { # RIC units capture IRB Leadership
 	picture = GFX_report_event_military_planning
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Fine work gentlemen!
 		name = uk.63.a
 		add_political_power = 100
@@ -1916,7 +1909,7 @@ country_event = { # IRB Leadership Escapes
 	picture = GFX_report_event_generic_ruins
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Confound it all!
 		name = uk.64.a
 		add_political_power = -50
@@ -1935,11 +1928,11 @@ country_event = { # The Second IRB Rising
 	picture = GFX_report_event_ger_civil_war
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # We must retain control of Ireland!
 		name = uk.56.a
 		add_political_power = -50
-		IRE = { 
+		IRE = {
 			transfer_state = 135
 			transfer_state = 134
 			transfer_state = 815
@@ -1974,7 +1967,7 @@ country_event = { # Stability in Ireland
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Peace, but for how long?
 		name = uk.66.a
 		add_stability = 0.05
@@ -1995,7 +1988,7 @@ country_event = { # Ireland and the United Kingdom
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Ireland must be controlled indirectly through Westminster
 		name = uk.67.a
 		ai_chance = {
@@ -2044,67 +2037,67 @@ country_event = { # Ireland and the United Kingdom
 				transfer_state = 815
 				transfer_state = 816
 			}
-			ENG = { 
-				puppet = IRE 
+			ENG = {
+				puppet = IRE
 				set_cosmetic_tag = ENG_GBR
 			}
 			add_to_faction = IRE
 		}
-		IRE = { 
-			set_cosmetic_tag = IRE_ENG 
+		IRE = {
+			set_cosmetic_tag = IRE_ENG
 			set_capital = { state = 815 }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
 		}
 		remove_ideas = ENG_irb2
 	}
-	
+
 	option = { # Ireland shall be granted full independence
 		name = uk.67.b
 		ai_chance = {
@@ -2146,56 +2139,56 @@ country_event = { # Ireland and the United Kingdom
 			}
 		}
 		remove_ideas = ENG_irb2
-		IRE = { 
+		IRE = {
 			set_capital = { state = 815 }
 			add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = IRE_James_Matthew_Dillon
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -2207,7 +2200,7 @@ country_event = { # Peace Negotiations
 	desc = uk.68.d
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	option = { # Fully accept their terms
 		trigger = {
 			tag = ENG
@@ -2258,7 +2251,7 @@ country_event = { # Peace Negotiations
 		set_cosmetic_tag = ENG_GBR
 		set_country_flag = acceptirepeace
 	}
-	
+
 	option = { # We will never negotiate with these petty rebels!
 		trigger = {
 			tag = ENG
@@ -2303,9 +2296,9 @@ country_event = { # British Reply
 		text = uk.69b.d
 	}
 	picture = GFX_report_event_generic_conference
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Freedom at last!
 		trigger = {
 			ENG = { has_country_flag = acceptirepeace }
@@ -2324,7 +2317,7 @@ country_event = { # British Reply
 		drop_cosmetic_tag = yes
 		set_capital = { state = 815 }
 	}
-	
+
 	option = { # Our troops will soon march through London's streets!
 		trigger = {
 			ENG = { has_country_flag = rejectirepeace }
@@ -2339,9 +2332,9 @@ country_event = { # Industrial Sabotage in Ireland!
 	title = uk.70.t
 	desc = uk.70.d
 	picture = GFX_report_event_generic_ruins
-  fire_only_once = no
+	fire_only_once = no
 	mean_time_to_happen = { months = 12 }
- 
+
 	trigger = {
 		tag = ENG
 		OR = {
@@ -2353,7 +2346,7 @@ country_event = { # Industrial Sabotage in Ireland!
 		NOT = { has_country_flag = ENG_irb_hiding }
 		date > 1936.2.1
 	}
- 
+
 	option = { # Blast!
 		name = uk.70.a
 		random_owned_controlled_state ={
@@ -2365,7 +2358,7 @@ country_event = { # Industrial Sabotage in Ireland!
 		}
 	}
 }
- 
+
 country_event = { # Irish Railroad Bombing
 	id = uk.71
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.71"}
@@ -2375,7 +2368,7 @@ country_event = { # Irish Railroad Bombing
 	fire_only_once = no
 
 	mean_time_to_happen = { months = 9 }
- 
+
 	trigger = {
 		tag = ENG
 		OR = {
@@ -2387,7 +2380,7 @@ country_event = { # Irish Railroad Bombing
 		NOT = { has_country_flag = ENG_irb_hiding }
 		date > 1936.2.1
 	}
- 
+
 	option = { # Fools!
 		name = uk.71.a
 		random_owned_controlled_state ={
@@ -2399,18 +2392,18 @@ country_event = { # Irish Railroad Bombing
 		}
 	}
 }
- 
+
 country_event = { # The Brotherhood Targets the RIC!
 	id = uk.72
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.72"}
 	title = uk.72.t
-	desc = uk.72.d 
+	desc = uk.72.d
 	picture = GFX_report_event_europe_funeral
 	fire_only_once = no
 
 	mean_time_to_happen = { months = 12 }
- 
-  trigger = {
+
+	trigger = {
 		tag = ENG
 		OR = {
 			has_idea = ENG_irb
@@ -2422,8 +2415,8 @@ country_event = { # The Brotherhood Targets the RIC!
 			has_country_flag = ENG_irb_hiding
 		}
 		date > 1936.2.1
-  }
- 
+	}
+
 	option = { # They're just doing their job!
 		name = uk.72.a
 		add_political_power = -25
@@ -2441,12 +2434,12 @@ country_event = { # Negotiations with Rebel leaders
 	desc = uk.80.d
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
- 	fire_only_once = yes
-	
+	fire_only_once = yes
+
 	trigger = {
 		IND = { has_war_with = RAJ }
 	}
-	
+
 	option = { # Propose a diplomatic solution
 		name = uk.80.a
 		ai_chance = {
@@ -2468,7 +2461,7 @@ country_event = { # Negotiations with Rebel leaders
 		custom_effect_tooltip = ENG_india_revolt
 		set_country_flag = indian_armistice
 	}
-	
+
 	option = { # They will suffer the same fate as all those who rebel against the Empire
 		name = uk.80.b
 		ai_chance = {
@@ -2493,7 +2486,7 @@ country_event = { # British Proposals
 	picture = GFX_report_event_europe_funeral
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Very well, we will see what British guarantees are worth
 		name = uk.81.a
 		ai_chance = {
@@ -2505,11 +2498,11 @@ country_event = { # British Proposals
 			limit = {
 				NOT = { ENG = { has_country_flag = capesingapore } }
 			}
-			set_country_flag = india_truce 
+			set_country_flag = india_truce
 		}
 		ENG = {  country_event = { id = uk.84 } }
 	}
-	
+
 	option = { # Trusting the British will only lead to misery.
 		name = uk.81.b
 		ai_chance = { base = 0 }
@@ -2525,7 +2518,7 @@ country_event = { # Rebels refuse our offer
 	picture = GFX_report_event_europe_funeral
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Then we will crush those rebel scum!
 		name = uk.82.a
 		add_war_support = 0.05
@@ -2540,13 +2533,13 @@ country_event = { # The British are driven from India!
 	picture = GFX_report_event_europe_funeral
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
-	
+
 	trigger = {
 		original_tag = IND
 		has_war_with = RAJ
 		RAJ = { has_capitulated = yes }
 	}
-	
+
 	option = { # We have won our freedom!
 		name = uk.83.a
 		white_peace = ENG
@@ -2565,14 +2558,14 @@ country_event = { # The British are driven from India!
 }
 
 country_event = { # Indian Rebels Accept
-	id = uk.84 
+	id = uk.84
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.84"}
 	title = uk.84.t
 	desc = uk.84.d
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # We must prepare ourselves for another possible rebellion
 		name = uk.84.a
 	}
@@ -2584,11 +2577,11 @@ country_event = { # Order Restored
 	title = uk.85.t
 	desc = uk.85.d
 	picture = GFX_report_event_europe_funeral
-  is_triggered_only = yes
+	is_triggered_only = yes
 	hidden = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = { # Victory at last.
 		name = uk.85.a
 		add_political_power = 100
@@ -2609,7 +2602,7 @@ country_event = { # The Raj Government flees to Ceylon
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Establish their new capital in Colombo
 		name = uk.88.a
 		hidden_effect = {
@@ -2650,25 +2643,25 @@ country_event = { # National Coal Strike 1938
 		NOT = { has_government = libertarian_socialist }
 	}
 
-  option = { # Ignore this rabble
-    name = uk.90.a
-    add_ideas = ENG_coal_strike
+	option = { # Ignore this rabble
+		name = uk.90.a
+		add_ideas = ENG_coal_strike
 		hidden_effect = {
 			country_event = { id = uk.91 days = 30 }
 		}
-  }
-	
+	}
+
 	option = { # Very well, give in to their demands
-    name = uk.90.b
-    add_timed_idea = {
+		name = uk.90.b
+		add_timed_idea = {
 			idea = ENG_welfare
 			days = 365
 		}
-  }
+	}
 }
 
 country_event = { # Coal Shortages Nation-Wide
-	id = uk.91 
+	id = uk.91
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.91"}
 	title = uk.91.t
 	desc = uk.91.d
@@ -2676,7 +2669,7 @@ country_event = { # Coal Shortages Nation-Wide
 	is_triggered_only = yes
 	fire_only_once = yes
 
-  option = { # Confound those strikers!
+	option = { # Confound those strikers!
 		name = uk.91.a
 		add_political_power = -50
 		add_stability = -0.025
@@ -2689,7 +2682,7 @@ country_event = { # Coal Shortages Nation-Wide
 			}
 			country_event = { id = uk.93 days = 30 }
 		}
-  }
+	}
 }
 
 country_event = { # King Edward VIII visits coal strikers
@@ -2700,16 +2693,16 @@ country_event = { # King Edward VIII visits coal strikers
 	picture = GFX_report_event_generic_rally2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	trigger = {
 		NOT = { has_country_flag = edward_assassinated }
 	}
 
-  option = { # Isn't he supposed to stay out of politics!?
-    name = uk.92.a
+	option = { # Isn't he supposed to stay out of politics!?
+		name = uk.92.a
 		add_political_power = -50
-    swap_ideas = { remove_idea = ENG_coal_strike add_idea = ENG_coal_strike1 }
-  }
+		swap_ideas = { remove_idea = ENG_coal_strike add_idea = ENG_coal_strike1 }
+	}
 }
 
 country_event = { # Coal Riots
@@ -2721,8 +2714,8 @@ country_event = { # Coal Riots
 	is_triggered_only = yes
 	fire_only_once = yes
 
-  option = { # We can't give in to the mob
-    name = uk.93.a
+	option = { # We can't give in to the mob
+		name = uk.93.a
 		if = {
 			limit = {
 				has_idea = ENG_coal_strike
@@ -2738,7 +2731,7 @@ country_event = { # Coal Riots
 		hidden_effect = {
 			country_event = { id = uk.94 days = 30 }
 		}
-  }
+	}
 }
 
 country_event = { # December Deaths
@@ -2747,16 +2740,16 @@ country_event = { # December Deaths
 	title = uk.94.t
 	desc = uk.94.d
 	picture = GFX_report_event_generic_riot
-  is_triggered_only = yes
-  fire_only_once = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 
-  option = { # Blame the strikers, not the Government!
-    name = uk.94.a
-    add_political_power = -100
+	option = { # Blame the strikers, not the Government!
+		name = uk.94.a
+		add_political_power = -100
 		hidden_effect = {
 			country_event = { id = uk.95 days = 14 }
 		}
-  }
+	}
 }
 
 country_event = { # The Coal Strike Ends
@@ -2764,16 +2757,16 @@ country_event = { # The Coal Strike Ends
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uk.95"}
 	title = uk.95.t
 	desc = uk.95.d
-  picture = GFX_report_event_generic_rally2
-  is_triggered_only = yes
-  fire_only_once = yes
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	fire_only_once = yes
 
-  option = { # We will not be intimidated by an unruly mob!
-    name = uk.95.a
+	option = { # We will not be intimidated by an unruly mob!
+		name = uk.95.a
 		add_political_power = 100
 		add_stability = 0.05
-    remove_ideas = ENG_coal_strike2
-  }
+		remove_ideas = ENG_coal_strike2
+	}
 }
 
 
@@ -2797,7 +2790,7 @@ country_event = { # Fate of the Trade Unions
 		add_stability = -0.1
 		set_country_flag = no_unions
 	}
-	
+
 	option = { # Dissolve other Trade Unions and establish a single state-led Union
 		name = uk.100.b
 		ai_chance = {
@@ -2806,7 +2799,7 @@ country_event = { # Fate of the Trade Unions
 		add_political_power = -100
 		set_country_flag = no_unions
 	}
-	
+
 	option = { # Allow them to continue operating unimpeded
 		name = uk.100.c
 		ai_chance = {
@@ -2883,25 +2876,25 @@ country_event = { # The Household Guard
 		add_ideas = ENG_new_household_guard
 	}
 
-  option = { # Just increase their numbers
-    name = uk.103.b
+	option = { # Just increase their numbers
+		name = uk.103.b
 		ai_chance = {
 			base = 20
 		}
 		add_political_power = -50
-    custom_effect_tooltip = ENG_hh_guard
+		custom_effect_tooltip = ENG_hh_guard
 		hidden_effect = {
 			load_OOB = ENG_house_guard
 		}
-  }
+	}
 
-  option = { # The current situation is more than suitable
-    name = uk.103.c
+	option = { # The current situation is more than suitable
+		name = uk.103.c
 		ai_chance = {
 			base = 5
 		}
-    add_political_power = 100
-  }
+		add_political_power = 100
+	}
 }
 
 country_event = { # The Privy Council
@@ -2923,13 +2916,13 @@ country_event = { # The Privy Council
 		air_experience = 25
 	}
 
-  option = { # Stack the Council with members of the House of Lords
-    name = uk.104.b
+	option = { # Stack the Council with members of the House of Lords
+		name = uk.104.b
 		ai_chance = {
 			base = 50
 		}
-    add_political_power = 150
-  }
+		add_political_power = 150
+	}
 }
 
 country_event = { # Destiny
@@ -2965,17 +2958,17 @@ country_event = { # The Order of the Crown
 	desc = uk.106.d
 	picture = GFX_report_event_generic_conference
 	fire_only_once = yes
-  trigger = {
+	trigger = {
 		original_tag = ENG
 		has_completed_focus = ENG_destiny
 	}
-	
+
 	mean_time_to_happen = { months = 3 }
 
-  option = { # Never will the King be overthrown
-    name = uk.106.a
+	option = { # Never will the King be overthrown
+		name = uk.106.a
 		add_stability = 0.1
-  }
+	}
 }
 
 country_event = { # The King on the march
@@ -2985,14 +2978,14 @@ country_event = { # The King on the march
 	desc = uk.107.d
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
-  fire_only_once = yes
+	fire_only_once = yes
 
 	trigger = {
 		has_war = no
 	}
 
-  option = { # Only through unity will our way of life be preserved
-    name = uk.107.a
+	option = { # Only through unity will our way of life be preserved
+		name = uk.107.a
 		add_stability = 0.05
 		hidden_effect = {
 			if = {
@@ -3041,7 +3034,7 @@ country_event = { # The King on the march
 				NZL = { country_event = { id = uk.107 } }
 			}
 		}
-  }
+	}
 }
 
 country_event = { # Churchill's Speech
@@ -3052,7 +3045,7 @@ country_event = { # Churchill's Speech
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Britain must be protected from revolutionary elements
 		name = uk.110.a
 		add_political_power = 100
@@ -3071,7 +3064,7 @@ country_event = { # The BHEJ
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Establish this new organisation and give them leave to defend Britain from traitors within
 		name = uk.111.a
 		ai_chance = {
@@ -3079,7 +3072,7 @@ country_event = { # The BHEJ
 		}
 		add_ideas = ENG_the_barb
 	}
-	
+
 	option = { # MI5 is more than adequate to carry out our defence
 		name = uk.111.b
 		ai_chance = {
@@ -3097,7 +3090,7 @@ country_event = { # Education Reforms
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Like the Spartans of Ancient Greece the future generations will be trained
 		name = uk.112.a
 		ai_chance = {
@@ -3106,7 +3099,7 @@ country_event = { # Education Reforms
 		add_political_power = -100
 		add_ideas = ENG_sparta_education
 	}
-	
+
 	option = { # We have no business interfering in the affairs of education
 		name = uk.112.b
 		ai_chance = {
@@ -3125,7 +3118,7 @@ country_event = { # Royal Army Reforms
 	picture = GFX_report_event_british_inspect_troops
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Jack's reforms will pave the way to victory
 		name = uk.113.a
 		ai_chance = {
@@ -3134,7 +3127,7 @@ country_event = { # Royal Army Reforms
 		add_political_power = -100
 		army_experience = 100
 	}
-	
+
 	option = { # The Royal Army is not in need of reform
 		name = uk.113.b
 		ai_chance = {
@@ -3152,7 +3145,7 @@ country_event = { # Industrial Leadership Arrives
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Britain's industries must be prepared for war
 		name = uk.114.a
 		ai_chance = {
@@ -3161,7 +3154,7 @@ country_event = { # Industrial Leadership Arrives
 		add_political_power = -150
 		add_ideas = ENG_milind_comp
 	}
-	
+
 	option = { # Those who prepare for war only serve to seek it out
 		name = uk.114.b
 		ai_chance = {
@@ -3179,7 +3172,7 @@ country_event = { # The Future of Britain
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # The Military leadership must safe-guard Britain
 		name = uk.115.a
 		ai_chance = {
@@ -3187,7 +3180,7 @@ country_event = { # The Future of Britain
 		}
 		add_ideas = ENG_church_junta
 	}
-	
+
 	option = { # Those who prove willing to make the ultimate sacrifice may gain the privilege of citizenship
 		name = uk.115.b
 		ai_chance = {
@@ -3205,7 +3198,7 @@ country_event = { # Breaking the Admiralty
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # The Royal Army must be given prominence
 		name = uk.116.a
 		ai_chance = {
@@ -3214,7 +3207,7 @@ country_event = { # Breaking the Admiralty
 		army_experience = 50
 		navy_experience = -150
 	}
-	
+
 	option = { # The Royal Navy has defended Britain for centuries, and that is how it shall remain
 		name = uk.116.b
 		ai_chance = {
@@ -3233,7 +3226,7 @@ country_event = {
 	desc = uk.130.d
 	fire_only_once = yes
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = ENG
 		OR = {
@@ -3247,7 +3240,7 @@ country_event = {
 		has_idea = volunteer_only
 		is_ai = yes
 	}
-	
+
 	option = {
 		name = uk.130.a
 		swap_ideas = { remove_idea = volunteer_only add_idea = extensive_conscription }
@@ -3260,7 +3253,7 @@ country_event = {
 	title = uk.130.t
 	desc = uk.130.d
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = ENG
 		OR = {
@@ -3274,7 +3267,7 @@ country_event = {
 		has_idea = civilian_economy
 		is_ai = yes
 	}
-	
+
 	option = {
 		name = uk.130.a
 		swap_ideas = { remove_idea = civilian_economy add_idea = partial_economic_mobilisation }
@@ -3288,7 +3281,7 @@ country_event = {
 	desc = uk.130.d
 	fire_only_once = yes
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = ENG
 		OR = {
@@ -3302,7 +3295,7 @@ country_event = {
 		has_political_power < 0
 		is_ai = yes
 	}
-	
+
 	option = {
 		name = uk.130.a
 		add_political_power = 300
@@ -3316,7 +3309,7 @@ country_event = {
 	desc = uk.130.d
 	fire_only_once = yes
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = ENG
 		OR = {
@@ -3330,7 +3323,7 @@ country_event = {
 		has_idea = isolation
 		is_ai = yes
 	}
-	
+
 	option = {
 		name = uk.130.a
 		swap_ideas = { remove_idea = isolation add_idea = partial_economic_mobilisation }
@@ -3351,7 +3344,7 @@ country_event = {		# - AI is retarded and will sometimes never research Armour t
 		NOT = { has_tech = basic_light_tank }
 		is_ai = yes
 	}
-	
+
 	option = {
 		name = uk.130.a
 		set_technology = { basic_light_tank = 1 }
@@ -3372,7 +3365,7 @@ country_event = {
 		NOT = { has_tech = improved_light_tank }
 		is_ai = yes
 	}
-	
+
 	option = {
 		name = uk.130.a
 		set_technology = { improved_light_tank = 1 }
@@ -3409,7 +3402,7 @@ country_event = { # Attlee Loses Popularity
 	desc = uk.140.d
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
-	
+
 	option = { # This does not bode well for our new Government
 		name = uk.140.a
 		hidden_effect = {
@@ -3425,7 +3418,7 @@ country_event = { # Attlee Loses Popularity
 	desc = uk.141.d
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
-	
+
 	option = { # And who will replace Mr. Attlee?
 		name = uk.141.a
 		hidden_effect = {
@@ -3441,7 +3434,7 @@ country_event = { # Mosley is Victorious
 	desc = uk.142.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # This sort of skullduggery is not fit for politics!
 		name = uk.142.a
 		add_political_power = -25
@@ -3458,7 +3451,7 @@ country_event = { # Changing Allegiances
 	desc = uk.143.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # Tell the Party Whip to get his act together!
 		name = uk.143.a
 		add_political_power = -50
@@ -3476,7 +3469,7 @@ country_event = { # Greenwood's Accident
 	desc = uk.144.d
 	picture = GFX_report_event_generic_funeral
 	is_triggered_only = yes
-	
+
 	option = { # His secretary discovers his body and rushes him to hospital.
 		name = uk.144.a
 		ai_chance = {
@@ -3487,7 +3480,7 @@ country_event = { # Greenwood's Accident
 			country_event = { id = uk.145 days = 14 }
 		}
 	}
-	
+
 	option = { # His body is found in the morning, heart failure is suspected cause of death.
 		name = uk.144.b
 		ai_chance = {
@@ -3497,9 +3490,7 @@ country_event = { # Greenwood's Accident
 		hidden_effect = {
 			country_event = { id = uk.146 days = 14 }
 			remove_ideas_with_trait = head_of_government
-      add_ideas = {
-        ENG_Oswald_Mosley_hog_lib
-      }
+			activate_advisor = ENG_Oswald_Mosley_hog_lib
 		}
 	}
 }
@@ -3511,7 +3502,7 @@ country_event = { # The PM's Hospital Recovery
 	desc = uk.145.d
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	option = { # At least this bad business is over
 		name = uk.145.a
 		add_political_power = 100
@@ -3525,7 +3516,7 @@ country_event = { # Labour Defectors
 	desc = uk.146.d
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	option = { # Crows! Vultures! Rats!
 		name = uk.146.a
 		add_political_power = -50
@@ -3543,7 +3534,7 @@ country_event = { # A New Prime Minister
 	desc = uk.147.d
 	picture = GFX_report_event_generic_rally2
 	is_triggered_only = yes
-	
+
 	option = { # In this period of history, change is necessary
 		name = uk.147.a
 		set_politics = {
@@ -3551,12 +3542,12 @@ country_event = { # A New Prime Minister
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			ENG_Oswald_Mosley_hog_lib
-			ENG_Herbert_Morrison_for_sde
-			ENG_Hugh_Gaitskell_eco_sde
-			ENG_James_Chuter_Ede_sec_sde
-		}
+
+		activate_advisor = ENG_Oswald_Mosley_hog_lib
+		activate_advisor = ENG_Herbert_Morrison_for_sde
+		activate_advisor = ENG_Hugh_Gaitskell_eco_sde
+		activate_advisor = ENG_James_Chuter_Ede_sec_sde
+
 		hidden_effect = {
 			country_event = { id = uk.148 days = 7 }
 			set_country_flag = mosley_in_power
@@ -3600,7 +3591,7 @@ country_event = { # The Tuesday Speech
 	desc = uk.148.d
 	picture = GFX_report_event_generic_rally2
 	is_triggered_only = yes
-	
+
 	option = { # Together in Britain we have lit a flame that the ages shall not extinguish.
 		name = uk.148.a
 		add_political_power = 150
@@ -3622,7 +3613,7 @@ country_event = { # Mosley and the King Clash
 	desc = uk.149.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # Progress cannot be hindered by the decrepit institutions of old!
 		name = uk.149.a
 		add_stability = -0.05
@@ -3639,12 +3630,12 @@ country_event = { # Overcoming the Lords
 	desc = uk.150.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # Further limit the power of the House of Lords through new legislation
 		name = uk.150.a
 		add_political_power = 250
 	}
-	
+
 	option = { # Let us establish a representative Upper House
 		name = uk.150.b
 		add_ideas = ENG_lords_reform
@@ -3661,7 +3652,7 @@ country_event = { # Mosley Moves to Cement His Power
 	desc = uk.151.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # Firm control over the new Upper House will ensure our power
 		name = uk.151.a
 		add_political_power = 150
@@ -3675,7 +3666,7 @@ country_event = { # Subjugating Labour
 	desc = uk.152.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # Our socialist brothers must be shown the way.
 		name = uk.152.a
 		add_political_power = 100
@@ -3690,13 +3681,13 @@ country_event = { # Meeting with the Military
 	desc = uk.153.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # When they arrive, dispose of them.
 		name = uk.153.a
 		add_stability = -0.05
 		add_political_power = 250
 	}
-	
+
 	option = { # Let us discuss Britain's destiny
 		name = uk.153.b
 		add_political_power = -100
@@ -3713,7 +3704,7 @@ country_event = { # The Trouble with Troublemakers
 	desc = uk.154.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # Remove the worst of them, especially that broadsword wielding idiot Churchill
 		name = uk.154.a
 		add_stability = 0.05
@@ -3727,7 +3718,7 @@ country_event = { # Nationalisation Program
 	desc = uk.155.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # We must see that more goods are forthcoming to meet the new demand of the modern age.
 		name = uk.155.a
 		add_political_power = -100
@@ -3742,7 +3733,7 @@ country_event = { # Mosley Speaks to Britain
 	desc = uk.156.d
 	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
-	
+
 	option = { # The Path of Mankind is once more illuminated
 		name = uk.156.a
 		add_political_power = 150
@@ -3758,7 +3749,7 @@ country_event = { # War in Burma
 	title = uk.160.t
 	desc = uk.160.d
 	picture = GFX_report_event_generic_conference
-	
+
 	trigger = {
 		original_tag = ENG
 		has_war_with = VIN
@@ -3768,10 +3759,10 @@ country_event = { # War in Burma
 		controls_state = 805
 		RAJ = { is_puppet_of = ENG }
 	}
-	
+
 	fire_only_once = yes
 	mean_time_to_happen = { days = 14 }
-	
+
 	option = { # The Raj government can assist us in defending Burma from invasion
 		name = uk.160.a
 		ai_chance = {
@@ -3783,7 +3774,7 @@ country_event = { # War in Burma
 			transfer_state = 805
 		}
 	}
-	
+
 	option = { # We can defend Burma without their assistance
 		name = uk.160.b
 		ai_chance = {
@@ -3800,7 +3791,7 @@ country_event = { # The War Economy
 	picture = GFX_report_event_generic_factory
 	mean_time_to_happen = { months = 2 }
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = ENG
 		OR = {
@@ -3813,7 +3804,7 @@ country_event = { # The War Economy
 		}
 		ENG_has_black_monday = yes
 	}
-	
+
 	option = { # We must mobilise the economy!
 		name = uk.161.a
 		if = {
@@ -3883,11 +3874,11 @@ country_event = { # The Arabian Peninsula
 	title = ukf.1.t
 	desc = ukf.1.d
 	picture = GFX_report_event_HEJ_ministers
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { # Justify a military incursion into the country
-    name = ukf.1.a
+		name = ukf.1.a
 		ai_chance = { base = 0 }
 		trigger = {
 			has_country_flag = ENG_c_imperial
@@ -3899,10 +3890,10 @@ country_event = { # The Arabian Peninsula
 				type = annex_everything
 			}
 		}
-  }
+	}
 
 	option = { # Establish the Anglo-Arabian Oil Company
-    name = ukf.1.b
+		name = ukf.1.b
 		trigger = {
 			country_exists = HEJ
 			HEJ = { has_completed_focus = HEJ_obdience_to_westminster }
@@ -3910,7 +3901,7 @@ country_event = { # The Arabian Peninsula
 		ai_chance = { base = 0 }
 		country_event = { id = ukf.2 days = 1 }
 		HEJ = { country_event = { id = ukf.2 } }
-  }
+	}
 }
 
 country_event = { # The Anglo-Arabian Oil Company
@@ -3919,7 +3910,7 @@ country_event = { # The Anglo-Arabian Oil Company
 	title = ukf.2.t
 	desc = ukf.2.d
 	picture = GFX_report_event_HEJ_ministers
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { # Ensure we have total control over the company
@@ -3935,7 +3926,7 @@ country_event = { # The Anglo-Arabian Oil Company
 			country_event = { id = ukf.4 days = 7 }
 		}
 	}
-	
+
 	option = { # Offer the Arabian Government joint-control over the company
 		trigger = {
 			tag = ENG
@@ -3948,7 +3939,7 @@ country_event = { # The Anglo-Arabian Oil Company
 			country_event = { id = ukf.11 days = 14 }
 		}
 	}
-	
+
 	option = { # British investment will only assist in our economic growth
 		trigger = {
 			tag = HEJ
@@ -3979,9 +3970,9 @@ country_event = { # Control over the AA Oil Company
 		text = ukf.3b.d
 	}
 	picture = GFX_report_event_HEJ_ministers
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # This will only limit the benefits we receive from their investment
 		trigger = {
 			ENG = { has_country_flag = aatotcont }
@@ -3989,7 +3980,7 @@ country_event = { # Control over the AA Oil Company
 		name = ukf3.a
 		add_political_power = -50
 	}
-	
+
 	option = { # This way both of our nations can benefit!
 		trigger = {
 			ENG = { has_country_flag = aapartcont }
@@ -4005,15 +3996,15 @@ country_event = { # Skirmishes near Damman
 	title = ukf.4.t
 	desc = ukf.4.d
 	picture = GFX_report_event_HEJ_troops
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Pressure the Arabian Government to give us more control over the region!
 		name = ukf.4.a
 		add_political_power = -100
 		HEJ = { country_event = { id = ukf.5 hours = 8 } }
 	}
-	
+
 	option = { # Demand the Arabian Government defend our drillers from further attack
 		name = ukf.4.b
 		add_political_power = -50
@@ -4028,15 +4019,15 @@ country_event = { # British Pressure
 	title = ukf.5.t
 	desc = ukf.5.d
 	picture = GFX_report_event_HEJ_ministers
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Resign
 		name = ukf.5.a
 		add_political_power = -250
 		ENG = { country_event = { id = ukf.6 days = 1 } }
 	}
-	
+
 	option = { # Refuse their demands
 		name = ukf.5.b
 		add_political_power = -50
@@ -4050,9 +4041,9 @@ country_event = { # Loyal King in Arabia
 	title = ukf.6.t
 	desc = ukf.6.d
 	picture = GFX_report_event_HEJ_king
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Send Lawrence as our representative to the new Arabian Government
 		name = ukf.6.a
 		puppet = HEJ
@@ -4073,9 +4064,9 @@ country_event = { # The Arabians Refuse
 	title = ukf.7.t
 	desc = ukf.7.d
 	picture = GFX_report_event_HEJ_king
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Punish them!
 		name = ukf.7.a
 		declare_war_on = {
@@ -4091,21 +4082,21 @@ country_event = { # British Demands
 	title = ukf.8.t
 	desc = ukf.8.d
 	picture = GFX_report_event_HEJ_troops
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Send an extra garrison to help police the area
 		name = ukf.8.a
 		add_political_power = -50
 		add_stability = -0.05
-		hidden_effect = { 
+		hidden_effect = {
 			ENG = { country_event = { id = ukf.9 days = 2 } }
 		}
 	}
-	
+
 	option = { # Ignore their complaints
 		name = ukf.8.b
-		hidden_effect = { 
+		hidden_effect = {
 			ENG = { country_event = { id = ukf.10 days = 7 } }
 		}
 	}
@@ -4117,9 +4108,9 @@ country_event = { # Tribesmen Defeated
 	title = ukf.9.t
 	desc = ukf.9.d
 	picture = GFX_report_event_HEJ_troops
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Now drilling can begin in earnest
 		name = ukf.9.a
 	}
@@ -4131,14 +4122,14 @@ country_event = { # Oil Drillers Killed
 	title = ukf.10.t
 	desc = ukf.10.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Demand that the Arabian Government allow us to station our own soldiers in the area!
 		name = ukf.10.a
-		HEJ = { 
-			country_event = { id = ukf.5 hours = 8 } 
-		 	set_country_flag = drillerdeaths
+		HEJ = {
+			country_event = { id = ukf.5 hours = 8 }
+			set_country_flag = drillerdeaths
 		}
 	}
 }
@@ -4149,9 +4140,9 @@ country_event = { # Successful Beginning
 	title = ukf.11.t
 	desc = ukf.11.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Increase funding to the company!
 		name = ukf.11.a
 		add_political_power = -150
@@ -4160,7 +4151,7 @@ country_event = { # Successful Beginning
 			HEJ = { country_event = { id = ukf.12 days = 7 } }
 		}
 	}
-	
+
 	option = { # Continue with current funding
 		name = ukf.11.b
 		add_resource = { type = oil amount = 16 state = 744 }
@@ -4171,14 +4162,14 @@ country_event = { # Successful Beginning
 }
 
 country_event = { # Profits from the AA Oil Company
-	id = ukf.12 
+	id = ukf.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ukf.12"}
 	title = ukf.12.t
 	desc = ukf.12.d
 	picture = GFX_report_event_HEJ_ministers
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Offer them some of our poorer territory in return for greater control over the company
 		name = ukf.12.a
 		ENG = { country_event = { id = ukf.13 hours = 8 } }
@@ -4191,9 +4182,9 @@ country_event = { # An Arabian Proposition
 	title = ukf.13.t
 	desc = ukf.13.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # This land could be useful in extending our influence over the region
 		name = ukf.12.a
 		transfer_state = 455
@@ -4204,11 +4195,11 @@ country_event = { # An Arabian Proposition
 			country_event = { id = ukf.14 hours = 8 }
 		}
 	}
-	
+
 	option = { # That land is worthless and they know it!
 		name = ukf.13.b
 		add_political_power = 100
-		HEJ = { 
+		HEJ = {
 			set_country_flag = HEJ_refused
 			country_event = { id = ukf.14 hours = 8 }
 		}
@@ -4216,7 +4207,7 @@ country_event = { # An Arabian Proposition
 }
 
 country_event = { # Britain Responds
-	id = ukf.14 
+	id = ukf.14
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ukf.14"}
 	title = ukf.14.t
 	desc = {
@@ -4232,9 +4223,9 @@ country_event = { # Britain Responds
 		text = ukf.14b
 	}
 	picture = GFX_report_event_HEJ_ministers
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = { # Very well
 		name = ukf.14.a
 		if = {
@@ -4267,18 +4258,18 @@ country_event = { # The Panama Trade
 	is_triggered_only = yes
 	fire_only_once = yes
 
-  option = { # Put plans in motion for the seizure of the Canal zone
-    name = ukf.35.a
+	option = { # Put plans in motion for the seizure of the Canal zone
+		name = ukf.35.a
 		ai_chance = {
 			base = 100
 		}
-    add_political_power = -100
+		add_political_power = -100
 		add_manpower = -10000
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -5000 producer = ENG }
 		hidden_effect = {
 			country_event = { id = ukf.39 days = 7 }
 		}
-  }
+	}
 
 	option = { # Offer to buy it.
 		name = ukf.35.b
@@ -4297,21 +4288,21 @@ country_event = { # Britain offers to buy the Panama Canal
 	fire_only_once = yes
 
 	option = { # We shall accept the offer.
-    name = ukf.36.a
+		name = ukf.36.a
 		ai_chance = {
 			base = 20
 		}
-    ENG = { country_event = { id = ukf.38 days = 1 } }
-  }
-	
-  option = { # The Panama Canal is too important
-    name = ukf.36.b
+		ENG = { country_event = { id = ukf.38 days = 1 } }
+	}
+
+	option = { # The Panama Canal is too important
+		name = ukf.36.b
 		ai_chance = {
 			base = 100
 		}
-    add_political_power = 50
+		add_political_power = 50
 		ENG = { country_event = { id = ukf.37 days = 1 } }
-  }
+	}
 }
 
 country_event = { # Washington accepts the offer!
@@ -4342,17 +4333,17 @@ country_event = { # The US rejects the offer!
 	is_triggered_only = yes
 	fire_only_once = yes
 
-  option = { # Then we must put Plan B into motion
-    name = ukf.38.a
-    hidden_effect = {
+	option = { # Then we must put Plan B into motion
+		name = ukf.38.a
+		hidden_effect = {
 			country_event = { id = ukf.39 days = 7 }
 		}
-  }
+	}
 
-  option = { # Forget about it
-    name = ukf.38.b
-    add_political_power = -50
-  }
+	option = { # Forget about it
+		name = ukf.38.b
+		add_political_power = -50
+	}
 }
 
 country_event = { # Operation Pitcairn: Initial Stage
@@ -4363,7 +4354,7 @@ country_event = { # Operation Pitcairn: Initial Stage
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Give the Royal Marines the additional men they have requested for the operation
 		name = ukf.39.a
 		ai_chance = { base = 100 }
@@ -4374,7 +4365,7 @@ country_event = { # Operation Pitcairn: Initial Stage
 			country_event = { id = ukf.40 days = 7 }
 		}
 	}
-	
+
 	option = { # We can spare no more for this endeavour
 		name = ukf.39.b
 		ai_chance = { base = 0 }
@@ -4392,7 +4383,7 @@ country_event = { # Operation Pitcairn: Reconnaissance Issues
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Begin reconnaissance flights over the area
 		name = ukf.40.a
 		ai_chance = { base = 100 }
@@ -4403,7 +4394,7 @@ country_event = { # Operation Pitcairn: Reconnaissance Issues
 			set_country_flag = pitcairn_r
 		}
 	}
-	
+
 	option = { # We cannot risk alerting the Americans to our plans
 		name = ukf.40.b
 		ai_chance = { base = 0 }
@@ -4419,9 +4410,9 @@ country_event = { # Operation Pitcairn: Final Preparation
 	title = ukf.41.t
 	desc = ukf.41.d
 	picture = GFX_report_event_merchant_ship_01
-  is_triggered_only = yes
-  fire_only_once = yes
-	
+	is_triggered_only = yes
+	fire_only_once = yes
+
 	option = { # The Operation is ready to begin
 		name = ukf.41.a
 		unlock_decision_tooltip = ENG_seize_panama
@@ -4440,7 +4431,7 @@ country_event = { # Operation Pitcairn
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { set_country_flag = canal_seized }
-	
+
 	option = { # Pitcairn has his revenge at last
 		name = ukf.42.a
 		transfer_state = 685
@@ -4458,7 +4449,7 @@ country_event = { # Operation Pitcairn
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { set_country_flag = canal_failure }
-	
+
 	option = { # Blast it all!
 		name = ukf.43.a
 		add_stability = -0.05
@@ -4493,7 +4484,7 @@ country_event = { # Battle at the Panama Canal
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			ENG = { has_country_flag = canal_seized }
@@ -4504,7 +4495,7 @@ country_event = { # Battle at the Panama Canal
 		name = ukf.44.a
 		add_stability = -0.05
 	}
-	
+
 	option = { # Lock the British out of our markets!
 		trigger = {
 			ENG = { has_country_flag = canal_seized }
@@ -4515,7 +4506,7 @@ country_event = { # Battle at the Panama Canal
 		name = ukf.44.b
 		ENG = { embargo_ROOT = yes }
 	}
-	
+
 	option = { # This means war!
 		trigger = {
 			ENG = { has_country_flag = canal_seized }
@@ -4530,7 +4521,7 @@ country_event = { # Battle at the Panama Canal
 			type = annex_everything
 		}
 	}
-	
+
 	option = { # You can't take Uncle Sam by surprise!
 		trigger = {
 			ENG = { has_country_flag = canal_failure }
@@ -4549,7 +4540,7 @@ country_event = { # Channel Exercises
 	title = ukf.70.t
 	desc = ukf.70.d
 	picture = GFX_report_event_merchant_ship_01
-	
+
 	trigger = {
 		original_tag = ENG
 		is_puppet = no
@@ -4562,10 +4553,10 @@ country_event = { # Channel Exercises
 			has_completed_focus = ENG_liberate_markets
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
-	
+
 	option = { # Instruct the Admiralty to move forward with the exercises
 		name = ukf.70.a
 		ai_chance = {
@@ -4594,7 +4585,7 @@ country_event = { # Channel Exercises
 		hidden_effect = {
 			if = {
 				limit = {
-					FRA = { 
+					FRA = {
 						exists = yes
 						has_war = no
 						NOT = { is_in_faction_with = ENG }
@@ -4607,7 +4598,7 @@ country_event = { # Channel Exercises
 			}
 		}
 	}
-	
+
 	option = { # There's no need for this
 		name = ukf.70.b
 		add_political_power = 100
@@ -4644,7 +4635,7 @@ country_event = { # British Naval Exercises
 	desc = ukf.71.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Approve the Marine Nationale's proposals
 		name = ukf.71.a
 		ai_chance = { base = 80 }
@@ -4652,7 +4643,7 @@ country_event = { # British Naval Exercises
 			ENG = { country_event = { id = ukf.73 days = 1 } }
 		}
 	}
-	
+
 	option = { # Ignore these meaningless exercises
 		name = ukf.71.b
 		ai_chance = { base = 20 }
@@ -4670,7 +4661,7 @@ country_event = { # Naval Exercises Conclude
 	desc = ukf.72.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Excellent news
 		name = ukf.72.a
 		navy_experience = 50
@@ -4684,7 +4675,7 @@ country_event = { # Marine Nationale in the Channel
 	desc = ukf.73.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Let them witness our might
 		name = ukf.73.a
 		hidden_effect = {
@@ -4700,7 +4691,7 @@ country_event = { # HMS Triton sunk!
 	desc = ukf.74.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Demand an immediate apology from the French Government!
 		name = ukf.74.a
 		ai_chance = {
@@ -4713,15 +4704,15 @@ country_event = { # HMS Triton sunk!
 		ENG = { destroy_ships = { type = submarine_1 count = 1 } }
 		FRA = { country_event = { id = ukf.75 days = 1 } }
 	}
-	
+
 	#option = { # Attempt to calm the situation through diplomatic channels
 		#name = ukf.74.b
 		#ai_chance = {
 			#base = 20
-		#}
+			#}
 		#ENG = { destroy_ships = { type = submarine_1 count = 1 } }
 		#FRA = { country_event = { id = ukf.76 days = 1 } }
-	#}
+		#}
 }
 
 country_event = { # HMS Triton sunk by Le Fantasque
@@ -4731,7 +4722,7 @@ country_event = { # HMS Triton sunk by Le Fantasque
 	desc = ukf.75.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Warn the British to avoid our territorial waters in the future
 		name = ukf.75.a
 		ai_chance = {
@@ -4739,9 +4730,9 @@ country_event = { # HMS Triton sunk by Le Fantasque
 		}
 		ENG = { country_event = { id = ukf.76 days = 1 } }
 	}
-	
+
 	option = { # Offer the British condolences and attempt to deescalate
-		name = ukf.75.b 
+		name = ukf.75.b
 		ai_chance = {
 			base = 75
 		}
@@ -4756,7 +4747,7 @@ country_event = { # The French Government refuses to apologise
 	desc = ukf.76.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Order the Mediterranean Fleet out to sea
 		name = ukf.76.a
 		ai_chance = {
@@ -4784,7 +4775,7 @@ country_event = { # The French Government refuses to apologise
 		}
 		FRA = { country_event = { id = ukf.79 days = 1 } }
 	}
-	
+
 	option = { # This isn't worth escalating over
 		name = ukf.76.b
 		ai_chance = {
@@ -4814,13 +4805,13 @@ country_event = { # The French Government refuses to apologise
 }
 
 country_event = { # The French Government Offers Condolences
-	id = ukf.77 
+	id = ukf.77
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ukf.77"}
 	title = ukf.77.t
 	desc = ukf.77.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # We must ensure that this does not happen again.
 		name = ukf.77.a
 		navy_experience = 25
@@ -4836,7 +4827,7 @@ country_event = { # Britain Accepts
 	desc = ukf.78.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Good that they have come to their senses
 		name = ukf.78.a
 		navy_experience = 10
@@ -4850,7 +4841,7 @@ country_event = { # Royal Navy placed on alert status
 	desc = ukf.79.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Order our ships out of port and place them on alert!
 		name = ukf.79.a
 		hidden_effect = {
@@ -4867,7 +4858,7 @@ country_event = {
 	desc = ukf.80.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Take that you French bastards!
 		trigger = {
 			original_tag = ENG
@@ -4878,7 +4869,7 @@ country_event = {
 		destroy_ships = { type = heavy_cruiser_1 count = 2 }
 		navy_experience = 25
 	}
-	
+
 	option = { # Victory is ours!
 		trigger = {
 			original_tag = FRA
@@ -4902,7 +4893,7 @@ country_event = {
 			}
 		}
 	}
-	 
+
 	option = { # We will not stand for this insult!
 		trigger = {
 			original_tag = FRA
@@ -4937,7 +4928,7 @@ country_event = { # Marine Nationale returns to French ports
 	desc = ukf.81.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Perhaps next time they will avoid trading blows with the Royal Navy
 		name = ukf.81.a
 		add_war_support = 0.05
@@ -4952,16 +4943,16 @@ country_event = { # Anglo-Portuguese Relations
 	title = ukf.90.t
 	desc = ukf.90.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # Invite the Monarchist Government to the IPA
-    name = ""
+
+	option = { # Invite the Monarchist Government to the IPA
+		name = ""
 		ai_chance = {
 			base = 100
 		}
 		POR = { country_event = { id = ukf.91 hours = 8 } }
-  }
+	}
 }
 
 country_event = { # Britain offers us a place in the IPA
@@ -4970,24 +4961,24 @@ country_event = { # Britain offers us a place in the IPA
 	title = ukf.91.t
 	desc = ukf.91.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # We accept
-    name = ukf.91.a
+
+	option = { # We accept
+		name = ukf.91.a
 		ai_chance = {
 			base = 99
 		}
 		ENG = { add_to_faction = POR }
-  }
-	
+	}
+
 	option = { # We can't trust the British
-    name = ukf.91.b
+		name = ukf.91.b
 		ai_chance = {
 			base = 1
 		}
 		ENG = { country_event = { id = ukf.92 hours = 8 } }
-  }
+	}
 }
 
 country_event = { # Portugal refuses our offer
@@ -4996,12 +4987,12 @@ country_event = { # Portugal refuses our offer
 	title = ukf.92.t
 	desc = ukf.92.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # That's too bad for them
-    name = ukf.92.a
-  }
+
+	option = { # That's too bad for them
+		name = ukf.92.a
+	}
 }
 
 # - Renewing the Treaty of London (ukf.93-ukf.96)
@@ -5012,24 +5003,24 @@ country_event = { # Renewing the Treaty of London
 	title = ukf.93.t
 	desc = ukf.93.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # Offer Belgium a place in the IPA
-    name = ukf.93.a
+
+	option = { # Offer Belgium a place in the IPA
+		name = ukf.93.a
 		ai_chance = {
 			base = 20
 		}
 		BEL = { country_event = { id = ukf.94 hours = 8 } }
-  }
-	
+	}
+
 	option = { # Just guarantee Belgium
-    name = ukf.93.b
+		name = ukf.93.b
 		ai_chance = {
 			base = 80
 		}
 		BEL = { country_event = { id = ukf.96 hours = 8 } }
-  }
+	}
 }
 
 country_event = { # Britian offers us a place in the IPA
@@ -5038,24 +5029,24 @@ country_event = { # Britian offers us a place in the IPA
 	title = ukf.94.t
 	desc = ukf.94.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # Join them
-    name = ukf.94.a
+
+	option = { # Join them
+		name = ukf.94.a
 		ai_chance = {
 			base = 15
 		}
 		ENG = { add_to_faction = BEL }
-  }
-	
+	}
+
 	option = { # Belgium is a neutral nation and will remain that way
-    name = ukf.94.b
+		name = ukf.94.b
 		ai_chance = {
 			base = 85
 		}
 		ENG = { country_event = { id = ukf.95 hours = 8 } }
-  }
+	}
 }
 
 country_event = { # Belgium refuses to join the IPA
@@ -5064,12 +5055,12 @@ country_event = { # Belgium refuses to join the IPA
 	title = ukf.95.t
 	desc = ukf.95.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # Their loss
-    name = ukf.95.a
-  }
+
+	option = { # Their loss
+		name = ukf.95.a
+	}
 }
 
 country_event = { # Britain guarantees our independence
@@ -5078,13 +5069,13 @@ country_event = { # Britain guarantees our independence
 	title = ukf.96.t
 	desc = ukf.96.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # This will be useful in deterring invasion
-    name = ukf.96.a
+
+	option = { # This will be useful in deterring invasion
+		name = ukf.96.a
 		ENG = { give_guarantee = BEL }
-  }
+	}
 }
 
 # - Align Hellas (ukf.100-ukf.101)
@@ -5095,24 +5086,24 @@ country_event = { # Britain offers us an alliance
 	title = ukf.100.t
 	desc = ukf.100.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # The British have proven themselves to be useful allies.
-    name = ukf.100.a
+
+	option = { # The British have proven themselves to be useful allies.
+		name = ukf.100.a
 		ai_chance = {
 			base = 80
 		}
 		ENG = { add_to_faction = GRE }
-  }
-	
+	}
+
 	option = { # Our interests lie elsewhere.
-    name = ukf.100.b
+		name = ukf.100.b
 		ai_chance = {
 			base = 20
 		}
 		ENG = { country_event = { id = ukf.101 days = 1 } }
-  }
+	}
 }
 
 country_event = { # Greece Rejects Our Proposal
@@ -5121,12 +5112,12 @@ country_event = { # Greece Rejects Our Proposal
 	title = ukf.101.t
 	desc = ukf.101.d
 	picture = GFX_report_event_europe_funeral
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
- 
-  option = { # In time they will regret their decision.
-    name = ukf.101.a
-  }
+
+	option = { # In time they will regret their decision.
+		name = ukf.101.a
+	}
 }
 
 # - Alaska Territories (ukf.110-ukf.112)
@@ -5140,24 +5131,24 @@ country_event = { # The British Demands Control of Alaska
 	is_triggered_only = yes
 	fire_only_once = yes
 
-  option = { # Never you imperialist bastards!
-    name = ukf.100.a
+	option = { # Never you imperialist bastards!
+		name = ukf.100.a
 		ai_chance = {
 			base = 100
-			modifier = { 
+			modifier = {
 				has_war = yes
 				add = -25
 			}
 		}
-    add_political_power = 100
-    ENG = { country_event = { id = ukf.111 days = 1 } }
-  }
+		add_political_power = 100
+		ENG = { country_event = { id = ukf.111 days = 1 } }
+	}
 
-  option = { # We have no choice.
-    name = ukf.100.b
+	option = { # We have no choice.
+		name = ukf.100.b
 		ai_chance = {
 			base = 0
-			modifier = { 
+			modifier = {
 				has_war = yes
 				add = 25
 			}
@@ -5176,8 +5167,8 @@ country_event = { # Washington Refuses to hand over Alaska
 	is_triggered_only = yes
 	fire_only_once = yes
 
-  option = { # Then it is war!
-    name = ukf.100.a
+	option = { # Then it is war!
+		name = ukf.100.a
 		ai_chance = {
 			base = 90
 		}
@@ -5188,7 +5179,7 @@ country_event = { # Washington Refuses to hand over Alaska
 		hidden_effect = {
 			add_state_claim = 463
 		}
-  }
+	}
 
 	option = { # A war is not worth over those frozen wastelands
 		name = ukf.110.b
@@ -5227,7 +5218,7 @@ country_event = { # Anglo-Japanese Ties
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Invite them to join the IPA
 		name = ukf.120.a
 		JAP = { country_event = { id = ukf.121 days = 1 } }
@@ -5242,7 +5233,7 @@ country_event = { # Britain proposes we join the IPA
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Together we will secure peace in Asia
 		name = ukf.121.a
 		ai_chance = {
@@ -5250,7 +5241,7 @@ country_event = { # Britain proposes we join the IPA
 		}
 		ENG = { country_event = { id = ukf.122 days = 1 } }
 	}
-	
+
 	option = { # We don't need their help!
 		name = ukf.121.b
 		ai_chance = {
@@ -5268,7 +5259,7 @@ country_event = { # Japan joins the IPA
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Excellent!
 		name = ukf.122.a
 		add_to_faction = JAP
@@ -5299,7 +5290,7 @@ country_event = { # Securing the Mountain Passes
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Demand that Nepal and Bhutan become protectorates
 		name = ukf.130.a
 		ai_chance = {
@@ -5308,7 +5299,7 @@ country_event = { # Securing the Mountain Passes
 		NEP = { country_event = { id = ukf.131 days = 1 } }
 		BHU = { country_event = { id = ukf.131 days = 1 } }
 	}
-	
+
 	option = { # Suggest that they become part of the Raj Government
 		name = ukf.130.b
 		ai_chance = {
@@ -5317,7 +5308,7 @@ country_event = { # Securing the Mountain Passes
 		NEP = { country_event = { id = ukf.134 days = 1 } }
 		BHU = { country_event = { id = ukf.134 days = 1 } }
 	}
-	
+
 	option = { # Solve this with war
 		name = ukf.130.c
 		ai_chance = {
@@ -5345,7 +5336,7 @@ country_event = { # Britain demands we become a protectorate!
 	desc = ukf.131.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # We cannot hope to resist them
 		name = ukf.131.a
 		ai_chance = {
@@ -5359,11 +5350,11 @@ country_event = { # Britain demands we become a protectorate!
 			}
 		}
 
-		ENG = { 
+		ENG = {
 			country_event = { id = ukf.132 days = 1 }
 		}
 	}
-	
+
 	option = { # We will defend our nation!
 		name = ukf.131.b
 		ai_chance = {
@@ -5377,7 +5368,7 @@ country_event = { # Britain demands we become a protectorate!
 			}
 		}
 
-		ENG = { 
+		ENG = {
 			country_event = { id = ukf.133 days = 1 }
 		}
 	}
@@ -5390,8 +5381,8 @@ country_event = { # NEP/BHU Becomes a Protectorate
 	desc = ukf.132.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # A wise choice
 		name = ukf.132
 
@@ -5402,10 +5393,10 @@ country_event = { # NEP/BHU Becomes a Protectorate
 				add_ideas = colonial_government
 				set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 				set_political_party = { ideology = authoritarian_democrat popularity = 0.2 }
-				
+
 				if = {
 					limit = { tag = NEP }
-					set_cosmetic_tag = ENG_NEP 
+					set_cosmetic_tag = ENG_NEP
 				}
 				if = {
 					limit = { tag = BHU }
@@ -5423,8 +5414,8 @@ country_event = { # NEP/BHU Refused
 	desc = ukf.133.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Crush them!
 		name = ukf.133.a
 		declare_war_on = {
@@ -5445,7 +5436,7 @@ country_event = { # Britain demands we become part of the Raj!
 	desc = ukf.134.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Accept
 		name = ukf.134.a
 		ai_chance = {
@@ -5459,11 +5450,11 @@ country_event = { # Britain demands we become part of the Raj!
 			}
 		}
 
-		ENG = { 
+		ENG = {
 			country_event = { id = ukf.135 days = 1 }
 		}
 	}
-	
+
 	option = { # Refuse
 		name = ukf.134.b
 		ai_chance = {
@@ -5477,7 +5468,7 @@ country_event = { # Britain demands we become part of the Raj!
 			}
 		}
 
-		ENG = { 
+		ENG = {
 			country_event = { id = ukf.136 days = 1 }
 		}
 	}
@@ -5490,8 +5481,8 @@ country_event = { # From Agrees
 	desc = ukf.137.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Wise choice
 		name = ukf.135.a
 		RAJ = {
@@ -5507,7 +5498,7 @@ country_event = { # From Refuses
 	desc = ukf.136.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
+	fire_only_once = yes
 
 	option = { # Crush them!
 		name = ukf.136.a
@@ -5532,8 +5523,8 @@ country_event = { # Reburial Ceremony for Cecil Rhodes
 	desc = ukf.150.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # The dream of Britain and Rhodes is completed.
 		name = ukf.150.a
 		542 = {
@@ -5612,7 +5603,7 @@ country_event = { # Stability of Mesopotamia
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Demand that Iraq become a protectorate
 		name = ukf.160.a
 		ai_chance = {
@@ -5620,7 +5611,7 @@ country_event = { # Stability of Mesopotamia
 		}
 		IRQ = { country_event = { id = ukf.161 days = 1 } }
 	}
-	
+
 	option = { # Solve this with war
 		name = ukf.160.b
 		ai_chance = {
@@ -5645,7 +5636,7 @@ country_event = { # Britain Demands that we become a Protectorate
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # We cannot hope to stand against them
 		name = ukf.161.a
 		ai_chance = {
@@ -5653,7 +5644,7 @@ country_event = { # Britain Demands that we become a Protectorate
 		}
 		ENG = { country_event = { id = ukf.162 days = 1 } }
 	}
-	
+
 	option = { # Never!
 		name = ukf.161.b
 		ai_chance = {
@@ -5670,18 +5661,18 @@ country_event = { # Iraq Agrees
 	desc = ukf.162.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # A wise decision, old chap
 		name = ukf.162.a
 		puppet = IRQ
 		add_to_faction = IRQ
 		hidden_effect = {
-			IRQ = { 
+			IRQ = {
 				add_ideas = colonial_government
 				set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 				set_political_party = { ideology = authoritarian_democrat popularity = 0.2 }
-				set_cosmetic_tag = ENG_IRQ 
+				set_cosmetic_tag = ENG_IRQ
 			}
 		}
 	}
@@ -5694,8 +5685,8 @@ country_event = { # Iraq Refuses
 	desc = ukf.163.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Crush them!
 		name = ukf.163.a
 		declare_war_on = {
@@ -5715,7 +5706,7 @@ country_event = { # Securing Persian Oil
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Demand that Iran become a protectorate
 		name = ukf.165.a
 		ai_chance = {
@@ -5723,7 +5714,7 @@ country_event = { # Securing Persian Oil
 		}
 		PER = { country_event = { id = ukf.166 days = 1 } }
 	}
-	
+
 	option = { # Demand the south Persian coast
 		name = ukf.165.b
 		ai_chance = {
@@ -5738,7 +5729,7 @@ country_event = { # Securing Persian Oil
 		}
 		PER = { country_event = { id = ukf.169 days = 1 } }
 	}
-	
+
 	option = { # Solve this with war
 		name = ukf.165.c
 		ai_chance = {
@@ -5766,7 +5757,7 @@ country_event = { # Britain demands we become a protectorate!
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Never!
 		name = ukf.166.a
 		ai_chance = {
@@ -5774,7 +5765,7 @@ country_event = { # Britain demands we become a protectorate!
 		}
 		ENG = { country_event = { id = ukf.167 days = 1 } }
 	}
-	
+
 	option = { # We cannot hope to resist.
 		name = ukf.166.b
 		ai_chance = {
@@ -5791,18 +5782,18 @@ country_event = { # Persia Agrees
 	desc = ukf.167.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Excellent
 		name = ""
 		puppet = PER
 		add_to_faction = PER
 		hidden_effect = {
-			PER = { 
+			PER = {
 				add_ideas = colonial_government
 				set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 				set_political_party = { ideology = authoritarian_democrat popularity = 0.2 }
-				set_cosmetic_tag = ENG_PER 
+				set_cosmetic_tag = ENG_PER
 			}
 		}
 	}
@@ -5815,8 +5806,8 @@ country_event = { # Persia Refuses
 	desc = ukf.168.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Crush them!
 		name = uk.168.a
 		declare_war_on = {
@@ -5834,7 +5825,7 @@ country_event = { # Britain demands our Southern Coast!
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Never!
 		name = ukf.169.a
 		ai_chance = {
@@ -5842,7 +5833,7 @@ country_event = { # Britain demands our Southern Coast!
 		}
 		ENG = { country_event = { id = ukf.171 days = 1 } }
 	}
-	
+
 	option = { # We cannot hope to resist.
 		name = ukf.169.b
 		ai_chance = {
@@ -5859,8 +5850,8 @@ country_event = { # Persia Agrees
 	desc = ukf.170.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.170.a
 		transfer_state = 413
@@ -5876,8 +5867,8 @@ country_event = { # Persia Refuses
 	desc = ukf.171.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Crush them!
 		name = ukf.171.a
 		declare_war_on = {
@@ -5897,7 +5888,7 @@ country_event = { # Finishing the Great Game - Afghanistan
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Demand that they become a protectorate
 		name = ukf.180.a
 		ai_chance = {
@@ -5905,7 +5896,7 @@ country_event = { # Finishing the Great Game - Afghanistan
 		}
 		AFG = { country_event = { id = ukf.181 days = 1 } }
 	}
-	
+
 	option = { # Solve this with war
 		name = ukf.180.b
 		ai_chance = {
@@ -5926,7 +5917,7 @@ country_event = { # Britain demands we become a protectorate!
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Never!
 		name = ukf.181.a
 		ai_chance = {
@@ -5934,7 +5925,7 @@ country_event = { # Britain demands we become a protectorate!
 		}
 		ENG = { country_event = { id = ukf.183 days = 1 } }
 	}
-	
+
 	option = { # We cannot hope to resist.
 		name = ukf.181.b
 		ai_chance = {
@@ -5951,21 +5942,21 @@ country_event = { # From Agrees
 	desc = ukf.182.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # A wise choice
 		name = ukf.182.a
 		puppet = FROM
 		add_to_faction = FROM
 		hidden_effect = {
-			FROM = { 
+			FROM = {
 				add_ideas = colonial_government
 				set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 				set_political_party = { ideology = authoritarian_democrat popularity = 0.2 }
-				
+
 				if = {
 					limit = { tag = AFG }
-					set_cosmetic_tag = ENG_AFG 
+					set_cosmetic_tag = ENG_AFG
 				}
 				if = {
 					limit = { tag = TRK }
@@ -5983,7 +5974,7 @@ country_event = { # From Refuses
 	desc = ukf.183.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
+	fire_only_once = yes
 
 	option = { # Crush them!
 		name = ukf.183.a
@@ -6002,7 +5993,7 @@ country_event = { # Finishing the Great Game - Transcaspia
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Demand that they become a protectorate
 		name = ukf.185.a
 		ai_chance = {
@@ -6010,7 +6001,7 @@ country_event = { # Finishing the Great Game - Transcaspia
 		}
 		TRK = { country_event = { id = ukf.181 days = 1 } }
 	}
-	
+
 	option = { # Solve this with war
 		name = ukf.185.b
 		ai_chance = {
@@ -6032,7 +6023,7 @@ country_event = { # British Support Arrives
 	desc = ukf.190.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Much needed!
 		name = ukf.190.a
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 producer = ENG }
@@ -6061,7 +6052,7 @@ country_event = { # The Third Mexican-American War
 	desc = ukf.191.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = {
 		name = ukf.191.a
 		ai_chance = {
@@ -6073,7 +6064,7 @@ country_event = { # The Third Mexican-American War
 		}
 		USA = { country_event = { id = ukf.192 days = 1 } }
 	}
-	
+
 	option = {
 		name = ukf.191.b
 		ai_chance = {
@@ -6094,7 +6085,7 @@ country_event = {
 	desc = ukf.192.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = {
 		name = ukf.192.a
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 producer = ENG }
@@ -6111,12 +6102,12 @@ country_event = { # Portuguese Civil War
 	desc = ukf.195.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Give the Monarchists access to our territory.
 		name = ukf.195.a
 		POR = { country_event = { id = ukf.196 hours = 8 } }
 	}
-	
+
 	option = { # Send our friends equipment to assist in their struggle against the Republicans
 		name = ukf.195.b
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -5000 producer = ENG }
@@ -6131,7 +6122,7 @@ country_event = { # British Assistance
 	desc = ukf.196.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Hopefully we can bring this war to an end soon.
 		name = ukf.196.a
 		if = {
@@ -6159,7 +6150,7 @@ country_event = { # Britain Disputes the Monroe Doctrine
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Warn them of the consequences of this action
 		name = ukf.210.a
 		ai_chance = {
@@ -6172,7 +6163,7 @@ country_event = { # Britain Disputes the Monroe Doctrine
 		add_political_power = -50
 		ENG = { country_event = { id = ukf.211 hours = 8 } }
 	}
-	
+
 	option = { # Ignore this meaningless rhetoric
 		name = ukf.210.b
 		ai_chance = {
@@ -6184,7 +6175,7 @@ country_event = { # Britain Disputes the Monroe Doctrine
 		}
 		add_stability = -0.05
 	}
-	
+
 	option = { # Threaten them with war!
 		name = ukf.210.c
 		ai_chance = {
@@ -6206,7 +6197,7 @@ country_event = { # Washington Warns Westminster
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # And?
 		name = ukf.211.a
 		add_political_power = -50
@@ -6221,12 +6212,12 @@ country_event = { # Washington threatens us with war!
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Ignore them
 		name = ukf.212.a
 		USA = { country_event = { id = ukf.213 hours = 8 } }
 	}
-	
+
 	option = { # We do not take these insults lightly!
 		name = ukf.212.b
 		USA = { country_event = { id = ukf.214 hours = 8 } }
@@ -6241,7 +6232,7 @@ country_event = { # Westminster ignores our threats!
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Then we shall respond with war!
 		name = ukf.213.a
 		ai_chance = {
@@ -6252,7 +6243,7 @@ country_event = { # Westminster ignores our threats!
 			type = annex_everything
 		}
 	}
-	
+
 	option = { # We cannot risk a war right now
 		name = ukf.213.b
 		ai_chance = {
@@ -6270,7 +6261,7 @@ country_event = { # Westminster threatens us!
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # We won't let those bastards push us around!
 		name = ukf.214.a
 		ai_chance = {
@@ -6281,7 +6272,7 @@ country_event = { # Westminster threatens us!
 			type = annex_everything
 		}
 	}
-	
+
 	option = { # Perhaps we should avoid war, for now
 		name = ukf.214.b
 		ai_chance = {
@@ -6301,7 +6292,7 @@ country_event = { # Removing the Final Roadblock
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Demand that Siam becomes a protectorate
 		name = ukf.350.a
 		ai_chance = {
@@ -6309,7 +6300,7 @@ country_event = { # Removing the Final Roadblock
 		}
 		SIA = { country_event = { id = ukf.351 days = 1 } }
 	}
-	
+
 	option = { # Demand the Kra Isthmus to link our Burma and Malaya colonies
 		name = ukf.350.b
 		ai_chance = {
@@ -6317,7 +6308,7 @@ country_event = { # Removing the Final Roadblock
 		}
 		SIA = { country_event = { id = ukf.354 days = 1 } }
 	}
-	
+
 	option = { # Solve this with war
 		name = ukf.350.c
 		ai_chance = {
@@ -6338,7 +6329,7 @@ country_event = { # Britain demands we become a protectorate!
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Never!
 		name = ukf.351.a
 		ai_chance = {
@@ -6346,7 +6337,7 @@ country_event = { # Britain demands we become a protectorate!
 		}
 		ENG = { country_event = { id = ukf.353 days = 1 } }
 	}
-	
+
 	option = { # We cannot hope to resist.
 		name = ukf.351.b
 		ai_chance = {
@@ -6363,18 +6354,18 @@ country_event = { # Siam Agrees
 	desc = ukf.352.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.352.a
 		puppet = SIA
 		add_to_faction = SIA
 		hidden_effect = {
-			SIA = { 
+			SIA = {
 				add_ideas = colonial_government
 				set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 				set_political_party = { ideology = authoritarian_democrat popularity = 0.2 }
-				set_cosmetic_tag = ENG_SIA 
+				set_cosmetic_tag = ENG_SIA
 			}
 		}
 	}
@@ -6387,8 +6378,8 @@ country_event = { # Siam Refuses
 	desc = ukf.353.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Crush them!
 		name = ukf.353.a
 		declare_war_on = {
@@ -6406,7 +6397,7 @@ country_event = { # Britain demands the Kra Isthmus!
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = {
 		name = ukf.354.a
 		ai_chance = {
@@ -6414,7 +6405,7 @@ country_event = { # Britain demands the Kra Isthmus!
 		}
 		ENG = { country_event = { id = ukf.356 days = 1 } }
 	}
-	
+
 	option = {
 		name = ukf.354.b
 		ai_chance = {
@@ -6431,8 +6422,8 @@ country_event = {
 	desc = ukf.355.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.355.a
 		transfer_state = 724
@@ -6446,8 +6437,8 @@ country_event = {
 	desc = ukf.356.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.356.a
 		declare_war_on = {
@@ -6466,8 +6457,8 @@ country_event = { # London Naval Conference
 	desc = ukf.2000.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Let us formalise this treaty with our close friends
 		name = ukf.2000.a
 		GRE = { country_event = { id = ukf.2001 days = 1 } }
@@ -6489,8 +6480,8 @@ country_event = { # London Naval Conference
 	desc = ukf.2001.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # Sign the agreement!
 		name = ukf.2000.a
 		ai_chance = {
@@ -6506,7 +6497,7 @@ country_event = { # London Naval Conference
 			ENG = { modify_country_flag = { flag = lnt_members value = 1 } }
 		}
 	}
-	
+
 	option = { # We won't sign this ridiculous bit of paper
 		name = ukf.2000.b
 		ai_chance = {
@@ -6527,8 +6518,8 @@ country_event = { # London Naval Conference
 	desc = ukf.2001.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.2001.a
 		ai_chance = {
@@ -6544,7 +6535,7 @@ country_event = { # London Naval Conference
 			ENG = { modify_country_flag = { flag = lnt_members value = 1 } }
 		}
 	}
-	
+
 	option = {
 		name = ukf.2001.b
 		ai_chance = {
@@ -6565,8 +6556,8 @@ country_event = { # Greece walks out of the Conference
 	desc = ukf.2003.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # They will regret this day
 		name = ukf.2003.a
 	}
@@ -6579,8 +6570,8 @@ country_event = { # Portugal walks out of the Conference
 	desc = ukf.2004.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # They will regret this day
 		name = ukf.2004.a
 	}
@@ -6595,7 +6586,7 @@ country_event = { # London Naval Treaty
 	desc = ukf.2011.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = { # Sign the agreement
 		name = ukf.2011.a
 		ai_chance = {
@@ -6619,7 +6610,7 @@ country_event = { # London Naval Treaty
 			ENG = { modify_country_flag = { flag = lnt_members value = 1 } }
 		}
 	}
-	
+
 	option = { # We have no interest in this ridiculous pact!
 		name = ukf.2010.b
 		ai_chance = {
@@ -6647,7 +6638,7 @@ country_event = {
 	desc = ukf.2011.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukf.2011.a
 		ai_chance = {
@@ -6671,7 +6662,7 @@ country_event = {
 			ENG = { modify_country_flag = { flag = lnt_members value = 1 } }
 		}
 	}
-	
+
 	option = {
 		name = ukf.2011.b
 		ai_chance = {
@@ -6701,8 +6692,8 @@ country_event = {
 	desc = ukf.2100.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # We must avoid another naval race with Germany
 		name = ukf.2100.a
 		GER = { country_event = { id = ukf.2101 days = 1 } }
@@ -6716,8 +6707,8 @@ country_event = {
 	desc = ukf.2101.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # This will ensure peace between our two nations
 		name = ukf.2101.a
 		ai_chance = {
@@ -6750,7 +6741,7 @@ country_event = {
 			ENG = { modify_country_flag = { flag = lnt_members value = 2 } }
 		}
 	}
-	
+
 	option = { # Limit our naval development? I think not!
 		name = ukf.2101.b
 		ai_chance = {
@@ -6783,8 +6774,8 @@ country_event = {
 	desc = ukf.2102.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.2102.a
 		add_opinion_modifier = {
@@ -6802,8 +6793,8 @@ country_event = {
 	desc = ukf.2103.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.2103.a
 	}
@@ -6816,8 +6807,8 @@ country_event = {
 	desc = ukf.2200.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.2200.a
 		FRA = { country_event = { id = ukf.2201 days = 1 } }
@@ -6831,8 +6822,8 @@ country_event = {
 	desc = ukf.2201.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.2201.a
 		ai_chance = {
@@ -6865,7 +6856,7 @@ country_event = {
 			ENG = { modify_country_flag = { flag = lnt_members value = 2 } }
 		}
 	}
-	
+
 	option = {
 		name = ukf.2201.b
 		ai_chance = {
@@ -6898,8 +6889,8 @@ country_event = {
 	desc = ukf.2202.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.2202.a
 		add_opinion_modifier = {
@@ -6917,8 +6908,8 @@ country_event = {
 	desc = ukf.2203.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.2203.a
 	}
@@ -6931,7 +6922,7 @@ country_event = {
 	desc = ukf.2250.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukf.2250.a
 	}
@@ -6946,7 +6937,7 @@ country_event = {
 	desc = ukf.2500.d
 	picture = GFX_report_event_merchant_ship_01
 	fire_only_once = no	#why?
-	
+
 	trigger = {
 		original_tag = ENG
 		has_country_flag = naval_conf
@@ -6958,11 +6949,11 @@ country_event = {
 		NOT = { has_idea = ENG_lnt2 }
 		NOT = { has_idea = ENG_lnt3 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	option = {
 		name = ukf.2500.a
 		add_ideas = ENG_lnt1
@@ -6982,7 +6973,7 @@ country_event = {
 	desc = ukf.2500.d
 	picture = GFX_report_event_merchant_ship_01
 	fire_only_once = no
-	
+
 	trigger = {
 		original_tag = ENG
 		has_country_flag = naval_conf
@@ -6993,11 +6984,11 @@ country_event = {
 		NOT = { has_idea = ENG_lnt2 }
 		NOT = { has_idea = ENG_lnt3 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	option = {
 		name = ukf.2500.a
 		swap_ideas = { remove_idea = ENG_lnt1 add_idea = ENG_lnt2 }
@@ -7011,18 +7002,18 @@ country_event = {
 	desc = ukf.2500.d
 	picture = GFX_report_event_merchant_ship_01
 	fire_only_once = no
-	
+
 	trigger = {
 		original_tag = ENG
 		has_country_flag = naval_conf
 		has_country_flag = { flag = lnt_members value > 5 }
 		NOT = { has_idea = ENG_lnt3 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	option = {
 		name = ukf.2500.a
 		swap_ideas = { remove_idea = ENG_lnt2 add_idea = ENG_lnt3 }
@@ -7039,9 +7030,9 @@ country_event = {
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	immediate = { set_country_flag = gw2intervention }
-	
+
 	option = {
 		trigger = {
 			has_country_flag = ENG_c_imperial
@@ -7057,11 +7048,11 @@ country_event = {
 				has_country_flag = reformentente
 				add = -50
 			}
-			modifier = {	
+			modifier = {
 				has_country_flag = isoimpfed
 				add = -50
 			}
-			modifier = {	
+			modifier = {
 				AND = {
 					has_country_flag = isoimpfed
 					FRA = { surrender_progress > 0.5 }
@@ -7079,7 +7070,7 @@ country_event = {
 		}
 		country_event = { id = ukf.6000 }
 	}
-	
+
 	option = {
 		name = ukf.4999.b
 		ai_chance = {
@@ -7092,11 +7083,11 @@ country_event = {
 				has_country_flag = reformentente
 				add = 50
 			}
-			modifier = {	
+			modifier = {
 				has_country_flag = isoimpfed
 				add = 50
 			}
-			modifier = {	
+			modifier = {
 				AND = {
 					has_country_flag = isoimpfed
 					FRA = { surrender_progress > 0.5 }
@@ -7123,9 +7114,9 @@ country_event = {		# - France
 	desc = ukf.5000.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
-	option = { # 
+	fire_only_once = yes
+
+	option = { #
 		name = ukf.5000.a
 		ai_chance = {
 			base = 50
@@ -7159,7 +7150,7 @@ country_event = {		# - France
 		set_country_flag = decided_gw2
 		set_country_flag = gw2intervention
 	}
-	
+
 	option = {
 		name = ukf.5000.b
 		ai_chance = {
@@ -7195,7 +7186,7 @@ country_event = {		# - France
 			}
 		}
 	}
-	
+
 	option = {
 		name = ukf.5000.c
 		ai_chance = {
@@ -7232,8 +7223,8 @@ country_event = {		# - France
 	desc = ukf.5001.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.5001.a
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = ENG }
@@ -7250,8 +7241,8 @@ country_event = {		# - France
 	desc = ukf.5002.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.5002.a
 		ai_chance = {
@@ -7276,7 +7267,7 @@ country_event = {		# - France
 			}
 		}
 	}
-	
+
 	option = {
 		name = ukf.5002.b
 		ai_chance = {
@@ -7300,8 +7291,8 @@ country_event = {
 	desc = ukf.5010.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.5010.a
 		ai_chance = {
@@ -7313,7 +7304,7 @@ country_event = {
 		}
 		FRA = { country_event = { id = ukf.5011 } }
 	}
-	
+
 	option = {
 		name = ukf.5010.b
 		ai_chance = {
@@ -7348,8 +7339,8 @@ country_event = {
 	desc = ukf.5011.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.5011.a
 		ai_chance = {
@@ -7365,7 +7356,7 @@ country_event = {
 			ENG = { diplomatic_relation = { country = ITA relation = military_access } }
 		}
 	}
-	
+
 	option = {
 		name = ukf.5011.b
 		ai_chance = {
@@ -7382,8 +7373,8 @@ country_event = {
 	desc = ukf.5012.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.5012.a
 	}
@@ -7396,8 +7387,8 @@ country_event = {
 	desc = ukf.5013.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.5012.a
 		ai_chance = {
@@ -7419,7 +7410,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ukf.5013.b
 		ai_chance = {
@@ -7436,12 +7427,12 @@ country_event = {
 	desc = ukf.5014.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = { # To victory lads!
 		name = ukf.5014.a
 		dismantle_faction = yes
-		FRA = { 
+		FRA = {
 			dismantle_faction = yes
 			create_faction = entente_cordiale
 		}
@@ -7467,8 +7458,8 @@ country_event = {
 	desc = ukf.5015.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.5015.a
 	}
@@ -7481,8 +7472,8 @@ country_event = {		# - Germany
 	desc = ukf.6000.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		trigger = {
 			FRA = { NOT = { has_idea = ENG_dovpact } }
@@ -7513,7 +7504,7 @@ country_event = {		# - Germany
 		set_country_flag = decided_gw2
 		set_country_flag = gw2intervention
 	}
-	
+
 	option = { # Send the Germans equipment and ''volunteers''
 		name = ukf.6000.b
 		ai_chance = {
@@ -7549,7 +7540,7 @@ country_event = {		# - Germany
 		set_country_flag = decided_gw2
 		set_country_flag = gw2intervention
 	}
-	
+
 	option = {
 		name = ukf.6000.c
 		ai_chance = {
@@ -7574,8 +7565,8 @@ country_event = {		# - Germany
 	title = ukf.6001.t
 	desc = ukf.6001.d
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.6001.a
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = ENG }
@@ -7592,8 +7583,8 @@ country_event = {		# - Germany
 	desc = ukf.6002.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.6002.a
 		ai_chance = {
@@ -7614,7 +7605,7 @@ country_event = {		# - Germany
 			}
 		}
 	}
-	
+
 	option = {
 		name = ukf.6002.b
 		ai_chance = {
@@ -7634,8 +7625,8 @@ country_event = {		# - League of Nations
 	desc = ukf.6010.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.6010.a
 		ai_chance = {
@@ -7645,7 +7636,7 @@ country_event = {		# - League of Nations
 				add = 50
 			}
 		}
-		ENG = { 
+		ENG = {
 			dismantle_faction = yes
 			create_faction = league_of_nations
 		}
@@ -7659,7 +7650,7 @@ country_event = {		# - League of Nations
 			ENG = { add_to_faction = PREV }
 		}
 	}
-	
+
 	option = {
 		name = ukf.6010.b
 		ai_chance = {
@@ -7680,8 +7671,8 @@ country_event = {
 	desc = ukf.6011.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
-  fire_only_once = yes
-	
+	fire_only_once = yes
+
 	option = {
 		name = ukf.6011.a
 	}
@@ -7700,7 +7691,7 @@ country_event = {
 	title = ukflavour.1.t
 	desc = ukflavour.1.d
 	picture = GFX_report_event_ENG_manchester_canal_breach
-  fire_only_once = yes
+	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
@@ -7804,7 +7795,7 @@ country_event = {
 	picture = GFX_report_event_ENG_hms_trafalgar
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = {
 		name = ukflavour.8.a
 	}
@@ -7817,8 +7808,8 @@ country_event = {
 	desc = ukflavour.9.d
 	picture = GFX_report_event_ENG_john_cobb
 	is_triggered_only = yes
-	
-  option = {
+
+	option = {
 		name = ukflavour.9.a
 	}
 }
@@ -7844,15 +7835,15 @@ country_event = {
 	picture = GFX_report_event_ENG_hms_trafalgar
 	is_triggered_only = yes
 
-  option = {
-    name = ukflavour.11.a
+	option = {
+		name = ukflavour.11.a
 		custom_effect_tooltip = ENG_trafalgar_tt
 		hidden_effect = {
 			set_technology = { heavy_battleship = 1 }
 			load_OOB = ENG_trafalgar
 			JAP = { country_event = japtraf.1 }
 		}
-  }
+	}
 }
 
 country_event = {
@@ -7863,13 +7854,13 @@ country_event = {
 	picture = GFX_report_event_ENG_henlein_author
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ENG
 		NOT = { has_war_with = USA }
 		has_idea = ENG_church_republic
 	}
-	
+
 	option = {
 		name = ukflavour.12.a
 	}
@@ -7882,23 +7873,23 @@ country_event = {
 	desc = ukflavour.30.d
 	picture = GFX_report_event_british_artillery
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = ENG
 		has_war_with = GER
 		NOT = { has_country_flag = hill415 }
-		ENG = { 
-			has_government = authoritarian_democrat 
+		ENG = {
+			has_government = authoritarian_democrat
 			has_country_flag = hillactive
 		}
 	}
-	
+
 	mean_time_to_happen = { months = 3 }
-	
-	immediate = { 
+
+	immediate = {
 		set_country_flag = hill415
 	}
-	
+
 	option = {
 		trigger = {
 			tag = ENG
@@ -7908,7 +7899,7 @@ country_event = {
 			GER = { country_event = ukflavour.30 }
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			tag = GER
@@ -7929,13 +7920,13 @@ country_event = {
 		is_puppet_of = ENG
 	}
 
-  option = {
-    name = ukflavour.50.a
+	option = {
+		name = ukflavour.50.a
 		add_political_power = 25
 		hidden_effect = {
 			country_event = { id = ukflavour.50 days = 365 }
 		}
-  }
+	}
 }
 
 country_event = {
@@ -7946,16 +7937,16 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	immediate = {
 		random_other_country = {
 			news_event = { id = fxnews.56 days = 1 }
 		}
 	}
 
-  option = {
-    name = "You shouldn't see this"
-  }
+	option = {
+		name = "You shouldn't see this"
+	}
 }
 
 # - City Occupation Events (ukflavour.40-ukflavour.46)
@@ -7967,7 +7958,7 @@ country_event = {
 	desc = ukflavour.40.d
 	picture = GFX_report_event_german_parade_paris
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukflavour.40.a
 	}
@@ -7980,7 +7971,7 @@ country_event = {
 	desc = ukflavour.41.d
 	picture = GFX_report_event_german_parade_paris
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukflavour.41.a
 	}
@@ -7993,7 +7984,7 @@ country_event = {
 	desc = ukflavour.42.d
 	picture = GFX_report_event_german_parade_paris
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukflavour.42.a
 	}
@@ -8006,7 +7997,7 @@ country_event = {
 	desc = ukflavour.43.d
 	picture = GFX_report_event_german_parade_paris
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukflavour.43.a
 	}
@@ -8019,7 +8010,7 @@ country_event = {
 	desc = ukflavour.44.d
 	picture = GFX_report_event_german_parade_paris
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukflavour.44.a
 	}
@@ -8045,14 +8036,14 @@ country_event = {
 	desc = ukflavour.46.d
 	picture = GFX_report_event_german_parade_paris
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ukflavour.46.a
 	}
 }
 
 ###########################
-# - IMPERIAL COMMUNICATION 
+# - IMPERIAL COMMUNICATION
 ###########################
 
 add_namespace = emp
@@ -8063,9 +8054,9 @@ country_event = {
 	title = "Imperial Conference Economic Policy"
 	desc = emp.1.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "This will assist in our construction efforts!"
 		if = {
@@ -8107,9 +8098,9 @@ country_event = {
 	title = "Britain pursues Imperial Status Quo"
 	desc = emp.2.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		trigger = {
 			tag = CAN
@@ -8117,7 +8108,7 @@ country_event = {
 		name = "This is unacceptable!"
 		ENG = { country_event = { id = emp.3 days = 1 } }
 	}
-	
+
 	option = {
 		trigger = {
 			AND = {
@@ -8139,12 +8130,12 @@ country_event = {
 			country_event = { id = emp.8 months = 1 }
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			NOT = {
 				AND = {
-					tag = CAN 
+					tag = CAN
 					AND = {
 						original_tag = RAJ
 						ENG = { has_country_flag = india_truce }
@@ -8162,16 +8153,16 @@ country_event = {
 	title = "Canada Rejects the Status Quo!"
 	desc = emp.3.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Offer them unification with Newfoundland as compensation"
 		CAN = { country_event = { id = emp.4 days = 1 } }
 	}
-	
+
 	option = {
 		name = "We rule this Empire, not you!"
 		CAN = { country_event = { id = emp.5 days = 1 } }
@@ -8184,11 +8175,11 @@ country_event = {
 	title = "Britain offers us Newfoundland as compensation"
 	desc = emp.4.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Very well, the status quo is suitable, for now."
 		ai_chance = {
@@ -8205,7 +8196,7 @@ country_event = {
 		annex_country = { target = NFL }
 		ENG = { country_event = { id = emp.6 days = 1 } }
 	}
-	
+
 	option = {
 		name = "Unacceptable!"
 		ai_chance = {
@@ -8229,11 +8220,11 @@ country_event = {
 	title = "Britain holds firm"
 	desc = emp.5.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Then we will plan accordingly"
 		set_country_flag = rebellious
@@ -8246,11 +8237,11 @@ country_event = {
 	title = "Canada folds"
 	desc = emp.6.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Imperial integrity is upheld"
 	}
@@ -8262,11 +8253,11 @@ country_event = {
 	title = "Canada rejects unification"
 	desc = emp.7.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "That is their mistake"
 	}
@@ -8278,16 +8269,16 @@ country_event = {
 	title = "Rebels seize government buildings"
 	desc = emp.8.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "This time there will be no peace!"
 		ENG = { country_event = { id = emp.9 } }
 		hidden_effect = {
-			IND = { 
+			IND = {
 				transfer_state = 439
 				transfer_state = 440
 				transfer_state = 433
@@ -8316,11 +8307,11 @@ country_event = {
 	title = "Indian rebels march on Delhi"
 	desc = emp.9.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Not again!"
 		add_stability = -0.05
@@ -8345,7 +8336,7 @@ country_event = {
 		ENG = { has_country_flag = status_quo }
 		ENG = { has_country_flag = india_truce }
 	}
-	
+
 	option = {
 		name = "Send them arms and equipment"
 		ai_chance = {
@@ -8377,7 +8368,7 @@ country_event = {
 		}
 		set_country_flag = helped_ind
 	}
-	
+
 	option = {
 		name = "We have no interest assisting that rabble"
 		ai_chance = {
@@ -8393,9 +8384,9 @@ country_event = {
 	title = "Foreign Assistance"
 	desc = emp.12.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Excellent"
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -10000 producer = IND }
@@ -8412,9 +8403,9 @@ country_event = {
 	title = "Britain pursues Imperial Decentralisation"
 	desc = uk.15.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The liberty to choose our own destiny!"
 	}
@@ -8429,15 +8420,15 @@ country_event = {
 	title = "Britain pursues Imperial Federation"
 	desc = emp.15.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
-	immediate = { 
+
+	immediate = {
 		hidden_effect = {
-			add_ideas = IMP_upheaval 
+			add_ideas = IMP_upheaval
 		}
 	}
-	
+
 	option = {
 		name = "An interesting proposal, we accept"
 		ai_chance = {
@@ -8585,7 +8576,7 @@ country_event = {
 			ENG = { country_event = { id = emp.200 days = 6 } }
 		}
 	}
-	
+
 	option = {
 		name = "This is unacceptable!"
 		ai_chance = {
@@ -8733,24 +8724,24 @@ country_event = {
 		text = "Unsurprisingly the Canadian Government has rejected our proposal for an Imperial Federation between our nations."
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			CAN = { has_country_flag = accepts_federation }
 		}
 		name = "Their agreement will assist us greatly."
 	}
-	
+
 	option = {
 		trigger = {
 			CAN = { has_country_flag = rejects_federation }
 		}
 		name = "We must convince them over the next few years."
-	}	
+	}
 }
 
 country_event = {
@@ -8770,24 +8761,24 @@ country_event = {
 		text = "Unsurprisingly the Australian Government has rejected our proposal for an Imperial Federation between our nations."
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			AST = { has_country_flag = accepts_federation }
 		}
 		name = "Their agreement will assist us greatly."
 	}
-	
+
 	option = {
 		trigger = {
 			AST = { has_country_flag = rejects_federation }
 		}
 		name = "We must convince them over the next few years."
-	}	
+	}
 }
 
 country_event = {
@@ -8807,30 +8798,30 @@ country_event = {
 		text = "Unsurprisingly the South African Government has rejected our proposal for an Imperial Federation between our nations."
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			SAF = { has_country_flag = accepts_federation }
 		}
 		name = "Their agreement will assist us greatly."
-		hidden_effect = { 
+		hidden_effect = {
 			SAF = { country_event = { id = southafrica.101 days = 120 } }
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			SAF = { has_country_flag = rejects_federation }
 		}
 		name = "We must convince them over the next few years."
-		hidden_effect = { 
+		hidden_effect = {
 			SAF = { country_event = { id = southafrica.101 days = 120 } }
 		}
-	}	
+	}
 }
 
 country_event = {
@@ -8850,24 +8841,24 @@ country_event = {
 		text = "Unsurprisingly the Raj Government has rejected our proposal for an Imperial Federation between our nations."
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			RAJ = { has_country_flag = accepts_federation }
 		}
 		name = "Their agreement will assist us greatly."
 	}
-	
+
 	option = {
 		trigger = {
 			RAJ = { has_country_flag = rejects_federation }
 		}
 		name = "We must convince them over the next few years."
-	}	
+	}
 }
 
 country_event = {
@@ -8887,24 +8878,24 @@ country_event = {
 		text = "Unsurprisingly the New Zealand Government has rejected our proposal for an Imperial Federation between our nations."
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			NZL = { has_country_flag = accepts_federation }
 		}
 		name = "Their agreement will assist us greatly."
 	}
-	
+
 	option = {
 		trigger = {
 			NZL = { has_country_flag = rejects_federation }
 		}
 		name = "We must convince them over the next few years."
-	}	
+	}
 }
 
 country_event = {
@@ -8924,24 +8915,24 @@ country_event = {
 		text = "Unsurprisingly the Newfoundland Government has rejected our proposal for an Imperial Federation between our nations."
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			NFL = { has_country_flag = accepts_federation }
 		}
 		name = "Their agreement will assist us greatly."
 	}
-	
+
 	option = {
 		trigger = {
 			NFL = { has_country_flag = rejects_federation }
 		}
 		name = "We must convince them over the next few years."
-	}	
+	}
 }
 
 
@@ -8953,9 +8944,9 @@ country_event = {
 	title = "Imperial Parliament Construction"
 	desc = emp.21.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		trigger = {
 			original_tag = ENG
@@ -8963,7 +8954,7 @@ country_event = {
 		name = "London will be the home of the new Imperial Parliament"
 		add_political_power = 150
 	}
-	
+
 	option = {
 		trigger = {
 			original_tag = CAN
@@ -8971,7 +8962,7 @@ country_event = {
 		name = "Ottawa will be a fine city for any Imperial Parliament"
 		add_political_power = 150
 	}
-	
+
 	option = {
 		trigger = {
 			OR = {
@@ -8991,9 +8982,9 @@ country_event = {
 	title = "Dominion Representation in the Imperial Parliament"
 	desc = emp.22.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Equal representation for all Dominions!"
 		add_stability = -0.1
@@ -9023,7 +9014,7 @@ country_event = {
 		}
 		set_country_flag = imp_equal_rep
 	}
-	
+
 	option = {
 		name = "Apply the first-past-the-post system to this new parliament"
 		add_political_power = 250
@@ -9036,16 +9027,16 @@ country_event = {
 	title = "Imperial Economic Policy"
 	desc = emp.23.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The Dominions must have a say in Economic policy"
 		add_political_power = -150
 		set_country_flag = imp_eco_rep
 		set_country_flag = unlock_eco
 	}
-	
+
 	option = {
 		name = "Economic policy shall be dictated by London"
 		add_political_power = 50
@@ -9059,15 +9050,15 @@ country_event = {
 	title = "Imperial High Command"
 	desc = emp.24.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The British High Command will run the Imperial military"
 		add_political_power = 100
 		set_country_flag = unlock_mil
 	}
-	
+
 	option = {
 		name = "Representatives from the Imperial Dominions should have positions in the Imperial Command"
 		add_stability = -0.05
@@ -9083,9 +9074,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event emp.25"}
 	title = "An Australian Proposal"
 	desc = "The Australian Government has approached us with a official proposal to merge the Dominions of Australia and New Zealand into a single entity: A Dominion of Oceania. How should we respond?"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Let us merge the two Dominions into one"
 		ai_chance = {
@@ -9106,7 +9097,7 @@ country_event = {
 		}
 	}
 
-	
+
 	option = {
 		name = "The current arrangement suits us best"
 		ai_chance = {
@@ -9120,9 +9111,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event emp.26"}
 	title = "Status of Newfoundland"
 	desc = "Newfoundland has been marred with crisis since the onset of the LSMC. Its Government troubled and impotent, the Canadians have recently been pressuring us to do something about the issue."
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Dissolve the Newfoundland Government take control of the region."
 		ai_chance = {
@@ -9134,14 +9125,14 @@ country_event = {
 			}
 			annex_country = { target = NFL }
 		}
-		CAN = { 
-			add_opinion_modifier = { 
+		CAN = {
+			add_opinion_modifier = {
 				modifier = IMP_refused_newf
 				target = ENG
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Place Newfoundland under Canadian Administration"
 		ai_chance = {
@@ -9153,21 +9144,21 @@ country_event = {
 			}
 			CAN = { annex_country = { target = NFL } }
 		}
-		CAN = { 
-			add_opinion_modifier = { 
+		CAN = {
+			add_opinion_modifier = {
 				modifier = IMP_gave_newf
 				target = ENG
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Leave them to their own devices."
 		ai_chance = {
 			base = 30
 		}
-		CAN = { 
-			add_opinion_modifier = { 
+		CAN = {
+			add_opinion_modifier = {
 				modifier = IMP_refused_newf
 				target = ENG
 			}
@@ -9180,9 +9171,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event emp.27"}
 	title = "Rhodesia and the Union of South Africa"
 	desc = "While administratively part of its own area, there have been movements inside both Rhodesia and South Africa for a formal merger in recent years."
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Give Rhodesia and Bechuanaland to South Africa"
 		ai_chance = {
@@ -9193,7 +9184,7 @@ country_event = {
 			transfer_state = 810
 		}
 	}
-	
+
 	option = {
 		name = "Just give Bechuanaland to South Africa"
 		ai_chance = {
@@ -9201,7 +9192,7 @@ country_event = {
 		}
 		SAF = { transfer_state = 542 }
 	}
-	
+
 	option = {
 		name = "Leave things as they are."
 		ai_chance = {
@@ -9217,11 +9208,11 @@ country_event = {
 	title = "Aiding the Eldest"
 	desc = emp.40.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Direct it towards civilian factories"
 		CAN = {
@@ -9260,14 +9251,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Direct it to resource extraction"
 		CAN = {
 			add_resource = { type = oil amount = 16 state = 470 }
 		}
 	}
-	
+
 	option = {
 		name = "Use it to construct better infrastructure"
 		CAN = {
@@ -9331,11 +9322,11 @@ country_event = {
 	title = "The Diamonds of Natal"
 	desc = emp.41.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Direct it towards civilian factories"
 		SAF = {
@@ -9374,7 +9365,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Direct it to resource extraction"
 		SAF = {
@@ -9383,7 +9374,7 @@ country_event = {
 			add_resource = { type = steel amount = 16 state = 719 }
 		}
 	}
-	
+
 	option = {
 		name = "Use it to construct better infrastructure"
 		SAF = {
@@ -9447,11 +9438,11 @@ country_event = {
 	title = "A Debt Long Overdue"
 	desc = emp.42.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Direct it towards civilian factories"
 		AST = {
@@ -9492,7 +9483,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Direct it to resource extraction"
 		AST = {
@@ -9502,7 +9493,7 @@ country_event = {
 			add_resource = { type = oil amount = 8 state = 284 }
 		}
 	}
-	
+
 	option = {
 		name = "Use it to construct better infrastructure"
 		AST = {
@@ -9568,11 +9559,11 @@ country_event = {
 	title = "The Jewel Will Shine Once More"
 	desc = emp.43.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Direct it towards civilian factories"
 		RAJ = {
@@ -9602,7 +9593,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Direct it to resource extraction"
 		RAJ = {
@@ -9613,7 +9604,7 @@ country_event = {
 			add_resource = { type = oil amount = 8 state = 428 }
 		}
 	}
-	
+
 	option = {
 		name = "Use it to construct better infrastructure"
 		RAJ = {
@@ -9685,13 +9676,13 @@ country_event = {
 			controls_state = 442
 			controls_state = 811
 		}
-		has_war = no 
+		has_war = no
 		is_ai = no
 		has_country_flag = reconquering_india
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = "The Raj shall be restored to its former glory"
 		every_state = {
@@ -9784,14 +9775,14 @@ country_event = {
 			controls_state = 442
 			controls_state = 811
 		}
-		has_war = no 
+		has_war = no
 		is_ai = no
 		IND = { exists = no }
 		NOT = { has_country_flag = reconquering_india }
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = "The Raj shall be restored to its former glory"
 		every_state = {
@@ -9810,11 +9801,11 @@ country_event = {
 	title = "The Imperial Federation"
 	desc = emp.50.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = { remove_ideas = IMP_upheaval }
-	
+
 	option = {
 		name = "We will become part of this Federation"
 		ai_chance = {
@@ -9926,7 +9917,7 @@ country_event = {
 			ENG = { country_event = { id = emp.55 days = 1 } }
 		}
 	}
-	
+
 	option = {
 		name = "This is still quite unacceptable"
 		ai_chance = {
@@ -10033,7 +10024,7 @@ country_event = {
 		remove_ideas = IMP_upheaval
 		set_country_flag = impfed_reply
 	}
-	
+
 	option = {
 		trigger = {
 			is_ai = no
@@ -10057,27 +10048,27 @@ country_event = {
 		text = emp.51b.d
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { 
-			CAN = { has_country_flag = accepts_federation } 
+		trigger = {
+			CAN = { has_country_flag = accepts_federation }
 		}
 		name = "Excellent"
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { CAN = { has_country_flag = accepts_federation } }
 		}
 		name = "Let them go!"
 		end_puppet = CAN
 		remove_from_faction = CAN
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { CAN = { has_country_flag = accepts_federation } }
 		}
 		name = "We will restore order to our territory!"
@@ -10101,29 +10092,29 @@ country_event = {
 	desc = {
 		trigger = { NOT = { AST = { has_country_flag = accepts_federation } } }
 		text = emp.52b.d
-	}	
+	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { 
-			AST = { has_country_flag = accepts_federation } 
+		trigger = {
+			AST = { has_country_flag = accepts_federation }
 		}
 		name = "Excellent"
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { AST = { has_country_flag = accepts_federation } }
 		}
 		name = "Let them go!"
 		end_puppet = AST
 		remove_from_faction = AST
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { AST = { has_country_flag = accepts_federation } }
 		}
 		name = "We will restore order to our territory!"
@@ -10149,27 +10140,27 @@ country_event = {
 		text = emp.53b.d
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { 
-			NZL = { has_country_flag = accepts_federation } 
+		trigger = {
+			NZL = { has_country_flag = accepts_federation }
 		}
 		name = "Excellent"
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { NZL = { has_country_flag = accepts_federation } }
 		}
 		name = "Let them go!"
 		end_puppet = NZL
 		remove_from_faction = NZL
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { NZL = { has_country_flag = accepts_federation } }
 		}
 		name = "We will restore order to our territory!"
@@ -10195,27 +10186,27 @@ country_event = {
 		text = emp.54b.d
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { 
-			SAF = { has_country_flag = accepts_federation } 
+		trigger = {
+			SAF = { has_country_flag = accepts_federation }
 		}
 		name = "Excellent"
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { SAF = { has_country_flag = accepts_federation } }
 		}
 		name = "Let them go!"
 		end_puppet = SAF
 		remove_from_faction = SAF
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { SAF = { has_country_flag = accepts_federation } }
 		}
 		name = "We will restore order to our territory!"
@@ -10241,27 +10232,27 @@ country_event = {
 		text = emp.55b.d
 	}
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { 
-			NFL = { has_country_flag = accepts_federation } 
+		trigger = {
+			NFL = { has_country_flag = accepts_federation }
 		}
 		name = "Excellent"
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { NFL = { has_country_flag = accepts_federation } }
 		}
 		name = "Let them go!"
 		end_puppet = NFL
 		remove_from_faction = NFL
 	}
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = { NFL = { has_country_flag = accepts_federation } }
 		}
 		name = "We will restore order to our territory!"
@@ -10280,12 +10271,12 @@ country_event = {			# - ImpFed Annexation Event
 	title = "Grand Conference at Imperial Parliament in London"
 	desc = emp.100.d
 	picture = GFX_report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
-	immediate = { 
+
+	immediate = {
 		865 = { set_state_flag = noncores }
 		275 = { set_state_flag = noncores }
 		542 = { set_state_flag = noncores }
@@ -10293,12 +10284,12 @@ country_event = {			# - ImpFed Annexation Event
 		824 = { set_state_flag = noncores }
 		916 = { set_state_flag = noncores }
 	}
-	
+
 	option = {
 		name = "For Faith, King and Empire!"
 		if = {
 			limit = {
-				CAN = { 
+				CAN = {
 					OR = {
 						is_puppet_of = ENG
 						is_subject_of = ENG
@@ -10310,7 +10301,7 @@ country_event = {			# - ImpFed Annexation Event
 		}
 		if = {
 			limit = {
-				AST = { 
+				AST = {
 					OR = {
 						is_puppet_of = ENG
 						is_subject_of = ENG
@@ -10322,7 +10313,7 @@ country_event = {			# - ImpFed Annexation Event
 		}
 		if = {
 			limit = {
-				SAF = { 
+				SAF = {
 					OR = {
 						is_puppet_of = ENG
 						is_subject_of = ENG
@@ -10334,7 +10325,7 @@ country_event = {			# - ImpFed Annexation Event
 		}
 		if = {
 			limit = {
-				NZL = { 
+				NZL = {
 					OR = {
 						is_puppet_of = ENG
 						is_subject_of = ENG
@@ -10346,7 +10337,7 @@ country_event = {			# - ImpFed Annexation Event
 		}
 		if = {
 			limit = {
-				NFL = { 
+				NFL = {
 					OR = {
 						is_puppet_of = ENG
 						is_subject_of = ENG
@@ -10388,11 +10379,11 @@ country_event = {
 	title = "The Fourth Boer War"
 	desc = emp.500.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "We will restore order to South Africa!"
 		declare_war_on = {
@@ -10413,7 +10404,7 @@ country_event = {
 				limit = {
 					AND = {
 						tag = GER
-						has_capitulated = no 
+						has_capitulated = no
 					}
 				}
 				country_event = { id = emp.511 days = 7 }
@@ -10422,7 +10413,7 @@ country_event = {
 				limit = {
 					AND = {
 						tag = FRA
-						has_capitulated = no 
+						has_capitulated = no
 					}
 				}
 				country_event = { id = emp.511 days = 7 }
@@ -10431,7 +10422,7 @@ country_event = {
 				limit = {
 					AND = {
 						tag = HOL
-						has_capitulated = no 
+						has_capitulated = no
 					}
 				}
 				country_event = { id = emp.511 days = 7 }
@@ -10448,7 +10439,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = {
 		name = "We'll be back!"
 		add_stability = -0.05
@@ -10471,19 +10462,19 @@ country_event = {
 	title = "Peace Negotiations"
 	desc = emp.502.d
 	picture = GFX_report_event_generic_conference
-	
+
 	trigger = {
 		AND = {
 			original_tag = ZAF
 			OR = {
-				ZAF = { 
-					controls_state = 719 
+				ZAF = {
+					controls_state = 719
 					controls_state = 681
 					controls_state = 541
 					controls_state = 542
 				}
-				ZAF = { 
-					controls_state = 542 
+				ZAF = {
+					controls_state = 542
 					controls_state = 810
 					controls_state = 545
 					controls_state = 546
@@ -10492,9 +10483,9 @@ country_event = {
 			has_war_with = ENG
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Offer the Empire peace"
 		ENG = { country_event = { id = emp.503 days = 1 } }
@@ -10507,18 +10498,18 @@ country_event = {
 	title = "Boers offer peace"
 	desc = emp.503.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "We are defeated"
 		ai_chance = {
 			base = 100
 		}
 		white_peace = ZAF
-		ZAF = { 
+		ZAF = {
 			annex_country = { target = SAF }
 			transfer_state = 542
 			transfer_state = 863
@@ -10526,7 +10517,7 @@ country_event = {
 			country_event = { id = southafrica.110 days = 1 }
 		}
 	}
-	
+
 	option = {
 		name = "Never!"
 		ai_chance = {
@@ -10543,11 +10534,11 @@ country_event = {
 	title = "Britain rejects peace!"
 	desc = emp.504.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Then we will throw them out of Africa altogether!"
 	}
@@ -10559,7 +10550,7 @@ country_event = {
 	title = "Returning land to South Africa"
 	desc = "With the Boers finally crushed South Africa is once more peaceful, at least for the time being. Due to our conquests in the war we have acquired South Africa territory that would be better off administered under our loyal puppet."
 	picture = GFX_report_event_generic_conference
-	
+
 	trigger = {
 		original_tag = ENG
 		OR = {
@@ -10570,9 +10561,9 @@ country_event = {
 		ZAF = { exists = no }
 		SAF = { exists = yes }
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Return this land immediately"
 		if = {
@@ -10615,32 +10606,32 @@ country_event = {
 	#title = "Peace Negotiations"
 	#desc = emp.505.d
 	#picture = GFX_report_event_generic_conference
-	
+
 	#trigger = {
 		#original_tag = ENG
 		#has_war_with = ZAF
 		#SAF = { controls_state = 275 }
-	#}
-	
+		#}
+
 	#mean_time_to_happen = { days = 1 }
-	
+
 	#fire_only_once = yes
-	
+
 	#option = {
 		#name = "Offer the Boers peace"
 		#ai_chance = {
 			#base = 100
-		#}
+			#}
 		#ZAF = { country_event = { id = emp.506 days = 1 } }
-	#}
-	
+		#}
+
 	#option = {
 		#name = "No peace, we will make an example of the Boers!"
 		#ai_chance = {
 			#base = 0
+			#}
 		#}
 	#}
-#}
 
 country_event = {
 	id = emp.506
@@ -10648,13 +10639,13 @@ country_event = {
 	title = "Britain offers peace"
 	desc = emp.506.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Accept"
 		ai_chance = {
@@ -10662,7 +10653,7 @@ country_event = {
 		}
 		SAF = { annex_country = { target = ZAF } }
 	}
-	
+
 	option = {
 		name = "Refuse"
 		ai_chance = {
@@ -10677,13 +10668,13 @@ country_event = {
 	title = "The Boers refuse"
 	desc = emp.507.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Then we will destroy them!"
 	}
@@ -10695,9 +10686,9 @@ country_event = {
 	title = "The Fourth Boer War"
 	desc = emp.511.d
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Send them equipment and volunteers!"
 		ai_chance = {
@@ -10748,7 +10739,7 @@ country_event = {
 		}
 		set_country_flag = boer_interv
 	}
-	
+
 	option = {
 		name = "This does not concern us"
 		ai_chance = {
@@ -10779,11 +10770,11 @@ country_event = {
 	title = "French Aid"
 	desc = emp.512.d
 	picture = GFX_report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Excellent"
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = FRA }
@@ -10798,11 +10789,11 @@ country_event = {
 	title = "German Aid"
 	desc = emp.513.d
 	picture = GFX_report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Excellent"
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = GER }
@@ -10817,11 +10808,11 @@ country_event = {
 	title = "Dutch Aid"
 	desc = emp.514.d
 	picture = GFX_report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Excellent"
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = HOL }
@@ -10836,19 +10827,19 @@ country_event = {
 	title = "Returning East Indies Land"
 	desc = "With the war in the East Indies concluded, we have found ourselves with some of the former BEI territories under our own control. In order to strengthen our puppet we should return them immediately."
 	picture = GFX_report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = ENG
 		BEA = { is_puppet_of = ENG }
 		has_war = no
-		any_state = { 
-			is_controlled_by = ENG 
+		any_state = {
+			is_controlled_by = ENG
 			is_core_of = BEA
 		}
 	}
-	
+
 	option = {
 		name = "Ok"
 		every_state = {
@@ -10872,46 +10863,46 @@ add_namespace = eng
 country_event = {
 	id = eng.2000
 	immediate = {log = "[GetDateText]: [Root.GetName]: event eng.2000"}
-		title = eng.2000.t
-		desc = eng.2000.d
-		picture = GFX_news_event_aid_pact
+	title = eng.2000.t
+	desc = eng.2000.d
+	picture = GFX_news_event_aid_pact
 
-		is_triggered_only = yes
+	is_triggered_only = yes
 
-		fire_only_once = yes
+	fire_only_once = yes
 
-		option = { # accept
-			name = eng.2001a
-			ai_chance = {
-				base = 100
-				modifier = {
-					add = -25
-					HUN = { has_army_size = { size < 5 } }
-				}
-				modifier = {
-					add = 100
-					HUN = { has_army_size = { size > 10 } }
-				}
+	option = { # accept
+		name = eng.2001a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -25
+				HUN = { has_army_size = { size < 5 } }
 			}
-			ENG = { add_to_faction = HUN }
-			HUN = {
-				country_event = { hours = 2 id = hungary.2250}
+			modifier = {
+				add = 100
+				HUN = { has_army_size = { size > 10 } }
 			}
 		}
+		ENG = { add_to_faction = HUN }
+		HUN = {
+			country_event = { hours = 2 id = hungary.2250}
+		}
+	}
 
-		option = { # decline
-			name = eng.2002.a
-			ai_chance = {
-				base = 0
-				modifier = {
-					add = 25
-					HUN = { has_army_size = { size < 5 } }
-				}
-			}
-			HUN = {
-				country_event = { hours = 2 id = hungary.2750 }
+	option = { # decline
+		name = eng.2002.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 25
+				HUN = { has_army_size = { size < 5 } }
 			}
 		}
+		HUN = {
+			country_event = { hours = 2 id = hungary.2750 }
+		}
+	}
 }
 
 
@@ -10940,7 +10931,7 @@ country_event = {
 			country_event = { id = italy.65 }
 		}
 	}
-	
+
 	option = { # Keep Malta
 		name = uk.3000.b
 		ai_chance = { base = 90 }
@@ -10972,7 +10963,7 @@ country_event = { # First Lord of the Admiralty
 		hidden_effect = { set_country_flag = ENG_chose_churchill }
 		activate_advisor = ENG_Winston_Churchill_cnav
 	}
-	
+
 	option = { # Leo Amery has proven himself before
 		name = ukadm.1.b
 		ai_chance = {
@@ -10985,7 +10976,7 @@ country_event = { # First Lord of the Admiralty
 		hidden_effect = { set_country_flag = ENG_chose_amery }
 		activate_advisor = ENG_Leo_Amery_cnav
 	}
-	
+
 	option = { # Cooper is the man for the job
 		name = ukadm.1.c
 		ai_chance = {
@@ -11011,7 +11002,7 @@ country_event = { # Opposition to Naval Cuts
 	desc = ukadm.2.d
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ENG
 		has_government = social_conservative
@@ -11022,7 +11013,7 @@ country_event = { # Opposition to Naval Cuts
 		has_completed_focus = ENG_reorg_admiralty
 		has_completed_focus = ENG_continue_austerity
 	}
-	
+
 	option = { # We must all tighten our belts.
 		name = ukadm.2.a
 		add_stability = -0.025
@@ -11038,13 +11029,13 @@ country_event = { # Sailor's Strike
 	picture = GFX_report_event_gathering_protest
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # The Red Flag? Put down these revolutionaries at once!
 		name = ukadm.3.a
 		add_stability = -0.025
 		hidden_effect = { country_event = { id = ukadm.4 days = 7 } }
 	}
-	
+
 	option = { # Perhaps we should negotiate before this gets out of hand.
 		name = ukadm.3.b
 		add_political_power = -100
@@ -11060,12 +11051,12 @@ country_event = { # First Sea Lord Voices Concern
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # We do not tolerate mutiny in the Royal Navy!
 		name = ukadm.4.a
 		hidden_effect = { country_event = { id = ukadm.5 days = 7 } }
 	}
-	
+
 	option = { # These cuts may have gone too far
 		name = ukadm.4.b
 		add_political_power = -50
@@ -11081,7 +11072,7 @@ country_event = { # Mutiny at Invergordon
 	picture = GFX_report_event_destroyers
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Summon Royal Navy Admirals to London to discuss these developments
 		name = ukadm.5.a
 		add_stability = -0.025
@@ -11098,7 +11089,7 @@ country_event = { # Cooper meets with Admirals
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Perhaps some sort of agreement can be made
 		name = ukadm.6.a
 		hidden_effect = { country_event = { id = ukadm.7 days = 1 } }
@@ -11113,12 +11104,12 @@ country_event = { # Admirals demand repeal of cuts
 	picture = GFX_report_event_generic_conference
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # This isn't what we had in mind
 		name = ukadm.7.a
 		hidden_effect = { country_event = { id = ukadm.8 days = 7 } }
 	}
-	
+
 	option = { # Fire that idiot Cooper at once!
 		name = ukadm.7.b
 		add_political_power = -150
@@ -11135,7 +11126,7 @@ country_event = { # Crisis of Leadership
 	picture = GFX_report_event_military_planning
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # A new leadership contest is called
 		name = ukadm.8.a
 		hidden_effect = { country_event = { id = ukadm.9 days = 3 } }
@@ -11150,17 +11141,17 @@ country_event = { # The Prime Minister is Ousted
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Welcome aboard Prime Minister Eden!
 		name = ukadm.9.a
 		add_political_power = 100
 		remove_ideas = ENG_mutiny
 		activate_advisor = ENG_Anthony_Eden_hog_sco
-		hidden_effect = { 
+		hidden_effect = {
 			clr_country_flag = mosley_in_power
 			set_country_flag = ENG_admiralty_has_control
 			mark_focus_tree_layout_dirty = yes
-      country_event = { id = ukadm.10 days = 30 }
+			country_event = { id = ukadm.10 days = 30 }
 		}
 	}
 }
@@ -11173,7 +11164,7 @@ country_event = { # Midnight Meeting
 	picture = GFX_report_event_hitler_handshake
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Britain must be defended from threats within, as well as without.
 		name = ukadm.10.a
 		add_stability = 0.1
@@ -11188,13 +11179,13 @@ country_event = { # Negotiations with Strikers
 	picture = GFX_report_event_generic_rally2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Give in to their demands
 		name = ukadm.11.a
 		add_political_power = -150
 		hidden_effect = { country_event = { id = ukadm.12 days = 1 } }
 	}
-	
+
 	option = { # These 'requests' are ridiculous!
 		name = ukadm.11.b
 		hidden_effect = { country_event = { id = ukadm.5 days = 7 } }
@@ -11209,7 +11200,7 @@ country_event = { # Mutineers Stand Down
 	picture = GFX_report_event_generic_rally2
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # Disaster averted.
 		name = ukadm.12.a
 		add_stability = 0.05
@@ -11227,13 +11218,13 @@ country_event = { # Influence of the Royal Navy
 	picture = GFX_report_event_ast_navy
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # It's time we shake up the military establishment.
 		name = ukadm.15.a
 		add_political_power = -100
 		add_stability = 0.05
 	}
-	
+
 	option = { # There's no need for this.
 		name = ukadm.15.b
 		add_political_power = 50
@@ -11248,7 +11239,7 @@ country_event = { # Branches of the Armed Forces
 	picture = GFX_report_event_ast_navy
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { # The Royal Navy above all.
 		name = ukadm.16.a
 		navy_experience = 100
@@ -11256,7 +11247,7 @@ country_event = { # Branches of the Armed Forces
 			set_country_flag = ENG_rn_primacy
 		}
 	}
-	
+
 	option = { # There is no need to upset things further
 		name = ukadm.16.b
 		add_political_power = 100
@@ -11269,7 +11260,7 @@ country_event = { # Inefficient Training
 	title = ukadm.17.t						# - Negative Effects after boosting RN
 	desc = ukadm.17.d
 	picture = GFX_report_event_british_inspect_troops
-	
+
 	trigger = {
 		original_tag = ENG
 		has_war = yes
@@ -11279,9 +11270,9 @@ country_event = { # Inefficient Training
 		}
 		has_country_flag = ENG_rn_primacy
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = { # Unfortunate, but not unexpected.
 		name = ukadm.17.a
 		if = {
@@ -11369,7 +11360,7 @@ country_event = { # Election of 1942
 		has_government = social_conservative
 		has_completed_focus = ENG_navy_state
 	}
-	
+
 	option = { # The Tories win a majority
 		name = ukadm.18.a
 		increase_ruling_party_popularity_by_5 = yes
@@ -11389,7 +11380,7 @@ country_event = { # Bank Closure
 	desc = ukbw.1.d
 	picture = GFX_report_event_generic_factory
 	is_triggered_only = yes
-	
+
 	option = { # Blast!
 		name = ukbw.1.a
 	}
@@ -11402,7 +11393,7 @@ country_event = { # Factory Strike
 	desc = ukbw.2.d
 	picture = GFX_report_event_generic_factory
 	is_triggered_only = yes
-	
+
 	option = { # Just ignore them
 		name = ukbw.2.a
 		add_political_power = -50
@@ -11423,7 +11414,7 @@ country_event = { # Trade Union Demands
 	desc = ukbw.3.d
 	picture = GFX_report_event_gathering_protest
 	is_triggered_only = yes
-	
+
 	option = { # Now now gentlemen, we can work this out
 		name = ukbw.3.a
 		add_political_power = -50
@@ -11451,7 +11442,7 @@ country_event = { # King Edward Intervenes
 			ruling_only = yes
 		}
 	}
-	
+
 	option = {
 		name = ukbw.4.a
 		add_political_power = -50
@@ -11474,7 +11465,7 @@ country_event = { # Marxist Rally
 		tag = ENG
 		has_socialist_government = no
 	}
-	
+
 	option = { # Sorry bunch of radicals!
 		name = ukbw.5.a
 		add_political_power = -50
@@ -11498,7 +11489,7 @@ country_event = { # Successful Policies
 	title = ukbw.6.t
 	desc = ukbw.6.d
 	picture = GFX_report_event_generic_conference
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = { # A good sign
 		name = ukbw.6.a

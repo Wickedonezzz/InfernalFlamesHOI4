@@ -66,42 +66,42 @@ unit_leader_event = {
 
 # # Picking your random general event
 # unit_leader_event = {
-# 	id = unit_leader.10
-# 	immediate = { log = "[GetDateText]: [Root.GetName]: event unit_leader.10" }
+	# 	id = unit_leader.10
+	# 	immediate = { log = "[GetDateText]: [Root.GetName]: event unit_leader.10" }
 
-# 	is_triggered_only = yes
+	# 	is_triggered_only = yes
 
-# 	hidden = yes
+	# 	hidden = yes
 
-# 	option = {
-# 		ROOT = {
-# 			if = {
-# 				limit = {
-# 					check_variable = {
-# 						random < 0.5
-# 						} # This makes it a 50/50
-# 				}
-# 				random_unit_leader = {
-# 					limit = {
-# 						has_unit_leader_flag = unit_leader_event
-# 					}
-# 					unit_leader_event = {
-# 						id = unit_leader.1
-# 					}
-# 					clr_unit_leader_flag = unit_leader_event
-# 				}
-# 				else = {
-# 					random_unit_leader = {
-# 						limit = {
-# 							has_unit_leader_flag = unit_leader_event
-# 						}
-# 						unit_leader_event = {
-# 							id = unit_leader.2
-# 						}
-# 						clr_unit_leader_flag = unit_leader_event
-# 					}
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+	# 	option = {
+		# 		ROOT = {
+			# 			if = {
+				# 				limit = {
+					# 					check_variable = {
+						# 						random < 0.5
+						# 						} # This makes it a 50/50
+					# 				}
+				# 				random_unit_leader = {
+					# 					limit = {
+						# 						has_unit_leader_flag = unit_leader_event
+						# 					}
+					# 					unit_leader_event = {
+						# 						id = unit_leader.1
+						# 					}
+					# 					clr_unit_leader_flag = unit_leader_event
+					# 				}
+				# 				else = {
+					# 					random_unit_leader = {
+						# 						limit = {
+							# 							has_unit_leader_flag = unit_leader_event
+							# 						}
+						# 						unit_leader_event = {
+							# 							id = unit_leader.2
+							# 						}
+						# 						clr_unit_leader_flag = unit_leader_event
+						# 					}
+					# 				}
+				# 			}
+			# 		}
+		# 	}
+	# }

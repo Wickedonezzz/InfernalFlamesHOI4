@@ -18,7 +18,7 @@ add_namespace = empire		# - Use this as a time-saver for events that will fire a
 # - UK Events
 ###########################
 
-# - Imperial Foreign Policy Reactions 
+# - Imperial Foreign Policy Reactions
 # - ukempire.1-5
 
 country_event = {
@@ -49,24 +49,24 @@ country_event = {
 		text = ukempire.1b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			CAN = { has_country_flag = opposed_imperialism }
 		}
 		name = "Damn them"
-		CAN = { 
+		CAN = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_imper
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			CAN = { has_country_flag = support_imperialism }
@@ -104,24 +104,24 @@ country_event = {
 		text = ukempire.2b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			AST = { has_country_flag = opposed_imperialism }
 		}
 		name = "They'll have to learn to live with it"
-		AST = { 
+		AST = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_imper
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			AST = { has_country_flag = support_imperialism }
@@ -159,24 +159,24 @@ country_event = {
 		text = ukempire.3b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			SAF = { has_country_flag = opposed_imperialism }
 		}
 		name = "This better not get those blasted Boers angry again"
-		SAF = { 
+		SAF = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_imper
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			SAF = { has_country_flag = support_imperialism }
@@ -214,24 +214,24 @@ country_event = {
 		text = ukempire.4b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			NZL = { has_country_flag = opposed_imperialism }
 		}
 		name = "We do as we see fit in the Empire."
-		NZL = { 
+		NZL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_imper
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			NZL = { has_country_flag = support_imperialism }
@@ -269,24 +269,24 @@ country_event = {
 		text = ukempire.5b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			NFL = { has_country_flag = opposed_imperialism }
 		}
 		name = "Quiet, or we'll disband your parliament."
-		NFL = { 
+		NFL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_imper
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			NFL = { has_country_flag = support_imperialism }
@@ -305,14 +305,14 @@ country_event = {
 	title = "Canada raises concerns over Ireland"
 	desc = ukempire.6.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Well they'll have to learn to deal with it"
-		CAN = { 
+		CAN = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_ireland
@@ -327,14 +327,14 @@ country_event = {
 	title = "Australia raises concerns over Ireland"
 	desc = ukempire.7.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "This is no concern of theirs"
-		AST = { 
+		AST = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_ireland
@@ -349,14 +349,14 @@ country_event = {
 	title = "South Africa raises concerns over Ireland"
 	desc = ukempire.8.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "We'll deal with Ireland as we see fit"
-		SAF = { 
+		SAF = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_ireland
@@ -371,14 +371,14 @@ country_event = {
 	title = "New Zealand raises concerns over Ireland"
 	desc = ukempire.9.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "This isn't their business"
-		NZL = { 
+		NZL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_ireland
@@ -393,14 +393,14 @@ country_event = {
 	title = "Newfoundland raises concerns over Ireland"
 	desc = ukempire.10.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Political grand-standing, nothing more."
-		NFL = { 
+		NFL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_ireland
@@ -440,31 +440,31 @@ country_event = {
 		text = ukempire.11b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			CAN = { has_country_flag = opposes_gov }
 		}
 		name = "I suppose they'd have let the Reds take over then?"
-		CAN = { 
+		CAN = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_gov
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			CAN = { has_country_flag = supports_gov }
 		}
 		name = "Their support is appreciated in these times of crisis"
 		add_political_power = 25
-		CAN = { 
+		CAN = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_support_gov
@@ -501,31 +501,31 @@ country_event = {
 		text = ukempire.12b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			AST = { has_country_flag = opposes_gov }
 		}
 		name = "I think it's time we made a call to Campbell."
-		AST = { 
+		AST = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_gov
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			AST = { has_country_flag = supports_gov }
 		}
 		name = "Their support is appreciated in these times of crisis"
 		add_political_power = 25
-		AST = { 
+		AST = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_support_gov
@@ -562,31 +562,31 @@ country_event = {
 		text = ukempire.13b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			SAF = { has_country_flag = opposes_gov }
 		}
 		name = "And what would they have had us do instead?"
-		SAF = { 
+		SAF = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_gov
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			SAF = { has_country_flag = supports_gov }
 		}
 		name = "Their support is appreciated in these times of crisis"
 		add_political_power = 25
-		SAF = { 
+		SAF = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_support_gov
@@ -623,31 +623,31 @@ country_event = {
 		text = ukempire.14b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			NZL = { has_country_flag = opposes_gov }
 		}
 		name = "Nonsense, Britain is more secure than ever."
-		NZL = { 
+		NZL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_gov
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			NZL = { has_country_flag = supports_gov }
 		}
 		name = "Their support is appreciated in these times of crisis"
 		add_political_power = 25
-		NZL = { 
+		NZL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_support_gov
@@ -684,31 +684,31 @@ country_event = {
 		text = ukempire.15b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			NFL = { has_country_flag = opposes_gov }
 		}
 		name = "Don't have their own socialist problems?"
-		NFL = { 
+		NFL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_oppose_gov
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			NFL = { has_country_flag = supports_gov }
 		}
 		name = "Their support is appreciated in these times of crisis"
 		add_political_power = 25
-		NFL = { 
+		NFL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_support_gov
@@ -736,11 +736,11 @@ country_event = {
 		text = ukempire.16b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Their support in this crisis is appreciated"
 		IF = {
@@ -749,14 +749,14 @@ country_event = {
 			}
 			add_manpower = 1000
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 producer = SAF }
-			ENG = { 
+			ENG = {
 				add_opinion_modifier = {
 					target = SAF
 					modifier = IMP_support_eaf1
 				}
 			}
-			hidden_effect = { 
-				SAF = { country_event = { id = safempire.2 days = 30 } } 
+			hidden_effect = {
+				SAF = { country_event = { id = safempire.2 days = 30 } }
 			}
 		}
 		IF = {
@@ -764,7 +764,7 @@ country_event = {
 				SAF = { has_country_flag = saf_pol_support }
 			}
 			add_political_power = 100
-			ENG = { 
+			ENG = {
 				add_opinion_modifier = {
 					target = SAF
 					modifier = IMP_support_eaf2
@@ -782,11 +782,11 @@ country_event = {
 	title = "Canada requests naval reinforcement"
 	desc = ukempire.17.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Send them a generous amount of vessels"
 		ai_chance = {
@@ -794,11 +794,11 @@ country_event = {
 		}
 		custom_effect_tooltip = ENG_send_generous
 		hidden_effect = { set_country_flag = eng_generous_supply }
-		hidden_effect = { 
+		hidden_effect = {
 			CAN = { country_event = { id = canempire.2 days = 1 } }
 		}
 	}
-	
+
 	option = {
 		name = "Send them an adequate amount of vessels"
 		ai_chance = {
@@ -806,25 +806,25 @@ country_event = {
 		}
 		custom_effect_tooltip = ENG_send_adequate
 		hidden_effect = { set_country_flag = eng_adequate_supply }
-		hidden_effect = { 
+		hidden_effect = {
 			CAN = { country_event = { id = canempire.2 days = 1 } }
 		}
 	}
-	
+
 	option = {
 		name = "Send them nothing"
 		ai_chance = {
 			base = 10
 		}
 		add_political_power = 50
-		CAN = { 
+		CAN = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_refused_aid
 			}
 		}
 		hidden_effect = { set_country_flag = eng_nothing }
-		hidden_effect = { 
+		hidden_effect = {
 			CAN = { country_event = { id = canempire.2 days = 1 } }
 		}
 	}
@@ -838,61 +838,58 @@ country_event = {
 	title = "Canadian PM sends note to the King"
 	desc = ukempire.18.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "They are only undermining our Government further!"
 		add_political_power = -100
 	}
 }
 
-# - Australia asks for Economic Aid
-
+# - New Zealand asks for Economic Aid
 country_event = {
 	id = ukempire.19
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ukempire.19"}
-	title = "Australia requests economic aid"
+	title = ukempire.19.t
 	desc = ukempire.19.d
 	picture = GFX_report_event_gathering_protest
-	
 	is_triggered_only = yes
-	
 	fire_only_once = yes
-	
+
 	option = {
-		name = "Send them what we can manage"
+		name = ukempire.19.a
 		ai_chance = {
 			base = 80
 		}
 		add_political_power = -100
-		AST = { 
+		NZL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_eco_aid1
 			}
 		}
-		hidden_effect = { 
-			AST = { country_event = { id = ausempire.2 days = 1 } }
+		hidden_effect = {
+			NZL = { country_event = { id = ausempire.2 days = 1 } }
 			set_country_flag = ENG_sent_eco_aid
 		}
 	}
-	
+
 	option = {
-		name = "Don't they realise how bad it is here!?"
+		name = ukempire.19.b
 		ai_chance = {
 			base = 20
 		}
-		AST = { 
+		NZL = {
 			add_opinion_modifier = {
 				target = ENG
 				modifier = IMP_eco_aid2
 			}
 		}
-		hidden_effect = { 
-			AST = { country_event = { id = ausempire.2 days = 1 } }
+		hidden_effect = {
+			NZL = { country_event = { id = ausempire.2 days = 1 } }
 			set_country_flag = ENG_sent_eco_aid
 		}
 	}
@@ -906,16 +903,16 @@ country_event = {
 	title = "Political Pressure from the Dominions"
 	desc = ukempire.20.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	trigger = {
 		original_tag = ENG
 		NOT = { has_completed_focus = ENG_affirm_sow }
 	}
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Don't they realise we're busy elsewhere?"
 		add_ideas = ENG_imp_decent1
@@ -931,16 +928,16 @@ country_event = {
 	title = "Political Pressure from the Dominions"
 	desc = ukempire.20.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	trigger = {
 		original_tag = ENG
 		NOT = { has_completed_focus = ENG_affirm_sow }
 	}
 
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Don't they realise we're busy elsewhere?"
 		swap_ideas = { remove_idea = ENG_imp_decent1 add_idea = ENG_imp_decent2 }
@@ -956,16 +953,16 @@ country_event = {
 	title = "Political Pressure from the Dominions"
 	desc = ukempire.20.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	trigger = {
 		original_tag = ENG
 		NOT = { has_completed_focus = ENG_affirm_sow }
 	}
 
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Don't they realise we're busy elsewhere?"
 		swap_ideas = { remove_idea = ENG_imp_decent2 add_idea = ENG_imp_decent3 }
@@ -1016,16 +1013,16 @@ country_event = {
 	title = "Political Pressure from the Dominions"
 	desc = ukempire.20.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	trigger = {
 		original_tag = ENG
 		NOT = { has_completed_focus = ENG_affirm_sow }
 	}
 
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Don't they realise we're busy elsewhere?"
 		add_political_power = -200
@@ -1041,18 +1038,18 @@ country_event = {
 	title = "Amery and the Round Table Movement"
 	desc = ukempire.21.d
 	picture = report_event_merchant_ship_01
-	
+
 	trigger = {
 		original_tag = ENG
 		has_idea = ENG_Leo_Amery_cnav
 		date > 1938.1.1
 		has_country_flag = federation
 	}
-	
+
 	mean_time_to_happen = { months = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "A Minister should not be using his position in such a manner"
 		ai_chance = {
@@ -1060,7 +1057,7 @@ country_event = {
 		}
 		add_political_power = 100
 	}
-	
+
 	option = {
 		name = "Allow him to direct the opening of several of these 'lodges'"
 		ai_chance = {
@@ -1087,11 +1084,11 @@ country_event = {			# - Notification on Imperial Foreign Policy
 	title = "Imperial Conference of '37 - Foreign Policy"
 	desc = empire.1.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = no
-	
+
 	option = {
 		trigger = {
 			ENG = { has_country_flag = ENG_c_imperial }
@@ -1150,11 +1147,11 @@ country_event = {			# - Notification on Imperial Foreign Policy
 			}
 			ENG = { country_event = { id = ukempire.5 hours = 2 } }
 		}
-		hidden_effect = { 
-			set_country_flag = opposed_imperialism 
+		hidden_effect = {
+			set_country_flag = opposed_imperialism
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			ENG = { has_country_flag = ENG_c_imperial }
@@ -1217,7 +1214,7 @@ country_event = {			# - Notification on Imperial Foreign Policy
 			set_country_flag = support_imperialism
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			ENG = { has_country_flag = ENG_c_isol }
@@ -1233,11 +1230,11 @@ country_event = {			# - Reaction to Irish Issue
 	title = "British Army deployed in force to Ireland"
 	desc = empire.2.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = no
-	
+
 	option = {
 		name = "We must bring our concerns to Britain"
 		ai_chance = {
@@ -1297,7 +1294,7 @@ country_event = {			# - Reaction to Irish Issue
 			set_country_flag = irish_treatment
 		}
 	}
-	
+
 	option = {
 		name = "We shouldn't get involved in this"
 		ai_chance = {
@@ -1354,11 +1351,11 @@ country_event = {			# - Reaction to Political Change in UK
 		text = empire.3b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = no
-	
+
 	option = {
 		name = "Voice our concern over these new developments"
 		ai_chance = {
@@ -1425,7 +1422,7 @@ country_event = {			# - Reaction to Political Change in UK
 			set_country_flag = opposes_gov
 		}
 	}
-	
+
 	option = {
 		name = "Send a message of support to Britain for these new developments"
 		ai_chance = {
@@ -1492,7 +1489,7 @@ country_event = {			# - Reaction to Political Change in UK
 			set_country_flag = supports_gov
 		}
 	}
-	
+
 	option = {
 		name = "At least it isn't the blasted Reds"
 	}
@@ -1506,11 +1503,11 @@ country_event = {
 	title = "Influences of the Round Table Movement"
 	desc = empire.4.d
 	picture = report_event_merchant_ship_01
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = no
-	
+
 	option = {
 		name = "Support for our Government you say?"
 		add_political_power = 50
@@ -1529,11 +1526,11 @@ country_event = {
 	title = "Naval Rearmament Efforts"
 	desc = canempire.1.d
 	picture = report_event_merchant_ship_01
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Request additional vessels from Britain"
 		ENG = { country_event = { id = ukempire.17 days = 1 } }
@@ -1544,7 +1541,7 @@ country_event = {
 	id = canempire.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canempire.2"}
 	title = {
-		trigger = { 
+		trigger = {
 			OR = {
 				ENG = { has_country_flag = eng_generous_supply }
 				ENG = { has_country_flag = eng_adequate_supply }
@@ -1553,7 +1550,7 @@ country_event = {
 		text = "Support from Britain arrives"
 	}
 	title = {
-		trigger = { 
+		trigger = {
 			ENG = { has_country_flag = eng_nothing }
 		}
 		text = "Britain refuses our request"
@@ -1574,11 +1571,11 @@ country_event = {
 		text = canempire.2b.d
 	}
 	picture = report_event_merchant_ship_01
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			OR = {
@@ -1672,7 +1669,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			ENG = { has_country_flag = eng_nothing }
@@ -1689,11 +1686,11 @@ country_event = {
 	title = "Britain in chaos"
 	desc = canempire.3.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "The Prime Minister sends a letter to the King."
 		ai_chance = {
@@ -1701,7 +1698,7 @@ country_event = {
 		}
 		ENG = { country_event = { id = ukempire.18 days = 1 } }
 	}
-	
+
 	option = {
 		name = "It's best we stay out of this for now."
 		ai_chance = {
@@ -1722,7 +1719,7 @@ country_event = {
 	title = "Economic Effects of the LSMC"
 	desc = ausempire.1.d
 	picture = report_event_generic_conference
-	
+
 	trigger = {
 		original_tag = AST
 		date > 1938.1.1
@@ -1731,9 +1728,9 @@ country_event = {
 			is_puppet_of = ENG
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Request economic aid from Britain"
 		ENG = { country_event = { id = ukempire.19 days = 1 } }
@@ -1768,11 +1765,11 @@ country_event = {
 		text = ausempire.2b.d
 	}
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			ENG = { has_country_flag = ENG_sent_eco_aid }
@@ -1783,7 +1780,7 @@ country_event = {
 			days = 365
 		}
 	}
-	
+
 	option = {
 		trigger = {
 			ENG = { has_country_flag = ENG_sent_eco_nothing }
@@ -1803,11 +1800,11 @@ country_event = {
 	title = "East Africa Revolt"
 	desc = safempire.1.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "Offer political support to Britain"
 		ai_chance = {
@@ -1816,7 +1813,7 @@ country_event = {
 		ENG = { country_event = { id = ukempire.16 days = 1 } }
 		hidden_effect = { set_country_flag = saf_pol_support }
 	}
-	
+
 	option = {
 		name = "Offer military support to Britain"
 		ai_chance = {
@@ -1827,7 +1824,7 @@ country_event = {
 		ENG = { country_event = { id = ukempire.16 days = 1 } }
 		hidden_effect = { set_country_flag = saf_mil_support }
 	}
-	
+
 	option = {
 		name = "This is not our concern"
 		ai_chance = {
@@ -1843,11 +1840,11 @@ country_event = {
 	title = "East African Revolt Over"
 	desc = safempire.2.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = "This experience will surely help our military developments."
 		army_experience = 25

@@ -3,7 +3,6 @@ oob = "LOM"
 set_research_slots = 3
 
 add_ideas = {
-	party_pop_0_30
 	parliamentary_republic
 }
 

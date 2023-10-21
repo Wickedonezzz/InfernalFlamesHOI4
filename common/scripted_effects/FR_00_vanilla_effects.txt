@@ -1,19 +1,19 @@
 #	Example:
-# 
+#
 #	example_effect = {
-#		add_political_power = 66
-#		add_popularity = {
-#			ideology = fascism
-#			popularity = 0.33
-#		}
-#	}
+	#		add_political_power = 66
+	#		add_popularity = {
+		#			ideology = fascism
+		#			popularity = 0.33
+		#		}
+	#	}
 #
 #
 #	In a script file:
 #
 #	effect = {
-#		example_effect = yes
-#	}
+	#		example_effect = yes
+	#	}
 #
 
 #####################################
@@ -22,7 +22,7 @@
 
 #This is going to give misleading and ugly tooltips. Making it nice will take effort. TODO_WTT_CD make nice or ignore and remove comment. Easiest solution is just making a custom tooltip that says "5 civilian factories will be converted to military factories" and ignore telling the player the states where it will happen.
 
-replace_civ_with_arms_factories = {	
+replace_civ_with_arms_factories = {
 
 	random_owned_controlled_state = {
 		limit = {
@@ -39,7 +39,7 @@ replace_civ_with_arms_factories = {
 			instant_build = yes
 		}
 	}
-	
+
 	random_owned_controlled_state = {
 		limit = {
 			is_fully_controlled_by = ROOT
@@ -108,7 +108,7 @@ replace_civ_with_arms_factories = {
 #Country scope
 ROOT_inherit_current_scope_wars_effect = {
 	custom_effect_tooltip = ROOT_inherit_current_scope_wars_effect
-	hidden_effect = {	
+	hidden_effect = {
 		every_country = {
 			limit = {
 				has_defensive_war_with = PREV
@@ -181,7 +181,7 @@ get_best_alliance_match_democratic_effect = { #arguably a trigger, but it does s
 				}
 			}
 		}
-	}		
+	}
 }
 
 get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
@@ -200,12 +200,12 @@ get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuf
 	if = {
 		limit = {
 			all_other_country = {
-				
+
 				is_faction_leader = yes
 				is_major = yes
 				has_dictatorship_government = yes
 				not = { has_war_with = ROOT }
-				
+
 				set_temp_variable = { this.leader_score = num_of_factories }
 				add_to_temp_variable = { this.leader_score = num_battalions }
 				all_of_scopes = {
@@ -236,7 +236,7 @@ get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuf
 				}
 			}
 		}
-	}		
+	}
 }
 
 get_best_alliance_match_communism_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
@@ -289,7 +289,7 @@ get_best_alliance_match_communism_effect = { #arguably a trigger, but it does st
 				}
 			}
 		}
-	}		
+	}
 }
 #nice typo there paradox - Arser
 clear_sabotaged_resources_if_necesary = {
@@ -301,7 +301,7 @@ clear_sabotaged_resources_if_necesary = {
 				}
 			}
 		}
-		
+
 		clear_variable = sabotaged_oil
 		clear_variable = sabotaged_aluminium
 		clear_variable = sabotaged_rubber
@@ -313,8 +313,8 @@ clear_sabotaged_resources_if_necesary = {
 
 #on_daily = {
 
-#}
+	#}
 
 #on_daily_USA = {
-#	# you can specify an on daily action for a specific country
-#}
+	#	# you can specify an on daily action for a specific country
+	#}

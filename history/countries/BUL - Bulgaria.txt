@@ -7,7 +7,6 @@ set_stability = 0.60
 set_war_support = 0.5
 
 add_ideas = {
-	party_pop_0_10
 	limited_conscription
 	military_junta
 }
@@ -17,6 +16,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	tech_support = 1		
 	tech_engineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	fuel_silos = 1
   basic_train = 1

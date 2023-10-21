@@ -113,20 +113,30 @@ characters = {
 		}
 	}
 	# Advisors 
-	IRQ_Al_Chaderchi = {
-		name = "Al Chaderchi"
+	IRQ_Kamil_Al_Chaderchi = {
+		name = "Kamil Al-Chaderchi"
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_IRQ_Kamil_Al_Chaderchi.png"
 				small = "gfx/interface/ministers/IRQ/IRQ_Al_Chaderchi.png"
 			}
 		}
 		advisor = {
-			slot = head_of_government
-			idea_token = IRQ_Al_Chaderchi_hog_cli
-			can_be_fired = no
 			cost = 150
+			slot = head_of_government
+			available = { 
+				hidden_trigger = { has_country_flag = IRQ_Kamil_Al_Chaderchi_hog_sde_hired }
+			}
+			idea_token = IRQ_Kamil_Al_Chaderchi_hog_sde
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = IRQ_Kamil_Al_Chaderchi_hog_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = IRQ_Kamil_Al_Chaderchi_hog_sde_hired }
+			}
 			traits = {
-				hog_privileged_socialist
+				social_democrat
 				hog_state_secularist
 			}
 		}
@@ -140,10 +150,20 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			can_be_fired = no
 			slot = security_minister
-			idea_token = IRQ_Saeed_Qazaz_sec_cli
+			available = { 
+				hidden_trigger = { has_country_flag = IRQ_Saeed_Qazaz_sec_sde_hired }
+			}
+			idea_token = IRQ_Saeed_Qazaz_sec_sde
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = IRQ_Saeed_Qazaz_sec_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = IRQ_Saeed_Qazaz_sec_sde_hired }
+			}
 			traits = {
+				social_democrat
 				sec_secret_police_chief
 			}
 		}
@@ -157,10 +177,20 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			can_be_fired = no
 			slot = economy_minister
-			idea_token = IRQ_Dhia_Jafar_eco_cli
+			available = { 
+				hidden_trigger = { has_country_flag = IRQ_Dhia_Jafar_eco_sde_hired }
+			}
+			idea_token = IRQ_Dhia_Jafar_eco_sde
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = IRQ_Dhia_Jafar_eco_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = IRQ_Dhia_Jafar_eco_sde_hired }
+			}
 			traits = {
+				social_democrat
 				eco_industrialiser
 			}
 		}
@@ -174,9 +204,18 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			can_be_fired = no
 			slot = foreign_minister
-			idea_token = IRQ_Musa_Al_Shabander_for_cli
+			available = { 
+				hidden_trigger = { has_country_flag = IRQ_Musa_Al_Shabander_for_sde_hired }
+			}
+			idea_token = IRQ_Musa_Al_Shabander_for_sde
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = IRQ_Musa_Al_Shabander_for_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = IRQ_Musa_Al_Shabander_for_sde_hired }
+			}
 			traits = {
 				for_great_compromiser
 			}

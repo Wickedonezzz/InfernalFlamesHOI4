@@ -43,7 +43,13 @@ RULE_OPTION_STATE_TRANSFER_TOOL_MULTIPLAYER: "Multiplayer - Standard"
 RULE_OPTION_STATE_TRANSFER_TOOL_MULTIPLAYER_DESC: "This multiplayer version of the State & Country Transfer Tool will be active by default. It works as the single player version, save that only states belonging to the player or one of their puppets (with some puppets ineligible, in situations where they could rebel against the player later in the game) may be marked and no cored can be added or removed.\n\n§RUse at your own risk!§!"
 RULE_OPTION_STATE_TRANSFER_TOOL_MP_NO_SUBJECT: "Multiplayer - No Subject Transfer"
 RULE_OPTION_STATE_TRANSFER_TOOL_MP_NO_SUBJECT_DESC: "Works the same as the multiplayer version, save that no subject states can be marked.\n\n§RUse at your own risk!§!"
- 
+
+RULE_SHOW_FACTION_BUTTONS: "Faction Buttons"
+RULE_OPTION_FACTION_BTNS_STANDARD: "Blocked"
+RULE_OPTION_FACTION_BTNS_STANDARD_DESC: "Faction Buttons won't show."
+RULE_OPTION_FACTION_BTNS_SHOW: "Show Faction Buttons"
+RULE_OPTION_FACTION_BTNS_SHOW_DESC: "Faction buttons (Join Faction, Create Faction, Remove from Faction, etc) will show. Warning: \"This may very well break content.\"
+
 RULE_DEBUG_DEC_OPTIONS: "Debug Decisions"
 RULE_OPTION_DEC_STANDARD: "Disabled"
 RULE_OPTION_DEC_STANDARD_DESC: "The various debug decisions, such as enabling the state transfer tool and american collapse are off, unless debug mode is enabled."

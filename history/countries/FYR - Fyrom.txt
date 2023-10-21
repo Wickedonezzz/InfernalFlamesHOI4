@@ -72,7 +72,6 @@ set_popularities = {
 }
 #"Parliamentary Republic 🤡 only republic it isn't"
 add_ideas = {
-	party_pop_0_10
 	parliamentary_republic
 }
 

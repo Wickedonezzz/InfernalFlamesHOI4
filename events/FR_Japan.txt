@@ -772,7 +772,7 @@ country_event = { # Siam - Alliance with Japan
 				}
 			}
 			JAP = {
-				create_faction = "Greater East Asia Co-Prosperity Sphere"
+				create_faction = co_prosperity_sphere
 			}
 		}
 					
@@ -2230,12 +2230,12 @@ country_event = {
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
 		set_politics = { ruling_party = market_liberal }
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Hamaguchi_Osachi_hog_mli
-			JAP_Shidehara_Kijuro_for_mli
-			JAP_Inoue_Junnosuke_eco_mli
-			JAP_Saito_Takao_sec_mli
-		}
+
+		activate_advisor = JAP_Hamaguchi_Osachi_hog_mli
+		activate_advisor = JAP_Shidehara_Kijuro_for_mli
+		activate_advisor = JAP_Inoue_Junnosuke_eco_mli
+		activate_advisor = JAP_Saito_Takao_sec_mli
+		
 		hidden_effect = {
 			set_country_flag = jap_minseito_36 
 			set_country_flag = jap_ele_36_done
@@ -2250,12 +2250,12 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
 		set_politics = { ruling_party = social_conservative }
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Inukai_Tsuyoshi_hog_sco
-			JAP_Yoshida_Shigeru_for_sco
-			JAP_Tsushima_Juichi_eco_sco
-			JAP_Ohara_Naoshi_sec_sco
-		}
+
+		activate_advisor = JAP_Inukai_Tsuyoshi_hog_sco
+		activate_advisor = JAP_Yoshida_Shigeru_for_sco
+		activate_advisor = JAP_Tsushima_Juichi_eco_sco
+		activate_advisor = JAP_Ohara_Naoshi_sec_sco
+		
 		hidden_effect = {
 			set_country_flag = jap_seiyukai_36 
 			set_country_flag = jap_ele_36_done
@@ -2341,12 +2341,12 @@ country_event = {
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
 		set_politics = { ruling_party = market_liberal }
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Hamaguchi_Osachi_hog_mli
-			JAP_Shidehara_Kijuro_for_mli
-			JAP_Inoue_Junnosuke_eco_mli
-			JAP_Saito_Takao_sec_mli
-		}
+
+		activate_advisor = JAP_Hamaguchi_Osachi_hog_mli
+		activate_advisor = JAP_Shidehara_Kijuro_for_mli
+		activate_advisor = JAP_Inoue_Junnosuke_eco_mli
+		activate_advisor = JAP_Saito_Takao_sec_mli
+		
 	}
 
 	option = {
@@ -2355,12 +2355,12 @@ country_event = {
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
 		set_politics = { ruling_party = market_liberal }
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Hamaguchi_Osachi_hog_mli
-			JAP_Shidehara_Kijuro_for_mli
-			JAP_Inoue_Junnosuke_eco_mli
-			JAP_Saito_Takao_sec_mli
-		}	
+
+		activate_advisor = JAP_Hamaguchi_Osachi_hog_mli
+		activate_advisor = JAP_Shidehara_Kijuro_for_mli
+		activate_advisor = JAP_Inoue_Junnosuke_eco_mli
+		activate_advisor = JAP_Saito_Takao_sec_mli
+		
 	}
 
 	option = {
@@ -2369,12 +2369,12 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
 		set_politics = { ruling_party = social_conservative }
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Inukai_Tsuyoshi_hog_sco
-			JAP_Yoshizawa_Kenkichi_for_sco
-			JAP_Tsushima_Juichi_eco_sco
-			JAP_Suzuki_Kisaburo_sec_sco
-		}
+
+		activate_advisor = JAP_Inukai_Tsuyoshi_hog_sco
+		activate_advisor = JAP_Yoshizawa_Kenkichi_for_sco
+		activate_advisor = JAP_Tsushima_Juichi_eco_sco
+		activate_advisor = JAP_Suzuki_Kisaburo_sec_sco
+		
 	}
 
 	option = {
@@ -2383,12 +2383,12 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
 		set_politics = { ruling_party = social_conservative }
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Inukai_Tsuyoshi_hog_sco
-			JAP_Yoshizawa_Kenkichi_for_sco
-			JAP_Tsushima_Juichi_eco_sco
-			JAP_Suzuki_Kisaburo_sec_sco
-		}		
+
+		activate_advisor = JAP_Inukai_Tsuyoshi_hog_sco
+		activate_advisor = JAP_Yoshizawa_Kenkichi_for_sco
+		activate_advisor = JAP_Tsushima_Juichi_eco_sco
+		activate_advisor = JAP_Suzuki_Kisaburo_sec_sco
+			
 	}
 
 	option = {
@@ -2396,12 +2396,12 @@ country_event = {
 		add_popularity = { ideology = social_democrat popularity = 0.1 }
 		set_politics = { ruling_party = social_democrat }
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Katayama_Tetsu_hog_sde
-			JAP_Shidehara_Kijuro_for_mli
-			JAP_Mizutani_Chozaburo_eco_sde
-			JAP_Matsuoka_Komakichi_sec_sde
-		}	
+
+		activate_advisor = JAP_Katayama_Tetsu_hog_sde
+		activate_advisor = JAP_Shidehara_Kijuro_for_mli
+		activate_advisor = JAP_Mizutani_Chozaburo_eco_sde
+		activate_advisor = JAP_Matsuoka_Komakichi_sec_sde
+		
 	}
 }
 
@@ -2572,12 +2572,12 @@ country_event = {
 		}
 		complete_national_focus = jap_the_admiral_plot
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Nakajima_Chikuhei_hog_ade
-			JAP_Hirota_Koki_for_ade
-			JAP_Ogawa_Gotaro_eco_ade
-			JAP_Nagai_Ryutaro_sec_ade
-		}		
+
+		activate_advisor = JAP_Nakajima_Chikuhei_hog_ade
+		activate_advisor = JAP_Hirota_Koki_for_ade
+		activate_advisor = JAP_Ogawa_Gotaro_eco_ade
+		activate_advisor = JAP_Nagai_Ryutaro_sec_ade
+			
 		hidden_effect = {
 			set_country_flag = JAP_militarism_prevails
 			set_country_flag = JAP_admiral_plot
@@ -2627,12 +2627,12 @@ country_event = {
 			popularity = 0.15
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			JAP_Konoe_Fumimaro_hog_npo
-			JAP_Okawa_Shumei_for_npo
-			JAP_Suzuki_Teiichi_eco_npo
-			JAP_Suetsugu_Nobumasa_sec_npo
-		}		
+
+		activate_advisor = JAP_Konoe_Fumimaro_hog_npo
+		activate_advisor = JAP_Okawa_Shumei_for_npo
+		activate_advisor = JAP_Suzuki_Teiichi_eco_npo
+		activate_advisor = JAP_Suetsugu_Nobumasa_sec_npo
+			
 		complete_national_focus = jap_the_army_coup
 		hidden_effect = {
 			set_country_flag = JAP_militarism_prevails
@@ -3198,7 +3198,7 @@ country_event = {
 			type = annex_everything
 		}
 		hidden_effect = {
-			create_faction = PHI_USA_faction
+			create_faction = washington_accord
 			PHI = { country_event = philippines.111 }
 		}
 	}

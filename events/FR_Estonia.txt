@@ -13,11 +13,12 @@ country_event = {
 
 	#picture = GFX_report_event_diplomacy3
 
-	 trigger = {
-	 	tag = EST
-	 }
+	# trigger = {
+		# 	tag = EST
+		# }
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = estonia.1.a
@@ -80,7 +81,7 @@ country_event = {
 			country_event = { id = estonia.4 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = estonia.3.b
 		add_stability = -0.03
@@ -111,7 +112,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = estonia.4.b
 		ai_chance = { base = 40 }
@@ -270,9 +271,9 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = estonia.12 days = 6 }
 			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			swap_ideas = {
 				remove_idea = EST_ineffective_government_and_unrest_idea
 				add_idea = EST_ineffective_government_and_unrest1_idea
@@ -298,18 +299,18 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.10 }
 		hidden_effect = {
 			set_party_name = {
-				ideology = market_liberal 
-				long_name = EST_no_patriotic_marlib_long 
+				ideology = market_liberal
+				long_name = EST_no_patriotic_marlib_long
 				name = EST_no_patriotic_marlib
 			}
 			set_party_name = {
-				ideology = social_conservative 
-				long_name = EST_no_patriotic_soccon_long 
+				ideology = social_conservative
+				long_name = EST_no_patriotic_soccon_long
 				name = EST_no_patriotic_soccon
 			}
 			set_party_name = {
-				ideology = authoritarian_democrat 
-				long_name = EST_no_patriotic_autdem_long 
+				ideology = authoritarian_democrat
+				long_name = EST_no_patriotic_autdem_long
 				name = EST_no_patriotic_autdem
 			}
 		}
@@ -334,7 +335,7 @@ country_event = {
 			country_event = { id = estonia.14 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = estonia.13.b
 		ai_chance = { base = 65 }
@@ -472,9 +473,9 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = estonia.12 days = 6 }
 			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			swap_ideas = {
 				remove_idea = EST_ineffective_government_and_unrest_idea
 				add_idea = EST_ineffective_government_and_unrest1_idea
@@ -624,18 +625,18 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = estonia.22 days = 40 }
 			set_party_name = {
-				ideology = market_liberal 
-				long_name = EST_national_front_marlib_long 
+				ideology = market_liberal
+				long_name = EST_national_front_marlib_long
 				name = EST_national_front_marlib
 			}
 			set_party_name = {
-				ideology = social_conservative 
-				long_name = EST_national_front_soccon_long 
+				ideology = social_conservative
+				long_name = EST_national_front_soccon_long
 				name = EST_national_front_soccon
 			}
 			set_party_name = {
-				ideology = authoritarian_democrat 
-				long_name = EST_national_front_autdem_long 
+				ideology = authoritarian_democrat
+				long_name = EST_national_front_autdem_long
 				name = EST_national_front_autdem
 			}
 		}

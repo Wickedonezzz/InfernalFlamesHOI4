@@ -61,7 +61,7 @@ country_event = { #All-African Congress - January 14 1936
 		hidden_effect = {
 			country_event = {
 				id = southafrica.3
-				days = 62 
+				days = 62
 			}
 		}
 	}
@@ -102,15 +102,15 @@ country_event = { #Party Merger - March 14 1936
 				days = 31
 			}
 			set_party_name = {
-        ideology = authoritarian_democrat
+				ideology = authoritarian_democrat
 				long_name = "Union Defense Force"
 				name = "UDF"
 			}
 			set_party_name = {
-        ideology = market_liberal
+				ideology = market_liberal
 				long_name = "South Africa Liberal Party"
 				name = "SALP"
-      }
+			}
 			activate_advisor = SAF_James_Hertzog_hog_ade
 			activate_advisor = SAF_Jan_C_Smuts_for_sco
 			activate_advisor = SAF_Pieter_van_der_Byl_eco_sco
@@ -175,7 +175,7 @@ country_event = { #Native Vote Bills - April 14 1936
 			add_to_variable = {	var = saf_anc value = 1 }
 			country_event = {
 				id = southafrica.6
-				days = 124 
+				days = 124
 			}
 		}
 	}
@@ -273,7 +273,7 @@ country_event = { #Native Land Bills - August 1936
 			add_to_variable = {	var = saf_pnp value = 1 }
 			country_event = {
 				id = southafrica.8
-				days = 186 
+				days = 186
 			}
 		}
 	}
@@ -298,7 +298,7 @@ country_event = { #Native Land Bills - August 1936
 			add_to_variable = {	var = saf_anc value = 1 }
 			country_event = {
 				id = southafrica.8
-				days = 186 
+				days = 186
 			}
 		}
 	}
@@ -341,7 +341,7 @@ country_event = { #Black Wednesday Arrives in South Africa - September 1936
 				}
 			}
 		}
-	}		
+	}
 }
 
 country_event = { #Anti-Indian Legislation - February 1937
@@ -379,7 +379,7 @@ country_event = { #Anti-Indian Legislation - February 1937
 			}
 			country_event = {
 				id = southafrica.14
-				days = 31 
+				days = 31
 			}
 		}
 	}
@@ -503,7 +503,7 @@ country_event = { #GG Patrick Duncan
 		}
 		add_popularity = {
 			ideology = paternal_autocrat popularity = 0.05
-		}			
+		}
 		add_stability = -0.1
 		hidden_effect = {
 			add_to_variable = {	var = saf_pnp value = 1 }
@@ -525,90 +525,90 @@ country_event = { #GG Hertzog
 		name = southafrica.10.a
 		add_popularity = {
 			ideology = social_conservative popularity = 0.05
-		}			
+		}
 		add_stability = 0.1
 		hidden_effect = {
 			add_to_variable = {	var = saf_united value = 1 }
 			activate_advisor = SAF_Jan_C_Smuts_hog_sco
-      SAF_James_Hertzog = {
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = vanguardist_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = collectivist_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = libertarian_socialist_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = social_democrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = social_liberal_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = market_liberal_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = social_conservative_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = authoritarian_democrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = paternal_autocrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = national_populist_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = valkist_subtype
-            traits = {}
-          }
-        }
-      }
+			SAF_James_Hertzog = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = vanguardist_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = collectivist_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_conservative_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = authoritarian_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = national_populist_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = valkist_subtype
+						traits = {}
+					}
+				}
+			}
 			set_country_flag = SAF_Hertzog_gg
 		}
 	}
@@ -761,10 +761,10 @@ country_event = { #SACP Announcement - May 1937
 		}
 		hidden_effect = {
 			add_to_variable = {	var = saf_anc value = 1 }
-#			country_event = {
-#				id = southafrica.15
-#				days = 124 
-#			}
+			#			country_event = {
+				#				id = southafrica.15
+				#				days = 124
+				#			}
 		}
 	}
 	option = {
@@ -786,10 +786,10 @@ country_event = { #SACP Announcement - May 1937
 		}
 		hidden_effect = {
 			add_to_variable = {	var = saf_united value = 1 }
-#			country_event = {
-#				id = southafrica.15
-#				days = 124 
-#			}
+			#			country_event = {
+				#				id = southafrica.15
+				#				days = 124
+				#			}
 		}
 	}
 }
@@ -1040,7 +1040,7 @@ country_event = { #1937 Election - PNP Victory
 				paternal_autocrat = 15
 				national_populist = 40
 				valkist = 10
-			}	
+			}
 			country_event = { days = 14 id = southafrica.83 }
 			activate_advisor = SAF_J_F_van_Rensburg_hog_npo
 			activate_advisor = SAF_Jan_C_Smuts_for_sco
@@ -1086,7 +1086,7 @@ country_event = { #New GG - October 1936
 				id = southafrica.9
 				days = 1
 			}
-		}	
+		}
 	}
 
 	option = {# Hertzog
@@ -1126,7 +1126,7 @@ country_event = { #3-way tie (idk if this is even possible)
 	desc = southafrica.20.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = { #ANC win
@@ -1140,17 +1140,17 @@ country_event = { #3-way tie (idk if this is even possible)
 		}
 		hidden_effect = {
 			set_popularities = {
-			vanguardist = 0
-    			collectivist = 10
-    			libertarian_socialist = 0
-    			social_democrat = 10
-    			social_liberal = 14
-    			market_liberal = 0
-    			social_conservative = 33
-    			authoritarian_democrat = 0
-    			paternal_autocrat = 10
-    			national_populist = 20
-    			valkist = 3
+				vanguardist = 0
+				collectivist = 10
+				libertarian_socialist = 0
+				social_democrat = 10
+				social_liberal = 14
+				market_liberal = 0
+				social_conservative = 33
+				authoritarian_democrat = 0
+				paternal_autocrat = 10
+				national_populist = 20
+				valkist = 3
 			}
 			country_event = { days = 14 id = southafrica.81 }
 			activate_advisor = SAF_Alex_Hepple_hog_sde
@@ -1171,17 +1171,17 @@ country_event = { #3-way tie (idk if this is even possible)
 		}
 		hidden_effect = {
 			set_popularities = {
-			vanguardist = 0
-    			collectivist = 10
-    			libertarian_socialist = 0
-    			social_democrat = 10
-    			social_liberal = 13
-    			market_liberal = 0
-    			social_conservative = 34
-    			authoritarian_democrat = 0
-    			paternal_autocrat = 10
-    			national_populist = 20
-    			valkist = 3
+				vanguardist = 0
+				collectivist = 10
+				libertarian_socialist = 0
+				social_democrat = 10
+				social_liberal = 13
+				market_liberal = 0
+				social_conservative = 34
+				authoritarian_democrat = 0
+				paternal_autocrat = 10
+				national_populist = 20
+				valkist = 3
 			}
 		}
 		trigger = {
@@ -1208,17 +1208,17 @@ country_event = { #3-way tie (idk if this is even possible)
 		}
 		hidden_effect = {
 			set_popularities = {
-			vanguardist = 0
-    			collectivist = 10
-    			libertarian_socialist = 0
-    			social_democrat = 10
-    			social_liberal = 13
-    			market_liberal = 0
-    			social_conservative = 33
-    			authoritarian_democrat = 0
-    			paternal_autocrat = 10
-    			national_populist = 21
-    			valkist = 3
+				vanguardist = 0
+				collectivist = 10
+				libertarian_socialist = 0
+				social_democrat = 10
+				social_liberal = 13
+				market_liberal = 0
+				social_conservative = 33
+				authoritarian_democrat = 0
+				paternal_autocrat = 10
+				national_populist = 21
+				valkist = 3
 			}
 			country_event = { days = 14 id = southafrica.83 }
 			activate_advisor = SAF_J_F_van_Rensburg_hog_npo
@@ -1236,7 +1236,7 @@ country_event = { #ANC-PNP tie
 	desc = southafrica.21.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = { #ANC win
@@ -1309,7 +1309,7 @@ country_event = { #ANC-United tie
 	desc = southafrica.22.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = { #ANC win
@@ -1388,7 +1388,7 @@ country_event = { #United-PNP tie
 	desc = southafrica.23.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = { #United win
@@ -1467,10 +1467,10 @@ country_event = { #Segregation Outlawed
 	desc = southafrica.24.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = southafrica.24.a
 		trigger = {
 			original_tag = SAF
@@ -1491,10 +1491,10 @@ country_event = { #Segregation Halted
 	desc = southafrica.25.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = southafrica.25.a
 		add_political_power = -50
 	}
@@ -1507,10 +1507,10 @@ country_event = { #Segregation Enshrined
 	desc = southafrica.26.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = southafrica.26.a
 		add_stability = -0.1
 		hidden_effect = {
@@ -1526,10 +1526,10 @@ country_event = { #Special Legislative Session
 	desc = southafrica.27.d
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = southafrica.27.a
 		add_political_power = 50
 		add_stability = 0.05
@@ -1551,14 +1551,14 @@ country_event = { #Call for snap election - November 1937
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
+
 	option = { #Here we go
 		name = southafrica.28.a
 		add_political_power = 50
 		hidden_effect = {
 			country_event = {
 				id = southafrica.15
-				days = 217 
+				days = 217
 			}
 			country_event = {
 				id = southafrica.49
@@ -1566,9 +1566,9 @@ country_event = { #Call for snap election - November 1937
 			}
 		}
 	}
-}	
+}
 
-country_event = { #Independence from the Empire 
+country_event = { #Independence from the Empire
 	id = southafrica.29
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.29"}
 	title = southafrica.29.t
@@ -1577,25 +1577,25 @@ country_event = { #Independence from the Empire
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
+
 	option = { #Nice
 		name = southafrica.29.a
-    add_country_leader_role = {
-      character = SAF_D_F_Malan
-      promote_leader = yes
-      country_leader = {
-        ideology = national_populist_subtype
-        traits = {}
-      }
-    }
+		add_country_leader_role = {
+			character = SAF_D_F_Malan
+			promote_leader = yes
+			country_leader = {
+				ideology = national_populist_subtype
+				traits = {}
+			}
+		}
 		add_political_power = 100
 		add_ideas = SAF_Independence_at_Last
 		add_ideas = parliamentary_republic
 	}
-}	
+}
 
 country_event = { #Transfer of HCT
-id = southafrica.30
+	id = southafrica.30
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.30"}
 	title = southafrica.30.t
 	desc = southafrica.30.d
@@ -1613,14 +1613,14 @@ id = southafrica.30
 		set_country_flag = ENG_HCT_Transfer
 		SAF = {
 			country_event = { id = southafrica.31 days = 1 }
-			transfer_state = 863 
+			transfer_state = 863
 			transfer_state = 864
 		}
 	}
 }
 
 country_event = { #HCT Transferred
-id = southafrica.31
+	id = southafrica.31
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.31"}
 	title = southafrica.31.t
 	desc = southafrica.31.d
@@ -1639,7 +1639,7 @@ id = southafrica.31
 }
 
 country_event = { #Transfer of North Rhodesia
-id = southafrica.32
+	id = southafrica.32
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.32"}
 	title = southafrica.32.t
 	desc = southafrica.32.d
@@ -1662,7 +1662,7 @@ id = southafrica.32
 }
 
 country_event = { #North Rhodesia Transferred
-id = southafrica.33
+	id = southafrica.33
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.33"}
 	title = southafrica.33.t
 	desc = southafrica.33.d
@@ -1671,7 +1671,7 @@ id = southafrica.33
 
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = southafrica.33.a
 		ai_chance = {
 			factor = 50
@@ -1681,7 +1681,7 @@ id = southafrica.33
 }
 
 country_event = { #Mozambique Purchase Offer
-id = southafrica.34
+	id = southafrica.34
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.34"}
 	title = southafrica.34.t
 	desc = southafrica.34.d
@@ -1733,7 +1733,7 @@ id = southafrica.34
 }
 
 country_event = { #Mozambique Purchase Successful
-id = southafrica.35
+	id = southafrica.35
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.35"}
 	title = southafrica.35.t
 	desc = southafrica.35.d
@@ -1742,7 +1742,7 @@ id = southafrica.35
 
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = southafrica.35.a
 		ai_chance = {
 			factor = 50
@@ -1752,7 +1752,7 @@ id = southafrica.35
 }
 
 country_event = { #Mozambique Purchase Rejected
-id = southafrica.36
+	id = southafrica.36
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.36"}
 	title = southafrica.36.t
 	desc = southafrica.36.d
@@ -1761,7 +1761,7 @@ id = southafrica.36
 
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = southafrica.36.a
 		ai_chance = {
 			factor = 50
@@ -1770,7 +1770,7 @@ id = southafrica.36
 }
 
 country_event = { #Occupation of HCT
-id = southafrica.37
+	id = southafrica.37
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.37"}
 	title = southafrica.37.t
 	desc = southafrica.37.d
@@ -1794,7 +1794,7 @@ id = southafrica.37
 }
 
 country_event = { #HCT Occupied
-id = southafrica.38
+	id = southafrica.38
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.38"}
 	title = southafrica.38.t
 	desc = southafrica.38.d
@@ -1813,7 +1813,7 @@ id = southafrica.38
 }
 
 country_event = { #March into North Rhodesia
-id = southafrica.39
+	id = southafrica.39
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.39"}
 	title = southafrica.39.t
 	desc = southafrica.39.d
@@ -1855,7 +1855,7 @@ id = southafrica.39
 }
 
 country_event = { #UK Ignores North Rhodesia
-id = southafrica.40
+	id = southafrica.40
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.40"}
 	title = southafrica.40.t
 	desc = southafrica.40.d
@@ -1874,7 +1874,7 @@ id = southafrica.40
 }
 
 country_event = { #UK Gonna Teach SAF How to War
-id = southafrica.41
+	id = southafrica.41
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.41"}
 	title = southafrica.41.t
 	desc = southafrica.41.d
@@ -1889,7 +1889,7 @@ id = southafrica.41
 }
 
 country_event = { #SAF Demands Mozambique
-id = southafrica.42
+	id = southafrica.42
 	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.42"}
 	title = southafrica.42.t
 	desc = southafrica.42.d
@@ -1956,8 +1956,8 @@ country_event = { #Portugal Keeps Mozambique
 	option = {
 		name = southafrica.44.a
 		create_wargoal = {
-    		type = annex_everything
-    		target = POR
+			type = annex_everything
+			target = POR
 		}
 	}
 }
@@ -1987,11 +1987,11 @@ country_event = { #ANC Coalition Unites - January 1937
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = southafrica.49.a
 	}
-}	
+}
 
 country_event = { #Relinquish Claims
 	id = southafrica.50
@@ -2069,19 +2069,19 @@ country_event = { #Sponsor Rebels
 		name = southafrica.60.a
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -1000 producer = SAF }
 		add_manpower = 	-15000
-#		set_global_flag = 
+		#		set_global_flag =
 	}
 	option = {
 		name = southafrica.60.b
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -2000 producer = SAF }
 		add_manpower = 	-30000
-#		set_global_flag = 
+		#		set_global_flag =
 	}
-	option = { 
+	option = {
 		name = southafrica.60.c
 		add_political_power = -50
 	}
-} 
+}
 
 country_event = { #Join Stahlpakt - Germany
 	id = southafrica.61
@@ -2100,21 +2100,21 @@ country_event = { #Join Stahlpakt - Germany
 			base = 100
 		}
 		add_to_faction = SAF
-#		if = {
-#			limit = {
-#				tag = SAF
-#				exists = yes
-#			}
-#			every_country = {
-#				limit = {
-#					is_in_faction_with = GER
-#					is_faction_leader = yes
-#				}
-#			}
-#			THIS = {
-#				add_to_faction = SAF
-#			}
-#		}
+		#		if = {
+			#			limit = {
+				#				tag = SAF
+				#				exists = yes
+				#			}
+			#			every_country = {
+				#				limit = {
+					#					is_in_faction_with = GER
+					#					is_faction_leader = yes
+					#				}
+				#			}
+			#			THIS = {
+				#				add_to_faction = SAF
+				#			}
+			#		}
 
 		if = {
 			limit = {
@@ -2133,7 +2133,7 @@ country_event = { #Join Stahlpakt - Germany
 		}
 		SAF = { country_event = { id = southafrica.62 days = 1 } }
 	}
-	
+
 	option = {
 		name = southafrica.61.b
 		ai_chance = {
@@ -2224,7 +2224,7 @@ country_event = { #Who will lead ANC coalition
 		name = southafrica.81.a
 		activate_advisor = SAF_Alfred_Bitini_Xuma_hog_lib
 	}
-	
+
 	option = {
 		name = southafrica.81.b
 		activate_advisor = SAF_W_H_Andrews_hog_lib
@@ -2250,7 +2250,7 @@ country_event = { #Who will lead United
 		name = southafrica.82.a
 		activate_advisor = SAF_James_Hertzog_hog_ade
 	}
-	
+
 	option = {
 		name = southafrica.82.b
 		activate_advisor = SAF_Jan_C_Smuts_hog_sco
@@ -2289,14 +2289,14 @@ country_event = { #A storm is coming
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			has_country_flag = boer_rising
 			has_government = authoritarian_democrat
 			has_government = paternal_autocrat
-			has_government = national_populist 
+			has_government = national_populist
 			has_government = valkist
 		}
-	}		
+	}
 
 	option = {
 		name = southafrica.85.a
@@ -2314,311 +2314,263 @@ country_event = { #Integration Legislated
 
 	is_triggered_only = yes
 
-#	if = {
-#		limit = {
-#			has_country_flag = boer_rising
-#		}
-	option = {
-		name = southafrica.90.a
-		trigger = {
-			original_tag = SAF
-			SAF = {
-				has_country_flag = boer_rising
-			}
-		}
-		add_stability = 0.05
-	}
-
-#	if = {
-#		limit = {
-#			NOT = {
-#				has_country_flag = boer_rising
-#			}
-#		}
-#	}
-	option = {
-		name = southafrica.90.b
-		trigger = {
-			original_tag = SAF
-			NOT = {
+	#	if = {
+		#		limit = {
+			#			has_country_flag = boer_rising
+			#		}
+		option = {
+			name = southafrica.90.a
+			trigger = {
+				original_tag = SAF
 				SAF = {
 					has_country_flag = boer_rising
 				}
 			}
+			add_stability = 0.05
 		}
-		add_stability = 0.05
-		custom_effect_tooltip  = SAF_BoerAngry1_tooltip 
-	}	
-}
 
-country_event = { #Autonomy for the Transvaal
-	id = southafrica.91
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.91"}
-	title = southafrica.91.t
-	desc = southafrica.91.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = southafrica.91.a
-		add_stability = 0.1
-		add_political_power = -50
-	}
-}
-
-country_event = { #PNP Constitution
-	id = southafrica.92
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.92"}
-	title = southafrica.92.t
-	desc = southafrica.92.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = southafrica.92.a
-		add_political_power = 100
-	}
-
-	option = {
-		name = southafrica.92.b
-		add_stability = 0.1
-	}
-}
-
-
-country_event = { #Riots in Cape Town
-	id = southafrica.94
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.94"}
-	title = southafrica.94.t
-	desc = southafrica.94.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = southafrica.94.a
-		add_manpower = -20000
-		add_stability = -0.05
-	}
-
-	option = {
-		name = southafrica.94.b
-		add_stability = -0.1
-	}
-}
-
-country_event = { #Revolt Recovery 1
-	id = southafrica.95
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.95"}
-	title = southafrica.95.t
-	desc = southafrica.95.d
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = SAF
-		has_country_flag = boer_rising
-		has_war = no
-	}
-
-	mean_time_to_happen = { days = 1 }
-
-	option = {
-		name = southafrica.95.a
-		swap_ideas = { remove_idea = SAF_Boer_Revolt add_idea = SAF_Boer_Revolt2 }
-		hidden_effect = {
-			country_event = { id = southafrica.96 months = 3 }
+		#	if = {
+			#		limit = {
+				#			NOT = {
+					#				has_country_flag = boer_rising
+					#			}
+				#		}
+			#	}
+		option = {
+			name = southafrica.90.b
+			trigger = {
+				original_tag = SAF
+				NOT = {
+					SAF = {
+						has_country_flag = boer_rising
+					}
+				}
+			}
+			add_stability = 0.05
+			custom_effect_tooltip  = SAF_BoerAngry1_tooltip
 		}
 	}
-}
 
-country_event = { #Revolt Recovery 2
-	id = southafrica.96
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.96"}
-	title = southafrica.96.t
-	desc = southafrica.96.d
+	country_event = { #Autonomy for the Transvaal
+		id = southafrica.91
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.91"}
+		title = southafrica.91.t
+		desc = southafrica.91.d
 
-	fire_only_once = yes
+		fire_only_once = yes
 
-	is_triggered_only = yes
+		is_triggered_only = yes
 
-	option = {
-		name = southafrica.96.a
-		swap_ideas = { remove_idea = SAF_Boer_Revolt2 add_idea = SAF_Boer_Revolt3 }
-		hidden_effect = {
-			country_event = { id = southafrica.97 months = 3 }
+		option = {
+			name = southafrica.91.a
+			add_stability = 0.1
+			add_political_power = -50
 		}
 	}
-}
 
-country_event = { #Revolt Recovery 3
-	id = southafrica.97
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.97"}
-	title = southafrica.97.t
-	desc = southafrica.97.d
+	country_event = { #PNP Constitution
+		id = southafrica.92
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.92"}
+		title = southafrica.92.t
+		desc = southafrica.92.d
 
-	fire_only_once = yes
+		fire_only_once = yes
 
-	is_triggered_only = yes
+		is_triggered_only = yes
 
-	option = {
-		name = southafrica.97.a
-		remove_ideas = SAF_Boer_Revolt3
-	}
-}
-
-country_event = { #Rhodesia Referendum - Failed
-	id = southafrica.98
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.98"}
-	title = southafrica.98.t
-	desc = southafrica.98.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = southafrica.98.a
-		add_political_power = 50
-	}
-}
-
-country_event = { #Rhodesia Referendum - Passed
-	id = southafrica.99
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.99"}
-	title = southafrica.99.t
-	desc = southafrica.99.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = southafrica.99.a
-		add_political_power = -50
-		RHO = {
-			transfer_state = 810
+		option = {
+			name = southafrica.92.a
+			add_political_power = 100
 		}
-		ENG = {
-#			puppet = RHO
-			set_autonomy = {
-				target = RHO
-				autonomous_state = autonomy_colony
-				freedom_level = 0.5
+
+		option = {
+			name = southafrica.92.b
+			add_stability = 0.1
+		}
+	}
+
+
+	country_event = { #Riots in Cape Town
+		id = southafrica.94
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.94"}
+		title = southafrica.94.t
+		desc = southafrica.94.d
+
+		fire_only_once = yes
+
+		is_triggered_only = yes
+
+		option = {
+			name = southafrica.94.a
+			add_manpower = -20000
+			add_stability = -0.05
+		}
+
+		option = {
+			name = southafrica.94.b
+			add_stability = -0.1
+		}
+	}
+
+	country_event = { #Revolt Recovery 1
+		id = southafrica.95
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.95"}
+		title = southafrica.95.t
+		desc = southafrica.95.d
+
+		fire_only_once = yes
+
+		trigger = {
+			tag = SAF
+			has_country_flag = boer_rising
+			has_war = no
+		}
+
+		mean_time_to_happen = { days = 1 }
+
+		option = {
+			name = southafrica.95.a
+			swap_ideas = { remove_idea = SAF_Boer_Revolt add_idea = SAF_Boer_Revolt2 }
+			hidden_effect = {
+				country_event = { id = southafrica.96 months = 3 }
 			}
 		}
 	}
 
-	option = {
-        	name = southafrica.99.b
-		hidden_effect = {
+	country_event = { #Revolt Recovery 2
+		id = southafrica.96
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.96"}
+		title = southafrica.96.t
+		desc = southafrica.96.d
+
+		fire_only_once = yes
+
+		is_triggered_only = yes
+
+		option = {
+			name = southafrica.96.a
+			swap_ideas = { remove_idea = SAF_Boer_Revolt2 add_idea = SAF_Boer_Revolt3 }
+			hidden_effect = {
+				country_event = { id = southafrica.97 months = 3 }
+			}
+		}
+	}
+
+	country_event = { #Revolt Recovery 3
+		id = southafrica.97
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.97"}
+		title = southafrica.97.t
+		desc = southafrica.97.d
+
+		fire_only_once = yes
+
+		is_triggered_only = yes
+
+		option = {
+			name = southafrica.97.a
+			remove_ideas = SAF_Boer_Revolt3
+		}
+	}
+
+	country_event = { #Rhodesia Referendum - Failed
+		id = southafrica.98
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.98"}
+		title = southafrica.98.t
+		desc = southafrica.98.d
+
+		fire_only_once = yes
+
+		is_triggered_only = yes
+
+		option = {
+			name = southafrica.98.a
+			add_political_power = 50
+		}
+	}
+
+	country_event = { #Rhodesia Referendum - Passed
+		id = southafrica.99
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.99"}
+		title = southafrica.99.t
+		desc = southafrica.99.d
+
+		fire_only_once = yes
+
+		is_triggered_only = yes
+
+		option = {
+			name = southafrica.99.a
+			add_political_power = -50
 			RHO = {
 				transfer_state = 810
-					add_state_core = 810
-				change_tag_from = SAF
 			}
 			ENG = {
-#				puppet = RHO
+				#			puppet = RHO
 				set_autonomy = {
 					target = RHO
 					autonomous_state = autonomy_colony
 					freedom_level = 0.5
 				}
-			}	
+			}
 		}
-	}
-}
 
-country_event = { #ANC Boer War
-	id = southafrica.100
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.100"}
-	title = "The Fourth Boer War"
-	desc = southafrica.100.d
-	picture = report_event_generic_conference
-	
-	is_triggered_only = yes
-	trigger = {
-		NOT = { 
-			has_country_flag = boer_rising
-			has_government = authoritarian_democrat
-			has_government = paternal_autocrat
-			has_government = national_populist 
-			has_government = valkist
-		}
-	}
-	
-	fire_only_once = yes
-	
-	option = {
-		name = southafrica.100.a
-    retire_character = SAF_George_Brink
-    retire_character = SAF_Guy_Hallifax
-		ZAF = { 
-			transfer_technology = yes
-			transfer_state = 275
-				add_state_core = 275
-			transfer_state = 719
-				add_state_core = 719
-			transfer_state = 865
-				add_state_core = 865
-			load_oob = ZAF_boerwar
-			set_capital = { state = 275 }
-			set_stability = 0.5
-			set_politics = { ruling_party = valkist elections_allowed = no }
-			add_ideas = ZAF_Disorganized_Rebels
-		}
-		if = {
-			limit = {
-				SAF = {
-					controls_state = 810
+		option = {
+			name = southafrica.99.b
+			hidden_effect = {
+				RHO = {
+					transfer_state = 810
+					add_state_core = 810
+					change_tag_from = SAF
+				}
+				ENG = {
+					#				puppet = RHO
+					set_autonomy = {
+						target = RHO
+						autonomous_state = autonomy_colony
+						freedom_level = 0.5
+					}
 				}
 			}
-			ENG = {
-				transfer_state = 810
-				810 = { set_demilitarized_zone = no }
-			}
-			SAF = {
-				remove_ideas = SAF_Rhodesia_Unrest
-			}
-		}
-		declare_war_on = {
-			target = ZAF
-			type = annex_everything
-		}
-		set_country_flag = boer_rising
-		add_ideas = SAF_Boer_Revolt
-		remove_ideas = SAF_Integration_Resist
-		hidden_effect = {
-			ENG = {
-				country_event = { id = emp.500 days = 1 }
-			}
 		}
 	}
-	option = {
-    name = southafrica.100.b
-    retire_character = SAF_George_Brink
-    retire_character = SAF_Guy_Hallifax
-		hidden_effect = {
+
+	country_event = { #ANC Boer War
+		id = southafrica.100
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.100"}
+		title = "The Fourth Boer War"
+		desc = southafrica.100.d
+		picture = report_event_generic_conference
+
+		is_triggered_only = yes
+		trigger = {
+			NOT = {
+				has_country_flag = boer_rising
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+				has_government = valkist
+			}
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = southafrica.100.a
+			retire_character = SAF_George_Brink
+			retire_character = SAF_Guy_Hallifax
 			ZAF = {
 				transfer_technology = yes
 				transfer_state = 275
-					add_state_core = 275
+				add_state_core = 275
 				transfer_state = 719
-					add_state_core = 719
+				add_state_core = 719
 				transfer_state = 865
-					add_state_core = 865
+				add_state_core = 865
 				load_oob = ZAF_boerwar
 				set_capital = { state = 275 }
 				set_stability = 0.5
 				set_politics = { ruling_party = valkist elections_allowed = no }
 				add_ideas = ZAF_Disorganized_Rebels
-				declare_war_on = { target = SAF type = annex_everything }
-				change_tag_from = SAF
 			}
 			if = {
 				limit = {
@@ -2634,115 +2586,118 @@ country_event = { #ANC Boer War
 					remove_ideas = SAF_Rhodesia_Unrest
 				}
 			}
-			ENG = {
-				country_event = { id = emp.500 days = 1 }
+			declare_war_on = {
+				target = ZAF
+				type = annex_everything
 			}
-			SAF = {
-				add_ideas = SAF_Boer_Revolt
-				remove_ideas = SAF_Integration_Resist
-				set_country_flag = boer_rising
-			}
-#			673 = {
-#				add_claim_by = ZAF
-#			}	
-#			every_state = {
-#				limit = {
-#					is_core_of = SAF
-#				}
-#				THIS = {
-#					add_core_of = ZAF
-#				}
-#			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
-		}
-	}
-}
-
-country_event = { #Union & Federation Boer War
-	id = southafrica.101
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.101"}
-	title = "The Fourth Boer War"
-	desc = southafrica.101.d
-	picture = report_event_generic_conference
-	
-	is_triggered_only = yes 
-
-	trigger = {	
-		NOT = { 
-			has_country_flag = boer_rising
-			has_country_flag = transvaal_autonomy
-			has_government = authoritarian_democrat
-			has_government = paternal_autocrat
-			has_government = national_populist 
-			has_government = valkist
-		}
-	}
-	fire_only_once = yes
-	
-	option = {
-		name = southafrica.101.a
-    retire_character = SAF_George_Brink
-    retire_character = SAF_Guy_Hallifax
-		ZAF = { 
-			transfer_technology = yes
-			transfer_state = 275
-				add_state_core = 275
-			transfer_state = 719
-				add_state_core = 719
-			transfer_state = 865
-				add_state_core = 865
-			load_oob = ZAF_boerwar
-			set_capital = { state = 275 }
-			set_stability = 0.5
-			set_politics = { ruling_party = valkist elections_allowed = no }
-			add_ideas = ZAF_Disorganized_Rebels
-		}
-		if = {
-			limit = {
-				SAF = {
-					controls_state = 810
+			set_country_flag = boer_rising
+			add_ideas = SAF_Boer_Revolt
+			remove_ideas = SAF_Integration_Resist
+			hidden_effect = {
+				ENG = {
+					country_event = { id = emp.500 days = 1 }
 				}
 			}
-			ENG = {
-				transfer_state = 810
-				810 = { set_demilitarized_zone = no }
-			}
 		}
-		declare_war_on = {
-			target = ZAF
-			type = annex_everything
-		}
-		set_country_flag = boer_rising
-		add_ideas = SAF_Boer_Revolt
-		remove_ideas = SAF_Integration_Resist
-		hidden_effect = {
-			ENG = {
-				country_event = { id = emp.500 days = 1 }
+		option = {
+			name = southafrica.100.b
+			retire_character = SAF_George_Brink
+			retire_character = SAF_Guy_Hallifax
+			hidden_effect = {
+				ZAF = {
+					transfer_technology = yes
+					transfer_state = 275
+					add_state_core = 275
+					transfer_state = 719
+					add_state_core = 719
+					transfer_state = 865
+					add_state_core = 865
+					load_oob = ZAF_boerwar
+					set_capital = { state = 275 }
+					set_stability = 0.5
+					set_politics = { ruling_party = valkist elections_allowed = no }
+					add_ideas = ZAF_Disorganized_Rebels
+					declare_war_on = { target = SAF type = annex_everything }
+					change_tag_from = SAF
+				}
+				if = {
+					limit = {
+						SAF = {
+							controls_state = 810
+						}
+					}
+					ENG = {
+						transfer_state = 810
+						810 = { set_demilitarized_zone = no }
+					}
+					SAF = {
+						remove_ideas = SAF_Rhodesia_Unrest
+					}
+				}
+				ENG = {
+					country_event = { id = emp.500 days = 1 }
+				}
+				SAF = {
+					add_ideas = SAF_Boer_Revolt
+					remove_ideas = SAF_Integration_Resist
+					set_country_flag = boer_rising
+				}
+				#			673 = {
+					#				add_claim_by = ZAF
+					#			}
+				#			every_state = {
+					#				limit = {
+						#					is_core_of = SAF
+						#				}
+					#				THIS = {
+						#					add_core_of = ZAF
+						#				}
+					#			}
+				#			news_event = {
+					#				id = worldnews.130 days = 1
+					#			}
 			}
 		}
 	}
-	option = {
-        	name = southafrica.101.b
-		hidden_effect = {
-      retire_character = SAF_George_Brink
-      retire_character = SAF_Guy_Hallifax
+
+	country_event = { #Union & Federation Boer War
+		id = southafrica.101
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.101"}
+		title = "The Fourth Boer War"
+		desc = southafrica.101.d
+		picture = report_event_generic_conference
+
+		is_triggered_only = yes
+
+		trigger = {
+			NOT = {
+				has_country_flag = boer_rising
+				has_country_flag = transvaal_autonomy
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+				has_government = valkist
+			}
+		}
+		fire_only_once = yes
+
+		option = {
+			name = southafrica.101.a
+			retire_character = SAF_George_Brink
+			retire_character = SAF_Guy_Hallifax
 			ZAF = {
 				transfer_technology = yes
 				transfer_state = 275
-					add_state_core = 275
+				add_state_core = 275
 				transfer_state = 719
-					add_state_core = 719
+				add_state_core = 719
 				transfer_state = 865
-					add_state_core = 865
+				add_state_core = 865
 				load_oob = ZAF_boerwar
 				set_capital = { state = 275 }
 				set_stability = 0.5
 				set_politics = { ruling_party = valkist elections_allowed = no }
 				add_ideas = ZAF_Disorganized_Rebels
-				declare_war_on = { target = SAF type = annex_everything }
-				change_tag_from = SAF
 			}
 			if = {
 				limit = {
@@ -2755,622 +2710,667 @@ country_event = { #Union & Federation Boer War
 					810 = { set_demilitarized_zone = no }
 				}
 			}
-			SAF = {
-				add_ideas = SAF_Boer_Revolt
-				remove_ideas = SAF_Integration_Resist
+			declare_war_on = {
+				target = ZAF
+				type = annex_everything
 			}
-#			673 = {
-#				add_claim_by = ZAF
-#			}	
-#			every_state = {
-#				limit = {
-#					is_core_of = SAF
-#				}
-#				THIS = {
-#					add_core_of = ZAF
-#				}
-#			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
-			ENG = {
-				country_event = { id = emp.500 days = 1 }
+			set_country_flag = boer_rising
+			add_ideas = SAF_Boer_Revolt
+			remove_ideas = SAF_Integration_Resist
+			hidden_effect = {
+				ENG = {
+					country_event = { id = emp.500 days = 1 }
+				}
 			}
 		}
-    }
-}
-
-country_event = { # Fate of East Africa
-	id = southafrica.102
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.102"}
-    	title = southafrica.102.t
-    	desc = southafrica.102.d
-	picture = GFX_report_event_communists_cheer
-
-    	is_triggered_only = yes
-
-	option = { # Puppet East Africa
-		ai_chance = {
-			factor = 4000
-		}
-    		name = southafrica.102.b
-		SAF = {
-            		puppet = TZN
-        	}
-		546 = {
-            		add_core_of = TZN
-        	}
-        	547 = {
-           		add_core_of = TZN
-        	}
-        	548 = {
-            		add_core_of = TZN
-        	}
-        	933 = {
-            		add_core_of = TZN
-        	}
-        	964 = {
-            		add_core_of = TZN
-        	}
-		hidden_effect = {
-			TZN = {
-				set_cosmetic_tag = TZN_puppet
-			}
-			
-            		every_state = {
-				limit = {
-					is_owned_by = SAF
-					OR = {
-						is_core_of = TZN
-						is_claimed_by = TZN
-					}
-					NOT = {
-						OR = {
-							is_core_of = SAF
-							is_claimed_by = SAF
-						}
-					}
-				}
-				TZN = {
-					transfer_state = PREV
-				}
-			}
-			
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 546
-					}
-				}
-				TZN = {
-					transfer_state = 546
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 964
-					}
-				}
-				TZN = {
-					transfer_state = 964
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 547
-					}
-				}
-				TZN = {
-					transfer_state = 547
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 548
-					}
-				}
-				TZN = {
-					transfer_state = 548
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 933
-					}
-				}
-				TZN = {
-					transfer_state = 933
-				}
-			}
-
-			TZN = {
-				set_political_party = {
-					ideology = national_populist
-					popularity = 60
-				}
-				add_ideas = {
-					limited_conscription
-				}
-			}
-    }
-	}
-
-	option = { # South Africa shall conquer all
-		ai_chance = {
-			factor = 0
-		}
-    name = southafrica.102.c
-    add_political_power = -150
-  }
-}
-
-country_event = { # East Africa - Establish administration
-	id = southafrica.103
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.103"}
-	title = southafrica.103.t
-	desc = southafrica.103.d
-	picture = GFX_report_event_communists_cheer
-
-	trigger = {
-		original_tag = TZN
-		TZN = {
-			is_puppet_of = SAF
-		}
-		owns_state = 546
-	}
-
-	mean_time_to_happen = {
-			days = 1
-	}
-  fire_only_once = yes
-
-	option = {
-		name = southafrica.103.a
-	}
-}
-
-country_event = { # Fate of Egypt
-	id = southafrica.104
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.104"}
-    	title = southafrica.104.t
-    	desc = southafrica.104.d
-	picture = GFX_report_event_communists_cheer
-
-    	is_triggered_only = yes
-
-	option = { # Puppet Egypt
-		ai_chance = {
-			factor = 4000
-		}
-    		name = southafrica.104.b
-		SAF = {
-            		puppet = EGY
-        	}
-		446 = {
-         		add_core_of = EGY
-        	}
-        	452 = {
-            		add_core_of = EGY
-        	}
-        	447 = {
-            		add_core_of = EGY
-        	}
-        	453 = {
-            		add_core_of = EGY
-        	}
-        	769 = {
-            		add_core_of = EGY
-        	}
-		552 = {
-            		add_core_of = EGY
-        	}
-		456 = {
-            		add_core_of = EGY
-        	}
-		457 = {
-            		add_core_of = EGY
-        	}
-		745 = {
-            		add_core_of = EGY
-        	}
-		551 = {
-            		add_core_of = EGY
-        	}
-		549 = {
-            		add_core_of = EGY
-        	}
-		hidden_effect = {
-			EGY = {
-				set_cosmetic_tag = EGY_puppet
-			}
-			
-            		every_state = {
-				limit = {
-					is_owned_by = SAF
-					OR = {
-						is_core_of = EGY
-						is_claimed_by = EGY
-					}
-					NOT = {
-						OR = {
-							is_core_of = SAF
-							is_claimed_by = SAF
-						}
-					}
-				}
-				EGY = {
-					transfer_state = PREV
-				}
-			}
-			
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 446
-					}
-				}
-				EGY = {
-					transfer_state = 446
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 452
-					}
-				}
-				EGY = {
-					transfer_state = 452
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 447
-					}
-				}
-				EGY = {
-					transfer_state = 447
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 453
-					}
-				}
-				EGY = {
-					transfer_state = 453
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 769
-					}
-				}
-				EGY = {
-					transfer_state = 769
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 552
-					}
-				}
-				EGY = {
-					transfer_state = 552
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 456
-					}
-				}
-				EGY = {
-					transfer_state = 456
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 457
-					}
-				}
-				EGY = {
-					transfer_state = 457
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 745
-					}
-				}
-				EGY = {
-					transfer_state = 745
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 551
-					}
-				}
-				EGY = {
-					transfer_state = 551
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 549
-					}
-				}
-				EGY = {
-					transfer_state = 549
-				}
-			}
-
-			EGY = {
-				set_political_party = {
-					ideology = national_populist
-					popularity = 60
-				}
-				add_ideas = {
-					limited_conscription
-				}
-			}
-    }
-	}
-
-	option = { # South Africa shall conquer all
-		ai_chance = {
-			factor = 0
-		}
-    name = southafrica.104.c
-    add_political_power = -150
-  }
-}
-
-country_event = { # Fate of Abyssinia
-	id = southafrica.105
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.105"}
-    	title = southafrica.105.t
-    	desc = southafrica.105.d
-	picture = GFX_report_event_communists_cheer
-
-    	is_triggered_only = yes
-
-	option = { # Puppet Abyssinia
-		ai_chance = {
-			factor = 4000
-		}
-    		name = southafrica.105.b
-		SAF = {
-            		puppet = ETH
-        	}
-		271 = {
-            		add_core_of = ETH
-        	}
-		273 = {
-            		add_core_of = ETH
-        	}
-        	269 = {
-            		add_core_of = ETH
-        	}
-        	268 = {
-            		add_core_of = ETH
-        	}
-        	559 = {
-            		add_core_of = ETH
-        	}
-		hidden_effect = {
-			ETH = {
-				set_cosmetic_tag = ETH_puppet
-			}
-			
-            		every_state = {
-				limit = {
-					is_owned_by = SAF
-					OR = {
-						is_core_of = ETH
-						is_claimed_by = ETH
-					}
-					NOT = {
-						OR = {
-							is_core_of = SAF
-							is_claimed_by = SAF
-						}
-					}
-				}
-				ETH = {
-					transfer_state = PREV
-				}
-			}
-			
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 271
-					}
-				}
-				ETH = {
-					transfer_state = 271
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 268
-					}
-				}
-				ETH = {
-					transfer_state = 268
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 269
-					}
-				}
-				ETH = {
-					transfer_state = 269
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 550
-					}
-				}
-				ETH = {
-					transfer_state = 550
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						owns_state = 559
-					}
-				}
-				ETH = {
-					transfer_state = 559
-				}
-			}
-
-			ETH = {
-				set_political_party = {
-					ideology = national_populist
-					popularity = 60
-				}
-				add_ideas = {
-					limited_conscription
-				}
-			}
-    }
-	}
-
-	option = { # South Africa shall conquer all
-		ai_chance = {
-			factor = 0
-		}
-    name = southafrica.105.c
-    add_political_power = -150
-  }
-}
-
-
-
-country_event = { #German Separatists
-	id = southafrica.109
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.109"}
-	title = southafrica.109.t
-	desc = southafrica.109.d
-	
-	is_triggered_only = yes 
-
-	fire_only_once = yes
-	
-	option = {
-		name = southafrica.109.a
-		add_political_power = -100
-		add_stability = -0.1	
-		hidden_effect = {
-			ZAF = {
-				load_oob = ZAF_boerwar2
-			}
-		}
-	}
-}
-
-country_event = { #ZAF Victory
-	id = southafrica.110
-	immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.110"}
-	title = southafrica.110.t
-	desc = southafrica.110.d
-	picture = report_event_generic_conference
-	
-	is_triggered_only = yes 
-
-	fire_only_once = yes
-	
-	option = {
-		name = southafrica.110.a
-		hidden_effect = {
-			SAF = {
-				transfer_technology = yes
-				transfer_state = 275
+		option = {
+			name = southafrica.101.b
+			hidden_effect = {
+				retire_character = SAF_George_Brink
+				retire_character = SAF_Guy_Hallifax
+				ZAF = {
+					transfer_technology = yes
+					transfer_state = 275
 					add_state_core = 275
-				transfer_state = 719
+					transfer_state = 719
 					add_state_core = 719
-				transfer_state = 865
+					transfer_state = 865
 					add_state_core = 865
-				transfer_state = 681
-					add_state_core = 681
-				transfer_state = 541
-					add_state_core = 541
-				transfer_state = 542
-					add_state_core = 542
-				transfer_state = 863
-					add_state_core = 863
-				transfer_state = 864
-					add_state_core = 864
-				load_oob = ZAF_boerwar
-				set_country_flag = SAF_Boer_Victory
-				set_cosmetic_tag = ZAF
-				remove_ideas = SAF_Boer_Revolt
-				add_ideas = one_party_dictatorship
-				set_politics = { ruling_party = valkist elections_allowed = no }
-        add_country_leader_role = {
-          character = SAF_D_F_Malan
-          promote_leader = yes
-          country_leader = {
-            ideology = valkist_subtype
-            traits = {}
-          }
-        }
-				set_popularities = {
-					vanguardist = 0
-          collectivist = 0
-          libertarian_socialist = 0
-          social_democrat = 0
-          social_liberal = 0
-          market_liberal = 0
-          social_conservative = 0
-          authoritarian_democrat = 20
-          paternal_autocrat = 25
-          national_populist = 25
-          valkist = 30
+					load_oob = ZAF_boerwar
+					set_capital = { state = 275 }
+					set_stability = 0.5
+					set_politics = { ruling_party = valkist elections_allowed = no }
+					add_ideas = ZAF_Disorganized_Rebels
+					declare_war_on = { target = SAF type = annex_everything }
+					change_tag_from = SAF
 				}
-				change_tag_from = ZAF
-				set_country_flag = SAF_Boer_Victory
+				if = {
+					limit = {
+						SAF = {
+							controls_state = 810
+						}
+					}
+					ENG = {
+						transfer_state = 810
+						810 = { set_demilitarized_zone = no }
+					}
+				}
+				SAF = {
+					add_ideas = SAF_Boer_Revolt
+					remove_ideas = SAF_Integration_Resist
+				}
+				#			673 = {
+					#				add_claim_by = ZAF
+					#			}
+				#			every_state = {
+					#				limit = {
+						#					is_core_of = SAF
+						#				}
+					#				THIS = {
+						#					add_core_of = ZAF
+						#				}
+					#			}
+				#			news_event = {
+					#				id = worldnews.130 days = 1
+					#			}
+				ENG = {
+					country_event = { id = emp.500 days = 1 }
+				}
 			}
 		}
 	}
-}
+
+	country_event = { # Fate of East Africa
+		id = southafrica.102
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.102"}
+		title = southafrica.102.t
+		desc = southafrica.102.d
+		picture = GFX_report_event_communists_cheer
+
+		is_triggered_only = yes
+
+		option = { # Puppet East Africa
+			ai_chance = {
+				factor = 4000
+			}
+			name = southafrica.102.b
+			SAF = {
+				puppet = TZN
+			}
+			546 = {
+				add_core_of = TZN
+			}
+			547 = {
+				add_core_of = TZN
+			}
+			548 = {
+				add_core_of = TZN
+			}
+			933 = {
+				add_core_of = TZN
+			}
+			964 = {
+				add_core_of = TZN
+			}
+			hidden_effect = {
+				TZN = {
+					set_cosmetic_tag = TZN_puppet
+				}
+
+				every_state = {
+					limit = {
+						is_owned_by = SAF
+						OR = {
+							is_core_of = TZN
+							is_claimed_by = TZN
+						}
+						NOT = {
+							OR = {
+								is_core_of = SAF
+								is_claimed_by = SAF
+							}
+						}
+					}
+					TZN = {
+						transfer_state = PREV
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 546
+						}
+					}
+					TZN = {
+						transfer_state = 546
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 964
+						}
+					}
+					TZN = {
+						transfer_state = 964
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 547
+						}
+					}
+					TZN = {
+						transfer_state = 547
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 548
+						}
+					}
+					TZN = {
+						transfer_state = 548
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 933
+						}
+					}
+					TZN = {
+						transfer_state = 933
+					}
+				}
+
+				TZN = {
+					set_political_party = {
+						ideology = national_populist
+						popularity = 60
+					}
+					add_ideas = {
+						limited_conscription
+					}
+				}
+			}
+		}
+
+		option = { # South Africa shall conquer all
+			ai_chance = {
+				factor = 0
+			}
+			name = southafrica.102.c
+			add_political_power = -150
+		}
+	}
+
+	country_event = { # East Africa - Establish administration
+		id = southafrica.103
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.103"}
+		title = southafrica.103.t
+		desc = southafrica.103.d
+		picture = GFX_report_event_communists_cheer
+
+		trigger = {
+			original_tag = TZN
+			TZN = {
+				is_puppet_of = SAF
+			}
+			owns_state = 546
+		}
+
+		mean_time_to_happen = {
+			days = 1
+		}
+		fire_only_once = yes
+
+		option = {
+			name = southafrica.103.a
+		}
+	}
+
+	country_event = { # Fate of Egypt
+		id = southafrica.104
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.104"}
+		title = southafrica.104.t
+		desc = southafrica.104.d
+		picture = GFX_report_event_communists_cheer
+
+		is_triggered_only = yes
+
+		option = { # Puppet Egypt
+			ai_chance = {
+				factor = 4000
+			}
+			name = southafrica.104.b
+			SAF = {
+				puppet = EGY
+			}
+			446 = {
+				add_core_of = EGY
+			}
+			452 = {
+				add_core_of = EGY
+			}
+			447 = {
+				add_core_of = EGY
+			}
+			453 = {
+				add_core_of = EGY
+			}
+			769 = {
+				add_core_of = EGY
+			}
+			552 = {
+				add_core_of = EGY
+			}
+			456 = {
+				add_core_of = EGY
+			}
+			457 = {
+				add_core_of = EGY
+			}
+			745 = {
+				add_core_of = EGY
+			}
+			551 = {
+				add_core_of = EGY
+			}
+			549 = {
+				add_core_of = EGY
+			}
+			hidden_effect = {
+				EGY = {
+					set_cosmetic_tag = EGY_puppet
+				}
+
+				every_state = {
+					limit = {
+						is_owned_by = SAF
+						OR = {
+							is_core_of = EGY
+							is_claimed_by = EGY
+						}
+						NOT = {
+							OR = {
+								is_core_of = SAF
+								is_claimed_by = SAF
+							}
+						}
+					}
+					EGY = {
+						transfer_state = PREV
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 446
+						}
+					}
+					EGY = {
+						transfer_state = 446
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 452
+						}
+					}
+					EGY = {
+						transfer_state = 452
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 447
+						}
+					}
+					EGY = {
+						transfer_state = 447
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 453
+						}
+					}
+					EGY = {
+						transfer_state = 453
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 769
+						}
+					}
+					EGY = {
+						transfer_state = 769
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 552
+						}
+					}
+					EGY = {
+						transfer_state = 552
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 456
+						}
+					}
+					EGY = {
+						transfer_state = 456
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 457
+						}
+					}
+					EGY = {
+						transfer_state = 457
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 745
+						}
+					}
+					EGY = {
+						transfer_state = 745
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 551
+						}
+					}
+					EGY = {
+						transfer_state = 551
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 549
+						}
+					}
+					EGY = {
+						transfer_state = 549
+					}
+				}
+
+				EGY = {
+					set_political_party = {
+						ideology = national_populist
+						popularity = 60
+					}
+					add_ideas = {
+						limited_conscription
+					}
+				}
+			}
+		}
+
+		option = { # South Africa shall conquer all
+			ai_chance = {
+				factor = 0
+			}
+			name = southafrica.104.c
+			add_political_power = -150
+		}
+	}
+
+	country_event = { # Fate of Abyssinia
+		id = southafrica.105
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.105"}
+		title = southafrica.105.t
+		desc = southafrica.105.d
+		picture = GFX_report_event_communists_cheer
+
+		is_triggered_only = yes
+
+		option = { # Puppet Abyssinia
+			ai_chance = {
+				factor = 4000
+			}
+			name = southafrica.105.b
+			SAF = {
+				puppet = ETH
+			}
+			271 = {
+				add_core_of = ETH
+			}
+			273 = {
+				add_core_of = ETH
+			}
+			269 = {
+				add_core_of = ETH
+			}
+			268 = {
+				add_core_of = ETH
+			}
+			559 = {
+				add_core_of = ETH
+			}
+			hidden_effect = {
+				ETH = {
+					set_cosmetic_tag = ETH_puppet
+				}
+
+				every_state = {
+					limit = {
+						is_owned_by = SAF
+						OR = {
+							is_core_of = ETH
+							is_claimed_by = ETH
+						}
+						NOT = {
+							OR = {
+								is_core_of = SAF
+								is_claimed_by = SAF
+							}
+						}
+					}
+					ETH = {
+						transfer_state = PREV
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 271
+						}
+					}
+					ETH = {
+						transfer_state = 271
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 268
+						}
+					}
+					ETH = {
+						transfer_state = 268
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 269
+						}
+					}
+					ETH = {
+						transfer_state = 269
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 550
+						}
+					}
+					ETH = {
+						transfer_state = 550
+					}
+				}
+
+				if = {
+					limit = {
+						SAF = {
+							owns_state = 559
+						}
+					}
+					ETH = {
+						transfer_state = 559
+					}
+				}
+
+				ETH = {
+					set_political_party = {
+						ideology = national_populist
+						popularity = 60
+					}
+					add_ideas = {
+						limited_conscription
+					}
+				}
+			}
+		}
+
+		option = { # South Africa shall conquer all
+			ai_chance = {
+				factor = 0
+			}
+			name = southafrica.105.c
+			add_political_power = -150
+		}
+	}
+
+
+
+	country_event = { #German Separatists
+		id = southafrica.109
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.109"}
+		title = southafrica.109.t
+		desc = southafrica.109.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = southafrica.109.a
+			add_political_power = -100
+			add_stability = -0.1
+			hidden_effect = {
+				ZAF = {
+					load_oob = ZAF_boerwar2
+				}
+			}
+		}
+	}
+
+	country_event = { #ZAF Victory
+		id = southafrica.110
+		immediate = {log = "[GetDateText]: [Root.GetName]: event southafrica.110"}
+		title = southafrica.110.t
+		desc = southafrica.110.d
+		picture = report_event_generic_conference
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = southafrica.110.a
+			hidden_effect = {
+				SAF = {
+					transfer_technology = yes
+					transfer_state = 275
+					add_state_core = 275
+					transfer_state = 719
+					add_state_core = 719
+					transfer_state = 865
+					add_state_core = 865
+					transfer_state = 681
+					add_state_core = 681
+					transfer_state = 541
+					add_state_core = 541
+					transfer_state = 542
+					add_state_core = 542
+					transfer_state = 863
+					add_state_core = 863
+					transfer_state = 864
+					add_state_core = 864
+					load_oob = ZAF_boerwar
+					set_country_flag = SAF_Boer_Victory
+					set_cosmetic_tag = ZAF
+					remove_ideas = SAF_Boer_Revolt
+					add_ideas = one_party_dictatorship
+					set_politics = { ruling_party = valkist elections_allowed = no }
+					add_country_leader_role = {
+						character = SAF_D_F_Malan
+						promote_leader = yes
+						country_leader = {
+							ideology = valkist_subtype
+							traits = {}
+						}
+					}
+					set_popularities = {
+						vanguardist = 0
+						collectivist = 0
+						libertarian_socialist = 0
+						social_democrat = 0
+						social_liberal = 0
+						market_liberal = 0
+						social_conservative = 0
+						authoritarian_democrat = 20
+						paternal_autocrat = 25
+						national_populist = 25
+						valkist = 30
+					}
+					change_tag_from = ZAF
+					set_country_flag = SAF_Boer_Victory
+				}
+			}
+		}
+	}

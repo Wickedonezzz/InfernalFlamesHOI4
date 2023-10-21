@@ -275,12 +275,12 @@ country_event = { # Simmons Coup
 			popularity = 0.25
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			NAR_Edward_L_Jackson_hog_npo
-			NAR_George_Sylvester_Viereck_for_npo
-			NAR_Arthur_Kent_White_eco_npo
-			NAR_Addison_Roswell_Thompson_sec_npo
-		}
+
+		activate_advisor = NAR_Edward_L_Jackson_hog_npo
+		activate_advisor = NAR_George_Sylvester_Viereck_for_npo
+		activate_advisor = NAR_Arthur_Kent_White_eco_npo
+		activate_advisor = NAR_Addison_Roswell_Thompson_sec_npo
+
 	}
 }
 
@@ -299,7 +299,7 @@ country_event = { # Moseley Coup
 		check_variable = {
 			var = minority_suppression
 			value = 40
-			compare = less_than_or_equals  
+			compare = less_than_or_equals
 		}
 	}
 
@@ -312,12 +312,12 @@ country_event = { # Moseley Coup
 		hidden_effect = {
 			set_country_flag = NAR_path_pataut
 			add_country_leader_role = {
-			  character = NAR_George_Van_Horn_Moseley
-			  promote_leader = yes
-			  country_leader = {
-				ideology = corporatocracy_subtype
-				traits = {}
-			  }
+				character = NAR_George_Van_Horn_Moseley
+				promote_leader = yes
+				country_leader = {
+					ideology = corporatocracy_subtype
+					traits = {}
+				}
 			}
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = NAR_nationalist
@@ -332,12 +332,12 @@ country_event = { # Moseley Coup
 			popularity = 0.05
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			NAR_John_Elliott_Rankin_hog_pau
-			NAR_Arthur_Cherep_Spiridovich_for_pau
-			NAR_Louis_Thomas_McFadden_eco_pau
-			NAR_D_W_Griffith_sec_pau
-		}
+
+		activate_advisor = NAR_John_Elliott_Rankin_hog_pau
+		activate_advisor = NAR_Arthur_Cherep_Spiridovich_for_pau
+		activate_advisor = NAR_Louis_Thomas_McFadden_eco_pau
+		activate_advisor = NAR_D_W_Griffith_sec_pau
+
 	}
 }
 
@@ -384,12 +384,12 @@ country_event = { # Teagle Coup
 			popularity = 0.25
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			NAR_Henry_Ford_hog_ade
-			NAR_Arthur_Cherep_Spiridovich_for_pau
-			NAR_Fred_Chase_Koch_eco_ade
-			NAR_Eugene_Talmadge_sec_pau
-		}
+
+		activate_advisor = NAR_Henry_Ford_hog_ade
+		activate_advisor = NAR_Arthur_Cherep_Spiridovich_for_pau
+		activate_advisor = NAR_Fred_Chase_Koch_eco_ade
+		activate_advisor = NAR_Eugene_Talmadge_sec_pau
+
 	}
 }
 
@@ -404,7 +404,7 @@ country_event = { # Worker Joins Protestors
 		tag = NAR
 		has_country_flag = NAR_protests_happened
 		AND = {
-			check_variable = { 
+			check_variable = {
 				var = minority_suppression
 				value = 45
 				compare = greater_than
@@ -492,7 +492,7 @@ country_event = { # Revolt
 			}
 		}
 	}
-	
+
 	option = {
 		name = newamerica.14.a
 		if = {
@@ -512,7 +512,7 @@ country_event = { # Crushed the Revolt
 	desc = newamerica.15.d
 	picture = GFX_report_event_soviet_army_greeted
 	is_triggered_only = yes
-	
+
 	option = {
 		name = newamerica.15.a
 		every_owned_state = {
@@ -561,7 +561,7 @@ country_event = { # Second Great Migration
 	immediate = {
 		hidden_effect = {
 			USA = { country_event = newamerica.18 }
-			NEE = { country_event = newamerica.18 } 
+			NEE = { country_event = newamerica.18 }
 		}
 	}
 
@@ -604,7 +604,7 @@ country_event = { # Archbishops Seek Support
 			has_country_flag = NAR_path_pataut
 		}
 	}
-	
+
 	mean_time_to_happen = { months = 3 }
 
 	option = {
@@ -802,39 +802,39 @@ country_event = { # The Third Great Migration
 }
 
 country_event = { # The Other Minories
-  id = newamerica.27
-  title = newamerica.27.t
-  desc = newamerica.27.d
-  is_triggered_only = yes
-  picture = GFX_report_event_czech_soldiers_01
+	id = newamerica.27
+	title = newamerica.27.t
+	desc = newamerica.27.d
+	is_triggered_only = yes
+	picture = GFX_report_event_czech_soldiers_01
 
-  option = {
-	name = newamerica.27.a
-	add_stability = -0.05
-	add_political_power = 50
-  }
-  option = {
-	name = newamerica.27.b
-	add_political_power = -50
-	add_stability = 0.05
-  }
+	option = {
+		name = newamerica.27.a
+		add_stability = -0.05
+		add_political_power = 50
+	}
+	option = {
+		name = newamerica.27.b
+		add_political_power = -50
+		add_stability = 0.05
+	}
 }
 
 country_event = { # The APP Question
-  id = newamerica.28
-  title = newamerica.28.t
-  desc = newamerica.28.d
-  is_triggered_only = yes
-  picture = GFX_report_event_african_soldiers
+	id = newamerica.28
+	title = newamerica.28.t
+	desc = newamerica.28.d
+	is_triggered_only = yes
+	picture = GFX_report_event_african_soldiers
 
-  option = {
-	name = newamerica.28.a
-	add_political_power = -50
-  }
-  option = {
-	name = newamerica.28.b
-	add_stability = -0.05
-  }
+	option = {
+		name = newamerica.28.a
+		add_political_power = -50
+	}
+	option = {
+		name = newamerica.28.b
+		add_stability = -0.05
+	}
 }
 
 country_event = { # Invitation from NAR
@@ -861,7 +861,7 @@ country_event = { # Accepted Invitation
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 
-	option = { # 
+	option = { #
 		name = newamerica.101.a
 		if = {
 			limit = { is_faction_leader = yes }
@@ -906,7 +906,7 @@ country_event = { # Entry to the Entente
 	}
 	option = {
 		name = newamerica.103.b
-		FROM = { 
+		FROM = {
 			country_event = { id = newamerica.104 hours = 8 }
 		}
 	}
@@ -1028,7 +1028,7 @@ country_event = { # PHI Accepts
 		name = newamerica.109.a
 		if = {
 			limit = { is_faction_leader = yes }
-			add_to_faction = FROM 
+			add_to_faction = FROM
 		}
 	}
 }

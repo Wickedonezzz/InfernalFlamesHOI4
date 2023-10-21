@@ -12,9 +12,8 @@ set_stability = 0.50
 set_war_support = 0.50
 
 add_ideas = {
-	party_pop_0_90
-	backwards_economy
-	iliterate_population
+	CHI_backwards_economy
+	CHI_illiterate_population
 	parliamentary_republic
 }
 

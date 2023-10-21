@@ -6,7 +6,7 @@
 add_namespace = rhi
 add_namespace = rhi.test
 add_namespace = rhi.lore
-add_namespace = rhi.germany 
+add_namespace = rhi.germany
 add_namespace = rhi.france
 add_namespace = rhi.crisis
 add_namespace = rhi.political
@@ -22,15 +22,15 @@ country_event = {
 	picture = Ausgleich_dip_agree2
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = RHI
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = "The river flows on."
 	}
@@ -42,16 +42,16 @@ country_event = {
 	title = "Rhenish Politics"
 	desc = rhi.1.d
 	picture = Ausgleich_dip_agree2
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = RHI
 		date > 1936.1.10
 	}
-	
+
 	mean_time_to_happen = { days = 20 }
-	
+
 	option = {
 		name = "Will things ever change?"
 	}
@@ -73,27 +73,27 @@ country_event = {
 	}
 	option = {
 		name = "Infrastructure is essential."
- 		746 = {
+		746 = {
 			add_building_construction = {
 				type = infrastructure
 				level = 1
 				instant_build = yes
-				}
 			}
+		}
 		42 = {
 			add_building_construction = {
 				type = infrastructure
 				level = 1
 				instant_build = yes
-				}
 			}
+		}
 		868 = {
 			add_building_construction = {
 				type = infrastructure
 				level = 1
 				instant_build = yes
-				}
 			}
+		}
 	}
 	option = {
 		name = "Reserves are necessary."
@@ -191,26 +191,26 @@ country_event = {
 	title = "Crisis on the Rhine!"
 	desc = rhi.10.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = RHI
 		date > 1936.9.2
 		ENG = { has_country_flag = ENG_stock_crash }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = "Mein gott!"
-    add_ideas = {
-      RHI_S_rhine_crisis
-      RHI_Paul_Tirard_hog_ade
-      RHI_Andre_Francois_Poncet_for_pau
-    }
+		add_ideas = RHI_S_rhine_crisis
+
+		activate_advisor = RHI_Paul_Tirard_hog_ade
+		activate_advisor = RHI_Andre_Francois_Poncet_for_pau
+
 		add_stability = -0.03
 		hidden_effect = {
 			FRA = { country_event = rhi.france.1 }
@@ -219,16 +219,16 @@ country_event = {
 }
 #####
 #=Abandoned Branch
-#####	
+#####
 country_event = {
 	id = rhi.crisis.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rhi.crisis.1"}
 	title = "French Abandon Us!"
 	desc = rhi.11.d
 	picture = GFX_report_event_soldiers_in_france
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Damn them!"
 		add_stability = -0.10
@@ -238,16 +238,16 @@ country_event = {
 			country_event = { id = rhi.crisis.2 days = 14 }
 		}
 	}
-}	
+}
 country_event = {
 	id = rhi.crisis.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rhi.crisis.2"}
 	title = "Demands for Liberty"
 	desc = rhi.12.d
 	picture = GFX_report_event_generic_rally2
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "We must honor the Leipzig Declaration- allow the conference."
 		add_stability = 0.1
@@ -275,9 +275,9 @@ country_event = {
 	title = "Anarchy on the Rhine"
 	desc = rhi.13.d
 	picture = GFX_report_event_fascist_militia
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The government is paralized!"
 		add_stability = -0.20
@@ -288,21 +288,21 @@ country_event = {
 	}
 
 }
-#Rhine Conferance 
+#Rhine Conferance
 country_event = {
 	id = rhi.crisis.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rhi.crisis.4"}
 	title = "Rhine Conference Opens"
 	desc = rhi.14.d
 	picture = reichstag
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The fate of the Rhine hangs in the balance."
 		add_political_power = 25
 		hidden_effect = {
-		country_event = { id = rhi.crisis.5 days = 1 }
+			country_event = { id = rhi.crisis.5 days = 1 }
 		}
 	}
 }
@@ -313,9 +313,9 @@ country_event = {
 	title = "Week 1:Forming Factions"
 	desc = rhi.15.d
 	picture = GFX_report_event_generic_rally_3
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = { flag = RHI_conf value = 0 }
 	}
@@ -360,8 +360,8 @@ country_event = {
 	title = "Week 2:Adenauer's Speech"
 	desc = rhi.16.d
 	picture = GFX_report_event_generic_rally_3
-	
-	
+
+
 	is_triggered_only = yes
 	option = {
 		name = "A Standing Ovation"
@@ -392,7 +392,7 @@ country_event = {
 	title = "Week 3:Rhine Reperations"
 	desc = rhi.17.d
 	picture = GFX_report_event_generic_rally_3
-	
+
 	is_triggered_only = yes
 	option = {
 		name = "Konrad's Cooperation"
@@ -433,19 +433,19 @@ country_event = {
 	title = "Nationalist Victory"
 	desc = rhi.18.d
 	picture = GFX_report_event_election_vote
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = RHI
 		has_country_flag = rhi_conference_end
-		has_country_flag = { flag = RHI_conf value > 0}	
+		has_country_flag = { flag = RHI_conf value > 0}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = "Freedom at last!"
 		add_popularity = { ideology = national_populist popularity = 0.1 }
@@ -462,19 +462,19 @@ country_event = {
 	title = "Autonomist Victory"
 	desc = rhi.19.d
 	picture = GFX_report_event_election_vote
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = RHI
 		has_country_flag = rhi_conference_end
-		has_country_flag = { flag = RHI_conf value < 0}	
+		has_country_flag = { flag = RHI_conf value < 0}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = "Forward Together!"
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
@@ -491,23 +491,23 @@ country_event = {
 	title = "Valkist Putsche!"
 	desc = rhi.20.d
 	picture = GFX_report_event_german_troops
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = RHI
 		has_country_flag = rhi_conference_end
 		AND = {
-			has_country_flag = { flag = RHI_conf value < 1 }	
-			has_country_flag = { flag = RHI_conf value > -1 }	
+			has_country_flag = { flag = RHI_conf value < 1 }
+			has_country_flag = { flag = RHI_conf value > -1 }
 		}
-		
+
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = "Ask France to intervene!"
 		add_popularity = { ideology = valkist popularity = 0.10 }
@@ -536,11 +536,11 @@ country_event = {
 				limit = {
 					FRA = {is_ai = yes}
 				}
-				FRA = { 
-					#country_event = { 
-					#	id = rhi.france.7 
-					#	days = 1 
-					#}
+				FRA = {
+					#country_event = {
+						#	id = rhi.france.7
+						#	days = 1
+						#}
 				}
 			}
 			if = {
@@ -562,16 +562,16 @@ country_event = {
 	title = "French aid arives!"
 	desc = rhi.21.d
 	picture = GFX_report_event_soldiers_in_france
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = "But its not over yet..."
 		add_stability = 0.1
 		add_timed_idea = {
-				idea = RHI_S_french_aid
-				days = 60
-			}	
+			idea = RHI_S_french_aid
+			days = 60
+		}
 		hidden_effect = {
 			country_event = { id = rhi.crisis.12 days = 14 }
 		}
@@ -584,7 +584,7 @@ country_event = {
 	desc = rhi.22.d
 	picture = Ausgleich_dip_agree2
 
-	 
+
 	is_triggered_only = yes
 	option = {
 		name = "Entertain his demands"
@@ -608,7 +608,7 @@ country_event = {
 	desc = rhi.23.d
 	picture = Ausgleich_dip_agree2
 
-	 
+
 	is_triggered_only = yes
 	option = {
 		name = "Peace at last!"
@@ -625,7 +625,7 @@ country_event = {
 	desc = rhi.24.d
 	picture = GFX_report_event_fascist_militia
 
-	 
+
 	is_triggered_only = yes
 	option = {
 		add_stability = -0.2
@@ -645,10 +645,10 @@ country_event = {
 	title = "French Mandate Established"
 	desc = rhi.31.d
 	picture = GFX_report_event_soldiers_in_france
-	
-	 
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The chains tighten."
 		remove_ideas =  RHI_S_political_powderkeg
@@ -660,12 +660,12 @@ country_event = {
 			elections_allowed = no
 		}
 		hidden_effect = {
-      add_ideas = {
-        RHI_Henri_Mordacq_hog_ade
-        RHI_Andre_Francois_Poncet_for_pau
-        RHI_EF_Schumachher_eco_ade
-        RHI_Karl_von_Starck_sec_ade
-      }
+
+			activate_advisor = RHI_Henri_Mordacq_hog_ade
+			activate_advisor = RHI_Andre_Francois_Poncet_for_pau
+			activate_advisor = RHI_EF_Schumachher_eco_ade
+			activate_advisor = RHI_Karl_von_Starck_sec_ade
+
 			set_global_flag = RHI_F_crisis_end
 			set_global_flag = RHI_F_mandate
 			country_event = { id = rhi.political.5 days = 7 }
@@ -679,7 +679,7 @@ country_event = {
 	desc = rhi.32.d
 	picture = GFX_report_event_RHI_tst_troops
 
-	 
+
 	is_triggered_only = yes
 
 	option = {
@@ -692,48 +692,48 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = RHI_F_crisis_end
 			set_global_flag = RHI_F_valkist
-      add_ideas = {
-        RHI_Albert_Leo_Schlageter_hog_val
-        RHI_Walter_Stennes_for_val
-        RHI_Heinrich_Himmler_eco_val
-        RHI_Franz_Pfeffer_von_Salomon_sec_val
-      }
+
+			activate_advisor = RHI_Albert_Leo_Schlageter_hog_val
+			activate_advisor = RHI_Walter_Stennes_for_val
+			activate_advisor = RHI_Heinrich_Himmler_eco_val
+			activate_advisor = RHI_Franz_Pfeffer_von_Salomon_sec_val
+
 			remove_ideas = RHI_Charles_Mangin_cos
 			country_event = { id = rhi.political.5 days = 7 }
-		  retire_character = RHI_Charles_Mangin
-      retire_character = RHI_Adolphe_Guillaumat
-      retire_character = RHI_Louis_Theodore_Kleinmann
-      retire_character = RHI_Henri_Mordacq
-      retire_character = RHI_Albert_Tanant
-      retire_character = RHI_Victor_Louis_Goybet
+			retire_character = RHI_Charles_Mangin
+			retire_character = RHI_Adolphe_Guillaumat
+			retire_character = RHI_Louis_Theodore_Kleinmann
+			retire_character = RHI_Henri_Mordacq
+			retire_character = RHI_Albert_Tanant
+			retire_character = RHI_Victor_Louis_Goybet
 		}
-    add_field_marshal_role = {
-      character = RHI_Viktor_Lutze
-      traits = { politically_connected organizer }
-      skill = 3
-      attack_skill = 2
-      defense_skill = 2
-      planning_skill = 3
-      logistics_skill = 3
-    }
-    add_corps_commander_role = {
-      character = RHI_Albert_Leo_Schlageter
-      traits = {brilliant_strategist politically_connected trait_reckless}
+		add_field_marshal_role = {
+			character = RHI_Viktor_Lutze
+			traits = { politically_connected organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		add_corps_commander_role = {
+			character = RHI_Albert_Leo_Schlageter
+			traits = {brilliant_strategist politically_connected trait_reckless}
 			skill = 4
 			attack_skill = 4
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
-    }
-    add_corps_commander_role = {
-      character = RHI_Franz_Pfeffer_von_Salomon
-      traits = {politically_connected harsh_leader}
+		}
+		add_corps_commander_role = {
+			character = RHI_Franz_Pfeffer_von_Salomon
+			traits = {politically_connected harsh_leader}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
-    }
+		}
 		#FRA = { remove_ideas = FRA_rhineland_coal }
 		remove_ideas = RHI_S_rhineland_coal
 		delete_unit_template_and_units = { division_template = "French Garrison" }
@@ -745,10 +745,10 @@ country_event = {
 	title = "The Rhenish Free State"
 	desc = rhi.33.d
 	picture = popularity_rising
-	
-	 
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Forward together!"
 		add_ideas = presidential_republic
@@ -759,11 +759,11 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = RHI_F_crisis_end
 			set_global_flag = RHI_F_autonomous
-      add_ideas = {
-        RHI_Josef_Friedrich_Matthes_hog_sde
-        RHI_Franz_Blucher_eco_sco
-        RHI_Wilhelm_Rombach_sec_sco
-      }
+
+			activate_advisor = RHI_Josef_Friedrich_Matthes_hog_sde
+			activate_advisor = RHI_Franz_Blucher_eco_sco
+			activate_advisor = RHI_Wilhelm_Rombach_sec_sco
+
 			country_event = { id = rhi.political.5 days = 7 }
 		}
 	}
@@ -774,8 +774,8 @@ country_event = {
 	title = "The Rhenish Confederation"
 	desc = rhi.34.d
 	picture =  popularity_rising
-	
-	 
+
+
 	is_triggered_only = yes
 
 	option = {
@@ -791,38 +791,38 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = RHI_F_crisis_end
 			set_global_flag = RHI_F_independent
- 	    add_ideas = {
-         RHI_Hans_Adam_Dorten_hog_npo
-         RHI_Kurt_Tucholsky_for_sde
-         RHI_Walter_Kolb_eco_sde
-         RHI_Georg_Buch_sec_sde
-       }
-			remove_ideas = RHI_Charles_Mangin_cos
+
+			activate_advisor = RHI_Hans_Adam_Dorten_hog_npo
+			activate_advisor = RHI_Kurt_Tucholsky_for_sde
+			activate_advisor = RHI_Walter_Kolb_eco_sde
+			activate_advisor = RHI_Georg_Buch_sec_sde
+
+			remove_ideas = RHI_Charles_Mangin_cos_pau
 			country_event = { id = rhi.36 days = 7 }
-      retire_character = RHI_Charles_Mangin
-      retire_character = RHI_Adolphe_Guillaumat
-      retire_character = RHI_Louis_Theodore_Kleinmann
-      retire_character = RHI_Henri_Mordacq
-      retire_character = RHI_Albert_Tanant
-      retire_character = RHI_Victor_Louis_Goybet
-      add_field_marshal_role = {
-        character = RHI_Hans_Adam_Dorten
-        traits = {inspirational_leader defensive_doctrine politically_connected media_personality}
-        skill = 2
-        attack_skill = 1
-        defense_skill = 2
-        planning_skill = 2
-        logistics_skill = 2
-      }
-      add_corps_commander_role = {
-        character = RHI_Otto_Lichtschlag
-        traits = {urban_assault_specialist politically_connected war_hero}
-        skill = 4
-        attack_skill = 4
-        defense_skill = 4
-        planning_skill = 2
-        logistics_skill = 2
-      }
+			retire_character = RHI_Charles_Mangin
+			retire_character = RHI_Adolphe_Guillaumat
+			retire_character = RHI_Louis_Theodore_Kleinmann
+			retire_character = RHI_Henri_Mordacq
+			retire_character = RHI_Albert_Tanant
+			retire_character = RHI_Victor_Louis_Goybet
+			add_field_marshal_role = {
+				character = RHI_Hans_Adam_Dorten
+				traits = {inspirational_leader defensive_doctrine politically_connected media_personality}
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			add_corps_commander_role = {
+				character = RHI_Otto_Lichtschlag
+				traits = {urban_assault_specialist politically_connected war_hero}
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 2
+			}
 		}
 	}
 }
@@ -831,8 +831,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rhi.political.4"}
 	title = "The 1938 Elections"
 	desc = rhi.35.d
-	picture = GFX_report_event_election_vote 
-	
+	picture = GFX_report_event_election_vote
+
 	fire_only_once = yes
 
 	trigger = {
@@ -853,12 +853,10 @@ country_event = {
 		}
 		add_popularity = { ideology = national_populist popularity = 0.25 }
 		hidden_effect = {
-      add_ideas = {
-        RHI_Otto_Lichtschlag_hog_npo
-        RHI_Theodor_Reismann_Grone_for_npo
-        RHI_Emil_Kirdorf_eco_npo
-        RHI_Walther_Lichtschlag_sec_npo
-      }
+			activate_advisor = RHI_Otto_Lichtschlag_hog_npo
+			activate_advisor = RHI_Theodor_Reismann_Grone_for_npo
+			activate_advisor = RHI_Emil_Kirdorf_eco_npo
+			activate_advisor = RHI_Walther_Lichtschlag_sec_npo
 		}
 	}
 	option = {
@@ -869,12 +867,10 @@ country_event = {
 		}
 		add_popularity = { ideology = social_democrat popularity = 0.25 }
 		hidden_effect = {
-      add_ideas = {
-        RHI_Kurt_Tucholsky_hog_sde
-        RHI_Walter_Kreiser_for_sde
-        RHI_Walter_Kolb_eco_sde
-        RHI_Georg_Buch_sec_sde
-      }
+			activate_advisor = RHI_Kurt_Tucholsky_hog_sde
+			activate_advisor = RHI_Walter_Kreiser_for_sde
+			activate_advisor = RHI_Walter_Kolb_eco_sde
+			activate_advisor = RHI_Georg_Buch_sec_sde
 		}
 	}
 }
@@ -884,8 +880,8 @@ country_event = {
 	title = "Choosing a Capital"
 	desc = rhi.36.d
 	picture = Ausgleich_dip_agree2
-	
-	 
+
+
 	is_triggered_only = yes
 
 	option = {
@@ -914,7 +910,7 @@ country_event = { #Mandate
 	desc = rhi.50.d
 	picture = GFX_report_event_generic_conference
 
-	 
+
 	is_triggered_only = yes
 
 	option = {
@@ -929,7 +925,7 @@ country_event = { #Autonomous
 	desc = rhi.51.d
 	picture = GFX_report_event_generic_conference
 
-	 
+
 	is_triggered_only = yes
 
 	option = {
@@ -941,7 +937,7 @@ country_event = { #Autonomous
 	option = {
 		name = "We have nothing to fear."
 		hidden_effect = {
-			country_event = { id = rhi.53 hours = 8 } 
+			country_event = { id = rhi.53 hours = 8 }
 		}
 	}
 }
@@ -952,7 +948,7 @@ country_event = { #Independent
 	desc = rhi.52.d
 	picture = GFX_report_event_generic_conference
 
-	 
+
 	is_triggered_only = yes
 
 	option = {
@@ -964,7 +960,7 @@ country_event = { #Independent
 	option = {
 		name = "We have nothing to fear."
 		hidden_effect = {
-			country_event = { id = rhi.53 hours = 8 } 
+			country_event = { id = rhi.53 hours = 8 }
 		}
 	}
 }
@@ -973,9 +969,9 @@ country_event = { #Referendum
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rhi.53"}
 	title = "Referendum Day"
 	desc = rhi.53.d
-	picture = GFX_report_event_election_vote 
+	picture = GFX_report_event_election_vote
 
-	 
+
 	is_triggered_only = yes
 	option = { #sure
 		name = "We shall see"
@@ -1019,19 +1015,19 @@ country_event = {
 	title = "Watch on the Rhine"
 	desc = rhi.101.d
 	picture = GFX_run_on_the_banks
-	
-	 
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Relieve the Rhine"
 		add_stability = -0.06
 		add_timed_idea = {
-				idea = FRA_S_rhine_relief
-				days = 60
-			}	
+			idea = FRA_S_rhine_relief
+			days = 60
+		}
 		hidden_effect = {
-		RHI = { country_event = rhi.crisis.11 }
+			RHI = { country_event = rhi.crisis.11 }
 
 		}
 
@@ -1043,7 +1039,7 @@ country_event = {
 		name = "France comes first!"
 		add_political_power = 10
 		hidden_effect = {
-		RHI = { country_event = { id = rhi.crisis.1 days = 1 }}
+			RHI = { country_event = { id = rhi.crisis.1 days = 1 }}
 		}
 
 		ai_chance = {
@@ -1057,11 +1053,11 @@ country_event = {
 	title = "The Fate of the Rhine"
 	desc = rhi.102.d
 	picture = GFX_report_event_generic_conference
-	
-	 
-	
+
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Allow the Rhenish Conference"
 		add_political_power = 50
@@ -1091,17 +1087,17 @@ country_event = {
 	title = "Anarchy in the Rhine"
 	desc = rhi.103.d
 	picture = GFX_report_event_fascist_militia
-	
-	 
-	
+
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Restore Order"
 		add_stability = -0.02
 		add_manpower = -10000
 		hidden_effect = {
-		RHI= { country_event = { id = rhi.crisis.21 days = 3 }}
+			RHI= { country_event = { id = rhi.crisis.21 days = 3 }}
 		}
 		ai_chance = {
 			factor = 320
@@ -1111,8 +1107,8 @@ country_event = {
 		name = "Abandon the Rhine"
 		add_stability = -0.05
 		hidden_effect = {
-			RHI= { 
-				#country_event = rhi.crisis.32 
+			RHI= {
+				#country_event = rhi.crisis.32
 			}
 		}
 		ai_chance = {
@@ -1126,17 +1122,17 @@ country_event = {
 	title = "Anarchy in the Rhine"
 	desc = rhi.103.d
 	picture = GFX_report_event_fascist_militia
-	
-	 
-	
+
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Abandon the Rhine"
 		add_stability = -0.05
 		hidden_effect = {
-			RHI= { 
-				#country_event = rhi.crisis.32 
+			RHI= {
+				#country_event = rhi.crisis.32
 			}
 		}
 		ai_chance = {
@@ -1150,19 +1146,19 @@ country_event = {
 	title = "Anarchy in the Rhine"
 	desc = rhi.103.d
 	picture = GFX_report_event_fascist_militia
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Restore Order"
 		add_stability = -0.02
 		add_manpower = -10000
 		hidden_effect = {
-			RHI= { 
-				#country_event = { 
-				#	id = rhi.crisis.32 
-				#	days = 3 
-				#}
+			RHI= {
+				#country_event = {
+					#	id = rhi.crisis.32
+					#	days = 3
+					#}
 			}
 		}
 		ai_chance = {
@@ -1176,16 +1172,16 @@ country_event = {
 	title = "Adenauer's Proposal"
 	desc = rhi.104.d
 	picture = GFX_report_event_generic_conference
-	
-	 
-	
+
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Form the Rhenish Autonomy"
 		add_political_power = -10
 		hidden_effect = {
-		RHI = { country_event = { id = rhi.crisis.13 days = 3 }}
+			RHI = { country_event = { id = rhi.crisis.13 days = 3 }}
 		}
 		ai_chance = {
 			factor = 160
@@ -1208,16 +1204,16 @@ country_event = {
 	title = "Trouble in the Rhine"
 	desc = rhi.105.d
 	picture = GFX_report_event_generic_conference
-	
-	 
-	
+
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Form the Rhenish Autonomy"
 		add_political_power = -25
 		hidden_effect = {
-		RHI = { country_event = rhi.crisis.13 }
+			RHI = { country_event = rhi.crisis.13 }
 		}
 		ai_chance = {
 			factor = 40
@@ -1242,10 +1238,10 @@ country_event = {
 	title = "Germany demands Referendum!"
 	desc = rhi.106.d
 	picture = GFX_report_event_RHI_tst_troops
-	
+
 	is_triggered_only = yes
-	 
-	
+
+
 	option = {
 		name = "Allow the Referendum!"
 		trigger = {
@@ -1258,8 +1254,8 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				FRA = {
-					AND = {    has_country_flag = { flag = FRA_german_threat value > 0 } 
-					has_country_flag = { flag = FRA_german_threat value < 2 }
+					AND = {    has_country_flag = { flag = FRA_german_threat value > 0 }
+						has_country_flag = { flag = FRA_german_threat value < 2 }
 						NOT = {
 							has_war_with = GER
 						}
@@ -1268,9 +1264,9 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.25
-				FRA = { 
-					AND = {    has_country_flag = { flag = FRA_german_threat value > 1 } 
-					has_country_flag = { flag = FRA_german_threat value < 3 }
+				FRA = {
+					AND = {    has_country_flag = { flag = FRA_german_threat value > 1 }
+						has_country_flag = { flag = FRA_german_threat value < 3 }
 						NOT = {
 							has_war_with = GER
 						}
@@ -1279,9 +1275,9 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.125
-				FRA = { 
-					AND = {    has_country_flag = { flag = FRA_german_threat value > 2 } 
-					has_country_flag = { flag = FRA_german_threat value < 4 }
+				FRA = {
+					AND = {    has_country_flag = { flag = FRA_german_threat value > 2 }
+						has_country_flag = { flag = FRA_german_threat value < 4 }
 						NOT = {
 							has_war_with = GER
 						}
@@ -1308,9 +1304,9 @@ country_event = {
 			factor = 160 # Was 40
 			modifier = {
 				factor = 1.5
-				FRA = { 
-					AND = {    has_country_flag = { flag = FRA_german_threat value > 0 } 
-					has_country_flag = { flag = FRA_german_threat value < 2 }
+				FRA = {
+					AND = {    has_country_flag = { flag = FRA_german_threat value > 0 }
+						has_country_flag = { flag = FRA_german_threat value < 2 }
 						NOT = {
 							has_war_with = GER
 						}
@@ -1320,8 +1316,8 @@ country_event = {
 			modifier = {
 				factor = 2
 				FRA = {
-					AND = {    has_country_flag = { flag = FRA_german_threat value > 1 } 
-					has_country_flag = { flag = FRA_german_threat value < 3 }
+					AND = {    has_country_flag = { flag = FRA_german_threat value > 1 }
+						has_country_flag = { flag = FRA_german_threat value < 3 }
 						NOT = {
 							has_war_with = GER
 						}
@@ -1330,9 +1326,9 @@ country_event = {
 			}
 			modifier = {
 				factor = 2.5
-				FRA = { 
-					AND = {    has_country_flag = { flag = FRA_german_threat value > 2 } 
-					has_country_flag = { flag = FRA_german_threat value < 4 }
+				FRA = {
+					AND = {    has_country_flag = { flag = FRA_german_threat value > 2 }
+						has_country_flag = { flag = FRA_german_threat value < 4 }
 						NOT = {
 							has_war_with = GER
 						}
@@ -1354,8 +1350,8 @@ country_event = {
 			GER = { set_country_flag = referendum_denied }
 			GER = { country_event = { id = rhi.202 hours = 2 }}
 		}
-		}
 	}
+}
 #########################
 #-German Response Events#
 #########################
@@ -1365,10 +1361,10 @@ country_event = {
 	title = "Referendum Success!"
 	desc = rhi.200.d
 	picture = GFX_report_event_RHI_tst_troops
-	
-	 
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "United at Last"
 		add_political_power = 50
@@ -1391,10 +1387,10 @@ country_event = {
 	title = "Referendum Failure!"
 	desc = rhi.201.d
 	picture = GFX_report_event_RHI_tst_troops
-	
-	 
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Damn the Rhine!"
 		add_stability = -0.05
@@ -1416,7 +1412,7 @@ country_event = {
 				type = annex_everything
 			}
 		}
-		
+
 		if = {
 			limit = {
 				GER = {
@@ -1428,7 +1424,7 @@ country_event = {
 				type = annex_everything
 			}
 		}
-			
+
 		ai_chance = {
 			factor = 200
 		}
@@ -1440,10 +1436,10 @@ country_event = {
 	title = "Referendum Blocked!"
 	desc = rhi.202.d
 	picture = GFX_report_event_RHI_tst_troops
-	
-	 
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Damn the Rhine!"
 		add_stability = -0.1
@@ -1465,7 +1461,7 @@ country_event = {
 				type = annex_everything
 			}
 		}
-		
+
 		if = {
 			limit = {
 				GER = {
@@ -1492,10 +1488,10 @@ country_event = {
 	picture = Ausgleich_dip_agree2
 
 	fire_only_once = no
-	
+
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = RHI_rhineland_history
 	}
@@ -1508,10 +1504,10 @@ country_event = {
 	picture = Ausgleich_dip_agree2
 
 	fire_only_once = no
-	
+
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = "The river flows on."
 	}
@@ -1524,10 +1520,10 @@ country_event = {
 	picture = Ausgleich_dip_agree2
 
 	fire_only_once = no
-	
+
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = "The river flows on."
 	}
@@ -1540,10 +1536,10 @@ country_event = {
 	picture = Ausgleich_dip_agree2
 
 	fire_only_once = no
-	
+
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = "The river flows on."
 	}
@@ -1556,10 +1552,10 @@ country_event = {
 	picture = Ausgleich_dip_agree2
 
 	fire_only_once = no
-	
+
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = "The river flows on."
 	}
@@ -1572,10 +1568,10 @@ country_event = {
 	picture = Ausgleich_dip_agree2
 
 	fire_only_once = no
-	
+
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = "The river flows on."
 	}
@@ -1583,7 +1579,7 @@ country_event = {
 
 # RHINELAND WILL LIVVVEEEEEE - Drowse
 
-country_event = { # Valkists Defect to Germany 
+country_event = { # Valkists Defect to Germany
 	id = rhi.400
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rhi.400"}
 	title = rhi.400.t
@@ -1599,19 +1595,19 @@ country_event = { # Valkists Defect to Germany
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-		
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = rhi.400.a
 		add_manpower = -20000
 		add_popularity = {
 			ideology = valkist
-			popularity = -0.15	
+			popularity = -0.15
 		}
 		hidden_effect = {
 			GER = {
@@ -1629,9 +1625,9 @@ country_event = { # Valkists Defect to Germany - Response
 	picture = Ausgleich_dip_agree2
 
 	is_triggered_only = yes
-		
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = rhi.401.a
 		add_manpower = 20000
@@ -1639,7 +1635,7 @@ country_event = { # Valkists Defect to Germany - Response
 			load_oob = GER_valkist_rhinemen
 			GER = {
 				country_event = { id = rhi.402 days = 14 }
-			}			
+			}
 		}
 	}
 }
@@ -1652,16 +1648,16 @@ country_event = { # Valkists rise up in Rhine to assist Germany
 	picture = Ausgleich_dip_agree2
 
 	is_triggered_only = yes
-		
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = rhi.402.a
-		add_equipment_to_stockpile = {	
+		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = -2000
 			producer = GER
-		}			
+		}
 		hidden_effect = {
 			GER = {
 				set_province_controller = 3547
@@ -1672,7 +1668,7 @@ country_event = { # Valkists rise up in Rhine to assist Germany
 			RHI = {
 				add_popularity = {
 					ideology = valkist
-					popularity = -0.1	
+					popularity = -0.1
 				}
 			}
 		}

@@ -201,6 +201,9 @@ FRA_area_priority = {
 	enable = {
 		original_tag = FRA
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = area_priority
@@ -268,6 +271,10 @@ FRA_naval_role_ratios_historical = {
 		has_dlc = "Man the Guns"
 		original_tag = FRA
 	}
+	abort = {
+		always = no
+	}
+
 
 	ai_strategy = {
 		type = role_ratio

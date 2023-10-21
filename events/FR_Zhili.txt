@@ -625,9 +625,9 @@ country_event = {
 			}
 		}
 		retire_character = ZHI_Wu
-		add_ideas = ZHI_Sun_Chuanfang_hog
-		add_ideas = ZHI_Gao_Lingwei_eco
-		add_ideas = ZHI_Pan_Juying_sec
+		activate_advisor = ZHI_Sun_Chuanfang_hog_pau
+		activate_advisor = ZHI_Gao_Lingwei_eco_ade
+		activate_advisor = ZHI_Pan_Juying_sec_pau
 		hidden_effect = {
 			set_country_flag = Wu_Peifu_dead
 		}
@@ -740,9 +740,9 @@ country_event = {
 
 	option = {
 		name = zhi.17.a
-		add_ideas = ZHI_Cao_Kun_hog
-		add_ideas = ZHI_Tang_Erho_eco
-		add_ideas = ZHI_Wen_Shizhen_sec
+		activate_advisor = ZHI_Cao_Kun_hog_ade
+		activate_advisor = ZHI_Tang_Erho_eco_ade
+		activate_advisor = ZHI_Wen_Shizhen_sec_ade
 	}
 }
 country_event = {
@@ -773,8 +773,8 @@ country_event = {
 
 	option = {
 		name = zhi.19.a
-		add_ideas = ZHI_Ku_Wei_Chun_for
-		add_ideas = ZHI_Wen_Shizhen_sec
+		activate_advisor = ZHI_Ku_Wei_Chun_for
+		activate_advisor = ZHI_Wen_Shizhen_sec_ade
 	}
 	option = {
 		name = zhi.19.b
@@ -994,7 +994,6 @@ country_event = {
 	option = {
 		name = zhi.29.a
 		clr_country_flag = Long_Yun_dead
-		add_ideas = ZHI_Long_Yun_sec
 	}
 }
 country_event = {
@@ -1059,7 +1058,6 @@ country_event = {
 	option = {
 		name = zhi.32.a
 		clr_country_flag = Deng_Xihou_dead
-		add_ideas = ZHI_Deng_Xihou_for
 	}
 }
 country_event = {

@@ -86,7 +86,7 @@ ideas = {
 				}
 				NOT = { original_tag = ENG }
 			}
-
+			
 			ai_will_do = {
 				factor = 0
 			}

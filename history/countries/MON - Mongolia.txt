@@ -9,7 +9,6 @@ set_technology = {
 }
 
 add_ideas = {
-	party_pop_0_30
 	limited_conscription
 	MON_without_khan
 	MON_nomad

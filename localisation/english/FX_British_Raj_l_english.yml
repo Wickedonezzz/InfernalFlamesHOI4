@@ -1,39 +1,9 @@
 ﻿l_english:
 
 ### Country Names
-RAJ_vanguardist: "Popular Indian State"
-RAJ_vanguardist_ADJ: "Indian"
-RAJ_vanguardist_DEF: "The Popular Indian State"
-RAJ_collectivist: "Indian Communal Republic"
-RAJ_collectivist_ADJ: "Indian"
-RAJ_collectivist_DEF: "The Communal Republic of India"
-RAJ_libertarian_socialist: "Workers Commonwealth of India"
-RAJ_libertarian_socialist_ADJ: "Indian"
-RAJ_libertarian_socialist_DEF: "The Indian Workers Commonwealth"
-RAJ_social_democrat: "Indian Republic"
-RAJ_social_democrat_ADJ: "Indian"
-RAJ_social_democrat_DEF: "The Republic of India"
-RAJ_social_liberal: "Indian Republic"
-RAJ_social_liberal_ADJ: "Indian"
-RAJ_social_liberal_DEF: "The Republic of India"
-RAJ_market_liberal: "Indian Republic"
-RAJ_market_liberal_ADJ: "Indian"
-RAJ_market_liberal_DEF: "The Republic of India"
-RAJ_social_conservative: "Indian Republic"
-RAJ_social_conservative_ADJ: "Indian"
-RAJ_social_conservative_DEF: "The Republic of India"
-RAJ_authoritarian_democrat: "Indian State"
-RAJ_authoritarian_democrat_ADJ: "Indian"
-RAJ_authoritarian_democrat_DEF: "The Indian State"
-RAJ_paternal_autocrat: "Indian Transitional Government"
-RAJ_paternal_autocrat_ADJ: "Indian"
-RAJ_paternal_autocrat_DEF: "The Indian Transitional Government"
-RAJ_national_populist: "Indian State"
-RAJ_national_populist_ADJ: "Indian"
-RAJ_national_populist_DEF: "The Indian State"
-RAJ_valkist: "Valkist India"
-RAJ_valkist_ADJ: "Indian"
-RAJ_valkist_DEF: "Valkist India"
+RAJ: "India"
+RAJ_ADJ: "Indian"
+RAJ_DEF: "the Republic of India"
 
 ### Parties
 RAJ_vanguardist_party: "Communist Party of India"
@@ -52,12 +22,12 @@ RAJ_social_conservative_party: "Congress Nationalist Party"
 RAJ_social_conservative_party_long: "Congress Nationalist Party"
 RAJ_authoritarian_democrat_party: "British Administration"
 RAJ_authoritarian_democrat_party_long: "British Colonial Administration"
-RAJ_paternal_autocrat_party: "Council of Princes"
-RAJ_paternal_autocrat_party_long: "Council of Princes"
-RAJ_national_populist_party: "Rashtriya Swayamsevak Sangh"
-RAJ_national_populist_party_long: "Rashtriya Swayamsevak Sangh"
-RAJ_valkist_party: "Hindu Mahasabha"
-RAJ_valkist_party_long: "Akhil Bharatiya Hindu Mahasabha"
+RAJ_paternal_autocrat_party: "British Administration"
+RAJ_paternal_autocrat_party_long: "British Colonial Administration"
+RAJ_national_populist_party: "British Administration"
+RAJ_national_populist_party_long: "British Colonial Administration"
+RAJ_valkist_party: "British Administration"
+RAJ_valkist_party_long: "British Colonial Administration"
 
 #################
 #####THE RAJ#####
@@ -65,12 +35,9 @@ RAJ_valkist_party_long: "Akhil Bharatiya Hindu Mahasabha"
 
 ### Leaders ###
 POLITICS_LORD_LINLITHGOW_DESC: "§GPolitical Dossier\n§GBorn:§W\nSeptember 6th 1887, South Queensferry, Scotland\n§GMilitary Career:\n§WLinlithgow served as an officer on the Western Front during the First World War. Transferred from Lothians and Border Horse, he commanded a battalion of the Royal Scots. He was mentioned in dispatches and appointed an Officer of the Order of the British Empire, ending the war with the rank of colonel.\n\n-Knight of the Most Noble Order of the Garter\n-Knight Companion of the Most Ancient and Most Noble Order of the Thistle\n-Knight Grand Commander of the Most Exalted Order of the Star of India\n-Knight Grand Commander of the Most Eminent Order of the Indian Empire\n-Officer of the Most Excellent Order of the British Empire\n-Recipient of the Territorial Decoration\n§GNotes:§W\n-Royal Background\n-Conservative"
-
-RAJ_frank_messervy_desc: "§GMilitary Dossier\n§GBorn:§W\nDecember 9th 1893, South Queensferry, Scotland\n§GMilitary Career:\n§WMesservy was educated at Eton College and the Royal Military College, Sandhurst and was commissioned into the Indian Army in 1913 and in 1914 joined 9th Hodson's Horse. which later became part of 4th Duke of Cambridge's Own Hodson's Horse. He would see action in the First World War in France, Palestine and Syria from 1914 to 1918. He later served in Kurdistan in 1919. In 1932 Messervy was appointed as an instructor at the Command and Staff College in Quetta.\n\n-Knight Commander of the Order of the Star of India\n-Knight Commander of the Order of the British Empire\n-Companion of the Order of the Bath\n§GNotes:§W\n-Slightly Eccentric\n-Mediocre Armor Tactician"
-
-RAJ_noel_beresford_peirse_desc: "§GMilitary Dossier\n§GBorn:§W\nDecember 22nd 1887, Ireland\n§GMilitary Career:\n§WBeresford-Peirse was commissioned into the Royal Artillery in 1907. He served in the First World War in, briefly, Egypt in 1914 then Mesopotamia back to Egypt and finally France and Belgium. He was Mentioned in Dispatches and awarded the Distinguished Service Order in 1918. After the First World War and after attendance at the Staff College, Camberley from 1924 to 1925, until 1929, he performed a number of roles in the Royal Artillery in France and Britain. There were then staff and administrative posts in the UK until 1935. In 1936, Beresford-Peirse was posted to India for "special duties" and has been assigned as instructor at the Senior Officers' School in Belgaum, India.\n\n-Companion of the Order of the Bath\n§GNotes:§W\n-Chaotic personal life"
-
-RAJ_douglas_gracey_desc: "§GMilitary Dossier\n§GBorn:§W\nSeptember 3rd 1894, Muzaffarnagar, Uttar Pradesh, British India\n§GMilitary Career:\n§WEducated at Blundell's School and the Royal Military College, Sandhurst, Gracey was commissioned onto the Unattached List, Indian Army on 15 August 1914 as a second lieutenant. By early 1915 he had been attached to the 5th Extra Reserve Battalion, Royal Munster Fusiliers. He served in France from 11 January to 2 May 1915 when he was wounded. In September 1915 he was appointed from the unattached list of the Indian Army into the 1st King George's Own Gurkha Rifles (The Malaun Regiment) with the rank of second lieutenant. With his Indian Army regiment he saw active service in Mesopotamia and Palestine and was awarded the Military Cross (MC) in 1917 and again in 1919 Between the wars he became an instructor at the Royal Military College, Sandhurst, in 1925, commanding one of the cadet companies. After this he attended the Staff College, Quetta from 1928 to 1929 and his fellow students included Colin Gubbins, John Crocker, Eric Goddard, Lionel Cox and Henry Davies, among many others, who were destined to achieve general officer rank. In peacetime promotion came slowly and brevet ranks were used as an interim step to the next rank up for officers who performed well. In 1930 Gracey received promotion to brevet major. In late 1931 he was appointed a GSO2 at GHQ India and by the time this appointment finished in late 1935 he had received his promotion to major..\n\n-Companion of the Order of the Bath\n§GNotes:§W\n-Popular among his soldiers\n-Very familiar with India"
+ARMY_FRANK_MESSERVY_DESC: "§GMilitary Dossier\n§GBorn:§W\nDecember 9th 1893, South Queensferry, Scotland\n§GMilitary Career:\n§WMesservy was educated at Eton College and the Royal Military College, Sandhurst and was commissioned into the Indian Army in 1913 and in 1914 joined 9th Hodson's Horse. which later became part of 4th Duke of Cambridge's Own Hodson's Horse. He would see action in the First World War in France, Palestine and Syria from 1914 to 1918. He later served in Kurdistan in 1919. In 1932 Messervy was appointed as an instructor at the Command and Staff College in Quetta.\n\n-Knight Commander of the Order of the Star of India\n-Knight Commander of the Order of the British Empire\n-Companion of the Order of the Bath\n§GNotes:§W\n-Slightly Eccentric\n-Mediocre Armor Tactician"
+ARMY_NOEL_BERESFORD_PEIRSE_DESC: "§GMilitary Dossier\n§GBorn:§W\nDecember 22nd 1887, Ireland\n§GMilitary Career:\n§WBeresford-Peirse was commissioned into the Royal Artillery in 1907. He served in the First World War in, briefly, Egypt in 1914 then Mesopotamia back to Egypt and finally France and Belgium. He was Mentioned in Dispatches and awarded the Distinguished Service Order in 1918. After the First World War and after attendance at the Staff College, Camberley from 1924 to 1925, until 1929, he performed a number of roles in the Royal Artillery in France and Britain. There were then staff and administrative posts in the UK until 1935. In 1936, Beresford-Peirse was posted to India for "special duties" and has been assigned as instructor at the Senior Officers' School in Belgaum, India.\n\n-Companion of the Order of the Bath\n§GNotes:§W\n-Chaotic personal life"
+ARMY_DOUGLAS_GRACEY_DESC: "§GMilitary Dossier\n§GBorn:§W\nSeptember 3rd 1894, Muzaffarnagar, Uttar Pradesh, British India\n§GMilitary Career:\n§WEducated at Blundell's School and the Royal Military College, Sandhurst, Gracey was commissioned onto the Unattached List, Indian Army on 15 August 1914 as a second lieutenant. By early 1915 he had been attached to the 5th Extra Reserve Battalion, Royal Munster Fusiliers. He served in France from 11 January to 2 May 1915 when he was wounded. In September 1915 he was appointed from the unattached list of the Indian Army into the 1st King George's Own Gurkha Rifles (The Malaun Regiment) with the rank of second lieutenant. With his Indian Army regiment he saw active service in Mesopotamia and Palestine and was awarded the Military Cross (MC) in 1917 and again in 1919 Between the wars he became an instructor at the Royal Military College, Sandhurst, in 1925, commanding one of the cadet companies. After this he attended the Staff College, Quetta from 1928 to 1929 and his fellow students included Colin Gubbins, John Crocker, Eric Goddard, Lionel Cox and Henry Davies, among many others, who were destined to achieve general officer rank. In peacetime promotion came slowly and brevet ranks were used as an interim step to the next rank up for officers who performed well. In 1930 Gracey received promotion to brevet major. In late 1931 he was appointed a GSO2 at GHQ India and by the time this appointment finished in late 1935 he had received his promotion to major..\n\n-Companion of the Order of the Bath\n§GNotes:§W\n-Popular among his soldiers\n-Very familiar with India"
 
 #### Tooltips ####
 RAJ_Revolt_tooltip: "§RThe Revolt has begun.§!\n"
@@ -104,6 +71,8 @@ RAJ_princely_states: "The Princely States"
 RAJ_princely_states_desc: "The Princely States have long been semi-autonomous kingdoms within the Raj. Providing them autonomy has assaunged some unrest within their borders, but our lack of direct control over them creates a drag on our administration. Balancing the autonomy of these states is important to the survival of the Raj."
 RAJ_Indian_Officers: "Indian Officers"
 RAJ_Indian_Officers_desc: ""
+RAJ_British_Officers: "British Officers"
+RAJ_British_Officers_desc: ""
 RAJ_improved_conditions: "Improving Conditions"
 RAJ_improved_conditions_desc: ""
 RAJ_new_nation: "A New Nation"
@@ -375,8 +344,8 @@ RAJ_reforming_military: "Reforming the Military"
 RAJ_reforming_admin: "Reforming the Administration"
 
 #####Flags#####
-RAJ_Coming_Storm: "§RA storm is coming.§!\n"
-RAJ_Peace: "§RThe storm has passed.§!\n"
+RAJ_Coming_Storm: "Our intelligence networks have intercepted an §Yincoming revolt§!."
+RAJ_Peace: "The revolt has §Yfailed§!."
 RAJ_Indian_Army: "§WWe have chosen to maintain the current system.§!\n"
 RAJ_British_Army: "§WWe have chosen to reform the army.§!\n"
 RAJ_Chose_Status_Quo: "§WWe have chosen to keep to the status quo.§!\n"
@@ -590,6 +559,7 @@ raj.83.a: "Long live India!"
 raj.84.t: "The Raj Requests Reparations"
 raj.84.d: "Our diplomats in the British Raj received an odd request today. The government of the Raj is requesting reparations from us for the 'one and a half centuries of British suppression and hijacking of Indian industry.' They are referencing, of course, the East India Company, which is functionally no more but which helped us consolidate control over the Indian subcontinent a century ago. The reparations they are requesting are staggeringly huge, but in all likelihood they aren't actually expecting us to agree. Still, it might be worth sending a little money their way to placate them. We never did anything wrong, of course, but it's a small price to pay to keep them from revolting again."
 raj.84.a: "We can work out the details in a few years."
+raj.84.b: "That won't be happening"
 
 raj.85.t: "Transition to Dominionhood"
 raj.85.d: "There is cheering in the streets. Entire parades of people fill the avenues and boulevards of every major city, from Dhaka to Karachi. Hindus and Muslims alike celebrated as the new flag of the new Dominion of India was raised above every building in the country. Granted, for every ten people celebrating there was one Hindu or Muslim nationalist solemnly watching with a hate-filled gaze, or one British opportunist who continues to gripe about the specifics of independence and the new nations - or lack thereof - that would adorn the maps of South Asia. But above all, there is a common thread: we have won. We have forced the singe greatest imperial power in the world to accede to us. The very nation that once destroyed everything that Indian society had built over millennia was now forced to bow down and grant it the sovereignty it so desperately deserved. Reporters from every major nation swarmed New Delhi, desperate to get quotes from officials and citizens. Indeed, the world is watching, and waiting to see how we approach and overcome the trials and tribulations ahead of us. But for now, we need only worry about - and celebrate - one thing: our Dominionhood."
@@ -706,8 +676,12 @@ raj_intervention_light_tt: "§OWe will be unable to directly intervene in the wa
 raj_kicked_from_ipa_explain_tt: "§YThe British Raj will be removed from the Imperial Protection Alliance for the duration of the war to allow for the sending of volunteers, and will be re-added to the faction upon the conclusion of the war.§!"
 
 HYD_princely_relations: "Princely Relations"
+HYD_forming_princely_pact: "Forming a Defensive Pact"
 
 #### Factions ####
+
+HYD_princely_pact: "The Princely Pact"
+
 braithwaite: "Braithwaite & Co."
 ordnance_factories_board: "Ordnance Factories Board"
 gun_factory_jabalpur: "Gun Carriage Factory Jabalpur"

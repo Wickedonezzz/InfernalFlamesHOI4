@@ -12,6 +12,7 @@ set_technology = {
 	support_weapons = 1
 	tech_support = 1
 	tech_engineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	fuel_silos = 1
@@ -72,7 +73,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_20
   disarmed_nation
   RHI_S_rhineland_coal
   RHI_S_disarmed

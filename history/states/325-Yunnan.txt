@@ -11,6 +11,7 @@ state={
 		add_core_of = YUN
 		add_claim_by = KMT
 		add_claim_by = FNG
+		add_claim_by = ZHI
 		victory_points = {
 			1319 10 
 		}
@@ -19,11 +20,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 2
-
+			industrial_complex = 1
+			arms_factory = 1
 		}
-
 	}
 
 	provinces={
@@ -31,6 +30,6 @@ state={
 	}
 	manpower=8550900
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

@@ -43,11 +43,11 @@ country_event = { # Serbia losing - Peace with Bulgaria?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -86,7 +86,7 @@ country_event = { # Bulgaria winning - Serbia wants peace
 		}
 		white_peace = SER
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 942
 				}
@@ -96,7 +96,7 @@ country_event = { # Bulgaria winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 106
 				}
@@ -106,7 +106,7 @@ country_event = { # Bulgaria winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 787
 				}
@@ -150,9 +150,9 @@ country_event = { # Serbia losing - Bulgaria refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -190,11 +190,11 @@ country_event = { # Serbia losing - Peace with Romania?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 7
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -233,7 +233,7 @@ country_event = { # Romania winning - Serbia wants peace
 		}
 		white_peace = SER
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 750
 				}
@@ -277,9 +277,9 @@ country_event = { # Serbia losing - Romania refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -319,11 +319,11 @@ country_event = { # Serbia losing - Peace with Hungary?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -362,7 +362,7 @@ country_event = { # Hungary winning - Serbia wants peace
 		}
 		white_peace = SER
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 45
 				}
@@ -372,7 +372,7 @@ country_event = { # Hungary winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 109
 				}
@@ -382,7 +382,7 @@ country_event = { # Hungary winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 767
 				}
@@ -426,9 +426,9 @@ country_event = { # Serbia losing - Hungary refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -468,11 +468,11 @@ country_event = { # Serbia losing - Peace with Austria?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 7
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -511,7 +511,7 @@ country_event = { # Austria winning - Serbia wants peace
 		}
 		white_peace = SER
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 102
 					owns_state = 767
@@ -523,7 +523,7 @@ country_event = { # Austria winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 102
 					NOT = {
@@ -535,7 +535,7 @@ country_event = { # Austria winning - Serbia wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-		
+
 
 		every_state = {					# Is this too much?
 			limit = {
@@ -550,7 +550,7 @@ country_event = { # Austria winning - Serbia wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-		
+
 	}
 	option = {
 		name = white.2.b
@@ -572,9 +572,9 @@ country_event = { # Serbia losing - Austria refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -615,11 +615,11 @@ country_event = { # Serbia losing - Peace with Italy?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -658,7 +658,7 @@ country_event = { # Italy winning - Serbia wants peace
 		}
 		white_peace = SER
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 102
 				}
@@ -668,7 +668,7 @@ country_event = { # Italy winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 103
 				}
@@ -678,7 +678,7 @@ country_event = { # Italy winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 789
 				}
@@ -688,7 +688,7 @@ country_event = { # Italy winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 931
 				}
@@ -702,7 +702,7 @@ country_event = { # Italy winning - Serbia wants peace
 		}
 
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 931
 					owns_state = 941
@@ -716,9 +716,9 @@ country_event = { # Italy winning - Serbia wants peace
 				transfer_state = 941
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 931
 				}
@@ -732,7 +732,7 @@ country_event = { # Italy winning - Serbia wants peace
 		}
 
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 931
 					owns_state = 941
@@ -780,9 +780,9 @@ country_event = { # Serbia losing - Italy refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -821,11 +821,11 @@ country_event = { # Serbia losing - Peace with Albania?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -864,7 +864,7 @@ country_event = { # Albania winning - Serbia wants peace
 		}
 		white_peace = SER
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 931
 				}
@@ -874,7 +874,7 @@ country_event = { # Albania winning - Serbia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 941
 				}
@@ -918,9 +918,9 @@ country_event = { # Serbia losing - Albania refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -958,11 +958,11 @@ country_event = { # Serbia losing - Peace with Greece?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -1001,7 +1001,7 @@ country_event = { # Greece winning - Serbia wants peace
 		}
 		white_peace = SER
 		if = {
-			limit = {				
+			limit = {
 				SER = {
 					owns_state = 787
 				}
@@ -1044,474 +1044,22 @@ country_event = { # Serbia losing - Greece refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
 	}
 }
 
-#######################
-# Greece white peaces #
-#######################
+# #######################
+# # Greece white peaces #
+# #######################
 
-country_event = { # Greece losing - Peace with Bulgaria?
-	id = white.22
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.22"}
-	title = white.1.t
-	desc = white.1.d
-	picture = GFX_report_event_generic_battle
-
-	trigger = {
-		original_tag = GRE
-		GRE = {
-			has_war_with = BUL
-			is_puppet = no # Can't be a subject
-			OR = {
-				is_faction_leader = yes # Must be faction leader
-				is_in_faction = no # Or not be in a faction
-			}
-			OR = { # Must own some of the disputed states
-				owns_state = 731
-				owns_state = 184
-			}
-		}
-		BUL = {
-			is_puppet = no # Can't be a subject
-			OR = {
-				is_faction_leader = yes # Must be faction leader
-				is_in_faction = no # Or not be in a faction
-			}
-			OR = { # Must be occupying key regions
-				controls_state = 106
-				controls_state = 184
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	fire_only_once = yes
-
-	option = {
-		name = white.1.a
-		ai_chance = {
-			factor = 40
-		}
-		BUL = {
-			country_event = white.23
-		}
-	}
-	option = {
-		name = white.1.b
-		ai_chance = {
-			factor = 0
-		}
-		add_political_power = -50
-		add_war_support = -0.05
-		add_stability = -0.1
-	}
-}
-
-country_event = { # Bulgaria winning - Greece wants peace
-	id = white.23
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.23"}
-	title = white.2.t
-	desc = white.2.d
-	picture = GFX_report_event_generic_battle
-
-	is_triggered_only = yes
-
-	option = {
-		name = white.2.a
-		ai_chance = {
-			factor = 40
-		}
-		white_peace = GRE
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 342
-				}
-			}
-			BUL = {
-				transfer_state = 342
-			}
-		}
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 763
-				}
-			}
-			BUL = {
-				transfer_state = 763
-			}
-		}
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 184
-				}
-			}
-			BUL = {
-				transfer_state = 184
-			}
-		}
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 731
-				}
-				BUL = {
-					owns_state = 787
-				}
-			}
-			BUL = {
-				transfer_state = 731
-			}
-		}
-		
-		every_state = {					# Is this too much?
-			limit = {
-				is_core_of = BUL 		# Core of winner
-				is_controlled_by = BUL  # Is occupied by winner
-				is_owned_by = GRE		# Is owned by loser
-				NOT = {					# But is not a core of the loser
-					is_core_of = GRE	# Don't want full annexations if nation's cores overlap
-				}
-			}
-			BUL = {
-				transfer_state = PREV	# Transfer the winners uncontested cores from loser
-			}
-		}
-	}
-	option = {
-		name = white.2.b
-		ai_chance = {
-			factor = 0
-		}
-		GRE = {
-			country_event = white.24
-		}
-		add_political_power = -50
-		add_war_support = -0.05
-		add_stability = -0.1
-	}
-}
-
-country_event = { # Greece losing - Bulgaria refuses peace
-	id = white.24
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.24"}
-	title = white.3.t
-	desc = white.3.d
-	picture = GFX_report_event_generic_battle
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = white.3.a
-		add_war_support = 0.05
-	}
-}
-
-country_event = { # Greece losing - Peace with Albania?
-	id = white.25
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.25"}
-	title = white.1.t
-	desc = white.1.d
-	picture = GFX_report_event_generic_battle
-
-	trigger = {
-		original_tag = GRE
-		GRE = {
-			has_war_with = ALB
-			is_puppet = no # Can't be a subject
-			OR = {
-				is_faction_leader = yes # Must be faction leader
-				is_in_faction = no # Or not be in a faction
-			}
-			OR = { # Must own some of the disputed states
-				owns_state = 765
-			}
-		}
-		ALB = {
-			is_puppet = no # Can't be a subject
-			OR = {
-				is_faction_leader = yes # Must be faction leader
-				is_in_faction = no # Or not be in a faction
-			}
-			OR = { # Must be occupying key regions
-				controls_state = 185
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	fire_only_once = yes
-
-	option = {
-		name = white.1.a
-		ai_chance = {
-			factor = 40
-		}
-		ALB = {
-			country_event = white.26
-		}
-	}
-	option = {
-		name = white.1.b
-		ai_chance = {
-			factor = 0
-		}
-		add_political_power = -50
-		add_war_support = -0.05
-		add_stability = -0.1
-	}
-}
-
-country_event = { # Albania winning - Greece wants peace
-	id = white.26
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.26"}
-	title = white.2.t
-	desc = white.2.d
-	picture = GFX_report_event_generic_battle
-
-	is_triggered_only = yes
-
-	option = {
-		name = white.2.a
-		ai_chance = {
-			factor = 40
-		}
-		white_peace = GRE
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 765
-				}
-			}
-			ALB = {
-				transfer_state = 765
-			}
-		}
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 796
-				}
-			}
-			ALB = {
-				transfer_state = 796
-			}
-		}
-		
-		every_state = {					# Is this too much?
-			limit = {
-				is_core_of = ALB 		# Core of winner
-				is_controlled_by = ALB  # Is occupied by winner
-				is_owned_by = GRE		# Is owned by loser
-				NOT = {					# But is not a core of the loser
-					is_core_of = GRE	# Don't want full annexations if nation's cores overlap
-				}
-			}
-			ALB = {
-				transfer_state = PREV	# Transfer the winners uncontested cores from loser
-			}
-		}
-	}
-	option = {
-		name = white.2.b
-		ai_chance = {
-			factor = 0
-		}
-		GRE = {
-			country_event = white.27
-		}
-		add_political_power = -50
-		add_war_support = -0.05
-		add_stability = -0.1
-	}
-}
-
-country_event = { # Greece losing - Albania refuses peace
-	id = white.27
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.27"}
-	title = white.3.t
-	desc = white.3.d
-	picture = GFX_report_event_generic_battle
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = white.3.a
-		add_war_support = 0.05
-	}
-}
-
-country_event = { # Greece losing - Peace with Serbia?
-	id = white.28
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.28"}
-	title = white.1.t
-	desc = white.1.d
-	picture = GFX_report_event_generic_battle
-
-	trigger = {
-		original_tag = GRE
-		GRE = {
-			has_war_with = SER
-			is_puppet = no # Can't be a subject
-			OR = {
-				is_faction_leader = yes # Must be faction leader
-				is_in_faction = no # Or not be in a faction
-			}
-			OR = { # Must own some of the disputed states
-				owns_state = 765
-			}
-		}
-		SER = {
-			is_puppet = no # Can't be a subject
-			OR = {
-				is_faction_leader = yes # Must be faction leader
-				is_in_faction = no # Or not be in a faction
-			}
-			OR = { # Must be occupying key regions
-				controls_state = 185
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	fire_only_once = yes
-
-	option = {
-		name = white.1.a
-		ai_chance = {
-			factor = 40
-		}
-		SER = {
-			country_event = white.29
-		}
-	}
-	option = {
-		name = white.1.b
-		ai_chance = {
-			factor = 0
-		}
-		add_political_power = -50
-		add_war_support = -0.05
-		add_stability = -0.1
-	}
-}
-
-country_event = { # Serbia winning - Greece wants peace
-	id = white.29
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.29"}
-	title = white.2.t
-	desc = white.2.d
-	picture = GFX_report_event_generic_battle
-
-	is_triggered_only = yes
-
-	option = {
-		name = white.2.a
-		ai_chance = {
-			factor = 40
-		}
-		white_peace = GRE
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 731
-				}
-			}
-			SER = {
-				transfer_state = 731
-			}
-		}
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 765
-				}
-				SER = {
-					owns_state = 44 # Albania
-				}
-			}
-			SER = {
-				transfer_state = 765
-			}
-		}
-		if = {
-			limit = {				
-				GRE = {
-					owns_state = 796
-				}
-				SER = {
-					owns_state = 44
-				}
-			}
-			SER = {
-				transfer_state = 796
-			}
-		}
-		
-		every_state = {					# Is this too much?
-			limit = {
-				is_core_of = SER 		# Core of winner
-				is_controlled_by = SER  # Is occupied by winner
-				is_owned_by = GRE		# Is owned by loser
-				NOT = {					# But is not a core of the loser
-					is_core_of = GRE	# Don't want full annexations if nation's cores overlap
-				}
-			}
-			SER = {
-				transfer_state = PREV	# Transfer the winners uncontested cores from loser
-			}
-		}
-	}
-	option = {
-		name = white.2.b
-		ai_chance = {
-			factor = 0
-		}
-		GRE = {
-			country_event = white.30
-		}
-		add_political_power = -50
-		add_war_support = -0.05
-		add_stability = -0.1
-	}
-}
-
-country_event = { # Greece losing - Serbia refuses peace
-	id = white.30
-	immediate = {log = "[GetDateText]: [Root.GetName]: event white.30"}
-	title = white.3.t
-	desc = white.3.d
-	picture = GFX_report_event_generic_battle
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = white.3.a
-		add_war_support = 0.05
-	}
-}
-
-# country_event = { # Greece losing - Peace with Turkey?
-# 	id = white.31
-# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.31"}
+# country_event = { # Greece losing - Peace with Bulgaria?
+# 	id = white.22
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.22"}
 # 	title = white.1.t
 # 	desc = white.1.d
 # 	picture = GFX_report_event_generic_battle
@@ -1519,34 +1067,34 @@ country_event = { # Greece losing - Serbia refuses peace
 # 	trigger = {
 # 		original_tag = GRE
 # 		GRE = {
-# 			has_war_with = TUR
+# 			has_war_with = BUL
 # 			is_puppet = no # Can't be a subject
 # 			OR = {
 # 				is_faction_leader = yes # Must be faction leader
 # 				is_in_faction = no # Or not be in a faction
 # 			}
 # 			OR = { # Must own some of the disputed states
-# 				owns_state = 340
-# 				owns_state = 339
+# 				owns_state = 731
+# 				owns_state = 184
 # 			}
 # 		}
-# 		TUR = {
+# 		BUL = {
 # 			is_puppet = no # Can't be a subject
 # 			OR = {
 # 				is_faction_leader = yes # Must be faction leader
 # 				is_in_faction = no # Or not be in a faction
 # 			}
 # 			OR = { # Must be occupying key regions
-# 				controls_state = 340
-# 				controls_state = 339
+# 				controls_state = 106
+# 				controls_state = 184
 # 			}
 # 		}
 # 	}
-	
+
 # 	mean_time_to_happen = {
-# 		days = 30
+# 		days = 1
 # 	}
-	
+
 # 	fire_only_once = yes
 
 # 	option = {
@@ -1554,8 +1102,8 @@ country_event = { # Greece losing - Serbia refuses peace
 # 		ai_chance = {
 # 			factor = 40
 # 		}
-# 		TUR = {
-# 			country_event = white.32
+# 		BUL = {
+# 			country_event = white.23
 # 		}
 # 	}
 # 	option = {
@@ -1569,9 +1117,9 @@ country_event = { # Greece losing - Serbia refuses peace
 # 	}
 # }
 
-# country_event = { # Turkey winning - Greece wants peace
-# 	id = white.32
-# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.32"}
+# country_event = { # Bulgaria winning - Greece wants peace
+# 	id = white.23
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.23"}
 # 	title = white.2.t
 # 	desc = white.2.d
 # 	picture = GFX_report_event_generic_battle
@@ -1585,82 +1133,59 @@ country_event = { # Greece losing - Serbia refuses peace
 # 		}
 # 		white_peace = GRE
 # 		if = {
-# 			limit = {				
-# 				GRE = {
-# 					owns_state = 340
-# 				}
-# 			}
-# 			TUR = {
-# 				transfer_state = 340
-# 			}
-# 		}
-# 		if = {
-# 			limit = {				
-# 				GRE = {
-# 					owns_state = 339
-# 				}
-# 			}
-# 			TUR = {
-# 				transfer_state = 339
-# 			}
-# 		}
-# 		if = {
-# 			limit = {				
+# 			limit = {
 # 				GRE = {
 # 					owns_state = 342
 # 				}
 # 			}
-# 			TUR = {
+# 			BUL = {
 # 				transfer_state = 342
 # 			}
 # 		}
 # 		if = {
-# 			limit = {				
+# 			limit = {
 # 				GRE = {
-# 					owns_state = 187
-# 				}
-# 				TUR = {
-# 					controls_state = 187
+# 					owns_state = 763
 # 				}
 # 			}
-# 			TUR = {
-# 				transfer_state = 187
+# 			BUL = {
+# 				transfer_state = 763
 # 			}
 # 		}
 # 		if = {
-# 			limit = {				
+# 			limit = {
 # 				GRE = {
-# 					owns_state = 345
+# 					owns_state = 184
 # 				}
 # 			}
-# 			TUR = {
-# 				transfer_state = 345
+# 			BUL = {
+# 				transfer_state = 184
 # 			}
 # 		}
 # 		if = {
-# 			limit = {				
+# 			limit = {
 # 				GRE = {
-# 					owns_state = 164
+# 					owns_state = 731
 # 				}
-# 				TUR = {
-# 					controls_state = 164
+# 				BUL = {
+# 					owns_state = 787
 # 				}
 # 			}
-# 			TUR = {
-# 				transfer_state = 164
+# 			BUL = {
+# 				transfer_state = 731
 # 			}
 # 		}
-		
+
 # 		every_state = {					# Is this too much?
 # 			limit = {
-# 				is_core_of = TUR 		# Core of winner
-# 				is_controlled_by = TUR  # Is occupied by winner
+# 				is_core_of = BUL 		# Core of winner
+# 				is_controlled_by = BUL  # Is occupied by winner
 # 				is_owned_by = GRE		# Is owned by loser
 # 				NOT = {					# But is not a core of the loser
 # 					is_core_of = GRE	# Don't want full annexations if nation's cores overlap
 # 				}
 # 			}
-# 			TUR = {
+# 			BUL = {
 # 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 # 			}
 # 		}
@@ -1671,7 +1196,7 @@ country_event = { # Greece losing - Serbia refuses peace
 # 			factor = 0
 # 		}
 # 		GRE = {
-# 			country_event = white.33
+# 			country_event = white.24
 # 		}
 # 		add_political_power = -50
 # 		add_war_support = -0.05
@@ -1679,20 +1204,495 @@ country_event = { # Greece losing - Serbia refuses peace
 # 	}
 # }
 
-# country_event = { # Greece losing - Turkey refuses peace
-# 	id = white.33
-# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.33"}
+# country_event = { # Greece losing - Bulgaria refuses peace
+# 	id = white.24
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.24"}
 # 	title = white.3.t
 # 	desc = white.3.d
 # 	picture = GFX_report_event_generic_battle
-	
+
 # 	is_triggered_only = yes
-	
+
 # 	option = {
 # 		name = white.3.a
 # 		add_war_support = 0.05
 # 	}
 # }
+
+# country_event = { # Greece losing - Peace with Albania?
+# 	id = white.25
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.25"}
+# 	title = white.1.t
+# 	desc = white.1.d
+# 	picture = GFX_report_event_generic_battle
+
+# 	trigger = {
+# 		original_tag = GRE
+# 		GRE = {
+# 			has_war_with = ALB
+# 			is_puppet = no # Can't be a subject
+# 			OR = {
+# 				is_faction_leader = yes # Must be faction leader
+# 				is_in_faction = no # Or not be in a faction
+# 			}
+# 			OR = { # Must own some of the disputed states
+# 				owns_state = 765
+# 			}
+# 		}
+# 		ALB = {
+# 			is_puppet = no # Can't be a subject
+# 			OR = {
+# 				is_faction_leader = yes # Must be faction leader
+# 				is_in_faction = no # Or not be in a faction
+# 			}
+# 			OR = { # Must be occupying key regions
+# 				controls_state = 185
+# 			}
+# 		}
+# 	}
+
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
+
+# 	fire_only_once = yes
+
+# 	option = {
+# 		name = white.1.a
+# 		ai_chance = {
+# 			factor = 40
+# 		}
+# 		ALB = {
+# 			country_event = white.26
+# 		}
+# 	}
+# 	option = {
+# 		name = white.1.b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		add_political_power = -50
+# 		add_war_support = -0.05
+# 		add_stability = -0.1
+# 	}
+# }
+
+# country_event = { # Albania winning - Greece wants peace
+# 	id = white.26
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.26"}
+# 	title = white.2.t
+# 	desc = white.2.d
+# 	picture = GFX_report_event_generic_battle
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = white.2.a
+# 		ai_chance = {
+# 			factor = 40
+# 		}
+# 		white_peace = GRE
+# 		if = {
+# 			limit = {
+# 				GRE = {
+# 					owns_state = 765
+# 				}
+# 			}
+# 			ALB = {
+# 				transfer_state = 765
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				GRE = {
+# 					owns_state = 796
+# 				}
+# 			}
+# 			ALB = {
+# 				transfer_state = 796
+# 			}
+# 		}
+
+# 		every_state = {					# Is this too much?
+# 			limit = {
+# 				is_core_of = ALB 		# Core of winner
+# 				is_controlled_by = ALB  # Is occupied by winner
+# 				is_owned_by = GRE		# Is owned by loser
+# 				NOT = {					# But is not a core of the loser
+# 					is_core_of = GRE	# Don't want full annexations if nation's cores overlap
+# 				}
+# 			}
+# 			ALB = {
+# 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = white.2.b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		GRE = {
+# 			country_event = white.27
+# 		}
+# 		add_political_power = -50
+# 		add_war_support = -0.05
+# 		add_stability = -0.1
+# 	}
+# }
+
+# country_event = { # Greece losing - Albania refuses peace
+# 	id = white.27
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.27"}
+# 	title = white.3.t
+# 	desc = white.3.d
+# 	picture = GFX_report_event_generic_battle
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = white.3.a
+# 		add_war_support = 0.05
+# 	}
+# }
+
+# country_event = { # Greece losing - Peace with Serbia?
+# 	id = white.28
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.28"}
+# 	title = white.1.t
+# 	desc = white.1.d
+# 	picture = GFX_report_event_generic_battle
+
+# 	trigger = {
+# 		original_tag = GRE
+# 		GRE = {
+# 			has_war_with = SER
+# 			is_puppet = no # Can't be a subject
+# 			OR = {
+# 				is_faction_leader = yes # Must be faction leader
+# 				is_in_faction = no # Or not be in a faction
+# 			}
+# 			OR = { # Must own some of the disputed states
+# 				owns_state = 765
+# 			}
+# 		}
+# 		SER = {
+# 			is_puppet = no # Can't be a subject
+# 			OR = {
+# 				is_faction_leader = yes # Must be faction leader
+# 				is_in_faction = no # Or not be in a faction
+# 			}
+# 			OR = { # Must be occupying key regions
+# 				controls_state = 185
+# 			}
+# 		}
+# 	}
+
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
+
+# 	fire_only_once = yes
+
+# 	option = {
+# 		name = white.1.a
+# 		ai_chance = {
+# 			factor = 40
+# 		}
+# 		SER = {
+# 			country_event = white.29
+# 		}
+# 	}
+# 	option = {
+# 		name = white.1.b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		add_political_power = -50
+# 		add_war_support = -0.05
+# 		add_stability = -0.1
+# 	}
+# }
+
+# country_event = { # Serbia winning - Greece wants peace
+# 	id = white.29
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.29"}
+# 	title = white.2.t
+# 	desc = white.2.d
+# 	picture = GFX_report_event_generic_battle
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = white.2.a
+# 		ai_chance = {
+# 			factor = 40
+# 		}
+# 		white_peace = GRE
+# 		if = {
+# 			limit = {
+# 				GRE = {
+# 					owns_state = 731
+# 				}
+# 			}
+# 			SER = {
+# 				transfer_state = 731
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				GRE = {
+# 					owns_state = 765
+# 				}
+# 				SER = {
+# 					owns_state = 44 # Albania
+# 				}
+# 			}
+# 			SER = {
+# 				transfer_state = 765
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				GRE = {
+# 					owns_state = 796
+# 				}
+# 				SER = {
+# 					owns_state = 44
+# 				}
+# 			}
+# 			SER = {
+# 				transfer_state = 796
+# 			}
+# 		}
+
+# 		every_state = {					# Is this too much?
+# 			limit = {
+# 				is_core_of = SER 		# Core of winner
+# 				is_controlled_by = SER  # Is occupied by winner
+# 				is_owned_by = GRE		# Is owned by loser
+# 				NOT = {					# But is not a core of the loser
+# 					is_core_of = GRE	# Don't want full annexations if nation's cores overlap
+# 				}
+# 			}
+# 			SER = {
+# 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = white.2.b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		GRE = {
+# 			country_event = white.30
+# 		}
+# 		add_political_power = -50
+# 		add_war_support = -0.05
+# 		add_stability = -0.1
+# 	}
+# }
+
+# country_event = { # Greece losing - Serbia refuses peace
+# 	id = white.30
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.30"}
+# 	title = white.3.t
+# 	desc = white.3.d
+# 	picture = GFX_report_event_generic_battle
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = white.3.a
+# 		add_war_support = 0.05
+# 	}
+# }
+
+# country_event = { # Greece losing - Peace with Turkey?
+	# 	id = white.31
+	# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.31"}
+	# 	title = white.1.t
+	# 	desc = white.1.d
+	# 	picture = GFX_report_event_generic_battle
+
+	# 	trigger = {
+		# 		original_tag = GRE
+		# 		GRE = {
+			# 			has_war_with = TUR
+			# 			is_puppet = no # Can't be a subject
+			# 			OR = {
+				# 				is_faction_leader = yes # Must be faction leader
+				# 				is_in_faction = no # Or not be in a faction
+				# 			}
+			# 			OR = { # Must own some of the disputed states
+				# 				owns_state = 340
+				# 				owns_state = 339
+				# 			}
+			# 		}
+		# 		TUR = {
+			# 			is_puppet = no # Can't be a subject
+			# 			OR = {
+				# 				is_faction_leader = yes # Must be faction leader
+				# 				is_in_faction = no # Or not be in a faction
+				# 			}
+			# 			OR = { # Must be occupying key regions
+				# 				controls_state = 340
+				# 				controls_state = 339
+				# 			}
+			# 		}
+		# 	}
+
+	# 	mean_time_to_happen = {
+		# 		days = 30
+		# 	}
+
+	# 	fire_only_once = yes
+
+	# 	option = {
+		# 		name = white.1.a
+		# 		ai_chance = {
+			# 			factor = 40
+			# 		}
+		# 		TUR = {
+			# 			country_event = white.32
+			# 		}
+		# 	}
+	# 	option = {
+		# 		name = white.1.b
+		# 		ai_chance = {
+			# 			factor = 0
+			# 		}
+		# 		add_political_power = -50
+		# 		add_war_support = -0.05
+		# 		add_stability = -0.1
+		# 	}
+	# }
+
+# country_event = { # Turkey winning - Greece wants peace
+	# 	id = white.32
+	# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.32"}
+	# 	title = white.2.t
+	# 	desc = white.2.d
+	# 	picture = GFX_report_event_generic_battle
+
+	# 	is_triggered_only = yes
+
+	# 	option = {
+		# 		name = white.2.a
+		# 		ai_chance = {
+			# 			factor = 40
+			# 		}
+		# 		white_peace = GRE
+		# 		if = {
+			# 			limit = {
+				# 				GRE = {
+					# 					owns_state = 340
+					# 				}
+				# 			}
+			# 			TUR = {
+				# 				transfer_state = 340
+				# 			}
+			# 		}
+		# 		if = {
+			# 			limit = {
+				# 				GRE = {
+					# 					owns_state = 339
+					# 				}
+				# 			}
+			# 			TUR = {
+				# 				transfer_state = 339
+				# 			}
+			# 		}
+		# 		if = {
+			# 			limit = {
+				# 				GRE = {
+					# 					owns_state = 342
+					# 				}
+				# 			}
+			# 			TUR = {
+				# 				transfer_state = 342
+				# 			}
+			# 		}
+		# 		if = {
+			# 			limit = {
+				# 				GRE = {
+					# 					owns_state = 187
+					# 				}
+				# 				TUR = {
+					# 					controls_state = 187
+					# 				}
+				# 			}
+			# 			TUR = {
+				# 				transfer_state = 187
+				# 			}
+			# 		}
+		# 		if = {
+			# 			limit = {
+				# 				GRE = {
+					# 					owns_state = 345
+					# 				}
+				# 			}
+			# 			TUR = {
+				# 				transfer_state = 345
+				# 			}
+			# 		}
+		# 		if = {
+			# 			limit = {
+				# 				GRE = {
+					# 					owns_state = 164
+					# 				}
+				# 				TUR = {
+					# 					controls_state = 164
+					# 				}
+				# 			}
+			# 			TUR = {
+				# 				transfer_state = 164
+				# 			}
+			# 		}
+
+		# 		every_state = {					# Is this too much?
+			# 			limit = {
+				# 				is_core_of = TUR 		# Core of winner
+				# 				is_controlled_by = TUR  # Is occupied by winner
+				# 				is_owned_by = GRE		# Is owned by loser
+				# 				NOT = {					# But is not a core of the loser
+					# 					is_core_of = GRE	# Don't want full annexations if nation's cores overlap
+					# 				}
+				# 			}
+			# 			TUR = {
+				# 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
+				# 			}
+			# 		}
+		# 	}
+	# 	option = {
+		# 		name = white.2.b
+		# 		ai_chance = {
+			# 			factor = 0
+			# 		}
+		# 		GRE = {
+			# 			country_event = white.33
+			# 		}
+		# 		add_political_power = -50
+		# 		add_war_support = -0.05
+		# 		add_stability = -0.1
+		# 	}
+	# }
+
+# country_event = { # Greece losing - Turkey refuses peace
+	# 	id = white.33
+	# 	immediate = {log = "[GetDateText]: [Root.GetName]: event white.33"}
+	# 	title = white.3.t
+	# 	desc = white.3.d
+	# 	picture = GFX_report_event_generic_battle
+
+	# 	is_triggered_only = yes
+
+	# 	option = {
+		# 		name = white.3.a
+		# 		add_war_support = 0.05
+		# 	}
+	# }
 
 #########################
 # Romanian White Peaces #
@@ -1729,11 +1729,11 @@ country_event = { # Romania losing - Peace with Bulgaria?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -1772,7 +1772,7 @@ country_event = { # Bulgaria winning - Romanian wants peace
 		}
 		white_peace = ROM
 		if = {
-			limit = {				
+			limit = {
 				ROM = {
 					owns_state = 77
 				}
@@ -1782,7 +1782,7 @@ country_event = { # Bulgaria winning - Romanian wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ROM = {
 					owns_state = 861
 				}
@@ -1791,7 +1791,7 @@ country_event = { # Bulgaria winning - Romanian wants peace
 				transfer_state = 861
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = BUL 		# Core of winner
@@ -1826,9 +1826,9 @@ country_event = { # Romania losing - Bulgaria refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -1867,11 +1867,11 @@ country_event = { # Romania losing - Peace with Ukraine?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -1909,9 +1909,9 @@ country_event = { # Ukraine winning - Romanian wants peace
 			factor = 40
 		}
 		white_peace = ROM
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ROM = {
 					owns_state = 78
 				}
@@ -1921,7 +1921,7 @@ country_event = { # Ukraine winning - Romanian wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ROM = {
 					owns_state = 853
 				}
@@ -1930,7 +1930,7 @@ country_event = { # Ukraine winning - Romanian wants peace
 				transfer_state = 853
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = UKR 		# Core of winner
@@ -1965,9 +1965,9 @@ country_event = { # Romania losing - Bulgaria refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -2011,11 +2011,11 @@ country_event = { # Ukraine losing - Peace with Romania?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -2053,9 +2053,9 @@ country_event = { # Romania winning - Ukraine wants peace
 			factor = 40
 		}
 		white_peace = UKR
-		
+
 		if = {
-			limit = {				
+			limit = {
 				UKR = {
 					owns_state = 192
 				}
@@ -2065,7 +2065,7 @@ country_event = { # Romania winning - Ukraine wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				UKR = {
 					owns_state = 198
 				}
@@ -2074,7 +2074,7 @@ country_event = { # Romania winning - Ukraine wants peace
 				transfer_state = 198
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = ROM 		# Core of winner
@@ -2109,9 +2109,9 @@ country_event = { # Ukraine losing - Romania refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -2151,11 +2151,11 @@ country_event = { # Ukraine losing - Peace with Belarus?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -2193,9 +2193,9 @@ country_event = { # Belarus winning - Ukraine wants peace
 			factor = 40
 		}
 		white_peace = UKR
-		
+
 		if = {
-			limit = {				
+			limit = {
 				UKR = {
 					owns_state = 94
 				}
@@ -2205,7 +2205,7 @@ country_event = { # Belarus winning - Ukraine wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				UKR = {
 					owns_state = 953
 				}
@@ -2214,7 +2214,7 @@ country_event = { # Belarus winning - Ukraine wants peace
 				transfer_state = 953
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = BLR 		# Core of winner
@@ -2249,9 +2249,9 @@ country_event = { # Ukraine losing - Belarus refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -2295,11 +2295,11 @@ country_event = { # Italy losing - Peace with Switzerland?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -2337,9 +2337,9 @@ country_event = { # Switzerland winning - Italy wants peace
 			factor = 40
 		}
 		white_peace = ITA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 158
 				}
@@ -2349,7 +2349,7 @@ country_event = { # Switzerland winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 159
 				}
@@ -2358,7 +2358,7 @@ country_event = { # Switzerland winning - Italy wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = SWI 		# Core of winner
@@ -2393,9 +2393,9 @@ country_event = { # Italy losing - Switzerland refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -2435,11 +2435,11 @@ country_event = { # Italy losing - Peace with Austria?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -2477,9 +2477,9 @@ country_event = { # Austria winning - Italy wants peace
 			factor = 40
 		}
 		white_peace = ITA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 39
 				}
@@ -2489,7 +2489,7 @@ country_event = { # Austria winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 774
 				}
@@ -2498,7 +2498,7 @@ country_event = { # Austria winning - Italy wants peace
 				transfer_state = 774
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = AUS 		# Core of winner
@@ -2533,9 +2533,9 @@ country_event = { # Italy losing - Austria refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -2575,11 +2575,11 @@ country_event = { # Italy losing - Peace with Serbia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -2617,9 +2617,9 @@ country_event = { # Serbia winning - Italy wants peace
 			factor = 40
 		}
 		white_peace = ITA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 163
 				}
@@ -2629,7 +2629,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 917
 				}
@@ -2639,7 +2639,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 736
 				}
@@ -2649,7 +2649,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 102
 				}
@@ -2659,7 +2659,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 103
 				}
@@ -2669,7 +2669,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 789
 				}
@@ -2679,7 +2679,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 796
 				}
@@ -2692,7 +2692,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 765
 				}
@@ -2705,7 +2705,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 931
 				}
@@ -2718,7 +2718,7 @@ country_event = { # Serbia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 941
 				}
@@ -2730,7 +2730,7 @@ country_event = { # Serbia winning - Italy wants peace
 				transfer_state = 941
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = SER 		# Core of winner
@@ -2765,9 +2765,9 @@ country_event = { # Italy losing - Serbia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -2807,11 +2807,11 @@ country_event = { # Italy losing - Peace with Greece?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -2849,9 +2849,9 @@ country_event = { # Greece winning - Italy wants peace
 			factor = 40
 		}
 		white_peace = ITA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 765
 				}
@@ -2861,7 +2861,7 @@ country_event = { # Greece winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 796
 				}
@@ -2871,7 +2871,7 @@ country_event = { # Greece winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 164
 				}
@@ -2881,7 +2881,7 @@ country_event = { # Greece winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 345
 				}
@@ -2915,7 +2915,7 @@ country_event = { # Greece winning - Italy wants peace
 				}
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = GRE 		# Core of winner
@@ -2929,7 +2929,7 @@ country_event = { # Greece winning - Italy wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -2950,9 +2950,9 @@ country_event = { # Italy losing - Greece refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -2992,11 +2992,11 @@ country_event = { # Italy losing - Peace with Abyssinia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 14
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3034,9 +3034,9 @@ country_event = { # Abyssinia winning - Italy wants peace
 			factor = 40
 		}
 		white_peace = ITA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 550
 				}
@@ -3046,7 +3046,7 @@ country_event = { # Abyssinia winning - Italy wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				ITA = {
 					owns_state = 559
 				}
@@ -3068,7 +3068,7 @@ country_event = { # Abyssinia winning - Italy wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -3089,9 +3089,9 @@ country_event = { # Italy losing - Greece refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -3135,11 +3135,11 @@ country_event = { # Iran losing - Peace with Iraq?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3177,9 +3177,9 @@ country_event = { # Iraq winning - Iran wants peace
 			factor = 40
 		}
 		white_peace = PER
-		
+
 		if = {
-			limit = {				
+			limit = {
 				PER = {
 					owns_state = 413
 				}
@@ -3189,7 +3189,7 @@ country_event = { # Iraq winning - Iran wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				PER = {
 					owns_state = 421
 				}
@@ -3198,7 +3198,7 @@ country_event = { # Iraq winning - Iran wants peace
 				transfer_state = 421
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = IRQ 		# Core of winner
@@ -3212,7 +3212,7 @@ country_event = { # Iraq winning - Iran wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -3233,9 +3233,9 @@ country_event = { # Iran losing - Iraq refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -3273,11 +3273,11 @@ country_event = { # Iran losing - Peace with Afghanistan?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3315,9 +3315,9 @@ country_event = { # Afghanistan winning - Iran wants peace
 			factor = 40
 		}
 		white_peace = PER
-		
+
 		if = {
-			limit = {				
+			limit = {
 				PER = {
 					owns_state = 416
 				}
@@ -3326,7 +3326,7 @@ country_event = { # Afghanistan winning - Iran wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = AFG 		# Core of winner
@@ -3340,7 +3340,7 @@ country_event = { # Afghanistan winning - Iran wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -3361,9 +3361,9 @@ country_event = { # Iran losing - Afghanistan refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -3416,11 +3416,11 @@ country_event = { # Iran losing - Peace with Baluchistan?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3432,7 +3432,7 @@ country_event = { # Iran losing - Peace with Baluchistan?
 			limit = {
 				owns_state = 444
 			}
-				country_event = white.65
+			country_event = white.65
 		}
 	}
 	option = {
@@ -3461,9 +3461,9 @@ country_event = { # Baluchistan winning - Iran wants peace
 			factor = 40
 		}
 		white_peace = PER
-		
+
 		if = {
-			limit = {				
+			limit = {
 				PER = {
 					owns_state = 410
 				}
@@ -3472,7 +3472,7 @@ country_event = { # Baluchistan winning - Iran wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -3493,9 +3493,9 @@ country_event = { # Iran losing - Baluchistan refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -3533,11 +3533,11 @@ country_event = { # Iran losing - Peace with Azerbaijan?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3575,9 +3575,9 @@ country_event = { # Azerbaijan winning - Iran wants peace
 			factor = 40
 		}
 		white_peace = PER
-		
+
 		if = {
-			limit = {				
+			limit = {
 				PER = {
 					owns_state = 419
 				}
@@ -3587,7 +3587,7 @@ country_event = { # Azerbaijan winning - Iran wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				PER = {
 					owns_state = 420
 				}
@@ -3596,7 +3596,7 @@ country_event = { # Azerbaijan winning - Iran wants peace
 				transfer_state = 420
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = AZR 		# Core of winner
@@ -3610,7 +3610,7 @@ country_event = { # Azerbaijan winning - Iran wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -3631,9 +3631,9 @@ country_event = { # Iran losing - Azerbaijan refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -3675,11 +3675,11 @@ country_event = { # Georgia losing - Peace with Azerbaijan?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3717,9 +3717,9 @@ country_event = { # Azerbaijan winning - Georgia wants peace
 			factor = 40
 		}
 		white_peace = GEO
-		
+
 		if = {
-			limit = {				
+			limit = {
 				GEO = {
 					owns_state = 904
 				}
@@ -3728,7 +3728,7 @@ country_event = { # Azerbaijan winning - Georgia wants peace
 				transfer_state = 904
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = AZR 		# Core of winner
@@ -3742,7 +3742,7 @@ country_event = { # Azerbaijan winning - Georgia wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -3763,9 +3763,9 @@ country_event = { # Georgia losing - Azerbaijan refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -3805,11 +3805,11 @@ country_event = { # Georgia losing - Peace with Azerbaijan?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3847,9 +3847,9 @@ country_event = { # Armenia winning - Georgia wants peace
 			factor = 40
 		}
 		white_peace = GEO
-		
+
 		if = {
-			limit = {				
+			limit = {
 				GEO = {
 					owns_state = 902
 				}
@@ -3859,7 +3859,7 @@ country_event = { # Armenia winning - Georgia wants peace
 			}
 		}
 		if = {
-			limit = {				
+			limit = {
 				GEO = {
 					owns_state = 903
 				}
@@ -3881,7 +3881,7 @@ country_event = { # Armenia winning - Georgia wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -3902,9 +3902,9 @@ country_event = { # Georgia losing - Azerbaijan refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -3942,11 +3942,11 @@ country_event = { # Georgia losing - Peace with Turkey?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -3984,9 +3984,9 @@ country_event = { # Turkey winning - Georgia wants peace
 			factor = 40
 		}
 		white_peace = GEO
-		
+
 		if = {
-			limit = {				
+			limit = {
 				GEO = {
 					owns_state = 354
 				}
@@ -3995,9 +3995,9 @@ country_event = { # Turkey winning - Georgia wants peace
 				transfer_state = 354
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				GEO = {
 					owns_state = 353
 				}
@@ -4006,9 +4006,9 @@ country_event = { # Turkey winning - Georgia wants peace
 				transfer_state = 353
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				GEO = {
 					owns_state = 902
 				}
@@ -4017,7 +4017,7 @@ country_event = { # Turkey winning - Georgia wants peace
 				transfer_state = 902
 			}
 		}
-		
+
 		if = {
 			limit = {
 				ARM = {
@@ -4026,7 +4026,7 @@ country_event = { # Turkey winning - Georgia wants peace
 				}
 			}
 			if = {
-				limit = {				
+				limit = {
 					ARM = {
 						owns_state = 354
 					}
@@ -4036,7 +4036,7 @@ country_event = { # Turkey winning - Georgia wants peace
 				}
 			}
 			if = {
-				limit = {				
+				limit = {
 					ARM = {
 						owns_state = 353
 					}
@@ -4046,7 +4046,7 @@ country_event = { # Turkey winning - Georgia wants peace
 				}
 			}
 			if = {
-				limit = {				
+				limit = {
 					ARM = {
 						owns_state = 352
 					}
@@ -4054,9 +4054,9 @@ country_event = { # Turkey winning - Georgia wants peace
 				TUR = {
 					transfer_state = 352
 				}
-			}			
+			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = TUR 		# Core of winner
@@ -4070,7 +4070,7 @@ country_event = { # Turkey winning - Georgia wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -4091,9 +4091,9 @@ country_event = { # Georgia losing - Turkey refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -4135,11 +4135,11 @@ country_event = { # Brazil losing - Peace with Uruguay?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -4177,9 +4177,9 @@ country_event = { # Uruguay winning - Brazil wants peace
 			factor = 40
 		}
 		white_peace = BRA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 502
 				}
@@ -4188,7 +4188,7 @@ country_event = { # Uruguay winning - Brazil wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = URG 		# Core of winner
@@ -4202,7 +4202,7 @@ country_event = { # Uruguay winning - Brazil wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -4223,9 +4223,9 @@ country_event = { # Brazil losing - Uruguay refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -4264,11 +4264,11 @@ country_event = { # Brazil losing - Peace with Argentina?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -4306,7 +4306,7 @@ country_event = { # Argentina winning - Brazil wants peace
 			factor = 40
 		}
 		white_peace = BRA
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = ARG 		# Core of winner
@@ -4320,9 +4320,9 @@ country_event = { # Argentina winning - Brazil wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 502
 				}
@@ -4331,9 +4331,9 @@ country_event = { # Argentina winning - Brazil wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 503
 				}
@@ -4343,7 +4343,7 @@ country_event = { # Argentina winning - Brazil wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -4364,9 +4364,9 @@ country_event = { # Brazil losing - Argentina refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -4404,11 +4404,11 @@ country_event = { # Brazil losing - Peace with Paraguay?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -4446,7 +4446,7 @@ country_event = { # Paraguay winning - Brazil wants peace
 			factor = 40
 		}
 		white_peace = BRA
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = PAR 		# Core of winner
@@ -4460,9 +4460,9 @@ country_event = { # Paraguay winning - Brazil wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 504
 				}
@@ -4472,7 +4472,7 @@ country_event = { # Paraguay winning - Brazil wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -4493,9 +4493,9 @@ country_event = { # Brazil losing - Paraguay refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -4535,11 +4535,11 @@ country_event = { # Brazil losing - Peace with Bolivia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -4577,9 +4577,9 @@ country_event = { # Bolivia winning - Brazil wants peace
 			factor = 40
 		}
 		white_peace = BRA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 882
 				}
@@ -4588,7 +4588,7 @@ country_event = { # Bolivia winning - Brazil wants peace
 				transfer_state = 882
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = BOL 		# Core of winner
@@ -4602,9 +4602,9 @@ country_event = { # Bolivia winning - Brazil wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 280
 				}
@@ -4614,7 +4614,7 @@ country_event = { # Bolivia winning - Brazil wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -4635,9 +4635,9 @@ country_event = { # Brazil losing - Bolivia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -4661,7 +4661,7 @@ country_event = { # Brazil losing - Peace with Peru?
 				is_in_faction = no # Or not be in a faction
 			}
 			OR = { # Must own some of the disputed states
-				owns_state = 901	
+				owns_state = 901
 				owns_state = 882
 			}
 		}
@@ -4677,11 +4677,11 @@ country_event = { # Brazil losing - Peace with Peru?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -4719,9 +4719,9 @@ country_event = { # Peru winning - Brazil wants peace
 			factor = 40
 		}
 		white_peace = BRA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 882
 				}
@@ -4730,7 +4730,7 @@ country_event = { # Peru winning - Brazil wants peace
 				transfer_state = 882
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = PRU 		# Core of winner
@@ -4745,7 +4745,7 @@ country_event = { # Peru winning - Brazil wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -4757,7 +4757,7 @@ country_event = { # Peru winning - Brazil wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Brazil losing - Peru refuses peace
@@ -4766,9 +4766,9 @@ country_event = { # Brazil losing - Peru refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -4806,11 +4806,11 @@ country_event = { # Brazil losing - Peace with Columbia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -4848,9 +4848,9 @@ country_event = { # Columbia winning - Brazil wants peace
 			factor = 40
 		}
 		white_peace = BRA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 901
 				}
@@ -4859,7 +4859,7 @@ country_event = { # Columbia winning - Brazil wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = COL 		# Core of winner
@@ -4874,7 +4874,7 @@ country_event = { # Columbia winning - Brazil wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -4886,7 +4886,7 @@ country_event = { # Columbia winning - Brazil wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Brazil losing - Columbia refuses peace
@@ -4895,9 +4895,9 @@ country_event = { # Brazil losing - Columbia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -4935,11 +4935,11 @@ country_event = { # Brazil losing - Peace with Venezuela?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -4977,9 +4977,9 @@ country_event = { # Columbia winning - Brazil wants peace
 			factor = 40
 		}
 		white_peace = BRA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				BRA = {
 					owns_state = 901
 				}
@@ -4988,7 +4988,7 @@ country_event = { # Columbia winning - Brazil wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = VEN 		# Core of winner
@@ -5003,7 +5003,7 @@ country_event = { # Columbia winning - Brazil wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -5015,7 +5015,7 @@ country_event = { # Columbia winning - Brazil wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Brazil losing - Columbia refuses peace
@@ -5024,9 +5024,9 @@ country_event = { # Brazil losing - Columbia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -5068,11 +5068,11 @@ country_event = { # Paraguay losing - Peace with Bolivia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -5110,9 +5110,9 @@ country_event = { # Bolivia winning - Paraguay wants peace
 			factor = 40
 		}
 		white_peace = PAR
-		
+
 		if = {
-			limit = {				
+			limit = {
 				PAR = {
 					owns_state = 688
 				}
@@ -5121,7 +5121,7 @@ country_event = { # Bolivia winning - Paraguay wants peace
 				transfer_state = 688
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = BOL 		# Core of winner
@@ -5136,7 +5136,7 @@ country_event = { # Bolivia winning - Paraguay wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -5148,7 +5148,7 @@ country_event = { # Bolivia winning - Paraguay wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Paraguay losing - Bolivia refuses peace
@@ -5157,9 +5157,9 @@ country_event = { # Paraguay losing - Bolivia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -5201,11 +5201,11 @@ country_event = { # Argentina losing - Peace with Paraguay?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -5243,9 +5243,9 @@ country_event = { # Paraguay winning - Argentina wants peace
 			factor = 40
 		}
 		white_peace = ARG
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ARG = {
 					owns_state = 758
 				}
@@ -5254,7 +5254,7 @@ country_event = { # Paraguay winning - Argentina wants peace
 				transfer_state = 758
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = PAR 		# Core of winner
@@ -5269,7 +5269,7 @@ country_event = { # Paraguay winning - Argentina wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -5281,7 +5281,7 @@ country_event = { # Paraguay winning - Argentina wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Argentina losing - Paraguay refuses peace
@@ -5290,9 +5290,9 @@ country_event = { # Argentina losing - Paraguay refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -5331,11 +5331,11 @@ country_event = { # Argentina losing - Peace with Bolivia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -5373,9 +5373,9 @@ country_event = { # Bolivia winning - Argentina wants peace
 			factor = 40
 		}
 		white_peace = ARG
-		
+
 		if = {
-			limit = {				
+			limit = {
 				ARG = {
 					owns_state = 835
 				}
@@ -5384,7 +5384,7 @@ country_event = { # Bolivia winning - Argentina wants peace
 				transfer_state = 835
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = BOL 		# Core of winner
@@ -5399,7 +5399,7 @@ country_event = { # Bolivia winning - Argentina wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -5411,7 +5411,7 @@ country_event = { # Bolivia winning - Argentina wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Argentina losing - Bolivia refuses peace
@@ -5420,9 +5420,9 @@ country_event = { # Argentina losing - Bolivia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -5464,11 +5464,11 @@ country_event = { # Chile losing - Peace with Bolivia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -5506,9 +5506,9 @@ country_event = { # Bolivia winning - Chile wants peace
 			factor = 40
 		}
 		white_peace = CHL
-		
+
 		if = {
-			limit = {				
+			limit = {
 				CHL = {
 					owns_state = 506
 				}
@@ -5517,9 +5517,9 @@ country_event = { # Bolivia winning - Chile wants peace
 				transfer_state = 506
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				CHL = {
 					owns_state = 877
 				}
@@ -5528,7 +5528,7 @@ country_event = { # Bolivia winning - Chile wants peace
 				transfer_state = 877
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = BOL 		# Core of winner
@@ -5543,7 +5543,7 @@ country_event = { # Bolivia winning - Chile wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -5555,7 +5555,7 @@ country_event = { # Bolivia winning - Chile wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Chile losing - Bolivia refuses peace
@@ -5564,9 +5564,9 @@ country_event = { # Chile losing - Bolivia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -5604,11 +5604,11 @@ country_event = { # Chile losing - Peace with Peru?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -5646,9 +5646,9 @@ country_event = { # Peru winning - Chile wants peace
 			factor = 40
 		}
 		white_peace = CHL
-		
+
 		if = {
-			limit = {				
+			limit = {
 				CHL = {
 					owns_state = 877
 				}
@@ -5657,7 +5657,7 @@ country_event = { # Peru winning - Chile wants peace
 				transfer_state = 877
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = PRU 		# Core of winner
@@ -5672,7 +5672,7 @@ country_event = { # Peru winning - Chile wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -5684,7 +5684,7 @@ country_event = { # Peru winning - Chile wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Chile losing - Peru refuses peace
@@ -5693,9 +5693,9 @@ country_event = { # Chile losing - Peru refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -5741,11 +5741,11 @@ country_event = { # USA losing - Peace with Mexico?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -5783,9 +5783,9 @@ country_event = { # Mexico winning - USA wants peace
 			factor = 40
 		}
 		white_peace = USA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 923
 				}
@@ -5794,9 +5794,9 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 923
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 924
 				}
@@ -5808,7 +5808,7 @@ country_event = { # Mexico winning - USA wants peace
 
 
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 376
 				}
@@ -5817,9 +5817,9 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 376
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 377
 				}
@@ -5828,9 +5828,9 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 377
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 922
 				}
@@ -5839,9 +5839,9 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 922
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 921
 				}
@@ -5850,9 +5850,9 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 921
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 375
 				}
@@ -5861,9 +5861,9 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 375
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 928
 				}
@@ -5872,9 +5872,9 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 928
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 378
 				}
@@ -5883,7 +5883,7 @@ country_event = { # Mexico winning - USA wants peace
 				transfer_state = 378
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = MEX 		# Core of winner
@@ -5898,7 +5898,7 @@ country_event = { # Mexico winning - USA wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -5910,7 +5910,7 @@ country_event = { # Mexico winning - USA wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # USA losing - Mexico refuses peace
@@ -5919,9 +5919,9 @@ country_event = { # USA losing - Mexico refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -5963,11 +5963,11 @@ country_event = { # USA losing - Peace with Canada?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -6005,9 +6005,9 @@ country_event = { # Canada winning - USA wants peace
 			factor = 40
 		}
 		white_peace = USA
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 837
 				}
@@ -6016,9 +6016,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 837
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 840
 				}
@@ -6027,9 +6027,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 840
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 841
 				}
@@ -6038,9 +6038,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 841
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 357
 				}
@@ -6049,9 +6049,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 357
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 839
 				}
@@ -6060,9 +6060,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 839
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 838
 				}
@@ -6071,9 +6071,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 838
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 358
 				}
@@ -6082,9 +6082,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 358
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 386
 				}
@@ -6093,9 +6093,9 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 386
 			}
 		}
-		
+
 		if = {
-			limit = {				
+			limit = {
 				USA = {
 					owns_state = 463
 				}
@@ -6104,7 +6104,7 @@ country_event = { # Canada winning - USA wants peace
 				transfer_state = 463
 			}
 		}
-		
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = CAN 		# Core of winner
@@ -6119,7 +6119,7 @@ country_event = { # Canada winning - USA wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -6131,7 +6131,7 @@ country_event = { # Canada winning - USA wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # USA losing - Canada refuses peace
@@ -6140,9 +6140,9 @@ country_event = { # USA losing - Canada refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -6165,14 +6165,14 @@ country_event = { # British Empire losing - Peace with USA?
 		original_tag = ENG
 		OR = {
 			CAN	 = { # Must own some of the disputed states
-				owns_state = 473	
+				owns_state = 473
 				owns_state = 276
 				owns_state = 682
 				owns_state = 464
 				owns_state = 862
 			}
 			ENG	 = { # Imperial Federation too
-				owns_state = 473	
+				owns_state = 473
 				owns_state = 276
 				owns_state = 682
 				owns_state = 464
@@ -6203,7 +6203,7 @@ country_event = { # British Empire losing - Peace with USA?
 				is_in_faction = no # Or not be in a faction
 			}
 			AND = { # Must be occupying key regions
-				controls_state = 473	
+				controls_state = 473
 				controls_state = 276
 				controls_state = 682
 				controls_state = 464
@@ -6211,11 +6211,11 @@ country_event = { # British Empire losing - Peace with USA?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -6253,7 +6253,7 @@ country_event = { # USA winning - British Empire wants peace
 			factor = 40
 		}
 		white_peace = USA
-		
+
 		every_state = { # Give Canada to USA
 			limit = {
 				is_core_of = CAN
@@ -6268,18 +6268,18 @@ country_event = { # USA winning - British Empire wants peace
 				transfer_state = PREV
 			}
 		}
-		
+
 		every_state = { # Give Newfoundland to USA
 			limit = {
 				is_core_of = NFL
 				is_on_continent = north_america
-				is_owned_by = NFL	
+				is_owned_by = NFL
 			}
 			USA = {
 				transfer_state = PREV
 			}
 		}
-		
+
 		every_state = { # Give Occupied American states to USA
 			limit = {
 				OR = {
@@ -6296,7 +6296,7 @@ country_event = { # USA winning - British Empire wants peace
 				transfer_state = PREV
 			}
 		}
-		
+
 		every_state = {
 			limit = {
 				is_on_continent = pacific
@@ -6307,8 +6307,8 @@ country_event = { # USA winning - British Empire wants peace
 				transfer_state = PREV
 			}
 		}
-				
-		
+
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = USA 		# Core of winner
@@ -6323,7 +6323,7 @@ country_event = { # USA winning - British Empire wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -6335,7 +6335,7 @@ country_event = { # USA winning - British Empire wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # British Empire losing - USA refuses peace
@@ -6344,9 +6344,9 @@ country_event = { # British Empire losing - USA refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -6389,11 +6389,11 @@ country_event = { # Sweden losing - Peace with Finland?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -6442,7 +6442,7 @@ country_event = { # Finland winning - Sweden wants peace
 				transfer_state = 909
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SWE = {
@@ -6453,8 +6453,8 @@ country_event = { # Finland winning - Sweden wants peace
 				transfer_state = 145
 			}
 		}
-			
-		
+
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = FIN 		# Core of winner
@@ -6469,7 +6469,7 @@ country_event = { # Finland winning - Sweden wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -6481,7 +6481,7 @@ country_event = { # Finland winning - Sweden wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Sweden losing - Finland refuses peace
@@ -6490,9 +6490,9 @@ country_event = { # Sweden losing - Finland refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -6530,11 +6530,11 @@ country_event = { # Sweden losing - Peace with Denmark?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -6572,7 +6572,7 @@ country_event = { # Denmark winning - Sweden wants peace
 			factor = 40
 		}
 		white_peace = SWE
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = DEN 		# Core of winner
@@ -6586,7 +6586,7 @@ country_event = { # Denmark winning - Sweden wants peace
 				transfer_state = PREV	# Transfer the winners uncontested cores from loser
 			}
 		}
-		
+
 		if = {
 			limit = {
 				DEN = {
@@ -6605,7 +6605,7 @@ country_event = { # Denmark winning - Sweden wants peace
 				transfer_state = 138
 			}
 		}
-		
+
 		if = {
 			limit = {
 				DEN = {
@@ -6627,7 +6627,7 @@ country_event = { # Denmark winning - Sweden wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -6639,7 +6639,7 @@ country_event = { # Denmark winning - Sweden wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Sweden losing - Denmark refuses peace
@@ -6648,9 +6648,9 @@ country_event = { # Sweden losing - Denmark refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -6687,7 +6687,7 @@ country_event = { # Sweden losing - Peace with Moderate Norway?
 				has_government = social_conservative
 				has_government = authoritarian_democrat
 				has_government = paternal_autocrat
-			}	
+			}
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -6699,11 +6699,11 @@ country_event = { # Sweden losing - Peace with Moderate Norway?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -6741,7 +6741,7 @@ country_event = { # Norway winning - Sweden wants peace
 			factor = 40
 		}
 		white_peace = SWE
-		
+
 		if = {
 			limit = {
 				SWE = {
@@ -6752,7 +6752,7 @@ country_event = { # Norway winning - Sweden wants peace
 				transfer_state = 906
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SWE = {
@@ -6763,7 +6763,7 @@ country_event = { # Norway winning - Sweden wants peace
 				transfer_state = 907
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = NOR 		# Core of winner
@@ -6778,7 +6778,7 @@ country_event = { # Norway winning - Sweden wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -6790,7 +6790,7 @@ country_event = { # Norway winning - Sweden wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Sweden losing - Norway refuses peace
@@ -6799,9 +6799,9 @@ country_event = { # Sweden losing - Norway refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -6833,7 +6833,7 @@ country_event = { # Mexico losing - Peace with Guatemala?
 				owns_state = 474
 			}
 		}
-		GUA = {	
+		GUA = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -6845,11 +6845,11 @@ country_event = { # Mexico losing - Peace with Guatemala?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -6887,7 +6887,7 @@ country_event = { # Guatemala winning - Mexico wants peace
 			factor = 40
 		}
 		white_peace = MEX
-		
+
 		if = {
 			limit = {
 				MEX = {
@@ -6898,7 +6898,7 @@ country_event = { # Guatemala winning - Mexico wants peace
 				transfer_state = 474
 			}
 		}
-		
+
 		if = {
 			limit = {
 				MEX = {
@@ -6909,7 +6909,7 @@ country_event = { # Guatemala winning - Mexico wants peace
 				transfer_state = 475
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = GUA 		# Core of winner
@@ -6924,7 +6924,7 @@ country_event = { # Guatemala winning - Mexico wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -6936,7 +6936,7 @@ country_event = { # Guatemala winning - Mexico wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Mexico losing - Guatemala refuses peace
@@ -6945,9 +6945,9 @@ country_event = { # Mexico losing - Guatemala refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -6978,7 +6978,7 @@ country_event = { # Ecuador losing - Peace with Peru?
 				owns_state = 490
 			}
 		}
-		PRU = {	
+		PRU = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -6989,11 +6989,11 @@ country_event = { # Ecuador losing - Peace with Peru?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -7031,7 +7031,7 @@ country_event = { # Peru winning - Ecuador wants peace
 			factor = 40
 		}
 		white_peace = ECU
-		
+
 		if = {
 			limit = {
 				ECU = {
@@ -7041,8 +7041,8 @@ country_event = { # Peru winning - Ecuador wants peace
 			PRU = {
 				transfer_state = 490
 			}
-		}	
-					
+		}
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = PRU 		# Core of winner
@@ -7057,7 +7057,7 @@ country_event = { # Peru winning - Ecuador wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -7069,7 +7069,7 @@ country_event = { # Peru winning - Ecuador wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Ecuador losing - Peru refuses peace
@@ -7078,9 +7078,9 @@ country_event = { # Ecuador losing - Peru refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -7111,7 +7111,7 @@ country_event = { # Swiss losing - Peace with France?
 				owns_state = 755
 			}
 		}
-		FRA = {	
+		FRA = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -7122,11 +7122,11 @@ country_event = { # Swiss losing - Peace with France?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -7172,7 +7172,7 @@ country_event = { # France winning - Switzerland wants peace
 			}
 			white_peace = SWI
 		}
-		
+
 		if = {
 			limit = {
 				SWI = {
@@ -7182,8 +7182,8 @@ country_event = { # France winning - Switzerland wants peace
 			FRA = {
 				transfer_state = 755
 			}
-		}	
-					
+		}
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = FRA 		# Core of winner
@@ -7198,7 +7198,7 @@ country_event = { # France winning - Switzerland wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -7210,7 +7210,7 @@ country_event = { # France winning - Switzerland wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Switzerland losing - France refuses peace
@@ -7219,9 +7219,9 @@ country_event = { # Switzerland losing - France refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -7248,7 +7248,7 @@ country_event = { # Swiss losing - Peace with Italy?
 				owns_state = 756
 			}
 		}
-		ITA = {	
+		ITA = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -7259,11 +7259,11 @@ country_event = { # Swiss losing - Peace with Italy?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -7301,7 +7301,7 @@ country_event = { # Italy winning - Switzerland wants peace
 			factor = 40
 		}
 		white_peace = SWI
-		
+
 		if = {
 			limit = {
 				SWI = {
@@ -7311,8 +7311,8 @@ country_event = { # Italy winning - Switzerland wants peace
 			ITA = {
 				transfer_state = 756
 			}
-		}	
-					
+		}
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = ITA 		# Core of winner
@@ -7327,7 +7327,7 @@ country_event = { # Italy winning - Switzerland wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -7339,7 +7339,7 @@ country_event = { # Italy winning - Switzerland wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Switzerland losing - Italy refuses peace
@@ -7348,9 +7348,9 @@ country_event = { # Switzerland losing - Italy refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -7377,7 +7377,7 @@ country_event = { # Swiss losing - Peace with Austria?
 				owns_state = 937
 			}
 		}
-		AUS = {	
+		AUS = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -7388,11 +7388,11 @@ country_event = { # Swiss losing - Peace with Austria?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -7430,7 +7430,7 @@ country_event = { # Austria winning - Switzerland wants peace
 			factor = 40
 		}
 		white_peace = SWI
-		
+
 		if = {
 			limit = {
 				SWI = {
@@ -7440,8 +7440,8 @@ country_event = { # Austria winning - Switzerland wants peace
 			AUS = {
 				transfer_state = 937
 			}
-		}	
-					
+		}
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = AUS 		# Core of winner
@@ -7456,7 +7456,7 @@ country_event = { # Austria winning - Switzerland wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -7468,7 +7468,7 @@ country_event = { # Austria winning - Switzerland wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Switzerland losing - Austria refuses peace
@@ -7477,9 +7477,9 @@ country_event = { # Switzerland losing - Austria refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -7515,7 +7515,7 @@ country_event = { # Belgium losing - Peace with Netherlands?
 			}
 		}
 		OR = {
-			HOL = {	
+			HOL = {
 				is_puppet = no # Can't be a subject
 				OR = {
 					is_faction_leader = yes # Must be faction leader
@@ -7526,7 +7526,7 @@ country_event = { # Belgium losing - Peace with Netherlands?
 					controls_state = 866
 				}
 			}
-			KNE = {	
+			KNE = {
 				is_puppet = no # Can't be a subject
 				OR = {
 					is_faction_leader = yes # Must be faction leader
@@ -7539,11 +7539,11 @@ country_event = { # Belgium losing - Peace with Netherlands?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -7586,7 +7586,7 @@ country_event = { # Netherlands winning - Belgium wants peace
 			factor = 40
 		}
 		white_peace = BEL
-		
+
 		if = {
 			limit = {
 				BEL = {
@@ -7597,7 +7597,7 @@ country_event = { # Netherlands winning - Belgium wants peace
 				transfer_state = 867
 			}
 		}
-		
+
 		if = {
 			limit = {
 				BEL = {
@@ -7608,7 +7608,7 @@ country_event = { # Netherlands winning - Belgium wants peace
 				transfer_state = 866
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = ROOT 		# Core of winner
@@ -7623,7 +7623,7 @@ country_event = { # Netherlands winning - Belgium wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -7635,7 +7635,7 @@ country_event = { # Netherlands winning - Belgium wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Belgium losing - Netherlands refuses peace
@@ -7644,9 +7644,9 @@ country_event = { # Belgium losing - Netherlands refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -7679,7 +7679,7 @@ country_event = { # Soviets losing - Peace with Ukraine?
 				owns_state = 234
 			}
 		}
-		UKR = {	
+		UKR = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -7692,11 +7692,11 @@ country_event = { # Soviets losing - Peace with Ukraine?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -7734,7 +7734,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 			factor = 40
 		}
 		white_peace = SOV
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -7745,7 +7745,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 				transfer_state = 227
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -7756,7 +7756,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 				transfer_state = 220
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -7767,7 +7767,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 				transfer_state = 240
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -7778,7 +7778,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 				transfer_state = 228
 			}
 		}
-	
+
 		if = {
 			limit = {
 				SOV = {
@@ -7789,7 +7789,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 				transfer_state = 218
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -7800,7 +7800,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 				transfer_state = 234
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = UKR 		# Core of winner
@@ -7815,7 +7815,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -7827,7 +7827,7 @@ country_event = { # Ukraine winning - Soviets wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Soviets losing - Ukraine refuses peace
@@ -7836,9 +7836,9 @@ country_event = { # Soviets losing - Ukraine refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -7866,7 +7866,7 @@ country_event = { # Soviets losing - Peace with Belarus?
 				owns_state = 948
 			}
 		}
-		BLR = {	
+		BLR = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -7878,11 +7878,11 @@ country_event = { # Soviets losing - Peace with Belarus?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -7920,7 +7920,7 @@ country_event = { # Belarus winning - Soviets wants peace
 			factor = 40
 		}
 		white_peace = SOV
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -7931,7 +7931,7 @@ country_event = { # Belarus winning - Soviets wants peace
 				transfer_state = 791
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -7942,7 +7942,7 @@ country_event = { # Belarus winning - Soviets wants peace
 				transfer_state = 948
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = BLR 		# Core of winner
@@ -7957,7 +7957,7 @@ country_event = { # Belarus winning - Soviets wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -7969,7 +7969,7 @@ country_event = { # Belarus winning - Soviets wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Soviets losing - Belarus refuses peace
@@ -7978,9 +7978,9 @@ country_event = { # Soviets losing - Belarus refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -8007,7 +8007,7 @@ country_event = { # Soviets losing - Peace with Latvia?
 				owns_state = 914
 			}
 		}
-		LAT = {	
+		LAT = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -8018,11 +8018,11 @@ country_event = { # Soviets losing - Peace with Latvia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -8060,7 +8060,7 @@ country_event = { # Latvia winning - Soviets wants peace
 			factor = 40
 		}
 		white_peace = SOV
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8071,7 +8071,7 @@ country_event = { # Latvia winning - Soviets wants peace
 				transfer_state = 914
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = LAT 		# Core of winner
@@ -8086,7 +8086,7 @@ country_event = { # Latvia winning - Soviets wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -8098,7 +8098,7 @@ country_event = { # Latvia winning - Soviets wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Soviets losing - Latvia refuses peace
@@ -8107,9 +8107,9 @@ country_event = { # Soviets losing - Latvia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -8137,7 +8137,7 @@ country_event = { # Soviets losing - Peace with Finland?
 				owns_state = 213
 			}
 		}
-		FIN = {	
+		FIN = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -8149,11 +8149,11 @@ country_event = { # Soviets losing - Peace with Finland?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -8191,7 +8191,7 @@ country_event = { # Finland winning - Soviets wants peace
 			factor = 40
 		}
 		white_peace = SOV
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8202,7 +8202,7 @@ country_event = { # Finland winning - Soviets wants peace
 				transfer_state = 722
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8213,7 +8213,7 @@ country_event = { # Finland winning - Soviets wants peace
 				transfer_state = 213
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8224,7 +8224,7 @@ country_event = { # Finland winning - Soviets wants peace
 				transfer_state = 215
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8235,7 +8235,7 @@ country_event = { # Finland winning - Soviets wants peace
 				transfer_state = 216
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = FIN 		# Core of winner
@@ -8250,7 +8250,7 @@ country_event = { # Finland winning - Soviets wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -8262,7 +8262,7 @@ country_event = { # Finland winning - Soviets wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Soviets losing - Finland refuses peace
@@ -8271,9 +8271,9 @@ country_event = { # Soviets losing - Finland refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -8301,7 +8301,7 @@ country_event = { # Soviets losing - Peace with Turks?
 				owns_state = 404
 			}
 		}
-		TRK = {	
+		TRK = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -8313,11 +8313,11 @@ country_event = { # Soviets losing - Peace with Turks?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -8355,7 +8355,7 @@ country_event = { # Turks winning - Soviets wants peace
 			factor = 40
 		}
 		white_peace = SOV
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8366,7 +8366,7 @@ country_event = { # Turks winning - Soviets wants peace
 				transfer_state = 587
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8377,7 +8377,7 @@ country_event = { # Turks winning - Soviets wants peace
 				transfer_state = 402
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8388,7 +8388,7 @@ country_event = { # Turks winning - Soviets wants peace
 				transfer_state = 404
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8399,7 +8399,7 @@ country_event = { # Turks winning - Soviets wants peace
 				transfer_state = 586
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8410,7 +8410,7 @@ country_event = { # Turks winning - Soviets wants peace
 				transfer_state = 732
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SOV = {
@@ -8421,7 +8421,7 @@ country_event = { # Turks winning - Soviets wants peace
 				transfer_state = 589
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = TRK 		# Core of winner
@@ -8436,7 +8436,7 @@ country_event = { # Turks winning - Soviets wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -8448,7 +8448,7 @@ country_event = { # Turks winning - Soviets wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Soviets losing - Turks refuses peace
@@ -8457,9 +8457,9 @@ country_event = { # Soviets losing - Turks refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -8490,7 +8490,7 @@ country_event = { # Peru losing - Peace with Columbia?
 				owns_state = 753
 			}
 		}
-		COL = {	
+		COL = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -8501,11 +8501,11 @@ country_event = { # Peru losing - Peace with Columbia?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -8543,7 +8543,7 @@ country_event = { # Columbia winning - Peru wants peace
 			factor = 40
 		}
 		white_peace = PRU
-		
+
 		if = {
 			limit = {
 				PRU = {
@@ -8554,7 +8554,7 @@ country_event = { # Columbia winning - Peru wants peace
 				transfer_state = 753
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = COL 		# Core of winner
@@ -8569,7 +8569,7 @@ country_event = { # Columbia winning - Peru wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -8581,7 +8581,7 @@ country_event = { # Columbia winning - Peru wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Peru losing - Columbia refuses peace
@@ -8590,9 +8590,9 @@ country_event = { # Peru losing - Columbia refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -8619,7 +8619,7 @@ country_event = { # Peru losing - Peace with Chile?
 				owns_state = 876
 			}
 		}
-		CHL = {	
+		CHL = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -8630,11 +8630,11 @@ country_event = { # Peru losing - Peace with Chile?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -8672,7 +8672,7 @@ country_event = { # Chile winning - Peru wants peace
 			factor = 40
 		}
 		white_peace = PRU
-		
+
 		if = {
 			limit = {
 				PRU = {
@@ -8683,7 +8683,7 @@ country_event = { # Chile winning - Peru wants peace
 				transfer_state = 876
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = CHL 		# Core of winner
@@ -8698,7 +8698,7 @@ country_event = { # Chile winning - Peru wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -8710,7 +8710,7 @@ country_event = { # Chile winning - Peru wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Peru losing - Chile refuses peace
@@ -8719,9 +8719,9 @@ country_event = { # Peru losing - Chile refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -8748,7 +8748,7 @@ country_event = { # Peru losing - Peace with Ecuador?
 				owns_state = 491
 			}
 		}
-		ECU = {	
+		ECU = {
 			is_puppet = no # Can't be a subject
 			OR = {
 				is_faction_leader = yes # Must be faction leader
@@ -8759,11 +8759,11 @@ country_event = { # Peru losing - Peace with Ecuador?
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -8801,7 +8801,7 @@ country_event = { # Ecuador winning - Peru wants peace
 			factor = 40
 		}
 		white_peace = PRU
-		
+
 		if = {
 			limit = {
 				PRU = {
@@ -8812,7 +8812,7 @@ country_event = { # Ecuador winning - Peru wants peace
 				set_demilitarized_zone = yes
 			}
 		}
-					
+
 		every_state = {					# Is this too much?
 			limit = {
 				is_core_of = ECU 		# Core of winner
@@ -8827,7 +8827,7 @@ country_event = { # Ecuador winning - Peru wants peace
 			}
 		}
 
-	}	
+	}
 	option = {
 		name = white.2.b
 		ai_chance = {
@@ -8839,7 +8839,7 @@ country_event = { # Ecuador winning - Peru wants peace
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.1
-	}	
+	}
 }
 
 country_event = { # Peru losing - Ecuador refuses peace
@@ -8848,9 +8848,9 @@ country_event = { # Peru losing - Ecuador refuses peace
 	title = white.3.t
 	desc = white.3.d
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = white.3.a
 		add_war_support = 0.05
@@ -8869,22 +8869,22 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 
 	fire_only_once = yes
-	
+
 	trigger = {
-	original_tag = XSM
-		XSM = { 
-		owns_state = 939
-		owns_state = 621
-		MON = {
-			has_war_with = XSM
-			controls_state = 939
-			controls_state = 621
+		original_tag = XSM
+		XSM = {
+			owns_state = 939
+			owns_state = 621
+			MON = {
+				has_war_with = XSM
+				controls_state = 939
+				controls_state = 621
+			}
 		}
-	}
 	}
 
 	mean_time_to_happen = {
-	    days = 1
+		days = 1
 	}
 
 	option = {
@@ -8912,16 +8912,16 @@ country_event = {
 
 	option = {
 		name =  white.2.a
-			XSM = {
+		XSM = {
 			add_political_power = -100
 			white_peace_with_ROOT = yes
 			white_peace_with_TARGET = yes
-			}
-			add_political_power = 100
-			transfer_state = 621
-			transfer_state = 939
-			
 		}
+		add_political_power = 100
+		transfer_state = 621
+		transfer_state = 939
+
+	}
 	option = {
 		name = white.2.b
 		XSM = {
@@ -8955,26 +8955,26 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 
 	fire_only_once = yes
-	
+
 	trigger = {
-	original_tag = FNG
-		FNG = { 
-		owns_state = 611
-		owns_state = 930
-		owns_state = 929
-		owns_state = 870
-		MON = {
-			has_war_with = FNG
-			controls_state = 611
-			controls_state = 930 
-            controls_state = 929
-			controls_state = 870		
+		original_tag = FNG
+		FNG = {
+			owns_state = 611
+			owns_state = 930
+			owns_state = 929
+			owns_state = 870
+			MON = {
+				has_war_with = FNG
+				controls_state = 611
+				controls_state = 930
+				controls_state = 929
+				controls_state = 870
+			}
 		}
-	}
 	}
 
 	mean_time_to_happen = {
-	    days = 1
+		days = 1
 	}
 
 	option = {
@@ -9002,18 +9002,18 @@ country_event = {
 
 	option = {
 		name =  white.2.a
-			FNG = {
+		FNG = {
 			add_political_power = -100
 			white_peace_with_ROOT = yes
 			white_peace_with_TARGET = yes
-			}
-			add_political_power = 100
-			transfer_state = 611
-			transfer_state = 930
-			transfer_state = 929
-			transfer_state = 870
-			
 		}
+		add_political_power = 100
+		transfer_state = 611
+		transfer_state = 930
+		transfer_state = 929
+		transfer_state = 870
+
+	}
 	option = {
 		name = white.2.b
 		FNG = {
@@ -9047,20 +9047,20 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 
 	fire_only_once = yes
-	
+
 	trigger = {
-	original_tag = XSM
-		XSM = { 
-		owns_state = 604
-		TIB = {
-			has_war_with = XSM
-			controls_state = 604
+		original_tag = XSM
+		XSM = {
+			owns_state = 604
+			TIB = {
+				has_war_with = XSM
+				controls_state = 604
+			}
 		}
-	}
 	}
 
 	mean_time_to_happen = {
-	    days = 1
+		days = 1
 	}
 
 	option = {
@@ -9088,15 +9088,15 @@ country_event = {
 
 	option = {
 		name =  white.2.a
-			XSM = {
+		XSM = {
 			add_political_power = -100
 			white_peace_with_ROOT = yes
 			white_peace_with_TARGET = yes
-			}
-			add_political_power = 100
-			transfer_state = 604
-			
 		}
+		add_political_power = 100
+		transfer_state = 604
+
+	}
 	option = {
 		name = white.2.b
 		XSM = {
@@ -9129,20 +9129,20 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 
 	fire_only_once = yes
-	
+
 	trigger = {
-	original_tag = SCH
-		SCH = { 
-		owns_state = 895
-		TIB = {
-			has_war_with = SCH
-			controls_state = 895
+		original_tag = SCH
+		SCH = {
+			owns_state = 895
+			TIB = {
+				has_war_with = SCH
+				controls_state = 895
+			}
 		}
-	}
 	}
 
 	mean_time_to_happen = {
-	    days = 1
+		days = 1
 	}
 
 	option = {
@@ -9170,16 +9170,16 @@ country_event = {
 
 	option = {
 		name =  white.2.a
-			SCH = {
+		SCH = {
 			add_political_power = -100
 			white_peace_with_ROOT = yes
 			white_peace_with_TARGET = yes
-			}
-			add_political_power = 100
-			transfer_state = 639
-			transfer_state = 939
-			
 		}
+		add_political_power = 100
+		transfer_state = 639
+		transfer_state = 939
+
+	}
 	option = {
 		name = white.2.b
 		SCH = {
@@ -9212,16 +9212,16 @@ add_namespace = milzone
 country_event = { # Serbia - removes demilitarized zone from Austrian border
 	id = milzone.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.1"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = AUS
 		102 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		SER = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = AUS # If allied to former enemy demilitarized zone
 				is_puppet_of = AUS	 	 # doesn't make much sense.
@@ -9233,18 +9233,18 @@ country_event = { # Serbia - removes demilitarized zone from Austrian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				102 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			102 = {
@@ -9257,21 +9257,21 @@ country_event = { # Serbia - removes demilitarized zone from Austrian border
 country_event = { # Italy - removes demilitarized zone from Swiss border
 	id = milzone.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.2"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = SWI
 		OR = {
 			159 = {
-				is_demilitarized_zone = yes 
+				is_demilitarized_zone = yes
 			}
 			158 = {
-				is_demilitarized_zone = yes 
+				is_demilitarized_zone = yes
 			}
-		}			
+		}
 		ITA = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = SWI # If allied to former enemy demilitarized zone
 				is_puppet_of = SWI	 	 # doesn't make much sense.
@@ -9283,18 +9283,18 @@ country_event = { # Italy - removes demilitarized zone from Swiss border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				159 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			159 = {
@@ -9304,7 +9304,7 @@ country_event = { # Italy - removes demilitarized zone from Swiss border
 		if = {
 			limit = {
 				158 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			158 = {
@@ -9317,16 +9317,16 @@ country_event = { # Italy - removes demilitarized zone from Swiss border
 country_event = { # Afghanistan - removes demilitarized zone from Iranian border
 	id = milzone.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.3"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = AFG
 		416 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		PER = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = AFG # If allied to former enemy demilitarized zone
 				is_puppet_of = AFG	 	 # doesn't make much sense.
@@ -9338,18 +9338,18 @@ country_event = { # Afghanistan - removes demilitarized zone from Iranian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				416 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			416 = {
@@ -9362,19 +9362,19 @@ country_event = { # Afghanistan - removes demilitarized zone from Iranian border
 country_event = { # Baluchistan - removes demilitarized zone from Iranian border
 	id = milzone.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.4"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		OR = {
 			original_tag = RAJ
 			original_tag = IND
 		}
 		410 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		PER = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				OR = {
 					is_in_faction_with = RAJ # If allied to former enemy demilitarized zone
@@ -9395,18 +9395,18 @@ country_event = { # Baluchistan - removes demilitarized zone from Iranian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				410 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			410 = {
@@ -9419,16 +9419,16 @@ country_event = { # Baluchistan - removes demilitarized zone from Iranian border
 country_event = { # Uruguay - removes demilitarized zone from Brazilian border
 	id = milzone.5
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.5"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = URG
 		502 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		BRA = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = URG # If allied to former enemy demilitarized zone
 				is_puppet_of = URG	 	 # doesn't make much sense.
@@ -9440,18 +9440,18 @@ country_event = { # Uruguay - removes demilitarized zone from Brazilian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				502 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			502 = {
@@ -9464,21 +9464,21 @@ country_event = { # Uruguay - removes demilitarized zone from Brazilian border
 country_event = { # Argentina - removes demilitarized zone from Brazilian border
 	id = milzone.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.6"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = ARG
 		OR = {
 			502 = {
-				is_demilitarized_zone = yes 
+				is_demilitarized_zone = yes
 			}
 			503 = {
-				is_demilitarized_zone = yes 
+				is_demilitarized_zone = yes
 			}
 		}
 		BRA = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = ARG # If allied to former enemy demilitarized zone
 				is_puppet_of = ARG	 	 # doesn't make much sense.
@@ -9490,18 +9490,18 @@ country_event = { # Argentina - removes demilitarized zone from Brazilian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				502 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			502 = {
@@ -9509,12 +9509,12 @@ country_event = { # Argentina - removes demilitarized zone from Brazilian border
 			}
 		}
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				503 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			503 = {
@@ -9527,16 +9527,16 @@ country_event = { # Argentina - removes demilitarized zone from Brazilian border
 country_event = { # Bolivia - removes demilitarized zone from Brazilian border
 	id = milzone.7
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.7"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = BOL
 		280 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		BRA = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = BOL # If allied to former enemy demilitarized zone
 				is_puppet_of = BOL	 	 # doesn't make much sense.
@@ -9548,18 +9548,18 @@ country_event = { # Bolivia - removes demilitarized zone from Brazilian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				280 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			280 = {
@@ -9572,16 +9572,16 @@ country_event = { # Bolivia - removes demilitarized zone from Brazilian border
 country_event = { # Columbia - removes demilitarized zone from Brazilian border
 	id = milzone.8
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.8"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = COL
 		901 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		BRA = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = COL # If allied to former enemy demilitarized zone
 				is_puppet_of = COL	 	 # doesn't make much sense.
@@ -9593,18 +9593,18 @@ country_event = { # Columbia - removes demilitarized zone from Brazilian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				901 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			901 = {
@@ -9617,16 +9617,16 @@ country_event = { # Columbia - removes demilitarized zone from Brazilian border
 country_event = { # Venezuela - removes demilitarized zone from Brazilian border
 	id = milzone.9
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.9"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = VEN
 		901 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		BRA = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = VEN # If allied to former enemy demilitarized zone
 				is_puppet_of = VEN	 	 # doesn't make much sense.
@@ -9638,18 +9638,18 @@ country_event = { # Venezuela - removes demilitarized zone from Brazilian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				901 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			901 = {
@@ -9662,16 +9662,16 @@ country_event = { # Venezuela - removes demilitarized zone from Brazilian border
 country_event = { # Denmark - removes demilitarized zone from Swedish border
 	id = milzone.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.10"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = DEN
 		138 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		SWE = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = DEN # If allied to former enemy demilitarized zone
 				is_puppet_of = DEN	 	 # doesn't make much sense.
@@ -9683,18 +9683,18 @@ country_event = { # Denmark - removes demilitarized zone from Swedish border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				138 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			138 = {
@@ -9707,16 +9707,16 @@ country_event = { # Denmark - removes demilitarized zone from Swedish border
 country_event = { # Ecuador - removes demilitarized zone from Peruvian border
 	id = milzone.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event milzone.11"}
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		original_tag = ECU
 		490 = {
-			is_demilitarized_zone = yes 
+			is_demilitarized_zone = yes
 		}
 		PRU = {
-			#has_country_flag = 
+			#has_country_flag =
 			OR = {
 				is_in_faction_with = ECU # If allied to former enemy demilitarized zone
 				is_puppet_of = ECU	 	 # doesn't make much sense.
@@ -9728,18 +9728,18 @@ country_event = { # Ecuador - removes demilitarized zone from Peruvian border
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		if = {
 			limit = {
 				490 = {
-					is_demilitarized_zone = yes 
+					is_demilitarized_zone = yes
 				}
 			}
 			490 = {

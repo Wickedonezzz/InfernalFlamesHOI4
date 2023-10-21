@@ -12,11 +12,12 @@ state={
 			11771 3 
 		}
 		add_claim_by = KMT
+		add_claim_by = ZHI
 		add_core_of = FNG
 		buildings = {
 			infrastructure = 2
-			arms_factory = 3
-			industrial_complex = 2
+			arms_factory = 2
+			industrial_complex = 1
 			air_base = 3
 
 		}
@@ -28,6 +29,6 @@ state={
 	}
 	manpower=5126462
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=megalopolis
 	local_supplies=0.000
 }

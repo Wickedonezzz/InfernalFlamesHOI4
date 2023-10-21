@@ -168,7 +168,7 @@ CRU_germany_send_volunteers = {
     }
     abort_when_not_enabled = yes
 
-  ai_strategy = {
+    ai_strategy = {
 		type = befriend
 		id = "CRU"
 		value = 400
@@ -178,9 +178,9 @@ CRU_germany_send_volunteers = {
 		id = "CRU"
 		value = 400
 	}
-  ai_strategy = {
+    ai_strategy = {
     type = send_volunteers_desire
     id = "CRU"
     value = 400
-  }
+    }
 }

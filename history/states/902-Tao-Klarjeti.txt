@@ -4,12 +4,13 @@ state={
 	name="STATE_902"
 
 	history={
-		owner = SOV
+		owner = GEO
 		victory_points = {
 			7454 1 
 		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 
 		}
 		add_claim_by = TUR

@@ -464,3 +464,10 @@ COL_armytree: "Modernizing the Army."
 
 #otheshet
 COL_caqueta: "Remilitarization of Caqueta"
+
+### Companies
+ cementos_argos: "Cementos Argos"
+ empresa_telefonos: "Empresa de Teléfonos de Bogotá"
+ empresa_colombiana: "Empresa Colombiana de Petróleos"
+ TNAM: "Taller Nacional de Artes Mecánicas"
+ auto_tecnica: "Auto Tecnica Colombiana"

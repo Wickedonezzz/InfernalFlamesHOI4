@@ -16,9 +16,13 @@ opinion_modifiers = {
 
 	###Stability System###
 
-	FR_different_ideology = { value = -30 }
-	FR_similar_ideology = { value = 20 }
-	FR_same_ideology = { value = 40 }
+	FX_different_ideology = { value = -30 }
+	FX_similar_ideology = { value = 20 }
+	FX_same_ideology = { value = 40 }
+	FX_different_ideology_close = { value = -10 }
+	FX_similar_ideology_close = { value = 30 }
+	FX_similar_ideology_distant = { value = 10 }
+	FX_factional_rivalry = { value = -30 }
 	trade_sanctions = {
 		trade = yes
 		value = -75

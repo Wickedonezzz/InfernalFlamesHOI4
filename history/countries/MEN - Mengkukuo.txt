@@ -32,6 +32,5 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_80
 	absolute_monarchy
 }

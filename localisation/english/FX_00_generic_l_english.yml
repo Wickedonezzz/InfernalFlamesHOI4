@@ -58,6 +58,7 @@ independent_war_desc: "This country is currently in a independent war. It does n
 ### Threats
 threat_2nd_great_war: "The Second Great War"
 threat_north_borneo_occupation: "Filipino Occupation of North Borneo"
+threat_greco_turkish_war: "The Third Greco-Turkish War"
 
 ### Generic Companies
 generic_arms_company: "[Root.Capital.GetCapitalVictoryPointName] Arsenal"

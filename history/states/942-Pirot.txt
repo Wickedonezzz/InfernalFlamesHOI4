@@ -4,12 +4,12 @@ state={
 	name="STATE_942"
 
 	history={
-		owner = SER
+		owner = BUL
 		buildings = {
 			infrastructure = 2
 		}
 		add_core_of = SER
-		set_demilitarized_zone = yes
+		add_core_of = BUL
 	}
 
 	provinces={

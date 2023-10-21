@@ -689,7 +689,7 @@ USA_add_aircraft_variants = {
 }
 
 USA_add_armour_variants = {
-	  if = {
+	if = {
 		limit = { has_dlc = "No Step Back" }
 		create_equipment_variant = {
 			name = "M1 Combat Car"
@@ -747,9 +747,9 @@ USA_add_armour_variants = {
 }
 
 USA_start_irish_revolt = {
-  set_global_flag = irish_revolt_attempted
-  IRE = {
-    hidden_effect = {
+	set_global_flag = irish_revolt_attempted
+	IRE = {
+		hidden_effect = {
 			transfer_state = 135
 			transfer_state = 134
 			transfer_state = 815
@@ -758,7 +758,7 @@ USA_start_irish_revolt = {
 			set_capital = { state = 135 }
 			set_stability = 0.5
 			set_cosmetic_tag = IRE_FREE
-      
+
 			ENG = {
 				declare_war_on = {
 					target = PREV
@@ -772,7 +772,7 @@ USA_start_irish_revolt = {
 					add_state_claim = 816
 				}
 			}
-    }
-    custom_effect_tooltip = USA_operation_irish_revolt_tt
-  }
+		}
+		custom_effect_tooltip = USA_operation_irish_revolt_tt
+	}
 }

@@ -1195,18 +1195,18 @@ focus_tree = {
 		prerequisite = { focus = BLR_establish_the_belarusian_air_force }
 		relative_position_id = BLR_establish_the_belarusian_air_force
 		completion_reward = {
-			add_tech_bonus = {
-				name = BLR_fighter_modernization
-				category = fighter_techs
-				bonus = 1.0
-				uses = 1
-			}
+			# add_tech_bonus = {
+			# 	name = BLR_fighter_modernization
+			# 	category = fighter_techs
+			# 	bonus = 1.0
+			# 	uses = 1
+			# }
 		}
 		search_filters = {
 			FOCUS_FILTER_AIRFORCE_BONUS
 			FOCUS_FILTER_RESEARCH
 		}
-	}
+	}	
 	
 	# Bomber Acquisition
 	focus = {
@@ -3119,7 +3119,7 @@ focus_tree = {
 		}
 		relative_position_id = BLR_demand_lithuanian_lands
 		completion_reward = {
-			increase_mobilisation = yes
+			increase_mobilization = yes
 		}
 	}
 	

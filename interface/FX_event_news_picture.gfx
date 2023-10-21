@@ -12,6 +12,10 @@ spriteTypes = {
 
   ### West Europe
 	spriteType = {
+		name = "GFX_news_event_BLR_ataman_dead"
+		texturefile = "gfx/event_news_pictures/europe/news_event_BLR_ataman_dead.png"	
+  }
+	spriteType = {
 		name = "GFX_news_event_BLR_konigsberg_conference"
 		texturefile = "gfx/event_news_pictures/europe/news_event_BLR_konigsberg_conference.png"	
   }
@@ -300,21 +304,21 @@ spriteTypes = {
 		texturefile = "gfx/event_news_pictures/east_asia/news_event_VIN_uprising.png"
 	}
 
-  ### South Asia
-  spriteType = {
+	### South Asia
+	spriteType = {
 		name = "GFX_news_event_afghan_dehli_war"
 		texturefile = "gfx/event_news_pictures/south_asia/news_event_afghan_dehli_war.png"
 	}
-  spriteType = {
+	spriteType = {
 		name = "GFX_news_event_india_is_kill"
-		texturefile = "gfx/event_news_pictures/europe/news_event_india_is_kill.png"
+		texturefile = "gfx/event_news_pictures/south_asia/news_event_india_is_kill.png"
 	}
-  spriteType = {
+	spriteType = {
 		name = "GFX_news_event_india_is_angry"
-		texturefile = "gfx/event_news_pictures/europe/news_event_india_is_angry.png"
+		texturefile = "gfx/event_news_pictures/south_asia/news_event_india_is_angry.png"
 	}
 
-  ### South America
+    ### South America
 	spriteType = {
 		name = "GFX_news_event_BOL_syndicalists"
 		texturefile = "gfx/event_news_pictures/south_america/news_event_BOL_syndicalists.png"
@@ -344,12 +348,19 @@ spriteTypes = {
 		texturefile = "gfx/event_news_pictures/south_america/news_event_VEN_coup.png"
 	}	
 
-  ### Middle East
-  spriteType = {
-		name = "GFX_news_event_ARB_revolt"
-		texturefile = "gfx/event_news_pictures/middle_east/news_event_ARB_revolt.png"
+    ### Middle East
+    spriteType = {
+		name = "GFX_news_event_HEJ_revolt"
+		texturefile = "gfx/event_news_pictures/middle_east/news_event_HEJ_revolt.png"
 	}
-
+	spriteType = {
+		name = "GFX_news_event_EGY_Fuad_Death"
+		texturefile = "gfx/event_news_pictures/middle_east/news_event_EGY_Fuad_Death.png"
+	}
+    spriteType = {
+		name = "GFX_news_event_EGY_Farouk_speech"
+		texturefile = "gfx/event_news_pictures/middle_east/news_event_EGY_Farouk_speech.png"
+	}
 	### City Capture
 	# Europe
 	spriteType = {

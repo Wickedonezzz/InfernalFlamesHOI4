@@ -1,9 +1,0 @@
-# RHO
-
-ideas = {
-	country = {
-		RHO_ = {
-		
-		}
-	}
-}

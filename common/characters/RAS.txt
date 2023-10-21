@@ -10,10 +10,10 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = paternal_autocrat_subtype
+			ideology = oligarchy_subtype
 		}
 		country_leader = {
-			ideology = authoritarian_democrat_subtype
+			ideology = absolute_mon_subtype
 		}
 		field_marshal = {
 			traits = { }

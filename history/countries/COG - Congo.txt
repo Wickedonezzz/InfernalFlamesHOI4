@@ -46,7 +46,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_70
 	constitutional_monarchy
 	colonial_government
 }

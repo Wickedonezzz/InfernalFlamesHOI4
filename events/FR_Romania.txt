@@ -104,11 +104,11 @@ country_event = { # Michael's Coronation
 
 	trigger = {
 		tag = ROM
-		NOT = { 
+		NOT = {
 			OR = {
 				has_country_flag = ROM_michael_assassinated
 				has_completed_focus = ROM_abolish_the_monarchy
-        has_government = valkist
+				has_government = valkist
 			}
 		}
 	}
@@ -162,7 +162,7 @@ country_event = { # Effects of Black Wednesday Dissapearing
 	option = {
 		name = romania.4.a
 		clr_country_flag = ROM_black_wednesday
-    remove_ideas = ROM_economic_expansion
+		remove_ideas = ROM_economic_expansion
 		if = {
 			limit = { has_idea = ROM_black_wednesday_recovering }
 			remove_ideas = ROM_black_wednesday_recovering
@@ -193,8 +193,8 @@ country_event = { # Tensions in Transylvania
 			}
 
 			add_dynamic_modifier = {
-          modifier = ROM_hungarian_resistance
-      }
+				modifier = ROM_hungarian_resistance
+			}
 		}
 		hidden_effect = {
 			HUN = {
@@ -298,7 +298,7 @@ country_event = { # Meeting with the Progressives
 	title = romania.9.t
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
-	
+
 	desc = {
 		text = romania.9.d1
 		trigger = {
@@ -445,12 +445,12 @@ country_event = { # Georgists Leaves the Coalition
 	desc = romania.13.d
 	picture = GFX_report_event_canada_patriation
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ROM
 		set_temp_variable = { offset = rom_progressive_strength }
 		subtract_from_temp_variable = { offset = 2 }
-		check_variable = { 
+		check_variable = {
 			var = rom_conservative_strength
 			value = offset
 			compare = less_than_or_equals
@@ -481,7 +481,7 @@ country_event = { # Maniu Faction Leaves the Coalition
 		tag = ROM
 		set_temp_variable = { offset = rom_conservative_strength }
 		subtract_from_temp_variable = { offset = 2 }
-		check_variable = { 
+		check_variable = {
 			var = rom_progressive_strength
 			value = offset
 			compare = less_than_or_equals
@@ -596,12 +596,12 @@ country_event = { # 1937 General Elections
 		set_country_flag = ROM_had_1937_elections
 		set_country_flag = ROM_status_quo_election
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Armand_Calinescu_hog_ade
-			ROM_Grigore_Niculescu_Buzesti_for_ade
-			ROM_Gheorghe_Potopeanu_eco_pau
-			ROM_Aurel_Aldea_sec_sco
-		}
+
+		activate_advisor = ROM_Armand_Calinescu_hog_ade
+		activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
+		activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
+		activate_advisor = ROM_Aurel_Aldea_sec_sco
+
 		hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 			random_other_country = {
@@ -641,14 +641,14 @@ country_event = { # 1937 General Elections
 				has_country_flag = ROM_conservative_coalition
 				has_country_flag = ROM_progressive_coalition
 			}
-			add_coalition_social_liberal = yes 
-			add_coalition_social_conservative = yes 
-			add_ideas = {
-				ROM_Constantin_Bratianu_hog_mli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Gheorghe_Mironescu_eco_sco
-				ROM_Victor_Iamandi_sec_mli
-			}
+			add_coalition_social_liberal = yes
+			add_coalition_social_conservative = yes
+
+			activate_advisor = ROM_Constantin_Bratianu_hog_mli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Gheorghe_Mironescu_eco_sco
+			activate_advisor = ROM_Victor_Iamandi_sec_mli
+
 			add_popularity = {
 				ideology = social_liberal
 				popularity = 0.05
@@ -660,13 +660,13 @@ country_event = { # 1937 General Elections
 		}
 		else_if = {
 			limit = { has_country_flag = ROM_conservative_coalition }
-			add_coalition_social_conservative = yes 
-			add_ideas = {
-				ROM_Constantin_Bratianu_hog_mli
-				ROM_Viorel_Tilea_for_sco
-				ROM_Mitita_Constantinescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+			add_coalition_social_conservative = yes
+
+			activate_advisor = ROM_Constantin_Bratianu_hog_mli
+			activate_advisor = ROM_Viorel_Tilea_for_sco
+			activate_advisor = ROM_Mitita_Constantinescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			add_popularity = {
 				ideology = social_conservative
 				popularity = 0.1
@@ -674,25 +674,25 @@ country_event = { # 1937 General Elections
 		}
 		else_if = {
 			limit = { has_country_flag = ROM_progressive_coalition }
-			add_coalition_social_liberal = yes 
-			add_ideas = {
-				ROM_Constantin_Bratianu_hog_mli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Victor_Slavescu_eco_mli
-				ROM_Richard_Franasovici_sec_mli
-			}
+			add_coalition_social_liberal = yes
+
+			activate_advisor = ROM_Constantin_Bratianu_hog_mli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Victor_Slavescu_eco_mli
+			activate_advisor = ROM_Richard_Franasovici_sec_mli
+
 			add_popularity = {
 				ideology = social_liberal
 				popularity = 0.1
 			}
 		}
 		else = {
-			add_ideas = {
-				ROM_Constantin_Bratianu_hog_mli
-				ROM_Savel_Radulescu_for_mli
-				ROM_Mitita_Constantinescu_eco_mli
-				ROM_Victor_Iamandi_sec_mli
-			}
+
+			activate_advisor = ROM_Constantin_Bratianu_hog_mli
+			activate_advisor = ROM_Savel_Radulescu_for_mli
+			activate_advisor = ROM_Mitita_Constantinescu_eco_mli
+			activate_advisor = ROM_Victor_Iamandi_sec_mli
+
 		}
 		hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
@@ -727,21 +727,21 @@ country_event = { # 1937 General Elections
 		remove_every_minister = yes
 		if = {
 			limit = { has_country_flag = ROM_leftist_coalition }
-			add_coalition_libertarian_socialist = yes 
-			add_ideas = {
-				ROM_Virgil_Madgearu_hog_sde
-				ROM_Ana_Pauker_for_col
-				ROM_Ion_Mihalache_eco_sde
-				ROM_Pantelimon_Halippa_sec_sde
-			}
+			add_coalition_libertarian_socialist = yes
+
+			activate_advisor = ROM_Virgil_Madgearu_hog_sde
+			activate_advisor = ROM_Ana_Pauker_for_col
+			activate_advisor = ROM_Ion_Mihalache_eco_sde
+			activate_advisor = ROM_Pantelimon_Halippa_sec_sde
+
 		}
 		else = {
-			add_ideas = {
-				ROM_Virgil_Madgearu_hog_sde
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Ion_Mihalache_eco_sde
-				ROM_Pantelimon_Halippa_sec_sde
-			}
+
+			activate_advisor = ROM_Virgil_Madgearu_hog_sde
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Ion_Mihalache_eco_sde
+			activate_advisor = ROM_Pantelimon_Halippa_sec_sde
+
 		}
 		hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
@@ -777,14 +777,14 @@ country_event = { # 1937 General Elections
 		increase_ruling_party_popularity_by_15 = yes
 		set_country_flag = ROM_had_1937_elections
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Corneliu_Zelea_Codreanu_hog_val
-			ROM_Ion_Mota_for_val
-			ROM_Gheorghe_Clime_eco_val
-			ROM_Ion_Belgea_sec_val
-		}
+
+		activate_advisor = ROM_Corneliu_Zelea_Codreanu_hog_val
+		activate_advisor = ROM_Ion_Mota_for_val
+		activate_advisor = ROM_Gheorghe_Clime_eco_val
+		activate_advisor = ROM_Ion_Belgea_sec_val
+
 		hidden_effect = {
-      set_country_flag = ROM_valkist_romania
+			set_country_flag = ROM_valkist_romania
 			mark_focus_tree_layout_dirty = yes
 			swap_ideas = {
 				remove_idea = constitutional_monarchy
@@ -809,14 +809,14 @@ country_event = { # 1937 General Elections
 		increase_ruling_party_popularity_by_15 = yes
 		set_country_flag = ROM_had_1937_elections
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Horia_Sima_hog_npo
-			ROM_Mihail_Sturdza_for_npo
-			ROM_Ilie_Garneata_eco_npo
-			ROM_Horia_Sima_sec_npo
-		}
+
+		activate_advisor = ROM_Horia_Sima_hog_npo
+		activate_advisor = ROM_Mihail_Sturdza_for_npo
+		activate_advisor = ROM_Ilie_Garneata_eco_npo
+		activate_advisor = ROM_Horia_Sima_sec_npo
+
 		hidden_effect = {
-      set_country_flag = ROM_natpop_romania
+			set_country_flag = ROM_natpop_romania
 			mark_focus_tree_layout_dirty = yes
 			random_other_country = {
 				news_event = { id = fxnews.25 hours = 8 }
@@ -893,12 +893,12 @@ country_event = { # Deploying troops in Transylvania
 		name = romania.19.c
 		ai_chance = {
 			factor = 80
-      modifier = {
-        factor = 20
-        NOT = {
-          has_country_flag = ROM_autocrat_behavior
-        }
-      }
+			modifier = {
+				factor = 20
+				NOT = {
+					has_country_flag = ROM_autocrat_behavior
+				}
+			}
 		}
 		add_political_power = -50
 	}
@@ -909,7 +909,7 @@ country_event = { # Prince Michael Assassinated!
 	title = romania.20.t
 	picture = GFX_report_event_europe_funeral
 	is_triggered_only = yes
-	
+
 	desc = {
 		text = romania.20.d1
 		trigger = {
@@ -927,7 +927,7 @@ country_event = { # Prince Michael Assassinated!
 		name = romania.20.a
 		set_country_flag = ROM_michael_assassinated
 		hidden_effect = {
-      retire_character = ROM_Michael_von_Hohenzollern_Sigmaringen
+			retire_character = ROM_Michael_von_Hohenzollern_Sigmaringen
 			country_event = { id = romania.32 days = 7 } # The Empty Romanian Throne
 		}
 	}
@@ -987,15 +987,15 @@ country_event = { # Iron Guard Behind Assassination
 		name = romania.22.b
 		add_political_power = 100
 		set_country_flag = ROM_codreanu_exiled
-    retire_character = ROM_Corneliu_Zelea_Codreanu
+		retire_character = ROM_Corneliu_Zelea_Codreanu
 		add_country_leader_role = {
-      character = ROM_Ion_Mota
-      promote_leader = yes
-      country_leader = {
-        ideology = valkist_subtype
-        traits = {}
-      }
-    }
+			character = ROM_Ion_Mota
+			promote_leader = yes
+			country_leader = {
+				ideology = valkist_subtype
+				traits = {}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = romania.23 days = 3 }
 			GER = {
@@ -1026,9 +1026,9 @@ country_event = { # The King's and Romania's Safety
 				has_country_flag = ROM_autocrat_behavior
 			}
 		}
-		remove_coalition_social_conservative = yes 
-		remove_coalition_social_liberal = yes 
-		remove_coalition_libertarian_socialist = yes 
+		remove_coalition_social_conservative = yes
+		remove_coalition_social_liberal = yes
+		remove_coalition_libertarian_socialist = yes
 		set_politics = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
@@ -1037,12 +1037,12 @@ country_event = { # The King's and Romania's Safety
 		set_country_flag = ROM_direct_rule_from_bucharest
 		clr_country_flag = ROM_democratic_romania
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Alexandru_Cantacuzino_hog_pau
-			ROM_Grigore_Niculescu_Buzesti_for_ade
-			ROM_Gheorghe_Potopeanu_eco_pau
-			ROM_Horia_Sima_sec_npo
-		}
+
+		activate_advisor = ROM_Alexandru_Cantacuzino_hog_pau
+		activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
+		activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
+		activate_advisor = ROM_Horia_Sima_sec_npo
+
 		hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 			swap_ideas = {
@@ -1087,7 +1087,7 @@ country_event = { # Prime Minister Assassinated!
 
 	trigger = {
 		tag = ROM
-		NOT = { 
+		NOT = {
 			OR = {
 				has_country_flag = ROM_iron_guard_banned
 				has_completed_focus = ROM_ban_the_radical_far_right
@@ -1114,17 +1114,17 @@ country_event = { # Prime Minister Assassinated!
 		}
 		increase_ruling_party_popularity_by_25 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Gheorghe_Apostol_hog_col
-			ROM_Ana_Pauker_for_col
-			ROM_Miron_Constantinescu_eco_van
-			ROM_Teohari_Georgescu_sec_van
-		}
+
+		activate_advisor = ROM_Gheorghe_Apostol_hog_col
+		activate_advisor = ROM_Ana_Pauker_for_col
+		activate_advisor = ROM_Miron_Constantinescu_eco_van
+		activate_advisor = ROM_Teohari_Georgescu_sec_van
+
 		hidden_effect = {
 			set_country_flag = ROM_socialist_romania
 			clr_country_flag = ROM_democratic_romania
-			remove_coalition_libertarian_socialist = yes 
-      mark_focus_tree_layout_dirty = yes
+			remove_coalition_libertarian_socialist = yes
+			mark_focus_tree_layout_dirty = yes
 			country_event = { id = romania.30 days = 2 }
 		}
 	}
@@ -1139,15 +1139,15 @@ country_event = { # Prime Minister Assassinated!
 		}
 		increase_ruling_party_popularity_by_10 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Corneliu_Zelea_Codreanu_hog_val
-			ROM_Ion_Mota_for_val
-			ROM_Gheorghe_Clime_eco_val
-			ROM_Ion_Belgea_sec_val
-		}
+
+		activate_advisor = ROM_Corneliu_Zelea_Codreanu_hog_val
+		activate_advisor = ROM_Ion_Mota_for_val
+		activate_advisor = ROM_Gheorghe_Clime_eco_val
+		activate_advisor = ROM_Ion_Belgea_sec_val
+
 		hidden_effect = {
-      set_country_flag = ROM_valkist_romania
-      clr_country_flag = ROM_democratic_romania
+			set_country_flag = ROM_valkist_romania
+			clr_country_flag = ROM_democratic_romania
 			mark_focus_tree_layout_dirty = yes
 			add_ideas = one_party_dictatorship
 			random_other_country = {
@@ -1166,7 +1166,7 @@ country_event = { # Iron Guard Coups the Government!
 
 	trigger = {
 		tag = ROM
-		NOT = { 
+		NOT = {
 			OR = {
 				has_country_flag = ROM_iron_guard_banned
 				has_completed_focus = ROM_disarm_the_extremists
@@ -1210,19 +1210,19 @@ country_event = { # Iron Guard Coups the Government!
 				has_country_flag = ROM_progressive_coalition
 				check_variable = { rom_conservative_strength > rom_progressive_strength }
 			}
-			remove_coalition_social_liberal = yes 
+			remove_coalition_social_liberal = yes
 			set_politics = {
 				ruling_party = social_conservative
 				elections_allowed = yes
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Alexandru_Vaida_Voevod_hog_sco
-				ROM_Viorel_Tilea_for_sco
-				ROM_Gheorghe_Mironescu_eco_sco
-				ROM_Alexandru_Vaida_Voevod_sec_sco
-			}
+
+			activate_advisor = ROM_Alexandru_Vaida_Voevod_hog_sco
+			activate_advisor = ROM_Viorel_Tilea_for_sco
+			activate_advisor = ROM_Gheorghe_Mironescu_eco_sco
+			activate_advisor = ROM_Alexandru_Vaida_Voevod_sec_sco
+
 			clear_variable = rom_conservative_strength
 			clear_variable = rom_progressive_strength
 			clr_country_flag = ROM_conservative_coalition
@@ -1235,19 +1235,19 @@ country_event = { # Iron Guard Coups the Government!
 				has_country_flag = ROM_progressive_coalition
 				check_variable = { rom_progressive_strength > rom_conservative_strength }
 			}
-			remove_coalition_social_conservative = yes 
+			remove_coalition_social_conservative = yes
 			set_politics = {
 				ruling_party = social_liberal
 				elections_allowed = yes
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Iuliu_Maniu_hog_sli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Gheorghe_Tatarescu_eco_mli
-				ROM_Victor_Iamandi_sec_mli
-			}
+
+			activate_advisor = ROM_Iuliu_Maniu_hog_sli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Gheorghe_Tatarescu_eco_mli
+			activate_advisor = ROM_Victor_Iamandi_sec_mli
+
 			clear_variable = rom_conservative_strength
 			clear_variable = rom_progressive_strength
 			clr_country_flag = ROM_conservative_coalition
@@ -1268,20 +1268,20 @@ country_event = { # Iron Guard Coups the Government!
 		ai_chance = {
 			base = 0
 		}
-		remove_coalition_social_conservative = yes 
-		remove_coalition_social_liberal = yes 
+		remove_coalition_social_conservative = yes
+		remove_coalition_social_liberal = yes
 		set_politics = {
 			ruling_party = valkist
 			elections_allowed = no
 		}
 		increase_ruling_party_popularity_by_10 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Corneliu_Zelea_Codreanu_hog_val
-			ROM_Ion_Mota_for_val
-			ROM_Gheorghe_Clime_eco_val
-			ROM_Ion_Belgea_sec_val
-		}
+
+		activate_advisor = ROM_Corneliu_Zelea_Codreanu_hog_val
+		activate_advisor = ROM_Ion_Mota_for_val
+		activate_advisor = ROM_Gheorghe_Clime_eco_val
+		activate_advisor = ROM_Ion_Belgea_sec_val
+
 		hidden_effect = {
 			add_ideas = one_party_dictatorship
 			random_other_country = {
@@ -1289,7 +1289,7 @@ country_event = { # Iron Guard Coups the Government!
 			}
 			set_country_flag = ROM_valkist_romania
 			clr_country_flag = ROM_democratic_romania
-      mark_focus_tree_layout_dirty = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -1303,7 +1303,7 @@ country_event = { # The Monarch
 	trigger = {
 		tag = ROM
 		has_country_flag = ROM_had_1937_elections
-    has_country_flag = ROM_empty_throne
+		has_country_flag = ROM_empty_throne
 		NOT = {
 			OR = {
 				has_government = vanguardist
@@ -1312,9 +1312,9 @@ country_event = { # The Monarch
 				has_government = valkist
 			}
 		}
-    ROM_Regency_Council = {
-      is_country_leader = yes
-    }
+		ROM_Regency_Council = {
+			is_country_leader = yes
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1355,85 +1355,85 @@ country_event = { # Coronation of Alexander I
 	option = { # God Save the King!
 		name = romania.27.a
 		add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = vanguardist_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = collectivist_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = libertarian_socialist_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = social_democrat_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = social_liberal_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = market_liberal_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = social_conservative_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = authoritarian_democrat_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = paternal_autocrat_subtype
-        traits = {}
-      }
-    }
-    add_country_leader_role = {
-      character = ROM_Alexandru_Cantacuzino
-      promote_leader = yes
-      country_leader = {
-        ideology = national_populist_subtype
-        traits = {}
-      }
-    }
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = vanguardist_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = collectivist_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = libertarian_socialist_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = social_liberal_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = market_liberal_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = social_conservative_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = authoritarian_democrat_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = paternal_autocrat_subtype
+				traits = {}
+			}
+		}
+		add_country_leader_role = {
+			character = ROM_Alexandru_Cantacuzino
+			promote_leader = yes
+			country_leader = {
+				ideology = national_populist_subtype
+				traits = {}
+			}
+		}
 	}
 }
 
@@ -1762,7 +1762,7 @@ country_event = { # Join Faction
 		name = romania.38.e
 		trigger = { tag = GER }
 		add_political_power = -20
-		
+
 		FROM = { country_event = { id = romania.40 days = 1 } }
 	}
 	option = {
@@ -1923,9 +1923,9 @@ country_event = { # 1941 Elections
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = ROM_leftist_coalition
-			remove_coalition_social_conservative = yes 
-			remove_coalition_social_liberal = yes 
-			remove_coalition_libertarian_socialist = yes 
+			remove_coalition_social_conservative = yes
+			remove_coalition_social_liberal = yes
+			remove_coalition_libertarian_socialist = yes
 		}
 	}
 
@@ -1938,12 +1938,12 @@ country_event = { # 1941 Elections
 		increase_ruling_party_popularity_by_15 = yes
 		remove_every_minister = yes
 		set_country_flag = ROM_had_1941_elections
-		add_ideas = {
-			ROM_Armand_Calinescu_hog_ade
-			ROM_Grigore_Niculescu_Buzesti_for_ade
-			ROM_Gheorghe_Potopeanu_eco_pau
-			ROM_Aurel_Aldea_sec_sco
-		}
+
+		activate_advisor = ROM_Armand_Calinescu_hog_ade
+		activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
+		activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
+		activate_advisor = ROM_Aurel_Aldea_sec_sco
+
 		hidden_effect = {
 			country_event = { id = romania.49 days = 5 }
 		}
@@ -1958,12 +1958,12 @@ country_event = { # 1941 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Alexandru_Vaida_Voevod_hog_sco
-				ROM_Savel_Radulescu_for_mli
-				ROM_Mitita_Constantinescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Alexandru_Vaida_Voevod_hog_sco
+			activate_advisor = ROM_Savel_Radulescu_for_mli
+			activate_advisor = ROM_Mitita_Constantinescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1941_elections
 		}
 		else_if = {
@@ -1974,12 +1974,12 @@ country_event = { # 1941 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Iuliu_Maniu_hog_sli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Gheorghe_Tatarescu_eco_mli
-				ROM_Richard_Franasovici_sec_mli
-			}
+
+			activate_advisor = ROM_Iuliu_Maniu_hog_sli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Gheorghe_Tatarescu_eco_mli
+			activate_advisor = ROM_Richard_Franasovici_sec_mli
+
 			set_country_flag = ROM_had_1941_elections
 		}
 		else = {
@@ -1989,15 +1989,15 @@ country_event = { # 1941 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Constantin_Angelescu_hog_mli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Victor_Slavescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Constantin_Angelescu_hog_mli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Victor_Slavescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1941_elections
-			add_coalition_social_liberal = yes 
-			add_coalition_social_conservative = yes 
+			add_coalition_social_liberal = yes
+			add_coalition_social_conservative = yes
 		}
 		hidden_effect = {
 			country_event = { id = romania.49 days = 5 }
@@ -2010,12 +2010,12 @@ country_event = { # 1941 Elections
 			elections_allowed = yes
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Virgil_Madgearu_hog_sde
-			ROM_Grigore_Gafencu_for_sli
-			ROM_Ion_Mihalache_eco_sde
-			ROM_Pantelimon_Halippa_sec_sde
-		}
+
+		activate_advisor = ROM_Virgil_Madgearu_hog_sde
+		activate_advisor = ROM_Grigore_Gafencu_for_sli
+		activate_advisor = ROM_Ion_Mihalache_eco_sde
+		activate_advisor = ROM_Pantelimon_Halippa_sec_sde
+
 		set_country_flag = ROM_had_1941_elections
 		hidden_effect = {
 			country_event = { id = romania.49 days = 5 }
@@ -2041,9 +2041,9 @@ country_event = { # 1945 Elections
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = ROM_leftist_coalition
-			remove_coalition_social_conservative = yes 
-			remove_coalition_social_liberal = yes 
-			remove_coalition_libertarian_socialist = yes 
+			remove_coalition_social_conservative = yes
+			remove_coalition_social_liberal = yes
+			remove_coalition_libertarian_socialist = yes
 		}
 	}
 
@@ -2056,12 +2056,12 @@ country_event = { # 1945 Elections
 		increase_ruling_party_popularity_by_15 = yes
 		remove_every_minister = yes
 		set_country_flag = ROM_had_1945_elections
-		add_ideas = {
-			ROM_Armand_Calinescu_hog_ade
-			ROM_Grigore_Niculescu_Buzesti_for_ade
-			ROM_Gheorghe_Potopeanu_eco_pau
-			ROM_Aurel_Aldea_sec_sco
-		}
+
+		activate_advisor = ROM_Armand_Calinescu_hog_ade
+		activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
+		activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
+		activate_advisor = ROM_Aurel_Aldea_sec_sco
+
 	}
 	option = { # PNL
 		name = romania.45.b
@@ -2073,12 +2073,12 @@ country_event = { # 1945 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Alexandru_Vaida_Voevod_hog_sco
-				ROM_Savel_Radulescu_for_mli
-				ROM_Mitita_Constantinescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Alexandru_Vaida_Voevod_hog_sco
+			activate_advisor = ROM_Savel_Radulescu_for_mli
+			activate_advisor = ROM_Mitita_Constantinescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1945_elections
 		}
 		else_if = {
@@ -2089,12 +2089,12 @@ country_event = { # 1945 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Iuliu_Maniu_hog_sli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Gheorghe_Tatarescu_eco_mli
-				ROM_Richard_Franasovici_sec_mli
-			}
+
+			activate_advisor = ROM_Iuliu_Maniu_hog_sli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Gheorghe_Tatarescu_eco_mli
+			activate_advisor = ROM_Richard_Franasovici_sec_mli
+
 			set_country_flag = ROM_had_1945_elections
 		}
 		else = {
@@ -2104,17 +2104,17 @@ country_event = { # 1945 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Constantin_Angelescu_hog_mli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Victor_Slavescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Constantin_Angelescu_hog_mli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Victor_Slavescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1945_elections
-			add_coalition_social_liberal = yes 
-			add_coalition_social_conservative = yes 
+			add_coalition_social_liberal = yes
+			add_coalition_social_conservative = yes
 		}
-		
+
 	}
 	option = { # PSDR
 		name = romania.45.c
@@ -2123,12 +2123,12 @@ country_event = { # 1945 Elections
 			elections_allowed = yes
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Virgil_Madgearu_hog_sde
-			ROM_Grigore_Gafencu_for_sli
-			ROM_Ion_Mihalache_eco_sde
-			ROM_Pantelimon_Halippa_sec_sde
-		}
+
+		activate_advisor = ROM_Virgil_Madgearu_hog_sde
+		activate_advisor = ROM_Grigore_Gafencu_for_sli
+		activate_advisor = ROM_Ion_Mihalache_eco_sde
+		activate_advisor = ROM_Pantelimon_Halippa_sec_sde
+
 		set_country_flag = ROM_had_1945_elections
 	}
 }
@@ -2151,9 +2151,9 @@ country_event = { # 1949 Elections
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = ROM_leftist_coalition
-			remove_coalition_social_conservative = yes 
-			remove_coalition_social_liberal = yes 
-			remove_coalition_libertarian_socialist = yes 
+			remove_coalition_social_conservative = yes
+			remove_coalition_social_liberal = yes
+			remove_coalition_libertarian_socialist = yes
 		}
 	}
 
@@ -2166,12 +2166,11 @@ country_event = { # 1949 Elections
 		increase_ruling_party_popularity_by_15 = yes
 		remove_every_minister = yes
 		set_country_flag = ROM_had_1949_elections
-		add_ideas = {
-			ROM_Armand_Calinescu_hog_ade
-			ROM_Grigore_Niculescu_Buzesti_for_ade
-			ROM_Gheorghe_Potopeanu_eco_pau
-			ROM_Aurel_Aldea_sec_sco
-		}
+
+		activate_advisor = ROM_Armand_Calinescu_hog_ade
+		activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
+		activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
+		activate_advisor = ROM_Aurel_Aldea_sec_sco
 	}
 	option = { # PNL
 		name = romania.46.b
@@ -2183,12 +2182,12 @@ country_event = { # 1949 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Alexandru_Vaida_Voevod_hog_sco
-				ROM_Savel_Radulescu_for_mli
-				ROM_Mitita_Constantinescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Alexandru_Vaida_Voevod_hog_sco
+			activate_advisor = ROM_Savel_Radulescu_for_mli
+			activate_advisor = ROM_Mitita_Constantinescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1949_elections
 		}
 		else_if = {
@@ -2199,12 +2198,12 @@ country_event = { # 1949 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Iuliu_Maniu_hog_sli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Gheorghe_Tatarescu_eco_mli
-				ROM_Richard_Franasovici_sec_mli
-			}
+
+			activate_advisor = ROM_Iuliu_Maniu_hog_sli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Gheorghe_Tatarescu_eco_mli
+			activate_advisor = ROM_Richard_Franasovici_sec_mli
+
 			set_country_flag = ROM_had_1949_elections
 		}
 		else = {
@@ -2214,17 +2213,17 @@ country_event = { # 1949 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Constantin_Angelescu_hog_mli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Victor_Slavescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Constantin_Angelescu_hog_mli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Victor_Slavescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1949_elections
-			add_coalition_social_liberal = yes 
-			add_coalition_social_conservative = yes 
+			add_coalition_social_liberal = yes
+			add_coalition_social_conservative = yes
 		}
-		
+
 	}
 	option = { # PSDR
 		name = romania.46.c
@@ -2234,12 +2233,12 @@ country_event = { # 1949 Elections
 		}
 		remove_every_minister = yes
 		increase_ruling_party_popularity_by_15 = yes
-		add_ideas = {
-			ROM_Virgil_Madgearu_hog_sde
-			ROM_Grigore_Gafencu_for_sli
-			ROM_Ion_Mihalache_eco_sde
-			ROM_Pantelimon_Halippa_sec_sde
-		}
+
+		activate_advisor = ROM_Virgil_Madgearu_hog_sde
+		activate_advisor = ROM_Grigore_Gafencu_for_sli
+		activate_advisor = ROM_Ion_Mihalache_eco_sde
+		activate_advisor = ROM_Pantelimon_Halippa_sec_sde
+
 		set_country_flag = ROM_had_1949_elections
 	}
 }
@@ -2262,9 +2261,9 @@ country_event = { # 1953 Elections
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = ROM_leftist_coalition
-			remove_coalition_social_conservative = yes 
-			remove_coalition_social_liberal = yes 
-			remove_coalition_libertarian_socialist = yes 
+			remove_coalition_social_conservative = yes
+			remove_coalition_social_liberal = yes
+			remove_coalition_libertarian_socialist = yes
 		}
 	}
 
@@ -2277,12 +2276,12 @@ country_event = { # 1953 Elections
 		increase_ruling_party_popularity_by_15 = yes
 		remove_every_minister = yes
 		set_country_flag = ROM_had_1953_elections
-		add_ideas = {
-			ROM_Armand_Calinescu_hog_ade
-			ROM_Grigore_Niculescu_Buzesti_for_ade
-			ROM_Gheorghe_Potopeanu_eco_pau
-			ROM_Aurel_Aldea_sec_sco
-		}
+
+		activate_advisor = ROM_Armand_Calinescu_hog_ade
+		activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
+		activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
+		activate_advisor = ROM_Aurel_Aldea_sec_sco
+
 	}
 	option = { # PNL
 		name = romania.47.b
@@ -2294,12 +2293,12 @@ country_event = { # 1953 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Alexandru_Vaida_Voevod_hog_sco
-				ROM_Savel_Radulescu_for_mli
-				ROM_Mitita_Constantinescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Alexandru_Vaida_Voevod_hog_sco
+			activate_advisor = ROM_Savel_Radulescu_for_mli
+			activate_advisor = ROM_Mitita_Constantinescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1953_elections
 		}
 		else_if = {
@@ -2310,12 +2309,12 @@ country_event = { # 1953 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Iuliu_Maniu_hog_sli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Gheorghe_Tatarescu_eco_mli
-				ROM_Richard_Franasovici_sec_mli
-			}
+
+			activate_advisor = ROM_Iuliu_Maniu_hog_sli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Gheorghe_Tatarescu_eco_mli
+			activate_advisor = ROM_Richard_Franasovici_sec_mli
+
 			set_country_flag = ROM_had_1953_elections
 		}
 		else = {
@@ -2325,17 +2324,17 @@ country_event = { # 1953 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Constantin_Angelescu_hog_mli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Victor_Slavescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Constantin_Angelescu_hog_mli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Victor_Slavescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1953_elections
-			add_coalition_social_liberal = yes 
-			add_coalition_social_conservative = yes 
+			add_coalition_social_liberal = yes
+			add_coalition_social_conservative = yes
 		}
-		
+
 	}
 	option = { # PSDR
 		name = romania.47.c
@@ -2345,12 +2344,12 @@ country_event = { # 1953 Elections
 		}
 		increase_ruling_party_popularity_by_15 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Virgil_Madgearu_hog_sde
-			ROM_Grigore_Gafencu_for_sli
-			ROM_Ion_Mihalache_eco_sde
-			ROM_Pantelimon_Halippa_sec_sde
-		}
+
+		activate_advisor = ROM_Virgil_Madgearu_hog_sde
+		activate_advisor = ROM_Grigore_Gafencu_for_sli
+		activate_advisor = ROM_Ion_Mihalache_eco_sde
+		activate_advisor = ROM_Pantelimon_Halippa_sec_sde
+
 		set_country_flag = ROM_had_1953_elections
 	}
 }
@@ -2373,9 +2372,9 @@ country_event = { # 1957 Elections
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = ROM_leftist_coalition
-			remove_coalition_social_conservative = yes 
-			remove_coalition_social_liberal = yes 
-			remove_coalition_libertarian_socialist = yes 
+			remove_coalition_social_conservative = yes
+			remove_coalition_social_liberal = yes
+			remove_coalition_libertarian_socialist = yes
 		}
 	}
 
@@ -2388,12 +2387,11 @@ country_event = { # 1957 Elections
 		increase_ruling_party_popularity_by_15 = yes
 		remove_every_minister = yes
 		set_country_flag = ROM_had_1957_elections
-		add_ideas = {
-			ROM_Armand_Calinescu_hog_ade
-			ROM_Grigore_Niculescu_Buzesti_for_ade
-			ROM_Gheorghe_Potopeanu_eco_pau
-			ROM_Aurel_Aldea_sec_sco
-		}
+		activate_advisor = ROM_Armand_Calinescu_hog_ade
+		activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
+		activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
+		activate_advisor = ROM_Aurel_Aldea_sec_sco
+
 	}
 	option = { # PNL
 		name = romania.48.b
@@ -2405,12 +2403,12 @@ country_event = { # 1957 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Alexandru_Vaida_Voevod_hog_sco
-				ROM_Savel_Radulescu_for_mli
-				ROM_Mitita_Constantinescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Alexandru_Vaida_Voevod_hog_sco
+			activate_advisor = ROM_Savel_Radulescu_for_mli
+			activate_advisor = ROM_Mitita_Constantinescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1957_elections
 		}
 		else_if = {
@@ -2421,12 +2419,12 @@ country_event = { # 1957 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Iuliu_Maniu_hog_sli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Gheorghe_Tatarescu_eco_mli
-				ROM_Richard_Franasovici_sec_mli
-			}
+
+			activate_advisor = ROM_Iuliu_Maniu_hog_sli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Gheorghe_Tatarescu_eco_mli
+			activate_advisor = ROM_Richard_Franasovici_sec_mli
+
 			set_country_flag = ROM_had_1957_elections
 		}
 		else = {
@@ -2436,17 +2434,17 @@ country_event = { # 1957 Elections
 			}
 			increase_ruling_party_popularity_by_15 = yes
 			remove_every_minister = yes
-			add_ideas = {
-				ROM_Constantin_Angelescu_hog_mli
-				ROM_Grigore_Gafencu_for_sli
-				ROM_Victor_Slavescu_eco_mli
-				ROM_Mihail_Ghelmegeanu_sec_sco
-			}
+
+			activate_advisor = ROM_Constantin_Angelescu_hog_mli
+			activate_advisor = ROM_Grigore_Gafencu_for_sli
+			activate_advisor = ROM_Victor_Slavescu_eco_mli
+			activate_advisor = ROM_Mihail_Ghelmegeanu_sec_sco
+
 			set_country_flag = ROM_had_1957_elections
-			add_coalition_social_liberal = yes 
-			add_coalition_social_conservative = yes 
+			add_coalition_social_liberal = yes
+			add_coalition_social_conservative = yes
 		}
-		
+
 	}
 	option = { # PSDR
 		name = romania.48.c
@@ -2456,12 +2454,12 @@ country_event = { # 1957 Elections
 		}
 		increase_ruling_party_popularity_by_15 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			ROM_Virgil_Madgearu_hog_sde
-			ROM_Grigore_Gafencu_for_sli
-			ROM_Ion_Mihalache_eco_sde
-			ROM_Pantelimon_Halippa_sec_sde
-		}
+
+		activate_advisor = ROM_Virgil_Madgearu_hog_sde
+		activate_advisor = ROM_Grigore_Gafencu_for_sli
+		activate_advisor = ROM_Ion_Mihalache_eco_sde
+		activate_advisor = ROM_Pantelimon_Halippa_sec_sde
+
 		set_country_flag = ROM_had_1957_elections
 	}
 }
@@ -2536,7 +2534,7 @@ country_event = { # Codreanu Criticises the Government
 	mean_time_to_happen = {
 		days = 4
 	}
-	fire_only_once = yes 
+	fire_only_once = yes
 	option = {
 		name = romania.50.a
 		add_political_power = -20
@@ -2575,7 +2573,7 @@ country_event = { # Marraige of Michael I
 	desc = romania.52.d
 	picture = GFX_report_event_romania_poland_visit
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ROM
 		has_country_leader = {

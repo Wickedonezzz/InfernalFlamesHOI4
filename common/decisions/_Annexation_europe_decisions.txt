@@ -1299,7 +1299,7 @@ annexation_decisions = {
       84 = { is_valid_annexation_state = no }
     }
     complete_effect = {
-      country_event = annex.158
+      country_event = annex.186
     }
     timeout_effect = {
       occupy_medium_country = yes
@@ -1442,7 +1442,7 @@ annexation_decisions = {
       factor = 100
     }
   }
-  annexation_WGR_CONQ = {
+  annexation_PRS_CONQ = {
     icon = generic_form_nation
     selectable_mission = yes
     days_mission_timeout = 60
@@ -1455,7 +1455,7 @@ annexation_decisions = {
     }
     timeout_effect = {
       occupy_medium_country = yes
-      set_country_flag = WGR_CONQ
+      set_country_flag = PRS_CONQ
     }
     ai_will_do = {
       factor = 100

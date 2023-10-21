@@ -29,6 +29,5 @@ set_popularities = {
   authoritarian_democrat = 1
 }
 add_ideas = {
-	party_pop_0_10
 	parliamentary_republic
 }

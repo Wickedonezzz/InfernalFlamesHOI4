@@ -44,7 +44,7 @@ country_event = { #collie minor strikes
 	}
 }
 
-country_event = { #LEC rally 
+country_event = { #LEC rally
 	id = bra.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.3"}
 	title = bra.3.t
@@ -55,7 +55,7 @@ country_event = { #LEC rally
 		name = bra.3.a
 		add_popularity = {
 			ideology = paternal_autocrat popularity = 0.05
-			}
+		}
 		hidden_effect = {
 			country_event = { days = 28 id = bra.4}
 		}
@@ -87,7 +87,7 @@ country_event = { #valkist rally
 		name = bra.4.b
 		add_popularity = {
 			ideology = valkist popularity = 0.05
-			}
+		}
 		hidden_effect = {
 			country_event = { days = 21 id = bra.5}
 		}
@@ -105,10 +105,10 @@ country_event = { #anarchists support collies
 		name = bra.5.a
 		add_popularity = {
 			ideology = collectivist popularity = 0.025
-			}
+		}
 		add_popularity = {
 			ideology = libertarian_socialist popularity = 0.025
-			}
+		}
 		hidden_effect = {
 			country_event = { days = 28 id = bra.6}
 		}
@@ -138,10 +138,10 @@ country_event = { #tensions in the cabinet
 		name = bra.6.a
 		add_popularity = {
 			ideology = market_liberal popularity = -0.025
-			}
+		}
 		add_popularity = {
 			ideology = social_conservative popularity = 0.025
-			}
+		}
 		hidden_effect = {
 			country_event = { days = 21 id = bra.7}
 		}
@@ -175,7 +175,7 @@ country_event = { #speech for republic
 		name = bra.8.a
 		add_popularity = {
 			ideology = market_liberal popularity = 0.025
-			}
+		}
 		add_political_power = 5
 		set_country_flag = BRA_firstpartdone
 	}
@@ -227,7 +227,7 @@ country_event = { #Collie Mass Strike
 		add_political_power = -60
 		add_popularity = {
 			ideology = collectivist popularity = 0.05
-			}
+		}
 		set_country_flag = BRA_lefties
 	}
 }
@@ -254,10 +254,10 @@ country_event = { #Populist movements unite against government
 		add_political_power = -60
 		add_popularity = {
 			ideology = paternal_autocrat popularity = 0.025
-			}
+		}
 		add_popularity = {
 			ideology = valkist popularity = 0.025
-			}
+		}
 		set_country_flag = BRA_righties
 	}
 }
@@ -487,7 +487,7 @@ country_event = { #Military Coup
 	trigger = {
 		tag = BRA
 		NOT = {
-		has_country_flag = BRA_bcw_ended
+			has_country_flag = BRA_bcw_ended
 		}
 		has_country_flag = brazilian_civil_war
 		has_stability < 0.35
@@ -496,13 +496,13 @@ country_event = { #Military Coup
 		name = bra.26.a
 		ai_chance = { factor = 50 }
 		add_country_leader_role = {
-      character = BRA_Euclides_Figueiredo
-      promote_leader = yes
-      country_leader = {
-        ideology = authoritarian_democrat_subtype
-        traits = {}
-      }
-    }
+			character = BRA_Euclides_Figueiredo
+			promote_leader = yes
+			country_leader = {
+				ideology = authoritarian_democrat_subtype
+				traits = {}
+			}
+		}
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.25 }
 		add_ideas = military_junta
 		set_politics = {

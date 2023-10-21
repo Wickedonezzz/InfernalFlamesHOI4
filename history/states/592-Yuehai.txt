@@ -11,10 +11,12 @@ state={
 
 	history={
 		owner = KMT
+		add_claim_by = FNG
+		add_claim_by = ZHI
 		buildings = {
 			infrastructure = 3
-			arms_factory = 3
-			industrial_complex = 3
+			arms_factory = 2
+			industrial_complex = 2
 			air_base = 3
 			1047 = {
 				naval_base = 5

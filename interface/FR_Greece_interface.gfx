@@ -53,12 +53,12 @@ SpriteTypes = {
 SpriteTypes = {
 	spriteType = {
 		name = "GFX_gui_metaxas_symps_bg"
-		textureFile = "gfx/interface/GRE-BUL-BYZ/GRE-metaxas/metaxas_symps_bg.png"
+		textureFile = "gfx/interface/custom_gui/GRE-metaxas/metaxas_symps_bg.png"
 	}
 	progressbartype = {
 		name = "GFX_GRE_metaxas_valkist_symps"
-		textureFile1 = "gfx/interface/GRE-BUL-BYZ/GRE-metaxas/imperial_federation_greenbar.dds"
-		textureFile2 = "gfx/interface/GRE-BUL-BYZ/GRE-metaxas/imperial_federation_redbar.dds"
+		textureFile1 = "gfx/interface/custom_gui/GRE-metaxas/imperial_federation_greenbar.dds"
+		textureFile2 = "gfx/interface/custom_gui/GRE-metaxas/imperial_federation_redbar.dds"
 		# colortwo = { 0 255 0 }
 		# color = { 255 0 0 }
 		size = {
@@ -69,8 +69,8 @@ SpriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_GRE_metaxas_natpop_symps"
-		textureFile1 = "gfx/interface/GRE-BUL-BYZ/GRE-metaxas/imperial_federation_greenbar.dds"
-		textureFile2 = "gfx/interface/GRE-BUL-BYZ/GRE-metaxas/imperial_federation_redbar.dds"
+		textureFile1 = "gfx/interface/custom_gui/GRE-metaxas/imperial_federation_greenbar.dds"
+		textureFile2 = "gfx/interface/custom_gui/GRE-metaxas/imperial_federation_redbar.dds"
 		# colortwo = { 0 255 0 }
 		# color = { 255 0 0 }
 		size = {
@@ -81,8 +81,8 @@ SpriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_GRE_metaxas_pataut_symps"
-		textureFile1 = "gfx/interface/GRE-BUL-BYZ/GRE-metaxas/imperial_federation_greenbar.dds"
-		textureFile2 = "gfx/interface/GRE-BUL-BYZ/GRE-metaxas/imperial_federation_redbar.dds"
+		textureFile1 = "gfx/interface/custom_gui/GRE-metaxas/imperial_federation_greenbar.dds"
+		textureFile2 = "gfx/interface/custom_gui/GRE-metaxas/imperial_federation_redbar.dds"
 		# colortwo = { 0 255 0 }
 		# color = { 255 0 0 }
 		size = {

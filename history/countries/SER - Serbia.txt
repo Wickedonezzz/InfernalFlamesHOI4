@@ -77,7 +77,6 @@ set_war_support = 0.35
 set_convoys = 42
 
 add_ideas = {
-	party_pop_0_50
 	GEN_entente_member
 	constitutional_monarchy
 }

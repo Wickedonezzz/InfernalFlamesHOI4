@@ -7,7 +7,7 @@ ideas = {
 	country = {
 		PHI_catholic_nation = {
 			allowed = { original_tag = PHI }
-			picture = IRE_catholic
+			picture = MEX_church_power_5
 			modifier = {
 				monthly_population = 0.05
 				industrial_capacity_factory = 0.05
@@ -298,12 +298,7 @@ ideas = {
 			picture = prc_low_popular_support3
 			modifier = {
 				monthly_population = 0.05
-			}
-			equipment_bonus = {
-				field_hospital = {
-					casualty_trickleback = 0.05
-					instant = yes
-				}
+				experience_loss_factor = -0.05
 			}
 		}
 		# Sakdalista
@@ -567,9 +562,10 @@ ideas = {
 			allowed = { original_tag = PHI }
 			picture = generic_victors_of_ww1
 			modifier = {
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
-				special_forces_cap = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
+				special_forces_cap = 0.2
 			}
 		}
 		PHI_anti_japanese_sentiments = {
@@ -694,7 +690,7 @@ ideas = {
 					has_country_flag = PHI_investments
 				}
 			}
-			traits = { infantry_equipment_producer_assualt_1 }
+			traits = { infantry_equipment_producer_assault_1 }
 			research_bonus = { infantry_weapons = 0.1 }
 		}
 		PHI_brandt = {

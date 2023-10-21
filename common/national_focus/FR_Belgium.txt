@@ -292,7 +292,7 @@ focus_tree = {
 
 	focus = { #Invest in education
 		id = BEL_goal_invest_in_education
-		icon = GFX_BEL_Catholic_Education
+		icon = GFX_goal_BRA_catholic_education
 		prerequisite = { focus = BEL_goal_expand_national_industries }
 		x = 6
 		y = 5
@@ -1671,7 +1671,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEL_goal_prepare_next_war"
 			increase_conscription = yes
-			increase_mobilisation = yes
+			increase_mobilization = yes
 		}
 	}
 

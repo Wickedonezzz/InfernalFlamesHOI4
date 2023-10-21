@@ -11,6 +11,8 @@ state=
 			infrastructure = 2
 		}
 		add_core_of = KMT
+		add_claim_by = FNG
+		add_claim_by = ZHI
 	}
 	provinces={
 		1096 4042 7058 7174 10014 10086 10101 11991 12059 

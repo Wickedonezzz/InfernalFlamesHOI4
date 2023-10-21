@@ -6,15 +6,17 @@ ideas = {
 			allowed = { original_tag = HEJ }
 			picture = HEJ_british_influence
 		}
+		HEJ_british_influence_dummy = {
+			allowed = { always = no }
+			picture = HEJ_british_influence
+		}
 		HEJ_british_army_training = {
 			allowed = { original_tag = HEJ }
 			picture = EGY_retired_brits
 			modifier = {
 				army_org_factor = 0.05
 				army_morale_factor = 0.05
-				supply_consumption_factor = -0.05
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
+				supply_consumption_factor = -0.1
 			}
 		}
 		HEJ_british_army_training_1 = {
@@ -23,13 +25,13 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.1
 				army_morale_factor = 0.1
-				supply_consumption_factor = -0.1
+				supply_consumption_factor = -0.2
 			}
 		}
 		HEJ_ikhwan_raids = {
 			allowed = { original_tag = HEJ }
 			modifier = {
-				stability_factor = -0.15
+				political_power_gain = -0.15
 				conscription_factor = -0.05
 			}
 		}
@@ -64,13 +66,6 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.1
 				production_speed_buildings_factor = -0.1
-			}
-		}
-		HEJ_black_wednesday_2 = {
-			allowed = { original_tag = HEJ }
-			picture = great_depression
-			modifier = {
-				consumer_goods_factor = 0.05
 			}
 		}
 		HEJ_mecca_railway_corp = {

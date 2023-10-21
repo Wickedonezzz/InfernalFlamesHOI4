@@ -25,7 +25,6 @@ set_stability = 0.49
 set_war_support = 0.33
 
 add_ideas = {
-	party_pop_0_30
 	presidential_republic
 }
 

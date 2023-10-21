@@ -206,6 +206,10 @@ SHO_FREIKORP = {
 	color = rgb { 30 30 30 }
 	color_ui = rgb { 30 30 30 }
 }
+GER_DOOMORI = {
+	color = rgb { 00 08 51 }
+	color_ui = rgb { 30 30 30 }
+}
 SHO_KAISER = {
 	color = rgb { 30 30 30 }
 	color_ui = rgb { 30 30 30 }
@@ -575,7 +579,7 @@ UKR_POL = {
 	color_ui = rgb { 100 80 55 }
 }
 RUS_puppet = {
-	color = rgb { 80 100 100 }
+	color = rgb { 65 65 65 }
 	color_ui = rgb { 80 100 100 }
 }
 BOH_puppet_communist = {
@@ -709,6 +713,10 @@ UKR_NIPU = {
 ROM_byzantium = {
 	color = rgb { 127 0 55 }
 	color_ui = rgb { 127 0 55 }
+}
+MLT_ENG = {
+	color = rgb { 209 0 0 }
+	color_ui = rgb { 209 0 0 }
 }
 GRE_BYZ_MEGALI_IDEA = {
 	color = rgb { 143 12 125 }

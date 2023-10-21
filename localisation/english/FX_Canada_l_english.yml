@@ -194,7 +194,7 @@ CAN_heavy_fleet: "Heavy Fleet"
 CAN_heavy_fleet_desc: ""
 CAN_british_shipbuilders: "British Shipbuilders"
 CAN_british_shipbuilders_desc: ""
-CAN_seek_aussie_help: "A deal with the Australians"
+CAN_seek_aussie_help: "Deal with Canberra"
 CAN_seek_aussie_help_desc: ""
 CAN_naval_bases: "Prioritizing Ports"
 CAN_naval_bases_desc: ""
@@ -290,7 +290,7 @@ CAN_elections_1938_desc: "After a series of unfortunate events, the Unionist Coa
 #GOODBYE DEMOCRACY
 CAN_parliament_dissolved: "The Hand of the King"
 CAN_parliament_dissolved_desc: ""
-CAN_king_compulsory_service: "Conscription once more"
+CAN_king_compulsory_service: "Conscription Once More"
 CAN_king_compulsory_service_desc: ""
 CAN_king_crackdown_in_quebec: "Crackdown in Quebec"
 CAN_king_crackdown_in_quebec_desc: ""
@@ -355,9 +355,9 @@ CAN_reform_elections_desc: ""
 
 CAN_rcmp_tooltip: "§GVarious RCMP Brigades will be formed across the country and placed under your control.\n"
 CAN_tory_tooltip: "§GThe Tories have survived and won the Election, against all odds.§!\n"
-CAN_liberal_tooltip: "§GMackenzie King's 'Middle-men' Liberals have swept the floor in the Election.§!\n"
-CAN_ccf_tooltip: "§GTommy Douglas's radical Cooperatives have come out victorious in the Election.§!\n"
-CAN_socred_tooltip: "§GBlackmore's peculiar SoCred 'reformists' have seized victory.§!\n"
+CAN_liberal_tooltip: "§G$CAN_William_Lyon_Mackenzie_King$'s 'Middle-men' Liberals have swept the floor in the Election.§!\n"
+CAN_ccf_tooltip: "§G$CAN_JS_Woodsworth$'s radical Cooperatives have come out victorious in the Election.§!\n"
+CAN_socred_tooltip: "§G$CAN_John_Diefenbaker$'s peculiar SoCred 'reformists' have seized victory.§!\n"
 CAN_king_tooltip: "§RLondon has decided to dissolve Canadian Parliament due to the possibility of Canada falling victim to Socialism.§!\n"
 CAN_cornflakes: "§GWaiting for Cornflakes to drop before I work on this.§!\n"
 CAN_you_know_i_had_to_do_it_to_em: "§RFurther moves to increase oil exploitation will be impossible.§!\n"
@@ -425,6 +425,7 @@ CAN_JUNTA_REPLACED_NATIONALISTS: "The Military Junta has arrived"
 
 canada.1.t: "Status of the Dominion"
 canada.1.d: "Twenty-two years ago, Canada joined a war alongside Britain and the Triple Entente. This war would last for a long and bloody six years and become known as the Great War. Once the war came to a close, our promises of Autonomy from the British have clearly laid fallow. Canada and her sisters never earned more autonomy despite their sacrifices in the Great war, with London claiming that 'An increase in Autonomy may eventually lead to the break-up of the Empire that those in the Great War had fought and died to defend'. Canada, being one of the dominions that has long pushed for more autonomy, has been discontent with the continued status quo, but nonetheless prides herself on being a member of the British Empire. It is a diplomatic goal of Canada to manoeuvre their way to a nominally independent  state. \n\nThere is trouble in the domestic political landscape as well. During the Great War, Prime minister Robert Borden created a Unionist coalition with the Liberal Party of Canada. Baffling everyone, Borden was willing to drastically lower tariffs to compromise with the Liberals; thus resulting in a continued coalition post-war. The Unionists would go on to dominate every election after the end of the Great war, resulting in large amounts of dissent from non-Unionist voters. \n\nHowever, the economy is humming along well - booming even. This has allowed us to undertake large-scale resource extraction efforts, and we have many more planned and funded for a near future. Industrialization of the Interior has also been planned to be initiated within the next few years. Additionally, Immigration to the Dominions from Britain has also been a trend within the last two decades, allowing us to populate much of our empty nation. \n\nSo why worry about politics when the Economy is running smoothly?"
+canada.1.a: "For King, Faith and Empire..."
 canada.2.d: "Less than five days ago, the London Stock Market began undergoing radical dips and dives due to the colonial revolt in India and unrest in Africa. Today, the CEO of Hatry Group, Clarence Hatry, was imprisioned along with his associates and charged with mass fraud and forgery. Shortly after, the stock market plummeted as investor confidence instantly evaporated. Mass sell-offs followed, with every corner of the Empire falling into economic turmoil.\n\nAnd thus we have the debacle that is the London Stock Market Crash."
 canada.3.t: "The fall the Home Isles"
 canada.3.d: "Following the catastrophe of the LSMC, Britain herself has suffered massive unrest. Trade union protests were met initially with Force from Westminster. After a series of unfortunate events, it became apparent that the unrest in Britain was far worse than anybody could've imagined. All starting with The Jarrow Marches, the situation devolved into riots in Manchester which spread across the Nation. Revolution later engulfed Britain once the Military was ordered to fire on the protesters and instead defected, only to side with the protesters instead. \n\n Many Conservative and Liberal politicians in Britain have met tragic ends, with even more horrifying photos making their way outside of what once was the United Kingdom. Stanley Baldwin and the loyalist remnants of the Royal Army have held out in the House of Commons for a period of time, before being overwhelmed and murdered by Revolutionaries. \n\n Protocol dictates that in event of a disaster in the Home isles, evacuation to Canada is necessary. Thankfully, many elements of the Royal Navy have remained loyal. The traumatized Royal family have set foot on Canadian soil, with hundreds of thousands of refugees fleeing to Canada. What British politicians were able to avoid meeting a horrible end have also fled to Canada..."
@@ -501,8 +502,8 @@ canelection.14.d: "The Cooperatives have won the election, achieving a clear maj
 canelection.15.d: "The Liberals have won the election, achieving a clear majority in the House of Commons." #LIBERAL
 canelection.16.d: "The Conservatives have won the election, achieving a clear majority in the House of Commons." #CONSERVATIVE
 canelection.20.d: "The SoCreds have won the election, achieving a clear majority in the House of Commons." #SOCIAL CREDIT
-canelection.17.d: "Recently in the Canadian Elections, the Cooperative-Commonwealth Federation has come to power. Whilst normally the democratic election of a party in one of the Dominions is an unnotable development, the Canadian CCF is an unusually radical organization, comparable to our ILP./n/nLetting these radicals have a place in power could be a considerably dangerous situation, allowing them to spread socialism in Canada might have repercussions in the future." #CRY FROM CANADA
-canelection.18.d: "Recently in the Canadian Elections, the Cooperative-Commonwealth Federation has come to power. Whilst normally the democratic election of a party in one of the Dominions is an unnotable development, the Canadian CCF is an unusually radical organization, comparable to our ILP./n/nLetting these radicals have a place in power could be a considerably dangerous situation, allowing them to spread socialism in Canada might have repercussions in the future." #CRY FROM CANADA
+canelection.17.d: "Recently in the Canadian Elections, the Cooperative-Commonwealth Federation has come to power. Whilst normally the democratic election of a party in one of the Dominions is an unnotable development, the Canadian CCF is an unusually radical organization, comparable to our ILP.\n\nLetting these radicals have a place in power could be a considerably dangerous situation, allowing them to spread socialism in Canada might have repercussions in the future." #CRY FROM CANADA
+canelection.18.d: "Recently in the Canadian Elections, the Cooperative-Commonwealth Federation has come to power. Whilst normally the democratic election of a party in one of the Dominions is an unnotable development, the Canadian CCF is an unusually radical organization, comparable to our ILP.\n\nLetting these radicals have a place in power could be a considerably dangerous situation, allowing them to spread socialism in Canada might have repercussions in the future." #CRY FROM CANADA
 canelection.19.d: "Given the recent election of the CCF in the federal elections, Britain has firmly been convinced that allowing the CCF to spread socialism within our nation is a far too dangerous to be allowed. Due to this, they have sent a demand for Lord Tweedsmuir to temporarily dissolve Canadian parliament until a foreseeable future." #LONDON'S INTERVENTION
 canelection.21.d: "Nearly 2 months ago, Parliament was dissolved by order of Britain in face of a radical socialist victory of the Cooperative Commonwealth Federation. Since then, we've begun heavy reorganization. We've temporarily been governed by Lord Tweedsmuir and his selected cabinet of Loyalists, however, the Dissolution of Parliament was heavily assisted by the Military. In addition, a Military Government could be more effective than Tweedsmuir's absolutist regime, and London might not be opposed to the concept of the establishment of a Loyalist Junta."
 
@@ -597,6 +598,9 @@ CAN_oil_flares_idea: "Turner Valley Oil Flares"
 CAN_oil_flares_idea_desc: "The Turner Valley oil flares have devastated our Oil industry. Maintaining any production of oil is a pipe dream, it's likely in our best interests to direct resource extraction efforts to other sectors, like Steel or Aluminium for example."
 CAN_extra_research_teams_idea: "Additional Research Teams"
 
+#### Autonomy Strings ####
+CAN_coal_exports_to_britain: "Coal Exports to Britain"
+
 #### Political Parties ####
 
 CAN_vanguardist_party: "CMP"
@@ -637,7 +641,7 @@ ARMY_ANDREW_MCNAUGHTON_DESC: "§GMilitary Dossier\n§GBorn:§W 25 February 1887,
 ARMY_CHARLES_FOULKES_DESC: "§GMilitary Dossier\n§GBorn:§W 3 January 1903, Stockton-on-Tees, Britain\n§GMilitary Career:§W Never served in the Great War. He joined the Canadian Corps in 1926, attended the Staff College in England in 1934.\n-No Awards.\n§GNotes:§W\n-No experience in the Great War."
 ARMY_HENRY_CRERAR_DESC: "§GMilitary Dossier\n§GBorn:§W 28 April 1888, Hamilton, Canada\n§GMilitary Career:§W Served in the Great War in the Artillery. Promoted to counter battery staff officer of the Canadian Corps in the later-half of the Great War. Attended the Staff College in England post-war, attended the Imperial Defence College in more recent years.\n-Awarded the Companion of the Order of Bath.\n§GNotes:§W\n-Capable Administrative abilities."
 ARMY_GUY_SIMONDS_DESC: "§GMilitary Dossier\n§GBorn:§W 23 April 1903, Suffolk, Britain\n§GMilitary Career:§W Born into a family with a strong military history. Emmigrated to Canada when his father resigned from the Royal Army (with a rank of Major) in 1911. Studied at the Royal Military College of Canada during 1921-1925. Placed 2nd in Nationwide exams. Considered the best 'All-rounder' upon graduation. Joined the Canadian Corps in 1926. Promoted to Major in (late) December 1932.\n-Awarded the Sword of Honour in 1925.\n§GNotes:§W\n-Self-reliant.\n-Performs well in all circumstances.\n-Very skilled with Cavalry."
-CAN_Gen_Hoffmeister_DESC: "§GMilitary Dossier\n§GBorn:§W 15 May 1907, Vancouver, Canada\n§GMilitary Career:§W Joined the Reserves in 1926, promoted to Captain in 1934. Regularly attended Junior War Staff courses at the Royal Military College of Canada.\n-No Awards.\n§GNotes:§W\n-Performs well in rugged environments.\n-Adept understanding of fiscal matters."
+ARMY_BERT_HOFFMEISTER_DESC: "§GMilitary Dossier\n§GBorn:§W 15 May 1907, Vancouver, Canada\n§GMilitary Career:§W Joined the Reserves in 1926, promoted to Captain in 1934. Regularly attended Junior War Staff courses at the Royal Military College of Canada.\n-No Awards.\n§GNotes:§W\n-Performs well in rugged environments.\n-Adept understanding of fiscal matters."
 
 # Companies
 inglis_company: "Inglis Arms"
@@ -649,3 +653,10 @@ CAN_handley_page: "Handley Page"
 kingston_shipbuilding: "Kingston Shipbuilding"
 halifax_shipyard_limited: "Halifax Shipyard Ltd."
 montreal_lab: "Montreal Laboratories"
+vickers_armstrong: "Vickers Armstrong"
+
+CAN_RB_Bennett: "Richard Bedford Bennett"
+CAN_William_Lyon_Mackenzie_King: "William Lyon Mackenzie King"
+CAN_Henry_Crerar: "Henry Crerar"
+CAN_JS_Woodsworth: "James Shaver Woodsworth"
+CAN_John_Diefenbaker: "John Diefenbaker"

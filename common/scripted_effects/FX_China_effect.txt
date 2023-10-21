@@ -1,3 +1,45 @@
+CHI_improve_literacy = {
+	if = {
+		limit = { has_idea = CHI_illiterate_population }
+		swap_ideas = {
+			remove_idea = CHI_illiterate_population
+			add_idea = CHI_illiterate_population_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_illiterate_population_1 }
+		swap_ideas = {
+			remove_idea = CHI_illiterate_population_1
+			add_idea = CHI_illiterate_population_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_illiterate_population_2 }
+		remove_ideas = CHI_illiterate_population_2
+	}
+}
+
+CHI_improve_economy = {
+	if = {
+		limit = { has_idea = CHI_backwards_economy }
+		swap_ideas = {
+			remove_idea = CHI_backwards_economy
+			add_idea = CHI_backwards_economy_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_backwards_economy_1 }
+		swap_ideas = {
+			remove_idea = CHI_backwards_economy_1
+			add_idea = CHI_backwards_economy_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_backwards_economy_2 }
+		remove_ideas = CHI_backwards_economy_2
+	}
+}
+
 ######Zhili Provinces Array Set######
 KMT_set_zhili_provinces = {
 	every_controlled_state = {
@@ -17,8 +59,8 @@ KMT_set_zhili_provinces = {
 				state = 613
 			}
 		}
-		add_to_array = { 
-			array = ROOT.Zhili_Province 
+		add_to_array = {
+			array = ROOT.Zhili_Province
 		}
 	}
 }
@@ -41,7 +83,7 @@ KMT_zhili_dominant_china_state_claim = {
 KMT_set_clique = {
 	every_country = {
 		limit = { is_chinese_tag = yes }
-		add_to_array = { 
+		add_to_array = {
 			array = global.Chinese_clique
 		}
 	}
@@ -86,13 +128,13 @@ KMT_national_assembly_calculation_in_China = {
 			round_variable = KMTPop
 		}
 	}
-	###KMT 
+	###KMT
 	set_temp_variable = { GovPop = ROOT.party_popularity@authoritarian_democrat }
 	multiply_temp_variable = { GovPop = 100 }
 	multiply_temp_variable = { GovPop = KMTPop }
 	set_variable = { KMTMemberAssembly = GovPop }
 	round_variable = KMTMemberAssembly
-	###Zhili 
+	###Zhili
 	set_temp_variable = { ZhiliPop = ROOT.party_popularity@paternal_autocrat }
 	multiply_temp_variable = { ZhiliPop = 100 }
 	multiply_temp_variable = { ZhiliPop = KMTPop }

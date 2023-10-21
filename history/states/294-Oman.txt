@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = ENG
+		owner = HEJ
+		add_core_of = HEJ
     add_claim_by = ENG
 		buildings = {
 			infrastructure = 2

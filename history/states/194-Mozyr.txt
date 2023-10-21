@@ -13,6 +13,9 @@ state={
 		add_core_of = BLR
 		add_claim_by = SOV
 
+		victory_points = {
+			3203 5 
+		}
 	}
 
 	provinces={

@@ -7567,7 +7567,7 @@ RUS_join_internationale = {
 		months = 12
 	}
 	
-	### SRI ###
+	### UPC ###
 	SRI_did_not_listen_FRA = { value = -30 }
 	
 	### GEO ###

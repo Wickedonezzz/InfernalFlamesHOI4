@@ -35,7 +35,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_30
 	INS_war_for_insulindian_independence_idea
 	INS_non_existing_economy_idea
 	INS_political_instability_idea

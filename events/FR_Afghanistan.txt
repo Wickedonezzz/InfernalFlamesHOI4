@@ -6,15 +6,15 @@ country_event = {
 	title = afghan.0.t
 	desc = afghan.0.d
 	#picture = NOR_tranmel_tale
-
+	
 	trigger = {
 		original_tag = AFG
 	}
-
+	
 	mean_time_to_happen = { days = 3 }
-
+	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.0.a
 	}
@@ -26,11 +26,11 @@ country_event = {
 	title = afghan.1.t
 	desc = afghan.1.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.1.a
 		ai_chance = { base = 60 }
@@ -76,16 +76,16 @@ country_event = {
 	title = afghan.2.t
 	desc = afghan.2.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.2.a
 		add_stability = -0.01
 	}
-
+	
 	option = {
 		name = afghan.2.b
 		declare_war_on = {
@@ -102,11 +102,11 @@ country_event = {
 	title = afghan.3.t
 	desc = afghan.3.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.3.a
 		ai_chance = { base = 25 }
@@ -144,11 +144,11 @@ country_event = {
 	title = afghan.4.t
 	desc = afghan.4.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.4.a
 		ai_chance = { base = 50 }
@@ -189,7 +189,7 @@ country_event = {
 	title = afghan.5.t
 	desc = afghan.5.d
 	#picture = NOR_tranmel_tale
-
+	
 	trigger = {
 		original_tag = ENG
 		has_war_with = AFG
@@ -198,11 +198,11 @@ country_event = {
 			controls_state = 445
 		}
 	}
-
+	
 	mean_time_to_happen = { days = 50 }
-
+	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.5.a
 		ai_chance = { base = 90 }
@@ -235,7 +235,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.6.a
@@ -256,7 +256,7 @@ country_event = {
 	title = afghan.7.t
 	desc = afghan.7.d
 	#picture = NOR_tranmel_tale
-
+	
 	trigger = {
 		original_tag = ENG
 		NOT = {
@@ -266,11 +266,11 @@ country_event = {
 			has_war_with = AFG
 		}
 	}
-
+	
 	mean_time_to_happen = { days = 2 }
-
+	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.7.a
 		add_stability = -0.03
@@ -290,7 +290,7 @@ country_event = {
 	title = afghan.8.t
 	desc = afghan.8.d
 	#picture = NOR_tranmel_tale
-
+	
 	trigger = {
 		original_tag = ENG
 		has_war_with = AFG
@@ -307,11 +307,11 @@ country_event = {
 			}
 		}
 	}
-
+	
 	mean_time_to_happen = { days = 40 }
-
+	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.8.a
 		ai_chance = { base = 90 }
@@ -343,7 +343,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.9.a
@@ -373,16 +373,16 @@ country_event = {
 	title = afghan.10.t
 	desc = afghan.10.d
 	#picture = NOR_tranmel_tale
-
+	
 	trigger = {
 		original_tag = AFG
 		date > 1936.6.5
 	}
-
+	
 	mean_time_to_happen = { days = 1 }
-
+	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.10.a
 		add_stability = -0.15
@@ -390,22 +390,22 @@ country_event = {
 		add_ideas = AFG_king_is_dead_idea
 		hidden_effect = {
 			remove_ideas = AFG_mounting_opposition_king_idea
-      AFG_Transitional_Government = {
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = authoritarian_democrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = paternal_autocrat_subtype
-            traits = {}
-          }
-        }
-      }
+			AFG_Transitional_Government = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = authoritarian_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
+				}
+			}
 			set_party_name = { 
 				ideology = authoritarian_democrat 
 				long_name = AFG_transitional_gov_party_long 
@@ -441,7 +441,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.11.a
@@ -461,7 +461,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.12.a
@@ -480,7 +480,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.13.a
@@ -498,7 +498,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.14.a
@@ -534,11 +534,11 @@ country_event = {
 	title = afghan.15.t
 	desc = afghan.15.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.15.a
 		add_stability = 0.10
@@ -547,22 +547,22 @@ country_event = {
 			add_idea = AFG_opposition_mohammed_zahir_idea
 		}
 		hidden_effect = {
-      AFG_Mohammed_Zahir_Khan = {
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = authoritarian_democrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = paternal_autocrat_subtype
-            traits = {}
-          }
-        }
-      }
+			AFG_Mohammed_Zahir_Khan = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = authoritarian_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
+				}
+			}
 			set_party_name = { 
 				ideology = authoritarian_democrat 
 				long_name = AFG_mohammed_zahir_gov_party_long 
@@ -589,7 +589,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.16.a
@@ -621,11 +621,11 @@ country_event = {
 	title = afghan.17.t
 	desc = afghan.17.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.17.a
 		add_political_power = -100
@@ -649,7 +649,7 @@ country_event = {
 						}
 					}
 				}
-        if = {
+				if = {
 					limit = {
 						NOT = { has_ideology_group = paternal_autocrat }
 					}
@@ -661,7 +661,7 @@ country_event = {
 						}
 					}
 				}
-      }
+			}
 			set_party_name = { 
 				ideology = authoritarian_democrat 
 				long_name = AFG_transitional_gov_party_long 
@@ -685,11 +685,11 @@ country_event = {
 	title = afghan.18.t
 	desc = afghan.18.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.18.a
 		ai_chance = { base = 30 }
@@ -700,12 +700,10 @@ country_event = {
 		}
 		add_popularity = { ideology = libertarian_socialist popularity = 0.02 }
 		add_popularity = { ideology = social_democrat popularity = 0.02 }
-		add_ideas = {
-			AFG_Khan_Abdul_Ghaffar_Khan_hog_lib
-			AFG_Mir_Gul_Khan_Nasir_for_lib
-			AFG_Nur_Muhammad_Taraki_eco_van
-			AFG_Dada_Amir_Haider_Khan_sec_col
-		}
+		activate_advisor = AFG_Khan_Abdul_Ghaffar_Khan_hog_lib
+		activate_advisor = AFG_Mir_Gul_Khan_Nasir_for_lib
+		activate_advisor = AFG_Nur_Muhammad_Taraki_eco_van
+		activate_advisor = AFG_Dada_Amir_Haider_Khan_sec_col
 		swap_ideas = {
 			remove_idea = AFG_king_is_dead_idea
 			add_idea = AFG_opposition_revolution_idea
@@ -739,11 +737,11 @@ country_event = {
 	title = afghan.19.t
 	desc = afghan.19.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.19.a
 		add_stability = 0.03
@@ -777,11 +775,11 @@ country_event = {
 	title = afghan.20.t
 	desc = afghan.20.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.20.a
 		add_stability = 0.20
@@ -792,21 +790,21 @@ country_event = {
 		}
 		hidden_effect = {
 			AFG_Amanullah_Khan = {
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = authoritarian_democrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = paternal_autocrat_subtype
-            traits = {}
-          }
-        }
-      }
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = authoritarian_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
+				}
+			}
 			set_party_name = { 
 				ideology = authoritarian_democrat 
 				long_name = AFG_amanullah_gov_party_long 
@@ -829,11 +827,11 @@ country_event = {
 	title = afghan.21.t
 	desc = afghan.21.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.21.a
 		add_stability = -0.02
@@ -853,11 +851,11 @@ country_event = {
 	title = afghan.22.t
 	desc = afghan.22.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.22.a
 		ai_chance = { base = 80 }
@@ -887,11 +885,11 @@ country_event = {
 	title = afghan.23.t
 	desc = afghan.23.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.23.a
 		add_stability = 0.02
@@ -912,11 +910,11 @@ country_event = {
 	title = afghan.24.t
 	desc = afghan.24.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.24.a
 		add_stability = -0.02
@@ -937,11 +935,11 @@ country_event = {
 	title = afghan.25.t
 	desc = afghan.25.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.25.a
 		hidden_effect = {
@@ -958,10 +956,10 @@ country_event = {
 	title = afghan.26.t
 	desc = afghan.26.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.26.a
@@ -969,12 +967,11 @@ country_event = {
 		set_politics = {
 			ruling_party = authoritarian_democrat elections_allowed = no
 		}
-		add_ideas = {
-			AFG_Muhammed_Ghobar_hog_ade
-			AFG_Abdul_Hadi_Dawai_for_ade
-			AFG_Ahmad_Ali_Khan_Solaiman_eco_ade
-			AFG_Ghulam_Faruq_Usman_sec_pau
-		}		
+		activate_advisor = AFG_Muhammed_Ghobar_hog_ade
+		activate_advisor = AFG_Abdul_Hadi_Dawai_for_ade
+		activate_advisor = AFG_Ahmad_Ali_Khan_Solaiman_eco_ade
+		activate_advisor = AFG_Ghulam_Faruq_Usman_sec_pau
+		
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.15 }
 		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
 		swap_ideas = {
@@ -983,21 +980,21 @@ country_event = {
 		}
 		hidden_effect = {
 			AFG_Amanullah_Khan = {
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = authoritarian_democrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = paternal_autocrat_subtype
-            traits = {}
-          }
-        }
-      }
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = authoritarian_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
+				}
+			}
 			set_party_name = { 
 				ideology = authoritarian_democrat 
 				long_name = AFG_amanullah_gov_party_long 
@@ -1044,23 +1041,21 @@ country_event = {
 			remove_idea = AFG_opposition_revolution_idea
 			add_idea = AFG_opposition_kalakani_idea
 		}
-		add_ideas = {
-			AFG_Malik_Habibullah_Kalakani_hog_npo
-			AFG_Haji_Faiz_Muhammed_Zikeria_for_pau
-			AFG_Mirza_Ali_Khan_eco_npo
-			AFG_Khalilullah_Khalili_sec_npo
-		}		
+		activate_advisor = AFG_Malik_Habibullah_Kalakani_hog_npo
+		activate_advisor = AFG_Haji_Faiz_Muhammed_Zikeria_for_pau
+		activate_advisor = AFG_Mirza_Ali_Khan_eco_npo
+		activate_advisor = AFG_Khalilullah_Khalili_sec_npo	
 		hidden_effect = {
 			add_ideas = AFG_pashtun_tajik_tentions_idea
-      AFG_Habibullāh_Kalakāni = {
-        add_country_leader_role = {
-          promote_leader = yes
-          country_leader = {
-            ideology = paternal_autocrat_subtype
-            traits = {}
-          }
-        }
-      }
+			AFG_Habibullāh_Kalakāni = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
+				}
+			}
 			set_party_name = { 
 				ideology = paternal_autocrat 
 				long_name = AFG_national_populist_party_long 
@@ -1096,11 +1091,11 @@ country_event = {
 	title = afghan.27.t
 	desc = afghan.27.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.27.a
 		add_popularity = { ideology = national_populist popularity = -0.02 }
@@ -1118,10 +1113,10 @@ country_event = {
 	title = afghan.28.t
 	desc = afghan.28.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.28.a
@@ -1150,11 +1145,11 @@ country_event = {
 	title = afghan.29.t
 	desc = afghan.29.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.29.a
 		add_popularity = { ideology = collectivist popularity = 0.02 }
@@ -1172,22 +1167,21 @@ country_event = {
 	title = afghan.30.t
 	desc = afghan.30.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.30.a
 		set_politics = {
 			ruling_party = social_democrat elections_allowed = no
 		}
-		add_ideas = {
-			AFG_Abdul_Majid_Zabuli_hog_sli
-			AFG_Ghulam_Mohammad_Farhad_for_sde
-			AFG_Mohammed_Hashim_Maiwandwal_eco_sde
-			AFG_Abdul_Majid_Zabuli_sec_sli
-		}		
+		activate_advisor = AFG_Abdul_Majid_Zabuli_hog_sli
+		activate_advisor = AFG_Ghulam_Mohammad_Farhad_for_sde
+		activate_advisor = AFG_Mohammed_Hashim_Maiwandwal_eco_sde
+		activate_advisor = AFG_Asadullah_Seraj_Khan_sec_sco
+		
 		add_popularity = { ideology = collectivist popularity = -0.02 }
 		add_popularity = { ideology = libertarian_socialist popularity = -0.03 }
 		add_popularity = { ideology = social_democrat popularity = 0.04 }
@@ -1208,11 +1202,11 @@ country_event = {
 	title = afghan.31.t
 	desc = afghan.31.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.31.a
 		add_stability = -0.02
@@ -1230,11 +1224,11 @@ country_event = {
 	title = afghan.32.t
 	desc = afghan.32.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.32.a
 		add_stability = -0.02
@@ -1254,10 +1248,10 @@ country_event = {
 	title = afghan.33.t
 	desc = afghan.33.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.33.a
@@ -1294,11 +1288,11 @@ country_event = {
 	title = afghan.34.t
 	desc = afghan.34.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.34.a
 		add_stability = 0.05
@@ -1318,11 +1312,11 @@ country_event = {
 	title = afghan.35.t
 	desc = afghan.35.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.35.a
 		add_stability = -0.05
@@ -1342,11 +1336,11 @@ country_event = {
 	title = afghan.18.t
 	desc = afghan.36.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.18.a
 		ai_chance = { base = 30 }
@@ -1361,12 +1355,10 @@ country_event = {
 			remove_idea = AFG_king_is_dead_idea
 			add_idea = AFG_opposition_revolution_idea
 		}
-		add_ideas = {
-			AFG_Khan_Abdul_Ghaffar_Khan_hog_lib
-			AFG_Mir_Gul_Khan_Nasir_for_lib
-			AFG_Nur_Muhammad_Taraki_eco_van
-			AFG_Dada_Amir_Haider_Khan_sec_col
-		}		
+		activate_advisor = AFG_Khan_Abdul_Ghaffar_Khan_hog_lib
+		activate_advisor = AFG_Mir_Gul_Khan_Nasir_for_lib
+		activate_advisor = AFG_Nur_Muhammad_Taraki_eco_van
+		activate_advisor = AFG_Dada_Amir_Haider_Khan_sec_col	
 		hidden_effect = {
 			add_popularity = { ideology = authoritarian_democrat popularity = -0.15 }
 			country_event = {
@@ -1396,18 +1388,18 @@ country_event = {
 	title = afghan.37.t
 	desc = afghan.37.d
 	#picture = NOR_tranmel_tale
-
+	
 	trigger = {
 		original_tag = AFG
 		has_completed_focus = AFG_secure_musahiban_control
 		has_completed_focus = AFG_sons_vengeance
 		has_completed_focus = AFG_secure_tribal_loyalty
 	}
-
+	
 	mean_time_to_happen = { days = 30 }
-
+	
 	fire_only_once = yes
-
+	
 	option = {
 		name = afghan.37.a
 		ai_chance = { base = 60 }
@@ -1437,11 +1429,11 @@ country_event = {
 	title = afghan.38.t
 	desc = afghan.38.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.38.a
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
@@ -1458,11 +1450,11 @@ country_event = {
 	title = afghan.39.t
 	desc = afghan.39.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.39.a
 		add_popularity = { ideology = libertarian_socialist popularity = 0.02 }
@@ -1480,16 +1472,16 @@ country_event = {
 	title = afghan.40.t
 	desc = afghan.40.d
 	#picture = NOR_tranmel_tale
-
+	
 	trigger = {
 		original_tag = AFG
 		has_completed_focus = AFG_purge_revolutionaries
 	}
-
+	
 	mean_time_to_happen = { days = 20 }
 	
-    fire_only_once = yes
-
+	fire_only_once = yes
+	
 	option = {
 		name = afghan.40.a
 		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
@@ -1509,10 +1501,10 @@ country_event = {
 	title = afghan.100.t
 	desc = afghan.100.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.100.a
@@ -1529,12 +1521,11 @@ country_event = {
 		set_politics = {
 			ruling_party = paternal_autocrat elections_allowed = no
 		}
-		add_ideas = {
-			AFG_Malik_Habibullah_Kalakani_hog_npo
-			AFG_Haji_Faiz_Muhammed_Zikeria_for_pau
-			AFG_Mirza_Ali_Khan_eco_npo
-			AFG_Khalilullah_Khalili_sec_npo
-		}		
+		activate_advisor = AFG_Malik_Habibullah_Kalakani_hog_npo
+		activate_advisor = AFG_Haji_Faiz_Muhammed_Zikeria_for_pau
+		activate_advisor = AFG_Mirza_Ali_Khan_eco_npo
+		activate_advisor = AFG_Khalilullah_Khalili_sec_npo
+		
 		add_popularity = { ideology = paternal_autocrat popularity = 0.20 }
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.18 }
 		hidden_effect = {
@@ -1549,10 +1540,10 @@ country_event = {
 	title = afghan.101.t
 	desc = afghan.101.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.101.a
@@ -1569,10 +1560,10 @@ country_event = {
 	title = afghan.102.t
 	desc = afghan.102.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.102.a
@@ -1592,10 +1583,10 @@ country_event = {
 	title = afghan.103.t
 	desc = afghan.103.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.103.a
@@ -1615,10 +1606,10 @@ country_event = {
 	title = afghan.104.t
 	desc = afghan.104.d
 	#picture = NOR_tranmel_tale
-
+	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.104.a
@@ -1638,10 +1629,8 @@ country_event = {
 	title = afghan.105.t
 	desc = afghan.105.d
 	#picture = NOR_tranmel_tale
-
 	is_triggered_only = yes
-	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.105.a
@@ -1650,16 +1639,13 @@ country_event = {
 		set_politics = {
 			ruling_party = national_populist elections_allowed = no
 		}
-		add_ideas = {
-			AFG_Malik_Habibullah_Kalakani_hog_npo
-			AFG_Haji_Faiz_Muhammed_Zikeria_for_pau
-			AFG_Mirza_Ali_Khan_eco_npo
-			AFG_Khalilullah_Khalili_sec_npo
-		}		
+		activate_advisor = AFG_Malik_Habibullah_Kalakani_hog_npo
+		activate_advisor = AFG_Haji_Faiz_Muhammed_Zikeria_for_pau
+		activate_advisor = AFG_Mirza_Ali_Khan_eco_npo
+		activate_advisor = AFG_Khalilullah_Khalili_sec_npo
+		
 		add_popularity = { ideology = national_populist popularity = 0.15 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.12 }
-		hidden_effect = {
-		}
 	}
 	
 	option = {
@@ -1668,8 +1654,6 @@ country_event = {
 		add_stability = -0.02
 		add_popularity = { ideology = social_conservative popularity = 0.03 }
 		add_popularity = { ideology = national_populist popularity = -0.03 }
-		hidden_effect = {
-		}
 	}
 }
 
@@ -1679,10 +1663,8 @@ country_event = {
 	title = afghan.106.t
 	desc = afghan.106.d
 	#picture = NOR_tranmel_tale
-
 	is_triggered_only = yes
-	
-    fire_only_once = yes
+	fire_only_once = yes
 	
 	option = {
 		name = afghan.106.a
@@ -1693,8 +1675,6 @@ country_event = {
 			type = infantry_equipment
 			amount = 500
 			producer = AFG
-		}
-		hidden_effect = {
 		}
 	}
 }

@@ -352,7 +352,7 @@ focus_tree = {
 	#Our Mighty Military
 	focus = {
 		id = ZHI_MAIN_military
-		icon = GFX_goal_conscription
+		icon = GFX_goal_traitor_clique
 		cost = 5
 		prerequisite = {
 			focus = ZHI_MAIN_far_east
@@ -1477,60 +1477,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_better_schools"
-			if = {
-				limit = {
-					has_idea = iliterate_population
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_1
-					remove_idea = iliterate_population
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_no_armor
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_1_no_armor
-					remove_idea = iliterate_population_no_armor
-				}
-			}
-
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_1
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_2
-					remove_idea = iliterate_population_1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_1_no_armor
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_2_no_armor
-					remove_idea = iliterate_population_1_no_armor
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_2
-				}
-				swap_ideas = {
-					add_idea = only_armor
-					remove_idea = iliterate_population_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_2_no_armor
-				}
-				remove_ideas = {
-					iliterate_population_2_no_armor
-				}
-			}
+			CHI_improve_literacy = yes
 		}
 	}
 
@@ -1579,60 +1526,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_expand_shandong_university"
-			if = {
-				limit = {
-					has_idea = iliterate_population
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_1
-					remove_idea = iliterate_population
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_no_armor
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_1_no_armor
-					remove_idea = iliterate_population_no_armor
-				}
-			}
-
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_1
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_2
-					remove_idea = iliterate_population_1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_1_no_armor
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_2_no_armor
-					remove_idea = iliterate_population_1_no_armor
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_2
-				}
-				swap_ideas = {
-					add_idea = only_armor
-					remove_idea = iliterate_population_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_2_no_armor
-				}
-				remove_ideas = {
-					iliterate_population_2_no_armor
-				}
-			}
+			CHI_improve_literacy = yes
 		}
 	}
 	focus = {
@@ -1657,58 +1551,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_education_army"
-			if = {
-				limit = {
-					has_idea = iliterate_population
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_1
-					remove_idea = iliterate_population
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_no_armor
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_1_no_armor
-					remove_idea = iliterate_population_no_armor
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_1_no_armor
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_1_no_armor
-					remove_idea = iliterate_population_2_no_armor
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_1
-				}
-				swap_ideas = {
-					add_idea = iliterate_population_2
-					remove_idea = iliterate_population_1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_2
-				}
-				swap_ideas = {
-					add_idea = only_armor
-					remove_idea = iliterate_population_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_2_no_armor
-				}
-				remove_ideas = {
-					iliterate_population_2_no_armor
-				}
+			add_doctrine_cost_reduction = {
+				name = ZHI_education_army
+				category = land_doctrine
+				cost_reduction = 1.0
+				uses = 1
 			}
 		}
 	}
@@ -1733,41 +1580,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_mil_funding"
-			if = {
-				limit = {
-					has_idea = iliterate_population
-				}
-				swap_ideas = {
-					remove_idea = iliterate_population
-					add_idea = iliterate_population_no_armor
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_1
-				}
-				swap_ideas = {
-					remove_idea = iliterate_population_1
-					add_idea = iliterate_population_1_no_armor
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = iliterate_population_2
-				}
-				swap_ideas = {
-					remove_idea = iliterate_population_2
-					add_idea = iliterate_population_2_no_armor
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = only_armor
-				}
-				remove_ideas = {
-					only_armor
-				}
-			}
+			CHI_improve_literacy = yes
 		}
 	}
 	focus = {
@@ -1845,10 +1658,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_industrial_rev"
-			swap_ideas = {
-				remove_idea = backwards_economy
-				add_idea = backwards_economy_1
-			}
+			CHI_improve_economy = yes
 		}
 	}
 	focus = {
@@ -1876,10 +1686,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_mass_production"
-			swap_ideas = {
-				add_idea = backwards_economy_2
-				remove_idea = backwards_economy_1
-			}
+			CHI_improve_economy = yes
 		}
 	}
 	focus = {
@@ -1907,9 +1714,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_efficiency"
-			swap_ideas = {
-				add_idea = backwards_economy_3
-				remove_idea = backwards_economy_2
+			CHI_improve_economy = yes
+			add_tech_bonus = {
+				category = industry
+				bonus = 1.0
+				uses = 2
 			}
 		}
 	}
@@ -2044,16 +1853,14 @@ focus_tree = {
 
 	focus = {
 		id = ZHI_MIL_traitors
-		icon = GFX_goal_traitor_clique
+		icon = GFX_focus_generic_conspiracy
 		cost = 7
 
 		available = {
-			always = no
-			custom_trigger_tooltip = {
-				tooltip = unlocked_later
+			hidden_trigger = {
+				always = no
 			}
 		}
-
 		x = 19
 		y = 0
 
@@ -2067,6 +1874,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_MIL_traitors"
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 
@@ -2082,9 +1890,8 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
-			custom_trigger_tooltip = {
-				tooltip = unlocked_later
+			hidden_trigger = {
+				always = no
 			}
 		}
 
@@ -2101,6 +1908,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_MIL_suns_plan"
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 
@@ -2301,9 +2109,8 @@ focus_tree = {
 			focus = ZHI_MIL_traitors
 		}
 		available = {
-			always = no
-			custom_trigger_tooltip = {
-				tooltip = unlocked_later
+			hidden_trigger = {
+				always = no
 			}
 		}
 
@@ -2320,6 +2127,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ZHI_MIL_jade_marshall_plan"
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	# Grand Battleplan - Japanese Support

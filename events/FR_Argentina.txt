@@ -9,10 +9,11 @@ country_event = { #Intro
 	title = arg.1.t
 	desc = arg.1.d
 	picture = argie_start
+	is_triggered_only = yes
 
-	 trigger = {
-	 	tag = ARG
-	 }
+	# trigger = {
+		# 	tag = ARG
+		# }
 
 	# mean_time_to_happen = { days = 1 }
 
@@ -47,7 +48,7 @@ country_event = { #Black Wednesday Arrives to Argentina
 		add_political_power = -150
 		hidden_effect = {
 			country_event = { days = 12 id = arg.3}
-			}
+		}
 	}
 }
 
@@ -62,11 +63,11 @@ country_event = { #Major protests begin
 		name = arg.3.a
 		hidden_effect = {
 			country_event = { days = 5 id = arg.4}
-			}
+		}
 		if = {
-				limit = { has_idea = ARG_radicalist_model }
-				remove_ideas = ARG_radicalist_model
-			}
+			limit = { has_idea = ARG_radicalist_model }
+			remove_ideas = ARG_radicalist_model
+		}
 		add_political_power = -100
 	}
 }
@@ -83,7 +84,7 @@ country_event = { #leagues attack protesters
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.5}
-			}
+		}
 		add_political_power = -50
 	}
 	option = {#let them be
@@ -91,7 +92,7 @@ country_event = { #leagues attack protesters
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.40}
-			}
+		}
 	}
 }
 
@@ -107,7 +108,7 @@ country_event = { #collies want to negotiate
 		ai_chance = { factor = 60 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.6}
-			}
+		}
 		add_political_power = -50
 	}
 	option = {#good idea
@@ -115,7 +116,7 @@ country_event = { #collies want to negotiate
 		ai_chance = { factor = 40 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.7}
-			}
+		}
 		add_political_power = -25
 	}
 }
@@ -131,7 +132,7 @@ country_event = { #collies want to negotiate(2)#
 		ai_chance = { factor = 40 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.8}
-			}
+		}
 		add_political_power = -50
 	}
 	option = {#good idea
@@ -139,7 +140,7 @@ country_event = { #collies want to negotiate(2)#
 		ai_chance = { factor = 60 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.9}
-			}
+		}
 		add_political_power = -25
 	}
 }
@@ -161,8 +162,8 @@ country_event = { #collies take over
 			ruling_party = collectivist
 		}
 		add_popularity = {
-				ideology = collectivist 
-				popularity = 0.15
+			ideology = collectivist
+			popularity = 0.15
 		}
 		remove_every_minister = yes
 		activate_advisor = ARG_Lopez_Arango_hog_col
@@ -190,8 +191,8 @@ country_event = { #collies take over or dems
 			ruling_party = collectivist
 		}
 		add_popularity = {
-				ideology = collectivist 
-				popularity = 0.15
+			ideology = collectivist
+			popularity = 0.15
 		}
 		remove_every_minister = yes
 		activate_advisor = ARG_Lopez_Arango_hog_col
@@ -206,12 +207,12 @@ country_event = { #collies take over or dems
 		ai_chance = { factor = 70 }
 		add_political_power = 50
 		add_popularity = {
-				ideology = social_liberal
-				popularity = 0.1
+			ideology = social_liberal
+			popularity = 0.1
 		}
 		add_popularity = {
-				ideology = market_liberal
-				popularity = 0.05
+			ideology = market_liberal
+			popularity = 0.05
 		}
 	}
 }
@@ -255,8 +256,8 @@ country_event = { #lpa
 			ruling_party = collectivist
 		}
 		add_popularity = {
-				ideology = collectivist 
-				popularity = 0.15
+			ideology = collectivist
+			popularity = 0.15
 		}
 		remove_every_minister = yes
 		activate_advisor = ARG_Lopez_Arango_hog_col
@@ -307,14 +308,14 @@ country_event = { #radical leftists mobilize around government building
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.50}
-			}
+		}
 	}
 	option = {#shoot them
 		name = arg.6.b
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.50}
-			}
+		}
 		add_political_power = -50
 	}
 }
@@ -331,14 +332,14 @@ country_event = { #radical leftists mobilize around government building (2)#
 		ai_chance = { factor = 40 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.51}
-			}
+		}
 	}
 	option = {#shoot them
 		name = arg.7.b
 		ai_chance = { factor = 60 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.50}
-			}
+		}
 		add_political_power = -50
 	}
 }
@@ -355,14 +356,14 @@ country_event = { #radical leftists mobilize around government building (3)#
 		ai_chance = { factor = 20 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.52} #lpa
-			}
+		}
 	}
 	option = {#shoot them
 		name = arg.8.b
 		ai_chance = { factor = 80 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.53} #collie or lpa
-			}
+		}
 		add_political_power = -50
 	}
 }
@@ -379,14 +380,14 @@ country_event = { #radical leftists mobilize around government building (4)#
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.20} #dem or lpa
-			}
+		}
 	}
 	option = {#shoot them
 		name = arg.9.b
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			country_event = { days = 5 id = arg.52} #lpa
-			}
+		}
 		add_political_power = -50
 	}
 }
@@ -403,7 +404,7 @@ country_event = { #Government deals with the labourers
 		name = arg.10.a
 		ai_chance = { factor = 50 }
 		add_popularity = {
-			ideology = collectivist 
+			ideology = collectivist
 			popularity = 0.025
 		}
 		add_popularity = {
@@ -414,12 +415,12 @@ country_event = { #Government deals with the labourers
 			ideology = libertarian_socialist
 			popularity = 0.025
 		}
-		add_political_power = 25	
+		add_political_power = 25
 	}
 	option = {
 		name = arg.10.b
 		ai_chance = { factor = 50 }
-		add_political_power = -25	
+		add_political_power = -25
 	}
 }
 
@@ -438,7 +439,7 @@ country_event = { #LPA factionalism
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.025
-		}	
+		}
 	}
 	option = {
 		name = arg.11.b
@@ -466,7 +467,7 @@ country_event = { #Collies in memorial
 		add_popularity = {
 			ideology = collectivist
 			popularity = -0.025
-		}	
+		}
 	}
 	option = {
 		name = arg.12.b
@@ -493,7 +494,7 @@ country_event = { #Dialogue with the opposition
 		add_popularity = {
 			ideology = social_liberal
 			popularity = 0.025
-		}	
+		}
 	}
 }
 
@@ -512,7 +513,7 @@ country_event = { #Revolution arrives
 		add_popularity = {
 			ideology = collectivist
 			popularity = 0.2
-		}	
+		}
 	}
 }
 country_event = { #business agitation
@@ -526,7 +527,7 @@ country_event = { #business agitation
 	option = {
 		name = arg.15.a
 		ai_chance = { factor = 100 }
-		add_political_power = -50	
+		add_political_power = -50
 	}
 }
 
@@ -562,7 +563,7 @@ country_event = { #reactionaries flee
 	option = {
 		name = arg.16.b
 		ai_chance = { factor = 50 }
-		add_political_power = -50	
+		add_political_power = -50
 	}
 }
 country_event = { #goodreds
@@ -576,7 +577,7 @@ country_event = { #goodreds
 	option = {
 		name = arg.17.a
 		ai_chance = { factor = 100 }
-		add_political_power = 75	
+		add_political_power = 75
 	}
 }
 country_event = { #standforthefederation
@@ -776,45 +777,45 @@ country_event = { #who will we import from
 		name = arg.27.a
 		ai_chance = { factor = 20 }
 		add_equipment_to_stockpile = {
-				type = infantry_equipment_1 amount = 500 producer = GER
-			}
+			type = infantry_equipment_1 amount = 500 producer = GER
+		}
 		GER = {
 			add_opinion_modifier = { target = ARG modifier = ARG_weapon_trade }
-			}
-		add_political_power = -10
 		}
-#	option = {
-#		name = arg.27.b
-#		ai_chance = { factor = 20 }
-#		add_equipment_to_stockpile = {
-#				type = infantry_equipment_1 amount = 500 producer = ENG
-#			}
-#		ENG = {
-#			add_opinion_modifier = { target = ARG modifier = ARG_weapon_trade }
-#			}
-#		add_political_power = -25
-#		}
+		add_political_power = -10
+	}
+	#	option = {
+		#		name = arg.27.b
+		#		ai_chance = { factor = 20 }
+		#		add_equipment_to_stockpile = {
+			#				type = infantry_equipment_1 amount = 500 producer = ENG
+			#			}
+		#		ENG = {
+			#			add_opinion_modifier = { target = ARG modifier = ARG_weapon_trade }
+			#			}
+		#		add_political_power = -25
+		#		}
 	option = {
 		name = arg.27.c
 		ai_chance = { factor = 30 }
 		add_equipment_to_stockpile = {
-				type = infantry_equipment_1 amount = 500 producer = FRA
-			}
+			type = infantry_equipment_1 amount = 500 producer = FRA
+		}
 		FRA = {
 			add_opinion_modifier = { target = ARG modifier = ARG_weapon_trade }
-			}
 		}
+	}
 	option = {
 		name = arg.27.e
 		ai_chance = { factor = 30 }
 		add_equipment_to_stockpile = {
-				type = infantry_equipment_1 amount = 500 producer = USA
-			}
+			type = infantry_equipment_1 amount = 500 producer = USA
+		}
 		USA = {
 			add_opinion_modifier = { target = ARG modifier = ARG_weapon_trade }
-			}
 		}
 	}
+}
 ###foreignstuff
 
 country_event = { #invitation from argentina (to chile)#
@@ -829,15 +830,15 @@ country_event = { #invitation from argentina (to chile)#
 		name = arg.80.a
 		ai_chance = { factor = 70 }
 		ARG = {
-		add_to_faction = CHL
-			}
+			add_to_faction = CHL
 		}
+	}
 	option = {
 		name = arg.80.b
 		ai_chance = { factor = 30 }
 		add_political_power = 25
-		}
 	}
+}
 
 country_event = { #invitation from argentina (to uruguay)#
 	id = arg.81
@@ -851,15 +852,15 @@ country_event = { #invitation from argentina (to uruguay)#
 		name = arg.81.a
 		ai_chance = { factor = 70 }
 		ARG = {
-		add_to_faction = URG
-			}
+			add_to_faction = URG
 		}
+	}
 	option = {
 		name = arg.81.b
 		ai_chance = { factor = 30 }
 		add_political_power = 25
-		}
 	}
+}
 
 country_event = { #invitation from argentina (to peru)#
 	id = arg.82
@@ -873,15 +874,15 @@ country_event = { #invitation from argentina (to peru)#
 		name = arg.82.a
 		ai_chance = { factor = 70 }
 		ARG = {
-		add_to_faction = PRU
-			}
+			add_to_faction = PRU
 		}
+	}
 	option = {
 		name = arg.82.b
 		ai_chance = { factor = 30 }
 		add_political_power = 25
-		}
 	}
+}
 
 country_event = { #invitation from argentina (to paraguay)#
 	id = arg.83
@@ -895,15 +896,15 @@ country_event = { #invitation from argentina (to paraguay)#
 		name = arg.83.a
 		ai_chance = { factor = 70 }
 		ARG = {
-		add_to_faction = PAR
-			}
+			add_to_faction = PAR
 		}
+	}
 	option = {
 		name = arg.83.b
 		ai_chance = { factor = 30 }
 		add_political_power = 25
-		}
 	}
+}
 
 country_event = { #invitation from argentina (to peru)#
 	id = arg.84
@@ -917,15 +918,15 @@ country_event = { #invitation from argentina (to peru)#
 		name = arg.84.a
 		ai_chance = { factor = 70 }
 		ARG = {
-		add_to_faction = PRU
-			}
+			add_to_faction = PRU
 		}
+	}
 	option = {
 		name = arg.84.b
 		ai_chance = { factor = 30 }
 		add_political_power = 25
-		}
 	}
+}
 country_event = { #invitation from argentina (to colombia)#
 	id = arg.85
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.85"}
@@ -938,17 +939,17 @@ country_event = { #invitation from argentina (to colombia)#
 		name = arg.85.a
 		ai_chance = { factor = 70 }
 		ARG = {
-		add_to_faction = COL
-			}
+			add_to_faction = COL
 		}
+	}
 	option = {
 		name = arg.85.b
 		ai_chance = { factor = 30 }
 		add_political_power = 25
-		}
 	}
+}
 
-country_event = { #union with argentina 
+country_event = { #union with argentina
 	id = arg.86
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.86"}
 	title = arg.86.t
@@ -961,23 +962,23 @@ country_event = { #union with argentina
 		ai_chance = { factor = 100 }
 		ARG = {
 			every_state = {
-			limit = {
-				is_core_of = ROOT
-			}
-			add_claim_by = ARG
-		}
-		annex_country = {
-			target = ROOT
-			transfer_troops = yes
+				limit = {
+					is_core_of = ROOT
 				}
+				add_claim_by = ARG
+			}
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
 			}
 		}
+	}
 	option = {
 		name = arg.86.b
 		ai_chance = { factor = 0 }
 		add_political_power = 25
-		}
 	}
+}
 
 country_event = { #seizing_las_malvinas
 	id = arg.87
@@ -993,10 +994,10 @@ country_event = { #seizing_las_malvinas
 		ARG = {
 			transfer_state = 299
 			transfer_state = 720
-			}
-		ENG = { country_event = { id = arg.88 }}
 		}
+		ENG = { country_event = { id = arg.88 }}
 	}
+}
 
 country_event = { #argies seized our islands!
 	id = arg.88
@@ -1016,7 +1017,7 @@ country_event = { #argies seized our islands!
 			}
 		}
 		add_political_power = 50
-		}
+	}
 	option = { #we are gonna kick those wankers off!
 		name = arg.88.b
 		ai_chance = {
@@ -1029,8 +1030,8 @@ country_event = { #argies seized our islands!
 		ARG = {
 			declare_war_on = { target = ENG type = annex_everything }}
 		set_country_flag = ARG_malvinas_war
-		}
 	}
+}
 
 country_event = { # Peace with Argentina
 	id = arg.89
@@ -1042,9 +1043,9 @@ country_event = { # Peace with Argentina
 		is_subject = no
 		has_war_with = ARG
 		has_country_flag = ARG_malvinas_war
-		OR = { has_war_with = GER 
-				has_war_with = FRA
-				has_war_with = USA }
+		OR = { has_war_with = GER
+			has_war_with = FRA
+			has_war_with = USA }
 		ARG = {
 			controls_state = 299
 		}
@@ -1088,19 +1089,19 @@ country_event = { #socialism across the andes
 	option = {
 		name = arg.100.a
 		ai_chance = { factor = 50 }
-		add_popularity = { 
+		add_popularity = {
 			ideology = collectivist popularity = 0.025
-			}
-		add_popularity = { 
-			ideology = libertarian_socialist popularity = 0.025
-			}
 		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.025
+		}
+	}
 	option = {
 		name = arg.100.b
 		ai_chance = { factor = 50 }
 		add_political_power = -60
-		}
 	}
+}
 
 country_event = { #winning to chile
 	id = arg.101
@@ -1112,11 +1113,11 @@ country_event = { #winning to chile
 		tag = ARG
 		has_war_with = CHL
 		CHL = {
-		surrender_progress > 0.90
-			}
+			surrender_progress > 0.90
+		}
 	}
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
@@ -1128,154 +1129,154 @@ country_event = { #winning to chile
 		ARG = { white_peace_with_TARGET = yes }
 		puppet = CHL
 		add_to_faction = CHL
-		CHL = { 
-			load_focus_tree = generic_focus 
+		CHL = {
+			load_focus_tree = generic_focus
 			if = {
-			limit = {
-				has_dlc = "Together for Victory"
+				limit = {
+					has_dlc = "Together for Victory"
 				}
-			add_to_tech_sharing_group = argsoc_research
+				add_to_tech_sharing_group = argsoc_research
 			}
 		}
-		CHL = { 
-		set_country_flag = CHL_socpuppet
-		set_cosmetic_tag = CHL_socpup
-		if = {
-			limit = { has_idea = CHL_crumbling_government }
-			remove_ideas = CHL_crumbling_government 
-				}
-		if = {
-			limit = { has_idea = CHL_political_polarization }
-			remove_ideas = CHL_political_polarization 
-				}
-		if = {
-			limit = { has_idea = CHL_collapsed_economy }
-			remove_ideas = CHL_collapsed_economy
-				}
-		if = {
-			limit = { has_idea = CHL_reforming_government }
-			remove_ideas = CHL_reforming_government
-				}
-		if = {
-			limit = { has_idea = CHL_political_instability }
-			remove_ideas = CHL_political_instability
-				}
-		if = {
-			limit = { has_idea = CHL_readjusted_plan }
-			remove_ideas = CHL_readjusted_plan
-				}
+		CHL = {
+			set_country_flag = CHL_socpuppet
+			set_cosmetic_tag = CHL_socpup
+			if = {
+				limit = { has_idea = CHL_crumbling_government }
+				remove_ideas = CHL_crumbling_government
+			}
+			if = {
+				limit = { has_idea = CHL_political_polarization }
+				remove_ideas = CHL_political_polarization
+			}
+			if = {
+				limit = { has_idea = CHL_collapsed_economy }
+				remove_ideas = CHL_collapsed_economy
+			}
+			if = {
+				limit = { has_idea = CHL_reforming_government }
+				remove_ideas = CHL_reforming_government
+			}
+			if = {
+				limit = { has_idea = CHL_political_instability }
+				remove_ideas = CHL_political_instability
+			}
+			if = {
+				limit = { has_idea = CHL_readjusted_plan }
+				remove_ideas = CHL_readjusted_plan
+			}
 
-		if = {
-			limit = { has_idea = CHL_solidary_labour }
-			remove_ideas = CHL_solidary_labour  
-				}
+			if = {
+				limit = { has_idea = CHL_solidary_labour }
+				remove_ideas = CHL_solidary_labour
+			}
 
-		if = {
-			limit = { has_idea = CHL_paternal_state }
-			remove_ideas = CHL_paternal_state
-				}
-		if = {
-			limit = { has_idea = CHL_paternal_regime }
-			remove_ideas = CHL_paternal_regime
-				}
-		if = {
-			limit = { has_idea = CHL_president_ibanez }
-			remove_ideas = CHL_president_ibanez
-				}
-		if = {
-			limit = { has_idea = CHL_guided_men }
-			remove_ideas = CHL_guided_men
-				}
-		if = {
-			limit = { has_idea = CHL_content_elite }
-			remove_ideas = CHL_content_elite
-				}
-		if = {
-			limit = { has_idea = CHL_economic_reestructuring }
-			remove_ideas = CHL_economic_reestructuring
-				}
-		if = {
-			limit = { has_idea = CHL_economic_reforming }
-			remove_ideas = CHL_economic_reforming
-				}
-		if = {
-			limit = { has_idea = CHL_peoples_economy }
-			remove_ideas = CHL_peoples_economy
-				}
-		if = {
-			limit = { has_idea = CHL_popular_economy }
-			remove_ideas = CHL_popular_economy
-				}
-		if = {
-			limit = { has_idea = CHL_chilean_valkism_idea }
-			remove_ideas = CHL_chilean_valkism_idea
-				}
-		if = {
-			limit = { has_idea = CHL_classes_united }
-			remove_ideas = CHL_classes_united
-				}
-		if = {
-			limit = { has_idea = CHL_chilean_race }
-			remove_ideas = CHL_chilean_race
-				}
-		if = {
-			limit = { has_idea = CHL_warrior_legacy }
-			remove_ideas = CHL_warrior_legacy
-				}
-		if = {
-			limit = { has_idea = CHL_roto_valkism }
-			remove_ideas = CHL_roto_valkism
-				}
-		if = {
-			limit = { has_idea = CHL_chilean_nation }
-			remove_ideas = CHL_chilean_nation
-				}
-		if = {
-			limit = { has_idea = CHL_the_new_model }
-			remove_ideas = CHL_the_new_model
-				}
-		if = {
-			limit = { has_idea = CHL_radical_welfare }
-			remove_ideas = CHL_radical_welfare
-				}
-		if = {
-			limit = { has_idea = CHL_moderate_reforms }
-			remove_ideas = CHL_moderate_reforms
-				}
-		if = {
-			limit = { has_idea = CHL_balanced_budget }
-			remove_ideas = CHL_balanced_budget
-				}
-		if = {
-			limit = { has_idea = CHL_liberalized_economy }
-			remove_ideas = CHL_liberalized_economy
-				}
-		if = {
-			limit = { has_idea = CHL_foreign_investors }
-			remove_ideas = CHL_foreign_investors
-				}
-		if = {
-			limit = { has_idea = CHL_socialized_society }
-			remove_ideas = CHL_socialized_society
-				}
-		if = {
-			limit = { has_idea = CHL_agrarian_reform }
-			remove_ideas = CHL_agrarian_reform
-				}
-		if = {
-			limit = { has_idea = CHL_new_republic }
-			remove_ideas = CHL_new_republic 
-				}
+			if = {
+				limit = { has_idea = CHL_paternal_state }
+				remove_ideas = CHL_paternal_state
+			}
+			if = {
+				limit = { has_idea = CHL_paternal_regime }
+				remove_ideas = CHL_paternal_regime
+			}
+			if = {
+				limit = { has_idea = CHL_president_ibanez }
+				remove_ideas = CHL_president_ibanez
+			}
+			if = {
+				limit = { has_idea = CHL_guided_men }
+				remove_ideas = CHL_guided_men
+			}
+			if = {
+				limit = { has_idea = CHL_content_elite }
+				remove_ideas = CHL_content_elite
+			}
+			if = {
+				limit = { has_idea = CHL_economic_reestructuring }
+				remove_ideas = CHL_economic_reestructuring
+			}
+			if = {
+				limit = { has_idea = CHL_economic_reforming }
+				remove_ideas = CHL_economic_reforming
+			}
+			if = {
+				limit = { has_idea = CHL_peoples_economy }
+				remove_ideas = CHL_peoples_economy
+			}
+			if = {
+				limit = { has_idea = CHL_popular_economy }
+				remove_ideas = CHL_popular_economy
+			}
+			if = {
+				limit = { has_idea = CHL_chilean_valkism_idea }
+				remove_ideas = CHL_chilean_valkism_idea
+			}
+			if = {
+				limit = { has_idea = CHL_classes_united }
+				remove_ideas = CHL_classes_united
+			}
+			if = {
+				limit = { has_idea = CHL_chilean_race }
+				remove_ideas = CHL_chilean_race
+			}
+			if = {
+				limit = { has_idea = CHL_warrior_legacy }
+				remove_ideas = CHL_warrior_legacy
+			}
+			if = {
+				limit = { has_idea = CHL_roto_valkism }
+				remove_ideas = CHL_roto_valkism
+			}
+			if = {
+				limit = { has_idea = CHL_chilean_nation }
+				remove_ideas = CHL_chilean_nation
+			}
+			if = {
+				limit = { has_idea = CHL_the_new_model }
+				remove_ideas = CHL_the_new_model
+			}
+			if = {
+				limit = { has_idea = CHL_radical_welfare }
+				remove_ideas = CHL_radical_welfare
+			}
+			if = {
+				limit = { has_idea = CHL_moderate_reforms }
+				remove_ideas = CHL_moderate_reforms
+			}
+			if = {
+				limit = { has_idea = CHL_balanced_budget }
+				remove_ideas = CHL_balanced_budget
+			}
+			if = {
+				limit = { has_idea = CHL_liberalized_economy }
+				remove_ideas = CHL_liberalized_economy
+			}
+			if = {
+				limit = { has_idea = CHL_foreign_investors }
+				remove_ideas = CHL_foreign_investors
+			}
+			if = {
+				limit = { has_idea = CHL_socialized_society }
+				remove_ideas = CHL_socialized_society
+			}
+			if = {
+				limit = { has_idea = CHL_agrarian_reform }
+				remove_ideas = CHL_agrarian_reform
+			}
+			if = {
+				limit = { has_idea = CHL_new_republic }
+				remove_ideas = CHL_new_republic
 			}
 		}
+	}
 	option = {
 		name = arg.101.b
 		ai_chance = { factor = 50 }
 		add_political_power = -150
 		add_stability = -0.05
 		add_war_support = -0.05
-		}
 	}
+}
 # Tarija Compromise
 country_event = {
 	id = arg.102
@@ -1295,13 +1296,13 @@ country_event = {
 			transfer_state = 835
 			set_country_flag = BOL_arg_cooperation
 		}
-	}	
+	}
 	option = { # Keep Tarija
 		name = arg.102.b
 		ai_chance = { base = 1 }
 		add_political_power = 25
 		BOL = {
-		add_opinion_modifier = { target = ARG modifier = BOL_refused_to_negotiate }
+			add_opinion_modifier = { target = ARG modifier = BOL_refused_to_negotiate }
 		}
 	}
 }
@@ -1317,25 +1318,25 @@ country_event = { #invite Bolivia
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = arg.103.a
 		ai_chance = { base = 99 }
 		ARG = { add_to_faction = BOL }
-		BOL = { 
+		BOL = {
 			if = {
-			limit = {
-				has_dlc = "Together for Victory"
+				limit = {
+					has_dlc = "Together for Victory"
 				}
-			add_to_tech_sharing_group = argsoc_research
+				add_to_tech_sharing_group = argsoc_research
 			}
 		}
 	}
-	option = { 
+	option = {
 		name = arg.103.b
 		ai_chance = { base = 1 }
 		add_political_power = 25
-		}
 	}
+}
 
 country_event = { #socialism in bolivia
 	id = arg.104
@@ -1348,19 +1349,19 @@ country_event = { #socialism in bolivia
 	option = {
 		name = arg.104.a
 		ai_chance = { factor = 50 }
-		add_popularity = { 
+		add_popularity = {
 			ideology = collectivist popularity = 0.025
-			}
-		add_popularity = { 
-			ideology = libertarian_socialist popularity = 0.025
-			}
 		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.025
+		}
+	}
 	option = {
 		name = arg.104.b
 		ai_chance = { factor = 50 }
 		add_political_power = -60
-		}
 	}
+}
 
 country_event = { #winning to bolivia
 	id = arg.105
@@ -1372,11 +1373,11 @@ country_event = { #winning to bolivia
 		tag = ARG
 		has_war_with = BOL
 		BOL = {
-		surrender_progress > 0.90
-			}
+			surrender_progress > 0.90
+		}
 	}
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
@@ -1388,49 +1389,49 @@ country_event = { #winning to bolivia
 		ARG = { white_peace_with_TARGET = yes }
 		puppet = BOL
 		add_to_faction = BOL
-		BOL = { 
+		BOL = {
 			if = {
-			limit = {
-				has_dlc = "Together for Victory"
+				limit = {
+					has_dlc = "Together for Victory"
 				}
-			add_to_tech_sharing_group = argsoc_research
+				add_to_tech_sharing_group = argsoc_research
 			}
 		}
-		BOL = { 
-		load_focus_tree = generic_focus 
-		set_country_flag = BOL_revolutionary
-		set_cosmetic_tag = BOL_communism
-		if = {
-			limit = { has_idea = BOL_integrated_population }
-			remove_ideas = BOL_integrated_population
+		BOL = {
+			load_focus_tree = generic_focus
+			set_country_flag = BOL_revolutionary
+			set_cosmetic_tag = BOL_communism
+			if = {
+				limit = { has_idea = BOL_integrated_population }
+				remove_ideas = BOL_integrated_population
 			}
-		if = {
-			limit = { has_idea = BOL_autochthonous_centralization }
-			remove_ideas = BOL_autochthonous_centralization
+			if = {
+				limit = { has_idea = BOL_autochthonous_centralization }
+				remove_ideas = BOL_autochthonous_centralization
 			}
-		if = {
-			limit = { has_idea = BOL_united_in_diversity }
-			remove_ideas = BOL_united_in_diversity
+			if = {
+				limit = { has_idea = BOL_united_in_diversity }
+				remove_ideas = BOL_united_in_diversity
 			}
-		if = {
-			limit = { has_idea = BOL_ancestral_revanchist_spirit }
-			remove_ideas = BOL_ancestral_revanchist_spirit
+			if = {
+				limit = { has_idea = BOL_ancestral_revanchist_spirit }
+				remove_ideas = BOL_ancestral_revanchist_spirit
 			}
-		if = {
-			limit = { has_idea = BOL_military_autonomy }
-			remove_ideas = BOL_military_autonomy
+			if = {
+				limit = { has_idea = BOL_military_autonomy }
+				remove_ideas = BOL_military_autonomy
 			}
-		if = {
-			limit = { has_idea = BOL_corporatism_native }
-			remove_ideas = BOL_corporatism_native
+			if = {
+				limit = { has_idea = BOL_corporatism_native }
+				remove_ideas = BOL_corporatism_native
 			}
-		if = {
-			limit = { has_idea = BOL_great_suyu }
-			remove_ideas = BOL_great_suyu
+			if = {
+				limit = { has_idea = BOL_great_suyu }
+				remove_ideas = BOL_great_suyu
 			}
-		if = {
-			limit = { has_idea = BOL_the_new_suyu }
-			remove_ideas = BOL_the_new_suyu
+			if = {
+				limit = { has_idea = BOL_the_new_suyu }
+				remove_ideas = BOL_the_new_suyu
 			}
 		}
 	}
@@ -1440,8 +1441,8 @@ country_event = { #winning to bolivia
 		add_political_power = -150
 		add_stability = -0.05
 		add_war_support = -0.05
-		}
 	}
+}
 country_event = { #socialism paraguay
 	id = arg.106
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.106"}
@@ -1453,19 +1454,19 @@ country_event = { #socialism paraguay
 	option = {
 		name = arg.106.a
 		ai_chance = { factor = 50 }
-		add_popularity = { 
+		add_popularity = {
 			ideology = collectivist popularity = 0.025
-			}
-		add_popularity = { 
-			ideology = libertarian_socialist popularity = 0.025
-			}
 		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.025
+		}
+	}
 	option = {
 		name = arg.106.b
 		ai_chance = { factor = 50 }
 		add_political_power = -60
-		}
 	}
+}
 
 country_event = { #winning to paraguay with bolivia
 	id = arg.107
@@ -1477,12 +1478,12 @@ country_event = { #winning to paraguay with bolivia
 		tag = ARG
 		has_war_with = PAR
 		PAR = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 		is_in_faction_with = BOL
 	}
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
@@ -1494,42 +1495,42 @@ country_event = { #winning to paraguay with bolivia
 		ARG = { white_peace_with_TARGET = yes }
 		puppet = PAR
 		add_to_faction = PAR
-		PAR = { 
+		PAR = {
 			if = {
-			limit = {
-				has_dlc = "Together for Victory"
+				limit = {
+					has_dlc = "Together for Victory"
 				}
-			add_to_tech_sharing_group = argsoc_research
+				add_to_tech_sharing_group = argsoc_research
 			}
 		}
-		PAR = { 
-		set_country_flag = PAR_socpuppet
-		set_cosmetic_tag = PAR_communism
-			}
+		PAR = {
+			set_country_flag = PAR_socpuppet
+			set_cosmetic_tag = PAR_communism
+		}
 		BOL = {
 			set_state_owner = 688
 			set_state_controller = 688
 		}
-		}
+	}
 	option = {
 		name = arg.107.b
 		ai_chance = { factor = 1 }
 		add_political_power = -150
 		add_stability = -0.05
 		add_war_support = -0.05
-		}
+	}
 	option = {
 		name = arg.107.c
 		ai_chance = { factor = 4 }
 		ARG = { white_peace_with_TARGET = yes }
 		puppet = PAR
 		add_to_faction = PAR
-		PAR = { 
-		set_country_flag = PAR_socpuppet
-		set_cosmetic_tag = PAR_communism
-			}
+		PAR = {
+			set_country_flag = PAR_socpuppet
+			set_cosmetic_tag = PAR_communism
 		}
 	}
+}
 country_event = { #winning to paraguay without bolivia
 	id = arg.108
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.108"}
@@ -1540,12 +1541,12 @@ country_event = { #winning to paraguay without bolivia
 		tag = ARG
 		has_war_with = PAR
 		PAR = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 		NOT = { is_in_faction_with = BOL }
 	}
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
@@ -1557,27 +1558,27 @@ country_event = { #winning to paraguay without bolivia
 		ARG = { white_peace_with_TARGET = yes }
 		puppet = PAR
 		add_to_faction = PAR
-		PAR = { 
+		PAR = {
 			if = {
-			limit = {
-				has_dlc = "Together for Victory"
+				limit = {
+					has_dlc = "Together for Victory"
 				}
-			add_to_tech_sharing_group = argsoc_research
+				add_to_tech_sharing_group = argsoc_research
 			}
 		}
-		PAR = { 
-		set_country_flag = PAR_socpuppet
-		set_cosmetic_tag = PAR_communism
-			}
+		PAR = {
+			set_country_flag = PAR_socpuppet
+			set_cosmetic_tag = PAR_communism
 		}
+	}
 	option = {
 		name = arg.107.b
 		ai_chance = { factor = 1 }
 		add_political_power = -150
 		add_stability = -0.05
 		add_war_support = -0.05
-		}
 	}
+}
 
 country_event = { #socialism uruguay
 	id = arg.109
@@ -1590,19 +1591,19 @@ country_event = { #socialism uruguay
 	option = {
 		name = arg.109.a
 		ai_chance = { factor = 50 }
-		add_popularity = { 
+		add_popularity = {
 			ideology = collectivist popularity = 0.025
-			}
-		add_popularity = { 
-			ideology = libertarian_socialist popularity = 0.025
-			}
 		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.025
+		}
+	}
 	option = {
 		name = arg.109.b
 		ai_chance = { factor = 50 }
 		add_political_power = -60
-		}
 	}
+}
 
 country_event = { #winning to uruguay
 	id = arg.110
@@ -1614,11 +1615,11 @@ country_event = { #winning to uruguay
 		tag = ARG
 		has_war_with = URG
 		URG = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 	}
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
@@ -1630,28 +1631,28 @@ country_event = { #winning to uruguay
 		ARG = { white_peace_with_TARGET = yes }
 		puppet = URG
 		add_to_faction = URG
-		URG = { 
-			load_focus_tree = generic_focus 
+		URG = {
+			load_focus_tree = generic_focus
 			if = {
-			limit = {
-				has_dlc = "Together for Victory"
+				limit = {
+					has_dlc = "Together for Victory"
 				}
-			add_to_tech_sharing_group = argsoc_research
+				add_to_tech_sharing_group = argsoc_research
 			}
 		}
-		URG = { 
-		set_country_flag = URG_socpuppet
-		set_cosmetic_tag = URG_communism
-			}
+		URG = {
+			set_country_flag = URG_socpuppet
+			set_cosmetic_tag = URG_communism
 		}
+	}
 	option = {
 		name = arg.110.b
 		ai_chance = { factor = 50 }
 		add_political_power = -150
 		add_stability = -0.05
 		add_war_support = -0.05
-		}
 	}
+}
 country_event = { #invite Peru
 	id = arg.111
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.111"}
@@ -1663,31 +1664,31 @@ country_event = { #invite Peru
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = arg.111.a
 		ai_chance = { base = 99 }
-		ARG = { 
-			add_to_faction = PRU 
+		ARG = {
+			add_to_faction = PRU
 			country_event = { id = arg.112 }
 		}
-		PRU = { 
+		PRU = {
 			if = {
-			limit = {
-				has_dlc = "Together for Victory"
+				limit = {
+					has_dlc = "Together for Victory"
 				}
-			add_to_tech_sharing_group = argsoc_research
+				add_to_tech_sharing_group = argsoc_research
 			}
 		}
 	}
-	option = { 
+	option = {
 		name = arg.103.b
 		ai_chance = { base = 1 }
 		add_political_power = 25
-		ARG = { 
+		ARG = {
 			country_event = { id = arg.113 }
-			}
 		}
 	}
+}
 country_event = { #reply1
 	id = arg.112
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.112"}
@@ -1699,11 +1700,11 @@ country_event = { #reply1
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = arg.112.a
 		ai_chance = { base = 99 }
-		}
 	}
+}
 country_event = { #reply2
 	id = arg.113
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.113"}
@@ -1715,11 +1716,11 @@ country_event = { #reply2
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = arg.113.a
 		ai_chance = { base = 99 }
-		}
 	}
+}
 country_event = { #argresearch
 	id = arg.200
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.200"}
@@ -1731,13 +1732,13 @@ country_event = { #argresearch
 		name = arg.200.a
 		ai_chance = { factor = 50 }
 		add_to_tech_sharing_group = argsoc_research
-		}
+	}
 	option = {
 		name = arg.200.b
 		ai_chance = { factor = 50 }
 		add_political_power = 50
-		}
 	}
+}
 
 
 #postpoliticalstuff
@@ -1766,7 +1767,7 @@ country_event = { #Split in Collies
 		set_party_name = { ideology = vanguardist long_name = ARG_vangs name = ARG_vang }
 		add_popularity = {
 			ideology = vanguardist popularity = 0.05
-			}		
+		}
 	}
 }
 country_event = { #UCR unites
@@ -1790,7 +1791,7 @@ country_event = { #UCR unites
 	option = {
 		name = arg.251.a
 		add_political_power = 25
-		set_party_name = { ideology = market_liberal long_name = ARG_social_liberal_party_long name = ARG_social_liberal_party }	
+		set_party_name = { ideology = market_liberal long_name = ARG_social_liberal_party_long name = ARG_social_liberal_party }
 	}
 }
 
@@ -1815,8 +1816,8 @@ country_event = { #40 elections
 		set_politics = {
 			ruling_party = social_conservative
 		}
-			add_popularity = {
-				ideology = social_conservative popularity = 0.2
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
 		}
 		hidden_effect = {
 			set_global_flag = ARG_saavedra_won
@@ -1834,13 +1835,13 @@ country_event = { #40 elections
 		set_politics = {
 			ruling_party = market_liberal
 		}
-			add_popularity = {
-				ideology = market_liberal popularity = 0.1
+		add_popularity = {
+			ideology = market_liberal popularity = 0.1
 		}
 		hidden_effect = {
 			set_global_flag = ARG_gallo_won
 			set_global_flag = ARG_e40
-			}
+		}
 		remove_every_minister = yes
 		activate_advisor = ARG_Robustiniano_Patron_Costas_hog_mli
 		activate_advisor = ARG_Segundo_Rosa_Storni_for_mli
@@ -1853,8 +1854,8 @@ country_event = { #40 elections
 		set_politics = {
 			ruling_party = social_democrat
 		}
-			add_popularity = {
-				ideology = social_democrat popularity = 0.2
+		add_popularity = {
+			ideology = social_democrat popularity = 0.2
 		}
 		hidden_effect = {
 			set_global_flag = ARG_palacios_won
@@ -1914,7 +1915,7 @@ country_event = { #infamous day
 			ruling_party = authoritarian_democrat
 		}
 		add_popularity = {
-			ideology = authoritarian_democrat 
+			ideology = authoritarian_democrat
 			popularity = 0.2
 		}
 		hidden_effect = {
@@ -1973,7 +1974,7 @@ country_event = { #congress of workers
 			ruling_party = libertarian_socialist
 		}
 		add_popularity = {
-			ideology = libertarian_socialist 
+			ideology = libertarian_socialist
 			popularity = 0.2
 		}
 		hidden_effect = {
@@ -1994,7 +1995,7 @@ country_event = { #congress of workers
 			ruling_party = vanguardist
 		}
 		add_popularity = {
-			ideology = vanguardist 
+			ideology = vanguardist
 			popularity = 0.2
 		}
 		hidden_effect = {
@@ -2024,8 +2025,8 @@ country_event = { #infamous day
 		set_politics = {
 			ruling_party = national_populist
 		}
-			add_popularity = {
-				ideology = national_populist popularity = 0.1
+		add_popularity = {
+			ideology = national_populist popularity = 0.1
 		}
 		hidden_effect = {
 			set_global_flag = ARG_LPA_coup
@@ -2045,8 +2046,8 @@ country_event = { #infamous day
 		set_politics = {
 			ruling_party = authoritarian_democrat
 		}
-			add_popularity = {
-				ideology = authoritarian_democrat popularity = 0.2
+		add_popularity = {
+			ideology = authoritarian_democrat popularity = 0.2
 		}
 		hidden_effect = {
 			set_global_flag = ARG_military_takeover
@@ -2070,13 +2071,13 @@ country_event = { #reactionary against anarchists
 		name = arg.300.a
 		ai_chance = { factor = 60 }
 		add_political_power = -50
-		}
+	}
 	option = {
 		name = arg.300.b
 		ai_chance = { factor = 40 }
 		add_manpower = -5000
-		}
 	}
+}
 
 country_event = { #workers appreciating
 	id = arg.301
@@ -2089,8 +2090,8 @@ country_event = { #workers appreciating
 		name = arg.301.a
 		ai_chance = { factor = 100 }
 		add_political_power = 100
-		}
 	}
+}
 
 country_event = { #anticollie critics
 	id = arg.302
@@ -2103,8 +2104,8 @@ country_event = { #anticollie critics
 		name = arg.302.a
 		ai_chance = { factor = 60 }
 		add_political_power = -60
-		}
 	}
+}
 
 country_event = { #murder
 	id = arg.303
@@ -2141,16 +2142,16 @@ country_event = { #evidence anarch
 		ai_chance = { factor = 60 }
 		hidden_effect = {
 			country_event = { days = 7 id = arg.305 }
-			}
 		}
+	}
 	option = {#inv further
 		name = arg.304.b
 		ai_chance = { factor = 60 }
 		hidden_effect = {
 			country_event = { days = 7 id = arg.306 }
-			}
 		}
 	}
+}
 
 country_event = { #you don goofed
 	id = arg.305
@@ -2168,9 +2169,9 @@ country_event = { #you don goofed
 		}
 		add_popularity = {
 			ideology = collectivist popularity = -0.05
-			}
 		}
 	}
+}
 
 country_event = { #evidence anarch
 	id = arg.306
@@ -2185,14 +2186,14 @@ country_event = { #evidence anarch
 		add_manpower = -5000
 		hidden_effect = {
 			country_event = { days = 7 id = arg.307 }
-			}
 		}
+	}
 	option = {#inv further
 		name = arg.306.b
 		ai_chance = { factor = 60 }
 		add_political_power = 50
-		}
 	}
+}
 country_event = { #you don diddit
 	id = arg.307
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.307"}
@@ -2209,9 +2210,9 @@ country_event = { #you don diddit
 		}
 		add_popularity = {
 			ideology = vanguardist popularity = -0.08
-			}
 		}
 	}
+}
 
 country_event = { #the great coalition
 	id = arg.308
@@ -2229,9 +2230,9 @@ country_event = { #the great coalition
 		}
 		add_popularity = {
 			ideology = libertarian_socialist popularity = 0.05
-			}
 		}
 	}
+}
 
 country_event = { #the great takeover
 	id = arg.309
@@ -2246,9 +2247,9 @@ country_event = { #the great takeover
 		add_political_power = 50
 		hidden_effect = {
 			country_event = { id = arg.310 }
-			}
 		}
 	}
+}
 
 country_event = { #the great takeover2
 	id = arg.310
@@ -2265,8 +2266,8 @@ country_event = { #the great takeover2
 			ideology = vanguardist popularity = 0.15
 		}
 		add_manpower = -500
-		}
 	}
+}
 country_event = { #traitors leave
 	id = arg.311
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.311"}
@@ -2279,8 +2280,8 @@ country_event = { #traitors leave
 		ai_chance = { factor = 100 }
 		add_political_power = -25
 		add_manpower = -10000
-		}
 	}
+}
 country_event = { #woo nps
 	id = arg.312
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.312"}
@@ -2295,8 +2296,8 @@ country_event = { #woo nps
 		add_popularity = {
 			ideology = national_populist popularity = 0.05
 		}
-		}
 	}
+}
 country_event = { #traitors leave
 	id = arg.313
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.313"}
@@ -2309,8 +2310,8 @@ country_event = { #traitors leave
 		ai_chance = { factor = 100 }
 		add_political_power = -25
 		add_manpower = -10000
-		}
 	}
+}
 country_event = { #march
 	id = arg.314
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.314"}
@@ -2325,8 +2326,8 @@ country_event = { #march
 		add_popularity = {
 			ideology = authoritarian_democrat popularity = 0.05
 		}
-		}
 	}
+}
 country_event = { #demonstratios
 	id = arg.315
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.315"}
@@ -2340,9 +2341,9 @@ country_event = { #demonstratios
 		add_political_power = -25
 		add_popularity = {
 			ideology = market_liberal popularity = -0.025
-		}		
 		}
 	}
+}
 country_event = { #speech
 	id = arg.316
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.316"}
@@ -2354,8 +2355,8 @@ country_event = { #speech
 		name = arg.316.a
 		ai_chance = { factor = 100 }
 		add_political_power = 50
-		}
 	}
+}
 country_event = { #woosoccons
 	id = arg.317
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.317"}
@@ -2369,9 +2370,9 @@ country_event = { #woosoccons
 		add_political_power = 25
 		add_popularity = {
 			ideology = social_conservative popularity = 0.025
-		}		
 		}
 	}
+}
 country_event = { #speech
 	id = arg.318
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.318"}
@@ -2386,8 +2387,8 @@ country_event = { #speech
 			idea = ARG_boom
 			days = 60
 		}
-		}
 	}
+}
 country_event = { #woosocdems
 	id = arg.319
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.319"}
@@ -2399,12 +2400,12 @@ country_event = { #woosocdems
 		name = arg.319.a
 		ai_chance = { factor = 100 }
 		add_political_power = 50
-		add_popularity = { 
-			ideology = social_democrat popularity = 0.05 
+		add_popularity = {
+			ideology = social_democrat popularity = 0.05
 		}
 		add_popularity = {
 			ideology = collectivist popularity = -0.025
-		}				
+		}
 	}
 }
 country_event = { #peace
@@ -2418,8 +2419,8 @@ country_event = { #peace
 		name = arg.320.a
 		ai_chance = { factor = 100 }
 		add_political_power = 100
-		}
 	}
+}
 
 country_event = { #help bepis
 	id = arg.347
@@ -2432,8 +2433,8 @@ country_event = { #help bepis
 		name = arg.347.a
 		ai_chance = { factor = 100 }
 		ARG = {
-		send_equipment = {
-			target = BPS type = infantry_equipment amount = 2000
+			send_equipment = {
+				target = BPS type = infantry_equipment amount = 2000
 			}
 		}
 	}
@@ -2450,8 +2451,8 @@ country_event = { #help bra
 		name = arg.348.a
 		ai_chance = { factor = 100 }
 		ARG = {
-		send_equipment = {
-			target = BRA type = infantry_equipment amount = 2000
+			send_equipment = {
+				target = BRA type = infantry_equipment amount = 2000
 			}
 		}
 	}
@@ -2468,8 +2469,8 @@ country_event = { #help ubr
 		name = arg.349.a
 		ai_chance = { factor = 100 }
 		ARG = {
-		send_equipment = {
-			target = UBR type = infantry_equipment amount = 2000
+			send_equipment = {
+				target = UBR type = infantry_equipment amount = 2000
 			}
 		}
 	}
@@ -2486,10 +2487,10 @@ country_event = { #killstate
 		name = arg.350.a
 		ai_chance = { factor = 60 }
 		hidden_effect = {
-		BPS = {
-			country_event = { days = 7 id = arg.351 }
-				}
+			BPS = {
+				country_event = { days = 7 id = arg.351 }
 			}
+		}
 		declare_war_on = {
 			target = BPS type = annex_everything
 		}
@@ -2522,9 +2523,9 @@ country_event = { #intersuccess
 			has_country_flag = ARG_colliebpsintervention
 			controls_state = 502
 			OR = {
-			controls_state = 503
-			controls_state = 501
-			controls_state = 504
+				controls_state = 503
+				controls_state = 501
+				controls_state = 504
 			}
 		}
 		BPS = {
@@ -2587,10 +2588,10 @@ country_event = { #wooargies
 	option = {
 		name = arg.353.a
 		ai_chance = { factor = 100 }
-		add_political_power = 25	
+		add_political_power = 25
 		set_country_flag = UBR_argiefriends
-		}
 	}
+}
 country_event = { #argies... *shakes fist*
 	id = arg.354
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.354"}
@@ -2602,9 +2603,9 @@ country_event = { #argies... *shakes fist*
 		name = arg.354.a
 		ai_chance = { factor = 100 }
 		add_political_power = 15
-		set_country_flag = UBR_argies_stole	
-		}
+		set_country_flag = UBR_argies_stole
 	}
+}
 
 country_event = { #argies fail lmao
 	id = arg.355
@@ -2615,14 +2616,14 @@ country_event = { #argies fail lmao
 	trigger = {
 		tag = ARG
 		ARG = {
-		has_country_flag = ARG_colliebpsintervention
-		has_war_with = BPS
-		NOT = {
-			OR = {
-			controls_state = 503
-			controls_state = 501
-			controls_state = 504
-			controls_state = 502
+			has_country_flag = ARG_colliebpsintervention
+			has_war_with = BPS
+			NOT = {
+				OR = {
+					controls_state = 503
+					controls_state = 501
+					controls_state = 504
+					controls_state = 502
 				}
 			}
 		}
@@ -2642,13 +2643,13 @@ country_event = { #argies fail lmao
 		ai_chance = { factor = 99 }
 		add_political_power = 15
 		white_peace_with_TARGET = yes
-		}
+	}
 	option = {
 		name = arg.355.b
 		ai_chance = { factor = 1 }
 		add_political_power = -250
-		}
 	}
+}
 country_event = { #victory vs ubr
 	id = arg.356
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.356"}
@@ -2660,7 +2661,7 @@ country_event = { #victory vs ubr
 		tag = ARG
 		has_country_flag = ARG_colliewar
 		NOT = {
-		country_exists = UBR
+			country_exists = UBR
 		}
 		controls_state = 500
 		controls_state = 502
@@ -2672,13 +2673,13 @@ country_event = { #victory vs ubr
 		name = arg.356.a
 		ai_chance = { factor = 70 }
 		every_state = {
-			limit = { 
+			limit = {
 				AND = {
-				OR = { is_core_of = BRA
+					OR = { is_core_of = BRA
 						is_core_of = BPS
 						is_core_of = UBR
 					}
-				is_controlled_by = ARG
+					is_controlled_by = ARG
 				}
 			}
 			BRA = { transfer_state = PREV }
@@ -2692,13 +2693,13 @@ country_event = { #victory vs ubr
 		name = arg.356.b
 		ai_chance = { factor = 30 }
 		every_state = {
-			limit = { 
+			limit = {
 				AND = {
-				OR = { is_core_of = BRA
+					OR = { is_core_of = BRA
 						is_core_of = BPS
 						is_core_of = UBR
 					}
-				is_controlled_by = ARG
+					is_controlled_by = ARG
 				}
 			}
 			BRA = { transfer_state = PREV }
@@ -2711,8 +2712,8 @@ country_event = { #victory vs ubr
 		ai_chance = { factor = 0 }
 		add_political_power = -500
 
-		}
 	}
+}
 
 
 country_event = { #killstate
@@ -2726,10 +2727,10 @@ country_event = { #killstate
 		name = arg.357.a
 		ai_chance = { factor = 60 }
 		hidden_effect = {
-		BPS = {
-			country_event = { days = 7 id = arg.358 }
-				}
+			BPS = {
+				country_event = { days = 7 id = arg.358 }
 			}
+		}
 		declare_war_on = {
 			target = BPS type = annex_everything
 		}
@@ -2748,7 +2749,7 @@ country_event = { #fuckingargies
 		name = arg.358.a
 		ai_chance = { factor = 100 }
 		hidden_effect = {
-		load_oob = BPS_argiesreee
+			load_oob = BPS_argiesreee
 		}
 	}
 }
@@ -2766,9 +2767,9 @@ country_event = { #argiesgo
 			has_country_flag = ARG_breakstate
 			controls_state = 502
 			OR = {
-			controls_state = 503
-			controls_state = 501
-			controls_state = 504
+				controls_state = 503
+				controls_state = 501
+				controls_state = 504
 			}
 		}
 		BPS = {
@@ -2787,7 +2788,7 @@ country_event = { #argiesgo
 		add_political_power = -100
 		add_stability = -0.05
 		add_war_support = -0.05
-	}	
+	}
 }
 country_event = { #ipeace
 	id = arg.360
@@ -2841,7 +2842,7 @@ country_event = { #victory vs ubr
 		tag = ARG
 		has_country_flag = ARG_bepiswar
 		NOT = {
-		country_exists = BPS
+			country_exists = BPS
 		}
 		controls_state = 500
 		controls_state = 502
@@ -2853,13 +2854,13 @@ country_event = { #victory vs ubr
 		name = arg.362.a
 		ai_chance = { factor = 70 }
 		every_state = {
-			limit = { 
+			limit = {
 				AND = {
-				OR = { is_core_of = BRA
+					OR = { is_core_of = BRA
 						is_core_of = BPS
 						is_core_of = UBR
 					}
-				is_controlled_by = ARG
+					is_controlled_by = ARG
 				}
 			}
 			BRA = { transfer_state = PREV }
@@ -2873,13 +2874,13 @@ country_event = { #victory vs ubr
 		name = arg.362.b
 		ai_chance = { factor = 30 }
 		every_state = {
-			limit = { 
+			limit = {
 				AND = {
-				OR = { is_core_of = BRA
+					OR = { is_core_of = BRA
 						is_core_of = BPS
 						is_core_of = UBR
 					}
-				is_controlled_by = ARG
+					is_controlled_by = ARG
 				}
 			}
 			BRA = { transfer_state = PREV }
@@ -2892,8 +2893,8 @@ country_event = { #victory vs ubr
 		ai_chance = { factor = 0 }
 		add_political_power = -500
 
-		}
 	}
+}
 country_event = { #argies fail lmao
 	id = arg.363
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.363"}
@@ -2905,12 +2906,12 @@ country_event = { #argies fail lmao
 		has_war_with = BPS
 		ARG = {
 			has_country_flag = ARG_breakstate
-		NOT = {
-			AND = {
-			controls_state = 503
-			controls_state = 501
-			controls_state = 504
-			controls_state = 502
+			NOT = {
+				AND = {
+					controls_state = 503
+					controls_state = 501
+					controls_state = 504
+					controls_state = 502
 				}
 			}
 		}
@@ -2930,13 +2931,13 @@ country_event = { #argies fail lmao
 		ai_chance = { factor = 99 }
 		add_political_power = 15
 		white_peace_with_TARGET = yes
-		}
+	}
 	option = {
 		name = arg.363.b
 		ai_chance = { factor = 1 }
 		add_political_power = -250
-		}
 	}
+}
 
 country_event = { #sam help falangists
 	id = arg.400
@@ -2949,8 +2950,8 @@ country_event = { #sam help falangists
 		name = arg.400.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = SPF type = infantry_equipment amount = 1000
+			send_equipment = {
+				target = SPF type = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -2966,8 +2967,8 @@ country_event = { #sam help republic
 		name = arg.401.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = SPR type = infantry_equipment amount = 1000
+			send_equipment = {
+				target = SPR type = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -2983,8 +2984,8 @@ country_event = { #sam help collies
 		name = arg.402.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = SPA type = infantry_equipment amount = 1000
+			send_equipment = {
+				target = SPA type = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -3000,8 +3001,8 @@ country_event = { #sam help falangists
 		name = arg.403.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = SPF equipment = small_plane_airframe amount = 50
+			send_equipment = {
+				target = SPF equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3017,8 +3018,8 @@ country_event = { #sam help republic
 		name = arg.404.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = SPR equipment = small_plane_airframe amount = 50
+			send_equipment = {
+				target = SPR equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3034,8 +3035,8 @@ country_event = { #sam help collies
 		name = arg.405.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = SPA equipment = small_plane_airframe amount = 50
+			send_equipment = {
+				target = SPA equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3090,8 +3091,8 @@ country_event = { #sam help bepis
 		name = arg.409.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = BPS equipment = infantry_equipment amount = 1000
+			send_equipment = {
+				target = BPS equipment = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -3107,8 +3108,8 @@ country_event = { #sam help republic
 		name = arg.410.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = BRA equipment = infantry_equipment amount = 1000
+			send_equipment = {
+				target = BRA equipment = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -3124,8 +3125,8 @@ country_event = { #sam help collies
 		name = arg.411.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = UBR equipment = infantry_equipment amount = 1000
+			send_equipment = {
+				target = UBR equipment = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -3141,8 +3142,8 @@ country_event = { #sam help bepis
 		name = arg.412.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = BPS equipment = small_plane_airframe amount = 50
+			send_equipment = {
+				target = BPS equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3158,8 +3159,8 @@ country_event = { #sam help republic
 		name = arg.413.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = BRA equipment = small_plane_airframe amount = 50
+			send_equipment = {
+				target = BRA equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3175,8 +3176,8 @@ country_event = { #sam help collies
 		name = arg.414.a
 		ai_chance = { factor = 100 }
 		FROM = {
-		send_equipment = {
-			target = UBR equipment = small_plane_airframe amount = 50
+			send_equipment = {
+				target = UBR equipment = small_plane_airframe amount = 50
 			}
 		}
 	}

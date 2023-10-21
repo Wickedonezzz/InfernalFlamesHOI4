@@ -78,7 +78,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_70
 	IND_mahatma_memories
 	IND_indian_rebels
 }

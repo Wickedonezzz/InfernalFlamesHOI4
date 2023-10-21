@@ -13,39 +13,39 @@ country_event = {
 	title = genfocus.1.t
 	desc = genfocus.1.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = "Germany"
 		add_political_power = -50
-		add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 3500 producer = GER 
-		#create_if_missing = yes
+		add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 3500 producer = GER
+			#create_if_missing = yes
 		}
 		GER = { country_event = genfocus.2 }
-		}
-	
+	}
+
 	option = {
 		name = "Britain"
 		add_political_power = -50
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 6000 producer = ENG }
 		ENG = { country_event = genfocus.2 }
-		}
-	
+	}
+
 	option = {
 		name = "France"
 		add_political_power = -50
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 6000 producer = FRA }
 		FRA = { country_event = genfocus.2 }
-		}
+	}
 
 	option = {
 		name = "Russia"
 		add_political_power = -50
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7500 producer = SOV }
 		SOV = { country_event = genfocus.2 }
-		}
 	}
+}
 
 country_event = {
 	id = genfocus.2
@@ -53,14 +53,14 @@ country_event = {
 	title = genfocus.2.t
 	desc = genfocus.2.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = "It was a pleasure doing business with you!"
 		add_timed_idea = {
-				idea = generic_arms_payments
-				days = 60
+			idea = generic_arms_payments
+			days = 60
 		}
 	}
 }
@@ -76,16 +76,16 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event genthreat.1"}
 	title = ""
 	desc = genthreat.1.d
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		is_ai = yes
 		GER = { has_war_with = SOV }
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			GER	= { has_offensive_war_with = SOV }
@@ -93,7 +93,7 @@ country_event = {
 		name = ""
 		GER = { add_named_threat = { threat = 15 name = 2GW_ger_sov } }
 	}
-	
+
 	option = {
 		trigger = {
 			SOV	= { has_offensive_war_with = GER }
@@ -108,16 +108,16 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event genthreat.2"}
 	title = ""
 	desc = genthreat.2.d
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		is_ai = yes
 		ENG = { has_war_with = FRA }
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		trigger = {
 			ENG	= { has_offensive_war_with = FRA }
@@ -125,7 +125,7 @@ country_event = {
 		name = ""
 		ENG = { add_named_threat = { threat = 15 name = 2GW_eng_fra } }
 	}
-	
+
 	option = {
 		trigger = {
 			FRA	= { has_offensive_war_with = ENG }

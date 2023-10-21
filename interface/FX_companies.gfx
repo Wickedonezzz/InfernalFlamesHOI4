@@ -190,6 +190,50 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/EST/companies/EST_arsenal_tallinn.png"
 	}
 
+	################################################
+	# FNG
+
+	spriteType = {
+		name = "GFX_idea_anshan_iron_and_steel"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_anshan_iron_and_steel.png"
+	}
+	spriteType = {
+		name = "GFX_idea_mantetsu_industrial_subsidiaries"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_mantetsu_industrial_subsidiaries.png"
+	}
+	spriteType = {
+		name = "GFX_idea_shenyang_arsenal"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_shenyang_arsenal.png"
+	}
+	spriteType = {
+		name = "GFX_idea_minsheng_automobile_company"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_minsheng_automobile_company.png"
+	}
+	spriteType = {
+		name = "GFX_idea_dongbei_aircraft_manufacturing_company"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_dongbei_aircraft_manufacturing_company.png"
+	}
+	spriteType = {
+		name = "GFX_idea_manchuria_aviation_company"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_manchuria_aviation_company.png"
+	}
+	spriteType = {
+		name = "GFX_idea_yingkou_naval_yard"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_yingkou_naval_yard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_dadong_artillery_complex"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_dadong_artillery_complex.png"
+	}
+	spriteType = {
+		name = "GFX_idea_showa_steel_works"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_showa_steel_works.png"
+	}
+	spriteType = {
+		name = "GFX_idea_academia_sinica_FNG"
+		texturefile = "gfx/interface/ideas/FNG/companies/FNG_aog_academia_sinica.png"
+	}
+
   ################################################
   # JAP
 	spriteType = {
@@ -378,6 +422,54 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_spyker"
 		texturefile = "gfx/interface/ideas/HOL/companies/spyker.png"
+	}
+
+	################################################
+	# KMT
+
+	spriteType = {
+		name = "GFX_idea_cfhi"
+		texturefile = "gfx/interface/ideas/KMT/companies/cfhi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_national_railway_corporation"
+		texturefile = "gfx/interface/ideas/KMT/companies/national_railway_corporation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_cetc"
+		texturefile = "gfx/interface/ideas/KMT/companies/cetc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_sinopec"
+		texturefile = "gfx/interface/ideas/KMT/companies/sinopec.png"
+	}
+	spriteType = {
+		name = "GFX_idea_norinco"
+		texturefile = "gfx/interface/ideas/KMT/companies/norinco.png"
+	}
+	spriteType = {
+		name = "GFX_idea_faw_motors"
+		texturefile = "gfx/interface/ideas/KMT/companies/faw_motors.png"
+	}
+	spriteType = {
+		name = "GFX_idea_sinotruk"
+		texturefile = "gfx/interface/ideas/KMT/companies/sinotruk.png"
+	}
+	spriteType = {
+		name = "GFX_idea_central_air_transport"
+		texturefile = "gfx/interface/ideas/KMT/companies/central_air_transport.png"
+	}
+	spriteType = {
+		name = "GFX_idea_csic"
+		texturefile = "gfx/interface/ideas/KMT/companies/csic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_china_state_shipbuilding_corporation"
+		texturefile = "gfx/interface/ideas/KMT/companies/china_state_shipbuilding_corporation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_central_aircraft_manufacturing_company"
+		texturefile = "gfx/interface/ideas/KMT/companies/central_aircraft_manufacturing_company.png"
 	}
 
 	################################################
@@ -995,5 +1087,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_fx_douglas"
 		texturefile = "gfx/interface/ideas/USA/companies/douglas.png"
+	}
+
+	################################################
+	# ZHI
+
+	spriteType = {
+		name = "GFX_idea_wusong_locomotive_works"
+		texturefile = "gfx/interface/ideas/ZHI/companies/ZHI_wusong_locomotive_works.png"
+	}
+	spriteType = {
+		name = "GFX_idea_china_aviation_corporation"
+		texturefile = "gfx/interface/ideas/ZHI/companies/ZHI_china_aviation_corporation.png"
 	}
 }

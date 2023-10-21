@@ -18,14 +18,14 @@ country_event = {   #Introduction event
 	title = rus.0.t
 	desc = rus.0.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = rus.0.a
 		country_event = { id = rus.1 days = 1 }
-    }
+	}
 }
 
 country_event = {   #Introduction event
@@ -34,33 +34,33 @@ country_event = {   #Introduction event
 	title = "The Exile"
 	desc = rus.1.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = "I will be back Slavianka!"
-    }
- }
+	}
+}
 
 country_event = {   #testification
 	id = rus.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rus.2"}
-    title = "The Testification"
-    desc = rus.2.d
-    picture = GFX_report_trial
+	title = "The Testification"
+	desc = rus.2.d
+	picture = GFX_report_trial
 
-    fire_only_once = yes
-	is_triggered_only = yes 
-	
-    option = {
-        name = "I hope this doesn't become public"
-        add_stability = -0.03
-        hidden_effect = {
-            country_event = { id = rus.3 days = 7 }
-        }
-    }
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "I hope this doesn't become public"
+		add_stability = -0.03
+		hidden_effect = {
+			country_event = { id = rus.3 days = 7 }
+		}
+	}
 }
 
 country_event = {   #testification becoming public
@@ -69,19 +69,19 @@ country_event = {   #testification becoming public
 	title = "The Public is outraged!"
 	desc = rus.3.d
 	picture = GFX_report_event_people_rioting
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "This is not good"
-        add_stability = -0.10
-        add_political_power = -50
-        hidden_effect = {
+		add_stability = -0.10
+		add_political_power = -50
+		hidden_effect = {
 			country_event = { id = rus.4 days = 7 }
-		} 
-    }
+		}
+	}
 }
 
 country_event = {   #negotiations between democratic parties
@@ -90,18 +90,18 @@ country_event = {   #negotiations between democratic parties
 	title = "The Democratic Opposition is negotiating"
 	desc = rus.4.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Wai-"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.5 days = 7 }
-        }
+		}
 	}
-}	
+}
 
 
 
@@ -111,19 +111,19 @@ country_event = {   #National Union of Salvation is formed
 	title = "National Union of Salvation is formed"
 	desc = rus.5.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Sto-"
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.10 }
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.6 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Rebellions in Vladivostok
 	id = rus.6
@@ -131,21 +131,21 @@ country_event = {   #Rebellions in Vladivostok
 	title = "Protests in Vladivostock!"
 	desc = rus.6.d
 	picture = GFX_report_event_police_shooting
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We need to send our military in!"
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.03 }
-	    add_stability = -0.03
-        add_political_power = -20
-        hidden_effect = {
+		add_stability = -0.03
+		add_political_power = -20
+		hidden_effect = {
 			country_event = { id = rus.7 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Rebellions spread to even further
 	id = rus.7
@@ -153,21 +153,21 @@ country_event = {   #Rebellions spread to even further
 	title = "Anti-governmental action spreads!"
 	desc = rus.7.d
 	picture = GFX_report_event_people_rioting2
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We mobilize our army against them!"
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.03 }
-	    add_stability = -0.03
-        add_political_power = -20
-        hidden_effect = {
+		add_stability = -0.03
+		add_political_power = -20
+		hidden_effect = {
 			country_event = { id = rus.8 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Local Military is rebelling
 	id = rus.8
@@ -175,21 +175,21 @@ country_event = {   #Local Military is rebelling
 	title = "Parts of the Military defect"
 	desc = rus.8.d
 	picture = GFX_report_event_army_rebelling
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Our army in the east should end this soon!"
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.03 }
-	    add_stability = -0.05
-        add_political_power = -20
-        hidden_effect = {
+		add_stability = -0.05
+		add_political_power = -20
+		hidden_effect = {
 			country_event = { id = rus.9 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #National Union of Salvation Goverment
 	id = rus.9
@@ -197,21 +197,21 @@ country_event = {   #National Union of Salvation Goverment
 	title = "The National Union of Salvation forms a rival goverment in Vladivostock"
 	desc = rus.9.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "This isn't gonna look good on us."
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.03 }
-	    add_stability = -0.05
-        add_political_power = -20
-        hidden_effect = {
+		add_stability = -0.05
+		add_political_power = -20
+		hidden_effect = {
 			country_event = { id = rus.10 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Allied Eastern Commision
 	id = rus.10
@@ -219,22 +219,22 @@ country_event = {   #Allied Eastern Commision
 	title = "The Allied Eastern Commision is recognizing the goverment in Vladivostock"
 	desc = rus.10.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Is this our end?"
 		#remove_ideas = RUS_allied_eastern_comission
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.03 }
-	    add_stability = -0.10
-        add_political_power = -20
-        hidden_effect = {
+		add_stability = -0.10
+		add_political_power = -20
+		hidden_effect = {
 			country_event = { id = rus.11 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Rebellion preparing attack
 	id = rus.11
@@ -242,18 +242,18 @@ country_event = {   #Rebellion preparing attack
 	title = "The Rebellion is preparing an attack on Chita"
 	desc = rus.11.d
 	picture = GFX_report_event_people_rioting2
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We surely will win"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.12 days = 14 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Attack 1
 	id = rus.12
@@ -261,18 +261,18 @@ country_event = {   #Attack 1
 	title = "The Rebellion starts the push on Chita"
 	desc = rus.12.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will hold until the end!"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.13 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Attack 2
 	id = rus.13
@@ -280,18 +280,18 @@ country_event = {   #Attack 2
 	title = "The Rebellion has captured Komsomolsk and is continuing there push"
 	desc = rus.13.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will hold them with everything we have"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.14 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 
 country_event = {   #Attack 3
@@ -299,18 +299,18 @@ country_event = {   #Attack 3
 	title = "The Rebellion is gonna reach Chita in a few days"
 	desc = rus.14.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "It will be a bloody fight"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.15 days = 7 }
 		}
-    }   
-} 
+	}
+}
 
 country_event = {   #Attack 4
 	id = rus.15
@@ -318,60 +318,60 @@ country_event = {   #Attack 4
 	title = "The Rebellion has taken Chita!"
 	desc = rus.15.d
 	picture = GFX_report_event_police_shooting
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "A new Russia is gonna rise"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.16 days = 7 }
-        }   
-    } 
-} 
+		}
+	}
+}
 country_event = {   #Creation of Democracy
 	id = rus.16
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rus.16"}
 	title = "The National Union of Salvation is victorious"
 	desc = rus.16.d
 	picture = GFX_report_event_army_rebelling
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Long live Democracy!"
 		add_stability = 0.20
-      kill_country_leader = yes
-      add_political_power = 100
-      add_ideas = RUS_corruption
-      load_focus_tree = rus_democracy
-      remove_ideas = RUS_democratic_opposition
-      hidden_effect = {
-        set_capital = { state =  408 }
-      }
-      add_country_leader_role = {
-        character = RUS_National_Council_of_Salvation
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      add_ideas = parliamentary_republic
-        set_politics = {
-        ruling_party = social_conservative
-        elections_allowed = no
-      }
-    country_event = { id = rus.17 days = 20 }
-    add_coalition_paternal_autocrat = yes 
-    add_coalition_valkist = yes 
-    add_coalition_market_liberal = yes 
-    add_coalition_social_liberal = yes 
-    add_coalition_social_democrat = yes 
-  } 
+		kill_country_leader = yes
+		add_political_power = 100
+		add_ideas = RUS_corruption
+		load_focus_tree = rus_democracy
+		remove_ideas = RUS_democratic_opposition
+		hidden_effect = {
+			set_capital = { state =  408 }
+		}
+		add_country_leader_role = {
+			character = RUS_National_Council_of_Salvation
+			promote_leader = yes
+			country_leader = {
+				ideology = social_conservative_subtype
+				traits = {}
+			}
+		}
+		add_ideas = parliamentary_republic
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		country_event = { id = rus.17 days = 20 }
+		add_coalition_paternal_autocrat = yes
+		add_coalition_valkist = yes
+		add_coalition_market_liberal = yes
+		add_coalition_social_liberal = yes
+		add_coalition_social_democrat = yes
+	}
 }
 
 
@@ -381,17 +381,17 @@ country_event = {   #National Council of Salvation Event 1
 	title = "Disagreements in the National Union of Salvation"
 	desc = rus.17.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We can make a compromise here"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.18 days = 7 }
-        }   
-    } 
+		}
+	}
 }
 country_event = {   #National Council of Salvation Event 2
 	id = rus.18
@@ -399,18 +399,18 @@ country_event = {   #National Council of Salvation Event 2
 	title = "NUS and Oktoberist don't back compromise"
 	desc = rus.18.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "C'mon gentlemans"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.19 days = 7 }
-		}   
+		}
 	}
-} 
+}
 
 country_event = {   #National Council of Salvation Event 3
 	id = rus.19
@@ -418,27 +418,27 @@ country_event = {   #National Council of Salvation Event 3
 	title = "Rumours of a coup"
 	desc = rus.19.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "This is just a lie"
 		ai_chance = { factor = 20 }
 		custom_effect_tooltip = RUS_NO
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rusnp.1 days = 7 }
-    }   
-}
+		}
+	}
 
-    option = {
+	option = {
 		name = "We should postpone the issue and schedule elections"
 		ai_chance = { factor = 80 }
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.20 days = 7 }
-        }
-    }
+		}
+	}
 }
 
 country_event = {   #National Council of Salvation Event 4
@@ -447,18 +447,18 @@ country_event = {   #National Council of Salvation Event 4
 	title = "The Council is able to return to work"
 	desc = rus.20.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Finally"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.21 days = 7 }
-        }
-    }   
-} 
+		}
+	}
+}
 
 country_event = {   #National Council of Salvation Event 5
 	id = rus.21
@@ -466,18 +466,18 @@ country_event = {   #National Council of Salvation Event 5
 	title = "Preperations for the Elections"
 	desc = rus.21.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "This is gonna be an interesting election"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rus.22 days = 20 }
-        }
-    }   
-} 
+		}
+	}
+}
 
 country_event = { #Elections
 	id = rus.22
@@ -491,89 +491,86 @@ country_event = { #Elections
 		set_country_flag = RUS_Elections_hold
 	}
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The Union for the Salvation of the Motherland is victorious"
-		
+
 		ai_chance = { factor = 43 }
 		hidden_effect = {
-		add_ideas = parliamentary_republic
-		set_politics = { ruling_party = valkist }
-		add_popularity = { ideology = valkist popularity = 0.2 }
-		add_popularity = { ideology = paternal_autocrat popularity = 0.1 }
+			add_ideas = parliamentary_republic
+			set_politics = { ruling_party = valkist }
+			add_popularity = { ideology = valkist popularity = 0.2 }
+			add_popularity = { ideology = paternal_autocrat popularity = 0.1 }
 
-		remove_ideas_with_trait = head_of_government
-    add_ideas = {
-      RUS_Pyotr_Wrangel_hog_pau
-      RUS_Alexander_Vuygrler_for_val
-      RUS_Georgiy_Gins_eco_val
-      RUS_Anton_Tourkul_sec_val
-    }
+			remove_ideas_with_trait = head_of_government
 
-		country_event = { id = rusnus.1 days = 7 }
-		complete_national_focus = RUS_control_economy
-		set_country_flag = NUS_Oktoberists_Victorious
-		set_country_flag = RUS_ready_militarise
-		add_coalition_paternal_autocrat = yes 
-		news_event = {
-			id = worldnews.112
+			activate_advisor = RUS_Pyotr_Wrangel_hog_pau
+			activate_advisor = RUS_Alexander_Vuygrler_for_val
+			activate_advisor = RUS_Georgiy_Gins_eco_val
+			activate_advisor = RUS_Anton_Turkul_sec_val
+
+			country_event = { id = rusnus.1 days = 7 }
+			complete_national_focus = RUS_control_economy
+			set_country_flag = NUS_Oktoberists_Victorious
+			set_country_flag = RUS_ready_militarise
+			add_coalition_paternal_autocrat = yes
+			news_event = {
+				id = worldnews.112
+			}
 		}
 	}
-}
 	option = {
 		name = "Union Of Regeneration Coalition is victorious"
-		
-		ai_chance = { factor = 27 }	
-		
-		hidden_effect = {
-		add_ideas = parliamentary_republic
-		set_politics = { ruling_party = social_liberal }
 
-    add_ideas = {
-      RUS_Venedikt_Miakotin_hog_sli
-      RUS_Alexei_M_Nikitin_for_mli
-      RUS_Alexey_Peshekhonov_eco_sli
-      RUS_Grigory_Gershuni_sec_sde
-    }
-		add_popularity = { ideology = social_liberal popularity = 0.1 }
-		add_popularity = { ideology = market_liberal popularity = 0.1 }
-		add_popularity = { ideology = social_democrat popularity = 0.1 }
-		country_event = { id = rusur.1 days = 7 }
-		complete_national_focus = RUS_control_economy
-		set_country_flag = UR_Victorious
-		set_country_flag = RUS_ready_militarise
-		add_coalition_market_liberal = yes 
-		add_coalition_social_democrat = yes 
-		news_event = {
-			id = worldnews.113
+		ai_chance = { factor = 27 }
+
+		hidden_effect = {
+			add_ideas = parliamentary_republic
+			set_politics = { ruling_party = social_liberal }
+
+			activate_advisor = RUS_Venedikt_Miakotin_hog_sli
+			activate_advisor = RUS_Alexei_M_Nikitin_for_mli
+			activate_advisor = RUS_Alexey_Peshekhonov_eco_sli
+			activate_advisor = RUS_Grigory_Gershuni_sec_sde
+
+			add_popularity = { ideology = social_liberal popularity = 0.1 }
+			add_popularity = { ideology = market_liberal popularity = 0.1 }
+			add_popularity = { ideology = social_democrat popularity = 0.1 }
+			country_event = { id = rusur.1 days = 7 }
+			complete_national_focus = RUS_control_economy
+			set_country_flag = UR_Victorious
+			set_country_flag = RUS_ready_militarise
+			add_coalition_market_liberal = yes
+			add_coalition_social_democrat = yes
+			news_event = {
+				id = worldnews.113
+			}
 		}
-  }  
-}
+	}
 	option = {
 		name = "The National Center is victorious"
-		
-		ai_chance = { factor = 30 }
-				
-		hidden_effect = {
-      add_ideas = parliamentary_republic
-      set_politics = { ruling_party = social_conservative }
 
-      add_ideas = {
-        RUS_Vasily_G_Boldyrev_hog_sco
-        RUS_Vladimir_D_Nabokov_for_sco
-        RUS_Sergei_Bulgakov_eco_sco
-        RUS_Nikolai_Gredeskul_sec_sco
-      }
-      add_popularity = { ideology = social_conservative popularity = 0.2 }
-      complete_national_focus = RUS_control_economy
-      set_country_flag = RUS_ready_militarise
-      set_country_flag = National_Center_Victorious
-      clr_country_flag = party_popularity_system_disabled
-      news_event = {
-        id = worldnews.114
-      }
-	  }
-  }		
+		ai_chance = { factor = 30 }
+
+		hidden_effect = {
+			add_ideas = parliamentary_republic
+			set_politics = { ruling_party = social_conservative }
+
+			activate_advisor = RUS_Vasily_G_Boldyrev_hog_sco
+			activate_advisor = RUS_Vladimir_D_Nabokov_for_sco
+			activate_advisor = RUS_Sergei_Bulgakov_eco_sco
+			activate_advisor = RUS_Nikolai_Gredeskul_sec_sco
+
+			add_popularity = { ideology = social_conservative popularity = 0.2 }
+			complete_national_focus = RUS_control_economy
+			set_country_flag = RUS_ready_militarise
+			set_country_flag = National_Center_Victorious
+			clr_country_flag = party_popularity_system_disabled
+			news_event = {
+				id = worldnews.114
+			}
+		}
+	}
 }
 
 country_event = {	#Black Monday hits the nation
@@ -599,7 +596,7 @@ country_event = {	#Black Monday hits the nation
 		add_ideas = RUS_Black_Wednesday
 		add_stability = -0.20
 		add_political_power = -75
-    }
+	}
 }
 
 country_event = {	#Stab Gain for Factories
@@ -623,48 +620,48 @@ country_event = {	#Stab Gain for Factories
 			factor = 75
 		}
 		name = "We will need to do it."
-				add_stability = 0.15
-				add_political_power = 50
-				random_owned_controlled_state = {
-					limit = {
-						is_core_of = RUS
-						arms_factory > 0
-					}
-					remove_building = {
-						type = arms_factory
-						level = 1
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_core_of = RUS
-						industrial_complex > 0
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_core_of = RUS
-						industrial_complex > 0
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 1
-					}
-				}
+		add_stability = 0.15
+		add_political_power = 50
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = RUS
+				arms_factory > 0
 			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = RUS
+				industrial_complex > 0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = RUS
+				industrial_complex > 0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
 	option = {
 		ai_chance = {
 			factor = 25
 		}
 		name = "It isn't worth it."
-    }
+	}
 }
 
-country_event = {	
+country_event = {
 	id = rus.25
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rus.25"}
 	title = "Russia is reunited!"
@@ -684,21 +681,21 @@ country_event = {
 		add_ideas = RUS_legacy_socialism
 		hidden_effect = {
 			every_state = {
-   				limit = {
+				limit = {
 					OR = {
 						is_core_of = SOV
 						is_core_of = VRS
 					}
-   				}
-    			THIS = {
-        			add_core_of = RUS
-   				}
+				}
+				THIS = {
+					add_core_of = RUS
+				}
 			}
 			news_event = {
 				id = worldnews.110
 				days = 1
 			}
-   		}
+		}
 	}
 }
 
@@ -706,32 +703,32 @@ country_event = {	# forcing Russias cores on USSR
 	id = rus.26
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rus.26"}
 
- 	fire_only_once = yes
+	fire_only_once = yes
 
- 	hidden = yes
+	hidden = yes
 
- 	trigger = {
+	trigger = {
 		tag = RUS
 		has_war_with = SOV
 	}
 
- 	mean_time_to_happen = {
+	mean_time_to_happen = {
 		days = 1
 	}
 
- 	option = {
+	option = {
 		every_state = {
-   			limit = {
+			limit = {
 				OR = {
 					is_core_of = SOV
 					is_core_of = VRS
 				}
-   			}
-    		THIS = {
-        		add_core_of = RUS
-   			}
+			}
+			THIS = {
+				add_core_of = RUS
+			}
 		}
-    }
+	}
 }
 
 
@@ -746,41 +743,41 @@ country_event = {   #Kadet 1
 	title = "The Union of Regeneration coalition is assuming leadership"
 	desc = rusur.1.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "For a modern Russia!"
-        hidden_effect = {
-		country_event = { id = rusur.2 days = 70 }
-        }
-    }   
-} 
+		hidden_effect = {
+			country_event = { id = rusur.2 days = 70 }
+		}
+	}
+}
 
-country_event = {   #I created this just because of people like you 
+country_event = {   #I created this just because of people like you
 	id = rusur.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusur.2"}
 	title = "The Assasination of Savinkov"
 	desc = rusur.2.d
 	picture = GFX_report_event_savinkov
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Rest in Peace"
-    hidden_effect = {
-      retire_character = RUS_Boris_Savinkov
-      remove_ideas_with_trait = security_minister
-      add_ideas = {
-        RUS_Vasily_A_Kharlamov_sec_mli
-      }
-    }
-  }   
-} 
+		hidden_effect = {
+			retire_character = RUS_Boris_Savinkov
+			remove_ideas_with_trait = security_minister
+
+			activate_advisor = RUS_Vasily_A_Kharlamov_sec_mli
+
+		}
+	}
+}
 
 ########################
 ### NUS-Okotberist   ###
@@ -792,33 +789,33 @@ country_event = {   #NUS 1
 	title = "The NUS-ROVS coalition is assuming leadership"
 	desc = rusnus.1.d
 	picture = GFX_report_event_wrangel_cabinet
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "White Army, Black Baron!"
-        hidden_effect = {
+		hidden_effect = {
 			country_event = { id = rusnus.2 days = 100 }
-        }
-    }   
-} 
+		}
+	}
+}
 country_event = {   #NUS 2
 	id = rusnus.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnus.2"}
 	title = "Emergence of new factions"
 	desc = rusnus.2.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "An interesting development"
-        }
-    }   
+	}
+}
 
 country_event = {   #Start of Goverment Reform Chain
 	id = rusnus.3
@@ -826,9 +823,9 @@ country_event = {   #Start of Goverment Reform Chain
 	title = "Should the Higher Chamber of the Parliament be replaced?"
 	desc = rusnus.3.d
 	picture = diplomacy
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_government = valkist
 		original_tag = SOV
@@ -838,98 +835,98 @@ country_event = {   #Start of Goverment Reform Chain
 
 	option = {
 		name = "Yes so we can end corruption and factionalism!"
-    set_country_flag = RUS_technocracy
+		set_country_flag = RUS_technocracy
 
 		hidden_effect = {
-      country_event = { 
-        id = rusnus.5
-        days = 20
-      }
-    }       
-  }
-} 
+			country_event = {
+				id = rusnus.5
+				days = 20
+			}
+		}
+	}
+}
 
-country_event = {   
+country_event = {
 	id = rusnus.5
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnus.5"}
 	title = "Should the Lower Chamber of the Parliament be replaced?"
 	desc = rusnus.5.d
 	picture = diplomacy
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Yes only Businessmen are fit for the job"
-    set_country_flag = RUS_businessmen
-    hidden_effect = {
-      country_event = { 
-        id = rusnus.7
-        days = 40
-      }
-    }
-  }
+		set_country_flag = RUS_businessmen
+		hidden_effect = {
+			country_event = {
+				id = rusnus.7
+				days = 40
+			}
+		}
+	}
 }
 
-country_event = {   
+country_event = {
 	id = rusnus.7
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnus.7"}
 	title = "The New Goverment"
 	desc = rusnus.7.d
 	picture = diplomacy
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Russia finally got a great Goverment"
-        add_ideas = RUS_business_dictatorship
+		add_ideas = RUS_business_dictatorship
 	}
 }
 
 ########################
 ###     	NP       ###
 ########################
-country_event = {   
+country_event = {
 	id = rusnp.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnp.1"}
 	title = "Rogue Divisions are nearing the capital"
 	desc = rusnp.1.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "This is probably a misunderstanding"
-		    hidden_effect = {
-		     	country_event = { 
-		        	id = rusnp.2
-		            days = 3 
-		        }
-		    }
-        }
-    }  
+		hidden_effect = {
+			country_event = {
+				id = rusnp.2
+				days = 3
+			}
+		}
+	}
+}
 
-country_event = {   
+country_event = {
 	id = rusnp.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnp.2"}
 	title = "Kornilov coups the Goverment!"
 	desc = rusnp.2.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Finally someone with a strong will"
-		add_popularity = { 
-		    ideology = national_populist 
-		    popularity = 0.3
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
 		}
 		set_country_flag = RUS_np_victorious
 		set_country_flag = RUS_ready_militarise
@@ -940,31 +937,31 @@ country_event = {
 			elections_allowed = no
 			last_election = "1937.6.13"
 			election_frequency = 72
+		}
+		add_country_leader_role = {
+			character = RUS_Spiridon_Dionisovich_Merkulov
+			promote_leader = yes
+			country_leader = {
+				ideology = national_populist_subtype
+				traits = {}
 			}
-      add_country_leader_role = {
-        character = RUS_Spiridon_Dionisovich_Merkulov
-        promote_leader = yes
-        country_leader = {
-          ideology = national_populist_subtype
-          traits = {}
-        }
-      }
-      hidden_effect = {
- 		    load_focus_tree = rus_np
- 		      news_event = {
-					id = worldnews.115
-				}
-      }
-	  }
-  }
+		}
+		hidden_effect = {
+			load_focus_tree = rus_np
+			news_event = {
+				id = worldnews.115
+			}
+		}
+	}
+}
 
-country_event = {   
+country_event = {
 	id = rusnp.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnp.3"}
 	title = "We have won!"
 	desc = rusnp.3.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -980,7 +977,7 @@ country_event = {
 		has_Country_flag = RUS_japan_war
 		NOT = {
 			has_country_flag = RUS_victory_japan
-  	    }
+		}
 	}
 
 	mean_time_to_happen = { months = 2 }
@@ -991,18 +988,18 @@ country_event = {
 			country_event = {
 				id = rusnp.5 days = 2
 			}
-        }
+		}
 		white_peace = JAP
-    } 
+	}
 }
 
-country_event = {   
+country_event = {
 	id = rusnp.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnp.4"}
 	title = "We have won!"
 	desc = rusnp.4.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -1018,110 +1015,110 @@ country_event = {
 		has_country_flag = RUS_japan_war
 		RUS = {
 			NOT = {
-			   has_country_flag = RUS_victory_japan
-	    }
+				has_country_flag = RUS_victory_japan
+			}
+		}
 	}
-}
 	option = {
 		name = "A great victory for Russia"
-		    add_timed_idea = { 
-		        idea = RUS_reperations
-		        days = 180
-            }
-			hidden_effect = {
-				country_event = {
-					id = rusnp.5 days = 2
-			    }
-				white_peace = JAP
+		add_timed_idea = {
+			idea = RUS_reperations
+			days = 180
+		}
+		hidden_effect = {
+			country_event = {
+				id = rusnp.5 days = 2
 			}
-        }
-    } 
+			white_peace = JAP
+		}
+	}
+}
 
-country_event = {   
+country_event = {
 	id = rusnp.5
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnp.5"}
 	title = "Kornilov is dead!"
 	desc = rusnp.5.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "Rest in Peace"
-    add_country_leader_role = {
-      character = RUS_Mikhail_Diterikhs
-      promote_leader = yes
-      country_leader = {
-        ideology = national_populist_subtype
-        traits = {}
-      }
-    }
+		add_country_leader_role = {
+			character = RUS_Mikhail_Diterikhs
+			promote_leader = yes
+			country_leader = {
+				ideology = national_populist_subtype
+				traits = {}
+			}
+		}
 		set_country_flag = RUS_victory_japan
 	}
 }
 
-country_event = {   
+country_event = {
 	id = rusnp.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusnp.6"}
 	title = "Operation Oprichina"
 	desc = rusnp.6.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "We will cleanse Russia of the traitors"
-			add_popularity = { 
-			    ideology = vanguardist
-			    popularity = -0.05
-			}
-			add_popularity = { 
-			    ideology = collectivist
-			    popularity = -0.05
-		    }
-			add_popularity = { 
-			    ideology = libertarian_socialist 
-			    popularity = -0.05
-		    }
-			add_popularity = { 
-			    ideology = social_democrat 
-			    popularity = -0.05
-		    }	
-			add_popularity = { 
-			    ideology = social_liberal 
-			    popularity = -0.05
-		    }	
-			add_popularity = { 
-			    ideology = market_liberal 
-			    popularity = -0.05
-		    }			
+		add_popularity = {
+			ideology = vanguardist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = collectivist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = libertarian_socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.05
+		}
 		hidden_effect = {
 			country_event = {
 				id = rusnp.6
-			    days = 7
-			    }
+				days = 7
 			}
-        }
-    } 
+		}
+	}
+}
 
 
 #######################
 ###  Military Coup ####
 #######################
 
-country_event = {   
+country_event = {
 	id = ruscoup.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ruscoup.1"}
 	title = "Military Coup"
 	desc = ruscoup.1.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		date > 1940.01.01
 		tag = RUS
@@ -1149,60 +1146,60 @@ country_event = {
 		set_country_flag = RUS_coup_victorious
 		add_stability = -1
 		add_war_support = -1
-        hidden_effect = {
-          set_party_name = { 
-              ideology = social_democrat
-              long_name = RUS_national_maximalist_long 
-              name = RUS_national_maximalist
-              }
-          set_party_name = { 
-              ideology = social_liberal
-              long_name = RUS_UDDF_long
-              name = RUS_UDDF
-              }
-          set_party_name = { 
-              ideology = social_conservative
-              long_name = RUS_oktoberist_long 
-              name = RUS_oktoberist
-              }
-          add_ideas = RUS_Vasily_G_Boldyrev_hog_sco
-          add_ideas = RUS_Vasily_G_Boldyrev_for_sco
-          add_ideas = RUS_Vladimir_von_Kappel_eco_sco
-          add_ideas = RUS_Vasily_Shulgin_sec_sco
-      add_popularity = { 
-          ideology = social_conservative 
-          popularity = 0.3
-      }
-      add_ideas = parliamentary_republic
-      set_politics = {
-        ruling_party = social_conservative
-        elections_allowed = no
-        last_election = "1937.6.13"
-        election_frequency = 72
-        }
-      add_country_leader_role = {
-        character = RUS_Anton_Denikin
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      load_focus_tree = rus_coup
-    }
+		hidden_effect = {
+			set_party_name = {
+				ideology = social_democrat
+				long_name = RUS_national_maximalist_long
+				name = RUS_national_maximalist
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = RUS_UDDF_long
+				name = RUS_UDDF
+			}
+			set_party_name = {
+				ideology = social_conservative
+				long_name = RUS_oktoberist_long
+				name = RUS_oktoberist
+			}
+			activate_advisor =  RUS_Vasily_G_Boldyrev_hog_sco
+			activate_advisor =  RUS_Vasily_G_Boldyrev_for_sco
+			activate_advisor =  RUS_Vladimir_von_Kappel_eco_sco
+			activate_advisor =  RUS_Vasily_Shulgin_sec_sco
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.3
+			}
+			add_ideas = parliamentary_republic
+			set_politics = {
+				ruling_party = social_conservative
+				elections_allowed = no
+				last_election = "1937.6.13"
+				election_frequency = 72
+			}
+			add_country_leader_role = {
+				character = RUS_Anton_Denikin
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+			load_focus_tree = rus_coup
+		}
 	}
 }
 
 
-country_event = {   
+country_event = {
 	id = ruscoup.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ruscoup.2"}
 	title = "Party Coup"
 	desc = ruscoup.2.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		date > 1940.01.01
 		tag = RUS
@@ -1236,21 +1233,17 @@ country_event = {
 			last_election = "1937.6.13"
 			election_frequency = 72
 		}
-        hidden_effect = {
-        	#add_ideas = WIP!!
-        	#add_ideas = 
-        	#add_ideas = 
-        	#add_ideas = 
-      add_country_leader_role = {
-        character = RUS_Arkadiy_Stolypin
-        promote_leader = yes
-        country_leader = {
-          ideology = valkist_subtype
-          traits = {}
-        }
-      }
- 		load_focus_tree = rus_neo_stolypinist
-    	}
+		hidden_effect = {
+			add_country_leader_role = {
+				character = RUS_Arkadiy_Stolypin
+				promote_leader = yes
+				country_leader = {
+					ideology = valkist_subtype
+					traits = {}
+				}
+			}
+			load_focus_tree = rus_neo_stolypinist
+		}
 	}
 	option = {
 		ai_chance = {
@@ -1268,33 +1261,29 @@ country_event = {
 			last_election = "1937.6.13"
 			election_frequency = 72
 		}
-        hidden_effect = {
-        	#add_ideas = WIP!!
-        	#add_ideas = 
-        	#add_ideas = 
-        	#add_ideas = 
-      add_country_leader_role = {
-        character = RUS_Vladimir_Romanov_Krasinsky
-        promote_leader = yes
-        country_leader = {
-          ideology = valkist_subtype
-          traits = {}
-        }
-      }
- 		load_focus_tree = rus_young_russia
-        }
+		hidden_effect = {
+			add_country_leader_role = {
+				character = RUS_Vladimir_Romanov_Krasinsky
+				promote_leader = yes
+				country_leader = {
+					ideology = valkist_subtype
+					traits = {}
+				}
+			}
+			load_focus_tree = rus_young_russia
+		}
 	}
 }
 
-country_event = {   
+country_event = {
 	id = ruscoup.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ruscoup.3"}
 	title = "Counter-Coup!"
 	desc = ruscoup.3.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		ai_chance = {
@@ -1302,54 +1291,54 @@ country_event = {
 		}
 		name = "This didn't go as planned"
 		set_country_flag = RUS_attempt_to_rule_failed
-    hidden_effect = {
-      add_country_leader_role = {
-        character = RUS_Pyotr_Wrangel
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-    }
-  }
+		hidden_effect = {
+			add_country_leader_role = {
+				character = RUS_Pyotr_Wrangel
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+		}
+	}
 }
 
-country_event = {   
+country_event = {
 	id = ruscoup.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ruscoup.4"}
 	title = "Elections are held"
 	desc = ruscoup.4.d
 	picture = GFX_report_event_russian_troops
-	
+
 	fire_only_once = yes
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-      add_country_leader_role = {
-        character = RUS_Boris_Savinkov
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = RUS_Yury_Alexeevich_Shrinsky_Shikmatov
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = RUS_Pyotr_Wrangel
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
+			add_country_leader_role = {
+				character = RUS_Boris_Savinkov
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = RUS_Yury_Alexeevich_Shrinsky_Shikmatov
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = RUS_Pyotr_Wrangel
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 	option = {
@@ -1357,17 +1346,17 @@ country_event = {
 			factor = 40
 		}
 		name = "The SZOF wins the election"
-		add_popularity = { 
-		    ideology = social_liberal 
-		    popularity = 0.3
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.3
 		}
-			add_ideas = parliamentary_republic
-			set_politics = {
+		add_ideas = parliamentary_republic
+		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = no
 			last_election = "1937.6.13"
 			election_frequency = 72
-		}	   
+		}
 	}
 	option = {
 		ai_chance = {
@@ -1375,16 +1364,16 @@ country_event = {
 		}
 		name = "The National-Maximalists wins the election"
 		add_ideas = parliamentary_republic
-		add_popularity = { 
-		    ideology = social_democrat 
-		    popularity = 0.3
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
 		}
-			set_politics = {
+		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = no
 			last_election = "1937.6.13"
 			election_frequency = 72
-		}	   
+		}
 	}
 	option = {
 		ai_chance = {
@@ -1392,16 +1381,16 @@ country_event = {
 		}
 		name = "The Oktoberists wins the election"
 		add_ideas = parliamentary_republic
-		add_popularity = { 
-		    ideology = social_conservative 
-		    popularity = 0.3
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.3
 		}
-			set_politics = {
+		set_politics = {
 			ruling_party = social_conservative
 			elections_allowed = no
 			last_election = "1937.6.13"
 			election_frequency = 72
-		}	   
+		}
 	}
 }
 ########################
@@ -1413,19 +1402,19 @@ country_event = {   #Economic Treaty NUS or Oktoberist
 	title = "Economic Treaty"
 	desc = rusflav.1.d
 	picture = diplomacy3
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes 
 
-    option = {
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
 		name = "We choose the Americans"
-USA = {
-		country_event = {
+		USA = {
+			country_event = {
 				id = rusfor.3 days = 1 }
-			}
-       }
+		}
 	}
+}
 
 country_event = {   #Economic Treaty Kadets
 	id = rusfor.2
@@ -1433,22 +1422,22 @@ country_event = {   #Economic Treaty Kadets
 	title = "Economic Treaty"
 	desc = rusflav.2.d
 	picture = diplomacy3
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes 
 
-    option = {
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
 		name = "We choose the Americans"
-USA = { country_event = { id = rusfor.3 days = 1 }
-	    }
+		USA = { country_event = { id = rusfor.3 days = 1 }
+		}
 	}
-	 option = {
+	option = {
 		name = "We choose the Japanese"
-JAP = { country_event = { id = rusfor.5 days = 1 }
-     	    }
-	    }
+		JAP = { country_event = { id = rusfor.5 days = 1 }
+		}
 	}
+}
 
 country_event = {   #American Trade Deal
 	id = rusfor.3
@@ -1456,29 +1445,29 @@ country_event = {   #American Trade Deal
 	title = "The Russian State proposes an Economic Deal."
 	desc = rusfor.3.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will support them"
-	RUS = { country_event = { id = rusfor.4 days = 7 } 
-	        }
-	   ai_chance = {
+		RUS = { country_event = { id = rusfor.4 days = 7 }
+		}
+		ai_chance = {
 			factor = 100
-		    }
-        }
-    option = {
+		}
+	}
+	option = {
 		name = "They are a waste of time"
-    RUS = {	
-    country_event = { id = rusfor.5 days = 7 } 
-    } 
+		RUS = {
+			country_event = { id = rusfor.5 days = 7 }
+		}
 		ai_chance = {
 			factor = 0
-            }
-        }
-    } 
+		}
+	}
+}
 
 country_event = {   #Americans Agree
 	id = rusfor.4
@@ -1486,17 +1475,17 @@ country_event = {   #Americans Agree
 	title = "The USA agrees to our economic deal"
 	desc = rusfor.4.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We are glad they support the true Russian goverment"
 		set_party_name = { ideology = authoritarian_democrat long_name = RUS_american_delegation name = RUS_american_delegation }
 		set_country_flag = US_FRIEND
-        }
-    }   
+	}
+}
 
 country_event = {   #Americans Disagree
 	id = rusfor.5
@@ -1504,19 +1493,19 @@ country_event = {   #Americans Disagree
 	title = "The USA rejects our trade deal"
 	desc = rusfor.5.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will ask the Japanese instead"
-    JAP = { country_event = { id = rusfor.8 days = 1 }
-            }
-        }
+		JAP = { country_event = { id = rusfor.8 days = 1 }
+		}
+	}
 	option = {
 		name = "We will liberate Russia alone!"
-    } 
+	}
 }
 
 country_event = {   #Japanese Trade Deal
@@ -1525,62 +1514,62 @@ country_event = {   #Japanese Trade Deal
 	title = "The Russian State proposes an Economic Deal."
 	desc = rusfor.5.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will support them"
-    RUS = { country_event = { id = rusfor.6 days = 1 }
-    }   
-} 
+		RUS = { country_event = { id = rusfor.6 days = 1 }
+		}
+	}
 	option = {
 		name = "They are a waste of time"
-    RUS = { country_event = { id = rusfor.7 days = 1 }
-            }
-        }
-    }
-    country_event = {   #Japan Agrees
+		RUS = { country_event = { id = rusfor.7 days = 1 }
+		}
+	}
+}
+country_event = {   #Japan Agrees
 	id = rusfor.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusfor.6"}
 	title = "Japan agrees to our economic deal"
 	desc = rusfor.6.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We are glad they support the true Russian goverment"
-        set_party_name = { ideology = authoritarian_democrat long_name = RUS_imperial_japanese_Delegation name = RUS_japanese_delegation }
-        set_country_flag = JAP_FRIEND
-    }   
-} 
+		set_party_name = { ideology = authoritarian_democrat long_name = RUS_imperial_japanese_Delegation name = RUS_japanese_delegation }
+		set_country_flag = JAP_FRIEND
+	}
+}
 
-    country_event = {   #Japan Decline
+country_event = {   #Japan Decline
 	id = rusfor.7
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusfor.7"}
 	title = "Japan declines our economic deal"
 	desc = rusfor.7.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will ask the Americans instead"
-    USA = {
-		country_event = {
+		USA = {
+			country_event = {
 				id = rusfor.10 days = 1 }
-            }
-        }
+		}
+	}
 	option = {
 		name = "We will liberate Russia alone!"
-        }
-    }   
+	}
+}
 
 country_event = {   #Japanese Trade Deal but the americans said no
 	id = rusfor.8
@@ -1588,112 +1577,112 @@ country_event = {   #Japanese Trade Deal but the americans said no
 	title = "The Russian State proposes an Economic Deal."
 	desc = rusfor.8.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will support them"
-    RUS = { country_event = { id = rusfor.6 days = 1 }
-       }
-    }   
+		RUS = { country_event = { id = rusfor.6 days = 1 }
+		}
+	}
 	option = {
 		name = "They are a waste of time"
-    RUS = {
-         country_event = {
-                 id = rusfor.9 days = 1 }
-                }
-            }
-        }
+		RUS = {
+			country_event = {
+				id = rusfor.9 days = 1 }
+		}
+	}
+}
 
-    country_event = {   #everyone said no :tfwno:
+country_event = {   #everyone said no :tfwno:
 	id = rusfor.9
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusfor.9"}
 	title = "Japan also declines our trade deal"
 	desc = rusfor.9.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will liberate Russia alone!"
-        }
-    }   
+	}
+}
 
-    country_event = {   #American Trade deal Japan said no
+country_event = {   #American Trade deal Japan said no
 	id = rusfor.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusfor.10"}
 	title = "The Russian State proposes an economic deal"
 	desc = rusfor.10.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will support them"
-		RUS = { country_event = { id = rusnus.4 days = 7 } 
-	        }
-        }
-    option = {
+		RUS = { country_event = { id = rusnus.4 days = 7 }
+		}
+	}
+	option = {
 		name = "They are a waste of time"
 		RUS = { country_event = { id = rusfor.9 days = 1 }
-            }
-        }
-    }   
+		}
+	}
+}
 
-   country_event = {   #Natpops Trade 
+country_event = {   #Natpops Trade
 	id = rusfor.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusfor.11"}
 	title = "Economic Treaty"
 	desc = rusfor.1.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
 
-    option = {
+	is_triggered_only = yes
+
+	option = {
 		name = "We choose the Americans"
-USA = {
-		country_event = {
+		USA = {
+			country_event = {
 				id = rusfor.12 days = 1 }
-			}
-       }
+		}
 	}
+}
 
-	country_event = {   #American Trade Deal Natpops
+country_event = {   #American Trade Deal Natpops
 	id = rusfor.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusfor.12"}
 	title = "The Russian State proposes an Economic Deal."
 	desc = rusfor.12.d
 	picture = diplomacy3
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We will support them"
-	RUS = { country_event = { id = rusfor.4 days = 7 } 
-	        }
-	   ai_chance = {
+		RUS = { country_event = { id = rusfor.4 days = 7 }
+		}
+		ai_chance = {
 			factor = 100
-		    }
-        }
-    option = {
+		}
+	}
+	option = {
 		name = "They are a waste of time"
-RUS = {	country_event = { id = rusfor.10 days = 7 } 
-      } 
+		RUS = {	country_event = { id = rusfor.10 days = 7 }
+		}
 		ai_chance = {
 			factor = 0
-             }
-        }
-    } 
+		}
+	}
+}
 
 ########################
 ###   Influence      ###
@@ -2001,7 +1990,7 @@ country_event = {   #Dominance Japanese Influence
 	}
 }
 
-country_event = {   #Daddy US gib civilian factories 
+country_event = {   #Daddy US gib civilian factories
 	id = rusinf.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusinf.10"}
 	title = "The Russian State ask for civilian investments"
@@ -2011,27 +2000,27 @@ country_event = {   #Daddy US gib civilian factories
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "We will provide them with it of course"
 		ai_chance = { factor = 100 }
-        hidden_effect = {
-        RUS = { country_event = { id = rusinf.11 days = 3 }
-            }
+		hidden_effect = {
+			RUS = { country_event = { id = rusinf.11 days = 3 }
+			}
 		}
 	}
 	option = {
 		name = "We have more important things to do"
 		ai_chance = { factor = 0 }
-        hidden_effect = {
-        RUS = { country_event = { id = rusinf.15 days = 3 }
-            }
+		hidden_effect = {
+			RUS = { country_event = { id = rusinf.15 days = 3 }
+			}
 		}
 	}
 }
 
-country_event = {   
+country_event = {
 	id = rusinf.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusinf.11"}
 	title = "They agreed to invest in us"
@@ -2041,7 +2030,7 @@ country_event = {
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "We are glad of our friends across the globe"
@@ -2049,24 +2038,24 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.08
 		}
-	        random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}				
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
 				}
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
 			}
 		}
 	}
+}
 
-	country_event = {   #Daddy US gib military factories 
+country_event = {   #Daddy US gib military factories
 	id = rusinf.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusinf.12"}
 	title = "The Russian State ask for military investments"
@@ -2076,27 +2065,27 @@ country_event = {
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "We will provide them with it of course"
 		ai_chance = { factor = 100 }
-        hidden_effect = {
-        RUS = { country_event = { id = rusinf.13 days = 3 }
-            }
+		hidden_effect = {
+			RUS = { country_event = { id = rusinf.13 days = 3 }
+			}
 		}
 	}
 	option = {
 		name = "We have more important things to do"
 		ai_chance = { factor = 0 }
-        hidden_effect = {
-        RUS = { country_event = { id = rusinf.14 days = 3 }
-            }
+		hidden_effect = {
+			RUS = { country_event = { id = rusinf.14 days = 3 }
+			}
 		}
 	}
 }
 
-country_event = {   
+country_event = {
 	id = rusinf.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusinf.13"}
 	title = "They agreed to invest in us"
@@ -2106,31 +2095,31 @@ country_event = {
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "We are glad of our friends across the globe"
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.08
-		}        random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}				
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+			}        random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
 				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
 			}
 		}
 	}
+}
 
-country_event = {   #Why do you hate me US? military 
+country_event = {   #Why do you hate me US? military
 	id = rusinf.14
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusinf.14"}
 	title = "They denied investments"
@@ -2140,13 +2129,13 @@ country_event = {   #Why do you hate me US? military
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "What a shame"
-            }
-		}
-country_event = {   #Why do you hate me US? civlian 
+	}
+}
+country_event = {   #Why do you hate me US? civlian
 	id = rusinf.15
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rusinf.15"}
 	title = "They denied investments"
@@ -2156,11 +2145,11 @@ country_event = {   #Why do you hate me US? civlian
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "What a shame"
-    }
+	}
 }
 
 country_event = {   #USA requesting infantry equip
@@ -2173,7 +2162,7 @@ country_event = {   #USA requesting infantry equip
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "We will provide them with it"
@@ -2182,21 +2171,21 @@ country_event = {   #USA requesting infantry equip
 			factor = 100
 		}
 		hidden_effect = {
-		    RUS = {
-		        country_event = { 
-		            id = rusinf.17 days = 3 
-		        }
-            }
+			RUS = {
+				country_event = {
+					id = rusinf.17 days = 3
+				}
+			}
 		}
 	}
-    option = {
-    name = "They are a waste of time"
-    hidden_effect = {		
-        RUS = {
-		        country_event = { 
-		            id = rusinf.18 days = 3 
-		    	}
-       		}
+	option = {
+		name = "They are a waste of time"
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = rusinf.18 days = 3
+				}
+			}
 		}
 	}
 }
@@ -2210,18 +2199,18 @@ country_event = {   #USA accepts
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "We are happy to have such generous friends"
-		   	add_popularity = { 
-		        ideology = authoritarian_democrat
-		        popularity = 0.05
-		    }
-			hidden_effect = {
-		        add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
-        }
-    }
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.05
+		}
+		hidden_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+		}
+	}
 }
 country_event = {   #Why do you hate me US? infantry_equipment
 	id = rusinf.18
@@ -2233,11 +2222,11 @@ country_event = {   #Why do you hate me US? infantry_equipment
 
 	fire_only_once = no
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "What a shame"
-    }
+	}
 }
 
 #Renaming Leningrad
@@ -2292,7 +2281,7 @@ country_event = {
 	trigger = {
 		tag = RUS
 		RUS = {
-			owns_state = 195 
+			owns_state = 195
 		}
 	}
 

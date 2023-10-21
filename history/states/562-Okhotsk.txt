@@ -6,7 +6,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = SOV
+		owner = RUS
 		victory_points = {
 			12683 1
 		}
@@ -17,6 +17,7 @@ state={
 			}
 		}
 		add_core_of = SOV
+                add_core_of = RUS
 	}
 
 	provinces={

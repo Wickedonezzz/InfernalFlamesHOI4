@@ -624,7 +624,7 @@ ideas = {
 			allowed = {	always = no	}
 			allowed_civil_war = { always = yes }
 			equipment_bonus = {
-				heavy_cruiser = {
+				ship_hull_cruiser = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -641,7 +641,7 @@ ideas = {
 			allowed = {	always = no	}
 			allowed_civil_war = { always = yes }
 			equipment_bonus = {
-				battleship = {
+				ship_hull_heavy = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -781,6 +781,9 @@ ideas = {
 		polymer_corporation = {
 			picture = generic_industrial_concern_2
 			allowed = { original_tag = CAN }
+			available = {
+				has_completed_focus = CAN_polycorp
+			}
 			research_bonus = {
 				synth_resources = 0.1
 				industry = 0.05
@@ -807,7 +810,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			traits = { infantry_equipment_producer_assualt_2 }
+			traits = { infantry_equipment_producer_assault_2 }
 		}
 	}
 	### Tank Manufacturer

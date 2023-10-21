@@ -337,7 +337,7 @@ ROM_make_nicholas_king = {
 			}
 		}
 	}
-}  
+}
 
 ROM_become_republic = {
 	if = {

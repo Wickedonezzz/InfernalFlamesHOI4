@@ -54,7 +54,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	AUS_bundesheer_conscription
 	GEN_entente_member
 	parliamentary_republic

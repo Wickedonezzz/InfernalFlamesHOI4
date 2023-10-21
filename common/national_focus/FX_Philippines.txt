@@ -30,6 +30,7 @@ focus_tree = {
     x = 6
     y = 0
     cost = 6
+    text_icon = joint_focus_style
     available = {
       hidden_trigger = {
         always = no
@@ -1962,6 +1963,10 @@ focus_tree = {
     x = 21
     y = 0
     cost = 6
+    text_icon = joint_focus_style
+    ai_will_do = {
+      factor = 800
+    }
     completion_reward = {
       custom_effect_tooltip = PHI_osmena_industrialization_plan_tt
     }
@@ -3441,6 +3446,13 @@ focus_tree = {
     x = 10
     y = 0
     cost = 6
+    ai_will_do = {
+      factor = 20
+      modifier = {
+        has_idea = PHI_agricultural_society
+        factor = -0.8
+      }
+    }
     relative_position_id = PHI_osmena_industrialization_plan
     completion_reward = {
       add_manpower = 50000
@@ -3996,6 +4008,13 @@ focus_tree = {
     x = -3
     y = 2
     cost = 6
+    ai_will_do = {
+      factor = 20
+      modifier = {
+        has_idea = PHI_agricultural_society
+        factor = -0.8
+      }
+    }
     relative_position_id = PHI_fortress_philippines
     completion_reward = {
       add_ideas = PHI_naval_devotion
@@ -4155,7 +4174,7 @@ focus_tree = {
   # Train Marines
   focus = {
     id = PHI_train_marines
-    icon = GFX_goal_generic_amphibious_assault
+    icon = GFX_goal_generic_marines2
     x = -1
     y = 1
     cost = 6
@@ -4351,6 +4370,13 @@ focus_tree = {
     x = 7
     y = 0
     cost = 6
+    ai_will_do = {
+      factor = 20
+      modifier = {
+        has_idea = PHI_agricultural_society
+        factor = -0.8
+      }
+    }
     relative_position_id = PHI_start_naval_buildup
     completion_reward = {
       air_experience = 25

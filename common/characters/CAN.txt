@@ -184,6 +184,7 @@ characters = {
 			}
 		}
 		corps_commander = {
+			desc = ARMY_BERT_HOFFMEISTER_DESC
 			traits = {
         career_officer
         infantry_officer
@@ -376,7 +377,7 @@ characters = {
 		}
 	}
 	CAN_JS_Woodsworth = {
-		name = "J.S. Woodsworth"
+		name = CAN_JS_Woodsworth
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CAN/Portrait_CAN_JS_Woodsworth.png"
@@ -513,7 +514,7 @@ characters = {
 		}
 	}
 	CAN_William_Lyon_Mackenzie_King = {
-		name = "William Lyon Mackenzie King"
+		name = CAN_William_Lyon_Mackenzie_King
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CAN/Portrait_CAN_William_Lyon_Mackenzie_King.png"
@@ -572,7 +573,7 @@ characters = {
 		}
 	}
 	CAN_RB_Bennett = {
-		name = "R.B. Bennett"
+		name = CAN_RB_Bennett
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CAN/Portrait_CAN_RB_Bennett.png"
@@ -709,7 +710,7 @@ characters = {
 		}
 	}
 	CAN_Henry_Crerar = {
-		name = "Henry Crerar"
+		name = CAN_Henry_Crerar
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ministers/CAN/CAN_Henry_Crerar.png"
@@ -797,7 +798,7 @@ characters = {
 		}
 	}
 	CAN_John_Diefenbaker = {
-		name = "John Diefenbaker"
+		name = CAN_John_Diefenbaker
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CAN/Portrait_CAN_John_Diefenbaker.png"
@@ -812,15 +813,15 @@ characters = {
 			cost = 150
 			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = CAN_John_Diefenbaker_hog_hired }
+				hidden_trigger = { has_country_flag = CAN_John_Diefenbaker_hog_npo_hired }
 			}
-			idea_token = CAN_John_Diefenbaker_hog
+			idea_token = CAN_John_Diefenbaker_hog_npo
 			can_be_fired = no
 			on_add = {
-				ROOT = { set_country_flag = CAN_John_Diefenbaker_hog_hired }
+				ROOT = { set_country_flag = CAN_John_Diefenbaker_hog_npo_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = CAN_John_Diefenbaker_hog_hired }
+				ROOT = { clr_country_flag = CAN_John_Diefenbaker_hog_npo_hired }
 			}
 			traits = {
 				hog_corporate_suit

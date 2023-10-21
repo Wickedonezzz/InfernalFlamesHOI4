@@ -153,7 +153,7 @@ focus_tree = {
 
 	focus = {
 		id = CHL_centralize_peoples_will
-		icon = GFX_goal_generic_national_unity_shine
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = CHL_democracy_survives }
 		x = 0
 		y = 5

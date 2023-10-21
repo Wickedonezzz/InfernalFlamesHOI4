@@ -58,5 +58,13 @@ ideas = {
 			}
 			picture = EGY_Uneducated_population
 		}
+		EGY_Regency = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Regency"}
+			picture = EGY_Regency
+            modifier = {
+				political_power_gain = 0.15
+				stability_weekly = -0.001
+			}
+		}
 	}
 }

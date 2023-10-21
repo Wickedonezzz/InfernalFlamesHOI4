@@ -564,166 +564,6 @@ regional_middle_east_news = {
 	}
 }
 
-### renaming events trigger
-is_american_tag = {
-	OR = {
-		tag = USA
-		tag = CLB
-		tag = NEE
-		tag = SRA
-		tag = SNE
-		tag = ORE
-		tag = NAR
-	}
-}
-is_arab_tag = {
-	OR = {
-		tag = LBA
-		tag = EGY
-		tag = SAU
-		tag = YEM
-		tag = OMA
-		tag = JOR
-		tag = SYR
-		tag = IRQ
-		tag = PAL
-	}
-}
-is_brz_portuguese = {
-	OR = { # MOZ, ANG, CPV, COG not included
-		tag = POR
-		tag = BRA
-	}
-}
-is_chinese_tag = {
-	OR = {
-		tag = FNG 
-		tag = KMT
-		tag = ZHI
-		tag = YUN
-		tag = GXC
-		tag = SHX
-		tag = XSM
-		tag = SIK
-		tag = PRC
-		tag = KMT 
-		tag = SCH
-	}
-}
-is_dutch_tag = {
-	OR = {
-		tag = HOL
-		tag = KNE
-	}
-}
-is_english_tag = {
-	OR = {
-		tag = ENG
-		tag = IRE
-		tag = CAN
-		tag = NZL
-		tag = AST
-		tag = SCO
-		tag = WLS
-		tag = EGL
-	}
-}
-is_french_tag = {
-	OR = {
-		tag = FRA
-		tag = NRM
-		tag = BRI
-		tag = OCC
-		tag = COR
-	}
-}
-is_german_tag = {
-	OR = {
-		tag = GER
-		tag = AUS
-		tag = WGR
-		tag = DDR
-		tag = BAY
-		tag = ERM
-		tag = HAN
-		tag = HES
-		tag = RHI
-		tag = BAW
-		tag = SAX
-		tag = SIL
-		tag = POM
-		tag = SHO
-	}
-}
-is_italian_tag = {
-	OR = {
-		tag = ITA
-		tag = SRV
-		tag = SIC
-		tag = SAR
-		tag = NAP
-		tag = LOM
-		tag = PIE
-		tag = COR
-	}
-}
-is_polish_tag = {
-	OR = {
-		tag = POL
-	}
-}
-is_russian_tag = {
-	OR = {
-		tag = RUS
-		tag = SOV
-	}
-}
-is_south_slav_tag = {
-	OR = {
-		tag = SER
-		tag = CRO
-		tag = BOS
-		tag = YUG
-		tag = SLO
-	}
-}
-is_turkic_tag = {
-	OR = {
-		tag = TUR
-		tag = TRK
-		tag = UZB
-		tag = KYR
-		tag = TAN
-		tag = SIK
-	}
-}
-
-is_central_american_tag = {
-	OR = {
-		tag = COS
-		tag = NIC
-		tag = HON
-		tag = ELS
-		tag = GUA
-	}
-}
-
-is_spanish_tag = {
-	OR = {
-		tag = SPA
-		tag = SPR
-		tag = SPF
-		tag = SPM
-	}
-}
-
-is_indian_tag = {
-	OR = {
-		tag = RAJ
-		tag = IND
-	}
-}
-
 # use this in state scope
 is_french_colonial_claim = {
 	OR = {
@@ -806,8 +646,9 @@ is_italian_colonial_claim = {
 		state = 559
 		state = 164 # Italian East Mediterranean
 		state = 345
+		state = 1030
 	}
-}	
+}
 
 # use this in state scope
 is_portuguese_colonial_claim = {
@@ -836,7 +677,7 @@ is_south_african_colonial_claim = {
 # use this in state scope
 is_british_colonial_claim = {
 	OR = {
-		state = 813 # Egypt 
+		state = 813 # Egypt
 		state = 769
 		state = 745
 		state = 552
@@ -848,7 +689,7 @@ is_british_colonial_claim = {
 		state = 452
 		state = 447
 		state = 446
-		state = 423 # India 
+		state = 423 # India
 		state = 424
 		state = 425
 		state = 426
@@ -950,7 +791,7 @@ is_british_colonial_claim = {
 		state = 639
 		state = 270
 	}
-}	
+}
 is_china_proper = {
 	OR = {
 		region = 143 #Northern China
@@ -1117,6 +958,24 @@ prefer_home_area_states_unless_filled_dockyard = {
 	}
 }
 
+prefer_home_area_states_unless_filled_airbase = {
+	OR = {
+		is_in_home_area = yes
+		NOT = {
+			owner = {
+				any_owned_state = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+					is_in_home_area = yes
+				}
+			}
+		}
+	}
+}
+
 valid_state_for_spawning_friendly_unit = {
 	is_in_home_area = yes
 	impassable = no
@@ -1134,4 +993,44 @@ has_expert_level_trigger = {
 
 has_genius_level_trigger = {
 	skill > 7
+}
+
+uses_generic_mios = {
+	NOT = {
+		original_tag = GRE
+	}
+}
+
+uses_generic_armour_mio = {
+	uses_generic_mios = yes
+
+}
+
+uses_generic_naval_mio = {
+	uses_generic_mios = yes
+
+}
+
+uses_generic_aircraft_mio = {
+	uses_generic_mios = yes
+
+}
+
+uses_generic_artillery_mio = {
+	uses_generic_mios = yes
+
+}
+
+uses_generic_infantry_mio = {
+	uses_generic_mios = yes
+
+}
+
+uses_generic_support_mio = {
+	uses_generic_mios = yes
+
+}
+
+uses_generic_motorised_mio = {
+	uses_generic_mios = yes
 }

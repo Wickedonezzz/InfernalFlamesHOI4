@@ -11,6 +11,7 @@ SOV_the_metallworker: "The Metallworker"
 SOV_the_revolutionary: "The Revolutionary"
 SOV_the_theorist: "The Theorist"
 SOV_the_bureaucrat: "The Bureaucrat"
+george_windsor: "§8George the Fifth, by the Grace of God, of the United Kingdom of Great Britain and Ireland and of the British Dominions beyond the Seas, King, Defender of the Faith, Emperor of India.§!"
 american_dressler: "The American Dressler" # Pelley
 prince_of_the_people: "Prince of the People" # Bernhard
 prince_of_the_people_1: "Prince of the People" # Bernhard
@@ -20,6 +21,7 @@ the_otaman: "The Otaman" # Stanisław Bułak-Bałachowicz
 exiled_pope: "Exiled Pope"
 meddler: "Political Meddler"
 charismatic: "Charismatic"
+KMT_generalissimo_chiang: "Generalissimo"
 
 ### From DH ###
 undistinguished_suit: "Undistinguished Suit"
@@ -112,6 +114,7 @@ eco_u_boat_proponent: "U-Boat Proponent"
 eco_tank_proponent: "Tank Proponent"
 eco_trade_proponent: "Trade Proponent"
 
+eco_army_reform_committee: "Army Reform Committee"
 eco_the_minister_for_everything: "The Minister for Everything"
 eco_socred_economist: "SoCred Economist"
 eco_vernacular_industrialiser: "Vernacular Industrialiser"
@@ -155,6 +158,7 @@ cos_school_of_mass_combat: "School of Mass Combat"
 cos_school_of_psychology: "School of Psychology"
 cos_school_of_defence: "School of Defence"
 cos_school_of_commando_operations: "School of Commando Operations"
+cos_school_of_grand_battleplan: "School of Grand Battleplan"
 
 ### Chief of Army
 carm_elastic_defence_doctrine: "Elastic Defence Doctrine"
@@ -468,6 +472,9 @@ artillery_specialist_desc:1 "Skilled at directing artillery in combat."
 artillery_expert: "Artillery Expert"
 artillery_expert_desc:1 "A true expert in directing artillery."
 artillery_ratio_over_30:1 "Artillery ratio > §H30%§!"
+
+JAP_samurai_lineage: "Samurai Lineage"
+JAP_samurai_lineage_desc: "§LThis man hails from proud lineage of Samurai and remains true to the old traditions and loyalties.§!"
 
 ### Company Traits ###
 chemical_producer: "Chemical Producer"

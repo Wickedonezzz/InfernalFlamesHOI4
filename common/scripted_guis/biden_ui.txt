@@ -16,7 +16,10 @@ scripted_gui = {
 			leader_button_visible = {
 				uses_leader_gui = yes
 			}
-			#Japan
+
+			#############################################
+			# Japan
+
 			Tokugawa_Iesato_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
@@ -41,7 +44,38 @@ scripted_gui = {
 					has_country_flag = JAP_Yasuhito_hos
 				}
 			}
-			#Greece
+
+			#############################################
+			# United Kingdom
+
+			Samuel_Hoare_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = ENG_Samuel_Hoare_hog_sco
+				}
+			}
+			Arthur_Greenwood_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = ENG_Arthur_Greenwood_hog_sde
+				}
+			}
+			Jack_Churchill_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = ENG_Jack_Churchill_hog_ade
+				}
+			}
+			Anthony_Eden_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = ENG_Anthony_Eden_hog_sco
+				}
+			}
+			
+			#############################################
+			# Greece
+
 			Eleftherios_Venizelos_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
@@ -126,15 +160,89 @@ scripted_gui = {
 					has_idea = GRE_Ioannis_Michail_Metaxas_hog_pau
 				}
 			}
+
+			#############################################
+			# Canada
+
+			RB_Bennett_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = CAN_RB_Bennett_hog_sco
+				}
+			}
+			William_Lyon_Mackenzie_King_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = CAN_William_Lyon_Mackenzie_King_hog_mli
+				}
+			}
+			Henry_Crerar_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = CAN_Henry_Crerar_hog_pau
+				}
+			}
+			JS_Woodsworth_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = CAN_JS_Woodsworth_hog_sde
+				}
+			}
+			John_Diefenbaker_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = CAN_John_Diefenbaker_hog_npo
+				}
+			}
+
+			#############################################
+			# Egypt
+
+			Aly_Maher_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = EGY_Aly_Maher_hog_ade
+				}
+			}
+
+			#############################################
+			# Iraq
+
+			Kamil_Al_Chaderchi_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = IRQ_Kamil_Al_Chaderchi_hog_sde
+				}
+			}
+
+			#############################################
+			# Italy
+
+			Alcide_De_Gasperi_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = ITA_Alcide_De_Gasperi_hog_sco
+				}
+			}
+			Don_Luigi_Sturzo_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = ITA_Don_Luigi_Sturzo_hog_sde
+				}
+			}
+			Italo_Balbo_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = ITA_Italo_Balbo_hog_npo
+				}
+			}
+
 			pm_name_visible = {
 				has_country_flag = HOG_veiw
 			}
-			
 		}
 		
-		# properties = {
-
-		# }
+		# properties = {}
 			
 		visible = {
 			uses_leader_gui = yes
@@ -168,19 +276,15 @@ scripted_gui = {
 		}
 
 		triggers = {
-			
 			for_leader_button_visible = {
 				uses_leader_gui = yes
 			}
-			
 			#for_leader_frame_visible = {
 				#has_country_flag = HOG_veiw
 			#}
-			
 		}
 		
 		effects = {
-
 			#for_leader_button_click = {
 				#if = {
 					#limit = {
@@ -192,8 +296,6 @@ scripted_gui = {
 					#}
 				#}
 			#}
-		
 		}
-			
 	}
 }

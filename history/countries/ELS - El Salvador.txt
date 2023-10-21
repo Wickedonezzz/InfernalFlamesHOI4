@@ -24,7 +24,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	presidential_republic
 }
 

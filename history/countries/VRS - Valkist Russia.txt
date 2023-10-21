@@ -29,7 +29,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_50
 	partial_economic_mobilisation
 	one_party_dictatorship
 
@@ -37,6 +36,5 @@ add_ideas = {
 	VRS_resisting_unions
 }
 
-recruit_character = VRS_Pavel_Bermondt_Avalov
 recruit_character = VRS_Viktor_Baydalakov
 recruit_character = VRS_Nikolay_Ustryalov

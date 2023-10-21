@@ -20,7 +20,7 @@ country_event = { #Revolt Intro
 	immediate = {log = "[GetDateText]: [Root.GetName]: event indrev.1"}
 	title = indrev.1.t
 	desc = indrev.1.d
-	
+
 	trigger = {
 		original_tag = IND
 		has_country_flag = IND_Revolt
@@ -28,9 +28,9 @@ country_event = { #Revolt Intro
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = indrev.1.a
 		add_political_power = 50
@@ -44,7 +44,7 @@ country_event = { #Victory!
 	immediate = {log = "[GetDateText]: [Root.GetName]: event indrev.2"}
 	title = indrev.2.t
 	desc = indrev.2.d
-	
+
 	trigger = {
 		original_tag = IND
 		has_country_flag = IND_Revolt
@@ -54,9 +54,9 @@ country_event = { #Victory!
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = indrev.2.a
 		add_stability = 0.5
@@ -78,7 +78,7 @@ country_event = { #Nearing Defeat
 	immediate = {log = "[GetDateText]: [Root.GetName]: event indrev.3"}
 	title = indrev.3.t
 	desc = indrev.3.d
-	
+
 	trigger = {
 		original_tag = IND
 		has_country_flag = IND_Revolt
@@ -87,9 +87,9 @@ country_event = { #Nearing Defeat
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = indrev.3.a
 	}
@@ -105,7 +105,7 @@ country_event = { #French Aid
 	is_triggered_only = yes
 
 	fire_only_once = yes
-	
+
 	option = {
 		name = indrev.11.a
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -50000 producer = FRA }
@@ -124,7 +124,7 @@ country_event = { #Soviet Aid
 	is_triggered_only = yes
 
 	fire_only_once = yes
-	
+
 	option = {
 		name = indrev.12.a
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -25000 producer = SOV }
@@ -145,7 +145,7 @@ country_event = { #German Aid
 	is_triggered_only = yes
 
 	fire_only_once = yes
-	
+
 	option = {
 		name = indrev.13.a
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -25000 producer = GER }
@@ -168,17 +168,17 @@ country_event = { #Elections?
 	immediate = {log = "[GetDateText]: [Root.GetName]: event india.1"}
 	title = india.1.t
 	desc = india.1.d
-	
+
 	trigger = {
 		original_tag = IND
 		NOT = { has_war_with = RAJ }
-    is_subject = no
+		is_subject = no
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = { days = 7 }
-	
+
 	option = {
 		name = india.1.a
 		add_political_power = 50
@@ -207,9 +207,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event india.2"}
 	title = "The Princes Make Their Move"
 	desc = india.2.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "What are they up to?"
 		add_stability = -0.10
@@ -221,9 +221,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event india.3"}
 	title = "The First Meeting Of The Provisional Government"
 	desc = india.3.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Despite our differences, we must work together for all of India"
 		add_political_power = 50
@@ -239,9 +239,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event india.4"}
 	title = "Miltia Leaders refuse to disarm"
 	desc = india.4.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "We cannot allow roving bands of armed marauders to terrorise our people"
 		add_stability = -0.10
@@ -257,9 +257,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event india.5"}
 	title = "Disagreements in Delhi"
 	desc = india.5.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Some differences cannot be overcome with words"
 		add_stability = -0.05
@@ -274,9 +274,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event india.6"}
 	title = "The People's Assembly in Calcutta"
 	desc = india.6.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "We will not recognise such a ridiculous institution"
 		add_stability = -0.20
@@ -292,15 +292,15 @@ country_event = {
 	title = "The Collapse Begins"
 	desc = india.7.d
 	picture = GFX_report_event_generic_parliament
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "We must defeat these pretenders!"
 		add_war_support = 0.20
 		hidden_effect = {
-			NEP = { 
-				transfer_state = 811 
+			NEP = {
+				transfer_state = 811
 			}
 			PUN = {
 				add_state_core = 883
@@ -410,7 +410,7 @@ country_event = {
 	title = "Forming the National Government"
 	desc = natind.1.d
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Finally we can make progress without those traitors holding us back"
 		add_stability = 0.20
@@ -470,7 +470,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event natind.2"}
 	title = "Reorganising the Nation"
 	desc = natind.2.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -489,9 +489,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event natind.3"}
 	title = "Imposing Authority"
 	desc = natind.3.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "How can we claim to rule if the people do not respect to our laws?"
 		add_stability = 0.10
@@ -507,9 +507,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event natind.4"}
 	title = "Laying Claim"
 	desc = natind.4.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "All of India will be ours again!"
 		add_war_support = 0.10
@@ -524,9 +524,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event natind.5"}
 	title = "National Language"
 	desc = natind.5.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Hindi, to remind us of our roots!"
 		ai_chance = {
@@ -537,7 +537,7 @@ country_event = {
 			set_country_flag = gov_setup
 		}
 	}
-	
+
 	option = {
 		name = "English, to unite the nation"
 		ai_chance = {
@@ -555,15 +555,15 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event natind.6"}
 	title = "Border Skirmishes"
 	desc = natind.6.d
-	
+
 	trigger = {
 		original_tag = IND
 		has_country_flag = gov_setup
 		has_war = no
 	}
-	
+
 	mean_time_to_happen = { months = 3 }
-	
+
 	option = {
 		name = "Punish them!"
 		ai_chance = {
@@ -577,7 +577,7 @@ country_event = {
 			country_event = { id = natind.7 hours = 8 }
 		}
 	}
-	
+
 	option = {
 		name = "We cannot provoke them"
 		ai_chance = {
@@ -592,9 +592,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event natind.7"}
 	title = "Border Skirmishes"
 	desc = natind.7.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Fight back!"
 		ai_chance = {
@@ -605,7 +605,7 @@ country_event = {
 			type = annex_everything
 		}
 	}
-	
+
 	option = {
 		name = "Ignore this attack"
 		ai_chance = {
@@ -622,7 +622,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event kas.1"}
 	title = "The Muslim Comitte's Coup"
 	desc = kas.1.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -726,9 +726,9 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event prince.2"}
 	desc = prince.2.d
 	title = "Formation of the Princely Pact"
-	
-	is_triggered_only = yes	
-	
+
+	is_triggered_only = yes
+
 	option = {
 		name = "We cannot hope to overcome the nationalists and communists alone."
 		ai_chance = {
@@ -775,12 +775,12 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event prince.4"}
 	desc = prince.4.d
 	title = "The Prince refuses our invite"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "They are making a grave mistake"
 		add_political_power = -50
 	}
 }
-	
+

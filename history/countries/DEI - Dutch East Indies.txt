@@ -83,7 +83,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_00
 	colonial_government
 }
 

@@ -290,7 +290,7 @@ guiTypes = {
 						maxHeight = 20
 					}
 				}
-				
+
 				containerWindowType = {
 					name = "active_national_focus_info"
 					position = { x = 144 y = 88 }
@@ -365,7 +365,7 @@ guiTypes = {
 					format = "UPPER_LEFT"
 				}
 			}
-			
+
 			containerWindowType = {
 				name = "diplomatic_actions"
 				position = { x = 272 y = 385 }
@@ -377,11 +377,11 @@ guiTypes = {
 					bottom = 10
 					top = 12
 				}
-		
+
 				background = {
 					name = "Background"
 					spriteType ="GFX_tiled_window_1b_thin_border"
-					
+
 				}
 
 				iconType = {
@@ -403,7 +403,7 @@ guiTypes = {
 				name = "national_spirit_info"
 				position = { x = 17 y = 285 }
 				size = { width = 530 height = 70 }
-				
+
 				iconType = {
 					name = "diplo_nat_spirits_bg"
 					spriteType = "GFX_diplo_nat_spirits_bg"
@@ -482,11 +482,11 @@ guiTypes = {
 					spriteType ="GFX_tiled_plain_bg"
 				}
 
-#				iconType = {
-#					name = "diplo_details_header"
-#					quadTextureSprite ="GFX_diplo_details_header"
-#					position = { x = 13 y = 1 }
-#				}
+				#				iconType = {
+					#					name = "diplo_details_header"
+					#					quadTextureSprite ="GFX_diplo_details_header"
+					#					position = { x = 13 y = 1 }
+					#				}
 
 				gridboxtype = {
 					name = "trade_grid"
@@ -1333,11 +1333,11 @@ guiTypes = {
 
 			}
 
-#			iconType = {
-#				name = "wargoal_headers_bg"
-#				quadTextureSprite ="GFX_diplo_action_declarewar_top"
-#				position = { x = 3 y = 8 }
-#			}
+			#			iconType = {
+				#				name = "wargoal_headers_bg"
+				#				quadTextureSprite ="GFX_diplo_action_declarewar_top"
+				#				position = { x = 3 y = 8 }
+				#			}
 
 			instantTextboxType = {
 				name = "title"
@@ -1357,7 +1357,7 @@ guiTypes = {
 				maxWidth = 300
 				maxHeight = 300
 				format = center
-#				vertical_alignment = center
+				#				vertical_alignment = center
 			}
 
 			containerWindowType = {
@@ -1452,15 +1452,15 @@ guiTypes = {
 				maxHeight = 20
 				format = center
 				orientation = "Upper_LEFT"
-#				vertical_alignment = center
+				#				vertical_alignment = center
 			}
 
-#			iconType = {
-#				name = "diplo_action_bottom"
-#				quadTextureSprite ="GFX_diplo_action_bottom"
-#				position = { x = 2 y = -70 }
-#				Orientation = "LOWER_LEFT"
-#			}
+			#			iconType = {
+				#				name = "diplo_action_bottom"
+				#				quadTextureSprite ="GFX_diplo_action_bottom"
+				#				position = { x = 2 y = -70 }
+				#				Orientation = "LOWER_LEFT"
+				#			}
 
 			checkBoxType = {
 				name = "call_allies_checkbox"
@@ -1794,20 +1794,20 @@ guiTypes = {
 				spriteType ="GFX_diplo_action_justify_wargoals_bg"
 			}
 
-#			iconType = {
-#				name = "Background"
-#				spriteType ="GFX_diplo_action_justify_wargoals_top_bg"
-#				position = { x = 13 y = 11 }
-#				alwaystransparent = yes
-#			}
+			#			iconType = {
+				#				name = "Background"
+				#				spriteType ="GFX_diplo_action_justify_wargoals_top_bg"
+				#				position = { x = 13 y = 11 }
+				#				alwaystransparent = yes
+				#			}
 
 
-#			iconType = {
-#				name = "wargoal_text_bg"
-#				quadTextureSprite ="GFX_category_header"
-#				position = { x = 8 y = 113 }
-#				alwaystransparent = yes
-#			}
+			#			iconType = {
+				#				name = "wargoal_text_bg"
+				#				quadTextureSprite ="GFX_category_header"
+				#				position = { x = 8 y = 113 }
+				#				alwaystransparent = yes
+				#			}
 
 #			iconType = {
 #				name = "generate_wargoal_header"
@@ -2647,7 +2647,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "create_faction"
 			position = { x = -263 y = -157}
-			size = { width = 527 height = 315 }
+			size = { width = 527 height = 404 }
 			moveable = yes
 			click_to_front = yes
 			orientation= center
@@ -2715,9 +2715,15 @@ guiTypes = {
 				format = centre
 			}
 
+			iconType = {
+				name = "diplo_response_bg"
+				position = {x=30 y=257}
+				quadTextureSprite ="GFX_diplo_response_bg"
+			}
+
 			instantTextBoxType = {
 				name = "diplo_reply"
-				position = { x = 117 y = 220 }
+				position = { x = 117 y = 263 }
 				textureFile = ""
 				font = "hoi_24header"
 				borderSize = {x = 0 y = 0}
@@ -2730,13 +2736,13 @@ guiTypes = {
 
 			iconType = {
 				name = "accept_icon"
-				position = { x = 432 y = 225 }
+				position = { x = 432 y = 268 }
 				spriteType ="GFX_accept_decline_icon"
 			}
 
 			buttonType = {
 				name = "send_button"
-				position = { x = 350 y = -60 }
+				position = { x = 350 y = -53 }
 				quadTextureSprite ="GFX_button_123x34"
 				buttonFont = "hoi_16mbs"
 				Orientation = "LOWER_LEFT"
@@ -2748,7 +2754,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "cancel_button"
-				position = { x = 70 y = -60 }
+				position = { x = 70 y = -53 }
 				shortcut = "ESCAPE"
 				quadTextureSprite ="GFX_button_123x34"
 				buttonFont = "hoi_16mbs"
@@ -2992,9 +2998,8 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "title"
-				position = { x = 0 y = 29 }
+				position = { x = -3 y = 29 }
 				font = "hoi_24header"
-				text = "Maus"
 				maxWidth = 530
 				maxHeight = 20
 				format = center
@@ -3011,7 +3016,6 @@ guiTypes = {
 				name = "time_text"
 				position = { x = 110 y = 93 }
 				font = "hoi_18mbs"
-				text = "Maus"
 				maxWidth = 100
 				maxHeight = 50
 			}
@@ -3036,9 +3040,11 @@ guiTypes = {
 			containerWindowType = {
 				name = "groups"
 				position = { x = 0 y = 121 }
-				size = { width = 100%% height = -280 }
-				margin = { top = 13 left = 13 bottom = 15 right = 25}
+				size = { width = 100%% height = -275 }
+				margin = { top = 13 left = 13 bottom = 13 }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 38
+				smooth_scrolling = yes
 
 				background = {
 					name = "Background"
@@ -3047,18 +3053,16 @@ guiTypes = {
 
 				instantTextboxType = {
 					name = "empty"
-					position = { x = 20 y = 30 }
+					position = { x = 15 y = 30 }
 					font = "hoi_18mbs"
-					text = "Maus"
 					maxWidth = 470
-					maxHeight = 300
+					maxHeight = 200
 					format = center
 				}
 				gridboxtype = {
 					name = "group_grid"
-					position = { x = 3 y = 5}
-					size = { width = 100%% height = 95%% }
-					slotsize = { width = 200 height = 36 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 489 height = 38 }
 					max_slots_horizontal = 1
 					format = "UPPER_LEFT"
 				}
@@ -3068,7 +3072,6 @@ guiTypes = {
 				name = "description"
 				position = { x = 28 y = -270 }
 				font = "hoi_18mbs"
-				text = "Maus"
 				maxWidth = 470
 				maxHeight = 300
 				format = center
@@ -3113,9 +3116,8 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "title"
-				position = { x = 0 y = 29 }
+				position = { x = -3 y = 29 }
 				font = "hoi_24header"
-				text = "Maus"
 				maxWidth = 530
 				maxHeight = 20
 				format = center
@@ -3124,9 +3126,11 @@ guiTypes = {
 			containerWindowType = {
 				name = "groups"
 				position = { x = 0 y = 80 }
-				size = { width = 100%% height = -285 }
-				margin = { top = 13 left = 13 bottom = 15 right = 25}
+				size = { width = 100%% height = -280 }
+				margin = { top = 13 left = 13 bottom = 13 }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 38
+				smooth_scrolling = yes
 
 				background = {
 					name = "Background"
@@ -3135,18 +3139,16 @@ guiTypes = {
 
 				instantTextboxType = {
 					name = "empty"
-					position = { x = 20 y = 30 }
+					position = { x = 15 y = 30 }
 					font = "hoi_18mbs"
-					text = "Maus"
 					maxWidth = 470
-					maxHeight = 300
+					maxHeight = 200
 					format = center
 				}
 				gridboxtype = {
 					name = "group_grid"
-					position = { x = 3 y = 5}
-					size = { width = 100%% height = 95%% }
-					slotsize = { width = 200 height = 36 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 489 height = 38 }
 					max_slots_horizontal = 1
 					format = "UPPER_LEFT"
 				}
@@ -3156,7 +3158,6 @@ guiTypes = {
 				name = "description"
 				position = { x = 28 y = -270 }
 				font = "hoi_18mbs"
-				text = "Maus"
 				maxWidth = 470
 				maxHeight = 300
 				format = center
@@ -3795,8 +3796,8 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 			name = "relations"
-			position = { x = 420 y = 8 }
-			size = { x = 80 y = 32 }
+			position = { x = 350 y = 8 }
+			size = { x = 155 y = 32 }
 			format = left
 			spacing = 1.0
 		}
@@ -4150,9 +4151,8 @@ guiTypes = {
 
 		buttonType = {
 			name = "maximum_amount_button"
-			quadTextureSprite ="GFX_maximum_stockpile_button"
-			position = { x = 304 y = 40 }
-			scale = 0.9
+			quadTextureSprite ="GFX_add_all_button_32x32"
+			position = { x = 302 y = 34 }
 			clicksound = click_default
 		}
 
@@ -4299,7 +4299,6 @@ guiTypes = {
 			spriteType = "GFX_balance_icon"
 
 		}
-
 	}
 
 	containerWindowType = {
@@ -4483,6 +4482,13 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "creator_tag"
+			position = { x=148 y=45 }
+			spriteType = "GFX_flag_small"
+
+		}
+
 		instantTextboxType = {
 			name = "name"
 			position = {x=5 y=4}
@@ -4552,7 +4558,6 @@ guiTypes = {
 			spriteType = "GFX_balance_icon"
 
 		}
-
 	}
 
 	windowType = {
@@ -4761,55 +4766,116 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "diplomacy_expeditionary_group_entry"
-		size = { width = 200 height = 36 }
-		clipping = no
+		name = "diplomacy_send_units_group_entry"
+		size = { width = 489 height = 38 }
 
-
-		background = {
-			name = "Background"
-			spriteType = "GFX_volunteers_entry_bg"
+		buttonType = {
+			name = "background_button"
+			spriteType = "GFX_send_units_entry_bg"
 			clicksound = click_default
 		}
-		iconType ={
-			name ="color"
-			spriteType = "GFX_armyoverview_group_marker"
-			position = { x=384 y=10 }
-			alwaystransparent = yes
-		}
-		iconType ={
-			name ="exp_selection"
-			spriteType = "GFX_expeditionary_force_icon"
-			position = { x=442 y=-3 }
-			alwaystransparent = yes
-		}
-		iconType ={
-			name ="selection"
-			spriteType = "GFX_volunteer_force_icon"
-			position = { x=442 y=-3 }
-			alwaystransparent = yes
-		}
-		instantTextboxType = {
-			name = "count"
-			position = { x = 12 y = 9 }
-			font = "hoi_16mbs"
-			text = "1 division"
-			maxWidth = 116
-			maxHeight = 20
-			fixedsize = yes
+
+		containerWindowType = {
+			name = "unassigned_divisions"
+
+			instantTextboxType = {
+				name = "description"
+				position = { x = 13 y = 9 }
+				font = "hoi_18mbs"
+				maxWidth = 470
+				maxHeight = 19
+				fixedsize = yes
+				alwaystransparent = yes
+			}
 		}
 
-		instantTextboxType = {
-			name = "commander"
-			position = { x = 165 y = 7 }
-			font = "hoi_18mbs"
-			text = NO_COMMANDER_FOR_GROUP
-			maxWidth = 200
-			maxHeight = 20
-			fixedsize = yes
+		containerWindowType = {
+			name = "army"
+
+			iconType = {
+				name ="army_shield"
+				quadTextureSprite = "GFX_theatre_army_shield"
+				position = { x=5 y=4 }
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "division_count"
+				position = { x=15 y=13 }
+				font = "hoi_18mbs"
+				maxWidth = 28
+				maxHeight = 23
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "division_count_wide"
+				position = { x=-5 y=15 }
+				font = "hoi_16mbs"
+				maxWidth = 45
+				maxHeight = 23
+				fixedsize = yes
+				format = right
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "leader_skill_bg"
+				spriteType = "GFX_land_battle_leader_skill_bg"
+				position = { x=43 y=2 }
+				scale = 0.7
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "leader_skill"
+				position = { x=40 y=5 }
+				font = "hoi_18mbs"
+				maxWidth = 30
+				maxHeight = 23
+				format = center
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "leader_icon"
+				position = { x=83 y=19 }
+				quadTextureSprite ="GFX_leader_unknown"
+				centerposition = yes
+				scale = 0.17
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "army_name"
+				position = { x = 106 y = 2 }
+				font = "hoi_16mbs"
+				maxWidth = 180
+				maxHeight = 17
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "leader_name"
+				position = { x = 106 y = 16 }
+				font = "hoi_18mbs"
+				maxWidth = 180
+				maxHeight = 19
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+
+			OverlappingElementsBoxType = {
+				name = "divisions_summary"
+				position = { x=284 y=5 }
+				size = { x=202 y=27 }
+				spacing = 0
+			}
+			positionType = {
+				name = "divisions_summary_max_item_count"
+				position = { x=11 y=0 }
+			}
 		}
 	}
-
 
 	containerWindowType = {
 		name = "request_license_land_entry"
@@ -4913,7 +4979,6 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-
 	}
 
 	containerWindowType = {
@@ -5021,17 +5086,16 @@ guiTypes = {
 			clicksound = click_default
 		}
 
-		instantTextboxType = {
-			name = "name"
-			position = { x = 0 y = 5 }
-			font = "hoi_18mbs"
-			text = "invasion"
-			maxWidth = 200
-			maxHeight = 20
-			format = center
-		}
+	instantTextboxType = {
+		name = "name"
+		position = { x = 0 y = 5 }
+		font = "hoi_18mbs"
+		text = "invasion"
+		maxWidth = 200
+		maxHeight = 20
+		format = center
 	}
-
+}
 	containerWindowType = {
 		name = "subideology_container_diplo"
 		position = { x = 263 y = 143 }

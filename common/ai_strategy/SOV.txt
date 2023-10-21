@@ -211,6 +211,7 @@ SOV_template_design_2 = {
 		original_tag = SOV
 		date > 1940.1.1				
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -265,6 +266,7 @@ SOV_stop_building_garbage = {
 	enable = {
 		original_tag = SOV
 	}
+	abort = { always = no }
 	
 	ai_strategy = {
 		type = build_army
@@ -278,6 +280,7 @@ SOV_naval_role_ratios_historical = {
 		has_dlc = "Man the Guns"
 		original_tag = SOV
 	}
+	abort = { always = no }
 
 	ai_strategy = {
 		type = role_ratio
@@ -346,6 +349,7 @@ SOV_support_socialist_spain = {
 			}
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		value = 200
@@ -370,6 +374,7 @@ SOV_support_socialist_brazil = {
 			}
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		value = 200
@@ -392,6 +397,7 @@ SOV_support_australia = {
 			has_war = yes
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		value = 200
@@ -402,5 +408,35 @@ SOV_support_australia = {
 		value = 200
 		type = send_volunteers_desire
 		id = AST
+	}
+}
+
+SOV_support_greece = {
+	allowed = { original_tag = SOV }
+	enable = {
+		GRE = {
+			exists = yes
+			OR = {
+				has_government = libertarian_socialist
+				has_government = collectivist
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		value = 200
+		type = support
+		id = GRE
+	}
+	ai_strategy = {
+		value = 200
+		type = send_volunteers_desire
+		id = GRE
+	}
+	ai_strategy = {
+		value = 200
+		type = befriend
+		id = GRE
 	}
 }

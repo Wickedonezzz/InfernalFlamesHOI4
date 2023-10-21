@@ -842,6 +842,9 @@ characters = {
 	SWE_Per_Engdahl = {
 		name = "Per Engdahl"
 		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWE/Portrait_SWE_Per_Engdahl.png"
+			}
 		}
 	}
 	SWE_Per_Albin_Hansson = {

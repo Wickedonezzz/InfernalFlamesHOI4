@@ -28,7 +28,6 @@ set_war_support = 0.50
 set_research_slots = 2
 
 add_ideas = {
-	party_pop_0_50
 	absolute_monarchy
   HEJ_british_influence
   HEJ_british_army_training

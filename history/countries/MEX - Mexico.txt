@@ -52,7 +52,6 @@ if = {
 set_country_flag = monroe_doctrine
 
 add_ideas = {
-	party_pop_0_30
 	one_party_dictatorship
 
 	MEX_nationalist_strife

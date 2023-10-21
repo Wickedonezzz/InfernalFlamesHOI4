@@ -34,7 +34,7 @@ operative_leader_event = {
 
 	option = {
 		name = lar_operative_event.3.a
-		
+
 	}
 }
 

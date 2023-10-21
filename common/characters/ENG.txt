@@ -9,57 +9,57 @@ characters = {
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = vanguardist_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = collectivist_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = libertarian_socialist_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = social_democrat_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = social_liberal_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = market_liberal_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = toryism_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = authdem_junta_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = absolute_mon_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = national_populist_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 		country_leader = {
       desc = "POLITICS_ENG_GEORGE_V_DESC"
 			ideology = valkist_subtype
-			traits = { }
+			traits = { george_windsor }
 		}
 	}
 	ENG_Jock_Haston = {
@@ -689,9 +689,10 @@ characters = {
 		}
 	}
 	ENG_Arthur_Greenwood = {
-		name = "Arthur Greenwood"
+		name = ENG_Arthur_Greenwood
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/ENG/Portrait_ENG_Arthur_Greenwood.png"
 				small = "gfx/interface/ministers/ENG/ENG_Arthur_Greenwood.png"
 			}
 		}
@@ -843,9 +844,10 @@ characters = {
 		}
 	}
 	ENG_Anthony_Eden = {
-		name = "Anthony Eden"
+		name = ENG_Anthony_Eden
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/ENG/Portrait_ENG_Anthony_Eden.png"
 				small = "gfx/interface/ministers/ENG/ENG_Anthony_Eden.png"
 			}
 		}
@@ -897,9 +899,10 @@ characters = {
 		}
 	}
 	ENG_Samuel_Hoare = {
-		name = "Samuel Hoare"
+		name = ENG_Samuel_Hoare
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/ENG/Portrait_ENG_Samuel_Hoare.png"
 				small = "gfx/interface/ministers/ENG/ENG_Samuel_Hoare.png"
 			}
 		}
@@ -924,9 +927,10 @@ characters = {
 		}
 	}
 	ENG_Jack_Churchill = {
-		name = "Jack Churchill"
+		name = ENG_Jack_Churchill
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/ENG/Portrait_ENG_Jack_Churchill.png"
 				small = "gfx/interface/ministers/ENG/ENG_Jack_Churchill.png"
 			}
 		}

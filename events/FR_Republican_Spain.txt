@@ -14,15 +14,9 @@ country_event = {
 	title = repspain.0.t
 	desc = repspain.0.d
 	#picture = NOR_tranmel_tale
-	
-	 trigger = {
-	 	tag = SPR
-	 }
+	is_triggered_only = yes
+	fire_only_once = yes
 
-	# mean_time_to_happen = { days = 2 }
-	
-    fire_only_once = yes
-	
 	option = {
 		name = repspain.0.a
 		add_political_power = 5
@@ -37,14 +31,14 @@ country_event = {
 	title = repspain.1.t
 	desc = repspain.1.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		date > 1936.1.10
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.1.a
 		add_political_power = -15
@@ -65,14 +59,14 @@ country_event = {
 	title = repspain.2.t
 	desc = repspain.2.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		date > 1936.1.17
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.2.a
 		add_political_power = 10
@@ -88,14 +82,14 @@ country_event = {
 	title = repspain.3.t
 	desc = repspain.3.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		controls_state = 169
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.3.a
 		add_political_power = 15
@@ -116,14 +110,14 @@ country_event = {
 	title = repspain.4.t
 	desc = repspain.4.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		controls_state = 171
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.4.a
 		add_political_power = 15
@@ -147,15 +141,15 @@ country_event = {
 	title = repspain.5.t
 	desc = repspain.5.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		SPM = { exists = no }
 		SPF = { exists = no }
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.5.a
 		hidden_effect = {
@@ -170,11 +164,11 @@ country_event = {
 	title = repspain.6.t
 	desc = repspain.6.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.6.a
 		declare_war_on = {
@@ -192,14 +186,14 @@ country_event = {
 	title = repspain.7.t
 	desc = repspain.7.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		controls_state = 167
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.7.a
 		add_political_power = 10
@@ -220,14 +214,14 @@ country_event = {
 	title = repspain.8.t
 	desc = repspain.8.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		controls_state = 165
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.8.a
 		add_political_power = 20
@@ -247,11 +241,11 @@ country_event = {
 	title = repspain.9.t
 	desc = repspain.9.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.9.a
 		add_stability = -0.10
@@ -259,7 +253,8 @@ country_event = {
 		add_political_power = 50
 		add_ideas = SPR_civil_war_recovery_idea
 		hidden_effect = {
-			load_focus_tree = FR_Republican_Spain
+			clr_country_flag = SPR_IN_CIVIL_WAR
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = social_democrat popularity = -0.02 }
 			add_popularity = { ideology = social_liberal popularity = -0.07 }
 			add_popularity = { ideology = market_liberal popularity = -0.07 }
@@ -307,6 +302,10 @@ country_event = {
 			add_ideas = SPAIN_very_low_recognition_idea
 			set_cosmetic_tag = SPR_republic
 			set_global_flag = SPR_spanish_civil_war_ended_flag
+			event_target:unified_spain = {
+				clear_global_event_target = unified_spain
+			}
+			save_global_event_target_as = unified_spain
 		}
 	}
 }
@@ -317,7 +316,7 @@ country_event = {
 	title = repspain.10.t
 	desc = repspain.10.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		NOT = {
@@ -326,9 +325,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.10.a
 		add_political_power = -50
@@ -351,11 +350,11 @@ country_event = {
 	title = repspain.11.t
 	desc = repspain.11.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.11.a
 		add_stability = -0.03
@@ -375,7 +374,7 @@ country_event = {
 	title = repspain.12.t
 	desc = repspain.12.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -384,9 +383,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.12.a
 		add_political_power = -50
@@ -408,16 +407,16 @@ country_event = {
 	title = repspain.13.t
 	desc = repspain.13.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_global_flag = SPR_spanish_civil_war_ended_flag
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 50 }
-	
+
 	option = {
 		name = repspain.13.a
 		add_stability = -0.02
@@ -430,7 +429,7 @@ country_event = {
 	title = repspain.14.t
 	desc = repspain.14.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_stability < 0.2
@@ -438,18 +437,18 @@ country_event = {
 			has_completed_focus = SPR_first_republican_election
 		}
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 50 }
-	
+
 	option = {
 		name = repspain.14.a
 		ai_chance = { base = 85 }
 		add_political_power = -50
 		add_stability = 0.02
 	}
-	
+
 	option = {
 		name = repspain.14.b
 		ai_chance = { base = 15 }
@@ -458,23 +457,23 @@ country_event = {
 		set_politics = {
 			ruling_party = authoritarian_democrat elections_allowed = no
 		}
-		add_coalition_social_liberal = yes 
+		add_coalition_social_liberal = yes
 		hidden_effect = {
-			set_party_name = { 
-				ideology = authoritarian_democrat 
-				long_name = SPR_military_party_long 
-				name = SPR_military_party 
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = SPR_military_party_long
+				name = SPR_military_party
 			}
 			add_country_leader_role = {
-        character = SPR_Niceto_Alcala_Zamora
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
+				character = SPR_Niceto_Alcala_Zamora
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
 			remove_ideas_with_trait = head_of_government
-			add_ideas = SPR_Vicente_Rojo_Lluch_hog_ade
+			activate_advisor = SPR_Vicente_Rojo_Lluch_hog_ade
 			country_event = { id = repspain.15 days = 20 }
 		}
 	}
@@ -486,11 +485,11 @@ country_event = {
 	title = repspain.15.t
 	desc = repspain.15.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.15.a
 		add_stability = 0.08
@@ -504,17 +503,17 @@ country_event = {
 	title = repspain.16.t
 	desc = repspain.16.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_country_flag = SPR_election_happened_flag
 		date > 1938.1.1
 	}
-	
+
 	mean_time_to_happen = { days = 100 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.16.a
 		add_political_power = -20
@@ -531,11 +530,11 @@ country_event = {
 	title = repspain.17.t
 	desc = repspain.17.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.17.a
 		ai_chance = {
@@ -555,35 +554,35 @@ country_event = {
 		add_popularity = { ideology = social_liberal popularity = 0.02 }
 		hidden_effect = {
 			add_country_leader_role = {
-        character = SPR_Manuel_Azana
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
+				character = SPR_Manuel_Azana
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
 			if = {
 				limit = {
 					has_idea = SPR_Manuel_Azana_hog_sli
 				}
 				remove_ideas_with_trait = head_of_government
-				add_ideas = SPR_Diego_Martinez_Barrio_hog_sli
+				activate_advisor = SPR_Diego_Martinez_Barrio_hog_sli
 			}
 		}
 	}
-	
+
 	option = {
 		name = repspain.17.b
 		ai_chance = {
@@ -603,25 +602,25 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = 0.02 }
 		hidden_effect = {
 			add_country_leader_role = {
-        character = SPR_Alejandro_Lerroux
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
+				character = SPR_Alejandro_Lerroux
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -632,33 +631,33 @@ country_event = {
 	title = repspain.18.t
 	desc = repspain.18.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.18.a
 		set_politics = {
 			ruling_party = authoritarian_democrat elections_allowed = no
 		}
-		add_coalition_social_liberal = yes 
+		add_coalition_social_liberal = yes
 		hidden_effect = {
-			set_party_name = { 
-				ideology = authoritarian_democrat 
-				long_name = SPR_military_party_long 
-				name = SPR_military_party 
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = SPR_military_party_long
+				name = SPR_military_party
 			}
 			add_country_leader_role = {
-        character = SPR_Niceto_Alcala_Zamora
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
+				character = SPR_Niceto_Alcala_Zamora
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
 			remove_ideas_with_trait = head_of_government
-			add_ideas = SPR_Vicente_Rojo_Lluch_hog_ade
+			activate_advisor = SPR_Vicente_Rojo_Lluch_hog_ade
 			country_event = { id = repspain.15 days = 20 }
 		}
 	}
@@ -670,11 +669,11 @@ country_event = {
 	title = repspain.19.t
 	desc = repspain.19.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.19.a
 		add_country_leader_trait = dictator
@@ -689,11 +688,11 @@ country_event = {
 	title = repspain.100.t
 	desc = repspain.100.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.100.a
 	}
@@ -705,11 +704,11 @@ country_event = {
 	title = repspain.101.t
 	desc = repspain.101.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.101.a
 		add_stability = 0.02
@@ -722,11 +721,11 @@ country_event = {
 	title = repspain.102.t
 	desc = repspain.102.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.102.a
 		add_stability = 0.02
@@ -742,11 +741,11 @@ country_event = {
 	title = repspain.103.t
 	desc = repspain.103.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.103.a
 		ai_chance = { base = 50 }
@@ -755,18 +754,18 @@ country_event = {
 		}
 		add_popularity = { ideology = social_liberal popularity = 0.05 }
 		set_country_flag = SPR_election_happened_flag
-		end_coalition = yes 
+		end_coalition = yes
 		hidden_effect = {
-			set_party_name = { 
-				ideology = authoritarian_democrat 
-				long_name = SPR_authoritarian_democrat_party_long 
-				name = SPR_authoritarian_democrat_party 
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = SPR_authoritarian_democrat_party_long
+				name = SPR_authoritarian_democrat_party
 			}
 			remove_ideas_with_trait = head_of_government
-			add_ideas = SPR_Manuel_Azana_hog_sli
+			activate_advisor = SPR_Manuel_Azana_hog_sli
 		}
 	}
-	
+
 	option = {
 		name = repspain.103.b
 		ai_chance = { base = 50 }
@@ -775,15 +774,15 @@ country_event = {
 		}
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 		set_country_flag = SPR_election_happened_flag
-		end_coalition = yes 
+		end_coalition = yes
 		hidden_effect = {
-			set_party_name = { 
-				ideology = authoritarian_democrat 
-				long_name = SPR_authoritarian_democrat_party_long 
-				name = SPR_authoritarian_democrat_party 
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = SPR_authoritarian_democrat_party_long
+				name = SPR_authoritarian_democrat_party
 			}
 			remove_ideas_with_trait = head_of_government
-			add_ideas = SPR_Miguel_Maura_Gamazo_hog_sco
+			activate_advisor = SPR_Miguel_Maura_Gamazo_hog_sco
 		}
 	}
 }
@@ -794,11 +793,11 @@ country_event = {
 	title = repspain.104.t
 	desc = repspain.104.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.104.a
 	}
@@ -810,11 +809,11 @@ country_event = {
 	title = repspain.105.t
 	desc = repspain.105.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.105.a
 	}
@@ -826,14 +825,14 @@ country_event = {
 	title = repspain.106.t
 	desc = repspain.106.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.106.a
-		add_coalition_social_democrat = yes 
+		add_coalition_social_democrat = yes
 	}
 }
 
@@ -843,11 +842,11 @@ country_event = {
 	title = repspain.107.t
 	desc = repspain.107.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.107.a
 	}
@@ -859,11 +858,11 @@ country_event = {
 	title = repspain.108.t
 	desc = repspain.108.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.108.a
 		ai_chance = { base = 50 }
@@ -874,7 +873,7 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.02 }
 		add_popularity = { ideology = social_conservative popularity = -0.02 }
 	}
-	
+
 	option = {
 		name = repspain.108.b
 		ai_chance = { base = 50 }
@@ -892,11 +891,11 @@ country_event = {
 	title = repspain.109.t
 	desc = repspain.109.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.109.a
 	}
@@ -908,11 +907,11 @@ country_event = {
 	title = repspain.110.t
 	desc = repspain.110.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.110.a
 	}
@@ -924,19 +923,19 @@ country_event = {
 	title = repspain.111.t
 	desc = repspain.111.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.111.a
-		add_coalition_social_conservative = yes 
+		add_coalition_social_conservative = yes
 		hidden_effect = {
-			set_party_name = { 
-				ideology = social_conservative 
-				long_name = SPR_ceda_conservative_party_long 
-				name = SPR_ceda_conservative_party 
+			set_party_name = {
+				ideology = social_conservative
+				long_name = SPR_ceda_conservative_party_long
+				name = SPR_ceda_conservative_party
 			}
 		}
 	}
@@ -948,11 +947,11 @@ country_event = {
 	title = repspain.112.t
 	desc = repspain.112.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.112.a
 	}
@@ -964,11 +963,11 @@ country_event = {
 	title = repspain.150.t
 	desc = repspain.150.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.150.a
 		ai_chance = { base = 90 }
@@ -979,7 +978,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = repspain.150.b
 		ai_chance = { base = 10 }
@@ -997,11 +996,11 @@ country_event = {
 	title = repspain.151.t
 	desc = repspain.151.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.151.a
 		if = {
@@ -1055,11 +1054,11 @@ country_event = {
 	title = repspain.152.t
 	desc = repspain.152.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.152.a
 	}
@@ -1071,11 +1070,11 @@ country_event = {
 	title = repspain.153.t
 	desc = repspain.153.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.153.a
 		add_manpower = 5000
@@ -1093,11 +1092,11 @@ country_event = {
 	title = repspain.154.t
 	desc = repspain.154.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.154.a
 	}
@@ -1109,11 +1108,11 @@ country_event = {
 	title = repspain.155.t
 	desc = repspain.155.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.155.a
 		ai_chance = { base = 75 }
@@ -1123,7 +1122,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = repspain.155.b
 		ai_chance = { base = 25 }
@@ -1141,11 +1140,11 @@ country_event = {
 	title = repspain.156.t
 	desc = repspain.156.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.156.a
 	}
@@ -1157,11 +1156,11 @@ country_event = {
 	title = repspain.157.t
 	desc = repspain.157.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.157.a
 	}
@@ -1173,11 +1172,11 @@ country_event = {
 	title = repspain.158.t
 	desc = repspain.158.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.158.a
 		ai_chance = { base = 75 }
@@ -1187,7 +1186,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = repspain.158.b
 		ai_chance = { base = 25 }
@@ -1205,11 +1204,11 @@ country_event = {
 	title = repspain.159.t
 	desc = repspain.159.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.159.a
 	}
@@ -1221,11 +1220,11 @@ country_event = {
 	title = repspain.160.t
 	desc = repspain.160.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.160.a
 	}
@@ -1237,7 +1236,7 @@ country_event = {
 	title = repspain.161.t
 	desc = repspain.161.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1246,11 +1245,11 @@ country_event = {
 		has_country_flag = SPR_strengthen_french_ties_flag
 		has_idea = SPAIN_very_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = repspain.161.a
 		swap_ideas = {
@@ -1266,7 +1265,7 @@ country_event = {
 	title = repspain.161.t
 	desc = repspain.162.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1275,11 +1274,11 @@ country_event = {
 		has_country_flag = SPR_strengthen_french_ties_flag
 		has_idea = SPAIN_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = repspain.161.a
 		swap_ideas = {
@@ -1295,7 +1294,7 @@ country_event = {
 	title = repspain.161.t
 	desc = repspain.163.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1304,11 +1303,11 @@ country_event = {
 		has_country_flag = SPR_strengthen_french_ties_flag
 		has_idea = SPAIN_medium_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = repspain.161.a
 		swap_ideas = {
@@ -1324,7 +1323,7 @@ country_event = {
 	title = repspain.161.t
 	desc = repspain.164.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1333,11 +1332,11 @@ country_event = {
 		has_country_flag = SPR_strengthen_french_ties_flag
 		has_idea = SPAIN_high_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = repspain.161.a
 		remove_ideas = SPAIN_high_recognition_idea
@@ -1350,7 +1349,7 @@ country_event = {
 	title = repspain.165.t
 	desc = repspain.165.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPR
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1363,11 +1362,11 @@ country_event = {
 			has_idea = SPAIN_high_recognition_idea
 		}
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 10 }
-	
+
 	option = {
 		name = repspain.165.a
 		if = {
@@ -1421,11 +1420,11 @@ country_event = {
 	title = repspain.200.t
 	desc = repspain.200.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = repspain.200.a
 		if = {

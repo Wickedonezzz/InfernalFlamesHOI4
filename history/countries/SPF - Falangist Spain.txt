@@ -116,7 +116,6 @@ if = {
 give_military_access = SPM
 
 add_ideas = {
-	party_pop_0_80
 	SPR_SPM_SPF_SPA_spanish_civil_war_idea
 	SPF_disloyal_militias_idea
 	SPF_coalition_opposing_views_idea
@@ -194,3 +193,5 @@ activate_advisor = SPF_Carlos_Ibarguren_hog_npo
 activate_advisor = SPF_Onesimo_Redondo_for_npo
 activate_advisor = SPF_Eugenio_d_Ors_eco_val
 activate_advisor = SPF_Nimio_de_Anquin_sec_pau
+
+set_country_flag = SPF_IN_CIVIL_WAR

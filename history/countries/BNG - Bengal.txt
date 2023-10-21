@@ -54,3 +54,4 @@ set_popularities = {
   valkist = 0
 }
 
+recruit_character = BNG_Muzaffar_Ahmad

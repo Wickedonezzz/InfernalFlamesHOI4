@@ -1,16 +1,4 @@
 characters = {
-	VRS_Pavel_Bermondt_Avalov = {
-		name = "Pavel Bermondt Avalov"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/VRS/Portrait_VRS_Pavel_Bermondt_Avalov.png"
-			}
-		}
-		country_leader = {
-			ideology = authoritarian_democrat_subtype
-			traits = { }
-		}
-	}
 	VRS_Viktor_Baydalakov = {
 		name = "Viktor Baydalakov"
 		portraits = {

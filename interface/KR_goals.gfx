@@ -2161,10 +2161,6 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/focus_BEL_Confederalism.png"
   }
 	spriteType = {
-    name = "GFX_BEL_Catholic_Education"
-    texturefile = "gfx/interface/goals/focus_Catholic_Education.png"
-  }
-	spriteType = {
     name = "GFX_BEL_Economic_Regions"
     texturefile = "gfx/interface/goals/goal_Economic_Regions.png"
   }
@@ -2174,7 +2170,7 @@ spriteTypes = {
   }
 	spriteType = {
     name = "GFX_BEL_Improve_Catholic_Relations"
-    texturefile = "gfx/interface/goals/focus_BEL_Improve_Catholic_Relations.png"
+    texturefile = "gfx/interface/goals/BEL_Improve_Catholic_Relations.png"
   }
 	spriteType = {
     name = "GFX_BEL_Improve_Spanish_Relations"
@@ -3141,7 +3137,7 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/GRE_hellenic_shipyard.png"
   }
 	spriteType = {
-    name = "GFX_GRE_megali"
+    name = "GFX_goal_GRE_megali"
     texturefile = "gfx/interface/goals/GRE_megali.png"
   }
 	spriteType = {

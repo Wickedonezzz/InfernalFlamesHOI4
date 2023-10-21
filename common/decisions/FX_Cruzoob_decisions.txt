@@ -282,11 +282,8 @@ CRU_mexican_yucateco_war = {
 		}
 		allowed = {
 			OR = {
-				original_tag = ENG
-				original_tag = FRA
 				original_tag = GER
-				original_tag = ITA
-				original_tag = POR
+				original_tag = HOL
 			}
 		}
 		available = {
@@ -333,10 +330,8 @@ CRU_mexican_yucateco_war = {
 		}
 		allowed = {
 			OR = {
-				original_tag = FRA
 				original_tag = GER
-				original_tag = ITA
-				original_tag = POR
+				original_tag = HOL
 			}
 		}
 		available = {
@@ -386,10 +381,8 @@ CRU_mexican_yucateco_war = {
 		}
 		allowed = {
 			OR = {
-				original_tag = FRA
 				original_tag = GER
-				original_tag = ITA
-				original_tag = POR
+				original_tag = HOL
 			}
 		}
 		available = {

@@ -16,15 +16,16 @@ country_event = {
 	title = nor.0.t
 	desc = nor.0.d
 	picture = NOR_tranmel_tale
-	
-	 trigger = {
-	 	tag = NOR
-	 }
-	
+
+	# trigger = {
+		# 	tag = NOR
+		# }
+
 	# mean_time_to_happen = { days = 5 }
-	
+	is_triggered_only = yes
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.0.a
 	}
@@ -38,18 +39,19 @@ country_event = {
 	title = nor.1.t
 	desc = nor.1.d
 	picture = NOR_parliament
-	
+
+
 	trigger = {
 		tag = NOR
 		date > 1936.5.15
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		name = nor.1.a
 		add_political_power = 20
@@ -65,9 +67,9 @@ country_event = {
 	title = nor.2.t
 	desc = nor.2.d
 	picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = nor.2.a
 		add_political_power = 20
@@ -84,14 +86,14 @@ country_event = {
 	title = nor.3.t
 	desc = nor.3.d
 	picture = NOR_black_monday
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.9.15
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.3.a
 		ai_chance = { base = 40 }
@@ -102,9 +104,9 @@ country_event = {
 		add_stability = -0.04
 		add_popularity = { ideology = collectivist popularity = 0.02 }
 		add_popularity = { ideology = libertarian_socialist popularity = 0.02 }
-		
+
 	}
-	
+
 	option = {
 		name = nor.3.b
 		ai_chance = { base = 30 }
@@ -116,9 +118,9 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = -0.02 }
 		add_popularity = { ideology = market_liberal popularity = 0.02 }
 		add_popularity = { ideology = social_liberal popularity = 0.02 }
-		
+
 	}
-	
+
 	option = {
 		name = nor.3.c
 		ai_chance = { base = 30 }
@@ -133,7 +135,7 @@ country_event = {
 		add_popularity = { ideology = national_populist popularity = 0.01 }
 		add_popularity = { ideology = valkist popularity = 0.01 }
 		set_country_flag = NOR_rebellious_samfundsvern
-		
+
 	}
 }
 
@@ -145,11 +147,11 @@ country_event = {
 	title = nor.4.t
 	desc = nor.4.d
 	picture = NOR_black_monday_2
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.4.a
 		set_country_flag = NOR_london_crash_flag
@@ -168,16 +170,16 @@ country_event = {
 	title = nor.5.t
 	desc = nor.5.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.5.1
 	}
-	
+
 	mean_time_to_happen = { days = 4 }
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.5.a
 		add_political_power = 15
@@ -192,16 +194,16 @@ country_event = {
 	title = nor.6.t
 	desc = nor.6.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.9.10
 	}
-	
+
 	mean_time_to_happen = { days = 4 }
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.6.a
 		add_political_power = -25
@@ -216,15 +218,15 @@ country_event = {
 	title = nor.7.t
 	desc = nor.7.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1937.2.20
 		has_country_flag = NOR_ap_victory_flag
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.7.a
 		ai_chance = { base = 55 }
@@ -232,7 +234,7 @@ country_event = {
 		add_stability = -0.02
 		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
 	}
-	
+
 	option = {
 		name = nor.7.b
 		ai_chance = { base = 45 }
@@ -251,14 +253,14 @@ country_event = {
 	title = nor.10.t
 	desc = nor.10.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.6.1
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.10.a
 		add_political_power = 10
@@ -271,14 +273,14 @@ country_event = {
 	title = nor.11.t
 	desc = nor.11.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.6.10
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.11.a
 		ai_chance = { base = 50 }
@@ -287,7 +289,7 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = -0.01 }
 		set_country_flag = NOR_angry_samfundsvern
 	}
-	
+
 	option = {
 		name = nor.11.b
 		ai_chance = { base = 50 }
@@ -303,15 +305,15 @@ country_event = {
 	title = nor.12.t
 	desc = nor.12.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.6.15
 		has_country_flag = NOR_angry_radicals
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.12.a
 		add_political_power = -20
@@ -328,15 +330,15 @@ country_event = {
 	title = nor.13.t
 	desc = nor.13.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.6.15
 		has_country_flag = NOR_angry_samfundsvern
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.13.a
 		add_political_power = -20
@@ -353,157 +355,157 @@ country_event = {
 	title = nor.14.t
 	desc = nor.14.d
 	picture = NOR_1936_election
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.10.19
 	}
-	
+
 	option = { # Arbeiderpartiet Reelected
-	name = nor.14.a
-	ai_chance = {
-		factor = 65
-	}
-	add_popularity = {
-		ideology = libertarian_socialist popularity = 0.05
-	}
-	add_popularity = {
-		ideology = collectivist popularity = 0.05
-	}
-	add_political_power = -50
-	remove_ideas_with_trait = head_of_government
-	hidden_effect = {
-		add_stability = 0.03
-		set_country_flag = NOR_ap_victory_flag
-		set_country_flag = NOR_democracy_survives_flag
-		add_country_leader_role = {
-			character = NOR_Martin_Tranmæl
-			promote_leader = yes
-			country_leader = {
-				ideology = collectivist_subtype
-				traits = {}
+		name = nor.14.a
+		ai_chance = {
+			factor = 65
+		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.05
+		}
+		add_popularity = {
+			ideology = collectivist popularity = 0.05
+		}
+		add_political_power = -50
+		remove_ideas_with_trait = head_of_government
+		hidden_effect = {
+			add_stability = 0.03
+			set_country_flag = NOR_ap_victory_flag
+			set_country_flag = NOR_democracy_survives_flag
+			add_country_leader_role = {
+				character = NOR_Martin_Tranmæl
+				promote_leader = yes
+				country_leader = {
+					ideology = collectivist_subtype
+					traits = {}
+				}
 			}
-		}
-		country_event = { id = nor.15 days = 2 }
-		country_event = { id = nor.110 days = 3 }
-	}
-}
-
-option = { # Venstre Elected
-name = nor.14.b
-ai_chance = {
-	factor = 10
-}
-set_politics = {
-	ruling_party = social_liberal elections_allowed = no
-}
-add_popularity = {
-	ideology = social_democrat popularity = 0.05
-}
-add_popularity = {
-	ideology = social_liberal popularity = 0.10
-}
-add_political_power = 10
-remove_every_minister = yes
-add_ideas = {
-	NOR_Haakon_Five_hog_sli
-	NOR_Jacob_Worm_Mueller_for_sli
-	NOR_Jens_Isak_Kobro_eco_sli
-	NOR_Arne_Sunde_sec_sli
-}
-
-remove_ideas = NOR_socialism_surrounded_idea
-remove_ideas = NOR_monarchist_right_idea
-add_ideas = NOR_monarchist_right_idea1
-set_country_flag = NOR_democracy_survives_flag
-set_country_flag = NOR_venstre_victory_flag
-
-remove_coalition_collectivist = yes 
-add_coalition_social_democrat = yes 
-hidden_effect = {
-	add_stability = 0.03
-	add_country_leader_role = {
-		character = NOR_Martin_Tranmæl
-		promote_leader = yes
-		country_leader = {
-			ideology = social_liberal_subtype
-			traits = {}
+			country_event = { id = nor.15 days = 2 }
+			country_event = { id = nor.110 days = 3 }
 		}
 	}
-	country_event = { id = nor.111 days = 3 }
-}
-}
 
-option = { # Høyre Victory
-name = nor.14.c
-ai_chance = {
-	factor = 15
-}
-set_politics = {
-	ruling_party = market_liberal elections_allowed = no
-}
-add_popularity = {
-	ideology = market_liberal popularity = 0.10
-}
-add_popularity = {
-	ideology = social_conservative popularity = 0.05
-}
-add_political_power = 10
-remove_every_minister = yes
-add_ideas = {
-	NOR_Carl_Joachim_Hambro_hog_mli
-	NOR_Arne_Scheel_for_mli
-	NOR_Sven_Nielsen_eco_mli
-	NOR_Harald_Gram_sec_mli
-}
+	option = { # Venstre Elected
+		name = nor.14.b
+		ai_chance = {
+			factor = 10
+		}
+		set_politics = {
+			ruling_party = social_liberal elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_democrat popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.10
+		}
+		add_political_power = 10
+		remove_every_minister = yes
 
-remove_ideas = NOR_socialism_surrounded_idea
-remove_ideas = NOR_monarchist_right_idea
-add_ideas = NOR_monarchist_right_idea1
-set_country_flag = NOR_democracy_survives_flag
-set_country_flag = NOR_hoyre_victory_flag
+		activate_advisor = NOR_Hakon_Five_hog_sli
+		activate_advisor = NOR_Jacob_Worm_Muller_for_sli
+		activate_advisor = NOR_Jens_Isak_Kobro_eco_sli
+		activate_advisor = NOR_Arne_Sunde_sec_sli
 
-remove_coalition_collectivist = yes 
-add_coalition_social_conservative = yes 
-hidden_effect = {
-	add_stability = 0.03
-	add_country_leader_role = {
-		character = NOR_Martin_Tranmæl
-		promote_leader = yes
-		country_leader = {
-			ideology = market_liberal_subtype
-			traits = {}
+
+		remove_ideas = NOR_socialism_surrounded_idea
+		remove_ideas = NOR_monarchist_right_idea
+		add_ideas = NOR_monarchist_right_idea1
+		set_country_flag = NOR_democracy_survives_flag
+		set_country_flag = NOR_venstre_victory_flag
+
+		remove_coalition_collectivist = yes
+		add_coalition_social_democrat = yes
+		hidden_effect = {
+			add_stability = 0.03
+			add_country_leader_role = {
+				character = NOR_Martin_Tranmæl
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			country_event = { id = nor.111 days = 3 }
 		}
 	}
-	country_event = { id = nor.112 days = 3 }
-}
-}
 
-option = { # Cancel Election
-name = nor.14.e
-ai_chance = {
-	factor = 10
-}
-add_ideas = republican_dictatorship
-add_popularity = {
-	ideology = collectivist popularity = 0.01
-}
-add_popularity = {
-	ideology = paternal_autocrat popularity = 0.02
-}
-add_popularity = {
-	ideology = national_populist popularity = 0.02
-}
-add_popularity = {
-	ideology = valkist popularity = 0.05
-}
-add_political_power = -10
-add_manpower = 15000
-set_country_flag = NOR_1936_election_cancelled_flag
-custom_effect_tooltip  = NOR_cancel_election_tooltip
-}
+	option = { # Høyre Victory
+		name = nor.14.c
+		ai_chance = {
+			factor = 15
+		}
+		set_politics = {
+			ruling_party = market_liberal elections_allowed = no
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.10
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.05
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Arne_Scheel_for_mli
+		activate_advisor = NOR_Sven_Nielsen_eco_mli
+		activate_advisor = NOR_Harald_Gram_sec_mli
+
+
+		remove_ideas = NOR_socialism_surrounded_idea
+		remove_ideas = NOR_monarchist_right_idea
+		add_ideas = NOR_monarchist_right_idea1
+		set_country_flag = NOR_democracy_survives_flag
+		set_country_flag = NOR_hoyre_victory_flag
+
+		remove_coalition_collectivist = yes
+		add_coalition_social_conservative = yes
+		hidden_effect = {
+			add_stability = 0.03
+			add_country_leader_role = {
+				character = NOR_Martin_Tranmæl
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			country_event = { id = nor.112 days = 3 }
+		}
+	}
+
+	option = { # Cancel Election
+		name = nor.14.e
+		ai_chance = {
+			factor = 10
+		}
+		add_ideas = republican_dictatorship
+		add_popularity = {
+			ideology = collectivist popularity = 0.01
+		}
+		add_popularity = {
+			ideology = paternal_autocrat popularity = 0.02
+		}
+		add_popularity = {
+			ideology = national_populist popularity = 0.02
+		}
+		add_popularity = {
+			ideology = valkist popularity = 0.05
+		}
+		add_political_power = -10
+		add_manpower = 15000
+		set_country_flag = NOR_1936_election_cancelled_flag
+		custom_effect_tooltip  = NOR_cancel_election_tooltip
+	}
 }
 
 country_event = {
@@ -512,11 +514,11 @@ country_event = {
 	title = nor.15.t
 	desc = nor.15.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.15.a
 		ai_chance = { base = 40 }
@@ -526,22 +528,21 @@ country_event = {
 		}
 		add_popularity = { ideology = collectivist popularity = 0.08 }
 		add_popularity = { ideology = libertarian_socialist popularity = -0.10 }
-		
+
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Konrad_Nordahl_hog_col
-			NOR_Nordahl_Grieg_for_lib
-			NOR_Fredrik_Monsen_eco_col
-			NOR_Alfred_Madsen_sec_lib
-		}
-		
+
+		activate_advisor = NOR_Konrad_Nordahl_hog_col
+		activate_advisor = NOR_Nordahl_Grieg_for_lib
+		activate_advisor = NOR_Fredrik_Monsen_eco_col
+		activate_advisor = NOR_Alfred_Madsen_sec_lib
+
 		hidden_effect = {
-			remove_coalition_collectivist = yes 
-			add_coalition_libertarian_socialist = yes 
+			remove_coalition_collectivist = yes
+			add_coalition_libertarian_socialist = yes
 			country_event = { id = nor.109 days = 4 }
 		}
 	}
-	
+
 	option = {
 		name = nor.15.b
 		ai_chance = { base = 60 }
@@ -549,7 +550,7 @@ country_event = {
 		set_country_flag = NOR_ap_victory_flag
 		add_popularity = { ideology = libertarian_socialist popularity = 0.08 }
 		add_popularity = { ideology = collectivist popularity = -0.10 }
-		add_ideas = NOR_Alfred_Madsen_sec_lib
+		activate_advisor = NOR_Alfred_Madsen_sec_lib
 	}
 }
 
@@ -561,15 +562,15 @@ country_event = {
 	title = nor.16.t
 	desc = nor.16.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.11.1
 		has_country_flag = NOR_1936_election_cancelled_flag
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.16.a
 		add_political_power = -100
@@ -588,16 +589,16 @@ country_event = {
 	title = nor.17.t
 	desc = nor.17.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.11.8
 		has_country_flag = NOR_mass_protest_far_right_flag
 		has_country_flag = NOR_angry_samfundsvern
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.17.a
 		add_political_power = -50
@@ -615,16 +616,16 @@ country_event = {
 	title = nor.18.t
 	desc = nor.18.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.11.13
 		has_country_flag = NOR_mass_protest_far_right_flag
 		has_country_flag = NOR_angry_samfundsvern
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.18.a
 		add_political_power = -20
@@ -642,7 +643,7 @@ country_event = {
 	title = nor.19.t
 	desc = nor.19.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.12.10
@@ -650,9 +651,9 @@ country_event = {
 		has_country_flag = NOR_angry_samfundsvern
 		has_country_flag = NOR_rebellious_samfundsvern
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.19.a
 		add_political_power = -75
@@ -675,7 +676,7 @@ country_event = {
 	title = nor.20.t
 	desc = nor.20.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.12.22
@@ -683,9 +684,9 @@ country_event = {
 		has_country_flag = NOR_angry_samfundsvern
 		has_country_flag = NOR_rebellious_samfundsvern
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.20.a
 		add_political_power = -50
@@ -699,7 +700,7 @@ country_event = {
 	title = nor.21.t
 	desc = nor.21.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1937.1.1
@@ -707,9 +708,9 @@ country_event = {
 		has_country_flag = NOR_angry_samfundsvern
 		has_country_flag = NOR_rebellious_samfundsvern
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.21.a
 		add_political_power = -50
@@ -721,25 +722,24 @@ country_event = {
 		add_popularity = { ideology = national_populist popularity = 0.05 }
 		add_popularity = { ideology = valkist popularity = 0.05 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Karl_Marthinsen_hog_npo
-			NOR_Axel_Stang_for_npo
-			NOR_Tormod_Hustad_eco_npo
-			NOR_Sverre_Riisnaes_sec_npo
-		}
-		
+
+		activate_advisor = NOR_Karl_Marthinsen_hog_npo
+		activate_advisor = NOR_Axel_Stang_for_npo
+		activate_advisor = NOR_Tormod_Hustad_eco_npo
+		activate_advisor = NOR_Sverre_Riisnaes_sec_npo
+
 		remove_ideas = NOR_military_deserters_idea
 		remove_ideas = NOR_naval_deserters_idea
 		remove_ideas = NOR_socialism_surrounded_idea
 		remove_ideas = NOR_war_on_samfundsvernet_idea
 		add_ideas = NOR_samfundsvernets_rule_idea
 		set_country_flag = NOR_samfundsvernet_couped_norway_flag
-		
-		remove_coalition_collectivist = yes 
-		add_coalition_social_conservative = yes 
-		add_coalition_valkist = yes 
-		add_coalition_paternal_autocrat = yes 
-		
+
+		remove_coalition_collectivist = yes
+		add_coalition_social_conservative = yes
+		add_coalition_valkist = yes
+		add_coalition_paternal_autocrat = yes
+
 		custom_effect_tooltip  = NOR_allow_nationalist_generals_tooltip
 		hidden_effect = {
 			add_country_leader_role = {
@@ -769,15 +769,15 @@ country_event = {
 	title = nor.22.t
 	desc = nor.22.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1937.1.5
 		has_country_flag = NOR_samfundsvernet_couped_norway_flag
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.22.a
 		add_political_power = 200
@@ -789,21 +789,21 @@ country_event = {
 		add_popularity = { ideology = market_liberal popularity = 0.15 }
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Carl_Joachim_Hambro_hog_mli
-			NOR_Arne_Scheel_for_mli
-			NOR_Sven_Nielsen_eco_mli
-			NOR_Harald_Gram_sec_mli
-		}
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Arne_Scheel_for_mli
+		activate_advisor = NOR_Sven_Nielsen_eco_mli
+		activate_advisor = NOR_Harald_Gram_sec_mli
+
 		set_country_flag = NOR_hoyre_victory_flag
-		
-		remove_coalition_paternal_autocrat = yes 
+
+		remove_coalition_paternal_autocrat = yes
 		remove_coalition_valkist = yes
 		hidden_effect = {
 			set_country_flag = NOR_democracy_survives_flag
 		}
 	}
-	
+
 	option = {
 		name = nor.22.b
 		add_political_power = 200
@@ -814,17 +814,17 @@ country_event = {
 		}
 		add_popularity = { ideology = paternal_autocrat popularity = 0.20 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Gulbrand_Lunde_hog_pau:
-			NOR_Finn_Stoeren_for_pau
-			NOR_Frederik_Prytz_eco_pau
-			NOR_Per_von_Hirsch_sec_pau
-		}
+
+		activate_advisor = NOR_Gulbrand_Lunde_hog_pau:
+		activate_advisor = NOR_Finn_Stoeren_for_pau
+		activate_advisor = NOR_Frederik_Prytz_eco_pau
+		activate_advisor = NOR_Per_von_Hirsch_sec_pau
+
 		set_country_flag = NOR_monarchist_victory_flag
 		set_cosmetic_tag = NOR_KING
 		remove_ideas = NOR_monarchist_right_idea
-		
-		end_coalition = yes 
+
+		end_coalition = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_Ragnvald_Hvoslef
@@ -836,7 +836,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.22.c
 		add_political_power = 200
@@ -848,14 +848,14 @@ country_event = {
 		remove_ideas_with_trait = foreign_minister
 		remove_ideas_with_trait = economy_minister
 		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Vidkun_Quisling_hog_pau
-		add_ideas = NOR_Stein_Barth_Heyerdahl_for_val
-		add_ideas = NOR_Alf_Larsen_Whist_eco_pau
-		add_ideas = NOR_Gulbrand_Lunde_sec_val
+		activate_advisor = NOR_Vidkun_Quisling_hog_pau
+		activate_advisor = NOR_Stein_Barth_Heyerdahl_for_val
+		activate_advisor = NOR_Alf_Larsen_Whist_eco_pau
+		activate_advisor = NOR_Gulbrand_Lunde_sec_val
 		set_country_flag = NOR_ns_victory_flag
-		
-		end_coalition = yes 
-		add_coalition_valkist = yes 
+
+		end_coalition = yes
+		add_coalition_valkist = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_Vidkun_Quisling
@@ -875,7 +875,7 @@ country_event = {
 	title = nor.23.t
 	desc = nor.23.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.11.20
@@ -887,9 +887,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.23.a
 		add_political_power = 50
@@ -903,7 +903,7 @@ country_event = {
 	title = nor.24.t
 	desc = nor.24.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1936.12.20
@@ -915,9 +915,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.24.a
 		add_political_power = 50
@@ -931,7 +931,7 @@ country_event = {
 	title = nor.25.t
 	desc = nor.25.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1937.1.1
@@ -943,9 +943,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.25.a
 		add_political_power = 50
@@ -963,7 +963,7 @@ country_event = {
 	title = nor.26.t
 	desc = nor.26.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1937.1.15
@@ -975,9 +975,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.26.a
 		add_political_power = 50
@@ -998,11 +998,11 @@ country_event = {
 	title = nor.30.t
 	desc = nor.30.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.30.a
 		add_political_power = 10
@@ -1015,11 +1015,11 @@ country_event = {
 	title = nor.31.t
 	desc = nor.31.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.31.a
 		ai_chance = { base = 65 }
@@ -1059,7 +1059,7 @@ country_event = {
 		clr_country_flag = NOR_republic_flag
 		set_country_flag = NOR_monarchy_restored
 	}
-	
+
 	option = {
 		name = nor.31.b
 		ai_chance = { base = 35 }
@@ -1074,11 +1074,11 @@ country_event = {
 	title = nor.32.t
 	desc = nor.32.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.32.a
 		add_political_power = 10
@@ -1091,11 +1091,11 @@ country_event = {
 	title = nor.33.t
 	desc = nor.33.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.33.a
 		add_political_power = 10
@@ -1108,7 +1108,7 @@ country_event = {
 			}
 		}
 		remove_ideas_with_trait = head_of_government
-		add_ideas = NOR_Rudolf_Raeder_hog_npo
+		activate_advisor = NOR_Rudolf_Raeder_hog_npo
 	}
 }
 
@@ -1118,11 +1118,11 @@ country_event = {
 	title = nor.34.t
 	desc = nor.34.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.34.a
 		add_political_power = 25
@@ -1145,11 +1145,11 @@ country_event = {
 	title = nor.35.t
 	desc = nor.35.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.35.a
 		add_political_power = 10
@@ -1158,9 +1158,9 @@ country_event = {
 		add_popularity = { ideology = paternal_autocrat popularity = -0.04 }
 		remove_ideas_with_trait = foreign_minister
 		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Albert_Viljam_Hagelin_for_pau
-		add_ideas = NOR_Sverre_Riisnaes_sec_pau
-		add_coalition_national_populist = yes 
+		activate_advisor = NOR_Albert_Viljam_Hagelin_for_pau
+		activate_advisor = NOR_Sverre_Riisnaes_sec_pau
+		add_coalition_national_populist = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_HM_King_Haakon_VII
@@ -1180,11 +1180,11 @@ country_event = {
 	title = nor.36.t
 	desc = nor.36.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.36.a
 		ai_chance = { base = 45 }
@@ -1203,7 +1203,7 @@ country_event = {
 		}
 		set_country_flag = NOR_st_olavs_spirit_flag
 	}
-	
+
 	option = {
 		name = nor.36.b
 		ai_chance = { base = 55 }
@@ -1233,17 +1233,17 @@ country_event = {
 	title = nor.37.t
 	desc = nor.37.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			country_event = { id = nor.130 days = 1095 }
 		}
 	}
-	
+
 	option = {
 		name = nor.37.a
 		ai_chance = { base = 20 }
@@ -1256,14 +1256,14 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Carl_Joachim_Hambro_hog_mli
-			NOR_Birger_Braadland_for_sco
-			NOR_Axel_Aubert_eco_ade
-			NOR_Per_von_Hirsch_sec_pau
-		}
-		add_coalition_paternal_autocrat = yes 
-		add_coalition_market_liberal = yes 
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Birger_Braadland_for_sco
+		activate_advisor = NOR_Axel_Aubert_eco_ade
+		activate_advisor = NOR_Per_von_Hirsch_sec_pau
+
+		add_coalition_paternal_autocrat = yes
+		add_coalition_market_liberal = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_HM_King_Haakon_VII
@@ -1275,7 +1275,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.37.b
 		ai_chance = { base = 30 }
@@ -1287,13 +1287,13 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Johan_Bernhard_Hjort_hog_ade
-			NOR_Birger_Braadland_for_sco
-			NOR_Eivind_Blehr_eco_pau
-			NOR_Ragnar_Skancke_sec_ade
-		}
-		add_coalition_paternal_autocrat = yes 
+
+		activate_advisor = NOR_Johan_Bernhard_Hjort_hog_ade
+		activate_advisor = NOR_Birger_Braadland_for_sco
+		activate_advisor = NOR_Eivind_Blehr_eco_pau
+		activate_advisor = NOR_Ragnar_Skancke_sec_ade
+
+		add_coalition_paternal_autocrat = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_Olav_V
@@ -1305,7 +1305,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.37.c
 		ai_chance = { base = 50 }
@@ -1321,11 +1321,11 @@ country_event = {
 	title = nor.40.t
 	desc = nor.40.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.40.a
 		ai_chance = { base = 90 }
@@ -1355,7 +1355,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.40.b
 		ai_chance = { base = 10 }
@@ -1369,11 +1369,11 @@ country_event = {
 	title = nor.41.t
 	desc = nor.41.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.41.a
 		ai_chance = { base = 70 }
@@ -1381,7 +1381,7 @@ country_event = {
 			country_event = { id = nor.43 }
 		}
 	}
-	
+
 	option = {
 		name = nor.41.b
 		ai_chance = { base = 30 }
@@ -1398,11 +1398,11 @@ country_event = {
 	title = nor.42.t
 	desc = nor.42.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.42.a
 		add_political_power = 50
@@ -1423,11 +1423,11 @@ country_event = {
 	title = nor.43.t
 	desc = nor.43.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.43.a
 		ai_chance = { base = 50 }
@@ -1436,7 +1436,7 @@ country_event = {
 			type = annex_everything
 		}
 	}
-	
+
 	option = {
 		name = nor.43.b
 		ai_chance = { base = 50 }
@@ -1453,11 +1453,11 @@ country_event = {
 	title = nor.44.t
 	desc = nor.44.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.44.a
 		add_political_power = 50
@@ -1470,11 +1470,11 @@ country_event = {
 	title = nor.45.t
 	desc = nor.45.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.45.a
 		ai_chance = { base = 70 }
@@ -1482,7 +1482,7 @@ country_event = {
 			country_event = { id = nor.47 }
 		}
 	}
-	
+
 	option = {
 		name = nor.45.b
 		ai_chance = { base = 30 }
@@ -1499,11 +1499,11 @@ country_event = {
 	title = nor.46.t
 	desc = nor.46.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.46.a
 		add_political_power = 50
@@ -1524,11 +1524,11 @@ country_event = {
 	title = nor.47.t
 	desc = nor.47.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.47.a
 		ai_chance = { base = 50 }
@@ -1537,7 +1537,7 @@ country_event = {
 			type = annex_everything
 		}
 	}
-	
+
 	option = {
 		name = nor.47.b
 		ai_chance = { base = 50 }
@@ -1554,11 +1554,11 @@ country_event = {
 	title = nor.48.t
 	desc = nor.48.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.48.a
 		add_political_power = 50
@@ -1571,13 +1571,13 @@ country_event = {
 	title = nor.49.t
 	desc = nor.49.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		is_subject = no
 		country_exists = ENG
 		has_war_with = ENG
-		OR = { 
+		OR = {
 			AND = {
 				controls_state = 101
 				controls_state = 911
@@ -1589,13 +1589,13 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 7
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.49.a
 		ai_chance = {
@@ -1605,7 +1605,7 @@ country_event = {
 			country_event = { id = nor.50 }
 		}
 	}
-	
+
 	option = {
 		name = nor.49.b
 		ai_chance = {
@@ -1621,11 +1621,11 @@ country_event = {
 	title = nor.50.t
 	desc = nor.50.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.50.a
 		ai_chance = {
@@ -1687,7 +1687,7 @@ country_event = {
 			country_event = { id = nor.51 }
 		}
 	}
-	
+
 	option = {
 		name = nor.50.b
 		ai_chance = {
@@ -1703,11 +1703,11 @@ country_event = {
 	title = nor.51.t
 	desc = nor.51.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.51.a
 		add_political_power = 100
@@ -1759,11 +1759,11 @@ country_event = {
 	title = nor.52.t
 	desc = nor.52.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.52.a
 		ai_chance = { base = 90 }
@@ -1778,7 +1778,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.52.b
 		ai_chance = { base = 10 }
@@ -1792,11 +1792,11 @@ country_event = {
 	title = nor.53.t
 	desc = nor.53.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.53.a
 		ai_chance = { base = 70 }
@@ -1804,7 +1804,7 @@ country_event = {
 			country_event = { id = nor.55 }
 		}
 	}
-	
+
 	option = {
 		name = nor.53.b
 		ai_chance = { base = 30 }
@@ -1821,11 +1821,11 @@ country_event = {
 	title = nor.54.t
 	desc = nor.54.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.54.a
 		add_political_power = 50
@@ -1842,11 +1842,11 @@ country_event = {
 	title = nor.55.t
 	desc = nor.55.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.55.a
 		ai_chance = { base = 50 }
@@ -1855,7 +1855,7 @@ country_event = {
 			type = annex_everything
 		}
 	}
-	
+
 	option = {
 		name = nor.55.b
 		ai_chance = { base = 50 }
@@ -1872,11 +1872,11 @@ country_event = {
 	title = nor.56.t
 	desc = nor.56.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.56.a
 		add_political_power = 50
@@ -1889,11 +1889,11 @@ country_event = {
 	title = nor.61.t
 	desc = nor.61.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.61.a
 		ai_chance = { base = 70 }
@@ -1905,7 +1905,7 @@ country_event = {
 			country_event = { id = nor.65 }
 		}
 	}
-	
+
 	option = {
 		name = nor.61.b
 		ai_chance = { base = 30 }
@@ -1919,11 +1919,11 @@ country_event = {
 	title = nor.62.t
 	desc = nor.62.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.62.a
 		ai_chance = { base = 70 }
@@ -1934,7 +1934,7 @@ country_event = {
 		}
 		give_guarantee = NOR
 	}
-	
+
 	option = {
 		name = nor.62.b
 		ai_chance = { base = 30 }
@@ -1951,11 +1951,11 @@ country_event = {
 	title = nor.63.t
 	desc = nor.63.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.63.a
 		add_political_power = 10
@@ -1973,11 +1973,11 @@ country_event = {
 	title = nor.64.t
 	desc = nor.64.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.64.a
 		add_opinion_modifier = { target = SWE modifier = betrayed_guarantee }
@@ -1990,11 +1990,11 @@ country_event = {
 	title = nor.65.t
 	desc = nor.65.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.65.a
 		ai_chance = { base = 70 }
@@ -2005,7 +2005,7 @@ country_event = {
 		}
 		give_guarantee = NOR
 	}
-	
+
 	option = {
 		name = nor.65.b
 		ai_chance = { base = 30 }
@@ -2022,11 +2022,11 @@ country_event = {
 	title = nor.66.t
 	desc = nor.66.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.66.a
 		add_political_power = 10
@@ -2044,11 +2044,11 @@ country_event = {
 	title = nor.67.t
 	desc = nor.67.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.67.a
 		add_opinion_modifier = { target = DEN modifier = betrayed_guarantee }
@@ -2061,19 +2061,19 @@ country_event = {
 	title = nor.68.t
 	desc = nor.68.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		has_country_flag = NOR_swe_accepts
 		has_country_flag = NOR_den_accepts
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.68.a
 		add_political_power = 10
@@ -2100,11 +2100,11 @@ country_event = {
 	title = nor.70.t
 	desc = nor.70.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.70.a
 		ai_chance = { base = 80 }
@@ -2114,7 +2114,7 @@ country_event = {
 			country_event = { id = nor.71 }
 		}
 	}
-	
+
 	option = {
 		name = nor.70.b
 		ai_chance = { base = 20 }
@@ -2131,11 +2131,11 @@ country_event = {
 	title = nor.71.t
 	desc = nor.71.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.71.a
 		add_opinion_modifier = { target = GER modifier = in_faction }
@@ -2148,11 +2148,11 @@ country_event = {
 	title = nor.72.t
 	desc = nor.72.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.72.a
 		add_opinion_modifier = { target = GER modifier = betrayed_guarantee }
@@ -2165,11 +2165,11 @@ country_event = {
 	title = nor.73.t
 	desc = nor.73.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.73.a
 		ai_chance = { base = 80 }
@@ -2179,7 +2179,7 @@ country_event = {
 			country_event = { id = nor.74 }
 		}
 	}
-	
+
 	option = {
 		name = nor.73.b
 		ai_chance = { base = 20 }
@@ -2196,11 +2196,11 @@ country_event = {
 	title = nor.74.t
 	desc = nor.74.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.74.a
 		add_opinion_modifier = { target = GER modifier = in_faction }
@@ -2213,11 +2213,11 @@ country_event = {
 	title = nor.75.t
 	desc = nor.75.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.75.a
 		add_opinion_modifier = { target = GER modifier = betrayed_guarantee }
@@ -2230,11 +2230,11 @@ country_event = {
 	title = nor.76.t
 	desc = nor.76.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.76.a
 		ai_chance = { base = 80 }
@@ -2246,7 +2246,7 @@ country_event = {
 			country_event = { id = nor.77 }
 		}
 	}
-	
+
 	option = {
 		name = nor.76.b
 		ai_chance = { base = 20 }
@@ -2263,11 +2263,11 @@ country_event = {
 	title = nor.77.t
 	desc = nor.77.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.77.a
 		add_ideas = NOR_naval_agreement_idea
@@ -2281,11 +2281,11 @@ country_event = {
 	title = nor.78.t
 	desc = nor.78.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.78.a
 	}
@@ -2297,7 +2297,7 @@ country_event = {
 	title = nor.90.t
 	desc = nor.90.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1938.4.1
@@ -2311,9 +2311,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.90.a
 	}
@@ -2325,7 +2325,7 @@ country_event = {
 	title = nor.91.t
 	desc = nor.91.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.4.5
@@ -2339,9 +2339,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.91.a
 		add_popularity = { ideology = social_conservative popularity = 0.01 }
@@ -2359,7 +2359,7 @@ country_event = {
 	title = nor.92.t
 	desc = nor.92.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1941.6.1
@@ -2373,9 +2373,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.92.a
 		add_political_power = 10
@@ -2407,7 +2407,7 @@ country_event = {
 	title = nor.94.t
 	desc = nor.94.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.7.1
@@ -2417,9 +2417,9 @@ country_event = {
 		}
 		has_country_flag = NOR_ap_victory_flag
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.94.a
 		ai_chance = {
@@ -2435,7 +2435,7 @@ country_event = {
 		}
 		add_ideas = NOR_labour_conferrence_1_idea
 	}
-	
+
 	option = {
 		name = nor.94.b
 		ai_chance = {
@@ -2448,7 +2448,7 @@ country_event = {
 		}
 		add_ideas = NOR_labour_conferrence_2_idea
 	}
-	
+
 	option = {
 		name = nor.94.c
 		ai_chance = {
@@ -2469,7 +2469,7 @@ country_event = {
 	title = nor.95.t
 	desc = nor.95.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.7.15
@@ -2477,9 +2477,9 @@ country_event = {
 		has_country_flag = NOR_ap_victory_flag
 		has_country_flag = NOR_conferrence_begins_flag
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.95.a
 		ai_chance = {
@@ -2504,7 +2504,7 @@ country_event = {
 				add_idea = NOR_labour_conferrence_11_idea
 			}
 		}
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2516,7 +2516,7 @@ country_event = {
 				add_idea = NOR_labour_conferrence_21_idea
 			}
 		}
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2529,7 +2529,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.95.b
 		ai_chance = {
@@ -2551,7 +2551,7 @@ country_event = {
 				add_idea = NOR_labour_conferrence_12_idea
 			}
 		}
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2563,7 +2563,7 @@ country_event = {
 				add_idea = NOR_labour_conferrence_22_idea
 			}
 		}
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2576,7 +2576,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.95.c
 		ai_chance = {
@@ -2598,7 +2598,7 @@ country_event = {
 				add_idea = NOR_labour_conferrence_13_idea
 			}
 		}
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2610,7 +2610,7 @@ country_event = {
 				add_idea = NOR_labour_conferrence_23_idea
 			}
 		}
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2631,7 +2631,7 @@ country_event = {
 	title = nor.96.t
 	desc = nor.96.d
 	picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.8.1
@@ -2639,9 +2639,9 @@ country_event = {
 		has_country_flag = NOR_ap_victory_flag
 		has_country_flag = NOR_conferrence_continues_flag
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.96.a
 		ai_chance = {
@@ -2655,9 +2655,9 @@ country_event = {
 		add_popularity = {
 			ideology = vanguardist popularity = 0.02
 		}
-		
+
 		## 1 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2691,9 +2691,9 @@ country_event = {
 				add_idea = NOR_labour_conferrence_131_idea
 			}
 		}
-		
+
 		## 2 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2727,9 +2727,9 @@ country_event = {
 				add_idea = NOR_labour_conferrence_231_idea
 			}
 		}
-		
+
 		## 3 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2764,7 +2764,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.96.b
 		ai_chance = {
@@ -2775,9 +2775,9 @@ country_event = {
 		add_popularity = {
 			ideology = libertarian_socialist popularity = 0.04
 		}
-		
+
 		## 1 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2811,9 +2811,9 @@ country_event = {
 				add_idea = NOR_labour_conferrence_132_idea
 			}
 		}
-		
+
 		## 2 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2847,9 +2847,9 @@ country_event = {
 				add_idea = NOR_labour_conferrence_232_idea
 			}
 		}
-		
+
 		## 3 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2884,7 +2884,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.96.c
 		ai_chance = {
@@ -2895,9 +2895,9 @@ country_event = {
 		add_popularity = {
 			ideology = social_democrat popularity = 0.04
 		}
-		
+
 		## 1 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2931,9 +2931,9 @@ country_event = {
 				add_idea = NOR_labour_conferrence_133_idea
 			}
 		}
-		
+
 		## 2 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -2967,9 +2967,9 @@ country_event = {
 				add_idea = NOR_labour_conferrence_233_idea
 			}
 		}
-		
+
 		## 3 ##
-		
+
 		if = {
 			limit = {
 				NOR = {
@@ -3014,193 +3014,191 @@ country_event = {
 	title = nor.99.t
 	desc = nor.99.d
 	picture = NOR_1936_election
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.10.10
 		has_country_flag = NOR_democracy_survives_flag
 		has_country_flag = NOR_ap_victory_flag
 	}
-	
+
 	option = { # Arbeiderpartiet Coalition Elected
-	name = nor.99.a
-	ai_chance = {
-		factor = 50
-	}
-	set_politics = {
-		ruling_party = libertarian_socialist elections_allowed = no
-	}
-	add_popularity = {
-		ideology = collectivist popularity = 0.01
-	}
-	add_popularity = {
-		ideology = libertarian_socialist popularity = 0.02
-	}
-	add_popularity = {
-		ideology = social_liberal popularity = 0.01
-	}
-	add_political_power = 10
-	remove_every_minister = yes
-	add_ideas = {
-		NOR_Sverre_Stoestad_hog_lib
-		NOR_Wilhelm_Morgenstierne_for_lib
-		NOR_Adolf_Indreboe_eco_lib
-		NOR_Jakob_Friis_sec_lib
-	}
-	
-	set_country_flag = NOR_ap_1940_victory_flag
-	hidden_effect = {
-		if = {
-			limit = {
-				has_country_flag = NOR_president_tranmael_1936
-				has_country_flag = NOR_republic_flag
-			}
-			add_country_leader_role = {
-				character = NOR_Martin_Tranmæl
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
-				}
-			}
-			country_event = { id = nor.114 days = 2 }
+		name = nor.99.a
+		ai_chance = {
+			factor = 50
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_christensen_1936
-				has_country_flag = NOR_republic_flag
-			}
-			add_country_leader_role = {
-				character = NOR_Ingolf_Elster_Christensen
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
-				}
-			}
-			country_event = { id = nor.114 days = 2 }
+		set_politics = {
+			ruling_party = libertarian_socialist elections_allowed = no
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_mowinckel_1936
-				has_country_flag = NOR_republic_flag
-			}
-			add_country_leader_role = {
-				character = NOR_Johan_Ludwig_Mowinckel
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
-				}
-			}
-			country_event = { id = nor.114 days = 2 }
+		add_popularity = {
+			ideology = collectivist popularity = 0.01
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_monarchy_restored
-			}
-			add_country_leader_role = {
-				character = NOR_HM_King_Haakon_VII
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
-				}
-			}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.02
 		}
-	}
-}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.01
+		}
+		add_political_power = 10
+		remove_every_minister = yes
 
-option = { # Borgerlige Coalition Victory
-name = nor.99.b
-ai_chance = {
-	factor = 50
-}
-set_politics = {
-	ruling_party = market_liberal elections_allowed = no
-}
-add_popularity = {
-	ideology = social_liberal popularity = 0.01
-}
-add_popularity = {
-	ideology = market_liberal popularity = 0.02
-}
-add_popularity = {
-	ideology = social_conservative popularity = 0.01
-}
-add_political_power = 10
-remove_every_minister = yes
-add_ideas = {
-	NOR_Carl_Joachim_Hambro_hog_mli
-	NOR_Arne_Scheel_for_mli
-	NOR_Sven_Nielsen_eco_mli
-	NOR_Harald_Gram_sec_mli
-}
+		activate_advisor = NOR_Sverre_Stoestad_hog_lib
+		activate_advisor = NOR_Wilhelm_Morgenstierne_for_lib
+		activate_advisor = NOR_Adolf_Indreboe_eco_lib
+		activate_advisor = NOR_Jakob_Friis_sec_lib
 
-set_country_flag = NOR_hoyre_1940_victory_flag
-hidden_effect = {
-	if = {
-		limit = {
-			has_country_flag = NOR_president_tranmael_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Martin_Tranmæl
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
+		set_country_flag = NOR_ap_1940_victory_flag
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.114 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.114 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.114 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_monarchy_restored
+				}
+				add_country_leader_role = {
+					character = NOR_HM_King_Haakon_VII
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
 			}
 		}
-		country_event = { id = nor.118 days = 2 }
 	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_christensen_1936
-			has_country_flag = NOR_republic_flag
+
+	option = { # Borgerlige Coalition Victory
+		name = nor.99.b
+		ai_chance = {
+			factor = 50
 		}
-		add_country_leader_role = {
-			character = NOR_Ingolf_Elster_Christensen
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
+		set_politics = {
+			ruling_party = market_liberal elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.01
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.01
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Arne_Scheel_for_mli
+		activate_advisor = NOR_Sven_Nielsen_eco_mli
+		activate_advisor = NOR_Harald_Gram_sec_mli
+
+		set_country_flag = NOR_hoyre_1940_victory_flag
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_monarchy_restored
+				}
+				add_country_leader_role = {
+					character = NOR_HM_King_Haakon_VII
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
 			}
 		}
-		country_event = { id = nor.118 days = 2 }
 	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_mowinckel_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Johan_Ludwig_Mowinckel
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.118 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_monarchy_restored
-		}
-		add_country_leader_role = {
-			character = NOR_HM_King_Haakon_VII
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-	}
-}
-}
 }
 
 country_event = {
@@ -3209,212 +3207,212 @@ country_event = {
 	title = nor.100.t
 	desc = nor.100.d
 	picture = NOR_1936_election
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.10.10
 		has_country_flag = NOR_true_socialist_republic_flag
 		has_country_flag = NOR_ap_victory_flag
 	}
-	
+
 	option = { # Radicals Elected
-	name = nor.100.a
-	ai_chance = {
-		factor = 45
-	}
-	set_politics = {
-		ruling_party = collectivist elections_allowed = no
-	}
-	add_popularity = {
-		ideology = collectivist popularity = 0.05
-	}
-	add_political_power = 10
-	remove_every_minister = yes
-	add_ideas = {
-		NOR_Konrad_Nordahl_hog_col
-		NOR_Arvid_Gilbert_Hansen_for_col
-		NOR_Ole_Colbjoernsen_eco_col
-		NOR_Olav_Hindahl_sec_col
-	}
-	set_country_flag = NOR_radical_1940_victory_flag
-	hidden_effect = {
-		if = {
-			limit = {
-				has_country_flag = NOR_president_tranmael_1936
-			}
-			add_country_leader_role = {
-				character = NOR_Martin_Tranmæl
-				promote_leader = yes
-				country_leader = {
-					ideology = collectivist_subtype
-					traits = {}
-				}
-			}
+		name = nor.100.a
+		ai_chance = {
+			factor = 45
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_christensen_1936
-			}
-			add_country_leader_role = {
-				character = NOR_Ingolf_Elster_Christensen
-				promote_leader = yes
-				country_leader = {
-					ideology = collectivist_subtype
-					traits = {}
-				}
-			}
+		set_politics = {
+			ruling_party = collectivist elections_allowed = no
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_mowinckel_1936
-			}
-			add_country_leader_role = {
-				character = NOR_Johan_Ludwig_Mowinckel
-				promote_leader = yes
-				country_leader = {
-					ideology = collectivist_subtype
-					traits = {}
-				}
-			}
+		add_popularity = {
+			ideology = collectivist popularity = 0.05
 		}
-		country_event = { id = nor.113 days = 3 }
-	}
-}
+		add_political_power = 10
+		remove_every_minister = yes
 
-option = { # Moderates Elected
-name = nor.100.b
-ai_chance = {
-	factor = 40
-}
-set_politics = {
-	ruling_party = libertarian_socialist elections_allowed = no
-}
-add_popularity = {
-	ideology = libertarian_socialist popularity = 0.05
-}
-add_political_power = 10
-remove_every_minister = yes
-add_ideas = {
-	NOR_Sverre_Stoestad_hog_lib
-	NOR_Nordahl_Grieg_for_lib
-	NOR_Adolf_Indreboe_eco_lib
-	NOR_Alfred_Madsen_sec_lib
-}
-set_country_flag = NOR_moderates_1940_victory_flag
-hidden_effect = {
-	if = {
-		limit = {
-			has_country_flag = NOR_president_tranmael_1936
-		}
-		add_country_leader_role = {
-			character = NOR_Martin_Tranmæl
-			promote_leader = yes
-			country_leader = {
-				ideology = libertarian_socialist_subtype
-				traits = {}
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_christensen_1936
-		}
-		add_country_leader_role = {
-			character = NOR_Ingolf_Elster_Christensen
-			promote_leader = yes
-			country_leader = {
-				ideology = libertarian_socialist_subtype
-				traits = {}
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_mowinckel_1936
-		}
-		add_country_leader_role = {
-			character = NOR_Johan_Ludwig_Mowinckel
-			promote_leader = yes
-			country_leader = {
-				ideology = libertarian_socialist_subtype
-				traits = {}
-			}
-		}
-	}
-	country_event = { id = nor.113 days = 3 }
-}
-}
+		activate_advisor = NOR_Konrad_Nordahl_hog_col
+		activate_advisor = NOR_Arvid_Gilbert_Hansen_for_col
+		activate_advisor = NOR_Ole_Colbjoernsen_eco_col
+		activate_advisor = NOR_Olav_Hindahl_sec_col
 
-option = { # Rightwings Elected
-name = nor.100.c
-ai_chance = {
-	factor = 15
-}
-set_politics = {
-	ruling_party = social_democrat elections_allowed = no
-}
-add_popularity = {
-	ideology = social_democrat popularity = 0.10
-}
-set_party_name = {
-	ideology = social_democrat
-	long_name = NOR_AP_social_democrat_party_long
-	name = NOR_AP_social_democrat_party
-}
-add_political_power = 10
-remove_every_minister = yes
-add_ideas = {
-	NOR_Johan_Nygaardsvold_hog_sde
-	NOR_Halvdan_Koht_for_sde
-	NOR_Kornelius_Bergsvik_eco_sde
-	NOR_Paul_Hartmann_sec_sde
-}
-set_country_flag = NOR_rightwings_1940_victory_flag
-hidden_effect = {
-	if = {
-		limit = {
-			has_country_flag = NOR_president_tranmael_1936
-		}
-		add_country_leader_role = {
-			character = NOR_Martin_Tranmæl
-			promote_leader = yes
-			country_leader = {
-				ideology = social_democrat_subtype
-				traits = {}
+		set_country_flag = NOR_radical_1940_victory_flag
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = collectivist_subtype
+						traits = {}
+					}
+				}
 			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = collectivist_subtype
+						traits = {}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = collectivist_subtype
+						traits = {}
+					}
+				}
+			}
+			country_event = { id = nor.113 days = 3 }
 		}
 	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_christensen_1936
+
+	option = { # Moderates Elected
+		name = nor.100.b
+		ai_chance = {
+			factor = 40
 		}
-		add_country_leader_role = {
-			character = NOR_Ingolf_Elster_Christensen
-			promote_leader = yes
-			country_leader = {
-				ideology = social_democrat_subtype
-				traits = {}
+		set_politics = {
+			ruling_party = libertarian_socialist elections_allowed = no
+		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.05
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Sverre_Stoestad_hog_lib
+		activate_advisor = NOR_Nordahl_Grieg_for_lib
+		activate_advisor = NOR_Adolf_Indreboe_eco_lib
+		activate_advisor = NOR_Alfred_Madsen_sec_lib
+
+		set_country_flag = NOR_moderates_1940_victory_flag
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
 			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+			}
+			country_event = { id = nor.113 days = 3 }
 		}
 	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_mowinckel_1936
+
+	option = { # Rightwings Elected
+		name = nor.100.c
+		ai_chance = {
+			factor = 15
 		}
-		add_country_leader_role = {
-			character = NOR_Johan_Ludwig_Mowinckel
-			promote_leader = yes
-			country_leader = {
-				ideology = social_democrat_subtype
-				traits = {}
+		set_politics = {
+			ruling_party = social_democrat elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_democrat popularity = 0.10
+		}
+		set_party_name = {
+			ideology = social_democrat
+			long_name = NOR_AP_social_democrat_party_long
+			name = NOR_AP_social_democrat_party
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Johan_Nygaardsvold_hog_sde
+		activate_advisor = NOR_Halvdan_Koht_for_sde
+		activate_advisor = NOR_Kornelius_Bergsvik_eco_sde
+		activate_advisor = NOR_Paul_Hartmann_sec_sde
+
+		set_country_flag = NOR_rightwings_1940_victory_flag
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
+				}
 			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
+				}
+			}
+			country_event = { id = nor.113 days = 3 }
 		}
 	}
-	country_event = { id = nor.113 days = 3 }
-}
-}
 }
 
 country_event = {
@@ -3423,265 +3421,263 @@ country_event = {
 	title = nor.101.t
 	desc = nor.101.d
 	picture = NOR_1936_election
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.10.10
 		has_country_flag = NOR_democracy_survives_flag
 		has_country_flag = NOR_venstre_victory_flag
 	}
-	
+
 	option = { # Arbeiderpartiet Victory
-	name = nor.101.a
-	ai_chance = {
-		factor = 30
-	}
-	set_politics = {
-		ruling_party = libertarian_socialist elections_allowed = no
-	}
-	add_popularity = {
-		ideology = libertarian_socialist popularity = 0.08
-	}
-	add_popularity = {
-		ideology = collectivist popularity = 0.04
-	}
-	add_political_power = 10
-	remove_every_minister = yes
-	add_ideas = {
-		NOR_Olav_Scheflo_hog_lib
-		NOR_Arvid_Gilbert_Hansen_for_col
-		NOR_Adolf_Indreboe_eco_lib
-		NOR_Jakob_Friis_sec_lib
-	}
-	
-	set_country_flag = NOR_ap_1940_victory_flag
-	
-	hidden_effect = {
-		if = {
-			limit = {
-				has_country_flag = NOR_president_tranmael_1936
-				has_country_flag = NOR_republic_flag
+		name = nor.101.a
+		ai_chance = {
+			factor = 30
+		}
+		set_politics = {
+			ruling_party = libertarian_socialist elections_allowed = no
+		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.08
+		}
+		add_popularity = {
+			ideology = collectivist popularity = 0.04
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Olav_Scheflo_hog_lib
+		activate_advisor = NOR_Arvid_Gilbert_Hansen_for_col
+		activate_advisor = NOR_Adolf_Indreboe_eco_lib
+		activate_advisor = NOR_Jakob_Friis_sec_lib
+
+		set_country_flag = NOR_ap_1940_victory_flag
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.114 days = 2 }
 			}
-			add_country_leader_role = {
-				character = NOR_Martin_Tranmæl
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.114 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.114 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_monarchy_restored
+				}
+				add_country_leader_role = {
+					character = NOR_HM_King_Haakon_VII
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
 				}
 			}
-			country_event = { id = nor.114 days = 2 }
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_christensen_1936
-				has_country_flag = NOR_republic_flag
+	}
+
+	option = { # Venstre Reelected
+		name = nor.101.b
+		ai_chance = {
+			factor = 40
+		}
+		add_popularity = {
+			ideology = social_democrat popularity = 0.01
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.02
+		}
+		add_political_power = 10
+		set_country_flag = NOR_venstre_1940_victory_flag
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.122 days = 2 }
 			}
-			add_country_leader_role = {
-				character = NOR_Ingolf_Elster_Christensen
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.122 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.122 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_monarchy_restored
+				}
+				add_country_leader_role = {
+					character = NOR_HM_King_Haakon_VII
+					promote_leader = yes
+					country_leader = {
+						ideology = libertarian_socialist_subtype
+						traits = {}
+					}
 				}
 			}
-			country_event = { id = nor.114 days = 2 }
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_mowinckel_1936
-				has_country_flag = NOR_republic_flag
+	}
+
+	option = { # Høyre Victory
+		name = nor.101.c
+		ai_chance = {
+			factor = 30
+		}
+		set_politics = {
+			ruling_party = market_liberal elections_allowed = no
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.08
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.04
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Arne_Scheel_for_mli
+		activate_advisor = NOR_Sven_Nielsen_eco_mli
+		activate_advisor = NOR_Harald_Gram_sec_mli
+
+		set_country_flag = NOR_hoyre_1940_victory_flag
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
 			}
-			add_country_leader_role = {
-				character = NOR_Johan_Ludwig_Mowinckel
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_monarchy_restored
+				}
+				add_country_leader_role = {
+					character = NOR_HM_King_Haakon_VII
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
 				}
 			}
-			country_event = { id = nor.114 days = 2 }
-		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_monarchy_restored
-			}
-			add_country_leader_role = {
-				character = NOR_HM_King_Haakon_VII
-				promote_leader = yes
-				country_leader = {
-					ideology = libertarian_socialist_subtype
-					traits = {}
-				}
-			}
 		}
 	}
-}
-
-option = { # Venstre Reelected
-name = nor.101.b
-ai_chance = {
-	factor = 40
-}
-add_popularity = {
-	ideology = social_democrat popularity = 0.01
-}
-add_popularity = {
-	ideology = social_liberal popularity = 0.02
-}
-add_political_power = 10
-set_country_flag = NOR_venstre_1940_victory_flag
-
-hidden_effect = {
-	if = {
-		limit = {
-			has_country_flag = NOR_president_tranmael_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Martin_Tranmæl
-			promote_leader = yes
-			country_leader = {
-				ideology = social_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.122 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_christensen_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Ingolf_Elster_Christensen
-			promote_leader = yes
-			country_leader = {
-				ideology = social_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.122 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_mowinckel_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Johan_Ludwig_Mowinckel
-			promote_leader = yes
-			country_leader = {
-				ideology = social_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.122 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_monarchy_restored
-		}
-		add_country_leader_role = {
-			character = NOR_HM_King_Haakon_VII
-			promote_leader = yes
-			country_leader = {
-				ideology = libertarian_socialist_subtype
-				traits = {}
-			}
-		}
-	}
-}
-}
-
-option = { # Høyre Victory
-name = nor.101.c
-ai_chance = {
-	factor = 30
-}
-set_politics = {
-	ruling_party = market_liberal elections_allowed = no
-}
-add_popularity = {
-	ideology = market_liberal popularity = 0.08
-}
-add_popularity = {
-	ideology = social_conservative popularity = 0.04
-}
-add_political_power = 10
-remove_every_minister = yes
-add_ideas = {
-	NOR_Carl_Joachim_Hambro_hog_mli
-	NOR_Arne_Scheel_for_mli
-	NOR_Sven_Nielsen_eco_mli
-	NOR_Harald_Gram_sec_mli
-}
-
-set_country_flag = NOR_hoyre_1940_victory_flag
-
-hidden_effect = {
-	if = {
-		limit = {
-			has_country_flag = NOR_president_tranmael_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Martin_Tranmæl
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.118 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_christensen_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Ingolf_Elster_Christensen
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.118 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_mowinckel_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Johan_Ludwig_Mowinckel
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.118 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_monarchy_restored
-		}
-		add_country_leader_role = {
-			character = NOR_HM_King_Haakon_VII
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-	}
-}
-}
 }
 
 country_event = {
@@ -3690,9 +3686,9 @@ country_event = {
 	title = nor.102.t
 	desc = nor.102.d
 	picture = NOR_1936_election
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOR
 		date > 1940.10.10
@@ -3707,182 +3703,181 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { # Venstre Elected
-	name = nor.102.a
-	ai_chance = {
-		factor = 40
-	}
-	set_politics = {
-		ruling_party = social_liberal elections_allowed = no
-	}
-	add_popularity = {
-		ideology = social_democrat popularity = 0.01
-	}
-	add_popularity = {
-		ideology = social_liberal popularity = 0.02
-	}
-	add_political_power = 10
-	remove_every_minister = yes
-	add_ideas = {
-		NOR_Haakon_Five_hog_sli
-		NOR_Jacob_Worm_Mueller_for_sli
-		NOR_Jens_Isak_Kobro_eco_sli
-		NOR_Arne_Sunde_sec_sli
-	}
-	
-	set_country_flag = NOR_venstre_1940_victory_flag
-	
-	hidden_effect = {
-		if = {
-			limit = {
-				has_country_flag = NOR_president_tranmael_1936
-				has_country_flag = NOR_republic_flag
-			}
-			add_country_leader_role = {
-				character = NOR_Martin_Tranmæl
-				promote_leader = yes
-				country_leader = {
-					ideology = social_liberal_subtype
-					traits = {}
-				}
-			}
-			country_event = { id = nor.122 days = 2 }
+		name = nor.102.a
+		ai_chance = {
+			factor = 40
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_christensen_1936
-				has_country_flag = NOR_republic_flag
-			}
-			add_country_leader_role = {
-				character = NOR_Ingolf_Elster_Christensen
-				promote_leader = yes
-				country_leader = {
-					ideology = social_liberal_subtype
-					traits = {}
-				}
-			}
-			country_event = { id = nor.122 days = 2 }
+		set_politics = {
+			ruling_party = social_liberal elections_allowed = no
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_president_mowinckel_1936
-				has_country_flag = NOR_republic_flag
-			}
-			add_country_leader_role = {
-				character = NOR_Johan_Ludwig_Mowinckel
-				promote_leader = yes
-				country_leader = {
-					ideology = social_liberal_subtype
-					traits = {}
-				}
-			}
-			country_event = { id = nor.122 days = 2 }
+		add_popularity = {
+			ideology = social_democrat popularity = 0.01
 		}
-		else_if = {
-			limit = {
-				has_country_flag = NOR_monarchy_restored
-			}
-			add_country_leader_role = {
-				character = NOR_HM_King_Haakon_VII
-				promote_leader = yes
-				country_leader = {
-					ideology = social_liberal_subtype
-					traits = {}
-				}
-			}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.02
 		}
-	}
-}
+		add_political_power = 10
+		remove_every_minister = yes
 
-option = { # Høyre Victory
-name = nor.102.b
-ai_chance = {
-	factor = 30
-}
-set_politics = {
-	ruling_party = market_liberal elections_allowed = no
-}
-add_popularity = {
-	ideology = market_liberal popularity = 0.08
-}
-add_popularity = {
-	ideology = social_conservative popularity = 0.02
-}
-add_political_power = 10
-set_country_flag = NOR_hoyre_1940_victory_flag
+		activate_advisor = NOR_Hakon_Five_hog_sli
+		activate_advisor = NOR_Jacob_Worm_Muller_for_sli
+		activate_advisor = NOR_Jens_Isak_Kobro_eco_sli
+		activate_advisor = NOR_Arne_Sunde_sec_sli
 
-hidden_effect = {
-	if = {
-		limit = {
-			has_country_flag = NOR_president_tranmael_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Martin_Tranmæl
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
+		set_country_flag = NOR_venstre_1940_victory_flag
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.122 days = 2 }
 			}
-		}
-		country_event = { id = nor.118 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_christensen_1936
-			has_country_flag = NOR_republic_flag
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_country_leader = {
-						character = NOR_Ingolf_Elster_Christensen
-						ruling_only = yes
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Ingolf_Elster_Christensen
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.122 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.122 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_monarchy_restored
+				}
+				add_country_leader_role = {
+					character = NOR_HM_King_Haakon_VII
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
 					}
 				}
 			}
-			add_country_leader_role = {
-				character = NOR_Ingolf_Elster_Christensen
-				promote_leader = yes
-				country_leader = {
-					ideology = market_liberal_subtype
-					traits = {}
+		}
+	}
+
+	option = { # Høyre Victory
+		name = nor.102.b
+		ai_chance = {
+			factor = 30
+		}
+		set_politics = {
+			ruling_party = market_liberal elections_allowed = no
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.08
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.02
+		}
+		add_political_power = 10
+		set_country_flag = NOR_hoyre_1940_victory_flag
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOR_president_tranmael_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Martin_Tranmæl
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_christensen_1936
+					has_country_flag = NOR_republic_flag
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader = {
+								character = NOR_Ingolf_Elster_Christensen
+								ruling_only = yes
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = NOR_Ingolf_Elster_Christensen
+						promote_leader = yes
+						country_leader = {
+							ideology = market_liberal_subtype
+							traits = {}
+						}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_president_mowinckel_1936
+					has_country_flag = NOR_republic_flag
+				}
+				add_country_leader_role = {
+					character = NOR_Johan_Ludwig_Mowinckel
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
+				}
+				country_event = { id = nor.118 days = 2 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = NOR_monarchy_restored
+				}
+				add_country_leader_role = {
+					character = NOR_HM_King_Haakon_VII
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
 				}
 			}
 		}
-		country_event = { id = nor.118 days = 2 }
 	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_president_mowinckel_1936
-			has_country_flag = NOR_republic_flag
-		}
-		add_country_leader_role = {
-			character = NOR_Johan_Ludwig_Mowinckel
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-		country_event = { id = nor.118 days = 2 }
-	}
-	else_if = {
-		limit = {
-			has_country_flag = NOR_monarchy_restored
-		}
-		add_country_leader_role = {
-			character = NOR_HM_King_Haakon_VII
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal_subtype
-				traits = {}
-			}
-		}
-	}
-}
-}
 }
 
 country_event = {
@@ -3891,104 +3886,102 @@ country_event = {
 	title = nor.104.t
 	desc = nor.104.d
 	picture = NOR_1936_election
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOR
 		date > 1944.10.10
 		has_country_flag = NOR_ap_1940_victory_flag
 	}
-	
+
 	option = { # Arbeiderpartiet Coalition Elected
-	name = nor.104.a
-	ai_chance = {
-		factor = 50
-	}
-	set_politics = {
-		ruling_party = libertarian_socialist elections_allowed = no
-	}
-	add_popularity = {
-		ideology = collectivist popularity = 0.01
-	}
-	add_popularity = {
-		ideology = libertarian_socialist popularity = 0.02
-	}
-	add_popularity = {
-		ideology = social_liberal popularity = 0.01
-	}
-	add_political_power = 10
-	remove_every_minister = yes
-	add_ideas = {
-		NOR_Sverre_Stoestad_hog_lib
-		NOR_Arnulf_Oeverland_for_col
-		NOR_Ragnar_Frisch_eco_lib
-		NOR_Paul_Hartmann_sec_sde
-	}
-	
-	set_country_flag = NOR_ap_1944_victory_flag
-	
-	if = {
-		limit = {
-			NOR = {
-				has_country_flag = NOR_monarchy_restored
+		name = nor.104.a
+		ai_chance = {
+			factor = 50
+		}
+		set_politics = {
+			ruling_party = libertarian_socialist elections_allowed = no
+		}
+		add_popularity = {
+			ideology = collectivist popularity = 0.01
+		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.01
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Sverre_Stoestad_hog_lib
+		activate_advisor = NOR_Arnulf_Oeverland_for_col
+		activate_advisor = NOR_Ragnar_Frisch_eco_lib
+		activate_advisor = NOR_Paul_Hartmann_sec_sde
+
+		set_country_flag = NOR_ap_1944_victory_flag
+
+		if = {
+			limit = {
+				NOR = {
+					has_country_flag = NOR_monarchy_restored
+				}
+			}
+			add_country_leader_role = {
+				character = NOR_HM_King_Haakon_VII
+				promote_leader = yes
+				country_leader = {
+					ideology = libertarian_socialist_subtype
+					traits = {}
+				}
 			}
 		}
-		add_country_leader_role = {
-			character = NOR_HM_King_Haakon_VII
-			promote_leader = yes
-			country_leader = {
-				ideology = libertarian_socialist_subtype
-				traits = {}
+	}
+
+	option = { # Borgerlige Coalition Victory
+		name = nor.104.b
+		ai_chance = {
+			factor = 50
+		}
+		set_politics = {
+			ruling_party = market_liberal elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.01
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.01
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Erik_Colban_for_sli
+		activate_advisor = NOR_Sven_Nielsen_eco_mli
+		activate_advisor = NOR_Ivar_Kirkeby_Garstad_sec_sco
+
+		set_country_flag = NOR_hoyre_1944_victory_flag
+
+		if = {
+			limit = {
+				NOR = {
+					has_country_flag = NOR_monarchy_restored
+				}
+			}
+			add_country_leader_role = {
+				character = NOR_HM_King_Haakon_VII
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
 			}
 		}
 	}
-}
-
-option = { # Borgerlige Coalition Victory
-name = nor.104.b
-ai_chance = {
-	factor = 50
-}
-set_politics = {
-	ruling_party = market_liberal elections_allowed = no
-}
-add_popularity = {
-	ideology = social_liberal popularity = 0.01
-}
-add_popularity = {
-	ideology = market_liberal popularity = 0.02
-}
-add_popularity = {
-	ideology = social_conservative popularity = 0.01
-}
-add_political_power = 10
-remove_every_minister = yes
-add_ideas = {
-	NOR_Carl_Joachim_Hambro_hog_mli
-	NOR_Erik_Colban_for_sli
-	NOR_Sven_Nielsen_eco_mli
-	NOR_Ivar_Kirkeby_Garstad_sec_sco
-}
-
-set_country_flag = NOR_hoyre_1944_victory_flag
-
-if = {
-	limit = {
-		NOR = {
-			has_country_flag = NOR_monarchy_restored
-		}
-	}
-	add_country_leader_role = {
-		character = NOR_HM_King_Haakon_VII
-		promote_leader = yes
-		country_leader = {
-			ideology = market_liberal_subtype
-			traits = {}
-		}
-	}
-}
-}
 }
 
 country_event = {
@@ -3997,9 +3990,9 @@ country_event = {
 	title = nor.105.t
 	desc = nor.105.d
 	picture = NOR_1936_election
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOR
 		date > 1944.10.10
@@ -4008,95 +4001,93 @@ country_event = {
 			has_country_flag = NOR_hoyre_1940_victory_flag
 		}
 	}
-	
+
 	option = { # Arbeiderpartiet Coalition Elected
-	name = nor.104.a
-	ai_chance = {
-		factor = 50
-	}
-	set_politics = {
-		ruling_party = libertarian_socialist elections_allowed = no
-	}
-	add_popularity = {
-		ideology = collectivist popularity = 0.01
-	}
-	add_popularity = {
-		ideology = libertarian_socialist popularity = 0.02
-	}
-	add_popularity = {
-		ideology = social_liberal popularity = 0.01
-	}
-	add_political_power = 10
-	remove_every_minister = yes
-	add_ideas = {
-		NOR_Sverre_Stoestad_hog_lib
-		NOR_Arnulf_Oeverland_for_col
-		NOR_Ragnar_Frisch_eco_lib
-		NOR_Paul_Hartmann_sec_sde
-	}
-	
-	set_country_flag = NOR_ap_1944_victory_flag
-	
-	if = {
-		limit = {
-			NOR = {
-				has_country_flag = NOR_monarchy_restored
+		name = nor.104.a
+		ai_chance = {
+			factor = 50
+		}
+		set_politics = {
+			ruling_party = libertarian_socialist elections_allowed = no
+		}
+		add_popularity = {
+			ideology = collectivist popularity = 0.01
+		}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.01
+		}
+		add_political_power = 10
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Sverre_Stoestad_hog_lib
+		activate_advisor = NOR_Arnulf_Oeverland_for_col
+		activate_advisor = NOR_Ragnar_Frisch_eco_lib
+		activate_advisor = NOR_Paul_Hartmann_sec_sde
+
+		set_country_flag = NOR_ap_1944_victory_flag
+
+		if = {
+			limit = {
+				NOR = {
+					has_country_flag = NOR_monarchy_restored
+				}
+			}
+			add_country_leader_role = {
+				character = NOR_HM_King_Haakon_VII
+				promote_leader = yes
+				country_leader = {
+					ideology = libertarian_socialist_subtype
+					traits = {}
+				}
 			}
 		}
-		add_country_leader_role = {
-			character = NOR_HM_King_Haakon_VII
-			promote_leader = yes
-			country_leader = {
-				ideology = libertarian_socialist_subtype
-				traits = {}
+	}
+
+	option = { # Borgerlige Coalition Victory
+		name = nor.104.b
+		ai_chance = {
+			factor = 50
+		}
+		set_politics = {
+			ruling_party = market_liberal elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.01
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.01
+		}
+		add_political_power = 10
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Erik_Colban_for_sli
+		activate_advisor = NOR_Sven_Nielsen_eco_mli
+		activate_advisor = NOR_Ivar_Kirkeby_Garstad_sec_sco
+
+		set_country_flag = NOR_hoyre_1944_victory_flag
+
+		if = {
+			limit = {
+				NOR = {
+					has_country_flag = NOR_monarchy_restored
+				}
+			}
+			add_country_leader_role = {
+				character = NOR_HM_King_Haakon_VII
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
 			}
 		}
 	}
-}
-
-option = { # Borgerlige Coalition Victory
-name = nor.104.b
-ai_chance = {
-	factor = 50
-}
-set_politics = {
-	ruling_party = market_liberal elections_allowed = no
-}
-add_popularity = {
-	ideology = social_liberal popularity = 0.01
-}
-add_popularity = {
-	ideology = market_liberal popularity = 0.02
-}
-add_popularity = {
-	ideology = social_conservative popularity = 0.01
-}
-add_political_power = 10
-add_ideas = {
-	NOR_Carl_Joachim_Hambro_hog_mli
-	NOR_Erik_Colban_for_sli
-	NOR_Sven_Nielsen_eco_mli
-	NOR_Ivar_Kirkeby_Garstad_sec_sco
-}
-
-set_country_flag = NOR_hoyre_1944_victory_flag
-
-if = {
-	limit = {
-		NOR = {
-			has_country_flag = NOR_monarchy_restored
-		}
-	}
-	add_country_leader_role = {
-		character = NOR_HM_King_Haakon_VII
-		promote_leader = yes
-		country_leader = {
-			ideology = market_liberal_subtype
-			traits = {}
-		}
-	}
-}
-}
 }
 
 ## Other New Events ##
@@ -4107,11 +4098,11 @@ country_event = {
 	title = nor.109.t
 	desc = nor.109.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.109.a
 		add_ideas = workers_republic
@@ -4141,11 +4132,11 @@ country_event = {
 	title = nor.110.t
 	desc = nor.110.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.110.a
 		ai_chance = {
@@ -4154,7 +4145,7 @@ country_event = {
 		set_country_flag = NOR_president_tranmael_1936
 		set_country_flag = NOR_republic_flag
 	}
-	
+
 	option = {
 		name = nor.110.b
 		ai_chance = {
@@ -4182,11 +4173,11 @@ country_event = {
 	title = nor.110.t
 	desc = nor.111.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.111.a
 		ai_chance = {
@@ -4196,7 +4187,7 @@ country_event = {
 		set_country_flag = NOR_republic_flag
 		add_ideas = NOR_government_president_struggle_idea
 	}
-	
+
 	option = {
 		name = nor.111.b
 		ai_chance = {
@@ -4223,11 +4214,11 @@ country_event = {
 	title = nor.110.t
 	desc = nor.112.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.111.a
 		ai_chance = {
@@ -4237,7 +4228,7 @@ country_event = {
 		set_country_flag = NOR_republic_flag
 		add_ideas = NOR_government_president_struggle_idea
 	}
-	
+
 	option = {
 		name = nor.112.b
 		ai_chance = {
@@ -4278,11 +4269,11 @@ country_event = {
 	title = nor.113.t
 	desc = nor.113.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.113.a
 		ai_chance = {
@@ -4336,7 +4327,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.113.b
 		ai_chance = {
@@ -4393,7 +4384,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.113.c
 		ai_chance = {
@@ -4459,11 +4450,11 @@ country_event = {
 	title = nor.114.t
 	desc = nor.114.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.114.a
 		ai_chance = {
@@ -4480,7 +4471,7 @@ country_event = {
 			country_event = { id = nor.115 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = nor.114.b
 		ai_chance = {
@@ -4499,7 +4490,7 @@ country_event = {
 			country_event = { id = nor.116 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = nor.114.c
 		ai_chance = {
@@ -4529,11 +4520,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.115.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.115.a
 		ai_chance = {
@@ -4557,7 +4548,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.115.b
 		ai_chance = {
@@ -4588,11 +4579,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.116.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.116.a
 		ai_chance = {
@@ -4616,7 +4607,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.115.b
 		ai_chance = {
@@ -4647,11 +4638,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.117.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.117.a
 		ai_chance = {
@@ -4675,7 +4666,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.115.b
 		ai_chance = {
@@ -4706,11 +4697,11 @@ country_event = {
 	title = nor.118.t
 	desc = nor.118.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.118.a
 		ai_chance = {
@@ -4721,7 +4712,7 @@ country_event = {
 			country_event = { id = nor.119 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = nor.118.b
 		ai_chance = {
@@ -4732,7 +4723,7 @@ country_event = {
 			country_event = { id = nor.120 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = nor.118.c
 		ai_chance = {
@@ -4756,11 +4747,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.119.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.119.a
 		ai_chance = {
@@ -4784,7 +4775,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.119.b
 		ai_chance = {
@@ -4815,11 +4806,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.120.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.120.a
 		ai_chance = {
@@ -4843,7 +4834,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.119.b
 		ai_chance = {
@@ -4874,11 +4865,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.121.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.121.a
 		ai_chance = {
@@ -4920,7 +4911,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.119.b
 		ai_chance = {
@@ -4969,11 +4960,11 @@ country_event = {
 	title = nor.122.t
 	desc = nor.122.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.122.a
 		ai_chance = {
@@ -4984,7 +4975,7 @@ country_event = {
 			country_event = { id = nor.123 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = nor.122.b
 		ai_chance = {
@@ -4995,7 +4986,7 @@ country_event = {
 			country_event = { id = nor.124 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = nor.122.c
 		ai_chance = {
@@ -5019,11 +5010,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.123.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.123.a
 		ai_chance = {
@@ -5047,7 +5038,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.119.b
 		ai_chance = {
@@ -5078,11 +5069,11 @@ country_event = {
 	title = nor.115.t
 	desc = nor.124.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = nor.124.a
 		ai_chance = {
@@ -5106,7 +5097,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.119.b
 		ai_chance = {
@@ -5137,17 +5128,17 @@ country_event = {
 	title = nor.130.t
 	desc = nor.130.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			country_event = { id = nor.131 days = 1095 }
 		}
 	}
-	
+
 	option = {
 		name = nor.130.a
 		ai_chance = { base = 15 }
@@ -5160,15 +5151,15 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Carl_Joachim_Hambro_hog_mli
-			NOR_Birger_Braadland_for_sco
-			NOR_Axel_Aubert_eco_ade
-			NOR_Per_von_Hirsch_sec_pau
-		}
-		remove_coalition_social_conservative = yes 
+
+		activate_advisor = NOR_Carl_Joachim_Hambro_hog_mli
+		activate_advisor = NOR_Birger_Braadland_for_sco
+		activate_advisor = NOR_Axel_Aubert_eco_ade
+		activate_advisor = NOR_Per_von_Hirsch_sec_pau
+
+		remove_coalition_social_conservative = yes
 		add_coalition_paternal_autocrat = yes
-		add_coalition_market_liberal = yes 
+		add_coalition_market_liberal = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_Olav_V
@@ -5180,7 +5171,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.130.b
 		ai_chance = { base = 15 }
@@ -5193,15 +5184,15 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Jens_Hundseid_hog_sco
-			NOR_Birger_Braadland_for_sco
-			NOR_Nicolai_Rygg_eco_sco
-			NOR_Ivar_Kirkeby_Garstad_sec_sco
-		}
-		remove_coalition_market_liberal = yes 
-		add_coalition_paternal_autocrat = yes 
-		add_coalition_social_conservative = yes 
+
+		activate_advisor = NOR_Jens_Hundseid_hog_sco
+		activate_advisor = NOR_Birger_Braadland_for_sco
+		activate_advisor = NOR_Nicolai_Rygg_eco_sco
+		activate_advisor = NOR_Ivar_Kirkeby_Garstad_sec_sco
+
+		remove_coalition_market_liberal = yes
+		add_coalition_paternal_autocrat = yes
+		add_coalition_social_conservative = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_Olav_V
@@ -5213,7 +5204,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.130.c
 		ai_chance = { base = 25 }
@@ -5224,16 +5215,16 @@ country_event = {
 		}
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
-		remove_every_minister = yes 
-		add_ideas = {
-			NOR_Carl_Gulbranson_hog_ade
-			NOR_Victor_Mogens_for_ade
-			NOR_Nicolai_Rygg_eco_sco
-			NOR_Ragnar_Skancke_sec_ade
-		}
-		remove_coalition_market_liberal = yes 
-		remove_coalition_social_conservative = yes 
-		add_coalition_paternal_autocrat = yes 
+		remove_every_minister = yes
+
+		activate_advisor = NOR_Carl_Gulbranson_hog_ade
+		activate_advisor = NOR_Victor_Mogens_for_ade
+		activate_advisor = NOR_Nicolai_Rygg_eco_sco
+		activate_advisor = NOR_Ragnar_Skancke_sec_ade
+
+		remove_coalition_market_liberal = yes
+		remove_coalition_social_conservative = yes
+		add_coalition_paternal_autocrat = yes
 		hidden_effect = {
 			add_country_leader_role = {
 				character = NOR_Olav_V
@@ -5245,7 +5236,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = nor.130.e
 		ai_chance = { base = 45 }
@@ -5256,13 +5247,13 @@ country_event = {
 		add_popularity = { ideology = paternal_autocrat popularity = 0.10 }
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.10 }
 		remove_every_minister = yes
-		add_ideas = {
-			NOR_Gulbrand_Lunde_hog_pau
-			NOR_Victor_Mogens_for_ade
-			NOR_Axel_Aubert_eco_ade
-			NOR_Arnvid_Vasbotten_sec_npo
-		}
-		remove_coalition_paternal_autocrat = yes 
+
+		activate_advisor = NOR_Gulbrand_Lunde_hog_pau
+		activate_advisor = NOR_Victor_Mogens_for_ade
+		activate_advisor = NOR_Axel_Aubert_eco_ade
+		activate_advisor = NOR_Arnvid_Vasbotten_sec_npo
+
+		remove_coalition_paternal_autocrat = yes
 		add_coalition_authoritarian_democrat = yes
 		hidden_effect = {
 			add_country_leader_role = {
@@ -5285,11 +5276,11 @@ country_event = {
 	title = nor.200.t
 	desc = nor.200.d
 	picture = NOR_parliament
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = nor.200.a
 		random_owned_state = { add_extra_state_shared_building_slots = 1 }

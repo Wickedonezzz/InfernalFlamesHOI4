@@ -251,6 +251,9 @@ country_event = { # west or war #This event has been scrapped
 	country_event = { id = shofrei.7 }
 	}
 	}
+	KNE = { 
+	country_event = { id = shofrei.7 }
+	}
 	option = { # 
 	name = "No Way In Hell Kraut."
 	KNE = { 
@@ -555,10 +558,10 @@ country_event = { #Austria alliance
     option = {
         name = shofrei.17.b
         ai_chance = { factor = 5 }
-				SHO = {
-            country_event = shofrei.19
-           }
     }
+		SHO = {
+            country_event = shofrei.19
+}
 }
 country_event = { #austria accepted
 	id = shofrei.18

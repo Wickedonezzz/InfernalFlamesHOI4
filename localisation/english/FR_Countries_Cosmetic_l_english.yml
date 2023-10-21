@@ -22,10 +22,10 @@ TUR_turanist_national_populist_DEF: "The Turkish State"
 
 #Mexico
 
-#Turkish Revolt
-TRT_revolt_authoritarian_democrat: "Republic of Turkey"
-TRT_revolt_authoritarian_democrat_ADJ: "Turkish"
-TRT_revolt_authoritarian_democrat_DEF: "The Republic of Turkey"
+# #Turkish Revolt
+# TRT_revolt_authoritarian_democrat: "Republic of Turkey"
+# TRT_revolt_authoritarian_democrat_ADJ: "Turkish"
+# TRT_revolt_authoritarian_democrat_DEF: "The Republic of Turkey"
 
 #Bosnia
 BOS_SER_subject: "Bosnian State"
@@ -2043,6 +2043,8 @@ FRA_kingdom_valkist_DEF: "The Kingdom of France"
 
 #El Salvador Corporatist
 ELS_UFCO: "United Fruit Company"
+ELS_UFCO_ADJ: "UFCO"
+ELS_UFCO_DEF: "The United Fruit Company & Associated Enterprises"
 
 # Mountain Republic
 GOR_IND_vanguardist: "Mountain People's Republic"

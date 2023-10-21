@@ -15,15 +15,15 @@
 		# every_country = {
 			# limit = {
 				# exists = yes
-			# }
+				# }
 			# set_temp_variable = { var = global.infra_@THIS value = 0 }
+			# }
 		# }
-	# }
 
 	# is_triggered_only = yes
 
 	# hidden = yes
-	
+
 	# option = {
 		# name = statistics.1.a
 
@@ -33,14 +33,14 @@
 			# every_country = {
 				# limit = {
 					# exists = yes
-				# }
+					# }
 				# #Industrial score#
 				# every_state = {
 					# limit = {
 						# is_owned_by = PREV
-					# }
+						# }
 					# add_to_temp_variable = { var = global.infra_@PREV value = infrastructure_level }
-				# }
+					# }
 				# set_temp_variable = { var = civfac_@THIS value = num_of_factories }
 				# set_temp_variable = { var = infra_@THIS value = global.infra_@THIS }
 				# divide_temp_variable = { var = infra_@THIS value = 5 }
@@ -56,27 +56,27 @@
 					# limit = {
 						# check_variable = { max_available_manpower_@THIS > 0 }
 						# has_country_flag = switch_number_negative_state
-					# }
+						# }
 					# add_to_variable = { switch_number = 1 }
 					# clr_country_flag = switch_number_negative_state
-				# }
+					# }
 				# if = {
 					# limit = {
 						# check_variable = { max_available_manpower_@THIS < 0 }
 						# NOT = {
 							# has_country_flag = switch_number_negative_state
 							# }
-					# }
+						# }
 					# add_to_variable = { switch_number = 1 }
 					# set_country_flag = switch_number_negative_state
-				# }
+					# }
 
 				# if = {
 					# limit = {
 						# check_variable = { max_available_manpower_@THIS < 0 }
-					# }
+						# }
 					# add_to_variable = { max_available_manpower_@THIS = 2147483  }
-				# }
+					# }
 
 				# divide_variable = { max_available_manpower_@THIS = 8000 }
 				# set_variable = { overflow_number = 2147483 }
@@ -105,7 +105,7 @@
 				# round_variable = military_score_@THIS
 				# round_variable = prestige_@THIS
 				# round_variable = score_@THIS
+				# }
 			# }
 		# }
 	# }
-# }

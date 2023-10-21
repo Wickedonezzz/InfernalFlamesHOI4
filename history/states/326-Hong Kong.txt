@@ -8,6 +8,7 @@ state=
 	{
 		owner = ENG
 		add_claim_by = KMT
+		add_claim_by = ZHI
 		add_claim_by = FNG
 		victory_points = {
 			10062 5 

@@ -9,13 +9,13 @@ state={
 	history={
 		owner = SCH
 		add_core_of = SCH
-		add_core_of = KMT
-		add_core_of = FNG
+		add_claim_by = KMT
+		add_claim_by = FNG
 		add_claim_by = ZHI
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 3
-			arms_factory = 2
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 2
 
 		}
@@ -36,6 +36,6 @@ state={
 	}
 	manpower=52963300
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=megalopolis
 	local_supplies=0.000
 }

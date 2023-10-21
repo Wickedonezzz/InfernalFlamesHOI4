@@ -3,6 +3,9 @@ AST_american_relations = {
 	enable = {
 		AST = { has_completed_focus = AST_approach_americans }
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = befriend
@@ -15,6 +18,9 @@ AST_american_relations_usa = {
 	allowed = { original_tag = USA }
 	enable = {
 		AST = { has_completed_focus = AST_approach_americans }
+	}
+	abort = {
+		always = no
 	}
 
 	ai_strategy = {
@@ -29,6 +35,9 @@ AST_soviet_relations = {
 	enable = {
 		AST = { has_completed_focus = AST_our_soviet_comrades }
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = befriend
@@ -41,6 +50,9 @@ AST_soviet_relations_sov = {
 	allowed = { original_tag = SOV }
 	enable = {
 		AST = { has_completed_focus = AST_our_soviet_comrades }
+	}
+	abort = {
+		always = no
 	}
 
 	ai_strategy = {

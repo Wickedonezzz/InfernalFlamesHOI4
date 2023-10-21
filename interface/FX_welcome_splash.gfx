@@ -233,6 +233,11 @@ spriteTypes = {
 
 	## AMERICA ##
 	spriteType = {
+		name = "GFX_CAN_intro"
+		texturefile = "gfx/splash/CAN_intro.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
 		name = "GFX_GUA_intro"
 		texturefile = "gfx/splash/GUA_intro.png"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -289,6 +294,11 @@ spriteTypes = {
 		texturefile = "gfx/splash/ZHI_intro.png"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	spriteType = {
+		name = "GFX_KMT_intro"
+		texturefile = "gfx/splash/KMT_intro.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 
 
 	## AFRICA ##
@@ -340,23 +350,4 @@ spriteTypes = {
 		texturefile = "gfx/splash/BOL_intro.png"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
-	
-	spriteType = {
-		name = "GFX_FX_intro_screen_continue_button"
-		texturefile = "gfx/interface/play_button_ready.dds"
-		animation = {
-			animationmaskfile = "gfx/interface/play_button_mask.dds"
-			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture3.dds"
-			animationrotation = -90			# -90 clockwise 90 counterclockwise (by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 2				# in seconds
-			animationdelay = 0.2			# in seconds
-			animationblendmode = "add"		# add, multiply, overlay
-			animationtype = "scrolling"		# scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0 y = 0 }
-			animationtexturescale = { x = 1 y = 1 }
-		}
-		legacy_lazy_load = no
-	}
-
 }

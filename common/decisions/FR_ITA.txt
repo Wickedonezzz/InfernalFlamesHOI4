@@ -10742,7 +10742,7 @@ ITA_expand_latin_category = {
 	}
 	
 	ITA_expand_latin_turkey = {
-		war_with_on_remove = TRT
+		# war_with_on_remove = TRT
 		war_with_on_remove = TUR
 	
 		icon = infiltrate_state
@@ -10762,15 +10762,15 @@ ITA_expand_latin_category = {
 						}
 					}
 				}
-				TRT = {
-					exists = yes
-					NOT = {
-						OR = {
-							is_in_faction_with = ITA
-							has_war_with = ITA
-						}
-					}
-				}
+				# TRT = {
+				# 	exists = yes
+				# 	NOT = {
+				# 		OR = {
+				# 			is_in_faction_with = ITA
+				# 			has_war_with = ITA
+				# 		}
+				# 	}
+				# }
 			}
 		}		
 		
@@ -10801,23 +10801,23 @@ ITA_expand_latin_category = {
 					type = annex_everything
 				}
 			}
-			if = {
-				limit = {
-					TRT = {
-						exists = yes
-						NOT = {
-							OR = {
-								is_in_faction_with = ITA
-								has_war_with = ITA
-							}
-						}
-					}
-				}
-				declare_war_on = {
-					target = TRT
-					type = annex_everything
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		TRT = {
+			# 			exists = yes
+			# 			NOT = {
+			# 				OR = {
+			# 					is_in_faction_with = ITA
+			# 					has_war_with = ITA
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = TRT
+			# 		type = annex_everything
+			# 	}
+			# }
 		}
 
 		ai_will_do = {

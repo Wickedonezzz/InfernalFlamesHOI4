@@ -89,7 +89,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_30
 	ENG_statute_autonomy
 	constitutional_monarchy
 }

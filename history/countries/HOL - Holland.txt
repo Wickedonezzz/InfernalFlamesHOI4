@@ -90,7 +90,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_60
 	extensive_conscription
   HOL_leftist_symphatizers
 	HOL_revaunchist_state

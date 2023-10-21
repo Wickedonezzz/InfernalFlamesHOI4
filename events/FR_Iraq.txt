@@ -18,10 +18,13 @@ country_event = { #Mashriq breaks free after LSMC
 		leave_faction = yes
 		hidden_effect = {
 			ENG = { country_event = { id = irq.11 } }
-      separate_peace_all_wars = yes
+			separate_peace_all_wars = yes
 		}
 		IRQ = {
-			remove_ideas = IRQ_british_protection
+			remove_ideas = {
+				IRQ_british_protection
+				IRQ_nationalist_unrest
+			}
 		}
 	}
 }

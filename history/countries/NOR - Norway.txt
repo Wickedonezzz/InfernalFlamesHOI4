@@ -71,7 +71,6 @@ set_politics = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	limited_conscription
 	
 	NOR_monarchist_right_idea

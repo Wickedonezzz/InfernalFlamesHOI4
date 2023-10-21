@@ -6,7 +6,6 @@ set_convoys = 500
 oob = "MAC"
 
 add_ideas = {
-	party_pop_0_90
 	macedonian_legions
 	macedonian_trade
 	macedonian_economy

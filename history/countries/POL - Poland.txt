@@ -11,6 +11,7 @@ set_war_support = 0.45
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 2
+	tech_trucks = 1
 	motorised_infantry = 1
 	tech_mountaineers = 1
 	tech_support = 1		
@@ -100,7 +101,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_30
 	POL_Lithuanian_unrest
 	limited_conscription
 	GEN_entente_member

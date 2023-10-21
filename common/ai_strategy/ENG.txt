@@ -241,6 +241,7 @@ ENG_template_design_2 = {
 		original_tag = ENG
 		date > "1940.1.1"				
 	}
+	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = template_prio
@@ -1084,6 +1085,7 @@ ENG_naval_role_ratios_historical = {
 		has_dlc = "Man the Guns"
 		original_tag = ENG
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -1163,6 +1165,7 @@ ENG_kill_egypt = {
 			has_completed_focus = ENG_tariffs
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = conquer
@@ -1179,6 +1182,7 @@ ENG_protect_new_zealand = {
 			has_government = national_populist
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = protect

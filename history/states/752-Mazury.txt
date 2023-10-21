@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = GER
+		controller = POL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -14,7 +15,6 @@ state={
 		}
 		add_core_of = POL
 		add_core_of = GER
-		set_demilitarized_zone = yes
 	}
 
 	provinces={

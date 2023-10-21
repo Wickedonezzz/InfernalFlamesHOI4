@@ -54,8 +54,4 @@ set_popularities = {
   valkist = 0
 }
 
-add_ideas = {
-	party_pop_0_40
-}
-
 recruit_character = MDR_Yeshwantrao_Ghorpade

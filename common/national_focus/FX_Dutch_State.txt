@@ -1946,7 +1946,7 @@ focus_tree = {
   # Air Defenses
   focus = {
     id = HOL_air_defenses
-    icon = GFX_focus_generic_air_defense
+    icon = GFX_goal_generic_air_defense2
     x = 1
     y = 1
     cost = 6
@@ -1991,14 +1991,17 @@ focus_tree = {
       factor = 200
     }
     completion_reward = {
-      set_temp_variable = { tag_to_embargo = FRA }
-      FRA = {
-        save_global_event_target_as = HOL_tag_to_embargo
+      FRA = { save_event_target_as = dutch_embargo }
+      event_target:dutch_embargo = {
         embargo_ROOT = yes
       }
+      
       custom_effect_tooltip = HOL_embargo_france_tt
       hidden_effect = {
-        GER = { country_event = dutchstate.2 }
+        GER = {
+          FRA = { save_global_event_target_as = dutch_embargo }
+          country_event = dutchstate.1
+        }
       }
     }
   }
@@ -2017,14 +2020,17 @@ focus_tree = {
     prerequisite = { focus = HOL_calibrate_our_economy }
     relative_position_id = HOL_calibrate_our_economy
     completion_reward = {
-      set_temp_variable = { tag_to_embargo = ENG }
-      ENG = { 
-        save_global_event_target_as = HOL_tag_to_embargo
+      ENG = { save_event_target_as = dutch_embargo }
+      event_target:dutch_embargo = {
         embargo_ROOT = yes
       }
-      custom_effect_tooltip = HOL_embargo_britain_tt
+      
+      custom_effect_tooltip = HOL_embargo_france_tt
       hidden_effect = {
-        GER = { country_event = dutchstate.2 }
+        ENG = {
+          FRA = { save_event_target_as = dutch_embargo }
+          country_event = dutchstate.1 
+        }
       }
     }
   }
@@ -2223,7 +2229,7 @@ focus_tree = {
   # The Labour Laws
   focus = {
     id = HOL_the_labour_laws
-    icon = GFX_goal_munitions_factories
+    icon = GFX_goal_generic_enforce_labor_regulation
     x = 0
     y = 2
     cost = 6
@@ -2491,7 +2497,7 @@ focus_tree = {
   # Trade Expansion
   focus = {
     id = HOL_trade_expansion
-    icon = GFX_goal_generic_trade
+    icon = GFX_goal_AST_new_markets
     x = 3
     y = 1
     cost = 6
@@ -2512,7 +2518,7 @@ focus_tree = {
   # Rotterdam Shipyards
   focus = {
     id = HOL_rotterdam_shipyards
-    icon = GFX_goal_generic_construct_naval_dockyard
+    icon = GFX_focus_generic_refit_civilian_ships
     x = -1
     y = 1
     cost = 6

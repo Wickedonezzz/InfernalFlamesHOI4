@@ -5,8 +5,9 @@ state={
 	state_category = rural
 
 	history={
-		owner = NFA
+		owner = NGA
 		add_core_of = NFA
+		add_core_of = NGA
 		add_core_of = TOG
 		victory_points = {
 			1951 1 

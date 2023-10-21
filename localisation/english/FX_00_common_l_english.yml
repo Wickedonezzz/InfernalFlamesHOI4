@@ -3,3 +3,8 @@ unlock_focuses: "§GThis focus will eventually be automatically bypassed and wil
 tooltip_focus_unlocked_by_event: "§GThis focus will be automatically unlocked via event§!"
 enables_new_focus_branches: "Enables new focus branches"
 tooltip_white_line: "   \n"
+
+# Custom modifiers
+offmap_military_factories_tooltip: "Offmap Military Factories"
+offmap_civilian_factories_tooltip: "Offmap Civilian Factories"
+offmap_dockyards_tooltip: "Offmap Dockyards"

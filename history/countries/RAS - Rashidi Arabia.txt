@@ -17,7 +17,6 @@ set_stability = 0.40
 set_war_support = 0.50
 
 add_ideas = {
-	party_pop_0_60
 	absolute_monarchy
   RAS_our_only_chance
   RAS_desert_warriors

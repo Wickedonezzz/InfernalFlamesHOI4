@@ -35,7 +35,6 @@ set_war_support = 0.5
 
 add_ideas = {
 	absolute_monarchy
-	party_pop_0_40
 }
 
 set_politics = {	

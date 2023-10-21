@@ -5,7 +5,6 @@ oob = "SWE"
 set_research_slots = 3
 
 add_ideas = {
-	party_pop_0_30
 	GEN_entente_member
 
 	SWE_unbroken_neutrality_idea

@@ -11,11 +11,11 @@ news_event = { # US Recognises Philippine Independence
 	major = yes
 	is_triggered_only = yes
 
-	show_major = { 
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.1.a
 	}
 }
@@ -27,12 +27,12 @@ news_event = { # Nacionalistas Wins Philippine Elections
 	picture = GFX_news_event_PHI_quezon_inaugurated
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.2.a
 	}
 }
@@ -44,12 +44,12 @@ news_event = { # Liberals Wins Philippine Elections
 	picture = GFX_news_event_PHI_roxas_inaugurated
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.3.a
 	}
 }
@@ -61,12 +61,12 @@ news_event = { # Progressistas Wins Philippine Elections
 	picture = GFX_news_event_PHI_aguinaldo_inaugurated
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.3.a
 	}
 }
@@ -78,12 +78,12 @@ news_event = { # Sakdalistas Wins Philippine Elections
 	picture = GFX_news_event_PHI_ramos_inaugurated
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.5.a
 	}
 }
@@ -95,8 +95,8 @@ news_event = { # North Borneo Occupied by Filipino Troops
 	picture = GFX_news_event_PHI_filipino_troops
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
@@ -127,8 +127,8 @@ news_event = { # Filipino Entry to the Entente
 	picture = GFX_news_event_PHI_sign
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
@@ -172,9 +172,9 @@ news_event = { # Southern Agitation
 
 	option = {
 		trigger = {
-			NOT = { 
+			NOT = {
 				tag = USA
-				tag = MEX 
+				tag = MEX
 			}
 		}
 		name = fxnews.8.b
@@ -188,13 +188,13 @@ news_event = { # Collapse of the United States
 	picture = GFX_report_news_event_USA_collapse
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
-			NOT = { tag = USA }
+
+	show_major = {
+		NOT = { tag = USA }
 	}
 
-	option = { 
-			name = fxnews.9.a
+	option = {
+		name = fxnews.9.a
 	}
 }
 
@@ -205,13 +205,13 @@ news_event = { # End the American Democracy
 	picture = GFX_report_news_event_USA_macarthur
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
-			NOT = { tag = USA }
+
+	show_major = {
+		NOT = { tag = USA }
 	}
 
-	option = { 
-			name = fxnews.10.a
+	option = {
+		name = fxnews.10.a
 	}
 }
 
@@ -222,13 +222,13 @@ news_event = { # President Long
 	picture = GFX_report_news_event_USA_huey_long
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
-			NOT = { tag = USA }
+
+	show_major = {
+		NOT = { tag = USA }
 	}
 
-	option = { 
-			name = fxnews.11.a
+	option = {
+		name = fxnews.11.a
 	}
 }
 
@@ -239,13 +239,13 @@ news_event = { # President Roosevelt
 	picture = GFX_report_news_event_USA_quentin_roosevelt
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
-			NOT = { tag = USA }
+
+	show_major = {
+		NOT = { tag = USA }
 	}
 
-	option = { 
-			name = fxnews.12.a
+	option = {
+		name = fxnews.12.a
 	}
 }
 
@@ -256,13 +256,13 @@ news_event = { # President Landon
 	picture = GFX_report_news_event_USA_alf_landon
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
-			NOT = { tag = USA }
+
+	show_major = {
+		NOT = { tag = USA }
 	}
 
-	option = { 
-			name = fxnews.13.a
+	option = {
+		name = fxnews.13.a
 	}
 }
 
@@ -273,12 +273,12 @@ news_event = { # President Garner
 	picture = GFX_report_news_event_USA_john_nance_garner
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = USA }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.14.a
 	}
 }
@@ -290,12 +290,12 @@ news_event = { # Restoration of Democracy in the US
 	picture = GFX_report_news_event_USA_victory_celebration
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
-			NOT = { tag = USA }
+
+	show_major = {
+		NOT = { tag = USA }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.15.a
 	}
 }
@@ -308,11 +308,11 @@ news_event = { # Abdülmecid II Assassinated
 	major = yes
 	is_triggered_only = yes
 
-	show_major = { 
+	show_major = {
 		NOT = { tag = TUR }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.16.a
 	}
 }
@@ -794,11 +794,11 @@ news_event = { # US Recognises Philippine Independence
 	major = yes
 	is_triggered_only = yes
 
-	show_major = { 
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.44.a
 	}
 }
@@ -811,11 +811,11 @@ news_event = { # Germany Recognises Belarusian Claims
 	major = yes
 	is_triggered_only = yes
 
-	show_major = { 
+	show_major = {
 		NOT = { tag = BLR }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.45.a
 	}
 }
@@ -828,11 +828,11 @@ news_event = { # Red Dawn in Southeast Asia
 	major = yes
 	is_triggered_only = yes
 
-	show_major = { 
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.46.a
 	}
 }
@@ -845,11 +845,11 @@ news_event = { # King Edward VIII Ends Constitutionalism
 	major = yes
 	is_triggered_only = yes
 
-	show_major = { 
+	show_major = {
 		NOT = { tag = ENG }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.47.a
 	}
 }
@@ -862,11 +862,11 @@ news_event = { # Military Storms Houses of Parliament
 	major = yes
 	is_triggered_only = yes
 
-	show_major = { 
+	show_major = {
 		NOT = { tag = ENG }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.48.a
 	}
 }
@@ -877,35 +877,35 @@ news_event = { # Hyde Park Assassination
 	title = fxnews.49.t
 	desc = fxnews.49
 	picture = GFX_news_event_royal_visit
-  major = yes
+	major = yes
 	is_triggered_only = yes
-	
+
 	show_major = {
 		NOT = { tag = ENG }
 	}
 
-  option =  {
-    trigger = { is_puppet_of = ENG }
-    name = fxnews.49.a
-  }
-	
 	option =  {
-    trigger = {
+		trigger = { is_puppet_of = ENG }
+		name = fxnews.49.a
+	}
+
+	option =  {
+		trigger = {
 			NOT = { is_puppet_of = ENG }
 		}
-    name = fxnews.49.b
-  }
+		name = fxnews.49.b
+	}
 }
 
 news_event = { # British Imperial Conference of 1937
 	id = fxnews.50
 	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.10"}
-  title = fxnews.50.t
+	title = fxnews.50.t
 	picture = GFX_news_event_ENG_imperial_conference
 	is_triggered_only = yes
-  major = yes
+	major = yes
 
-  desc = {
+	desc = {
 		trigger = {
 			ENG = { has_country_flag = ENG_c_imperial }
 		}
@@ -923,39 +923,39 @@ news_event = { # British Imperial Conference of 1937
 		}
 		text = fxnews.50c.d
 	}
-  
+
 	show_major = {
 		NOT = { tag = ENG }
 	}
-	
-  option =  {
-    trigger = {
+
+	option =  {
+		trigger = {
 			ENG = { has_country_flag = ENG_c_imperial }
 			NOT = { tag = ENG }
-    }
-    name = fxnews.50.a
-  }
+		}
+		name = fxnews.50.a
+	}
 	option =  {
-    trigger = {
+		trigger = {
 			ENG = { has_country_flag = ENG_c_inter }
 			NOT = { tag = ENG }
-    }
-  	name = fxnews.50.b
-  }
+		}
+		name = fxnews.50.b
+	}
 	option =  {
-    trigger = {
+		trigger = {
 			ENG = { has_country_flag = ENG_c_isol }
 			NOT = { tag = ENG }
-    }
-    name = fxnews.50.c
-  }
+		}
+		name = fxnews.50.c
+	}
 	option = {
 		trigger = {
 			AND = {
 				ENG = { has_country_flag = ENG_c_imperial }
 				tag = ENG
 			}
-    }
+		}
 		name = fxnews.50.e
 	}
 	option = {
@@ -964,7 +964,7 @@ news_event = { # British Imperial Conference of 1937
 				ENG = { has_country_flag = ENG_c_inter }
 				tag = ENG
 			}
-    }
+		}
 		name = fxnews.50.f
 	}
 	option = {
@@ -973,7 +973,7 @@ news_event = { # British Imperial Conference of 1937
 				ENG = { has_country_flag = ENG_c_isol }
 				tag = ENG
 			}
-    }
+		}
 		name = fxnews.50.g
 	}
 }
@@ -1009,14 +1009,14 @@ news_event = {
 		text = fxnews.51b.d
 	}
 	picture = GFX_news_event_india_is_kill
-	
+
 	option = { # Stability in India returns at last
 		trigger = {
 			is_in_faction_with = ENG
 		}
 		name = fxnews.51.a
 	}
-	
+
 	option = { # And the stock market report?
 		trigger = {
 			NOT = { is_in_faction_with = ENG }
@@ -1042,10 +1042,10 @@ news_event = {
 	}
 
 	option =  {
-			trigger = {
-		has_war_with = FRA
-			}
-			name = fxnews.52.b
+		trigger = {
+			has_war_with = FRA
+		}
+		name = fxnews.52.b
 	}
 
 	option =  {
@@ -1059,29 +1059,29 @@ news_event = {
 	}
 }
 
-news_event = { # 
+news_event = { #
 	id = fxnews.53
 	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.53"}
-  title = fxnews.53.t
-  desc = fxnews.53.d
-  picture = GFX_news_event_india_is_angry
-  major = yes
+	title = fxnews.53.t
+	desc = fxnews.53.d
+	picture = GFX_news_event_india_is_angry
+	major = yes
 	is_triggered_only = yes
-	
-	mean_time_to_happen = {
-    days = 1
-  }
 
-  option =  {
-    trigger = {
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option =  {
+		trigger = {
 			OR = {
 				tag = ENG
 				tag = RAJ
 			}
-    }
-    name = fxnews.53.a
-  }
-	
+		}
+		name = fxnews.53.a
+	}
+
 	option = {
 		trigger = {
 			OR = {
@@ -1093,7 +1093,7 @@ news_event = { #
 		}
 		name = fxnews.53.b
 	}
-	
+
 	option = {
 		trigger = {
 			tag = IND
@@ -1101,8 +1101,8 @@ news_event = { #
 		name = fxnews.53.c
 	}
 
-  option = {
-    trigger = {
+	option = {
+		trigger = {
 			AND = {
 				NOT = { tag = CAN }
 				NOT = { tag = AST }
@@ -1112,37 +1112,37 @@ news_event = { #
 				NOT = { tag = ENG }
 				NOT = { tag = IND }
 			}
-    }
-    name = fxnews.53.e
-  }
+		}
+		name = fxnews.53.e
+	}
 }
 
 news_event = {
 	id = fxnews.54
 	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.54"}
-  title = fxnews.54.t
-  desc = {
+	title = fxnews.54.t
+	desc = {
 		trigger = {
 			ENG = { has_country_flag = ire_rising }
 		}
-		text = fxnews.54a.d 
+		text = fxnews.54a.d
 	}
 	desc = {
 		trigger = {
 			ENG = { has_country_flag = ire_gw_rising }
 		}
-		text = fxnews.54b.d 
+		text = fxnews.54b.d
 	}
-  picture = GFX_news_event_IRE_rebellion
-  major = yes
+	picture = GFX_news_event_IRE_rebellion
+	major = yes
 	is_triggered_only = yes
-	
-	mean_time_to_happen = {
-    days = 1
-  }
 
-  option =  {
-    trigger = {
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option =  {
+		trigger = {
 			OR = {
 				tag = ENG
 				tag = RAJ
@@ -1151,17 +1151,17 @@ news_event = {
 				tag = NZL
 				tag = SAF
 			}
-    }
-    name = fxnews.54.a
-  }
-	
+		}
+		name = fxnews.54.a
+	}
+
 	option = {
 		trigger = { tag = IRE }
 		name = fxnews.54.b
 	}
 
-  option = {
-    trigger = {
+	option = {
+		trigger = {
 			AND = {
 				NOT = { tag = CAN }
 				NOT = { tag = AST }
@@ -1171,9 +1171,9 @@ news_event = {
 				NOT = { tag = ENG }
 				NOT = { tag = IRE }
 			}
-    }
-    name = fxnews.54.c
-  }
+		}
+		name = fxnews.54.c
+	}
 }
 
 news_event = {
@@ -1184,20 +1184,20 @@ news_event = {
 	picture = GFX_news_event_indian_parade
 	major = yes
 	is_triggered_only = yes
-	
+
 	mean_time_to_happen = {
-    days = 1
-  }
+		days = 1
+	}
 
 	option =  {
-    trigger = {
+		trigger = {
 			tag = ENG
-    }
-    name = fxnews.55.a
-  }
-	
-  option =  {
-    trigger = {
+		}
+		name = fxnews.55.a
+	}
+
+	option =  {
+		trigger = {
 			OR = {
 				tag = RAJ
 				tag = CAN
@@ -1205,10 +1205,10 @@ news_event = {
 				tag = NZL
 				tag = SAF
 			}
-    }
-    name = fxnews.55.b
-  }
-	
+		}
+		name = fxnews.55.b
+	}
+
 	option = {
 		trigger = {
 			tag = IND
@@ -1216,8 +1216,8 @@ news_event = {
 		name = fxnews.55.c
 	}
 
-  option = {
-    trigger = {
+	option = {
+		trigger = {
 			AND = {
 				NOT = { tag = CAN }
 				NOT = { tag = AST }
@@ -1227,23 +1227,23 @@ news_event = {
 				NOT = { tag = ENG }
 				NOT = { tag = IND }
 			}
-    }
-    name = fxnews.55.e
-  }
+		}
+		name = fxnews.55.e
+	}
 }
 
 news_event = {
 	id = fxnews.56
 	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.56"}
-  title = fxnews.56.t
+	title = fxnews.56.t
 	desc = fxnews.56.d
-  picture = GFX_news_event_053
-  major = no
+	picture = GFX_news_event_053
+	major = no
 	is_triggered_only = yes
 
 	option =  {
-    name = fxnews.56.a
-  }
+		name = fxnews.56.a
+	}
 }
 
 news_event = {
@@ -1255,8 +1255,8 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 
-  option =  {
-    trigger = {
+	option =  {
+		trigger = {
 			OR = {
 				tag = ENG
 				tag = SAF
@@ -1264,12 +1264,12 @@ news_event = {
 				tag = CAN
 				tag = NZL
 			}
-    }
-    name = fxnews.57.a
-  }
-	
+		}
+		name = fxnews.57.a
+	}
+
 	option =  {
-    trigger = {
+		trigger = {
 			AND = {
 				NOT = { tag = ENG }
 				NOT = { tag = SAF }
@@ -1278,10 +1278,10 @@ news_event = {
 				NOT = { tag = CAN }
 				NOT = { tag = ZAF }
 			}
-    }
-    name = fxnews.57.b
-  }
-	
+		}
+		name = fxnews.57.b
+	}
+
 	option =  {
 		trigger = {
 			tag = ZAF
@@ -1296,11 +1296,11 @@ news_event = {
 	title = fxnews.58.t
 	desc = fxnews.58.d
 	picture = GFX_news_event_indian_parade
-  major = yes
+	major = yes
 	is_triggered_only = yes
 
-  option =  {
-    trigger = {
+	option =  {
+		trigger = {
 			OR = {
 				original_tag = ENG
 				original_tag = SAF
@@ -1308,12 +1308,12 @@ news_event = {
 				original_tag = CAN
 				original_tag = NZL
 			}
-    }
-    name = fxnews.58.a
-  }
-	
+		}
+		name = fxnews.58.a
+	}
+
 	option =  {
-    trigger = {
+		trigger = {
 			AND = {
 				NOT = { original_tag = ENG }
 				NOT = { original_tag = SAF }
@@ -1321,17 +1321,17 @@ news_event = {
 				NOT = { original_tag = NZL }
 				NOT = { original_tag = CAN }
 			}
-    }
-    name = fxnews.58.b
-  }
-	
+		}
+		name = fxnews.58.b
+	}
+
 	option =  {
-    trigger = {
+		trigger = {
 			original_tag = IND
-    }
-    name = fxnews.58.c
+		}
+		name = fxnews.58.c
 		drop_cosmetic_tag = yes
-  }
+	}
 }
 
 news_event = {
@@ -1340,9 +1340,9 @@ news_event = {
 	title = uknews.16.t
 	desc = uknews.16.d
 	picture = GFX_news_event_053
-  major = yes
+	major = yes
 	is_triggered_only = yes
-	
+
 	show_major = {
 		NOT = { tag = ENG }
 	}
@@ -1360,26 +1360,26 @@ news_event = {
 	picture = GFX_news_event_french_fleet_scuttled
 	major = yes
 	is_triggered_only = yes
-	
+
 	show_major = {
 		NOT = { original_tag = ENG }
 		NOT = { original_tag = FRA }
 	}
-	
+
 	option = {
 		trigger = {
 			is_in_faction_with = ENG
 		}
 		name = fxnews.60.a
 	}
-	
+
 	option = {
 		trigger = {
 			is_in_faction_with = FRA
 		}
 		name = fxnews.60.b
 	}
-	
+
 	option = {
 		trigger = {
 			original_tag = GER
@@ -1391,7 +1391,7 @@ news_event = {
 		}
 		name = fxnews.60.c
 	}
-	
+
 	option = {
 		trigger = {
 			NOT = {
@@ -1423,21 +1423,21 @@ news_event = {
 	picture = GFX_news_event_kenya_army
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		trigger = {
 			is_in_faction_with = ENG
 		}
 		name = fxnews.61.a
 	}
-	
+
 	option = {
 		trigger = {
 			is_in_faction_with = FRA
 		}
 		name = fxnews.61.b
 	}
-	
+
 	option = {
 		trigger = {
 			NOT = {
@@ -1479,21 +1479,21 @@ news_event = {
 	picture = GFX_news_event_kenya_army
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		trigger = {
 			is_in_faction_with = ENG
 		}
 		name = fxnews.62.a
 	}
-	
+
 	option = {
 		trigger = {
 			is_in_faction_with = FRA
 		}
 		name = fxnews.62.b
 	}
-	
+
 	option = {
 		trigger = {
 			NOT = {
@@ -1512,12 +1512,12 @@ news_event = { # Panama Canal
 	picture = GFX_news_event_018
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.63.a
 	}
 }
@@ -1529,12 +1529,12 @@ news_event = { # Death of George V
 	picture = GFX_news_event_generic_funeral
 	major = yes
 	is_triggered_only = yes
-	
-	show_major = { 
+
+	show_major = {
 		NOT = { tag = PHI }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.64.a
 		trigger = {
 			OR = {
@@ -1544,7 +1544,7 @@ news_event = { # Death of George V
 		}
 	}
 
-	option = { 
+	option = {
 		name = fxnews.64.b
 		trigger = {
 			NOT = {
@@ -1561,12 +1561,12 @@ news_event = { # Second Northern Alliance
 	picture = GFX_news_event_northern_alliance
 	major = yes
 	is_triggered_only = yes
-	
+
 	show_major = {
 		NOT = { tag = JAP }
 	}
 
-	option = { 
+	option = {
 		name = fxnews.65.a
 	}
 }
@@ -1580,12 +1580,438 @@ news_event = { # New Guard takes over Australasia in a coup
 	major = yes
 	fire_for_sender = no
 	is_triggered_only = yes
-	
+
 	show_major = {
 		NOT = { tag = AST }
 	}
 
 	option = {
-		name = worldnews.126.a
+		name = fxnews.66.a
+	}
+}
+
+news_event = { # New Byzantine Emperor is coronated
+	id = fxnews.67
+	immediate = { log = "[GetLogInfo]: event fxnews.67" }
+	title = byznews.1.t
+	desc = byznews.1.d
+	picture = GFX_news_event_001
+	major = yes
+	fire_for_sender = no
+	is_triggered_only = yes
+
+	show_major = {
+		NOT = { tag = GRE }
+	}
+
+	option = {
+		name = byznews.1.a
+	}
+}
+
+news_event = {
+	id = fxnews.68
+	immediate = { log = "[GetLogInfo]: event fxnews.68" }
+	title = fxnews.68.t
+	desc = fxnews.68.d
+	picture = GFX_news_event_BLR_ataman_dead
+	major = yes
+	fire_for_sender = no
+	is_triggered_only = yes
+
+	option = {
+		name = fxnews.68.a
+	}
+}
+
+news_event = {
+	id = fxnews.69
+	immediate = { log = "[GetLogInfo]: event fxnews.69" }
+	title = fxnews.69.t
+	desc = fxnews.69.d
+	picture = GFX_news_event_capture_constantinople
+	major = yes
+	fire_for_sender = no
+	is_triggered_only = yes
+	option = {
+		name = fxnews.69.a
+	}
+}
+
+# Black Wednesday
+news_event = {
+	id = fxnews.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.70"}
+	title = fxnews.70.t
+	desc = fxnews.70.d
+	picture = GFX_news_event_oh_shit_lsmc
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = black_wednesday }
+		ENG = { has_country_flag = ENG_stock_crash }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	show_major = {
+		NOT = { tag = ENG }
+	}
+
+	immediate = { set_global_flag = black_wednesday }
+
+	option = {
+		name = fxnews.70.a
+	}
+}
+
+# Istanbul Remilitarized Worldwide
+news_event = {
+	id = fxnews.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.71"}
+	title = fxnews.71.t
+	desc = fxnews.71.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	show_major = {
+		NOT = { tag = TUR }
+	}
+
+	option = {
+		name = fxnews.71.a
+	}
+}
+
+# French Colonial Exposition
+news_event = {
+	id = fxnews.72
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.72"}
+	title = fxnews.72.t
+	desc = fxnews.72.d
+	picture = GFX_news_event_FRA_colonial_exhibition #GFX_news_event_057
+	major = yes
+	immediate = { set_global_flag = paris_colonial_exposition }
+
+	trigger = {
+		NOT = { has_global_flag = paris_colonial_exposition }
+		FRA = { has_country_flag = FRA_PCE_OPEN }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		trigger = {
+			has_country_flag = FRA_Attending_Paris_Colonial_Exposition
+		}
+		name = fxnews.72.a
+		add_political_power = 50
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_country_flag = FRA_Attending_Paris_Colonial_Exposition
+				tag = FRA
+			}
+		}
+		name = fxnews.72.b
+	}
+
+	option = {
+		trigger = {
+			tag = FRA
+		}
+		name = fxnews.72.c
+		add_political_power = 50
+	}
+}
+
+news_event = {
+	id = fxnews.73
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.73"}
+	title = fxnews.73.t
+	desc = fxnews.73.d
+	picture = GFX_news_event_FRA_Military_Coup
+	major = yes
+	immediate = { set_global_flag = france_falls_to_junta }
+
+	trigger = {
+		NOT = { has_global_flag = france_falls_to_junta }
+		FRA = { has_country_flag = FRA_COUPED_BY_JUNTA }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		trigger = {
+			NOT = { tag = FRA }
+			OR = {
+				tag = SOV
+				has_government = libertarian_socialist
+				has_government = collectivist
+				has_government = vanguardist
+			}
+		}
+		name = fxnews.73.a
+	}
+
+	option = {
+		trigger = {
+			NOT = { tag = FRA }
+			OR = {
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+			}
+		}
+		name = fxnews.73.b
+	}
+
+	option = {
+		trigger = {
+			NOT ={
+				tag = GER
+				is_in_faction_with = GER
+			}
+			OR = {
+				tag = FRA
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+		name = fxnews.73.c
+	}
+
+	option = {
+		trigger = {
+			NOT = { tag = FRA }
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+				has_government = valkist
+			}
+		}
+		name = fxnews.73.e
+	}
+}
+
+# Anschluss
+news_event = {
+	id = fxnews.74
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.74"}
+	title = fxnews.74.t
+	desc = fxnews.74.d
+	picture = GFX_news_event_GER_alsace
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = ger_occ_aus }
+		GER = { has_country_flag = AUS_OCCUPIED_BY_GER }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = { set_global_flag = ger_occ_aus }
+
+	option = {
+		trigger = {
+			is_in_faction_with = FRA
+		}
+		name = fxnews.74.a
+		add_war_support = 0.05
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				tag = GER
+				is_in_faction_with = FRA
+			}
+		}
+		name = fxnews.74.b
+	}
+
+	option = {
+		trigger = {
+			tag = GER
+		}
+		name = fxnews.74.c
+	}
+}
+
+# Nazbol Gang, unite
+news_event = {
+	id = fxnews.75
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.75"}
+	title = fxnews.75.t
+	desc = fxnews.75.d
+	picture = GFX_news_event_hamburg_angry
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = kiel_zone_more_like_kill_zone }
+		DEN = { has_country_flag = Nazbols_vs_Denmark }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = { set_global_flag = kiel_zone_more_like_kill_zone }
+
+	option = {
+		trigger = {
+			OR = {
+				tag = SHO
+				tag = DEN
+			}
+		}
+		name = fxnews.75.a
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = SHO
+					tag = DEN
+				}
+			}
+		}
+		name = fxnews.75.b
+	}
+}
+
+
+###Alternate History###
+
+# Caesarreich
+country_event = {
+	id = fxnews.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.76"}
+	title = fxnews.76.t
+	desc = fxnews.76.d
+	picture = GFX_report_event_ernest_raymond
+
+	trigger = {
+		is_ai = no
+		date > 1939.1.1
+		NOT = { has_global_flag = althistory_is_cool }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = { set_global_flag = althistory_is_cool }
+
+	option = {
+		name = fxnews.76.a
+	}
+}
+
+# Tides of Revolution
+country_event = {
+	id = fxnews.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.77"}
+	title = fxnews.77.t
+	desc = fxnews.77.d
+	picture = GFX_report_event_eric_blair
+
+	trigger = {
+		is_ai = no
+		date > 1939.1.1
+		NOT = { has_global_flag = althistory_is_cool }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = { set_global_flag = althistory_is_cool }
+
+	option = {
+		name = fxnews.77.a
+	}
+}
+# Knife of the Letter
+country_event = {
+	id = fxnews.78
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.78"}
+	title = fxnews.78.t
+	desc = fxnews.78.d
+	picture = GFX_report_event_andre_malraux
+
+	trigger = {
+		is_ai = no
+		date > 1939.1.1
+		NOT = { has_global_flag = althistory_is_cool }
+		OR = {
+			has_global_flag = All_News_Events
+			has_global_flag = Important_News_Events
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = { set_global_flag = althistory_is_cool }
+
+	option = {
+		name = fxnews.78.a
+	}
+}
+news_event = {
+	id = fxnews.79
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fxnews.79"}
+	title = fxnews.79.t
+	desc = fxnews.79.d
+	picture = GFX_report_event_GRE_riot
+	is_triggered_only = yes
+
+	option = {
+		name = fxnews.78.a
 	}
 }

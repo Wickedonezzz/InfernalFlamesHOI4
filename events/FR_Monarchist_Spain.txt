@@ -14,15 +14,16 @@ country_event = {
 	title = monspain.0.t
 	desc = monspain.0.d
 	#picture = NOR_tranmel_tale
-	
-	 trigger = {
-	 	tag = SPM
-	 }
+
+	# trigger = {
+		# 	tag = SPM
+		# }
 
 	# mean_time_to_happen = { days = 2 }
-	
-    fire_only_once = yes
-	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.0.a
 		add_political_power = 5
@@ -37,14 +38,14 @@ country_event = {
 	title = monspain.1.t
 	desc = monspain.1.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		date > 1936.1.8
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.1.a
 		add_manpower = -500
@@ -58,14 +59,14 @@ country_event = {
 	title = monspain.2.t
 	desc = monspain.2.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		date > 1936.1.21
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.2.a
 		add_political_power = 10
@@ -81,14 +82,14 @@ country_event = {
 	title = monspain.3.t
 	desc = monspain.3.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		controls_state = 41
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.3.a
 		add_political_power = 40
@@ -106,14 +107,14 @@ country_event = {
 	title = monspain.4.t
 	desc = monspain.4.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		controls_state = 167
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.4.a
 		add_political_power = 15
@@ -130,14 +131,14 @@ country_event = {
 	title = monspain.5.t
 	desc = monspain.5.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		controls_state = 165
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.5.a
 		add_political_power = 20
@@ -155,15 +156,15 @@ country_event = {
 	title = monspain.6.t
 	desc = monspain.6.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		SPR = { exists = no }
 		SPA = { exists = no }
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.6.a
 		hidden_effect = {
@@ -178,11 +179,11 @@ country_event = {
 	title = monspain.7.t
 	desc = monspain.7.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.7.a
 		declare_war_on = {
@@ -200,14 +201,14 @@ country_event = {
 	title = monspain.8.t
 	desc = monspain.8.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		controls_state = 171
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.8.a
 		add_political_power = 15
@@ -225,11 +226,11 @@ country_event = {
 	title = monspain.9.t
 	desc = monspain.9.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.9.a
 		add_stability = -0.10
@@ -238,6 +239,8 @@ country_event = {
 		add_ideas = SPR_civil_war_recovery_idea
 		hidden_effect = {
 			load_focus_tree = FR_Monarchist_Spain
+			clr_country_flag = SPM_IN_CIVIL_WAR
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = social_conservative popularity = -0.03 }
 			add_popularity = { ideology = authoritarian_democrat popularity = -0.08 }
 			add_popularity = { ideology = paternal_autocrat popularity = -0.08 }
@@ -280,6 +283,10 @@ country_event = {
 			add_ideas = civilian_economy
 			add_ideas = volunteer_only
 			add_ideas = SPAIN_very_low_recognition_idea
+			event_target:unified_spain = {
+				clear_global_event_target = unified_spain
+			}
+			save_global_event_target_as = unified_spain
 			set_cosmetic_tag = SPM_kingdom
 			set_global_flag = SPR_spanish_civil_war_ended_flag
 		}
@@ -292,7 +299,7 @@ country_event = {
 	title = monspain.10.t
 	desc = monspain.10.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		NOT = {
@@ -301,9 +308,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.10.a
 		add_political_power = -50
@@ -326,11 +333,11 @@ country_event = {
 	title = monspain.11.t
 	desc = monspain.11.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.11.a
 		add_stability = -0.03
@@ -349,7 +356,7 @@ country_event = {
 	title = monspain.12.t
 	desc = monspain.12.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -358,9 +365,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.12.a
 		add_political_power = -50
@@ -382,16 +389,16 @@ country_event = {
 	title = monspain.13.t
 	desc = monspain.13.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_global_flag = SPR_spanish_civil_war_ended_flag
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 50 }
-	
+
 	option = {
 		name = monspain.13.a
 		ai_chance = { base = 30 }
@@ -402,7 +409,7 @@ country_event = {
 			country_event = { id = monspain.14 days = 5 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.13.b
 		ai_chance = { base = 40 }
@@ -413,7 +420,7 @@ country_event = {
 			country_event = { id = monspain.14 days = 5 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.13.c
 		ai_chance = { base = 30 }
@@ -432,11 +439,11 @@ country_event = {
 	title = monspain.14.t
 	desc = monspain.14.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.14.a
 		add_stability = 0.04
@@ -450,17 +457,17 @@ country_event = {
 	title = monspain.15.t
 	desc = monspain.15.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_country_flag = SPM_government_picked_flag
 		date > 1938.1.1
 	}
-	
+
 	mean_time_to_happen = { days = 100 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.15.a
 		ai_chance = { base = 70 }
@@ -469,7 +476,7 @@ country_event = {
 			set_country_flag = SPM_king_did_not_abdicate_flag
 		}
 	}
-	
+
 	option = {
 		name = monspain.15.b
 		ai_chance = { base = 30 }
@@ -486,71 +493,71 @@ country_event = {
 	title = monspain.16.t
 	desc = monspain.16.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.16.a
 		add_stability = 0.02
 		hidden_effect = {
-      add_country_leader_role = {
-        character = SPM_Jaime_III
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Jaime_III
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Jaime_III
-        promote_leader = yes
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Jaime_III
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Jaime_III
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Jaime_III
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
 			add_country_leader_role = {
-        character = SPM_Jaime_III
-        promote_leader = yes
-        country_leader = {
-          ideology = national_populist_subtype
-          traits = {}
-        }
-      }
+				character = SPM_Jaime_III
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Jaime_III
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Jaime_III
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Jaime_III
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Jaime_III
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Jaime_III
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Jaime_III
+				promote_leader = yes
+				country_leader = {
+					ideology = national_populist_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -561,15 +568,15 @@ country_event = {
 	title = monspain.17.t
 	desc = monspain.17.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_country_flag = SPM_king_did_not_abdicate_flag
 		date > 1938.8.10
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.17.a
 		add_political_power = -10
@@ -582,14 +589,14 @@ country_event = {
 	title = monspain.18.t
 	desc = monspain.18.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		date > 1938.10.12
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.18.a
 		add_political_power = -10
@@ -602,75 +609,75 @@ country_event = {
 	title = monspain.19.t
 	desc = monspain.19.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_country_flag = SPM_king_did_not_abdicate_flag
 		date > 1941.2.24
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.19.a
 		add_stability = 0.02
 		hidden_effect = {
-      add_country_leader_role = {
-        character = SPM_Juan_III
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Juan_III
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Juan_III
-        promote_leader = yes
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Juan_III
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Juan_III
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SPM_Juan_III
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
 			add_country_leader_role = {
-        character = SPM_Juan_III
-        promote_leader = yes
-        country_leader = {
-          ideology = national_populist_subtype
-          traits = {}
-        }
-      }
+				character = SPM_Juan_III
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Juan_III
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Juan_III
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Juan_III
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Juan_III
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Juan_III
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SPM_Juan_III
+				promote_leader = yes
+				country_leader = {
+					ideology = national_populist_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -683,11 +690,11 @@ country_event = {
 	title = monspain.100.t
 	desc = monspain.100.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.100.a
 	}
@@ -699,11 +706,11 @@ country_event = {
 	title = monspain.101.t
 	desc = monspain.101.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.101.a
 		add_stability = 0.02
@@ -716,11 +723,11 @@ country_event = {
 	title = monspain.102.t
 	desc = monspain.102.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.102.a
 		ai_chance = {
@@ -745,13 +752,13 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.02 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.02 }
 		set_country_flag = SPM_government_picked_flag
-		end_coalition = yes 
+		end_coalition = yes
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = SPM_Francesc_Cambo_hog_sco
 		}
 	}
-	
+
 	option = {
 		name = monspain.102.b
 		ai_chance = {
@@ -776,13 +783,13 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = -0.02 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.02 }
 		set_country_flag = SPM_government_picked_flag
-		end_coalition = yes 
+		end_coalition = yes
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = SPM_Jose_Maria_Gil_Robles_y_Quinones_hog_ade
 		}
 	}
-	
+
 	option = {
 		name = monspain.102.c
 		ai_chance = {
@@ -807,7 +814,7 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = -0.02 }
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.02 }
 		set_country_flag = SPM_government_picked_flag
-		end_coalition = yes 
+		end_coalition = yes
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = SPM_Antonio_Goicoechea_hog_pau
@@ -821,11 +828,11 @@ country_event = {
 	title = monspain.103.t
 	desc = monspain.103.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.103.a
 	}
@@ -837,11 +844,11 @@ country_event = {
 	title = monspain.104.t
 	desc = monspain.104.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.104.a
 		add_stability = 0.01
@@ -855,11 +862,11 @@ country_event = {
 	title = monspain.105.t
 	desc = monspain.105.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.105.a
 		add_popularity = { ideology = paternal_autocrat popularity = -0.04 }
@@ -872,11 +879,11 @@ country_event = {
 	title = monspain.106.t
 	desc = monspain.106.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.106.a
 		country_event = { id = monspain.107 days = 10 }
@@ -889,11 +896,11 @@ country_event = {
 	title = monspain.107.t
 	desc = monspain.107.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.107.a
 		ai_chance = { base = 25 }
@@ -907,7 +914,7 @@ country_event = {
 			country_event = { id = monspain.108 days = 1460 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.107.b
 		ai_chance = { base = 30 }
@@ -921,7 +928,7 @@ country_event = {
 			country_event = { id = monspain.108 days = 1460 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.107.c
 		ai_chance = { base = 35 }
@@ -935,7 +942,7 @@ country_event = {
 			country_event = { id = monspain.108 days = 1460 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.107.e
 		ai_chance = { base = 10 }
@@ -957,9 +964,9 @@ country_event = {
 	title = monspain.108.t
 	desc = monspain.108.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = monspain.108.a
 		ai_chance = {
@@ -987,7 +994,7 @@ country_event = {
 			country_event = { id = monspain.108 days = 1460 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.108.b
 		ai_chance = {
@@ -1015,7 +1022,7 @@ country_event = {
 			country_event = { id = monspain.108 days = 1460 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.108.c
 		ai_chance = {
@@ -1043,7 +1050,7 @@ country_event = {
 			country_event = { id = monspain.108 days = 1460 }
 		}
 	}
-	
+
 	option = {
 		name = monspain.108.e
 		ai_chance = {
@@ -1079,11 +1086,11 @@ country_event = {
 	title = monspain.150.t
 	desc = monspain.150.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.150.a
 		ai_chance = { base = 90 }
@@ -1094,7 +1101,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = monspain.150.b
 		ai_chance = { base = 10 }
@@ -1112,11 +1119,11 @@ country_event = {
 	title = monspain.151.t
 	desc = monspain.151.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.151.a
 		if = {
@@ -1170,11 +1177,11 @@ country_event = {
 	title = monspain.152.t
 	desc = monspain.152.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.152.a
 	}
@@ -1186,11 +1193,11 @@ country_event = {
 	title = monspain.153.t
 	desc = monspain.153.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.153.a
 		add_manpower = 5000
@@ -1208,11 +1215,11 @@ country_event = {
 	title = monspain.154.t
 	desc = monspain.154.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.154.a
 	}
@@ -1224,11 +1231,11 @@ country_event = {
 	title = monspain.155.t
 	desc = monspain.155.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.155.a
 		ai_chance = { base = 60 }
@@ -1239,10 +1246,10 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.05
 		}
-		set_party_name = { 
-			ideology = authoritarian_democrat 
-			long_name = SPM_spanish_influence_party_long 
-			name = SPM_spanish_influence_party 
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = SPM_spanish_influence_party_long
+			name = SPM_spanish_influence_party
 		}
 		give_military_access = SPM
 		SPM = {
@@ -1251,7 +1258,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = monspain.155.b
 		ai_chance = { base = 40 }
@@ -1270,11 +1277,11 @@ country_event = {
 	title = monspain.156.t
 	desc = monspain.156.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.156.a
 		add_opinion_modifier = { target = CUB modifier = medium_increase }
@@ -1289,11 +1296,11 @@ country_event = {
 	title = monspain.157.t
 	desc = monspain.157.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.157.a
 		add_political_power = -10
@@ -1306,11 +1313,11 @@ country_event = {
 	title = monspain.158.t
 	desc = monspain.158.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.158.a
 		ai_chance = { base = 60 }
@@ -1321,10 +1328,10 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.05
 		}
-		set_party_name = { 
-			ideology = authoritarian_democrat 
-			long_name = SPM_spanish_influence_party_long 
-			name = SPM_spanish_influence_party 
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = SPM_spanish_influence_party_long
+			name = SPM_spanish_influence_party
 		}
 		give_military_access = SPM
 		SPM = {
@@ -1333,7 +1340,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = monspain.158.b
 		ai_chance = { base = 40 }
@@ -1352,11 +1359,11 @@ country_event = {
 	title = monspain.159.t
 	desc = monspain.159.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.159.a
 		add_opinion_modifier = { target = VEN modifier = medium_increase }
@@ -1371,11 +1378,11 @@ country_event = {
 	title = monspain.160.t
 	desc = monspain.160.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.160.a
 		add_political_power = -10
@@ -1388,7 +1395,7 @@ country_event = {
 	title = monspain.161.t
 	desc = monspain.161.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1397,11 +1404,11 @@ country_event = {
 		has_country_flag = SPM_strengthen_british_ties_flag
 		has_idea = SPAIN_very_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = monspain.161.a
 		swap_ideas = {
@@ -1419,7 +1426,7 @@ country_event = {
 	title = monspain.161.t
 	desc = monspain.162.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1428,11 +1435,11 @@ country_event = {
 		has_country_flag = SPM_strengthen_british_ties_flag
 		has_idea = SPAIN_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = monspain.161.a
 		swap_ideas = {
@@ -1450,7 +1457,7 @@ country_event = {
 	title = monspain.161.t
 	desc = monspain.163.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1459,11 +1466,11 @@ country_event = {
 		has_country_flag = SPM_strengthen_british_ties_flag
 		has_idea = SPAIN_medium_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = monspain.161.a
 		swap_ideas = {
@@ -1481,7 +1488,7 @@ country_event = {
 	title = monspain.161.t
 	desc = monspain.164.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1490,11 +1497,11 @@ country_event = {
 		has_country_flag = SPM_strengthen_british_ties_flag
 		has_idea = SPAIN_high_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = monspain.161.a
 		remove_ideas = SPAIN_high_recognition_idea
@@ -1509,7 +1516,7 @@ country_event = {
 	title = monspain.165.t
 	desc = monspain.165.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1522,11 +1529,11 @@ country_event = {
 			has_idea = SPAIN_high_recognition_idea
 		}
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 10 }
-	
+
 	option = {
 		name = monspain.165.a
 		if = {

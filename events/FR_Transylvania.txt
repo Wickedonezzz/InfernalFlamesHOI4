@@ -125,8 +125,8 @@ country_event = { #Literally not anchluss anschluss anymore
 	option = {
 		name = trans.4.a
 		HUN = {
-			set_state_owner = 76 
-			set_state_owner = 84 
+			set_state_owner = 76
+			set_state_owner = 84
 			set_state_owner = 82
 			set_state_owner = 1040
 		}

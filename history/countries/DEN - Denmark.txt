@@ -62,7 +62,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	limited_conscription
 	GEN_entente_member
 	DEN_danish_republicanism_idea

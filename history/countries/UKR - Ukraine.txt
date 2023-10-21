@@ -14,6 +14,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
@@ -89,8 +90,8 @@ set_war_support = 0.20
 
 
 add_ideas = {
-	party_pop_0_30
 	parliamentary_republic
+	GEN_entente_member
 
 	UKR_mutilated_victory
 	UKR_obsolete_agriculture

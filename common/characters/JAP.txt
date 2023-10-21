@@ -1,6 +1,6 @@
 characters = {
 	JAP_Hirohito = {
-		name = "Hirohito"
+		name = JAP_Hirohito
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
@@ -216,7 +216,7 @@ characters = {
 		}
 	}
 	JAP_Tokugawa_Iesato = {
-		name = "Tokugawa Iesato"
+		name = JAP_Tokugawa_Iesato
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/JAP/Portrait_JAP_Tokugawa_Iesato.png"
@@ -514,7 +514,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
-        		trait_reckless
+        trait_reckless
 			}
 			skill = 2
 			attack_skill = 4
@@ -551,7 +551,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
-        		career_officer
+        career_officer
 			}
 			skill = 2
 			attack_skill = 3
@@ -569,8 +569,8 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
-        		politically_connected 
-        		JAP_samurai_lineage
+				politically_connected 
+				JAP_samurai_lineage
 			}
 			skill = 1
 			attack_skill = 3

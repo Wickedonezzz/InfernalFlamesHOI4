@@ -8,8 +8,8 @@ set_stability = 0.75
 set_war_support = 0.70
 
 add_ideas = {
-	party_pop_0_60
 	constitutional_monarchy
+  EGL_war_reparations
 }
 
 set_convoys = 250

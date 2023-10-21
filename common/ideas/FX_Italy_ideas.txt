@@ -996,6 +996,29 @@ ideas = {
 				justify_war_goal_time = -0.25
 			}
 		}
+		ITA_colonial_fervor2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_colonial_fervor"}
+			cancel = {
+				NOT = {
+					owns_state = 448
+					owns_state = 449
+					owns_state = 450
+					owns_state = 451
+					owns_state = 661
+					owns_state = 662
+					owns_state = 663
+					owns_state = 273
+				}
+			}
+			allowed = { original_tag = ITA }
+			removal_cost = 1
+			picture = generic_intel_bonus
+
+			modifier = {
+				conscription_factor = 0.10
+				justify_war_goal_time = -0.25
+			}
+		}
 		ITA_highway_payment = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_highway_payment"}
 			cancel = {
@@ -1170,7 +1193,7 @@ ideas = {
 		ITA_panfilla_profits = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_panfilla_profits"}
 			allowed = { original_tag = ITA }
-			picture = IRE_debt_vlow
+			picture = generic_foreign_capital
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -1178,7 +1201,7 @@ ideas = {
 		ITA_italian_labor = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_italian_labor"}
 			allowed = { original_tag = ITA }
-			picture = IRE_debt_vlow
+			picture = generic_foreign_capital
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.05

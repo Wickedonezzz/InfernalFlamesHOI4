@@ -355,13 +355,8 @@ ideas = {
       picture = prc_low_popular_support3
       modifier = {
         monthly_population = 0.05
+				experience_loss_factor = -0.05
       }
-      equipment_bonus = {
-				field_hospital = {
-					casualty_trickleback = 0.05
-					instant = yes
-				}
-			}
     }
 		BLR_new_schools = {
 			allowed = { original_tag = BLR }

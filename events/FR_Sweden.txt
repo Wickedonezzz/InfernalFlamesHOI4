@@ -15,14 +15,15 @@ country_event = {
 	picture = report_event_generic_conference
 
 	fire_only_once = yes
-	
-	 trigger = {
-	 	tag = SWE
-	 }
-	
+	is_triggered_only = yes
+
+	# trigger = {
+		# 	tag = SWE
+		# }
+
 	# mean_time_to_happen = {
-	# 	days = 0
-	# }
+		# 	days = 0
+		# }
 
 	option = {
 		name = sweden.0.a
@@ -35,18 +36,18 @@ country_event = {
 	title = sweden.1.t
 	desc = sweden.1.d
 	picture = NOR_parliament
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.6.2
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		name = sweden.1.a
 		add_political_power = 5
@@ -62,9 +63,9 @@ country_event = {
 	title = sweden.2.t
 	desc = sweden.2.d
 	picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = sweden.2.a
 		add_political_power = 5
@@ -82,12 +83,12 @@ country_event = {
 	picture = report_event_generic_conference
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.5.1
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -97,13 +98,13 @@ country_event = {
 		ai_chance = { factor = 20 }
 		add_political_power = -75
 	}
-	
+
 	option = {
 		name = sweden.3.b
 		ai_chance = { factor = 60 }
 		add_political_power = -50
 	}
-	
+
 	option = {
 		name = sweden.3.c
 		ai_chance = { factor = 20 }
@@ -119,12 +120,12 @@ country_event = {
 	picture = report_event_generic_conference
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.5.20
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -143,12 +144,12 @@ country_event = {
 	picture = report_event_generic_conference
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.6.16
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -187,12 +188,12 @@ country_event = {
 	picture = report_event_generic_conference
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.9.5
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -260,9 +261,9 @@ country_event = {
 	title = sweden.10.t
 	desc = sweden.10.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.9.19
@@ -272,11 +273,11 @@ country_event = {
 			has_country_flag = SWE_election_happened_flag
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = sweden.10.a
 		ai_chance = { factor = 20 }
@@ -318,11 +319,11 @@ country_event = {
 	title = sweden.11.t
 	desc = sweden.11.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = sweden.11.a
 		set_politics = {
@@ -330,12 +331,10 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Per_Albin_Hansson_hog_sde
-			SWE_Erik_Palmstierna_for_sde
-			SWE_Anna_Johansson_Visborg_eco_sde
-			SWE_Karl_Kilbom_sec_lib
-		}
+		activate_advisor = SWE_Per_Albin_Hansson_hog_sde
+		activate_advisor = SWE_Erik_Palmstierna_for_sde
+		activate_advisor = SWE_Anna_Johansson_Visborg_eco_sde
+		activate_advisor = SWE_Karl_Kilbom_sec_lib
 		set_country_flag = SWE_socdem_victory_flag
 		set_country_flag = SWE_LEFT_WING_TREE
 		mark_focus_tree_layout_dirty = yes
@@ -351,10 +350,10 @@ country_event = {
 			}
 			clr_country_flag = SWE_SOCIALIST_TREE
 		}
-		remove_coalition_authoritarian_democrat = yes 
-		remove_coalition_social_conservative = yes 
-		remove_coalition_market_liberal = yes 
-		remove_coalition_social_liberal = yes 
+		remove_coalition_authoritarian_democrat = yes
+		remove_coalition_social_conservative = yes
+		remove_coalition_market_liberal = yes
+		remove_coalition_social_liberal = yes
 	}
 }
 
@@ -364,11 +363,11 @@ country_event = {
 	title = sweden.12.t
 	desc = sweden.12.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = sweden.12.a
 		ai_chance = { factor = 65 }
@@ -377,24 +376,22 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Fritiof_Domo_hog_sco
-			SWE_Martin_Skoglund_for_sco
-			SWE_Goesta_Bagge_eco_sco
-			SWE_Carlos_Adlercreutz_sec_ade
-		}
+		activate_advisor = SWE_Fritiof_Domo_hog_sco
+		activate_advisor = SWE_Martin_Skoglund_for_sco
+		activate_advisor = SWE_Gosta_Bagge_eco_sco
+		activate_advisor = SWE_Carlos_Adlercreutz_sec_ade
 		set_country_flag = SWE_soccon_victory_flag
 		set_country_flag = SWE_borgarliga_blocket_flag
 
-		remove_coalition_social_conservative = yes 
-		add_coalition_social_liberal = yes 
-		add_coalition_market_liberal = yes 
-		add_coalition_authoritarian_democrat = yes 
+		remove_coalition_social_conservative = yes
+		add_coalition_social_liberal = yes
+		add_coalition_market_liberal = yes
+		add_coalition_authoritarian_democrat = yes
 		hidden_effect = {
 			country_event = { days = 120 id = sweden.32 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.12.b
 		ai_chance = { factor = 35 }
@@ -404,19 +401,17 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Fritiof_Domo_hog_sco
-			SWE_Erik_von_Rosen_for_npo
-			SWE_Ernst_Trygger_eco_sco
-			SWE_Carlos_Adlercreutz_sec_ade
-		}
+		activate_advisor = SWE_Fritiof_Domo_hog_sco
+		activate_advisor = SWE_Erik_von_Rosen_for_npo
+		activate_advisor = SWE_Ernst_Trygger_eco_sco
+		activate_advisor = SWE_Carlos_Adlercreutz_sec_ade
 		set_country_flag = SWE_soccon_victory_flag
 		set_country_flag = SWE_deal_with_devil_flag
-		
-		remove_coalition_social_liberal = yes 
-		remove_coalition_market_liberal = yes 
-		add_coalition_authoritarian_democrat = yes 
-		add_coalition_national_populist = yes 
+
+		remove_coalition_social_liberal = yes
+		remove_coalition_market_liberal = yes
+		add_coalition_authoritarian_democrat = yes
+		add_coalition_national_populist = yes
 
 	}
 }
@@ -434,7 +429,7 @@ country_event = {
 		tag = SWE
 		has_country_flag = SWE_socdem_victory_flag
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -466,7 +461,7 @@ country_event = {
 			has_country_flag = SWE_far_right_victory_flag
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -503,7 +498,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -545,7 +540,7 @@ country_event = {
 			SWE = { country_event = { days = 100 id = sweden.18 } }
 		}
 	}
-	
+
 	option = {
 		name = sweden.16.b
 		ai_chance = { factor = 95 }
@@ -599,7 +594,7 @@ country_event = {
 			country_event = { days = 2 id = sweden.19 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.18.b
 		ai_chance = { factor = 35 }
@@ -655,55 +650,55 @@ country_event = {
 		add_political_power = -20
 		add_stability = -0.05
 		hidden_effect = {
-      retire_character = SWE_Gustaf_V
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-      }
+			retire_character = SWE_Gustaf_V
 			add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
 			country_event = { days = 10 id = sweden.21 }
 		}
 	}
@@ -750,20 +745,18 @@ country_event = {
 		}
 
 
-		remove_coalition_social_liberal = yes 
-		remove_coalition_market_liberal = yes 
-		add_coalition_vanguardist = yes 
-		add_coalition_libertarian_socialist = yes 
-		
+		remove_coalition_social_liberal = yes
+		remove_coalition_market_liberal = yes
+		add_coalition_vanguardist = yes
+		add_coalition_libertarian_socialist = yes
+
 		hidden_effect = {
 			141 = { set_demilitarized_zone = no }
 			remove_every_minister = yes
-			add_ideas = {
-				SWE_Frans_Severin_hog_col
-				SWE_Albert_Jensen_for_col
-				SWE_Gustav_Sjoestroem_eco_col
-				SWE_Folke_Fridell_sec_col
-			}
+			activate_advisor = SWE_Frans_Severin_hog_col
+			activate_advisor = SWE_Albert_Jensen_for_col
+			activate_advisor = SWE_Gustav_Sjoestroem_eco_col
+			activate_advisor = SWE_Folke_Fridell_sec_col
 			diplomatic_relation = {
 				country = FIN
 				relation = guarantee
@@ -793,7 +786,7 @@ country_event = {
 		name = sweden.22.a
 		add_political_power = -15
 		remove_ideas_with_trait = head_of_government
-		add_ideas = SWE_Goesta_Bagge_hog_sco
+		activate_advisor = SWE_Gosta_Bagge_hog_sco
 		set_country_flag = SWE_Arvid_Lindman_dead
 	}
 }
@@ -832,12 +825,12 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.5.16
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -856,12 +849,12 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1937.2.18
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -878,9 +871,9 @@ country_event = {
 	title = sweden.26.t
 	desc = sweden.26.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1937.5.2
@@ -888,11 +881,11 @@ country_event = {
 			has_country_flag = SWE_far_right_victory_flag
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = sweden.26.a
 		ai_chance = { factor = 65 }
@@ -917,18 +910,18 @@ country_event = {
 	title = sweden.27.t
 	desc = sweden.27.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1937.10.10
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = sweden.27.a
 		ai_chance = { factor = 50 }
@@ -953,12 +946,12 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.1.15
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -970,7 +963,7 @@ country_event = {
 		add_stability = -0.02
 		country_event = { days = 4 id = sweden.29 }
 	}
-	
+
 	option = {
 		name = sweden.28.b
 		ai_chance = { base = 50 }
@@ -1017,22 +1010,20 @@ country_event = {
 		}
 		hidden_effect = {
 			remove_every_minister = yes
-			add_ideas = {
-				SWE_Fritiof_Domo_hog_sco
-				SWE_Gustaf_Andersson_i_Rasjon_for_mli
-				SWE_Ernst_Trygger_eco_sco
-				SWE_Jarl_Hjalmarson_sec_sco
-			}
-			
-			remove_coalition_social_conservative = yes 
-			add_coalition_authoritarian_democrat = yes 
-			add_coalition_market_liberal = yes 
-			add_coalition_social_liberal = yes 
-			
+			activate_advisor = SWE_Fritiof_Domo_hog_sco
+			activate_advisor = SWE_Gustaf_Andersson_i_Rasjon_for_mli
+			activate_advisor = SWE_Ernst_Trygger_eco_sco
+			activate_advisor = SWE_Jarl_Hjalmarson_sec_sco
+
+			remove_coalition_social_conservative = yes
+			add_coalition_authoritarian_democrat = yes
+			add_coalition_market_liberal = yes
+			add_coalition_social_liberal = yes
+
 			country_event = { days = 4 id = sweden.31 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.30.b
 		ai_chance = { base = 25 }
@@ -1041,22 +1032,20 @@ country_event = {
 		}
 		hidden_effect = {
 			remove_every_minister = yes
-			add_ideas = {
-				SWE_Bertil_Ohlin_hog_mli
-				SWE_Martin_Skoglund_for_sco
-				SWE_Gustav_Cassel_eco_mli
-				SWE_Thorwald_Bergquist_sec_mli
-			}
-			
-			remove_coalition_social_conservative = yes 
-			add_coalition_authoritarian_democrat = yes 
-			add_coalition_social_conservative = yes 
-			add_coalition_social_liberal = yes 
-			
+			activate_advisor = SWE_Bertil_Ohlin_hog_mli
+			activate_advisor = SWE_Martin_Skoglund_for_sco
+			activate_advisor = SWE_Gustav_Cassel_eco_mli
+			activate_advisor = SWE_Thorwald_Bergquist_sec_mli
+
+			remove_coalition_social_conservative = yes
+			add_coalition_authoritarian_democrat = yes
+			add_coalition_social_conservative = yes
+			add_coalition_social_liberal = yes
+
 			country_event = { days = 4 id = sweden.31 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.30.c
 		ai_chance = { base = 25 }
@@ -1065,18 +1054,16 @@ country_event = {
 		}
 		hidden_effect = {
 			remove_every_minister = yes
-			add_ideas = {
-				SWE_Axel_Pehrsson_Bramstorp_hog_sli
-				SWE_Karl_Gustaf_Westman_for_sli
-				SWE_Arthur_Heiding_eco_sli
-				SWE_Thorwald_Bergquist_sec_mli
-			}
-			
-			remove_coalition_social_conservative = yes 
-			add_coalition_authoritarian_democrat = yes 
-			add_coalition_social_conservative = yes 
-			add_coalition_market_liberal = yes 
-			
+			activate_advisor = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+			activate_advisor = SWE_Karl_Gustaf_Westman_for_sli
+			activate_advisor = SWE_Arthur_Heiding_eco_sli
+			activate_advisor = SWE_Thorwald_Bergquist_sec_mli
+
+			remove_coalition_social_conservative = yes
+			add_coalition_authoritarian_democrat = yes
+			add_coalition_social_conservative = yes
+			add_coalition_market_liberal = yes
+
 			country_event = { days = 4 id = sweden.31 }
 		}
 	}
@@ -1096,7 +1083,7 @@ country_event = {
 	option = {
 		name = sweden.31.a
 		add_stability = -0.03
-		remove_coalition_authoritarian_democrat = yes 
+		remove_coalition_authoritarian_democrat = yes
 		hidden_effect = {
 			country_event = { days = 300 id = sweden.32 }
 		}
@@ -1109,11 +1096,11 @@ country_event = {
 	title = sweden.32.t
 	desc = sweden.32.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		NOT = {
@@ -1143,9 +1130,9 @@ country_event = {
 	title = sweden.33.t
 	desc = sweden.33.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.9.19
@@ -1155,11 +1142,11 @@ country_event = {
 			has_country_flag = SWE_election_happened_flag
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = sweden.33.a
 		ai_chance = { factor = 20 }
@@ -1193,7 +1180,7 @@ country_event = {
 		country_event = { days = 8 id = sweden.34 }
 		set_country_flag = SWE_election_happened_flag
 	}
-	
+
 	option = {
 		name = sweden.33.e
 		ai_chance = { factor = 10 }
@@ -1209,11 +1196,11 @@ country_event = {
 	title = sweden.34.t
 	desc = sweden.34.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = sweden.34.a
 		set_politics = {
@@ -1221,12 +1208,10 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Axel_Gyllenkrok_hog_npo
-			SWE_Sven_Olov_Lindholm_for_npo
-			SWE_Elof_Eriksson_eco_npo
-			SWE_Martin_Ekstrom_sec_npo
-		}
+		activate_advisor = SWE_Axel_Gyllenkrok_hog_npo
+		activate_advisor = SWE_Sven_Olov_Lindholm_for_npo
+		activate_advisor = SWE_Elof_Eriksson_eco_npo
+		activate_advisor = SWE_Martin_Ekstrom_sec_npo
 		set_country_flag = SWE_far_right_victory_flag
 		mark_focus_tree_layout_dirty = yes
 		set_country_flag = SWE_NATIONALIST_TREE
@@ -1242,13 +1227,13 @@ country_event = {
 			}
 			clr_country_flag = SWE_SOCIALIST_TREE
 		}
-		
-		remove_coalition_authoritarian_democrat = yes 
-		remove_coalition_social_conservative = yes 
-		remove_coalition_market_liberal = yes 
-		remove_coalition_social_liberal = yes 
-		add_coalition_paternal_autocrat = yes 
-		add_coalition_valkist = yes 
+
+		remove_coalition_authoritarian_democrat = yes
+		remove_coalition_social_conservative = yes
+		remove_coalition_market_liberal = yes
+		remove_coalition_social_liberal = yes
+		add_coalition_paternal_autocrat = yes
+		add_coalition_valkist = yes
 		hidden_effect = {
 			set_variable = {
 				var = SWE_nat_conservative_influence_var
@@ -1276,11 +1261,11 @@ country_event = {
 	title = sweden.35.t
 	desc = sweden.35.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = sweden.35.a
 		add_manpower = -164
@@ -1299,12 +1284,12 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1936.2.22
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -1327,13 +1312,13 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		date > 1940.2.24
 		has_idea = SWE_Carl_Gustaf_Hammarskjold_hog_ade
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -1343,7 +1328,7 @@ country_event = {
 		add_stability = -0.08
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
-			add_ideas = SWE_Axel_Rappe_hog_pau
+			activate_advisor = SWE_Axel_Rappe_hog_pau
 			country_event = { days = 1 id = sweden.38 }
 		}
 	}
@@ -1357,7 +1342,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1373,7 +1358,7 @@ country_event = {
 				long_name = SWE_pataut_army_long
 				name = SWE_pataut_army
 			}
-			remove_coalition_social_conservative = yes 
+			remove_coalition_social_conservative = yes
 			country_event = { days = 6 id = sweden.39 }
 		}
 	}
@@ -1387,7 +1372,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1408,7 +1393,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1429,7 +1414,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1443,7 +1428,7 @@ country_event = {
 			country_event = { days = 3 id = sweden.43 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.41.b
 		ai_chance = { factor = 35 }
@@ -1488,7 +1473,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1519,55 +1504,55 @@ country_event = {
 		add_political_power = -20
 		add_stability = -0.05
 		hidden_effect = {
-      retire_character = SWE_Gustaf_V
+			retire_character = SWE_Gustaf_V
 			add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = social_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = market_liberal_subtype
-          traits = {}
-        }
-      }
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+			}
 			add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
-      add_country_leader_role = {
-        character = SWE_Gustaf_VI_Adolf
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
+			add_country_leader_role = {
+				character = SWE_Gustaf_VI_Adolf
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
 			country_event = { days = 10 id = sweden.45 }
 		}
 	}
@@ -1610,34 +1595,32 @@ country_event = {
 			}
 			clr_country_flag = SWE_SOCIALIST_TREE
 		}
-		
+
 		hidden_effect = {
 			141 = { set_demilitarized_zone = no }
 			remove_every_minister = yes
-			add_ideas = {
-				SWE_Martin_Ekstroem_hog_npo
-				SWE_Erik_von_Rosen_for_npo
-				SWE_Arthur_Linden_eco_npo
-				SWE_Martin_Ekstroem_sec_npo
-			}
+			activate_advisor = SWE_Martin_Ekstrom_hog_npo
+			activate_advisor = SWE_Erik_von_Rosen_for_npo
+			activate_advisor = SWE_Arthur_Linden_eco_npo
+			activate_advisor = SWE_Martin_Ekstrom_sec_npo
 			diplomatic_relation = {
 				country = FIN
 				relation = guarantee
 				active = no
 			}
 			add_country_leader_role = {
-        character = SWE_Per_Engdahl
-        promote_leader = yes
-        country_leader = {
-          ideology = national_populist_subtype
-          traits = {}
-        }
-      }
-			remove_coalition_social_liberal = yes 
-			remove_coalition_market_liberal = yes 
-			remove_coalition_social_conservative = yes 
-			remove_coalition_authoritarian_democrat = yes 
-			remove_coalition_national_populist = yes 
+				character = SWE_Per_Engdahl
+				promote_leader = yes
+				country_leader = {
+					ideology = national_populist_subtype
+					traits = {}
+				}
+			}
+			remove_coalition_social_liberal = yes
+			remove_coalition_market_liberal = yes
+			remove_coalition_social_conservative = yes
+			remove_coalition_authoritarian_democrat = yes
+			remove_coalition_national_populist = yes
 			remove_ideas = SWE_steps_toward_new_sweden_balance_idea
 			remove_ideas = SWE_steps_toward_new_sweden_slight_con_idea
 			remove_ideas = SWE_steps_toward_new_sweden_favour_con_idea
@@ -1673,7 +1656,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		OR = {
@@ -1681,7 +1664,7 @@ country_event = {
 			has_idea = SWE_steps_toward_new_sweden_heavy_con_idea
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 10
 	}
@@ -1703,7 +1686,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWE
 		OR = {
@@ -1711,7 +1694,7 @@ country_event = {
 			has_idea = SWE_steps_toward_new_sweden_heavy_nat_idea
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -1747,7 +1730,7 @@ country_event = {
 			country_event = { id = sweden.51 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.50.b
 		ai_chance = { base = 20 }
@@ -1813,7 +1796,7 @@ country_event = {
 			country_event = { days = 1 id = sweden.56 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.53.b
 		ai_chance = { base = 30 }
@@ -1875,27 +1858,27 @@ country_event = {
 						}
 					}
 				}
-        retire_character = SWE_Gustaf_V
-        add_country_leader_role = {
-          character = SWE_Per_Albin_Hansson
-          promote_leader = yes
-          country_leader = {
-            ideology = social_democrat_subtype
-            traits = {}
-          }
-        }
-        add_country_leader_role = {
-          character = SWE_Gosta_Bagge
-          promote_leader = yes
-          country_leader = {
-            ideology = social_democrat_subtype
-            traits = {}
-          }
-        }
+				retire_character = SWE_Gustaf_V
+				add_country_leader_role = {
+					character = SWE_Per_Albin_Hansson
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					character = SWE_Gosta_Bagge
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
+				}
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.55.b
 		ai_chance = { base = 40 }
@@ -2003,10 +1986,10 @@ country_event = {
 				ruling_party = social_conservative elections_allowed = no
 			}
 			remove_ideas_with_trait = head_of_government
-			add_ideas = SWE_Goesta_Bagge_hog_sco
+			activate_advisor = SWE_Gosta_Bagge_hog_sco
 		}
 	}
-	
+
 	option = {
 		name = sweden.60.b
 		ai_chance = { base = 40 }
@@ -2018,7 +2001,7 @@ country_event = {
 				ruling_party = authoritarian_democrat elections_allowed = no
 			}
 			remove_ideas_with_trait = head_of_government
-			add_ideas = SWE_Elmo_Lindholm_hog_ade
+			activate_advisor = SWE_Elmo_Lindholm_hog_ade
 		}
 	}
 }
@@ -2029,7 +2012,7 @@ country_event = {
 	title = sweden.61.t
 	desc = sweden.61.d
 	picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -2217,7 +2200,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.67.b
 		ai_chance = { base = 45 }
@@ -2280,7 +2263,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.67.c
 		ai_chance = { base = 10 }
@@ -2419,7 +2402,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.68.b
 		ai_chance = { base = 45 }
@@ -2482,7 +2465,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.68.c
 		ai_chance = { base = 10 }
@@ -2621,7 +2604,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.69.b
 		ai_chance = { base = 45 }
@@ -2684,7 +2667,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.69.c
 		ai_chance = { base = 10 }
@@ -2766,20 +2749,20 @@ country_event = {
 		ai_chance = { base = 75 }
 		add_stability = 0.01
 	}
-	
+
 	option = {
 		name = sweden.70.b
 		ai_chance = { base = 25 }
 		add_stability = -0.08
 		hidden_effect = {
-      add_country_leader_role = {
-        character = SWE_Per_Engdahl
-        promote_leader = yes
-        country_leader = {
-          ideology = national_populist_subtype
-          traits = {}
-        }
-      }
+			add_country_leader_role = {
+				character = SWE_Per_Engdahl
+				promote_leader = yes
+				country_leader = {
+					ideology = national_populist_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -2911,12 +2894,11 @@ country_event = {
 			name = SWE_pataut_monarchy
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Helge_Jung_hog_pau
-			SWE_Gunnar_Berggren_for_pau
-			SWE_Marcus_Wallenberg_eco_pau
-			SWE_Axel_Rappe_sec_pau
-		}
+		activate_advisor = SWE_Helge_Jung_hog_ade
+		activate_advisor = SWE_Gunnar_Berggren_for_pau
+		activate_advisor = SWE_Marcus_Wallenberg_eco_pau
+		activate_advisor = SWE_Axel_Rappe_sec_pau
+
 		set_country_flag = SWE_far_right_victory_flag
 		set_country_flag = SWE_power_to_king_flag
 	}
@@ -3054,7 +3036,7 @@ country_event = {
 			country_event = { id = sweden.87 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.86.b
 		ai_chance = { base = 20 }
@@ -3119,7 +3101,7 @@ country_event = {
 			country_event = { id = sweden.90 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.89.b
 		ai_chance = { base = 20 }
@@ -3231,7 +3213,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = sweden.94.b
 		ai_chance = { base = 10 }
@@ -3256,7 +3238,7 @@ country_event = {
 		add_political_power = 10
 		set_global_flag = SWE_NOR_passport_accept
 	}
-	
+
 	option = {
 		name = sweden.95.b
 		ai_chance = { base = 50 }
@@ -3282,7 +3264,7 @@ country_event = {
 		add_political_power = 10
 		set_global_flag = SWE_DEN_passport_accept
 	}
-	
+
 	option = {
 		name = sweden.96.b
 		ai_chance = { base = 30 }
@@ -3308,7 +3290,7 @@ country_event = {
 		add_political_power = 10
 		set_global_flag = SWE_FIN_passport_accept
 	}
-	
+
 	option = {
 		name = sweden.97.b
 		ai_chance = { base = 20 }
@@ -3325,7 +3307,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	mean_time_to_happen = { days = 5 }
-	
+
 	trigger = {
 		tag = SWE
 		OR = {
@@ -3387,7 +3369,7 @@ country_event = {
 	picture = NOR_tranmel_tale
 
 	mean_time_to_happen = { days = 5 }
-	
+
 	trigger = {
 		tag = SWE
 		OR = {
@@ -3435,7 +3417,7 @@ country_event = {
 			country_event = { id = sweden.101 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.100.b
 		ai_chance = { base = 20 }
@@ -3490,11 +3472,11 @@ country_event = {
 	title = sweden.105.t
 	desc = sweden.105.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = sweden.105.a
 		ai_chance = { factor = 40 }
@@ -3507,20 +3489,18 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Karin_Boye_hog_lib
-			SWE_Fredrik_Stroem_for_lib
-			SWE_Oesten_Unden_eco_lib
-			SWE_Karl_Kilbom_sec_lib
-		}
+		activate_advisor = SWE_Karin_Boye_hog_lib
+		activate_advisor = SWE_Fredrik_Strom_for_lib
+		activate_advisor = SWE_Osten_Unden_eco_lib
+		activate_advisor = SWE_Karl_Kilbom_sec_lib
 		set_country_flag = SWE_lib_soc_victory_flag
 		set_country_flag = SWE_socialist_diplomacy_available
-		
-		remove_coalition_vanguardist = yes 
-		remove_coalition_libertarian_socialist = yes 
-		add_coalition_collectivist = yes 
+
+		remove_coalition_vanguardist = yes
+		remove_coalition_libertarian_socialist = yes
+		add_coalition_collectivist = yes
 	}
-	
+
 	option = {
 		name = sweden.105.b
 		ai_chance = { factor = 40 }
@@ -3529,16 +3509,14 @@ country_event = {
 		add_popularity = { ideology = vanguardist popularity = -0.02 }
 		add_ideas = workers_republic
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Frans_Severin_hog_col
-			SWE_Albert_Jensen_for_col
-			SWE_Gustav_Sjoestroem_eco_col
-			SWE_Folke_Fridell_sec_col
-		}
+		activate_advisor = SWE_Frans_Severin_hog_col
+		activate_advisor = SWE_Albert_Jensen_for_col
+		activate_advisor = SWE_Gustav_Sjostrom_eco_col
+		activate_advisor = SWE_Folke_Fridell_sec_col
 		set_country_flag = SWE_collie_victory_flag
 		set_country_flag = SWE_socialist_diplomacy_available
 	}
-	
+
 	option = {
 		name = sweden.105.c
 		ai_chance = { factor = 20 }
@@ -3551,18 +3529,16 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWE_Sven_Linderot_hog_van
-			SWE_Hilding_Hagberg_for_van
-			SWE_Sven_Linderot_eco_van
-			SWE_Arvid_Olsson_sec_van
-		}
+		activate_advisor = SWE_Sven_Linderot_hog_van
+		activate_advisor = SWE_Hilding_Hagberg_for_van
+		activate_advisor = SWE_Sven_Linderot_eco_van
+		activate_advisor = SWE_Arvid_Olsson_sec_van
 		set_country_flag = SWE_vanguard_victory_flag
 		set_country_flag = SWE_socialist_diplomacy_available
-		
-		remove_coalition_vanguardist = yes 
-		remove_coalition_libertarian_socialist = yes 
-		add_coalition_collectivist = yes 
+
+		remove_coalition_vanguardist = yes
+		remove_coalition_libertarian_socialist = yes
+		add_coalition_collectivist = yes
 	}
 }
 
@@ -3586,7 +3562,7 @@ country_event = {
 			country_event = { id = sweden.107 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.106.b
 		ai_chance = { base = 20 }
@@ -3649,7 +3625,7 @@ country_event = {
 			country_event = { id = sweden.110 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.109.b
 		ai_chance = { base = 50 }
@@ -3693,7 +3669,7 @@ country_event = {
 		add_political_power = 30
 		create_wargoal = { type = annex_everything target = NOR }
 	}
-	
+
 	option = {
 		name = sweden.111.b
 		ai_chance = { base = 20 }
@@ -3719,7 +3695,7 @@ country_event = {
 			country_event = { id = sweden.113 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.112.b
 		ai_chance = { base = 50 }
@@ -3759,7 +3735,7 @@ country_event = {
 	option = {
 		name = sweden.114.a
 	}
-	
+
 	option = {
 		name = sweden.114.b
 	}
@@ -3783,7 +3759,7 @@ country_event = {
 			country_event = { id = sweden.116 }
 		}
 	}
-	
+
 	option = {
 		name = sweden.115.b
 		ai_chance = { base = 50 }
@@ -3827,7 +3803,7 @@ country_event = {
 		add_political_power = 30
 		create_wargoal = { type = annex_everything target = DEN }
 	}
-	
+
 	option = {
 		name = sweden.117.b
 		ai_chance = { base = 20 }
@@ -3866,7 +3842,7 @@ country_event = {
 		add_stability = -0.05
 		set_cosmetic_tag = SWE_SCA
 	}
-	
+
 	option = {
 		name = sweden.120.b
 		ai_chance = { base = 10 }
@@ -3876,41 +3852,41 @@ country_event = {
 
 # Sweden intergrate norway, gets union jack flag - By Drowse
 #country_event = {
-#	id = sweden.420
-#	title = "Re-establish Sweden–Norway?"
-#	desc = sweden.420.d
-#	picture = report_event_SWE_Scandinavia
-#	
-#	trigger = {
-#		AND = {
-#			original_tag = SWE
-#			owns_state = 110
-#			owns_state = 142
-#			owns_state = 143
-#			has_war = no
-#		}
-#	}
-#	
-#	fire_only_once = yes
-#
-#	option = {
-#		name = "Together our nations will emerge stronger than ever!"
-#		set_cosmetic_tag = SNU
-#		110 = {
-#			add_core_of = SWE
-#		}
-#		142 = {
-#			add_core_of = SWE
-#		}
-#		143 = {
-#			add_core_of = SWE
-#		}
-#		144 = {
-#			add_core_of = SWE
-#		}
-#		add_stability = -0.1
-#	}
-#}
+	#	id = sweden.420
+	#	title = "Re-establish Sweden–Norway?"
+	#	desc = sweden.420.d
+	#	picture = report_event_SWE_Scandinavia
+	#
+	#	trigger = {
+		#		AND = {
+			#			original_tag = SWE
+			#			owns_state = 110
+			#			owns_state = 142
+			#			owns_state = 143
+			#			has_war = no
+			#		}
+		#	}
+	#
+	#	fire_only_once = yes
+	#
+	#	option = {
+		#		name = "Together our nations will emerge stronger than ever!"
+		#		set_cosmetic_tag = SNU
+		#		110 = {
+			#			add_core_of = SWE
+			#		}
+		#		142 = {
+			#			add_core_of = SWE
+			#		}
+		#		143 = {
+			#			add_core_of = SWE
+			#		}
+		#		144 = {
+			#			add_core_of = SWE
+			#		}
+		#		add_stability = -0.1
+		#	}
+	#}
 
 #####################
 #####News Events#####
@@ -3923,13 +3899,13 @@ news_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event swenews.1"}
 	title = "Swedish Intervention in Norway"
 	desc = swenews.1.d
-	
+
 	picture = news_event_ast_navy
 
-    major = yes
-	
-	is_triggered_only = yes 
-	
+	major = yes
+
+	is_triggered_only = yes
+
 	option = {
 		trigger = {
 			AND = {
@@ -3942,7 +3918,7 @@ news_event = {
 		}
 		name = "A necessary act to ensure stability in Scandinavia"
 	}
-	
+
 	option = {
 		trigger = {
 			OR = {
@@ -3957,19 +3933,19 @@ news_event = {
 		}
 		name = "An outrageous denial of the will of the Norwegian people"
 	}
-	
+
 	option = {
 		trigger = {
 			original_tag = NOR
 		}
 		name = "We will drive the invaders from our land!"
 	}
-	
+
 	option = {
 		trigger = {
 			original_tag = SWE
 		}
 		name = "We must not allow Socialism to spread in Scandinavia!"
 	}
-}	
+}
 

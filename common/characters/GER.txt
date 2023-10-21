@@ -204,6 +204,43 @@ characters = {
 			traits = { }
 		}
 	}
+	GER_Wickedonezz = {
+		name = "Wickedonezz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_GER_Wickedonezz.png"
+			}
+		}
+		country_leader = {
+			ideology = valkist_subtype
+			traits = { }
+		}
+	}
+	GER_Wilhelm_Keitel = {
+		name = "Wilhelm Keitel"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_GER_Wilhelm_Keitel.png"
+			}
+		}
+		country_leader = {
+			ideology = valkist_subtype
+			traits = { }
+		}
+
+		corps_commander = {
+			traits = { 
+				career_officer 
+				politically_connected
+				trickster 
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
 	GER_Gerd_von_Rundstedt = {
 		name = "Gerd von Rundstedt"
 		portraits = {
@@ -3291,42 +3328,61 @@ characters = {
 			coordination_skill = 2
 		}
   }
-	GER_Wilhelm_Keitel = {
-		name = "Wilhelm Keitel"
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_GER_Wilhelm_Keitel.png"
-			}
-		}
-		corps_commander = {
-			traits = { 
-				career_officer 
-				politically_connected
-				trickster 
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
+GER_Eduard_Dietl = {
+	name = "Eduard Dietl"
+	portraits = {
+		army = {
+			large = "gfx/leaders/GER/Portrait_GER_Eduard_Dietl_fx.png"
 		}
 	}
-	GER_Eduard_Dietl = {
-		name = "Eduard Dietl"
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_GER_Eduard_Dietl_fx.png"
-			}
+	corps_commander = {
+		traits = {
+			trickster 
 		}
-		corps_commander = {
-			traits = {
-				trickster 
-			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 3
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+}
+
+GER_Hermann_Fegelein = {
+	name = "Hermann Fegelein"
+	portraits = {
+		army = {
+			large = "gfx/leaders/GER/Portrait_GER_Hermann_Fegelein.png"
+		}
+	}
+	corps_commander = {
+		traits = {
+			trait_reckless 
+			politically_connected
+		}
+		skill = 1
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 2
+	}
+}
+GER_Ernst_Junger = {
+	name = "Ernst Junger"
+	portraits = {
+		army = {
+			large = "gfx/leaders/GER/Portrait_GER_Ernst_Junger.png"
+		}
+	}
+	corps_commander = {
+		traits = {
+			war_hero
+			infantry_officer
+		}
+		skill = 1
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
 		}
 	}
 }

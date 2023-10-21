@@ -10,7 +10,6 @@ set_technology = {
 }
 
 add_ideas = {
-	party_pop_0_90
 	parliamentary_republic
 }
 

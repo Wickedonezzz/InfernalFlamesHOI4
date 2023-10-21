@@ -357,7 +357,7 @@ SAU_war_of_arabian_reunification = {
       factor = 200
     }
     targets = {
-      744 292 1032 678
+      744 292 1032
     }
     target_trigger = { owns_state = FROM }
     visible = {
@@ -407,7 +407,7 @@ SAU_war_of_arabian_reunification = {
       factor = 200
     }
     targets = {
-      744 292 1032 678
+      744 292 1032
     }
     target_trigger = { owns_state = FROM }
     visible = {
@@ -427,14 +427,8 @@ SAU_war_of_arabian_reunification = {
     }
     remove_effect = {
       clr_country_flag = SAU_raising_division
-      if = {
-        limit = {
-          NOT = {
-            all_owned_state = {
-              is_impassable_state = yes
-            }
-          }
-        }
+      random_owned_controlled_state = {
+        limit = { is_impassable_state = no }
         FROM = {
           create_unit = {
             division = "name = \"Saudi Calvary\" division_template = \"Firqat Alfursan\" start_experience_factor = 1.0"

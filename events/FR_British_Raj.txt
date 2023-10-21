@@ -56,7 +56,7 @@ country_event = { #Banning Extreme Speech
 
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = raj.2.a
 		custom_effect_tooltip = RAJ_Fracture_Up
@@ -68,7 +68,7 @@ country_event = { #Banning Extreme Speech
 			add_to_variable = { var = raj_fragment value = 1 }
 			country_event = {
 				id = raj.3
-				days = 21 
+				days = 21
 			}
 		}
 	}
@@ -84,7 +84,7 @@ country_event = { #Banning Extreme Speech
 			add_to_variable = { var = raj_revolt value = 1 }
 			country_event = {
 				id = raj.3
-				days = 21 
+				days = 21
 			}
 		}
 	}
@@ -131,7 +131,7 @@ country_event = { #Additional Security
 			add_to_variable = { var = raj_revolt value = 1 }
 			country_event = {
 				id = raj.4
-				days = 31 
+				days = 31
 			}
 		}
 	}
@@ -167,11 +167,11 @@ country_event = { #Additional Security
 			add_to_variable = { var = raj_fragment value = 1 }
 			country_event = {
 				id = raj.4
-				days = 31 
+				days = 31
 			}
 			country_event = {
 				id = raj.90
-				days = 24 
+				days = 24
 			}
 		}
 	}
@@ -198,7 +198,7 @@ country_event = { #Clemency for Rebel Leaders
 			add_to_variable = { var = raj_fragment value = 1 }
 			country_event = {
 				id = raj.5
-				days = 31 
+				days = 31
 			}
 		}
 	}
@@ -212,7 +212,7 @@ country_event = { #Clemency for Rebel Leaders
 			add_to_variable = { var = raj_revolt value = 1 }
 			country_event = {
 				id = raj.5
-				days = 31 
+				days = 31
 			}
 		}
 	}
@@ -236,7 +236,7 @@ country_event = { #Power to Local Militias
 			add_to_variable = { var = raj_fragment value = 1 }
 			country_event = {
 				id = raj.6
-				days = 31 
+				days = 31
 			}
 		}
 	}
@@ -249,7 +249,7 @@ country_event = { #Power to Local Militias
 			add_to_variable = { var = raj_revolt value = 1 }
 			country_event = {
 				id = raj.6
-				days = 31 
+				days = 31
 			}
 		}
 	}
@@ -273,7 +273,7 @@ country_event = { #Aid from Britain
 			add_to_variable = { var = raj_revolt value = 1 }
 			country_event = {
 				id = raj.7
-				days = 31 
+				days = 31
 			}
 		}
 	}
@@ -349,7 +349,7 @@ country_event = { #Revolt Level 1 (AKA No Revolt)
 	desc = raj.8.d
 	picture = News_Asiancity
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -369,15 +369,15 @@ country_event = { #Revolt Level 2 (Weak Revolt)
 	desc = raj.9.d
 	picture = report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = raj.9.a
 		custom_effect_tooltip = RAJ_Revolt_tooltip
 		news_event = { id = fxnews.53 }
 		add_ideas = RAJ_limited_intervention
-		hidden_effect = {	
+		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
 				country_event = {
@@ -408,7 +408,6 @@ country_event = { #Revolt Level 2 (Weak Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -437,18 +436,18 @@ country_event = { #Revolt Level 2 (Weak Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 	option = {
-        name = raj.9.b
-        custom_effect_tooltip = RAJ_PlayIndia_tooltip
-        news_event = { id = fxnews.53 }
-        ai_chance = {
-        	factor = 0
-        }
+		name = raj.9.b
+		custom_effect_tooltip = RAJ_PlayIndia_tooltip
+		news_event = { id = fxnews.53 }
+		ai_chance = {
+			factor = 0
+		}
 		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
@@ -456,7 +455,7 @@ country_event = { #Revolt Level 2 (Weak Revolt)
 					id = afghan.1 days = 3
 				}
 			}
-			IND = { 
+			IND = {
 				transfer_technology = yes
 				load_focus_tree = india_revolt
 				transfer_state = 430
@@ -480,7 +479,6 @@ country_event = { #Revolt Level 2 (Weak Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -499,9 +497,9 @@ country_event = { #Revolt Level 2 (Weak Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 }
@@ -513,15 +511,15 @@ country_event = { #Revolt Level 3 (Default Revolt)
 	desc = raj.10.d
 	picture = report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = raj.10.a
 		custom_effect_tooltip = RAJ_Revolt_tooltip
 		add_ideas = RAJ_limited_intervention
 		news_event = { id = fxnews.53 }
-		hidden_effect = {	
+		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
 				country_event = {
@@ -565,7 +563,6 @@ country_event = { #Revolt Level 3 (Default Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -594,18 +591,18 @@ country_event = { #Revolt Level 3 (Default Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 	option = {
-        name = raj.10.b
-        custom_effect_tooltip = RAJ_PlayIndia_tooltip
-        news_event = { id = fxnews.53 }
-        ai_chance = {
-        	factor = 0
-        }
+		name = raj.10.b
+		custom_effect_tooltip = RAJ_PlayIndia_tooltip
+		news_event = { id = fxnews.53 }
+		ai_chance = {
+			factor = 0
+		}
 		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
@@ -613,7 +610,7 @@ country_event = { #Revolt Level 3 (Default Revolt)
 					id = afghan.1 days = 3
 				}
 			}
-			IND = { 
+			IND = {
 				transfer_technology = yes
 				load_focus_tree = india_revolt
 				transfer_state = 430
@@ -650,7 +647,6 @@ country_event = { #Revolt Level 3 (Default Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -669,9 +665,9 @@ country_event = { #Revolt Level 3 (Default Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 }
@@ -683,15 +679,15 @@ country_event = { #Revolt Level 4 (Big Revolt)
 	desc = raj.11.d
 	picture = report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = raj.11.a
 		custom_effect_tooltip = RAJ_Revolt_tooltip
 		add_ideas = RAJ_limited_intervention
 		news_event = { id = fxnews.53 }
-		hidden_effect = {	
+		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
 				country_event = {
@@ -740,7 +736,6 @@ country_event = { #Revolt Level 4 (Big Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -769,18 +764,18 @@ country_event = { #Revolt Level 4 (Big Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 	option = {
-        name = raj.11.b
-        custom_effect_tooltip = RAJ_PlayIndia_tooltip
-        news_event = { id = fxnews.53 }
-        ai_chance = {
-        	factor = 0
-        }
+		name = raj.11.b
+		custom_effect_tooltip = RAJ_PlayIndia_tooltip
+		news_event = { id = fxnews.53 }
+		ai_chance = {
+			factor = 0
+		}
 		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
@@ -788,7 +783,7 @@ country_event = { #Revolt Level 4 (Big Revolt)
 					id = afghan.1 days = 3
 				}
 			}
-			IND = { 
+			IND = {
 				transfer_technology = yes
 				load_focus_tree = india_revolt
 				transfer_state = 428
@@ -830,7 +825,6 @@ country_event = { #Revolt Level 4 (Big Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -849,9 +843,9 @@ country_event = { #Revolt Level 4 (Big Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 }
@@ -863,15 +857,15 @@ country_event = { #Revolt Level 5 (Massive Revolt)
 	desc = raj.12.d
 	picture = report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = raj.12.a
 		custom_effect_tooltip = RAJ_Revolt_tooltip
 		add_ideas = RAJ_limited_intervention
 		news_event = { id = fxnews.53 }
-		hidden_effect = {	
+		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
 				country_event = {
@@ -923,7 +917,6 @@ country_event = { #Revolt Level 5 (Massive Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -952,18 +945,18 @@ country_event = { #Revolt Level 5 (Massive Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 	option = {
-        name = raj.12.b
-        custom_effect_tooltip = RAJ_PlayIndia_tooltip
-        news_event = { id = fxnews.53 }
-        ai_chance = {
-        	factor = 0
-        }
+		name = raj.12.b
+		custom_effect_tooltip = RAJ_PlayIndia_tooltip
+		news_event = { id = fxnews.53 }
+		ai_chance = {
+			factor = 0
+		}
 		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
@@ -971,7 +964,7 @@ country_event = { #Revolt Level 5 (Massive Revolt)
 					id = afghan.1 days = 3
 				}
 			}
-			IND = { 
+			IND = {
 				transfer_technology = yes
 				load_focus_tree = india_revolt
 				transfer_state = 427
@@ -1016,7 +1009,6 @@ country_event = { #Revolt Level 5 (Massive Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -1035,9 +1027,9 @@ country_event = { #Revolt Level 5 (Massive Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 }
@@ -1049,15 +1041,15 @@ country_event = { #Revolt Level 6 (State-Collapsing Revolt)
 	desc = raj.13.d
 	picture = report_event_generic_conference
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = raj.13.a
 		custom_effect_tooltip = RAJ_Revolt_tooltip
 		add_ideas = RAJ_limited_intervention
 		news_event = { id = fxnews.53 }
-		hidden_effect = {	
+		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
 				country_event = {
@@ -1113,7 +1105,6 @@ country_event = { #Revolt Level 6 (State-Collapsing Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -1142,18 +1133,18 @@ country_event = { #Revolt Level 6 (State-Collapsing Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 	option = {
-        name = raj.13.b
-        custom_effect_tooltip = RAJ_PlayIndia_tooltip
-        news_event = { id = fxnews.53 }
-        ai_chance = {
-        	factor = 0
-        }
+		name = raj.13.b
+		custom_effect_tooltip = RAJ_PlayIndia_tooltip
+		news_event = { id = fxnews.53 }
+		ai_chance = {
+			factor = 0
+		}
 		hidden_effect = {
 			set_country_flag = RAJ_Revolt_Ongoing
 			AFG = {
@@ -1161,7 +1152,7 @@ country_event = { #Revolt Level 6 (State-Collapsing Revolt)
 					id = afghan.1 days = 3
 				}
 			}
-			IND = { 
+			IND = {
 				transfer_technology = yes
 				load_focus_tree = india_revolt
 				transfer_state = 423
@@ -1210,7 +1201,6 @@ country_event = { #Revolt Level 6 (State-Collapsing Revolt)
 				}
 				add_ideas = {
 					revolutionary_movement
-					party_pop_0_70
 					IND_mahatma_memories
 					IND_indian_rebels
 				}
@@ -1229,9 +1219,9 @@ country_event = { #Revolt Level 6 (State-Collapsing Revolt)
 					add_core_of = IND
 				}
 			}
-#			news_event = {
-#				id = worldnews.130 days = 1
-#			}
+			#			news_event = {
+				#				id = worldnews.130 days = 1
+				#			}
 		}
 	}
 }
@@ -1260,8 +1250,8 @@ country_event = { #UK Takes Burma
 			country_event = {days = 1 id = raj.21}
 		}
 		#ENG = {
-		#	country_event = {days = 5 id = raj.22}
-		#}
+			#	country_event = {days = 5 id = raj.22}
+			#}
 	}
 }
 
@@ -1290,9 +1280,9 @@ country_event = { #British event, Parliament decides on course of intervention i
 
 	trigger = {
 		tag = ENG
-		RAJ = { 
+		RAJ = {
 			AND = {
-				has_war_with = IND 
+				has_war_with = IND
 				is_puppet_of = ENG
 				surrender_progress > 0.7
 			}
@@ -1300,13 +1290,13 @@ country_event = { #British event, Parliament decides on course of intervention i
 		ENG = { NOT = { has_country_flag = ENG_Indian_Revolt_Intervention } }
 	}
 	fire_only_once = yes
-	immediate = { 
+	immediate = {
 		hidden_effect = {
-			set_country_flag = ENG_Indian_Revolt_Intervention 
+			set_country_flag = ENG_Indian_Revolt_Intervention
 		}
 	}
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = { #Full military intervention
 		name = raj.22.a
 		custom_effect_tooltip = raj_intervention_full_tt
@@ -1326,9 +1316,9 @@ country_event = { #British event, Parliament decides on course of intervention i
 			}
 		}
 		add_to_war = { #If you're making tag b join tag a's war against tag c, use this command instead of starting an entirely new war, lest we convince PDX to re-impliment the horror that was War Merging.
-    		targeted_alliance = RAJ 
-    		enemy = IND
-    		hostility_reason = asked_to_join
+			targeted_alliance = RAJ
+			enemy = IND
+			hostility_reason = asked_to_join
 		}
 		RAJ = {
 			country_event = {days = 1 id = raj.23}
@@ -1430,7 +1420,6 @@ country_event = { #Defeat of the Revolt
 		set_country_flag = RAJ_Peace
 		add_stability = 0.25
 		hidden_effect = {
-			country_event = {months = 12 id = raj.50}
 			country_event = {months = 1 id = raj.40}
 		}
 	}
@@ -1760,7 +1749,7 @@ country_event = { #Indian People's Front Independence
 			add_state_core = 431
 			add_state_core = 432
 			add_state_core = 434
-#			set_country_flag = ind_commies
+			#			set_country_flag = ind_commies
 		}
 		release = INC
 		INC = {
@@ -1794,7 +1783,7 @@ country_event = { #Indian People's Front Independence
 			add_state_core = 431
 			add_state_core = 432
 			add_state_core = 434
-#			set_country_flag = ind_commies
+			#			set_country_flag = ind_commies
 			change_tag_from = RAJ
 		}
 		release = INC
@@ -1840,17 +1829,17 @@ country_event = { #Hyderabad & Punjab Independence
 		PUN = {
 			add_state_core = 883
 			add_state_core = 440
-			IF = { 
-				limit = { 
-					442 = { 
-						NOT = { 
-							is_owned_and_controlled_by= AFG 
-						} 
-					} 
-				} 
-				PUN = { 
-					add_state_core = 442 
-				} 
+			IF = {
+				limit = {
+					442 = {
+						NOT = {
+							is_owned_and_controlled_by= AFG
+						}
+					}
+				}
+				PUN = {
+					add_state_core = 442
+				}
 			}
 			set_country_flag = ind_revolter
 		}
@@ -1884,17 +1873,17 @@ country_event = { #Hyderabad & Punjab Independence
 		PUN = {
 			add_state_core = 883
 			add_state_core = 440
-			IF = { 
-				limit = { 
-					442 = { 
-						NOT = { 
-							is_owned_and_controlled_by= AFG 
-						} 
-					} 
-				} 
-				PUN = { 
-					add_state_core = 442 
-				} 
+			IF = {
+				limit = {
+					442 = {
+						NOT = {
+							is_owned_and_controlled_by= AFG
+						}
+					}
+				}
+				PUN = {
+					add_state_core = 442
+				}
 			}
 			set_country_flag = ind_revolter
 		}
@@ -1932,17 +1921,17 @@ country_event = { #Hyderabad & Punjab Independence
 		PUN = {
 			add_state_core = 883
 			add_state_core = 440
-			IF = { 
-				limit = { 
-					442 = { 
-						NOT = { 
-							is_owned_and_controlled_by= AFG 
-						} 
-					} 
-				} 
-				PUN = { 
-					add_state_core = 442 
-				} 
+			IF = {
+				limit = {
+					442 = {
+						NOT = {
+							is_owned_and_controlled_by= AFG
+						}
+					}
+				}
+				PUN = {
+					add_state_core = 442
+				}
 			}
 			set_country_flag = ind_revolter
 		}
@@ -2692,9 +2681,7 @@ country_event = { #Raj Requests Reparations
 	title = raj.84.t
 	desc = raj.84.d
 	picture = GFX_report_event_soviet_soldiers_tank
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -3103,7 +3090,7 @@ country_event = { #Raj Independence
 			ruling_party = social_democrat
 			elections_allowed = no
 		}
-		
+
 		activate_advisor = RAJ_Vengalil_Krishnan_Krishna_Menon_hog_sde
 		activate_advisor = RAJ_Huseyn_Shaheed_Suhrawardy_for_sde
 		activate_advisor = RAJ_Kanhaiyalal_Maneklal_Munshi_eco_sli
@@ -3116,18 +3103,18 @@ country_event = { #Raj Independence
 				has_country_flag = RAJ_Partition_Bengal
 			}
 			430 = {
-           		add_core_of = BAN
-        	}
-        	431 = {
-           		add_core_of = BAN
-        	}
-        	432 = {
-           		add_core_of = BAN
-        	}
-        	434 = {
-           		add_core_of = BAN
-        	}
-        	every_state = {
+				add_core_of = BAN
+			}
+			431 = {
+				add_core_of = BAN
+			}
+			432 = {
+				add_core_of = BAN
+			}
+			434 = {
+				add_core_of = BAN
+			}
+			every_state = {
 				limit = {
 					is_owned_by = RAJ
 					OR = {
@@ -3145,21 +3132,21 @@ country_event = { #Raj Independence
 				has_country_flag = RAJ_Partition_Punjab
 			}
 			440 = {
-           		add_core_of = PUN
-        	}
-        	442 = {
-           		add_core_of = PUN
-        	}
-        	443 = {
-           		add_core_of = PUN
-        	}
-        	444 = {
-           		add_core_of = PUN
-        	}
-        	445 = {
-           		add_core_of = PUN
-        	}
-        	every_state = {
+				add_core_of = PUN
+			}
+			442 = {
+				add_core_of = PUN
+			}
+			443 = {
+				add_core_of = PUN
+			}
+			444 = {
+				add_core_of = PUN
+			}
+			445 = {
+				add_core_of = PUN
+			}
+			every_state = {
 				limit = {
 					is_owned_by = RAJ
 					OR = {
@@ -3177,18 +3164,18 @@ country_event = { #Raj Independence
 				has_country_flag = RAJ_Partition_Both
 			}
 			430 = {
-           		add_core_of = BAN
-        	}
-        	431 = {
-           		add_core_of = BAN
-        	}
-        	432 = {
-           		add_core_of = BAN
-        	}
-        	434 = {
-           		add_core_of = BAN
-        	}
-        	every_state = {
+				add_core_of = BAN
+			}
+			431 = {
+				add_core_of = BAN
+			}
+			432 = {
+				add_core_of = BAN
+			}
+			434 = {
+				add_core_of = BAN
+			}
+			every_state = {
 				limit = {
 					is_owned_by = RAJ
 					OR = {
@@ -3201,21 +3188,21 @@ country_event = { #Raj Independence
 				}
 			}
 			440 = {
-           		add_core_of = PUN
-        	}
-        	442 = {
-           		add_core_of = PUN
-        	}
-        	443 = {
-           		add_core_of = PUN
-        	}
-        	444 = {
-           		add_core_of = PUN
-        	}
-        	445 = {
-           		add_core_of = PUN
-        	}
-        	every_state = {
+				add_core_of = PUN
+			}
+			442 = {
+				add_core_of = PUN
+			}
+			443 = {
+				add_core_of = PUN
+			}
+			444 = {
+				add_core_of = PUN
+			}
+			445 = {
+				add_core_of = PUN
+			}
+			every_state = {
 				limit = {
 					is_owned_by = RAJ
 					OR = {

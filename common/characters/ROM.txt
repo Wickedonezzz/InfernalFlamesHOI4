@@ -648,6 +648,24 @@ characters = {
 				hog_backroom_backstabber
 			}
 		}
+		advisor = {
+			cost = 150
+			slot = security_minister
+			available = { 
+				hidden_trigger = { has_country_flag = ROM_Horia_Sima_sec_npo_hired }
+			}
+			idea_token = ROM_Horia_Sima_sec_npo
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = ROM_Horia_Sima_sec_npo_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = ROM_Horia_Sima_sec_npo_hired }
+			}
+			traits = {
+				national_populist
+			}
+		}
 	}
 	ROM_Ion_Mota = {
 		name = "Ion Mota"

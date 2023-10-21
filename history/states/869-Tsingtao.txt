@@ -13,12 +13,11 @@ state={
 				naval_base = 5
 				coastal_bunker = 1
 				bunker = 1
-
 			}
-
 		}
-		add_core_of = KMT
-
+		add_claim_by = KMT
+		add_claim_by = ZHI
+		add_claim_by = FNG
 	}
 
 	provinces={

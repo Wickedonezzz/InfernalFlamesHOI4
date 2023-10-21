@@ -18,12 +18,12 @@ ARG_conquest_of_south_atlantic = {
 					}
 				}
 			has_completed_focus = ARG_our_atlantic_birthright
- 		}
- 		visible = { 
- 			299 = { is_owned_by = ENG }
- 			720 = { is_owned_by = ENG }
- 			has_global_flag = ARG_LPA_coalition
- 		}
+		}
+		visible = { 
+			299 = { is_owned_by = ENG }
+			720 = { is_owned_by = ENG }
+			has_global_flag = ARG_LPA_coalition
+		}
 		highlight_states = {
 			highlight_state_targets = {
 				state = 299
@@ -146,7 +146,7 @@ ARG_BCW_gambits = {
  				has_country_flag = brazilian_civil_war
  				NOT = { has_country_flag = UBR_bcw_ended }
  			}
- 			has_completed_focus = ARG_socialism_in_south_america
+ 			has_completed_focus = ARG_a_socialist_alliance
  	 		has_equipment = { infantry_equipment > 2000 } 
  		}
  		visible = { 
@@ -177,7 +177,7 @@ ARG_BCW_gambits = {
  				has_country_flag = brazilian_civil_war
  				NOT = { has_country_flag = UBR_bcw_ended }
  			}
- 			has_completed_focus = ARG_socialism_in_south_america
+ 			has_completed_focus = ARG_a_socialist_alliance
 
  		}
  		visible = { 

@@ -783,3 +783,11 @@ PER_foreign_office_open_flag: "§YA new Foreign Office has been founded.§!"
 PER_anglo_iranian_trade_opinion: "Anglo-Iranian Trade"
 PER_irano_french_relations: "Irano-French Relations"
 PER_irano_soviet_relations: "Irano-Soviet Relations"
+
+### Companies
+shabaz_aircraft_manufacturer: "Shabaz Aircraft Manufacturer"
+imperial_arms_company: "Imperial Arms Company"
+imperial_artillery_company: "Imperial Artillery Company"
+imperial_oil_PER: "Imperial Oil"
+general_motors_iran: "General Motors Irān"
+dominion_cartridge_PER: "Dominion Cartridge Irān"

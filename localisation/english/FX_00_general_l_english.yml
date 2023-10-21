@@ -27,20 +27,20 @@ FX_welcome_splash_tab_1_header: "[ROOT.GetCountryIntroHeader]"
 FX_welcome_splash_tab_1_content: "[ROOT.GetCountryIntroContent]"
 
 ### Credits
-FX_SPLASH_TITLE: "§YPoorly mashed together by the Führerredux team, saved by Ice Cold:§!"
+FX_SPLASH_TITLE: "§YSaved by Ice Cold:§!"
 FX_SPLASH_CREDITS: "Captain Kaiczer · Dej · Lextzo · BobRossHD · AngryCatholic · JoeBidenWhatAreYouHiding · David Lu · RAus · ainsley · the feets guy · Smigly · ATonyAtLaw2021 · thanasislanaras · terroristguy · tmiklos · Log · 9504 · Crazy Green Hair Guy · Mitchell · Fokel · Mapper History · Mr. Saltine · The Man who sold the World · Thought_West · karimlebg · Fire · Maisel · Wickedonezz · bookthecook · KillerKemzstar · guerrillero · scipion34 · naran_hol · literallycamusenjoyer · Panzerschokolade Addict · Professional Janny Curbstomper · Eternia · Illyria · TRZ · Captivator · RedTitan · Pol.\n\n§CThank you to the FR Team for letting us fork their mod:§!\nKalmoire\n\nThank you to, §OMnCnNn§! and §OSwordOfWrynn§! whom created the unit models and special forces mods respectively that are integrated in this mod.\n\n§CAnd Thank you, the player, for playing our mod!§!"
 
 ### Intro Event
 intro.1.t: "FührerReich: Ice Cold Build 0.7 (Left Behind)"
-intro.1.d: "This update would have been part of the Fuhrerredux update, but a lot of our hard work was ignored by the Führerredux team and they instead decided to remove us and steal our work. Ultimately, this hasn't been the first time it has happened, it also happened with the content for the Shogunate of Japan."
-intro.1.a: "They really are dirty huh?"
+intro.1.d: "Situation explained in discord"
+intro.1.a: "Alright, thanks"
 intro.1.b: "Ok..."
 intro.1.c: "Is there an FAQ anywhere?"
 intro.2.t: "Führerreich: Ice Cold FAQ"
 intro.2.d: "Q; (Nation) is pretty bad. Will it be getting a rework?\nA; Yes, all nations are intended to get a rework at some point in time. Nothing here is permanent.\n\nQ; Will (Nation) get content in the future?\nA; Our goal, similar to Kaiserreich, is for all nations to eventually recieve content. \n\nQ; Will DLCs (such as WtT) be a requirement for Führerreich: Ice Cold?\nA; Absolutely not."
-intro.2.a: "Why doesn't anybody ever let me keep that PP?"
+intro.2.a: "Thanks for the PP Wicked"
 intro.3.t: "Party Popularity System"
-intro.3.d: "Führerredux uses Kaiserreich's minister system, and obviously borrows from KR heavily in multiple other areas. One such example is the popularity system. \n\nKaiserreich's popularity system entails more notable Political Power gain for nations that have more popular parties, in an attempt to represent civil content with the regime or parliamentary majorities in democratic systems. Generally, higher popularity means that PP Gain will also be higher. The following is the Criteria for the various popularity levels. \n\nVery Low Popularity = Less than 20% Popularity for the ruling Party\nLow Popularity = 20% - 40% Popularity for the ruling Party\nMedium Popularity = 40% - 60% Popularity for the ruling Party\nHigh Popularity = 60% - 80% Popularity for the ruling Party\nVery High Popularity = More than 80% Popularity for the ruling Party\n\nNow, we said 'Generally, higher popularity means that PP Gain will also be higher' for a reason. Nations such as France have their popularity system disabled in order to properly simulate their coalition-based gameplay (or for other reasons entirely). Just be sure to keep this in mind and you should be smooth-sailing when playing nations with their party popularity system disabled!"
+intro.3.d: "FührerReich uses Kaiserreich's minister system, and obviously borrows from KR heavily in multiple other areas. One such example is the popularity system. \n\nKaiserreich's popularity system entails more notable Political Power gain for nations that have more popular parties, in an attempt to represent civil content with the regime or parliamentary majorities in democratic systems. Generally, higher popularity means that PP Gain will also be higher. The following is the Criteria for the various popularity levels. \n\nVery Low Popularity = Less than 20% Popularity for the ruling Party\nLow Popularity = 20% - 40% Popularity for the ruling Party\nMedium Popularity = 40% - 60% Popularity for the ruling Party\nHigh Popularity = 60% - 80% Popularity for the ruling Party\nVery High Popularity = More than 80% Popularity for the ruling Party\n\nNow, we said 'Generally, higher popularity means that PP Gain will also be higher' for a reason. Nations such as France have their popularity system disabled in order to properly simulate their coalition-based gameplay (or for other reasons entirely). Just be sure to keep this in mind and you should be smooth-sailing when playing nations with their party popularity system disabled!"
 intro.3.a: "So, nearly nothing has changed?"
 intro.4.t: "News events!"
 intro.4.d: "Hello there! Similar to Kaiserreich, the world of Führerreich relies heavily on news events in order to feel alive and in teresting. Ultimately, there's the possibility that you may not apperciate this though, and would prefer to turn it off to reduce event-spam.\n\nBecause of the aforementioned reasons, we're going to need you to select a preference for World News events before we let you out of this event chain."
@@ -49,7 +49,7 @@ intro.4.b: "Only the important ones"
 intro.4.c: "News Events are for LOSERS"
 
 intro.5.t: "How do I access the in-game path guides?"
-intro.5.d: "Open up your country screen (click your flag in the top left or press the 'Q' key), then click the guide GUI button next to the "Political" header and to the rules button."
+intro.5.d: "Open up your country screen (click your flag in the top left or press the 'Q' key), then click the guide GUI button next to the "Political" header and to the rules button.(only for some countries)"
 intro.5.a: "Woah! Now I don't have to ask how to get the country path I want! Thanks FR:IC Team!"
 
 ### Difficulty Settings

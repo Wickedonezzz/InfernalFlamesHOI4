@@ -3,8 +3,7 @@ on_actions = {
     effect = {
       if = {
         limit = { tag = HEJ }
-        country_event = hejaz.38 # 1940 Elections
-        country_event = hejaz.39 # 1945 Elections
+        country_event = hejaz.38 # General Elections
       }
     }
   }
@@ -24,7 +23,7 @@ on_actions = {
   }
   # ROOT is the winner
   # FROM gets annexed
-  on_annex = {
+  on_civil_war_end = {
     effect = {
       # if Hashemite annexed Saudi/Rashid
       if = {
@@ -37,7 +36,7 @@ on_actions = {
           }
           ROOT = { tag = HEJ }
         }
-        FROM = {
+        ROOT = {
           country_event = hejaz.37
         }
       }
@@ -53,7 +52,7 @@ on_actions = {
           }
           ROOT = { tag = SAU }
         }
-        FROM = {
+        ROOT = {
           country_event = saudi.1
         }
       }
@@ -69,7 +68,7 @@ on_actions = {
           }
           ROOT = { tag = RAS }
         }
-        FROM = {
+        ROOT = {
           country_event = rashid.100
         }
       }

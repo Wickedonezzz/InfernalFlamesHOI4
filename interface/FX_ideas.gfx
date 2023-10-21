@@ -1,7 +1,27 @@
 spriteTypes = {
 	spriteType = {
+    name = "GFX_idea_advisors_commune_france"
+    texturefile = "gfx/interface/ideas/ideas/advisors_commune_france.png"
+	}
+	spriteType = {
+    name = "GFX_idea_JAP_women"
+    texturefile = "gfx/interface/ideas/ideas/JAP_women.png"
+	}
+	spriteType = {
+    name = "GFX_idea_KMT_army"
+    texturefile = "gfx/interface/ideas/ideas/KMT_army.png"
+	}
+	spriteType = {
+    name = "GFX_idea_KMT_defence_idea"
+    texturefile = "gfx/interface/ideas/ideas/KMT_defence_idea.png"
+	}
+	spriteType = {
     name = "GFX_idea_generic_syndicalist_militia"
     texturefile = "gfx/interface/ideas/ideas/idea_generic_syndicalist_militia.png"
+	}
+	spriteType = {
+		name = "GFX_idea_advisors_KMT"
+		texturefile = "gfx/interface/ideas/ideas/advisors_KMT.png"
 	}
 	spriteType = {
 		name = "GFX_idea_advisors_ukraine"
@@ -1417,6 +1437,10 @@ spriteTypes = {
 		name = "GFX_idea_EGY_Uneducated_population"
 		textureFile = "gfx/interface/ideas/EGY/EGY_Uneducated_population.png"
 	}
+	spriteType = {
+		name = "GFX_idea_EGY_Regency"
+		textureFile = "gfx/interface/ideas/EGY/EGY_Regency.png"
+	}
 	# North French Africa
 	spriteType = {
 		name = "GFX_idea_NFA_french_sudan"
@@ -1443,18 +1467,10 @@ spriteTypes = {
 		name = "GFX_idea_ISC_free_zone"
 		textureFile = "gfx/interface/ideas/ISC/ISC_free_zone.png"
 	}
-	spriteType = {
-		name = "GFX_idea_ISC_the_patriarchate"
-		textureFile = "gfx/interface/ideas/ISC/ISC_the_patriarchate.png"
-	}
 	#GRE SPIRITS
 	spriteType = {
 		name = "GFX_idea_GRE_hellenoturkism"
 		texturefile = "gfx/interface/ideas/ideas/GRE_hellenoturkism.png"
-	}
-	spriteType = {
-		name = "GFX_idea_GRE_george"
-		texturefile = "gfx/interface/ideas/ideas/GRE_george.png"
 	}
 	spriteType = {
 		name = "GFX_idea_GRE_golden_dawn"
@@ -1507,5 +1523,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_BUL_balkan_hegemony"
 		textureFile = "gfx/interface/ideas/ideas/idea_bul_the_fate_of_the_balkans.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GRE_land_reform"
+		textureFile = "gfx/interface/ideas/GRE/GRE_land_reform.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GRE_new_economic_policy"
+		textureFile = "gfx/interface/ideas/GRE/GRE_new_economic_policy.png"
 	}
 }

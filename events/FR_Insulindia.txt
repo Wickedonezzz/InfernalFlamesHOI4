@@ -16,13 +16,11 @@ country_event = {
 	title = insulindia.0.t
 	desc = insulindia.0.d
 	#picture = NOR_tranmel_tale
-    trigger = {
-			original_tag = INS
-			}
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.0.a
 		add_political_power = 5
@@ -30,8 +28,8 @@ country_event = {
 			country_event = {
 				id = insulindia.1 days = 25
 			}
-			add_coalition_collectivist = yes 
-			add_coalition_social_conservative = yes 
+			add_coalition_collectivist = yes
+			add_coalition_social_conservative = yes
 		}
 	}
 }
@@ -44,11 +42,11 @@ country_event = {
 	title = insulindia.1.t
 	desc = insulindia.1.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.1.a
 		add_political_power = 10
@@ -79,11 +77,11 @@ country_event = {
 	title = insulindia.2.t
 	desc = insulindia.2.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.2.a
 		set_global_flag = insulindian_uprising_success
@@ -109,9 +107,9 @@ country_event = {
 	title = insulindia.3.t
 	desc = insulindia.3.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = ENG
+		original_tag = ENG
 		has_war_with = INS
 		INS = {
 			controls_state = 335
@@ -120,12 +118,12 @@ country_event = {
 			controls_state = 790
 			controls_state = 951
 		}
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 30 }
-	
+
 	option = {
 		name = insulindia.3.a
 		ai_chance = { base = 85 }
@@ -139,7 +137,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.3.b
 		ai_chance = { base = 15 }
@@ -155,9 +153,9 @@ country_event = {
 	title = insulindia.13.t
 	desc = insulindia.13.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = ENG
+		original_tag = ENG
 		has_war_with = INS
 		INS = {
 			controls_state = 333
@@ -165,12 +163,12 @@ country_event = {
 			controls_state = 334
 		}
 		has_country_flag = INS_ENG_continues_independence_war_flag
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 30 }
-	
+
 	option = {
 		name = insulindia.13.a
 		add_political_power = -50
@@ -193,11 +191,11 @@ country_event = {
 	title = insulindia.4.t
 	desc = insulindia.4.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.4.a
 		add_political_power = 5
@@ -220,15 +218,15 @@ country_event = {
 	title = insulindia.5.t
 	desc = insulindia.5.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	immediate = {
 		country_event = { id = insulindia.6 days = 5 }
 	}
-	
+
 	option = {
 		name = insulindia.5.a
 		ai_chance = { base = 25 }
@@ -236,7 +234,7 @@ country_event = {
 		add_popularity = { ideology = collectivist popularity = 0.04 }
 		set_country_flag = INS_collectivist_appeacement
 	}
-	
+
 	option = {
 		name = insulindia.5.b
 		ai_chance = { base = 50 }
@@ -244,7 +242,7 @@ country_event = {
 		add_popularity = { ideology = collectivist popularity = 0.01 }
 		set_country_flag = INS_collectivist_middle_ground
 	}
-	
+
 	option = {
 		name = insulindia.5.c
 		ai_chance = { base = 25 }
@@ -260,15 +258,15 @@ country_event = {
 	title = insulindia.6.t
 	desc = insulindia.6.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	immediate = {
 		country_event = { id = insulindia.7 days = 5 }
 	}
-	
+
 	option = {
 		name = insulindia.6.a
 		ai_chance = { base = 25 }
@@ -277,7 +275,7 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = 0.02 }
 		set_country_flag = INS_islamist_appeacement
 	}
-	
+
 	option = {
 		name = insulindia.6.b
 		ai_chance = { base = 50 }
@@ -285,7 +283,7 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = 0.01 }
 		set_country_flag = INS_islamist_middle_ground
 	}
-	
+
 	option = {
 		name = insulindia.6.c
 		ai_chance = { base = 25 }
@@ -302,17 +300,17 @@ country_event = {
 	title = insulindia.7.t
 	desc = insulindia.7.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = INS_demands_events_ended
 		}
 	}
-	
+
 	option = {
 		name = insulindia.7.a
 		ai_chance = { base = 25 }
@@ -320,14 +318,14 @@ country_event = {
 		add_stability = 0.03
 		set_country_flag = INS_nationalist_appeacement
 	}
-	
+
 	option = {
 		name = insulindia.7.b
 		ai_chance = { base = 50 }
 		add_political_power = -10
 		set_country_flag = INS_nationalist_middle_ground
 	}
-	
+
 	option = {
 		name = insulindia.7.c
 		ai_chance = { base = 25 }
@@ -345,20 +343,20 @@ country_event = {
 	title = insulindia.8.t
 	desc = insulindia.8.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		has_country_flag = INS_nationalist_appeacement
 		OR = {
 			has_country_flag = INS_collectivist_rejected
 			has_country_flag = INS_islamist_rejected
 		}
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	option = {
 		name = insulindia.8.a
 		add_political_power = -20
@@ -378,20 +376,20 @@ country_event = {
 	title = insulindia.10.t
 	desc = insulindia.10.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		OR = {
 			has_country_flag = INS_collectivist_appeacement
 			has_country_flag = INS_collectivist_middle_ground
 		}
 		has_country_flag = INS_islamist_rejected
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	option = {
 		name = insulindia.10.a
 		add_political_power = -20
@@ -410,20 +408,20 @@ country_event = {
 	title = insulindia.11.t
 	desc = insulindia.11.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		OR = {
 			has_country_flag = INS_islamist_appeacement
 			has_country_flag = INS_islamist_middle_ground
 		}
 		has_country_flag = INS_collectivist_rejected
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	option = {
 		name = insulindia.11.a
 		add_political_power = -20
@@ -442,9 +440,9 @@ country_event = {
 	title = insulindia.12.t
 	desc = insulindia.12.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		OR = {
 			has_country_flag = INS_islamist_appeacement
 			has_country_flag = INS_islamist_middle_ground
@@ -454,12 +452,12 @@ country_event = {
 			has_country_flag = INS_collectivist_middle_ground
 		}
 		has_country_flag = INS_nationalist_rejected
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	option = {
 		name = insulindia.12.a
 		add_political_power = -20
@@ -477,18 +475,18 @@ country_event = {
 	title = insulindia.18.t
 	desc = insulindia.18.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		has_country_flag = INS_nationalist_rejected
 		has_country_flag = INS_collectivist_rejected
 		has_country_flag = INS_islamist_rejected
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 10 }
-	
+
 	option = {
 		name = insulindia.18.a
 		add_political_power = -50
@@ -508,18 +506,18 @@ country_event = {
 	title = insulindia.19.t
 	desc = insulindia.19.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		has_country_flag = INS_nationalist_appeacement
 		has_country_flag = INS_collectivist_appeacement
 		has_country_flag = INS_islamist_appeacement
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 10 }
-	
+
 	option = {
 		name = insulindia.19.a
 		add_political_power = -30
@@ -539,18 +537,18 @@ country_event = {
 	title = insulindia.20.t
 	desc = insulindia.20.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		has_country_flag = INS_nationalist_middle_ground
 		has_country_flag = INS_collectivist_middle_ground
 		has_country_flag = INS_islamist_middle_ground
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 10 }
-	
+
 	option = {
 		name = insulindia.20.a
 		add_political_power = 20
@@ -570,11 +568,11 @@ country_event = {
 	title = insulindia.9.t
 	desc = insulindia.9.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.9.a
 		ai_chance = { base = 60 }
@@ -584,21 +582,21 @@ country_event = {
 			set_country_flag = INS_appeacement_aftermath
 		}
 	}
-	
+
 	option = {
 		name = insulindia.9.b
 		ai_chance = { base = 40 }
 		add_political_power = -50
 		add_stability = -0.12
 		hidden_effect = {
-      add_country_leader_role = {
-        character = INS_Mohammed_Hatta
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
+			add_country_leader_role = {
+				character = INS_Mohammed_Hatta
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
 			set_country_flag = INS_appeacement_aftermath
 		}
 	}
@@ -612,9 +610,9 @@ country_event = {
 	title = insulindia.14.t
 	desc = insulindia.14.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		NOT = {
 			has_war_with = ENG
 			has_war_with = BEA
@@ -624,12 +622,12 @@ country_event = {
 		has_completed_focus = INS_open_political_sphere
 		has_country_flag = INS_demands_events_ended
 		has_country_flag = INS_appeacement_aftermath
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 30 }
-	
+
 	option = {
 		name = insulindia.14.a
 		add_political_power = 15
@@ -649,11 +647,11 @@ country_event = {
 	title = insulindia.15.t
 	desc = insulindia.15.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.15.a
 		ai_chance = { base = 25 }
@@ -671,7 +669,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.15.b
 		ai_chance = { base = 50 }
@@ -686,7 +684,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.15.c
 		ai_chance = { base = 25 }
@@ -712,9 +710,9 @@ country_event = {
 	title = insulindia.16.t
 	desc = insulindia.16.d
 	#picture = NOR_parliament
-	
+
 	trigger = {
-        original_tag = INS
+		original_tag = INS
 		NOT = {
 			has_war_with = ENG
 			has_war_with = BEA
@@ -724,12 +722,12 @@ country_event = {
 		has_completed_focus = INS_open_political_sphere
 		has_country_flag = INS_demands_events_ended
 		has_country_flag = INS_appeacement_aftermath
-    }
-	
-    fire_only_once = yes
-	
+	}
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 30 }
-	
+
 	option = {
 		name = insulindia.16.a
 		add_political_power = -15
@@ -750,11 +748,11 @@ country_event = {
 	title = insulindia.17.t
 	desc = insulindia.17.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.17.a
 		ai_chance = { base = 50 }
@@ -774,7 +772,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.17.b
 		ai_chance = { base = 30 }
@@ -794,7 +792,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.17.c
 		ai_chance = { base = 20 }
@@ -819,11 +817,11 @@ country_event = {
 	title = insulindia.100.t
 	desc = insulindia.100.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.100.a
 		ai_chance = { base = 80 }
@@ -834,7 +832,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.100.b
 		ai_chance = { base = 20 }
@@ -852,11 +850,11 @@ country_event = {
 	title = insulindia.101.t
 	desc = insulindia.101.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.101.a
 		add_political_power = 20
@@ -871,11 +869,11 @@ country_event = {
 	title = insulindia.102.t
 	desc = insulindia.102.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.102.a
 		add_political_power = -20
@@ -890,11 +888,11 @@ country_event = {
 	title = insulindia.103.t
 	desc = insulindia.103.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.103.a
 		ai_chance = { base = 80 }
@@ -905,7 +903,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.103.b
 		ai_chance = { base = 20 }
@@ -923,11 +921,11 @@ country_event = {
 	title = insulindia.104.t
 	desc = insulindia.104.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.104.a
 		add_political_power = 20
@@ -942,11 +940,11 @@ country_event = {
 	title = insulindia.105.t
 	desc = insulindia.105.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.105.a
 		add_political_power = -20
@@ -961,11 +959,11 @@ country_event = {
 	title = insulindia.106.t
 	desc = insulindia.106.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.106.a
 		ai_chance = { base = 80 }
@@ -975,7 +973,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.106.b
 		ai_chance = { base = 20 }
@@ -993,11 +991,11 @@ country_event = {
 	title = insulindia.107.t
 	desc = insulindia.107.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.107.a
 		transfer_state = 673
@@ -1017,11 +1015,11 @@ country_event = {
 	title = insulindia.108.t
 	desc = insulindia.108.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.108.a
 		hidden_effect = {
@@ -1035,11 +1033,11 @@ country_event = {
 	title = insulindia.109.t
 	desc = insulindia.109.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.109.a
 		ai_chance = { base = 80 }
@@ -1050,7 +1048,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = insulindia.109.b
 		ai_chance = { base = 20 }
@@ -1068,11 +1066,11 @@ country_event = {
 	title = insulindia.110.t
 	desc = insulindia.110.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.110.a
 		add_political_power = 20
@@ -1087,11 +1085,11 @@ country_event = {
 	title = insulindia.111.t
 	desc = insulindia.111.d
 	#picture = NOR_parliament
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = insulindia.111.a
 		add_political_power = -20
@@ -1107,7 +1105,7 @@ country_event = { # Join PH faction
 	desc = insulindia.112.d
 	picture = GFX_report_event_PHI_malacanan
 	is_triggered_only = yes
-	
+
 	option = {
 		name = insulindia.112.a
 		ai_chance = {
@@ -1135,7 +1133,7 @@ country_event = { # Accept PH faction
 	desc = insulindia.113.d
 	picture = GFX_report_event_PHI_malacanan
 	is_triggered_only = yes
-	
+
 	option = {
 		name = insulindia.113.a
 		FROM = {
@@ -1151,7 +1149,7 @@ country_event = { # Refused PH faction
 	desc = insulindia.114.d
 	picture = GFX_report_event_PHI_malacanan
 	is_triggered_only = yes
-	
+
 	option = {
 		name = insulindia.114.a
 		add_political_power = -100

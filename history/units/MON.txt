@@ -53,7 +53,7 @@ units = {
 	}
 	division = {
 		name = "5-p Morit Diviziin"
-		location = 7578
+		location = 7717
 		division_template = "Morit Diviziin"
 		start_experience_factor = 0.1
 	}
@@ -98,7 +98,7 @@ units = {
 	}
 	division = {
 		name = "4-p Khölboldyn Diviziin"
-		location = 10372
+		location = 7773
 		division_template = "Khölboldyn Diviziin"
 		start_experience_factor = 0.1
 	}

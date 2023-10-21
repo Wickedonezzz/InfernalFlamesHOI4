@@ -1,6 +1,6 @@
 ### German generic portrait set
 
-WGR = {
+PRS = {
 	army = {
 		male = {
 			"GFX_Portrait_Germany_Generic_land_1"
@@ -2586,7 +2586,7 @@ DDR = {
 	}
 }
 
-WGR = {
+PRS = {
 	army = {
 		male = {
 			"GFX_Portrait_Germany_Generic_land_1"

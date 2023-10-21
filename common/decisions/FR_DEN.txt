@@ -71,7 +71,16 @@ DEN_domestic_affairs_decisions = {
 		
 		remove_effect = {
 			784 = {
-				add_resistance = -5
+				if = {
+					limit = {
+						has_resistance = yes
+					}
+					add_resistance_target = -5
+					else = {
+						start_resistance = yes
+						force_enable_resistance = yes
+					}
+				}
 				add_compliance = -5
 			}
 		}
@@ -108,7 +117,16 @@ DEN_domestic_affairs_decisions = {
 		
 		remove_effect = {
 			784 = {
-				add_resistance = -5
+				if = {
+					limit = {
+						has_resistance = yes
+					}
+					add_resistance_target = -5
+					else = {
+						start_resistance = yes
+						force_enable_resistance = yes
+					}
+				}
 				add_compliance = 5
 			}
 			add_popularity = { ideology = valkist popularity = -0.01 }
@@ -153,7 +171,16 @@ DEN_domestic_affairs_decisions = {
 		
 		remove_effect = {
 			784 = {
-				add_resistance = -10
+				if = {
+					limit = {
+						has_resistance = yes
+					}
+					add_resistance_target = -10
+					else = {
+						start_resistance = yes
+						force_enable_resistance = yes
+					}
+				}
 				add_compliance = -5
 			}
 			country_event = { id = denmark.62 days = 6 }

@@ -17,11 +17,11 @@ country_event = {
 	picture = report_event_generic_conference
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POR
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -37,14 +37,14 @@ country_event = { #some capital ship idk man
 	title = "The Retaliação"
 	desc = portugal.2.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POR
 		date > 1936.3.1
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -72,32 +72,32 @@ country_event = { #Renewing the Civil war
 	title = "Reconquest of the Colonies"
 	desc = portugal.3.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POR
 		date > 1936.5.1
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
 
 	option = {
 		name = "To arms!"
-			add_named_threat = { threat = 5 name = POR_renewed_civil_war_threat }
-			ENG = {
-				diplomatic_relation = { country = POR relation = guarantee active = no }
-			}
-			add_stability = 0.4
-			add_political_power = 75
-			#add_war_support = 0.1
-			set_global_flag = POR_RENEWED_CIVIL_WAR
-			declare_war_on = {
-				type = annex_everything
-				target = PRR
-			}
+		add_named_threat = { threat = 5 name = POR_renewed_civil_war_threat }
+		ENG = {
+			diplomatic_relation = { country = POR relation = guarantee active = no }
+		}
+		add_stability = 0.4
+		add_political_power = 75
+		#add_war_support = 0.1
+		set_global_flag = POR_RENEWED_CIVIL_WAR
+		declare_war_on = {
+			type = annex_everything
+			target = PRR
+		}
 		ai_chance = { factor = 100 }
 	}
 }
@@ -108,9 +108,9 @@ country_event = { #Republican Countercoup Warning
 	title = "Growing Republican movements"
 	desc = portugal.4.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		date > 1936.11.1
 		tag = POR
@@ -120,7 +120,7 @@ country_event = { #Republican Countercoup Warning
 			has_full_control_of_state = 544
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -138,9 +138,9 @@ country_event = { #Republican Countercoup
 	title = "Republican coup in the mainland!"
 	desc = portugal.5.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		date > 1937.5.1
 		tag = POR
@@ -150,7 +150,7 @@ country_event = { #Republican Countercoup
 			has_full_control_of_state = 544
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -159,17 +159,17 @@ country_event = { #Republican Countercoup
 		name = "Oh man oh god oh man oh god oh man oh god oh man oh god oh man oh god oh man oh god"
 		PRR = { country_event = { days = 0 id = portugal.6 } }
 		every_state = {
-				limit = {
-					is_core_of = PRR
-				}
-				remove_core_of = PRR
+			limit = {
+				is_core_of = PRR
 			}
+			remove_core_of = PRR
+		}
 		every_state = {
-				limit = {
-					is_core_of = POR
-				}
-				add_core_of = PRR
+			limit = {
+				is_core_of = POR
 			}
+			add_core_of = PRR
+		}
 		ai_chance = { factor = 100 }
 	}
 }
@@ -180,9 +180,9 @@ country_event = { #Republican Countercoup
 	title = "Mainland uprising successful!"
 	desc = portugal.6.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = {

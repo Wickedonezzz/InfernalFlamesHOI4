@@ -2,6 +2,18 @@ defined_text = {
 	name = GetCountryIntroHeader
 	text = {
 		trigger = {
+			original_tag = KMT
+		}
+		localization_key = china.0.t
+	}
+	text = {
+		trigger = {
+			original_tag = CAN
+		}
+		localization_key = canada.1.t
+	}
+	text = {
+		trigger = {
 			original_tag = PHI
 		}
 		localization_key = philippines.0.t
@@ -134,9 +146,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = ARB
+			original_tag = HEJ
 		}
-		localization_key = arabia.0.t
+		localization_key = hejaz.0.t
 	}
 	text = {
 		trigger = {
@@ -248,7 +260,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = ENG
+			original_tag = EST
 		}
 		localization_key = estonia.1.t
 	}
@@ -267,6 +279,18 @@ defined_text = {
 }
 defined_text = {
 	name = GetCountryIntroContent
+	text = {
+		trigger = {
+			original_tag = KMT
+		}
+		localization_key = china.0.d
+	}
+	text = {
+		trigger = {
+			original_tag = CAN
+		}
+		localization_key = canada.1.d
+	}
 	text = {
 		trigger = {
 			original_tag = PHI
@@ -403,7 +427,7 @@ defined_text = {
 		trigger = {
 			original_tag = ARB
 		}
-		localization_key = arabia.0.d
+		localization_key = hejaz.0.d
 	}
 	text = {
 		trigger = {
@@ -515,7 +539,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = ENG
+			original_tag = EST
 		}
 		localization_key = estonia.1.d
 	}
@@ -534,6 +558,18 @@ defined_text = {
 }
 defined_text = {
 	name = GetCountryIntroOption
+	text = {
+		trigger = {
+			original_tag = KMT
+		}
+		localization_key = china.0.a
+	}
+	text = {
+		trigger = {
+			original_tag = CAN
+		}
+		localization_key = canada.1.a
+	}
 	text = {
 		trigger = {
 			original_tag = PHI
@@ -670,7 +706,7 @@ defined_text = {
 		trigger = {
 			original_tag = ARB
 		}
-		localization_key = arabia.0.a
+		localization_key = hejaz.0.a
 	}
 	text = {
 		trigger = {
@@ -782,7 +818,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = ENG
+			original_tag = EST
 		}
 		localization_key = estonia.1.a
 	}
@@ -799,9 +835,6 @@ defined_text = {
 		localization_key = uk.1.a
 	}
 	text = {
-		trigger = {
-			
-		}
 		localization_key = "Continue"
 	}
 }

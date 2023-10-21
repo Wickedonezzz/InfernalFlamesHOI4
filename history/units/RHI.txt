@@ -30,14 +30,14 @@ division_template = {
 units = {
 	division = {
 		name = "1ère Rhénanie Div. d'Garnison"
-		location = 9522
+		location = 6469
 		division_template = "French Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2ème Rhénanie Div. d'Garnison"
-		location = 9522
+		location = 6469
 		division_template = "French Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1

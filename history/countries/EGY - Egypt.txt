@@ -8,7 +8,7 @@ set_technology = {
 	fuel_silos = 1
   basic_train = 1
 }
-
+country_event = { id = egypt.3 days = 118 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	set_technology = {
@@ -78,7 +78,6 @@ set_politics = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	constitutional_monarchy
 	
 	EGY_feudal_lords
@@ -97,7 +96,11 @@ add_opinion_modifier = {
 	modifier = EGY_harboring_senussies
 }
 
-recruit_character = EGY_Farouk_I
+recruit_character = EGY_Fuad_i
+recruit_character = EGY_Farouk_i
+recruit_character = EGY_Shuhdi_Atiya
+recruit_character = EGY_Salama_Moussa
+recruit_character = EGY_Ahmed_Hussien
 recruit_character = EGY_Aleister_Crowley
 recruit_character = EGY_Gamal_Abdel_Nasser
 recruit_character = EGY_Ahmad_Mahir
@@ -146,7 +149,7 @@ recruit_character = EGY_Mohammed_Sidqi
 recruit_character = EGY_Victor_Hubert_Tait
 
 ### Starting Ministers
-activate_advisor = EGY_Mohamed_Tawfik_Naseem_hog_ade
-activate_advisor = EGY_Ahmed_Hassanein_for_pau
-activate_advisor = EGY_Sayyid_Qutb_eco_ade
-activate_advisor = EGY_Muhammad_Anwar_el_Sadat_sec_sde
+activate_advisor = EGY_Aly_Maher_hog_ade
+activate_advisor = EGY_Aziz_Ezzat_for_pau
+activate_advisor = EGY_Makram_Ebeid_eco_sli
+activate_advisor = EGY_Mohammed_Naguib_sec_sde

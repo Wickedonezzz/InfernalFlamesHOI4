@@ -44,6 +44,9 @@ characters = {
     country_leader = {
       ideology = national_populist_subtype
     }
+    country_leader = {
+      ideology = valkist_subtype
+    }
   }
   BAY_Franz_von_Bayern = {
     name = "Franz von Bayern"

@@ -1,8 +1,97 @@
 areas = {
 
-	europe = {
+	globally = {
+		continents = {
+			europe
+			north_america
+			south_america
+			africa
+			asia
+			middle_east
+			australia
+			north_africa
+			south_asia
+		}
+	}
 
-		continents = { 
+	western_europe = {
+		strategic_regions = {
+			1
+			2
+			3
+			4
+			5
+			6
+			7
+			8
+			16
+			18
+			21
+			22
+			23
+			25
+			29
+			38
+			41
+			42
+			43
+			68
+			168
+			169
+			173
+			202
+			206
+			207
+		}
+	}
+
+	eastern_europe = {
+		strategic_regions = {
+			30
+			37
+			39
+			40
+			46
+			130
+			131
+			132
+			133
+			134
+			135
+			137
+			138
+			150
+		}
+	}
+
+	scandinavia = {
+		strategic_regions = {
+			9
+			10
+			11
+			12
+			13
+			46
+			174
+			191
+		}
+	}
+
+	central_america = {
+		strategic_regions = {
+			204
+			106
+			52
+			205
+			34
+			107
+			53
+			170
+		}
+	}
+
+	europe = {
+		continents = {
 			europe
 		}
 	}

@@ -10,5 +10,19 @@ characters = {
 			ideology = pataut_warlordism_subtype
 			traits = { }
 		}
+		field_marshal = {
+			traits = {
+				infantry_officer
+				brilliant_strategist
+				trickster
+				hidden_sympathies
+				substance_abuser
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
 	}
 }

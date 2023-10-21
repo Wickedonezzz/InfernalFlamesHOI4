@@ -9,36 +9,36 @@ add_namespace = jap_foreign #Foreign
 country_event = { #Response the Japanese Martial Law
 	id = jap_shogun.1
 	title = jap_shogun.1.t
-	desc = jap_shogun.1.d 
-	
+	desc = jap_shogun.1.d
+
 	trigger = {
-		tag = JAP 
+		tag = JAP
 		has_completed_focus = jap_allow_marshall_law
 	}
 	mean_time_to_happen = { days = 7 }
-	fire_only_once = yes 
-	
+	fire_only_once = yes
+
 	option = {
-		name = jap_shogun.1.a 
+		name = jap_shogun.1.a
 		add_stability = -0.02
 		country_event = {
 			id = jap_shogun.2
-			days = 30 
+			days = 30
 		}
 	}
 }
 country_event = { #Resignation of Prince Fumimaro
 	id = jap_shogun.2
 	title = jap_shogun.2.t
-	desc = jap_shogun.2.d 
-	
-	is_triggered_only = yes 
-	
+	desc = jap_shogun.2.d
+
+	is_triggered_only = yes
+
 	option = {
-		name = jap_shogun.2.a 
+		name = jap_shogun.2.a
 		custom_effect_tooltip = "Prince Iesato's been reappointed the presidency"
 		add_popularity = {
-			ideology = authoritarian_democrat 
+			ideology = authoritarian_democrat
 			popularity = 0.05
 		}
 		hidden_effect = {
@@ -52,7 +52,7 @@ country_event = { #Resignation of Prince Fumimaro
 		name = jap_shogun.2.b
 		custom_effect_tooltip = "Prince Kuniyuki's been appointed the presidency"
 		add_popularity = {
-			ideology = paternal_autocrat 
+			ideology = paternal_autocrat
 			popularity = 0.05
 		}
 		hidden_effect = {
@@ -63,18 +63,18 @@ country_event = { #Resignation of Prince Fumimaro
 		}
 	}
 }
-country_event = { #Preparation of Anti-Militarist 
+country_event = { #Preparation of Anti-Militarist
 	id = jap_shogun.3
-	title = jap_shogun.3.t 
-	desc = jap_shogun.3.d 
-	
-	is_triggered_only = yes 
-	
+	title = jap_shogun.3.t
+	desc = jap_shogun.3.d
+
+	is_triggered_only = yes
+
 	option = {
-		name = jap_shogun.3.a 
+		name = jap_shogun.3.a
 		add_popularity = {
-			ideology = authoritarian_democrat 
-			popularity = 0.03 
+			ideology = authoritarian_democrat
+			popularity = 0.03
 		}
 		add_stability = -0.05
 	}
@@ -84,42 +84,42 @@ country_event = { #Preparation of Anti-Militarist
 #####################
 country_event = { #Lord President / Tairo vs. Prime Minister Argument
 	id = jap_shogun.4
-	title = jap_shogun.4.t 
-	desc = jap_shogun.4.d 
-	
+	title = jap_shogun.4.t
+	desc = jap_shogun.4.d
+
 	trigger = {
-		tag = JAP 
+		tag = JAP
 		OR = {
 			has_completed_focus = jap_the_admiral_plot
 			has_completed_focus = jap_the_army_coup
 		}
 	}
 	mean_time_to_happen = { days = 3 }
-	fire_only_once = yes 
-	
+	fire_only_once = yes
+
 	option = {
-		name = jap_shogun.4.a 
+		name = jap_shogun.4.a
 		add_popularity = {
-			ideology = authoritarian_democrat 
+			ideology = authoritarian_democrat
 			popularity = 0.05
 		}
 		hidden_effect = {
 			country_event = {
 				id = jap_shogun.5
-				days = 70 
+				days = 70
 			}
 		}
 	}
 }
 ####### Army Coup / Navy Coup #######
 country_event = { #Korean Righteous Army / Taiwanese Anarchy / Recalling Governor-Generals
-#Army - Jap.11 > Jap.13 > Jappol.6
-#Navy - Jap.12 > Jappol.1 > Jappol.2/3 
+	#Army - Jap.11 > Jap.13 > Jappol.6
+	#Navy - Jap.12 > Jappol.1 > Jappol.2/3
 	id = jap_shogun.5
-	title = jap_shogun.5.t 
-	desc = jap_shogun.5.d 
-	
-	is_triggered_only = yes 
+	title = jap_shogun.5.t
+	desc = jap_shogun.5.d
+
+	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
 			country_event = {
@@ -128,9 +128,9 @@ country_event = { #Korean Righteous Army / Taiwanese Anarchy / Recalling Governo
 			}
 		}
 	}
-	
+
 	option = {
-		name = jap_shogun.5.a 
+		name = jap_shogun.5.a
 		add_political_power = -300
 		add_stability = -0.5
 		custom_effect_tooltip = "The empire will no longer be the empire we'd ever known"
@@ -140,31 +140,31 @@ country_event = { #Korean Righteous Army / Taiwanese Anarchy / Recalling Governo
 				limit = {
 					OR = {
 						NOT = { is_core_of = JAP }
-						is_core_of = KOR 
-						is_core_of = KMT 
-						is_core_of = INS  
+						is_core_of = KOR
+						is_core_of = KMT
+						is_core_of = INS
 					}
 				}
-				set_demilitarized_zone = yes 
+				set_demilitarized_zone = yes
 			}
 			every_owned_state = {
 				limit = {
-					is_core_of = JAP 
+					is_core_of = JAP
 					NOT = {
 						state = 282
 					}
 				}
-				set_demilitarized_zone = yes 
+				set_demilitarized_zone = yes
 			}
 		}
 	}
 }
 country_event = { #March of Three Raven
 	id = jap_shogun.6
-	title = jap_shogun.6.t 
-	desc = jap_shogun.6.d 
+	title = jap_shogun.6.t
+	desc = jap_shogun.6.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = "How do we stop them?"
@@ -175,23 +175,23 @@ country_event = { #March of Three Raven
 	}
 
 }
-country_event = { #Political Turmoil 
+country_event = { #Political Turmoil
 	id = jap_shogun.7
-	title = jap_shogun.7.t 
-	desc = jap_shogun.7.d 
-	
+	title = jap_shogun.7.t
+	desc = jap_shogun.7.d
+
 	trigger = {
-		tag = JAP 
+		tag = JAP
 		AND = {
 			or = {
 				has_completed_focus = jap_the_army_coup
 				has_completed_focus = jap_the_admiral_plot
 			}
 			has_completed_focus = jap_ally_the_military
-		} 
+		}
 	}
 	mean_time_to_happen = { days = 7 }
-	fire_only_once = yes 
+	fire_only_once = yes
 
 	option = {
 		name = jap_shogun.7.a
@@ -214,17 +214,17 @@ country_event = { #Political Turmoil
 			popularity = 0.1
 		}
 		set_temp_variable = { coalition_partner_var = token:national_populist }
-		add_to_coalition = yes 
+		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:valkist }
-		add_to_coalition = yes 
+		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-		add_to_coalition = yes 
+		add_to_coalition = yes
 		set_party_name = {
 			ideology = authoritarian_democrat
 			long_name = JAP_authoritarian_democrat_party_shogun_long
 			name = JAP_authoritarian_democrat_party_shogun
 		}
-		remove_every_minister = yes 
+		remove_every_minister = yes
 		activate_advisor = JAP_Tokugawa_Kuniyuki_hog_pau
 		activate_advisor = JAP_Inoue_Nissho_sec_val
 		activate_advisor = JAP_Nakano_Seigo_eco_npo
@@ -233,37 +233,37 @@ country_event = { #Political Turmoil
 			remove_ideas = JAP_fallen_god
 			every_controlled_state = {
 				limit = {
-					is_controlled_by = JAP 
+					is_controlled_by = JAP
 				}
-				set_demilitarized_zone = no 
+				set_demilitarized_zone = no
 			}
 			country_event = {
 				id = jap_shogun.8
 				days = 75
 			}
-			release = KOR 
+			release = KOR
 			KMT = { transfer_state = 524 }
 			ZHI = { transfer_state = 869 }
 			FNG = { transfer_state = 793 }
 			if = {
 				limit = {
 					BEA = {
-						exists = yes 
+						exists = yes
 						NOT = {
-							has_war_with = INS 
+							has_war_with = INS
 						}
-					} 
+					}
 				}
 				BEA = { transfer_state = 673 }
 			}
 			else_if = {
 				limit = {
 					INS = {
-						exists = yes 
+						exists = yes
 						NOT = {
-							has_war_with = BEA  
+							has_war_with = BEA
 						}
-					}  
+					}
 				}
 				INS = { transfer_state = 673 }
 			}
@@ -319,38 +319,38 @@ country_event = { #Political Turmoil
 		remove_ideas = JAP_fallen_god
 		every_controlled_state = {
 			limit = {
-				is_controlled_by = JAP 
+				is_controlled_by = JAP
 			}
-			set_demilitarized_zone = no 
+			set_demilitarized_zone = no
 		}
 	}
 }
-country_event = { #Kuniyuki visits USA 
+country_event = { #Kuniyuki visits USA
 	id = jap_shogun.8
-	title = jap_shogun.8.t 
+	title = jap_shogun.8.t
 	desc = jap_shogun.8.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogun.8.a
 		add_opinion_modifier = {
-			target = USA 
-			modifier = JAP_kuniyuki_visits_usa 
+			target = USA
+			modifier = JAP_kuniyuki_visits_usa
 		}
 		reverse_add_opinion_modifier = {
-			target = USA   
-			modifier = JAP_kuniyuki_visits_usa 
+			target = USA
+			modifier = JAP_kuniyuki_visits_usa
 		}
 	}
 }
-country_event = { #Shogun Visit Kyoto 
+country_event = { #Shogun Visit Kyoto
 	id = jap_shogun.9
-	title = jap_shogun.9.t 
+	title = jap_shogun.9.t
 	desc = jap_shogun.9.d
-	
+
 	trigger = {
-		tag = JAP 
+		tag = JAP
 		AND = {
 			has_country_flag = JAP_Shogun_Regime
 			has_country_flag = JAP_Tokugawa_Iesato_Not_Dead
@@ -366,15 +366,15 @@ country_event = { #Shogun Visit Kyoto
 				has_completed_focus = JAP_kokutai_minshu_unity
 			}
 		}
-	} 
+	}
 	mean_time_to_happen = { days = 7 }
-	fire_only_once = yes 
+	fire_only_once = yes
 
 	immediate = {
 		hidden_effect = {
 			country_event = {
 				id = jap_shogun.10
-				days = 14 
+				days = 14
 			}
 		}
 	}
@@ -385,12 +385,12 @@ country_event = { #Shogun Visit Kyoto
 		add_stability = 0.03
 	}
 }
-country_event = { #Shogun Assassination Attempt 
+country_event = { #Shogun Assassination Attempt
 	id = jap_shogun.10
-	title = jap_shogun.10.t 
+	title = jap_shogun.10.t
 	desc = jap_shogun.10.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogun.10.a
@@ -400,7 +400,7 @@ country_event = { #Shogun Assassination Attempt
 			set_country_flag = JAP_Tri_Edo_Commissioner
 			set_country_flag = JAP_Iesato_Death
 		}
-		mark_focus_tree_layout_dirty = yes 
+		mark_focus_tree_layout_dirty = yes
 		add_popularity = {
 			ideology = var:current_party_ideology_group
 			popularity = -0.1
@@ -418,10 +418,10 @@ country_event = { #Shogun Assassination Attempt
 }
 country_event = { #Assassination Investigation
 	id = jap_shogun.11
-	title = jap_shogun.11.t 
+	title = jap_shogun.11.t
 	desc = jap_shogun.11.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 	option = {
 		name = jap_shogun.11.a
 		country_event = {
@@ -436,18 +436,18 @@ country_event = { #Assassination Investigation
 		}
 	}
 }
-country_event = { #Rumor of lost claimant  
+country_event = { #Rumor of lost claimant
 	id = jap_shogun.12
-	title = jap_shogun.12.t 
+	title = jap_shogun.12.t
 	desc = jap_shogun.12.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 	option = {
 		name = jap_shogun.12.a
 		add_stability = -0.05
 		set_country_flag = {
 			flag = JAP_southern_claim_prevent
-			value = 1 
+			value = 1
 		}
 	}
 	option = {
@@ -458,16 +458,16 @@ country_event = { #Rumor of lost claimant
 		}
 		set_country_flag = {
 			flag = JAP_southern_claim_prevent
-			value = 0 
+			value = 0
 		}
 	}
 }
-country_event = { #Socialist League 
+country_event = { #Socialist League
 	id = jap_shogun.13
-	title = jap_shogun.13.t 
+	title = jap_shogun.13.t
 	desc = jap_shogun.13.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 	option = {
 		name = jap_shogun.13.a
 		add_stability = -0.05
@@ -488,16 +488,16 @@ country_event = { #Socialist League
 		}
 	}
 }
-country_event = { #Convene of Grand Triumvirate, Daijo-kan and Parliament 
+country_event = { #Convene of Grand Triumvirate, Daijo-kan and Parliament
 	id = jap_shogun.14
-	title = jap_shogun.14.t 
+	title = jap_shogun.14.t
 	desc = jap_shogun.14.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 	option = {
 		name = jap_shogun.14.a
 		add_stability = 0.1
-		
+
 		hidden_effect = {
 			if = {
 				limit = {
@@ -505,7 +505,7 @@ country_event = { #Convene of Grand Triumvirate, Daijo-kan and Parliament
 						has_country_flag = {
 							flag = JAP_socialist_coup_prevent
 							value = 1
-						}  
+						}
 						has_country_flag = {
 							flag = JAP_southern_claim_prevent
 							value = 1
@@ -525,7 +525,7 @@ country_event = { #Convene of Grand Triumvirate, Daijo-kan and Parliament
 						has_country_flag = {
 							flag = JAP_socialist_coup_prevent
 							value = 0
-						}  
+						}
 						has_country_flag = {
 							flag = JAP_southern_claim_prevent
 							value = 0
@@ -542,12 +542,12 @@ country_event = { #Convene of Grand Triumvirate, Daijo-kan and Parliament
 		}
 	}
 }
-country_event = { #Unbelievable Situation - Edo Castle Storming 
+country_event = { #Unbelievable Situation - Edo Castle Storming
 	id = jap_shogun.15
-	title = jap_shogun.15.t 
+	title = jap_shogun.15.t
 	desc = jap_shogun.15.d
-	 
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "We shoot the bald first"
@@ -592,14 +592,14 @@ country_event = { #Unbelievable Situation - Edo Castle Storming
 		}
 	}
 }
-country_event = { #Unbelievable Situation - Fate of Daijo-Kan  
+country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 	id = jap_shogun.16
-	title = jap_shogun.16.t 
+	title = jap_shogun.16.t
 	desc = jap_shogun.16.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 	option = { #The Kingmaker Elected
-	name = jap_shogun.16.a
+		name = jap_shogun.16.a
 		clr_country_flag = JAP_Tri_Edo_Commissioner
 		add_popularity = {
 			ideology = paternal_autocrat
@@ -615,7 +615,7 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 		set_country_flag = JAP_sgrp_foreign_unlock
 		mark_focus_tree_layout_dirty = yes
 		add_country_leader_role = {
-			character = JAP_Tokugawa_Kuniyuki 
+			character = JAP_Tokugawa_Kuniyuki
 			promote_leader = yes
 			country_leader = {
 				ideology = samurai_dictatorship_subtype
@@ -629,7 +629,7 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 		}
 	}
 	option = { #The Manager Elected
-	name = jap_shogun.16.b
+		name = jap_shogun.16.b
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.37
@@ -661,7 +661,7 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 	option = { #The Protector Elected
 		name = jap_shogun.16.c
 		add_popularity = {
-			ideology = valkist 
+			ideology = valkist
 			popularity = 0.37
 		}
 		clr_country_flag = JAP_Shogun_Regime
@@ -673,7 +673,7 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 			long_name = JAP_Purist_valkist_party_long
 			name = JAP_Purist_valkist_party
 		}
-		drop_cosmetic_tag = yes 
+		drop_cosmetic_tag = yes
 		set_cosmetic_tag = JAP_valkist
 		mark_focus_tree_layout_dirty = yes
 		add_country_leader_role = {
@@ -691,12 +691,12 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 		}
 	}
 }
-country_event = { #Unbelievable Situation - Southern Emperor Proclamation / No Daijo-Daijin Appointed  
+country_event = { #Unbelievable Situation - Southern Emperor Proclamation / No Daijo-Daijin Appointed
 	id = jap_shogun.17
-	title = jap_shogun.17.t 
+	title = jap_shogun.17.t
 	desc = jap_shogun.17.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 
 	option = {
 		name = "Everything under chaotic situation, only monk stills alive"
@@ -722,27 +722,27 @@ country_event = { #Unbelievable Situation - Southern Emperor Proclamation / No D
 		retire_character = JAP_Tokugawa_Iemasa
 		retire_character = JAP_Matsudaira_Tsuneo
 		retire_character = JAP_Nakano_Seigo
-		retire_character = JAP_Inoue_Nissho 
+		retire_character = JAP_Inoue_Nissho
 		add_country_leader_role = {
 			character = JAP_Kumazawa_Emperor
 			promote_leader = yes
 			country_leader = {
 				ideology = absolute_mon_subtype
 				expire = "1965.1.1"
-				traits = { 
-					#yamato_ogosho 
+				traits = {
+					#yamato_ogosho
 					#protector_of_tradition
 				}
 			}
 		}
 	}
 }
-country_event = { #Unbelievable Situation - Burakumin - Socialist Revolution / Death of Grand Triumvirate   
+country_event = { #Unbelievable Situation - Burakumin - Socialist Revolution / Death of Grand Triumvirate
 	id = jap_shogun.18
-	title = jap_shogun.18.t 
+	title = jap_shogun.18.t
 	desc = jap_shogun.18.d
-	
-	is_triggered_only = yes 
+
+	is_triggered_only = yes
 	option = {
 		name = "The red militia shot everyone dead, even the bald man"
 		add_popularity = {
@@ -764,7 +764,7 @@ country_event = { #Unbelievable Situation - Burakumin - Socialist Revolution / D
 		clr_country_flag = JAP_Shogun_Regime
 		clr_country_flag = HOG_veiw
 		clr_country_flag = LEADER_GUI_VISIBLE
-		clr_country_flag = JAP_Tri_Edo_Commissioner 
+		clr_country_flag = JAP_Tri_Edo_Commissioner
 		retire_character = JAP_Tokugawa_Kuniyuki
 		retire_character = JAP_Tokugawa_Iemasa
 		retire_character = JAP_Matsudaira_Tsuneo
@@ -777,7 +777,7 @@ country_event = { #Unbelievable Situation - Burakumin - Socialist Revolution / D
 			elections_allowed = no
 		}
 		set_temp_variable = { coalition_partner_var = token:collectivist }
-		add_to_coalition = yes 
+		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:vanguardist }
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:social_democrat }
@@ -788,10 +788,10 @@ country_event = { #Unbelievable Situation - Burakumin - Socialist Revolution / D
 			character = JAP_Jiichiro_Matsumoto
 			promote_leader = yes
 			country_leader = {
-				ideology = libsoc_utopian_socialism_subtype 
+				ideology = libsoc_utopian_socialism_subtype
 				expire = "1965.1.1"
-				traits = { 
-					#the_liberator 
+				traits = {
+					#the_liberator
 					#father_of_suiheisha
 				}
 			}
@@ -802,9 +802,9 @@ country_event = { #Unbelievable Situation - Burakumin - Socialist Revolution / D
 country_event = {
 	id = jap_shogundom.1
 	title = jap_shogundom.1.t
-	desc = jap_shogundom.1.d 
+	desc = jap_shogundom.1.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.1.a
@@ -812,7 +812,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = jap_shogundom.2
-				days = 30 
+				days = 30
 			}
 		}
 	}
@@ -820,9 +820,9 @@ country_event = {
 country_event = {
 	id = jap_shogundom.2
 	title = jap_shogundom.2.t
-	desc = jap_shogundom.2.d 
+	desc = jap_shogundom.2.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.2.a
@@ -836,7 +836,7 @@ country_event = {
 		}
 		country_event = {
 			id = jap_shogundom.3
-			days = 1 
+			days = 1
 		}
 	}
 	option = {
@@ -849,16 +849,16 @@ country_event = {
 		}
 		country_event = {
 			id = jap_shogundom.3
-			days = 1 
+			days = 1
 		}
 	}
 }
 country_event = {
 	id = jap_shogundom.3
 	title = jap_shogundom.3.t
-	desc = jap_shogundom.3.d 
+	desc = jap_shogundom.3.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.3.a
@@ -867,7 +867,7 @@ country_event = {
 		retire_character = JAP_Konoe_Fumimaro
 		country_event = {
 			id = jap_shogundom.4
-			days = 1 
+			days = 1
 		}
 	}
 	option = {
@@ -876,16 +876,16 @@ country_event = {
 		retire_character = JAP_Kenji_Doihara
 		country_event = {
 			id = jap_shogundom.4
-			days = 1 
+			days = 1
 		}
 	}
 }
 country_event = {
 	id = jap_shogundom.4
 	title = jap_shogundom.4.t
-	desc = jap_shogundom.4.d 
+	desc = jap_shogundom.4.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.4.a
@@ -917,21 +917,21 @@ country_event = {
 country_event = {
 	id = jap_shogundom.5
 	title = "The Last Answer"
-	desc = jap_shogundom.5.d 
+	desc = jap_shogundom.5.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.5.a
-		JAP_nagasaki_tribunal_court_idea = yes 
+		JAP_nagasaki_tribunal_court_idea = yes
 	}
 }
 country_event = {
 	id = jap_shogundom.6
 	title = "Visit the Imperial Palace"
-	desc = jap_shogundom.6.d 
+	desc = jap_shogundom.6.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.6.a
@@ -946,10 +946,10 @@ country_event = {
 country_event = {
 	id = jap_shogundom.7
 	title = "City Renaming - Tokyo"
-	desc = jap_shogundom.7.d 
+	desc = jap_shogundom.7.d
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = jap_shogundom.7.a
 		set_province_name = { id = 1182 name = "Edo" }
@@ -966,10 +966,10 @@ country_event = {
 country_event = {
 	id = jap_shogundom.8
 	title = "City Renaming - Nagoya"
-	desc = jap_shogundom.8.d 
+	desc = jap_shogundom.8.d
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = jap_shogundom.8.a
 		set_province_name = { id = 10125 name = "Mikawa" }
@@ -985,11 +985,11 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.9
-	title = jap_shogundom.9.t 
-	desc = jap_shogundom.9.d 
+	title = jap_shogundom.9.t
+	desc = jap_shogundom.9.d
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = jap_shogundom.9.a
 		trigger = {
@@ -1013,11 +1013,11 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.10
-	title = jap_shogundom.10.t 
-	desc = jap_shogundom.10.d 
+	title = jap_shogundom.10.t
+	desc = jap_shogundom.10.d
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = jap_shogundom.10.a
 		trigger = {
@@ -1041,11 +1041,11 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.11
-	title = jap_shogundom.11.t 
-	desc = jap_shogundom.11.d 
+	title = jap_shogundom.11.t
+	desc = jap_shogundom.11.d
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = jap_shogundom.11.a
 		trigger = {
@@ -1069,10 +1069,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.12
-	title = jap_shogundom.12.t 
-	desc = jap_shogundom.12.d 
+	title = jap_shogundom.12.t
+	desc = jap_shogundom.12.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.12.a
@@ -1091,10 +1091,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.13
-	title = jap_shogundom.13.t 
-	desc = jap_shogundom.13.d 
+	title = jap_shogundom.13.t
+	desc = jap_shogundom.13.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.13.a
@@ -1104,10 +1104,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.14
-	title = jap_shogundom.14.t 
-	desc = jap_shogundom.14.d 
+	title = jap_shogundom.14.t
+	desc = jap_shogundom.14.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.14.a
@@ -1121,10 +1121,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.15
-	title = jap_shogundom.15.t 
-	desc = jap_shogundom.15.d 
+	title = jap_shogundom.15.t
+	desc = jap_shogundom.15.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.15.a
@@ -1133,10 +1133,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.16
-	title = jap_shogundom.16.t 
-	desc = jap_shogundom.16.d 
+	title = jap_shogundom.16.t
+	desc = jap_shogundom.16.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.16.a
@@ -1148,10 +1148,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.17
-	title = jap_shogundom.17.t 
-	desc = jap_shogundom.17.d 
+	title = jap_shogundom.17.t
+	desc = jap_shogundom.17.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.17.a
@@ -1160,10 +1160,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.18
-	title = jap_shogundom.18.t 
-	desc = jap_shogundom.18.d 
+	title = jap_shogundom.18.t
+	desc = jap_shogundom.18.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.18.a
@@ -1172,10 +1172,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.19
-	title = jap_shogundom.19.t 
-	desc = jap_shogundom.19.d 
+	title = jap_shogundom.19.t
+	desc = jap_shogundom.19.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.19.a
@@ -1184,10 +1184,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.20
-	title = jap_shogundom.20.t 
-	desc = jap_shogundom.20.d 
+	title = jap_shogundom.20.t
+	desc = jap_shogundom.20.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.20.a
@@ -1199,10 +1199,10 @@ country_event = {
 }
 country_event = {
 	id = jap_shogundom.21
-	title = jap_shogundom.21.t 
-	desc = jap_shogundom.21.d 
+	title = jap_shogundom.21.t
+	desc = jap_shogundom.21.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_shogundom.21.a
@@ -1217,7 +1217,7 @@ country_event = {
 	title = "Provisional Congress of Socialist League"
 	desc = jap_rep.1.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = "Please celebrate to our glorious revolution!!"
 		add_stability = 0.02
@@ -1228,7 +1228,7 @@ country_event = {
 	title = "Popular Front Address the Congress"
 	desc = jap_rep.2.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = "...and we thank you for your sacrifice"
 		add_stability = 0.02
@@ -1239,7 +1239,7 @@ country_event = {
 	title = "Vanguard Front Address the Congress"
 	desc = jap_rep.3.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = "...and we thank you for your sacrifice"
 		add_war_support = 0.02
@@ -1250,7 +1250,7 @@ country_event = {
 	title = "Election of Interim President"
 	desc = jap_rep.2.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = "Father of Suiseisha, Jiichiro Matsumoto"
 		set_politics = {
@@ -1261,14 +1261,14 @@ country_event = {
 			character = JAP_Jiichiro_Matsumoto
 			promote_leader = yes
 			country_leader = {
-				ideology = libsoc_utopian_socialism_subtype 
+				ideology = libsoc_utopian_socialism_subtype
 				expire = "1965.1.1"
 			}
 		}
 		set_cosmetic_tag = JAP_Republican
 		set_cosmetic_tag = JAP_Suiheisha_temp
 		add_popularity = {
-			ideology = var:current_party_ideology_group 
+			ideology = var:current_party_ideology_group
 			popularity = 0.1
 		}
 		set_party_name = {
@@ -1296,14 +1296,14 @@ country_event = {
 			elections_allowed = no
 		}
 		add_popularity = {
-			ideology = var:current_party_ideology_group 
+			ideology = var:current_party_ideology_group
 			popularity = 0.2
 		}
 		add_country_leader_role = {
 			character = JAP_Yamakawa_Hitoshi
 			promote_leader = yes
 			country_leader = {
-				ideology = vanguardist_subtype 
+				ideology = vanguardist_subtype
 				expire = "1965.1.1"
 			}
 		}
@@ -1333,18 +1333,18 @@ country_event = {
 			elections_allowed = no
 		}
 		add_popularity = {
-			ideology = var:current_party_ideology_group 
+			ideology = var:current_party_ideology_group
 			popularity = 0.2
 		}
 		add_country_leader_role = {
 			character = JAP_Oyama_Ikuo
 			promote_leader = yes
 			country_leader = {
-				ideology = collectivist_subtype 
+				ideology = collectivist_subtype
 				expire = "1965.1.1"
 			}
 		}
-		set_cosmetic_tag = JAP_Republican 
+		set_cosmetic_tag = JAP_Republican
 		set_party_name = {
 			ideology = libertarian_socialist
 			long_name = JAP_Suiheisha_libertarian_socialist_party_long
@@ -1365,9 +1365,9 @@ country_event = {
 country_event = {
 	id = jap_rep.5
 	title = "Fate of Monarchy"
-	desc = jap_rep.5.d 
+	desc = jap_rep.5.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = "Send them somewhere else faraway from Japan"
 		set_country_flag = JAP_secret_hide_monarchy
@@ -1382,9 +1382,9 @@ country_event = {
 country_event = {
 	id = jap_rep.6
 	title = "Fate of Peerage"
-	desc = jap_rep.6.d 
+	desc = jap_rep.6.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = "Abolish all titles immediately"
 		add_political_power = -75
@@ -1398,10 +1398,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = JAP_sgrp_foreign_unlock
-			mark_focus_tree_layout_dirty = yes 
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = "Father of Suiseisha, Jiichiro Matsumoto"
 		trigger = {
@@ -1410,15 +1410,15 @@ country_event = {
 		complete_national_focus = JAP_sustainers_secure_presidency
 		complete_national_focus = JAP_matsumoto_presidency
 		if = {
-			limit = { 
+			limit = {
 				libertarian_socialist < 0.3
 			}
 			add_popularity = {
-				ideology = libertarian_socialist 
+				ideology = libertarian_socialist
 				popularity = 0.2
 			}
 		}
-		end_coalition = yes 
+		end_coalition = yes
 		set_politics = {
 			ruling_party = libertarian_socialist
 			elections_allowed = no
@@ -1427,11 +1427,11 @@ country_event = {
 			character = JAP_Jiichiro_Matsumoto
 			promote_leader = yes
 			country_leader = {
-				ideology = libsoc_utopian_socialism_subtype 
+				ideology = libsoc_utopian_socialism_subtype
 				expire = "1965.1.1"
 			}
 		}
-		set_cosmetic_tag = JAP_MATSUMOTO 
+		set_cosmetic_tag = JAP_MATSUMOTO
 	}
 	option = {
 		name = "The Feminist Fighter, Yamakawa Kikue"
@@ -1457,24 +1457,24 @@ country_event = {
 		}
 		complete_national_focus = JAP_kikue_presidency
 		if = {
-			limit = { 
+			limit = {
 				libertarian_socialist < 0.3
 			}
 			add_popularity = {
-				ideology = libertarian_socialist 
+				ideology = libertarian_socialist
 				popularity = 0.2
 			}
 		}
-		end_coalition = yes 
+		end_coalition = yes
 		set_politics = {
 			ruling_party = libertarian_socialist
 			elections_allowed = no
-		} 
+		}
 		add_country_leader_role = {
 			character = JAP_Yamakawa_Kikue
 			promote_leader = yes
 			country_leader = {
-				ideology = socialist_feminist_subtype 
+				ideology = socialist_feminist_subtype
 				expire = "1965.1.1"
 			}
 		}
@@ -1492,15 +1492,15 @@ country_event = {
 		complete_national_focus = JAP_sustainers_secure_presidency
 		complete_national_focus = JAP_kingoro_presidency
 		if = {
-			limit = { 
+			limit = {
 				vanguardist < 0.3
 			}
 			add_popularity = {
-				ideology = vanguardist 
+				ideology = vanguardist
 				popularity = 0.2
 			}
 		}
-		end_coalition = yes 
+		end_coalition = yes
 		set_politics = {
 			ruling_party = vanguardist
 			elections_allowed = no
@@ -1509,7 +1509,7 @@ country_event = {
 			character = JAP_Hashimoto_Kingoro
 			promote_leader = yes
 			country_leader = {
-				ideology = revolutionary_showaist_subtype 
+				ideology = revolutionary_showaist_subtype
 				expire = "1965.1.1"
 			}
 		}
@@ -1528,15 +1528,15 @@ country_event = {
 		complete_national_focus = JAP_sustainers_secure_presidency
 		complete_national_focus = JAP_nosaka_presidency
 		if = {
-			limit = { 
+			limit = {
 				collectivist < 0.3
 			}
 			add_popularity = {
-				ideology = collectivist 
+				ideology = collectivist
 				popularity = 0.2
 			}
 		}
-		end_coalition = yes 
+		end_coalition = yes
 		set_politics = {
 			ruling_party = collectivist
 			elections_allowed = no
@@ -1545,7 +1545,7 @@ country_event = {
 			character = JAP_Sanzo_Nosaka
 			promote_leader = yes
 			country_leader = {
-				ideology = monsoc_subtype 
+				ideology = monsoc_subtype
 				expire = "1965.1.1"
 			}
 		}
@@ -1564,15 +1564,15 @@ country_event = {
 		complete_national_focus = JAP_revolutionary_secure_presidency
 		complete_national_focus = JAP_hisashi_presidency
 		if = {
-			limit = { 
+			limit = {
 				libertarian_socialist < 0.3
 			}
 			add_popularity = {
-				ideology = libertarian_socialist 
+				ideology = libertarian_socialist
 				popularity = 0.2
 			}
 		}
-		end_coalition = yes 
+		end_coalition = yes
 		set_politics = {
 			ruling_party = libertarian_socialist
 			elections_allowed = no
@@ -1586,8 +1586,8 @@ country_event = {
 			long_name = JAP_Republican_libertarian_socialist_party_long
 			name = JAP_Republican_libertarian_socialist_party
 		}
-		drop_cosmetic_tag = yes 
-		set_cosmetic_tag = JAP_HISASHI_Reformed  
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = JAP_HISASHI_Reformed
 	}
 	option = {
 		name = "Founding Father of JCP, Arahata Kanson"
@@ -1597,15 +1597,15 @@ country_event = {
 		complete_national_focus = JAP_revolutionary_secure_presidency
 		complete_national_focus = JAP_kanson_presidency
 		if = {
-			limit = { 
+			limit = {
 				libertarian_socialist < 0.3
 			}
 			add_popularity = {
-				ideology = libertarian_socialist 
+				ideology = libertarian_socialist
 				popularity = 0.2
 			}
 		}
-		end_coalition = yes 
+		end_coalition = yes
 		set_politics = {
 			ruling_party = libertarian_socialist
 			elections_allowed = no
@@ -1614,17 +1614,17 @@ country_event = {
 			character = JAP_Arahata_Kanson
 			promote_leader = yes
 			country_leader = {
-				ideology = anarcho_syndicalism_subtype 
+				ideology = anarcho_syndicalism_subtype
 				expire = "1965.1.1"
 			}
 		}
 		set_party_name = {
 			ideology = libertarian_socialist
-			long_name = JAP_Republican_Kanson_party_long 
+			long_name = JAP_Republican_Kanson_party_long
 			name = JAP_Republican_Kanson_party
 		}
-		drop_cosmetic_tag = yes 
-		set_cosmetic_tag = JAP_KANSON  
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = JAP_KANSON
 	}
 }
 
@@ -1634,9 +1634,9 @@ country_event = {
 country_event = {
 	id = jap_foreign.1
 	title = jap_foreign.1.t
-	desc = jap_foreign.1.d 
+	desc = jap_foreign.1.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.1.a
@@ -1646,9 +1646,9 @@ country_event = {
 country_event = {
 	id = jap_foreign.2
 	title = jap_foreign.2.t
-	desc = jap_foreign.2.d 
+	desc = jap_foreign.2.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.2.a
@@ -1658,9 +1658,9 @@ country_event = {
 country_event = {
 	id = jap_foreign.3
 	title = jap_foreign.3.t
-	desc = jap_foreign.3.d 
+	desc = jap_foreign.3.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.3.a
@@ -1672,15 +1672,15 @@ country_event = {
 	title = jap_foreign.4.t
 	desc = jap_foreign.4.d
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
 	option = {
 		name = jap_foreign.4.a
 		ai_chance = {
 			base = 50
 			modifier = {
 				add = 50
-				SIA = { is_faction_leader = no } 
+				SIA = { is_faction_leader = no }
 			}
 		}
 		JAP = {
@@ -1689,7 +1689,7 @@ country_event = {
 		if = {
 			limit = {
 				JAP = {
-					is_faction_leader = yes 
+					is_faction_leader = yes
 				}
 			}
 			JAP = { add_to_faction = SIA }
@@ -1700,8 +1700,8 @@ country_event = {
 					AND = {
 						is_in_faction_with = JAP
 						is_faction_leader = yes
-						is_major = yes 
-					} 
+						is_major = yes
+					}
 				}
 			}
 			random_country = {
@@ -1709,10 +1709,10 @@ country_event = {
 					AND = {
 						is_in_faction_with = JAP
 						is_faction_leader = yes
-						is_major = yes 
-					} 
+						is_major = yes
+					}
 				}
-				add_to_faction = SIA 
+				add_to_faction = SIA
 			}
 		}
 	}
@@ -1723,7 +1723,7 @@ country_event = {
 			base = 50
 			modifier = {
 				add = 50
-				SIA = { is_faction_leader = yes } 
+				SIA = { is_faction_leader = yes }
 			}
 		}
 		JAP = {
@@ -1734,9 +1734,9 @@ country_event = {
 country_event = {
 	id = jap_foreign.5
 	title = jap_foreign.5.t
-	desc = jap_foreign.5.d 
+	desc = jap_foreign.5.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.5.a
@@ -1746,9 +1746,9 @@ country_event = {
 country_event = {
 	id = jap_foreign.6
 	title = jap_foreign.6.t
-	desc = jap_foreign.6.d 
+	desc = jap_foreign.6.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.6.a
@@ -1765,7 +1765,7 @@ country_event = {
 		add_stability = -0.10
 		create_wargoal = {
 			type = annex_everything
-			target = SIA 
+			target = SIA
 		}
 	}
 }
@@ -1774,7 +1774,7 @@ country_event = {
 	title = jap_foreign.7.t
 	desc = jap_foreign.7.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.7.a
@@ -1786,7 +1786,7 @@ country_event = {
 					OR = {
 						has_dictatorship_government = yes
 						has_democratic_right_government = yes
-					} 
+					}
 				}
 			}
 		}
@@ -1807,32 +1807,32 @@ country_event = {
 					NOT = {
 						OR = {
 							has_dictatorship_government = yes
-							has_democratic_right_government = yes 
-						} 
-					} 
+							has_democratic_right_government = yes
+						}
+					}
 				}
 			}
 		}
 		JAP = {
 			create_wargoal = {
 				type = annex_everything
-				target = RUS 
+				target = RUS
 			}
 		}
 	}
 }
 country_event = {
 	id = jap_foreign.8
-	title = jap_foreign.8.t 
-	desc = jap_foreign.8.d 
+	title = jap_foreign.8.t
+	desc = jap_foreign.8.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.8.a
 		add_to_array = {
 			array = global.harbin_conference_joined
-			var = JAP.id 
+			var = JAP.id
 		}
 		set_variable = { harbin_topic = 3 }
 		set_variable = { harbin_railroad = 0 }
@@ -1843,40 +1843,40 @@ country_event = {
 				OR = {
 					AND = {
 						exists = yes
-						tag = RUS 
+						tag = RUS
 					}
 					AND = {
-						exists = yes 
-						tag = FNG  
+						exists = yes
+						tag = FNG
 					}
 				}
 			}
 			country_event = {
 				id = jap_foreign.9
-				days = 7 
+				days = 7
 			}
 		}
 	}
 }
 country_event = { #Meeting in Harbin - Telegram Invitation
 	id = jap_foreign.9
-	title = jap_foreign.9.t 
-	desc = jap_foreign.9.d 
+	title = jap_foreign.9.t
+	desc = jap_foreign.9.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	option = {
 		name = jap_foreign.9.a
 		ai_chance = {
-			base = 50 
+			base = 50
 		}
 		add_to_array = {
 			array = harbin_conference_joined
-			var = ROOT.id 
+			var = ROOT.id
 		}
 		country_event = {
 			id = jap_foreign.10
-			days = 3 
+			days = 3
 		}
 		add_stability = 0.01
 		add_political_power = 10
@@ -1884,7 +1884,7 @@ country_event = { #Meeting in Harbin - Telegram Invitation
 	option = {
 		name = jap_foreign.9.b
 		ai_chance = {
-			base = 50 
+			base = 50
 		}
 		add_stability = -0.01
 		add_political_power = -10
@@ -1893,57 +1893,57 @@ country_event = { #Meeting in Harbin - Telegram Invitation
 country_event = { #Harbin Conference - Railroad Income Tax
 	id = jap_foreign.10
 	title = jap_foreign.10.t
-	desc = jap_foreign.10.d 
+	desc = jap_foreign.10.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = jap_foreign.10.a
 		ai_chance = {
-			base = 50 
+			base = 50
 		}
 		country_event = {
 			id = jap_foreign.11
-			days = 3 
+			days = 3
 		}
 		add_stability = 0.01
 		add_political_power = 10
 		JAP = {
 			add_to_variable = {
 				var = harbin_railroad
-				value = 1 
+				value = 1
 			}
 		}
 	}
 	option = {
 		name = jap_foreign.10.b
 		ai_chance = {
-			base = 50 
+			base = 50
 		}
 		add_stability = 0.01
 		add_political_power = 10
 		country_event = {
 			id = jap_foreign.11
-			days = 3 
+			days = 3
 		}
 	}
 }
 country_event = { #Harbin Conference - Currency Support
 	id = jap_foreign.11
 	title = jap_foreign.11.t
-	desc = jap_foreign.11.d 
+	desc = jap_foreign.11.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = jap_foreign.11.a
 		JAP = {
 			add_to_variable = {
 				var = harbin_currency
-				value = 1 
+				value = 1
 			}
 		}
 		country_event = {
 			id = jap_foreign.12
-			days = 3 
+			days = 3
 		}
 		add_stability = 0.01
 		add_political_power = 10
@@ -1952,7 +1952,7 @@ country_event = { #Harbin Conference - Currency Support
 		name = jap_foreign.11.b
 		country_event = {
 			id = jap_foreign.12
-			days = 3 
+			days = 3
 		}
 		add_stability = 0.01
 		add_political_power = 10
@@ -1961,20 +1961,20 @@ country_event = { #Harbin Conference - Currency Support
 country_event = { #Harbin Conference - Resource and Trading
 	id = jap_foreign.12
 	title = jap_foreign.12.t
-	desc = jap_foreign.12.d 
+	desc = jap_foreign.12.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 	option = {
 		name = jap_foreign.12.a
 		JAP = {
 			add_to_variable = {
 				var = harbin_trade
-				value = 1 
+				value = 1
 			}
 		}
 		country_event = {
 			id = jap_foreign.13
-			days = 3 
+			days = 3
 		}
 		add_stability = 0.01
 		add_political_power = 10
@@ -1983,7 +1983,7 @@ country_event = { #Harbin Conference - Resource and Trading
 		name = jap_foreign.12.b
 		country_event = {
 			id = jap_foreign.13
-			days = 3 
+			days = 3
 		}
 		add_stability = 0.01
 		add_political_power = 10
@@ -1992,9 +1992,9 @@ country_event = { #Harbin Conference - Resource and Trading
 country_event = { #Harbin Conference - Conclusion
 	id = jap_foreign.13
 	title = jap_foreign.13.t
-	desc = jap_foreign.13.d 
+	desc = jap_foreign.13.d
 
-	is_triggered_only = yes 
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -2005,21 +2005,21 @@ country_event = { #Harbin Conference - Conclusion
 				multiply_temp_variable = { temp = harbin_topic }
 
 				set_variable = { harbin_vote = temp }
-				
+
 				set_variable = { harbin_quorum = harbin_topic }
 				multiply_variable = { harbin_quorum = 0.6 }
 
 				divide_variable = { harbin_vote = var:global.harbin_conference_joined }
 
-				clear_variable = harbin_railroad 
+				clear_variable = harbin_railroad
 				clear_variable = harbin_currency
-				clear_variable = harbin_trade 
-				clear_variable = harbin_topic 
+				clear_variable = harbin_trade
+				clear_variable = harbin_topic
 				if = {
 					limit = {
 						check_variable = {
-							var = harbin_vote 
-							value = harbin_quorum 
+							var = harbin_vote
+							value = harbin_quorum
 							compare = greater_than_or_equals
 						}
 					}
@@ -2028,8 +2028,8 @@ country_event = { #Harbin Conference - Conclusion
 				else_if = {
 					limit = {
 						check_variable = {
-							var = harbin_vote 
-							value = harbin_quorum 
+							var = harbin_vote
+							value = harbin_quorum
 							compare = less_than
 						}
 					}
@@ -2043,7 +2043,7 @@ country_event = { #Harbin Conference - Conclusion
 				}
 				clear_variable = harbin_conference
 				clear_variable = harbin_vote
-				clear_variable = harbin_quorum 
+				clear_variable = harbin_quorum
 			}
 		}
 	}

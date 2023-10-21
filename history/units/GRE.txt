@@ -38,7 +38,7 @@ division_template = {
 division_template = {
 	name = "Merarchía Ippikoú" 			# Cavalry Division
 	division_names_group = GRE_CAV_01
-
+	
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -52,6 +52,11 @@ division_template = {
 	}
 }
 
+focus = {
+	current = GRE_drachma_devaluation
+	progress = 2
+}
+
 units = {
 	######## Ellinikó Genikó Epiteleío ########
 	division = {
@@ -60,7 +65,7 @@ units = {
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
+		
 	}
 	division = {
 		name = "VIII Merarchía Pezikoú"
@@ -68,7 +73,7 @@ units = {
 		division_template = "Tetrágono Pezikoú" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
+		
 	}
 	division = {
 		name = "Merarchía Ippikoú"
@@ -76,9 +81,9 @@ units = {
 		division_template = "Merarchía Ippikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
+		
 	}
-
+	
 	# A Sóma Stratoú
 	division = {
 		name = "II Merarchía Pezikoú"
@@ -86,7 +91,7 @@ units = {
 		division_template = "Tetrágono Pezikoú" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
+		
 	}
 	division = {
 		name = "III Merarchía Pezikoú"
@@ -94,7 +99,7 @@ units = {
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
+		
 	}
 	division = {
 		name = "IV Merarchía Pezikoú"
@@ -102,9 +107,9 @@ units = {
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
+		
 	}
-
+	
 	# B Sóma Stratoú
 	division = {
 		name = "I Merarchía Pezikoú"
@@ -112,7 +117,7 @@ units = {
 		division_template = "Tetrágono Pezikoú" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
+		
 	}
 	division = {
 		name = "IX Merarchía Pezikoú"
@@ -120,9 +125,9 @@ units = {
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
+		
 	}
-
+	
 	# C Sóma Stratoú
 	division = {
 		name = "XI Merarchía Pezikoú"
@@ -130,9 +135,9 @@ units = {
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
+		
 	}
-
+	
 	# D Sóma Stratoú
 	division = {
 		name = "VII Merarchía Pezikoú"
@@ -140,9 +145,9 @@ units = {
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
+		
 	}
-
+	
 	# E Sóma Stratoú
 	division = {
 		name = "XII Merarchía Pezikoú"
@@ -150,45 +155,44 @@ units = {
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
+		
 	}
-
+	
 	division = {
 		name = "XIII Merarchía Pezikoú"
 		location = 4112
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
+		
 	}
-
+	
 	division = {
 		name = "XIV Merarchía Pezikoú"
 		location = 849
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
+		
 	}
-
+	
 	division = {
 		name = "XV Merarchía Pezikoú"
 		location = 4112
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
+		
 	}
-
+	
 	division = {
 		name = "XVII Merarchía Pezikoú"
 		location = 922
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
+		
 	}
-
 }
 
 ##### No Air units -- Greece did not start to modernize air force until 1937 #####
@@ -201,7 +205,7 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "GRE"
 		}
-		requested_factories = 1
+		requested_factories = 3
 		progress = 0.22
 		efficiency = 100
 	}
@@ -213,5 +217,35 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.56
 		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_0
+			creator = "GRE"
+		}
+		requested_factories = 2
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 100
+	}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_1
+		amount = 50
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = train_equipment
+		amount = 8
 	}
 }

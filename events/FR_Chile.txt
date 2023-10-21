@@ -9,10 +9,11 @@ country_event = { #Intro
 	title = chl.1.t
 	desc = chl.1.d
 	picture = chile_start
+	is_triggered_only = yes
 
-	 trigger = {
-	 	tag = CHL
-	 }
+	# trigger = {
+		# 	tag = CHL
+		# }
 
 	# mean_time_to_happen = { days = 1 }
 
@@ -29,7 +30,7 @@ country_event = { #critical point
 	title = chl.2.t
 	desc = chl.2.d
 	picture = chilean_brownshirts1
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -189,7 +190,6 @@ country_event = { #40 elections
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 		}
-		add_ideas = CHL_Juan_Antonio_Rios_hog_sli
 		set_politics = {
 			ruling_party = social_liberal
 		}
@@ -204,14 +204,14 @@ country_event = { #40 elections
 
 		hidden_effect = {
 			set_global_flag = JARWON
-      add_country_leader_role = {
-        character = CHL_Juan_Antonio_Rios
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
+			add_country_leader_role = {
+				character = CHL_Juan_Antonio_Rios
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -233,16 +233,16 @@ country_event = { #Collierevolts
 
 		random_list= {
 			70 = {
-			} 
+			}
 			30 = {
-				country_event = { 
-					days = 5 
+				country_event = {
+					days = 5
 					id = chl.13
 				}
-			}  
+			}
 		}
 	}
-	option = { 
+	option = {
 		name = chl.10.b
 		ai_chance = { base = 20 }
 		add_political_power = -50
@@ -295,14 +295,14 @@ country_event = { #Blanche takes over
 		hidden_effect = {
 			set_country_flag = BLANCHEPATER
 			set_politics = { ruling_party = paternal_autocrat }
-      add_country_leader_role = {
-        character = CHL_Bartolome_Blanche
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
+			add_country_leader_role = {
+				character = CHL_Bartolome_Blanche
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -329,11 +329,11 @@ country_event = { #what about socialism
 		add_popularity = {
 			ideology = social_democrat popularity = 0.05
 		}
-		country_event = { 
+		country_event = {
 			days = 100
 			id = chl.15
 		}
-	} 
+	}
 	option = { #ban them for now
 		name = chl.14.b
 		ai_chance = { factor = 50 }
@@ -341,7 +341,7 @@ country_event = { #what about socialism
 			ideology = social_democrat popularity = -0.05
 		}
 		add_political_power = -50
-		country_event = { 
+		country_event = {
 			days = 100
 			id = chl.16
 		}
@@ -430,17 +430,17 @@ country_event = { #blanche open elections
 		set_global_flag = JARWON
 		hidden_effect = {
 			add_country_leader_role = {
-        character = CHL_Juan_Antonio_Rios
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
+				character = CHL_Juan_Antonio_Rios
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
-	
+
 country_event = { #blanche no left elections
 
 	id = chl.16
@@ -502,13 +502,13 @@ country_event = { #blanche no left elections
 		set_global_flag = JARWON
 		hidden_effect = {
 			add_country_leader_role = {
-        character = CHL_Juan_Antonio_Rios
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
+				character = CHL_Juan_Antonio_Rios
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -526,7 +526,7 @@ country_event = { #pact with peru1 (offer from chile)#
 		name = chl.17.a
 		add_political_power = -50
 		ai_chance = { factor = 90 }
-		CHL = { 
+		CHL = {
 			country_event = { id = chl.18 days = 1 }
 		}
 	}
@@ -549,7 +549,7 @@ country_event = { #pact with peru2
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.18.a
 		ai_chance = { base = 90 }
 		add_to_faction = PRU
@@ -572,7 +572,7 @@ country_event = { #inviting venezuela#
 		name = chl.19.a
 		add_political_power = -50
 		ai_chance = { factor = 90 }
-		CHL = { 
+		CHL = {
 			country_event = { id = chl.20 days = 1 }
 		}
 	}
@@ -595,7 +595,7 @@ country_event = { #venezuela accepts
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.20.a
 		ai_chance = { base = 90 }
 		add_to_faction = VEN
@@ -618,7 +618,7 @@ country_event = { #alliance with peru1 (offer from chile)#
 		name = chl.21.a
 		add_political_power = -50
 		ai_chance = { factor = 90 }
-		CHL = { 
+		CHL = {
 			country_event = { id = chl.22 days = 1 }
 		}
 	}
@@ -639,7 +639,7 @@ country_event = { #alliance with peru2
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.22.a
 		ai_chance = { base = 90 }
 		add_to_faction = PRU
@@ -660,7 +660,7 @@ country_event = { #inviting ecuador#
 		name = chl.23.a
 		add_political_power = -50
 		ai_chance = { factor = 90 }
-		CHL = { 
+		CHL = {
 			country_event = { id = chl.23 days = 1 }
 		}
 	}
@@ -681,7 +681,7 @@ country_event = { #ecuador accepts
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.24.a
 		ai_chance = { base = 90 }
 		add_to_faction = ECU
@@ -744,7 +744,7 @@ country_event = { #new commie government
 			ruling_party = collectivist
 		}
 		add_popularity = {
-				ideology = collectivist popularity = 0.25
+			ideology = collectivist popularity = 0.25
 		}
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
@@ -763,8 +763,8 @@ country_event = { #Flavor1
 	trigger = {
 		tag = CHL
 		NOT = {
-		has_global_flag = CHILEAN_VALKISM
-		has_global_flag = CARLOS_COUP
+			has_global_flag = CHILEAN_VALKISM
+			has_global_flag = CARLOS_COUP
 		}
 	}
 
@@ -800,8 +800,8 @@ country_event = { #Flavor2
 	trigger = {
 		tag = CHL
 		NOT = {
-		has_global_flag = CHILEAN_VALKISM
-		has_global_flag = CARLOS_COUP
+			has_global_flag = CHILEAN_VALKISM
+			has_global_flag = CARLOS_COUP
 		}
 	}
 
@@ -837,8 +837,8 @@ country_event = { #Flavor3
 	trigger = {
 		tag = CHL
 		NOT = {
-		has_global_flag = CHILEAN_VALKISM
-		has_global_flag = CARLOS_COUP
+			has_global_flag = CHILEAN_VALKISM
+			has_global_flag = CARLOS_COUP
 		}
 	}
 
@@ -897,7 +897,7 @@ country_event = { #Flavor4 economic plan
 	}
 }
 
-country_event = { #Flavor4 
+country_event = { #Flavor4
 	id = chl.1004
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.1004"}
 	title = chl.1004.t
@@ -918,7 +918,7 @@ country_event = { #Flavor4
 	}
 }
 
-country_event = { #Flavor6 
+country_event = { #Flavor6
 	id = chl.1005
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.1005"}
 	title = chl.1005.t
@@ -1017,7 +1017,7 @@ country_event = { #Chile invades south pacific
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.2000.a
 		ai_chance = { base = 100 }
 		USA = { country_event = { id = chl.1999 days = 1 }
@@ -1036,7 +1036,7 @@ country_event = { #Empire is invaded by Chile (USA supports)#
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.2001.a
 		ai_chance = { base = 2 }
 		ENG = {declare_war_on = { target = CHL type = annex_everything }}
@@ -1044,7 +1044,7 @@ country_event = { #Empire is invaded by Chile (USA supports)#
 		USA = { country_event = { id = chl.2006 days = 1 }
 		}
 	}
-	option = { 
+	option = {
 		name = chl.2001.b
 		ai_chance = { base = 98 }
 		AST = { country_event = { id = chl.2002 days = 1 }
@@ -1054,13 +1054,13 @@ country_event = { #Empire is invaded by Chile (USA supports)#
 			set_state_controller = 636
 			set_state_owner = 643
 			set_state_controller = 643
-		    set_state_owner = 639
+			set_state_owner = 639
 			set_state_controller = 639
-		    set_state_owner = 270
+			set_state_owner = 270
 			set_state_controller = 270
-			}
 		}
 	}
+}
 country_event = { #respond to aggresive UK#
 	id = chl.2006
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.2006"}
@@ -1077,15 +1077,15 @@ country_event = { #respond to aggresive UK#
 		ai_chance = { base = 90 }
 		add_to_war = {
 			targeted_alliance = CHL
-				enemy = ENG
-			}
+			enemy = ENG
 		}
+	}
 	option = { #it was just a prank bro
 		name = chl.2001.b
 		ai_chance = { base = 10 }
 		add_political_power = -50
-		}
 	}
+}
 country_event = { #Empire is invaded by Chile (USA does NOT support)#
 	id = chl.2005
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.2005"}
@@ -1097,13 +1097,13 @@ country_event = { #Empire is invaded by Chile (USA does NOT support)#
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.2005.a
 		ai_chance = { base = 50 }
 		ENG = {declare_war_on = { target = CHL type = annex_everything }}
-	add_political_power = -50
-		}
-	option = { 
+		add_political_power = -50
+	}
+	option = {
 		name = chl.2005.b
 		ai_chance = { base = 50 }
 		AST = { country_event = { id = chl.2002 days = 1 }
@@ -1113,9 +1113,9 @@ country_event = { #Empire is invaded by Chile (USA does NOT support)#
 			set_state_controller = 636
 			set_state_owner = 643
 			set_state_controller = 643
-		    set_state_owner = 639
+			set_state_owner = 639
 			set_state_controller = 639
-		    set_state_owner = 270
+			set_state_owner = 270
 			set_state_controller = 270
 		}
 	}
@@ -1130,13 +1130,13 @@ country_event = { #Australia will deal with it
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = chl.2002.a
 		ai_chance = { base = 100 }
 		AST ={
 			add_ideas = AST_war_with_chile
-			declare_war_on = { 
-				target = CHL 
+			declare_war_on = {
+				target = CHL
 				type = annex_everything
 			}
 		}
@@ -1146,8 +1146,8 @@ country_event = { #Australia will deal with it
 country_event = {
 	id = chl.2003
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.2003"}
-title = chl.2003.t
-desc = chl.2003.d
+	title = chl.2003.t
+	desc = chl.2003.d
 
 	fire_only_once = yes
 
@@ -1155,14 +1155,14 @@ desc = chl.2003.d
 		tag = CHL
 		has_war_with = AST
 		AST = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 	}
 
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
-	
+
 	immediate = {
 		AST = { save_event_target_as = white_peace_receiver }
 	}
@@ -1170,16 +1170,16 @@ desc = chl.2003.d
 	option = { # sue for peace
 		name = chl.2003.a
 		ai_chance = {
-		factor = 99
-			}
+			factor = 99
+		}
 		CHL = {
 			set_state_owner = 636
 			set_state_controller = 636
 			set_state_owner = 643
 			set_state_controller = 643
-		    set_state_owner = 639
+			set_state_owner = 639
 			set_state_controller = 639
-		    set_state_owner = 270
+			set_state_owner = 270
 			set_state_controller = 270
 			white_peace_with_TARGET = yes
 		}
@@ -1191,9 +1191,9 @@ desc = chl.2003.d
 		}
 	}
 	option = { # total conquest
-	name = chl.2003.b
-	ai_chance = {
-	factor = 1
+		name = chl.2003.b
+		ai_chance = {
+			factor = 1
 		}
 		add_political_power = -150
 		add_stability = -0.05
@@ -1203,8 +1203,8 @@ desc = chl.2003.d
 country_event = {
 	id = chl.2004
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.2004"}
-title = chl.2004.t
-desc = chl.2004.d
+	title = chl.2004.t
+	desc = chl.2004.d
 
 	fire_only_once = yes
 
@@ -1212,14 +1212,14 @@ desc = chl.2004.d
 		tag = AST
 		has_war_with = CHL
 		CHL = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 	}
 
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
-	
+
 	immediate = {
 		CHL = { save_event_target_as = white_peace_receiver }
 	}
@@ -1227,8 +1227,8 @@ desc = chl.2004.d
 	option = { # sue for peace
 		name = chl.2004.a
 		ai_chance = {
-		factor = 99
-			}
+			factor = 99
+		}
 		AST = {
 			puppet = CHL
 		}
@@ -1241,9 +1241,9 @@ desc = chl.2004.d
 	}
 
 	option = { # total conquest
-	name = chl.2003.b
-	ai_chance = {
-	factor = 1
+		name = chl.2003.b
+		ai_chance = {
+			factor = 1
 		}
 		add_political_power = -150
 		add_stability = -0.05
@@ -1254,8 +1254,8 @@ desc = chl.2004.d
 country_event = { #Chile Peru War
 	id = chl.2010
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.2010"}
-title = chl.2010.t
-desc = chl.2010.d
+	title = chl.2010.t
+	desc = chl.2010.d
 
 	fire_only_once = yes
 
@@ -1263,14 +1263,14 @@ desc = chl.2010.d
 		tag = CHL
 		has_war_with = PRU
 		PRU = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 	}
 
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
-	
+
 	immediate = {
 		PRU = { save_event_target_as = white_peace_receiver }
 	}
@@ -1278,8 +1278,8 @@ desc = chl.2010.d
 	option = { # sue for peace
 		name = chl.2010.a
 		ai_chance = {
-		factor = 99
-			}
+			factor = 99
+		}
 		CHL = {
 			set_state_owner = 876
 			set_state_controller = 876
@@ -1287,9 +1287,9 @@ desc = chl.2010.d
 		}
 	}
 	option = { # total conquest
-	name = chl.2010.b
-	ai_chance = {
-	factor = 1
+		name = chl.2010.b
+		ai_chance = {
+			factor = 1
 		}
 		add_political_power = -150
 		add_stability = -0.05
@@ -1300,8 +1300,8 @@ desc = chl.2010.d
 country_event = { #Chile Peru War (peru wins)#
 	id = chl.2011
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.2011"}
-title = chl.2011.t
-desc = chl.2011.d
+	title = chl.2011.t
+	desc = chl.2011.d
 
 	fire_only_once = yes
 
@@ -1309,14 +1309,14 @@ desc = chl.2011.d
 		tag = PRU
 		has_war_with = CHL
 		CHL = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 	}
 
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
-	
+
 	immediate = {
 		CHL = { save_event_target_as = white_peace_receiver }
 	}
@@ -1324,8 +1324,8 @@ desc = chl.2011.d
 	option = { # sue for peace
 		name = chl.2011.a
 		ai_chance = {
-		factor = 99
-			}
+			factor = 99
+		}
 		PRU = {
 			set_state_owner = 877
 			set_state_controller = 877
@@ -1333,9 +1333,9 @@ desc = chl.2011.d
 		}
 	}
 	option = { # total conquest
-	name = chl.2011.b
-	ai_chance = {
-	factor = 1
+		name = chl.2011.b
+		ai_chance = {
+			factor = 1
 		}
 		add_political_power = -150
 		add_stability = -0.05
@@ -1346,8 +1346,8 @@ desc = chl.2011.d
 country_event = { #Defeating Bolivian Commies
 	id = chl.2012
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.2012"}
-title = chl.2012.t
-desc = chl.2012.d
+	title = chl.2012.t
+	desc = chl.2012.d
 
 	fire_only_once = yes
 
@@ -1355,14 +1355,14 @@ desc = chl.2012.d
 		tag = CHL
 		has_war_with = BOL
 		BOL = {
-		surrender_progress > 0.80
-			}
+			surrender_progress > 0.80
+		}
 	}
 
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
-	
+
 	immediate = {
 		BOL = { save_event_target_as = white_peace_receiver }
 	}
@@ -1371,7 +1371,7 @@ desc = chl.2012.d
 		name = chl.2102.a
 		ai_chance = {
 			factor = 99
-		}		
+		}
 		CHL = {
 			white_peace_with_TARGET = yes
 			puppet = BOL
@@ -1382,9 +1382,9 @@ desc = chl.2012.d
 		add_political_power = 25
 	}
 	option = { # full control war
-	name = chl.2012.b
-	ai_chance = {
-	factor = 1
+		name = chl.2012.b
+		ai_chance = {
+			factor = 1
 		}
 		add_political_power = -50
 		add_stability = -0.05
@@ -1396,29 +1396,29 @@ desc = chl.2012.d
 country_event = { #Defeating Bolivian Commies
 	id = chl.522
 	immediate = {log = "[GetDateText]: [Root.GetName]: event chl.522"}
-title = chl.522.t
-desc = chl.522.d
+	title = chl.522.t
+	desc = chl.522.d
 
 	fire_only_once = yes
 
 	is_triggered_only = yes
 
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
-	
+
 
 	option = { # Puppet the commies
 		name = chl.2102.a
 		ai_chance = {
 			factor = 99
-		}		
+		}
 		add_ideas = GER_naval_treaty
 	}
 	option = { # full control war
-	name = chl.2012.b
-	ai_chance = {
-	factor = 1
+		name = chl.2012.b
+		ai_chance = {
+			factor = 1
 		}
 		add_political_power = -50
 		add_stability = -0.05

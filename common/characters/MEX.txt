@@ -202,10 +202,11 @@ characters = {
 		name = "Manuel Ávila Camacho"
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/MEX/Portrait_MEX_Manuel_Avila_Camacho.png"
 				small = "gfx/interface/ministers/MEX/MEX_Manuel_Avila_Camacho.png"
 			}
 			army = {
-				large = "gfx/leaders/MEX/Portrait_MEX_Manuel_Avila_Camacho.png"
+				large = "gfx/leaders/MEX/Portrait_MEX_Manuel_Avila_Camacho_army.png"
 			}
 		}
 		country_leader = {

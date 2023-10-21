@@ -2013,7 +2013,7 @@ country_event = {
 		activate_advisor = FIN_Kullervo_Manner_hog_col
 		hidden_effect = {
 			activate_advisor = FIN_Ville_Pessi_for_col
-			activate_advisor = FIN_Yrjo_Murto_eco_col
+			activate_advisor = FIN_Edvard_Gylling_eco_col
 			activate_advisor = FIN_Toivo_Alavirta_sec_col
 			country_event = {
 				id = finland.104 days = 1

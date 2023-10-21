@@ -11,6 +11,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -273,3 +274,5 @@ activate_advisor = ROM_Regency_Council_hog_pau
 activate_advisor = ROM_Grigore_Niculescu_Buzesti_for_ade
 activate_advisor = ROM_Gheorghe_Potopeanu_eco_pau
 activate_advisor = ROM_Aurel_Aldea_sec_sco
+
+save_global_event_target_as = unified_carpathia

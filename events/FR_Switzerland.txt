@@ -30,7 +30,7 @@ country_event = {
 
 		hidden_effect = {
 
-		add_timed_idea = { idea = SWI_1935_railway_strikes  days = 90 }
+			add_timed_idea = { idea = SWI_1935_railway_strikes  days = 90 }
 
 		}
 	}
@@ -49,20 +49,20 @@ country_event = {
 
 	option = {
 		name = "Cut a deal with the Germans."
-    GER = { country_event = { id = swi.3 days = 2 } }
+		GER = { country_event = { id = swi.3 days = 2 } }
 		complete_national_focus = SWI_outside_pressure
 	}
 
-  option = {
+	option = {
 		name = "Cut a deal with the French."
-    FRA = { country_event = { id = swi.4 days = 2 } }
+		FRA = { country_event = { id = swi.4 days = 2 } }
 		complete_national_focus = SWI_outside_pressure
 	}
 
-  option = {
+	option = {
 		name = "Cut a deal with both."
-    FRA = { country_event = { id = swi.4 days = 2 } }
-    GER = { country_event = { id = swi.3 days = 2 } }
+		FRA = { country_event = { id = swi.4 days = 2 } }
+		GER = { country_event = { id = swi.3 days = 2 } }
 		complete_national_focus = SWI_outside_pressure
 	}
 }
@@ -77,19 +77,19 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = "Of course we'll accept."
-    FRA = { country_event = { id = swi.6 days = 2 } }
-    SWI = { country_event = { id = swi.7 days = 2 } }
-    add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = SWI }
-    add_timed_idea = { idea = FRA_accepted_swiss_weapons_deal  days = 60 }
+		FRA = { country_event = { id = swi.6 days = 2 } }
+		SWI = { country_event = { id = swi.7 days = 2 } }
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = SWI }
+		add_timed_idea = { idea = FRA_accepted_swiss_weapons_deal  days = 60 }
 
 		hidden_effect = {
 
-		GER = { country_event = { id = swi.5 days = 2 } }
-    SWI = { country_event = { id = swi.7 days = 2 } }
+			GER = { country_event = { id = swi.5 days = 2 } }
+			SWI = { country_event = { id = swi.7 days = 2 } }
 
 		}
 	}
@@ -105,17 +105,17 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Of course we'll accept."
-    add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = SWI }
-    add_timed_idea = { idea = FRA_accepted_swiss_weapons_deal  days = 60 }
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = SWI }
+		add_timed_idea = { idea = FRA_accepted_swiss_weapons_deal  days = 60 }
 
 		hidden_effect = {
 
-		GER = { country_event = { id = swi.5 days = 2 } }
-    SWI = { country_event = { id = swi.7 days = 2 } }
+			GER = { country_event = { id = swi.5 days = 2 } }
+			SWI = { country_event = { id = swi.7 days = 2 } }
 
 		}
 	}
@@ -130,20 +130,20 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		ai_chance = {
 			factor = 80
-			}
+		}
 		name = "Bastards! Demand they put a stop to this."
-    SWI = { country_event = { id = swi.9 days = 2 } }
-    add_political_power = -15
+		SWI = { country_event = { id = swi.9 days = 2 } }
+		add_political_power = -15
 	}
 
 	option = {
 		name = "And what can we do!?"
-    add_political_power = -20
+		add_political_power = -20
 		set_global_flag = SWI_germans_condone_weapons_sales
 	}
 }
@@ -157,20 +157,20 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		ai_chance = {
 			factor = 10
-			}
+		}
 		name = "Bastards! Demand they put a stop to this."
-    SWI = { country_event = { id = swi.8 days = 2 } }
-    add_political_power = -15
+		SWI = { country_event = { id = swi.8 days = 2 } }
+		add_political_power = -15
 	}
 
 	option = {
 		name = "That is okay..."
-    add_political_power = -30
+		add_political_power = -30
 		set_global_flag = SWI_french_condone_weapons_sales
 	}
 }
@@ -184,11 +184,11 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "As expected."
-    add_timed_idea = { idea = SWI_weapons_dividends  days = 90 }
+		add_timed_idea = { idea = SWI_weapons_dividends  days = 90 }
 	}
 }
 
@@ -203,7 +203,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Damnation..."
 		add_ideas = SWI_treaty_of_annecy
 		set_global_flag = SWI_treaty_of_annecy
@@ -223,7 +223,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Damnation..."
 		add_ideas = SWI_treaty_of_munich
 		set_global_flag = SWI_treaty_of_munich
@@ -243,7 +243,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Request it of them."
 		FRA = { country_event = { id = swi.11 days = 2 } }
 	}
@@ -260,9 +260,9 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		ai_chance = {
-		factor = 90
+			factor = 90
 		}
 		name = "Fine..."
 		SWI = { country_event = { id = swi.12 days = 2 } }
@@ -285,7 +285,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Wonderful!"
 		swap_ideas = {
 			remove_idea = SWI_treaty_of_annecy
@@ -323,9 +323,9 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		ai_chance = {
-		factor = 50
+			factor = 50
 		}
 		name = "I suppose that can be arranged."
 		SWI = { country_event = { id = swi.15 days = 2 } }
@@ -346,9 +346,9 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Wonderful!"
 		swap_ideas = {
 			remove_idea = SWI_treaty_of_munich
@@ -367,9 +367,9 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Restrict them entirely."
 		add_ideas = SWI_restriction_on_gun_production
 	}
@@ -399,24 +399,24 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Certainly!"
 		SWI = { country_event = { id = swi.18 days = 2 } }
 		add_timed_idea = { idea = SWI_small_port_access_boon  days = 50 }
 		add_political_power = 10
 		diplomatic_relation = {
-		country = SWI
-		relation = military_access
-		active = yes
+			country = SWI
+			relation = military_access
+			active = yes
 		}
 		SWI = {
-		diplomatic_relation = {
-		country = ITA
-		relation = military_access
-		active = yes
-		}
+			diplomatic_relation = {
+				country = ITA
+				relation = military_access
+				active = yes
+			}
 		}
 	}
 
@@ -441,9 +441,9 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Great to hear."
 		add_political_power = 50
 		THIS = {
@@ -464,12 +464,12 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		ai_chance = {
 			factor = 80
-			}
+		}
 		name = "Very well. The price of business."
 		ITA = { country_event = { id = swi.21 days = 2 } }
 		add_timed_idea = { idea = SWI_port_payments  days = 50 }
@@ -496,9 +496,9 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "...Advantage!?"
 		THIS = {
 			add_opinion_modifier = {
@@ -518,9 +518,9 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Good doing business."
 		add_political_power = 10
 		add_timed_idea = { idea = SWI_large_port_access_boon  days = 50 }
@@ -536,12 +536,12 @@ country_event = {
 
 	fire_only_once = yes
 
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  option = {
+	option = {
 		ai_chance = {
 			factor = 70
-			}
+		}
 		name = "Fine! No taxes on Swiss goods. But they have to rent their own boats."
 		SWI = { country_event = { id = swi.18 days = 2 } }
 		add_political_power = 10
@@ -567,10 +567,10 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		ai_chance = {
 			factor = 70
-			}
+		}
 		name = "Set up reception centers immediately! And make sure none of them are spies!"
 		add_ideas = SWI_war_refugee_increase
 	}
@@ -587,7 +587,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "We will reverse this in due time."
 		add_timed_idea = { idea = SWI_FVP_gains_momentum  days = 60 }
 	}
@@ -604,7 +604,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Surely the Germans, too, will appreciate this... gesture?"
 		set_global_flag = SWI_open_to_discontents
 
@@ -651,11 +651,11 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		trigger = {
 			tag = GER
 		}
-    name = "They better not think they are SAFE!"
+		name = "They better not think they are SAFE!"
 		add_political_power = -20
 		add_timed_idea = { idea = SWI_german_swiss_mediation days = 270 }
 	}
@@ -666,7 +666,7 @@ country_event = {
 				tag = GER
 			}
 		}
-    name = "Welcome!... Welcome?"
+		name = "Welcome!... Welcome?"
 		add_political_power = 20
 		add_timed_idea = { idea = SWI_swiss_mediation days = 270 }
 	}
@@ -683,28 +683,28 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
-	name = "Welcome!"
-	add_timed_idea = { idea = SWI_integrating_german_malcontents days = 360 }
+	option = {
+		name = "Welcome!"
+		add_timed_idea = { idea = SWI_integrating_german_malcontents days = 360 }
 
-	#Ostschweiz
-	151 = {
-		add_manpower = arg_im_factor_ba
-	}
+		#Ostschweiz
+		151 = {
+			add_manpower = arg_im_factor_ba
+		}
 
-	#Vorarlberg
-	937 = {
-		add_manpower = arg_im_factor_co
-	}
+		#Vorarlberg
+		937 = {
+			add_manpower = arg_im_factor_co
+		}
 
-	#Schweiz
-	3 = {
-		add_manpower = arg_im_factor_er
-	}
+		#Schweiz
+		3 = {
+			add_manpower = arg_im_factor_er
+		}
 
 		# btw Jeankedezeehond if you ever come to read this, I want you to know you're a really great guy and I would never have been able to do this without you - also here's a free gondola just for you https://imgur.com/a/1j7JO10 :)
 
-	GER = { country_event = {id = swi.28 days = 1 } }
+		GER = { country_event = {id = swi.28 days = 1 } }
 
 	}
 }
@@ -720,83 +720,83 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
-	trigger = {
-	NOT = { has_global_flag = GER_conservative_purge }
-	}
+	option = {
+		trigger = {
+			NOT = { has_global_flag = GER_conservative_purge }
+		}
 
-	add_timed_idea = { idea = SWI_empty_southern_industry_rosters days = 30 }
+		add_timed_idea = { idea = SWI_empty_southern_industry_rosters days = 30 }
 
-	add_timed_idea = { idea = SWI_newfound_political_hegemony days = 90 }
+		add_timed_idea = { idea = SWI_newfound_political_hegemony days = 90 }
 
-	name = "They can take the conservatives."
+		name = "They can take the conservatives."
 
-	add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
-	add_popularity = { ideology = social_conservative popularity = 0.04 }
-	add_popularity = { ideology = market_liberal popularity = 0.01 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
+		add_popularity = { ideology = social_conservative popularity = 0.04 }
+		add_popularity = { ideology = market_liberal popularity = 0.01 }
 
-	add_manpower = -10000
+		add_manpower = -10000
 
-	set_global_flag = GER_conservative_purge
+		set_global_flag = GER_conservative_purge
 
 	}
 
 	option = {
-	trigger = {
-	NOT = { has_global_flag = GER_liberal_purge }
-	}
+		trigger = {
+			NOT = { has_global_flag = GER_liberal_purge }
+		}
 
-	add_timed_idea = { idea = SWI_empty_southern_industry_rosters days = 30 }
+		add_timed_idea = { idea = SWI_empty_southern_industry_rosters days = 30 }
 
-	add_timed_idea = { idea = SWI_newfound_political_hegemony days = 90 }
+		add_timed_idea = { idea = SWI_newfound_political_hegemony days = 90 }
 
-	name = "They can take the liberals."
+		name = "They can take the liberals."
 
-	add_popularity = { ideology = social_conservative popularity = 0.01 }
-	add_popularity = { ideology = market_liberal popularity = 0.04 }
-	add_popularity = { ideology = social_liberal popularity = 0.04 }
+		add_popularity = { ideology = social_conservative popularity = 0.01 }
+		add_popularity = { ideology = market_liberal popularity = 0.04 }
+		add_popularity = { ideology = social_liberal popularity = 0.04 }
 
-	add_manpower = -10000
+		add_manpower = -10000
 
-	set_global_flag = GER_liberal_purge
-
-	}
-
-	option = {
-	trigger = {
-	NOT = { has_global_flag = GER_socialist_purge }
-	}
-
-	add_timed_idea = { idea = SWI_empty_southern_industry_rosters days = 30 }
-
-	add_timed_idea = { idea = SWI_newfound_political_hegemony days = 90 }
-
-	add_popularity = { ideology = social_liberal popularity = 0.01 }
-	add_popularity = { ideology = social_democrat popularity = 0.04 }
-	add_popularity = { ideology = libertarian_socialist popularity = 0.04 }
-
-	name = "They can take the socialists."
-
-	add_manpower = -10000
-
-	set_global_flag = GER_socialist_purge
+		set_global_flag = GER_liberal_purge
 
 	}
 
 	option = {
-	trigger = {
-	has_global_flag = GER_socialist_purge
-	has_global_flag = GER_liberal_purge
-	has_global_flag = GER_conservative_purge
+		trigger = {
+			NOT = { has_global_flag = GER_socialist_purge }
+		}
+
+		add_timed_idea = { idea = SWI_empty_southern_industry_rosters days = 30 }
+
+		add_timed_idea = { idea = SWI_newfound_political_hegemony days = 90 }
+
+		add_popularity = { ideology = social_liberal popularity = 0.01 }
+		add_popularity = { ideology = social_democrat popularity = 0.04 }
+		add_popularity = { ideology = libertarian_socialist popularity = 0.04 }
+
+		name = "They can take the socialists."
+
+		add_manpower = -10000
+
+		set_global_flag = GER_socialist_purge
+
 	}
 
-	add_political_power = 100
+	option = {
+		trigger = {
+			has_global_flag = GER_socialist_purge
+			has_global_flag = GER_liberal_purge
+			has_global_flag = GER_conservative_purge
+		}
 
-	name = "No more Germans from the Reich!"
+		add_political_power = 100
 
-	set_global_flag = GER_refuses_purge
+		name = "No more Germans from the Reich!"
 
-	SWI = { country_event = swi.29 }
+		set_global_flag = GER_refuses_purge
+
+		SWI = { country_event = swi.29 }
 
 	}
 }
@@ -812,7 +812,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "It couldn't have lasted forever."
 	}
 }
@@ -828,7 +828,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "To market!"
 		USA = { country_event = { id = swi.31 days = 1 } }
 	}
@@ -850,7 +850,7 @@ country_event = {
 		add_timed_idea = { idea = SWI_paying_for_guns days = 200 }
 	}
 
-  option = {
+	option = {
 		name = "I think we'll pass."
 		add_political_power = -5
 		ENG = { country_event = { id = swi.33 days = 1 } }
@@ -871,12 +871,12 @@ country_event = {
 		add_equipment_to_stockpile = { type = infantry_equipment amount = -1500 producer = SWI }
 		add_timed_idea = { idea = SWI_paid_off_guns days = 300 }
 		3 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-								type = arms_factory
-								level = 1
-								instant_build = yes
-						 }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
 	}
 }
@@ -897,7 +897,7 @@ country_event = {
 		add_timed_idea = { idea = SWI_paying_for_guns days = 200 }
 	}
 
-  option = {
+	option = {
 		name = "I think we'll pass."
 		add_political_power = -5
 		JAP = { country_event = { id = swi.34 days = 1 } }
@@ -920,7 +920,7 @@ country_event = {
 		add_timed_idea = { idea = SWI_paying_for_guns days = 200 }
 	}
 
-  option = {
+	option = {
 		name = "I think we'll pass."
 		add_political_power = -5
 		FNG = { country_event = { id = swi.35 days = 1 } }
@@ -943,7 +943,7 @@ country_event = {
 		add_timed_idea = { idea = SWI_paying_for_guns days = 200 }
 	}
 
-  option = {
+	option = {
 		name = "I think we'll pass."
 		add_political_power = -5
 		ITA = { country_event = { id = swi.36 days = 1 } }
@@ -966,7 +966,7 @@ country_event = {
 		add_timed_idea = { idea = SWI_paying_for_guns days = 200 }
 	}
 
-  option = {
+	option = {
 		name = "I think we'll pass."
 		add_political_power = -5
 		SWI = { country_event = { id = swi.37 days = 1 } }
@@ -1013,7 +1013,7 @@ country_event = {
 		add_equipment_to_stockpile = { type = infantry_equipment amount = 1230 producer = SWI }
 		add_timed_idea = { idea = SWI_paying_for_our_guns days = 150 }
 		hidden_effect = {
-		SWI = { country_event = { id = swi.37 months = 4 }}
+			SWI = { country_event = { id = swi.37 months = 4 }}
 		}
 	}
 
@@ -1022,7 +1022,7 @@ country_event = {
 		name = "Maybe later..."
 		add_political_power = -75
 		hidden_effect = {
-		SWI = { country_event = { id = swi.37 months = 4 }}
+			SWI = { country_event = { id = swi.37 months = 4 }}
 		}
 	}
 }
@@ -1035,10 +1035,10 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	trigger = {
-	date > 1938.9.02
-	has_war = no
-	tag = SWI
-	SWI = { exists = yes }
+		date > 1938.9.02
+		has_war = no
+		tag = SWI
+		SWI = { exists = yes }
 	}
 
 	fire_only_once = yes
@@ -1059,11 +1059,11 @@ country_event = {
 		add_political_power = 5
 		name = "Socialists will do as they please. It matters not."
 		every_country = {
-    limit = {
-                has_country_flag = All_News_Events
-    }
-    news_event = worldnews.119
-    }
+			limit = {
+				has_country_flag = All_News_Events
+			}
+			news_event = worldnews.119
+		}
 	}
 
 	option = {
@@ -1078,11 +1078,11 @@ country_event = {
 		name = "Get rid of this leftist filth!"
 		add_political_power = -5
 		every_country = {
-    limit = {
-                has_country_flag = All_News_Events
-    }
-    news_event = worldnews.120
-    }
+			limit = {
+				has_country_flag = All_News_Events
+			}
+			news_event = worldnews.120
+		}
 	}
 }
 
@@ -1094,10 +1094,10 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	trigger = {
-	date > 1937.4.20
-	has_war = no
-	tag = SWI
-	SWI = { exists = yes }
+		date > 1937.4.20
+		has_war = no
+		tag = SWI
+		SWI = { exists = yes }
 	}
 
 	fire_only_once = yes
@@ -1111,14 +1111,14 @@ country_event = {
 		add_political_power = 5
 		set_global_flag = SWI_hohenzollern_habsburg_intermarraige
 		every_country = {
-    limit = {
-                OR = {
-                has_country_flag = Important_News_Events
-                has_country_flag = All_News_Events
-                }
-    }
-    news_event = worldnews.121
-    }
+			limit = {
+				OR = {
+					has_country_flag = Important_News_Events
+					has_country_flag = All_News_Events
+				}
+			}
+			news_event = worldnews.121
+		}
 	}
 }
 
@@ -1134,12 +1134,12 @@ country_event = {
 	trigger = {
 		tag = SWI
 		SWI = { exists = yes }
-    date > 1939.10.01
+		date > 1939.10.01
 	}
 
-  option = {
+	option = {
 		name = "Let us see what the outcome will be!"
-    complete_national_focus = SWI_the_1939_federal_elections
+		complete_national_focus = SWI_the_1939_federal_elections
 		SWI = { country_event = { id = swi.101 days = 3 } }
 	}
 }
@@ -1155,52 +1155,52 @@ country_event = {
 
 	is_triggered_only = yes
 
-  	option = {
+	option = {
 		name = "The SDPS have taken majority in the houses!"
-    	complete_national_focus = SWI_the_seats_run_in_favor_of
+		complete_national_focus = SWI_the_seats_run_in_favor_of
 		add_popularity = { ideology = social_democrat popularity = 0.10 }
 		add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 
 		hidden_effect = {
 			set_politics = {
-        		ruling_party = social_democrat
-    			elections_allowed = no
-      		}
-			remove_every_minister = yes
-			add_ideas = {
-				SWI_Ernst_Nobs_hog_sde
-				SWI_Enrico_Celio_for_sde
-				SWI_Leo_Schweizer_eco_sde
-				SWI_Hans_Leupin_sec_sde
+				ruling_party = social_democrat
+				elections_allowed = no
 			}
+			remove_every_minister = yes
+
+			activate_advisor = SWI_Ernst_Nobs_hog_sde
+			activate_advisor = SWI_Giuseppe_Motta_for_sli
+			activate_advisor = SWI_Leo_Schweizer_eco_sde
+			activate_advisor = SWI_Hans_Leupin_sec_sde
+
 			SWI = { country_event = { id = swi.102 days = 12 } }
 		}
 	}
 
 	option = {
 		name = "The SUP's numbers swell!"
-    	complete_national_focus = SWI_the_seats_run_in_favor_of
+		complete_national_focus = SWI_the_seats_run_in_favor_of
 		add_popularity = { ideology = social_liberal popularity = 0.15 }
 
 		hidden_effect = {
 			set_politics = {
-        		ruling_party = social_liberal
-        		elections_allowed = no
-      		}
-			remove_every_minister = yes
-			add_ideas = {
-				SWI_Eduard_von_Steiger_hog_sli
-				SWI_Giuseppe_Motta_for_sli
-				SWI_Karl_Zeltner_for_sli
-				SWI_Jakob_Mosimann_eco_sli
+				ruling_party = social_liberal
+				elections_allowed = no
 			}
+			remove_every_minister = yes
+
+			activate_advisor = SWI_Eduard_von_Steiger_hog_sli
+			activate_advisor = SWI_Giuseppe_Motta_for_sli
+			activate_advisor = SWI_Karl_Zeltner_for_sli
+			activate_advisor = SWI_Jakob_Mosimann_eco_sli
+
 			SWI = { country_event = { id = swi.103 days = 13 } }
 		}
 	}
 
 	option = {
 		name = "The coalition between the FDP and CDVP has held."
-    	complete_national_focus = SWI_the_seats_run_in_favor_of
+		complete_national_focus = SWI_the_seats_run_in_favor_of
 		add_popularity = { ideology = market_liberal popularity = 0.15 }
 		add_popularity = { ideology = social_conservative popularity = 0.15 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1221,9 +1221,9 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Damnable, and yet..."
-    	complete_national_focus = SWI_SDPS_member_enters_councilship
+		complete_national_focus = SWI_SDPS_member_enters_councilship
 		add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 		add_popularity = { ideology = social_democrat popularity = 0.10 }
 	}
@@ -1240,9 +1240,9 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "What an interesting proposition."
-    	complete_national_focus = SWI_SUP_member_enters_councilship
+		complete_national_focus = SWI_SUP_member_enters_councilship
 		add_popularity = { ideology = social_liberal popularity = 0.15 }
 	}
 }
@@ -1258,9 +1258,9 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Good to know! Now let's get down to business."
-    	complete_national_focus = SWI_status_quo_council_membership
+		complete_national_focus = SWI_status_quo_council_membership
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1278,9 +1278,9 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Good to know! Now let's get down to business."
-    	complete_national_focus = SWI_status_quo_council_membership
+		complete_national_focus = SWI_status_quo_council_membership
 		add_popularity = { ideology = market_liberal popularity = 0.07 }
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1305,16 +1305,16 @@ country_event = {
 		days = 5
 	}
 
-  option = {
+	option = {
 		name = "Embarassing."
-    complete_national_focus = SWI_status_quo_council_membership
+		complete_national_focus = SWI_status_quo_council_membership
 		add_political_power = -50
 
 	}
 
 	option = {
 		name = "Absolutely inspirational!"
-    complete_national_focus = SWI_status_quo_council_membership
+		complete_national_focus = SWI_status_quo_council_membership
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
 	}
@@ -1331,7 +1331,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Hopefully these negotiations will bring an end to this madness."
 		add_popularity = { ideology = libertarian_socialist popularity = 0.03 }
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
@@ -1352,7 +1352,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "There is only one place this can go."
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1371,7 +1371,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "This could have ended much differently!"
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 		add_stability = 0.05
@@ -1391,7 +1391,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "A party unflinching in the face of strife."
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1418,7 +1418,7 @@ country_event = {
 		days = 3
 	}
 
-  option = {
+	option = {
 		name = "This is a liberal government. Perhaps he would be more acquainted with the Reich?"
 		add_popularity = { ideology = market_liberal popularity = 0.03 }
 		add_political_power = -30
@@ -1436,7 +1436,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Is this a party falling apart?"
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
@@ -1456,19 +1456,19 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Then lets get some work done."
 		set_politics = {
 			ruling_party = social_conservative
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			SWI_Oskar_Leimgruber_hog_sco
-			SWI_Walther_Stampfli_for_mli
-			SWI_Rudolf_Minger_eco_mli
-			SWI_Paul_Frutig_sec_mli
-		}
+
+		activate_advisor = SWI_Oskar_Leimgruber_hog_sco
+		activate_advisor = SWI_Walther_Stampfli_for_mli
+		activate_advisor = SWI_Rudolf_Minger_eco_mli
+		activate_advisor = SWI_Paul_Frutig_sec_mli
+
 		complete_national_focus = SWI_CDVP_becomes_senior_member
 	}
 }
@@ -1484,7 +1484,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "Switzerland now, and forever!"
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
 		add_ideas = SWI_the_balance_of_power
@@ -1509,9 +1509,9 @@ country_event = {
 		days = 10
 	}
 
-  option = {
+	option = {
 		name = "They will be put down."
-    add_stability = -0.10
+		add_stability = -0.10
 		add_political_power = -100
 		add_timed_idea = { idea = SWI_unionbusters  days = 70 }
 		add_ideas = SWI_railway_strikes
@@ -1523,7 +1523,7 @@ country_event = {
 	option = {
 		name = "Let it continue- the market will put them back to work."
 		add_stability = -0.05
-    add_timed_idea = { idea = SWI_railway_strikes  days = 70 }
+		add_timed_idea = { idea = SWI_railway_strikes  days = 70 }
 		hidden_effect = {
 			SWI = { country_event = { id = swi.107 days = 4 } }
 		}
@@ -1541,7 +1541,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+	option = {
 		name = "The CDVP rises- but which part?"
 		add_popularity = { ideology = social_conservative popularity = 0.07 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1570,7 +1570,7 @@ country_event = {
 		days = 4
 	}
 
-  option = {
+	option = {
 		name = "Tobler is a man of action!"
 		add_political_power = 40
 		add_stability = -0.05

@@ -1,6 +1,10 @@
 ### SubIdeologies ###
 spriteTypes = {
 	spriteType = {
+		name = "GFX_ideology_socdem_christian_democracy_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/socdem_christian_democracy_group.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_national_socialism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/national_socialism_group.png"
 	}

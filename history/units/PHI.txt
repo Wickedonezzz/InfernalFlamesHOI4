@@ -1,4 +1,9 @@
-﻿division_template = {
+﻿focus = {
+	current = "PHI_osmena_industrialization_plan"
+	progress = 0
+}
+
+division_template = {
 	name = "Infantry Division"
 	division_names_group = PHI_INF_01
 
@@ -45,11 +50,27 @@ division_template = {
     recon = { x = 0 y = 0 }
 	}
 }
+division_template = {
+	name = "Motorized Division"
+	division_names_group = PHI_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+    recon = { x = 0 y = 0 }
+	}
+}
 
 units = {
 	division = {
 		name = "1st Scouts Division"
-		location = 10167
+		location = 12253
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
@@ -61,7 +82,7 @@ units = {
 	}
 	division = {
 		name = "3rd Scouts Division"
-		location = 10167
+		location = 7325
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}

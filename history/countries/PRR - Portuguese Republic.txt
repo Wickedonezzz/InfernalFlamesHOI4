@@ -60,7 +60,7 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = vanguardist
+	ruling_party = market_liberal
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -81,7 +81,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	parliamentary_republic
 }
 

@@ -194,64 +194,14 @@ focus_tree = {
 		  custom_effect_tooltip = RUS_restore_monarchy_tooltip
 		  set_cosmetic_tag = RUS_monarchy
       hidden_effect = {
-        RUS_Kyril_I = {
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = social_democrat_subtype
-              traits = {}
-            }
-          }
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = social_liberal_subtype
-              traits = {}
-            }
-          }
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = market_liberal_subtype
-              traits = {}
-            }
-          }
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = social_conservative_subtype
-              traits = {}
-            }
-          }
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = authoritarian_democrat_subtype
-              traits = {}
-            }
-          }
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = paternal_autocrat_subtype
-              traits = {}
-            }
-          }
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = national_populist_subtype
-              traits = {}
-            }
-          }
-          add_country_leader_role = {
-            promote_leader = yes
-            country_leader = {
-              ideology = valkist_subtype
-              traits = {}
-            }
-          }
-        }
+				if = {
+					limit = { has_character = RUS_Kyril_Romanov }
+					RUS_crown_kyril = yes
+				}
+				else_if = {
+					limit = { has_character = RUS_Vladimir_Romanov }
+					RUS_crown_vladimir = yes
+				}
       }
 	  }
   }

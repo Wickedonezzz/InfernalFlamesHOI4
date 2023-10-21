@@ -37,7 +37,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_00
 	one_party_dictatorship
 }
 

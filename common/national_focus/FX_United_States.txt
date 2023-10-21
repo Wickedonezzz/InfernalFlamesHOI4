@@ -226,6 +226,9 @@ focus_tree = {
     x = 11
     y = 0
     cost = 6
+    ai_will_do = {
+      factor = 800
+    }
     available = {
       has_capitulated = no
     }
@@ -431,7 +434,7 @@ focus_tree = {
   # Tank Production Initiatives
   focus = {
     id = USA_tank_production_initiatives
-    icon = GFX_focus_generic_tank_production
+    icon = GFX_goal_USA_tanks
     x = 1
     y = 1
     cost = 6
@@ -704,7 +707,7 @@ focus_tree = {
     }
     completion_reward = {
       add_tech_bonus = {
-        category = cat_special_units
+        # category = cat_special_units
         bonus = 1.0
         uses = 2
       }
@@ -828,7 +831,6 @@ focus_tree = {
     }
     completion_reward = {
       remove_ideas = USA_failed_offensive
-      unlock_decision_tooltip = USA_demand_mexican_submission
     }
   }
 
@@ -843,6 +845,14 @@ focus_tree = {
     cost = 6
     ai_will_do = {
       factor = 10
+      modifier = {
+        factor = 0.2
+        has_idea = USA_failed_offensive
+      }
+      modifier = {
+        factor = 0.2
+        USA_has_great_depression = yes
+      }
     }
     available = {
       has_capitulated = no
@@ -1212,6 +1222,17 @@ focus_tree = {
     x = 3
     y = 6
     cost = 6
+    ai_will_do = {
+      factor = 200
+      modifier = {
+        factor = 0.2
+        has_idea = USA_failed_offensive
+      }
+      modifier = {
+        factor = 0.2
+        USA_has_great_depression = yes
+      }
+    }
     available = {
       has_capitulated = no
     }
@@ -1801,7 +1822,7 @@ focus_tree = {
     icon = GFX_goal_USA_elections
     x = 31
     y = 0
-    cost = 0
+    cost = 6
     ai_will_do = { factor = 2000 }
     available = {
       USA_1936_elections_happened = yes
@@ -3631,7 +3652,7 @@ focus_tree = {
     }
     relative_position_id = USA_new_interventionism
     completion_reward = {
-      create_faction = PHI_USA_faction
+      create_faction = washington_accord
       every_other_country = {
         limit = {
           OR = {

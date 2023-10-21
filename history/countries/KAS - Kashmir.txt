@@ -41,7 +41,3 @@ set_popularities = {
   national_populist = 15
   valkist = 0
 }
-
-add_ideas = {
-	party_pop_0_40
-}

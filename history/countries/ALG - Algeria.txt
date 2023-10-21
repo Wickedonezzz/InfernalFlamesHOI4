@@ -3,7 +3,6 @@
 set_research_slots = 2
 
 add_ideas = {
-	party_pop_0_00
 	semi_presidential_republic
 }
 

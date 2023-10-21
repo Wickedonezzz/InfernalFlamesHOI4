@@ -435,7 +435,7 @@ ideas = {
 			allowed = {	always = no	}
 			allowed_civil_war = { always = yes }
 			equipment_bonus = {
-				battleship = {
+				ship_hull_heavy = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -453,7 +453,7 @@ ideas = {
 			allowed = {	always = no	}
 			allowed_civil_war = { always = yes }
 			equipment_bonus = {
-				heavy_cruiser = {
+				ship_hull_cruiser = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -609,7 +609,7 @@ ideas = {
 		directorate_of_supplies = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea directorate_of_supplies"}
 			allowed = { original_tag = SAF }
-			traits = { infantry_equipment_producer_assualt_1 }
+			traits = { infantry_equipment_producer_assault_1 }
 			research_bonus = {
 				infantry_weapons = 0.1
 			}

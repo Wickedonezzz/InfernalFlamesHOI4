@@ -6,8 +6,8 @@ state={
 	history={
 		owner = XSM
 		add_core_of = XSM
-		add_core_of = KMT
-		add_core_of = FNG
+		add_claim_by = KMT
+		add_claim_by = FNG
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -21,6 +21,6 @@ state={
 	}
 	manpower=3992660
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=small_town
 	local_supplies=0.000
 }

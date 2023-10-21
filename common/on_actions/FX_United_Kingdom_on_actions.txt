@@ -8,6 +8,43 @@ on_actions = {
     }
   }
 
+  on_capitulation = {
+    effect = {
+      if = {
+        limit = { 
+          ROOT = { tag = ENG } 
+        }
+
+        ENG = { dismantle_faction = yes }
+        CAN = { CAN_become_republic = yes }
+        AST = { AST_become_republic = yes }
+        NZL = { NZL_become_republic = yes }
+        if = {
+          limit = {
+            country_exists = CAN
+            country_exists = NFL
+            NFL = { is_subject_of = ROOT }
+          }
+          CAN = {
+            annex_country = {
+              target = NFL
+              transfer_troops = yes
+            }
+          }
+        }
+
+        every_subject_country = {
+          limit = {
+            has_war = no
+            has_capitulated = no
+          }
+          ENG = { end_puppet = PREV }
+          PREV = { drop_cosmetic_tag = yes }
+        }
+      }
+    }
+  }
+
   on_state_control_changed = {
     effect = {
       # Paris

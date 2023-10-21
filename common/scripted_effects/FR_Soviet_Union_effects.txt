@@ -15,9 +15,9 @@ SOV_reduce_industrilization = {
 	hidden_effect = {
 		if = {
 			limit = { has_idea = SOV_lacking_industrialization7 }
-				remove_ideas = SOV_lacking_industrialization7
-				clr_country_flag = SOV_lacking_industrialization_flag
-            }	
+			remove_ideas = SOV_lacking_industrialization7
+			clr_country_flag = SOV_lacking_industrialization_flag
+		}
 
 		else_if = {
 			limit = { has_idea = SOV_lacking_industrialization6 }
@@ -170,3 +170,175 @@ SOV_full_employment_scripted_effect = {
 	}
 }
 
+SOV_init_schorched_states_tracker = {
+	every_state = {
+		limit = {
+			region = 130
+		}
+		THIS = {
+			set_state_flag = SOV_ukraine
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 131
+		}
+		THIS = {
+			set_state_flag = SOV_belarus
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 37
+		}
+		THIS = {
+			set_state_flag = SOV_baltic
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 39
+		}
+		THIS = {
+			set_state_flag = SOV_east_poland
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 13
+		}
+		THIS = {
+			set_state_flag = SOV_finland
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 12
+		}
+		THIS = {
+			set_state_flag = SOV_north_scandinavia
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 132
+		}
+		THIS = {
+			set_state_flag = SOV_north_front
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 150
+		}
+		THIS = {
+			set_state_flag = SOV_arctic
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 133
+		}
+		THIS = {
+			set_state_flag = SOV_central_russia
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 137
+		}
+		THIS = {
+			set_state_flag = SOV_west_steppe
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 40
+		}
+		THIS = {
+			set_state_flag = SOV_transvolga
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 135
+		}
+		THIS = {
+			set_state_flag = SOV_kuban
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 134
+		}
+		THIS = {
+			set_state_flag = SOV_caucasus
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 138
+		}
+		THIS = {
+			set_state_flag = SOV_ural
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 136
+		}
+		THIS = {
+			set_state_flag = SOV_great_steppe
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 14
+		}
+		THIS = {
+			set_state_flag = SOV_trans_urals
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 151
+		}
+		THIS = {
+			set_state_flag = SOV_west_siberia
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 149
+		}
+		THIS = {
+			set_state_flag = SOV_east_siberia
+		}
+	}
+
+	every_state = {
+		limit = {
+			region = 148
+		}
+		THIS = {
+			set_state_flag = SOV_far_east
+		}
+	}
+}

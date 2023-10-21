@@ -64,7 +64,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_70
 	colonial_government
 	ENG_statute_autonomy
 }

@@ -51,11 +51,7 @@ if = {
 set_cosmetic_tag = IRQ_mashriq
 
 add_ideas = {
-	party_pop_0_50
-
 	constitutional_monarchy
-	
-	# IRQ_divided_nation
 
 	IRQ_hashmite_dynasty
 	IRQ_semi_democratic_state
@@ -130,13 +126,13 @@ recruit_character = IRQ_Faisal_I
 recruit_character = IRQ_Arshad_al_Umari
 recruit_character = IRQ_Yusuf_Salman_Yusuf
 recruit_character = IRQ_Rashid_Ali_al_Gaylani
-recruit_character = IRQ_Al_Chaderchi
+recruit_character = IRQ_Kamil_Al_Chaderchi
 recruit_character = IRQ_Saeed_Qazaz
 recruit_character = IRQ_Dhia_Jafar
 recruit_character = IRQ_Musa_Al_Shabander
 
 ### Starting Ministers
-activate_advisor = IRQ_Musa_Al_Shabander_for_cli
-activate_advisor = IRQ_Dhia_Jafar_eco_cli
-activate_advisor = IRQ_Saeed_Qazaz_sec_cli
-activate_advisor = IRQ_Al_Chaderchi_hog_cli
+activate_advisor = IRQ_Kamil_Al_Chaderchi_hog_sde
+activate_advisor = IRQ_Musa_Al_Shabander_for_sde
+activate_advisor = IRQ_Dhia_Jafar_eco_sde
+activate_advisor = IRQ_Saeed_Qazaz_sec_sde

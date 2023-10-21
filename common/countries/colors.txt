@@ -166,12 +166,12 @@ TUR = {
 	color = rgb { 145 170 141 } #145 170 141
 	color_ui = rgb { 145 170 141 } #164 255 156
 }
-TRT = {
-	color = rgb { 164 255 156 }
-	color_ui = rgb { 164 255 156 }
-}
+# TRT = {
+# 	color = rgb { 164 255 156 }
+# 	color_ui = rgb { 164 255 156 }
+# }
 GRE = {
-	color = rgb { 66 133 185 } #old colors are 93 181 227
+	color = rgb { 93 181 227 } #old colors are 93 181 227 ( 66 133 185)
 	color_ui = rgb { 121 235 255 }
 }
 ALB = {
@@ -195,8 +195,8 @@ POR = {
 	color_ui = rgb { 29 106 136 }
 }
 PRR = {
-	color = rgb { 104 0 0 } #39 116 70
-	color_ui = rgb { 104 0 0 }
+	color = rgb { 175 15 15 } #39 116 70
+	color_ui = rgb { 39 116 70 }
 }
 FIN = {
 	color = rgb { 173 173 200 } # Original is 205 212 228
@@ -251,8 +251,8 @@ RUS = {
 	color_ui = rgb { 107 170 77 }
 }
 RHO = {
-    color = rgb { 13 108 16 }
-    color_ui = rgb { 13 108 16 }
+    color = rgb { 29 136 110 }
+    color_ui = rgb { 45 45 218 }
 }
 CHL = {
 	color = rgb { 206  118  30 } 
@@ -526,7 +526,7 @@ BNG = {
 	color = rgb { 128 145 65 }
 	color_ui = rgb { 128 145 65 }
 }
-WGR = {
+PRS = {
     color = rgb { 62 62 144 }
     color_ui = rgb { 60 60 140 }
 }
@@ -1047,7 +1047,7 @@ SRA = {
 	color_ui = rgb { 178 34 52 }
 }
 RAS = {
-  color = rgb { 212 188 155 }
+	color = rgb { 212 188 155 }
 	color_ui = rgb { 212 188 155 }
 }
 KMT = {

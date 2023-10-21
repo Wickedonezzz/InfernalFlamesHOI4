@@ -31,7 +31,6 @@ set_stability = 0.66
 set_war_support = 0.24
 
 add_ideas = {
-	party_pop_0_50
 	workers_republic
 }
 

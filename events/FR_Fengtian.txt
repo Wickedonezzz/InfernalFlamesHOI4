@@ -14,9 +14,8 @@ country_event = {
 	desc = man.1.d
 	picture = GFX_fengtian_state_building
 	fire_only_once = yes
-    trigger = {
-			original_tag = man
-			}
+	is_triggered_only = yes
+
 	option = {
 		name = man.1.a
 	}
@@ -274,7 +273,7 @@ country_event = {
 					traits = { }
 				}
 			}
-			add_ideas = FNG_Jin_Yunpeng_hog_ade
+			activate_advisor = FNG_Jin_Yunpeng_hog_ade
 		}
 	}
 }
@@ -305,20 +304,14 @@ country_event = {
 	title = "The Establishment of the Chamber of Confidence"
 	desc = man.9.d
 	picture = GFX_chinese_council
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
 		name = "Hopefully they nominate someone worthwhile."
 
 		hidden_effect = {
-
-			FNG = { country_event = { id = man.10 days = 7 } }
-
-			complete_national_focus = FNG_the_succession
-
+			country_event = { id = man.10 days = 7 }
 		}
 	}
 }
@@ -329,18 +322,14 @@ country_event = {
 	title = "Chamber of Confidence Nominates Zhang Xueliang"
 	desc = man.10.d
 	picture = GFX_chinese_council
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
 		name = "A good choice. I hope."
 
 		custom_effect_tooltip = 14_FNG_tt
-
 		hidden_effect = {
-			complete_national_focus = FNG_zhang_xueliang
 			add_country_leader_role = {
 				character = FNG_Zhang_Xueliang
 				promote_leader = yes
@@ -349,9 +338,6 @@ country_event = {
 					traits = { }
 				}
 			}
-			remove_ideas_with_trait = head_of_government
-			#   add_ideas = FNG_Zhang_Xueliang_hog_pau
-
 			country_event = { id = man.11 days = 7 }
 		}
 	}
@@ -389,22 +375,15 @@ country_event = {
 	title = "Beiyang Army Demands Power!"
 	desc = man.12.d
 	picture = GFX_zhang_zongchang_beiyang_army
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
 		name = "Execute them. Execute them all."
-
 		add_political_power = -100
-
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
-
 		hidden_effect = {
-
 			FNG = { country_event = { id = man.13 days = 7 } }
-
 		}
 	}
 
@@ -412,12 +391,10 @@ country_event = {
 		name = "Can I still keep my palace?"
 
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Wang_Yitang_hog_ade
-			FNG_Sun_Qichang_for_pau
-			FNG_Tang_Yulin_eco_pau
-			FNG_Yuan_Jinkai_sec_pau
-		}
+		activate_advisor = FNG_Wang_Yitang_hog_ade
+		activate_advisor = FNG_Sun_Qichang_for_pau
+		activate_advisor = FNG_Tang_Yulin_eco_pau
+		activate_advisor = FNG_Yuan_Jinkai_sec_pau
 
 		add_popularity = { ideology = paternal_autocrat popularity = 0.20 }
 
@@ -476,15 +453,9 @@ country_event = {
 		name = "Good to see the rightful political group has taken power."
 
 		add_political_power = -50
-
 		add_popularity = { ideology = paternal_autocrat popularity = 0.10 }
-
 		hidden_effect = {
-
-			FNG = { country_event = { id = man.16 days = 7 } }
-
-			complete_national_focus = FNG_military_inheritance
-
+			country_event = { id = man.16 days = 7 }
 		}
 	}
 }
@@ -495,9 +466,7 @@ country_event = {
 	title = "Trial of Disloyal Captains and Officers"
 	desc = man.15.d
 	picture = GFX_zhang_zongchang_beiyang_army
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -505,19 +474,10 @@ country_event = {
 
 		retire_character = FNG_Zhang_Zongchang
 		retire_character = FNG_Zhang_Haipeng
-
-		set_country_flag = Zhang_Zongchang_dead
-
 		add_manpower = -3579
-
 		hidden_effect = {
-
 			set_global_flag = FNG_execute_disloyal_military_elements
-
-			FNG = { country_event = { id = man.24 days = 7 } }
-
-			complete_national_focus = FNG_execute_disloyal_military_elements
-
+			country_event = { id = man.24 days = 7 }
 		}
 	}
 }
@@ -539,15 +499,9 @@ country_event = {
 		add_political_power = -50
 
 		hidden_effect = {
-
-			FNG = { country_event = { id = man.18 days = 4 } }
-
-			FNG = { country_event = { id = man.19 days = 20 } }
-
-			FNG = { country_event = { id = man.20 days = 42 } }
-
-			complete_national_focus = FNG_junta
-
+			country_event = { id = man.18 days = 4 }
+			country_event = { id = man.19 days = 20 }
+			country_event = { id = man.20 days = 42 }
 		}
 	}
 }
@@ -787,13 +741,11 @@ country_event = {
 	picture = fengtian_industry
 
 	trigger = {
-
 		has_global_flag = FNG_has_republican_demonstrations
 		has_global_flag = FNG_has_union_demonstrations
 		has_global_flag = FNG_has_loyalist_demonstrations
 		has_global_flag = FNG_republicans
 		tag = FNG
-
 	}
 
 	fire_only_once = yes
@@ -806,13 +758,8 @@ country_event = {
 		name = "NO!"
 
 		add_political_power = -200
-
 		hidden_effect = {
-
-			complete_national_focus = FNG_descent_into_chaos
-
-			FNG = { country_event = { id = man.26 days = 6 } }
-
+			country_event = { id = man.26 days = 6 }
 		}
 	}
 }
@@ -971,9 +918,8 @@ country_event = {
 				elections_allowed = no
 			}
 
-			complete_national_focus = FNG_total_anarchy
-			FNG = { country_event = { id = man.28 days = 6 } }
-			FNG = { country_event = { id = man.29 days = 12 } }
+			country_event = { id = man.28 days = 6 }
+			country_event = { id = man.29 days = 12 }
 		}
 	}
 }
@@ -1117,9 +1063,7 @@ country_event = {
 		name = "Surely, it will not hold."
 
 		clr_global_flag = FNG_in_a_state_of_anarchy
-
 		hidden_effect = {
-			complete_national_focus = FNG_the_interests_war
 			set_country_flag = FNG_REPUBLIC
 			mark_focus_tree_layout_dirty = yes
 			set_cosmetic_tag = FNG_INT
@@ -1138,12 +1082,10 @@ country_event = {
 			}
 
 			remove_every_minister = yes
-			add_ideas = {
-				FNG_Huang_Fu_hog_ade
-				FNG_Wu_Jinglian_for_ade
-				FNG_Jin_Yunpeng_eco_ade
-				FNG_Jin_Yunpeng_sec_ade
-			}
+			activate_advisor = FNG_Huang_Fu_hog_ade
+			activate_advisor = FNG_Wu_Jinglian_for_ade
+			activate_advisor = FNG_Jin_Yunpeng_eco_ade
+			activate_advisor = FNG_Jin_Yunpeng_sec_ade
 
 			set_global_flag = FNG_interests
 			set_global_flag = FNG_advances
@@ -1263,8 +1205,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			complete_national_focus = FNG_ambassadors_enter_through_korea
-			FNG = { country_event = { id = man.36 days = 6 } }
+			country_event = { id = man.36 days = 6 }
 		}
 	}
 }
@@ -1275,9 +1216,7 @@ country_event = {
 	title = "An Envoy Brings a Shocking Proposal to the Public"
 	desc = man.35.d
 	picture = china_ambassador_announcement
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -1293,10 +1232,7 @@ country_event = {
 		add_political_power = -25
 
 		hidden_effect = {
-
-			complete_national_focus = FNG_ambassadors_enter_through_korea
-			FNG = { country_event = { id = man.37 days = 6 } }
-
+			country_event = { id = man.37 days = 6 }
 		}
 	}
 }
@@ -1307,28 +1243,20 @@ country_event = {
 	title = "The Fate of Fengtian"
 	desc = man.36.d
 	picture = GFX_chinese_renault
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
 		name = "Very well."
-
 		add_political_power = -100
 
 		hidden_effect = {
-
 			add_to_variable = {
 				var = FNG_fengtian_influence_with_japan
 				value = 1
 			}
-
 			custom_effect_tooltip = 12_FNG_tt
-
-			complete_national_focus = FNG_demands_from_japan
-			FNG = { country_event = { id = man.38 days = 6 } }
-
+			country_event = { id = man.38 days = 6 }
 		}
 	}
 }
@@ -1391,12 +1319,10 @@ country_event = {
 		add_ideas = military_junta
 
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Cao_Rulin_hog_npo
-			FNG_Wang_Yintai_for_pau
-			FNG_Yuan_Jinkai_eco_pau
-			FNG_Tang_Yulin_sec_pau
-		}
+		activate_advisor = FNG_Cao_Rulin_hog_npo
+		activate_advisor = FNG_Wang_Yintai_for_pau
+		activate_advisor = FNG_Yuan_Jinkai_eco_pau
+		activate_advisor = FNG_Tang_Yulin_sec_pau
 
 		set_politics = {
 			ruling_party = national_populist
@@ -1404,10 +1330,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-
-			complete_national_focus = FNG_backslide
-			FNG = { country_event = { id = man.39 days = 6 } }
-
+			country_event = { id = man.39 days = 6 }
 		}
 	}
 }
@@ -1418,31 +1341,20 @@ country_event = {
 	title = "The Unity of China"
 	desc = man.39.d
 	picture = GFX_concordia_association
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
 		name = "Powerful."
 
 		add_political_power = 100
-
 		add_popularity = { ideology = valkist popularity = 0.10 }
-
 		hidden_effect = {
-
-			complete_national_focus = FNG_awaken_pan_asianism
-
 			set_cosmetic_tag = FNG_PAN
-
 			set_country_flag = FNG_PANASIANISM
 			mark_focus_tree_layout_dirty = yes
-
 			set_global_flag = FNG_pan_asianism
-
 			set_global_flag = FNG_advances
-
 		}
 	}
 }
@@ -1453,9 +1365,7 @@ country_event = {
 	title = "The Military Retains Stature"
 	desc = man.40.d
 	picture = fengtian_army1
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -1465,9 +1375,7 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
 
 		hidden_effect = {
-
-			FNG = { country_event = { id = man.41 days = 6 } }
-
+			country_event = { id = man.41 days = 6 }
 		}
 	}
 }
@@ -1478,9 +1386,7 @@ country_event = {
 	title = "Zhang Xueliang Declares Himself Rightful President of the Republic of China"
 	desc = man.41.d
 	picture = GFX_zhang_xueliang_crowd
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -1492,16 +1398,10 @@ country_event = {
 		}
 
 		custom_effect_tooltip = 13_FNG_tt
-
 		add_political_power = 100
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
-
 		hidden_effect = {
-
-			FNG = { country_event = { id = man.42 days = 6 } }
-
-			complete_national_focus = FNG_cult_of_zhang
-
+			country_event = { id = man.42 days = 6 }
 		}
 	}
 }
@@ -1593,9 +1493,7 @@ country_event = {
 	title = "Japan Recognizes Fengtian Sovereignty"
 	desc = man.44.d
 	picture = chinese_warlords
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -1605,24 +1503,15 @@ country_event = {
 			var = FNG_fengtian_influence_with_japan
 			value = -2
 		}
-
 		add_to_variable = {
 			var = FNG_fengtian_influence_with_japan
 			value = -2
 		}
-
 		custom_effect_tooltip = 13_FNG_tt
-
 		add_political_power = 50
-
 		hidden_effect = {
-
-			FNG = { country_event = { id = man.47 days = 6 } }
-
-			complete_national_focus = FNG_pushover
-
+			country_event = { id = man.47 days = 6 }
 			set_global_flag = FNG_manchuria_against_japan
-
 		}
 	}
 }
@@ -1651,15 +1540,9 @@ country_event = {
 		add_political_power = 50
 
 		hidden_effect = {
-
 			FNG = { country_event = { id = man.47 days = 6 } }
-
 			set_global_flag = FNG_manchuria_against_japan
-
-			complete_national_focus = FNG_pushover
-
 			set_global_flag = FNG_advances
-
 		}
 	}
 }
@@ -1670,9 +1553,7 @@ country_event = {
 	title = "Japanese Investiture Enters Manchuria"
 	desc = man.46.d
 	picture = fengtian_industry3
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -1684,21 +1565,14 @@ country_event = {
 		}
 
 		custom_effect_tooltip = 12_FNG_tt
-
 		add_political_power = -200
 
 		hidden_effect = {
-
-			complete_national_focus = FNG_japans_move
 			set_country_flag = FNG_JAPANSMOVE
 			mark_focus_tree_layout_dirty = yes
-
 			set_global_flag = FNG_advances
-
 			set_global_flag = FNG_japan_is_making_a_move
-
 			set_global_flag = FNG_manchuria_under_japan
-
 		}
 	}
 }
@@ -1709,25 +1583,17 @@ country_event = {
 	title = "Fengtian Alone"
 	desc = man.47.d
 	picture = GFX_zhang_xueliang_crowd
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
 		name = "This will be our day in the sun!"
 
 		add_stability = 0.10
-
 		hidden_effect = {
-
-			complete_national_focus = FNG_preperations
-
 			set_country_flag = FNG_JAPANSMOVE
 			mark_focus_tree_layout_dirty = yes
-
 			set_global_flag = FNG_making_preperations
-
 		}
 	}
 }
@@ -1738,26 +1604,17 @@ country_event = {
 	title = "Political Modernization"
 	desc = man.48.d
 	picture = GFX_east_asia_reform
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
 		name = "Perhaps we should open up the Council to elections."
 
 		add_stability = 0.075
-
 		add_political_power = -50
-
 		custom_effect_tooltip = 6_FNG_tt
-
 		hidden_effect = {
-
 			set_global_flag = FNG_republicanism_has_influence
-
-			complete_national_focus = FNG_new_political_modernization
-
 		}
 	}
 
@@ -1772,7 +1629,7 @@ country_event = {
 
 			set_global_flag = FNG_statism_has_influence
 
-			complete_national_focus = FNG_new_political_modernization
+			# complete_national_focus = FNG_new_political_modernization
 
 		}
 	}
@@ -1789,7 +1646,7 @@ country_event = {
 
 	trigger = {
 		tag = FNG
-		FNG = { exists = yes }
+		country_exists = FNG
 		has_global_flag = FNG_zhang_council_successful
 		has_global_flag = FNG_socialists_have_their_assemblage
 		has_global_flag = FNG_concordia_has_their_riots
@@ -1799,12 +1656,6 @@ country_event = {
 
 	option = {
 		name = "Perhaps this can smooth over political instability."
-
-		hidden_effect = {
-
-			complete_national_focus = FNG_the_future_of_fengtian
-
-		}
 	}
 }
 
@@ -2294,22 +2145,15 @@ country_event = {
 	title = "No Basis to Our Government!"
 	desc = man.62.d
 	picture = GFX_report_event_generic_riot
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
 		name = "NO!"
 
 		add_political_power = -200
-
 		hidden_effect = {
-
-			complete_national_focus = FNG_descent_into_chaos
-
-			FNG = { country_event = { id = man.26 days = 6 } }
-
+			country_event = { id = man.26 days = 6 }
 		}
 	}
 }
@@ -2400,12 +2244,10 @@ country_event = {
 			}
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			#   FNG_Zhang_Xueliang_hog_pau
-			FNG_Wu_Jinglian_for_ade
-			FNG_Jin_Yunpeng_eco_ade
-			FNG_Ding_Jianxiu_sec_sde
-		}
+		activate_advisor = FNG_Zhang_Xueliang_hog_pau
+		activate_advisor = FNG_Wu_Jinglian_for_ade
+		activate_advisor = FNG_Jin_Yunpeng_eco_ade
+		activate_advisor = FNG_Ding_Jianxiu_sec_sde
 	}
 }
 
@@ -2743,12 +2585,10 @@ country_event = {
 		add_political_power = -50
 
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Cao_Rulin_hog_npo
-			FNG_Wang_Yintai_for_pau
-			FNG_Yuan_Jinkai_eco_pau
-			FNG_Tang_Yulin_sec_pau
-		}
+		activate_advisor = FNG_Cao_Rulin_hog_npo
+		activate_advisor = FNG_Wang_Yintai_for_pau
+		activate_advisor = FNG_Yuan_Jinkai_eco_pau
+		activate_advisor = FNG_Tang_Yulin_sec_pau
 
 		set_global_flag = FNG_elections_were_held
 
@@ -2782,12 +2622,10 @@ country_event = {
 		add_political_power = -100
 
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Cao_Rulin_hog_npo
-			FNG_Sun_Qichang_for_pau
-			FNG_Wang_Yitang_eco_ade
-			FNG_Tang_Yulin_sec_pau
-		}
+		activate_advisor = FNG_Cao_Rulin_hog_npo
+		activate_advisor = FNG_Sun_Qichang_for_pau
+		activate_advisor = FNG_Wang_Yitang_eco_ade
+		activate_advisor = FNG_Tang_Yulin_sec_pau
 
 		hidden_effect = {
 			add_ideas = parliamentary_republic
@@ -2819,12 +2657,11 @@ country_event = {
 		set_global_flag = FNG_communications_rules_fengtian
 		add_political_power = -50
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Liang_Shiyi_hog_sco
-			FNG_Huang_Fu_for_ade
-			FNG_Lu_Ronghuan_eco_sco
-			FNG_Li_Shaogeng_sec_sco
-		}
+		activate_advisor = FNG_Liang_Shiyi_hog_sco
+		activate_advisor = FNG_Huang_Fu_for_ade
+		activate_advisor = FNG_Lu_Ronghuan_eco_sco
+		activate_advisor = FNG_Li_Shaogeng_sec_sco
+
 		hidden_effect = {
 			add_ideas = parliamentary_republic
 			set_politics = {
@@ -2849,12 +2686,11 @@ country_event = {
 		set_global_flag = FNG_communications_rules_fengtian
 		add_political_power = -100
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Liang_Shiyi_hog_sco
-			FNG_Huang_Fu_for_ade
-			FNG_Lu_Ronghuan_eco_sco
-			FNG_Li_Shaogeng_sec_sco
-		}
+		activate_advisor = FNG_Liang_Shiyi_hog_sco
+		activate_advisor = FNG_Huang_Fu_for_ade
+		activate_advisor = FNG_Lu_Ronghuan_eco_sco
+		activate_advisor = FNG_Li_Shaogeng_sec_sco
+
 		hidden_effect = {
 			add_ideas = parliamentary_republic
 			set_politics = {
@@ -3054,12 +2890,11 @@ country_event = {
 
 		add_ideas = parliamentary_republic
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Yang_Yuting_hog_mli
-			FNG_Yu_Zhishan_for_mli
-			FNG_Yu_Zhishan_eco_mli
-			FNG_Yang_Yuting_sec_mli
-		}
+		activate_advisor = FNG_Yang_Yuting_hog_mli
+		activate_advisor = FNG_Yu_Zhishan_for_mli
+		activate_advisor = FNG_Yu_Zhishan_eco_mli
+		activate_advisor = FNG_Yang_Yuting_sec_mli
+
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = no
@@ -3100,26 +2935,20 @@ country_event = {
 	title = "Tang Shaoyi Vacates Seat"
 	desc = man.79.d
 	picture = GFX_fengtian_senate
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
-
 		add_to_variable = {
 			var = FNG_fengtian_influence_with_japan
 			value = 1
 		}
-
 		custom_effect_tooltip = 12_FNG_tt
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Ruan_Zhenduo_hog_sde
-			FNG_Yu_Zhishan_for_mli
-			FNG_Li_Shaogeng_eco_sco
-			FNG_Ding_Jianxiu_sec_sde
-		}
+		activate_advisor = FNG_Ruan_Zhenduo_hog_sde
+		activate_advisor = FNG_Yu_Zhishan_for_mli
+		activate_advisor = FNG_Li_Shaogeng_eco_sco
+		activate_advisor = FNG_Ding_Jianxiu_sec_sde
 
 		name = "Can we finally have peace in our politics?"
 		add_ideas = parliamentary_republic
@@ -3135,14 +2964,11 @@ country_event = {
 	}
 
 	option = {
-
 		add_to_variable = {
 			var = FNG_fengtian_influence_with_japan
 			value = 1
 		}
-
 		custom_effect_tooltip = 12_FNG_tt
-
 		name = "Concordia will take power now."
 		add_ideas = parliamentary_republic
 		set_politics = {
@@ -3150,12 +2976,10 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Cao_Rulin_hog_npo
-			FNG_Wang_Yintai_for_pau
-			FNG_Sun_Qichang_eco_pau
-			FNG_Yuan_Jinkai_sec_pau
-		}
+		activate_advisor = FNG_Cao_Rulin_hog_npo
+		activate_advisor = FNG_Wang_Yintai_for_pau
+		activate_advisor = FNG_Sun_Qichang_eco_pau
+		activate_advisor = FNG_Yuan_Jinkai_sec_pau
 		hidden_effect = {
 			complete_national_focus = FNG_concordia_association_controls_the_senate
 			add_popularity = { ideology = national_populist popularity = 0.10 }
@@ -3233,14 +3057,11 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			FNG_Yang_Yuting_hog_mli
-			FNG_Yu_Zhishan_for_mli
-			FNG_Li_Shaogeng_eco_sco
-			FNG_Yang_Yuting_sec_mli
-		}
+		activate_advisor = FNG_Yang_Yuting_hog_mli
+		activate_advisor = FNG_Yu_Zhishan_for_mli
+		activate_advisor = FNG_Li_Shaogeng_eco_sco
+		activate_advisor = FNG_Yang_Yuting_sec_mli
 	}
-
 }
 
 country_event = {

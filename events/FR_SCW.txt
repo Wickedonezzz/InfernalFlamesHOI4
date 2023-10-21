@@ -88,7 +88,7 @@ country_event = { #Republic in Tangiers
 		ai_chance = {
 			factor = 0
 		}
-	}	
+	}
 }
 
 country_event = { #Republic wins the war

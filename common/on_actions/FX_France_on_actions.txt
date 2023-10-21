@@ -8,4 +8,23 @@ on_actions = {
       }
     }
   }
+  on_startup = {
+    effect = {
+      FRA = {
+				set_variable = { entente_faith = 65 }
+				set_variable = { entente_tension = 0 } # probably not going to be used
+			}
+    }
+  }
+  on_daily = {
+    effect = {
+			FRA = {
+				clamp_variable = {
+					var = entente_faith
+					min = 0
+					max = 100
+				}
+			}
+    }
+  }
 }

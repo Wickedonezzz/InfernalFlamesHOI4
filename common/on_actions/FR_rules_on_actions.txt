@@ -662,18 +662,6 @@ on_actions = {
 						}
 					}
 					set_country_flag = GRE_ai_chosen
-					# random_list = {
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# 	10 = {}
-					# }
 				}
 				else_if = {
 					limit = {

@@ -287,3 +287,85 @@ adjacency_rule =
 	icon = 317
 	offset = { 5 0 -6 }
 }
+
+# Mindoro Strait
+adjacency_rule = {
+	name = "MINDORO_STRAIT"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = yes
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7419 10272 }
+
+	is_disabled = {
+		tooltip = MINDORO_STRAIT_BLOCKED_FOR_COUNTRY
+		has_country_flag = MINDORO__STRAIT_IS_BLOCKED
+	}
+
+	
+	
+	icon = 2971
+	offset = { -3 0 -1 }
+}
+
+# Batangas Strait
+adjacency_rule = {
+	name = "BATANGAS_STRAIT"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = yes
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 1221 4288 }
+
+	is_disabled = {
+		tooltip = BATANGAS_STRAIT_BLOCKED_FOR_COUNTRY
+		has_country_flag = BATANGAS_STRAIT_IS_BLOCKED
+	}
+	
+	icon = 2876
+	offset = { -3 0 -1 }
+}

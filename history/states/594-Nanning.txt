@@ -18,6 +18,8 @@ state={
 			7137 10 
 		}
 		add_core_of = KMT
+		add_claim_by = FNG
+		add_claim_by = ZHI
 	}
 
 	provinces={

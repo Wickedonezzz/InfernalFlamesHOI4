@@ -382,7 +382,7 @@ ideas = {
 			available = {
 				owns_state = 34 #Hainaut
 			}
-			traits = { infantry_equipment_producer_assualt_2 }
+			traits = { infantry_equipment_producer_assault_2 }
 			research_bonus = {
 				infantry_weapons = 0.1
 			}

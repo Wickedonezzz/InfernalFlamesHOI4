@@ -93,6 +93,23 @@ debug_dec_options = {
 	}
 }
 
+faction_buttons_options = {
+	name = RULE_SHOW_FACTION_BUTTONS
+	group = RULE_GROUP_FUHRERREDUX_RULES
+	default = {
+		name = STANDARD
+		text = RULE_OPTION_FACTION_BTNS_STANDARD
+		desc = RULE_OPTION_FACTION_BTNS_STANDARD_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = SHOW_FACTION_BTNS
+		text = RULE_OPTION_FACTION_BTNS_SHOW
+		desc = RULE_OPTION_FACTION_BTNS_SHOW_DESC
+		allow_achievements = yes
+	}
+}
+
 
 ###########################################################
 # FOREIGN POLICY

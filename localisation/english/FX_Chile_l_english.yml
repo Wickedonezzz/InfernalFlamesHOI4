@@ -457,6 +457,8 @@ CHL_president_cruz-coke: "President Cruz-Coke"
 CHL_president_cruz-coke_desc: "Eduardo Cruz-Coke Lassabe, Partido Conservador's candidate, has won the election, his christian values and social approach to health reforms, have given him the popular support."
 CHL_responsible_investments: "Responsible Investments"
 CHL_responsible_investments_desc: "The government must take a supportive role in our economy, boosting and protecting it, but careful to not intervene too much, as to mess with it and ruin our budget."
+CHL_balanced_budget: "Balanced Budget"
+CHL_balanced_budget_desc: "Crisis have brought our nation to bankrupcy several times, let's balance the national budget so that way we don't have to go through collapse on future difficulties."
 CHL_president_ross: "President Ross"
 CHL_president_ross_desc: "Gustavo Ross, Partido Liberal's candidate, prominent economist and free-market advocate, has won the election, his austerity measures and liberal economic ideas seem to have gained support amongst our population."
 CHL_seek_foreign_capital: "Seek Foreign Capital"
@@ -474,7 +476,7 @@ CHL_academics_for_progress_desc: "It's time to bring our nation forward, let's p
 CHL_denounce_socialism: "Denounce Socialism"
 CHL_denounce_socialism_desc: "Extreme forms of socialism are threatening South America and our nation, it may be a good idea to denounce the ideology so the world knows where we stand."
 CHL_intervene_in_bolivia: "Intervene in Bolivia"
-CHL_intervene_in_bolivia_desc: "Revolutionary Socialism in its most extreme form has taken place in Bolivia, this is very dangerous for our country, unless we choose to intervene now and free Bolivia from this plague."
+CHL_intervene_in_bolivia: "Revolutionary Socialism in its most extreme form has taken place in Bolivia, this is very dangerous for our country, unless we choose to intervene now and free Bolivia from this plague."
 CHL_intervene_in_argentina: "Intervene in Argentina"
 CHL_intervene_in_argentina_desc: "Argentina has succumbed to the plague of socialism. Our nation will be invaded in their ideological crusade, unless we take the chance and stop them before they can do that."
 CHL_friends_with_democracy: "Friends with Democracy"
@@ -501,8 +503,8 @@ CHL_expansionist_policy: "Expansionist Policy"
 CHL_friendly_authority: "Friendly to Authority"
 CHL_friendly_democracy: "Friendly to Democracy"
 #flags
-DEMOCRACY_SURVIVES: "Democracy has survived."
-CARLOS_COUP: "Carlos Ibañez has made a coup."
+DEMOCRACY_SURVIVES: "Democracy has survived in Chile."
+CARLOS_COUP: "General Carlos Ibañez has seized control"
 CHILEAN_VALKISM: "Chile has turned to Valkism."
 BLANCHEDEM: "General Blanche has restored democracy."
 BLANCHEPATER: "The military regime continues."
@@ -511,11 +513,17 @@ BLANCHEPATER: "The military regime continues."
 pacific_pact: "Pacific Pact"
 pacific_alliance: "Pacific Alliance"
 
-#cosmetic
-
-
-
-
+# Companies
+efe: "EFE"
+universidad_chile: "Universidad de Chile"
+covensa: "COVENSA"
+famae: "FAMAE"
+famaetank: "FAMAE - Tank Section"
+chile_ford: "Ford Chile"
+arsenales_de_marina: "Arsenales de Marina"
+maestranza_central_aviacion: "Maestranza Central de Aviación"
+linea_area_nacional: "Linea Aérea Nacional"
+corfo: "CORFO"
 
 
 

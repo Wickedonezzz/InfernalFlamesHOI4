@@ -9,22 +9,28 @@ country_event = {
 	id = ger.10001
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ger.10001"}
 	title = "A change of flags?"
-	desc = "Would you like to change the design of the flag to something else mein fuhrer"
+	desc = ger.10001.d
 	picture = GFX_report_event_GER_dressler_poster_2
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
 			ai_chance = {
-			factor = 40
+			factor = 80
 		}
 		name = "No Thanks, Bro."
 	}
 	option = {
+			ai_chance = {
+			factor = 10
+		}
 		name = "Lets try the green with a Valknut." #done
 		set_cosmetic_tag = GER_CUSPRFJGreen
 	}
 	option = {
+			ai_chance = {
+			factor = 10
+		}
 		name = "How about the original Valkist flag."
 		set_cosmetic_tag = GER_CUSOG
 	}
@@ -33,12 +39,14 @@ country_event = {
 		set_cosmetic_tag = GER_CUSSAIMP
 	}
 	option = {
-		name = "The SA flag shall be our banner." #done
+		name = "The SA flag shall be our banner" #done
 		set_cosmetic_tag = GER_CUSSARED
 	}
 	option = {
-		name = "The Doomori Banner fits (DEV MP GAMES)."
+		name = "The Doomori Banner fits (DEV MP GAMES)"
 		set_cosmetic_tag = GER_DOOMORI
+		set_country_flag = WackyAndQuirkyIceReich
+		retire_character = GER_Adam_Dressler
 	}
 }
 country_event = { # Dressler's address
@@ -2750,7 +2758,7 @@ country_event = {
 country_event = {
 	id = ger.1083
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ger.1083"}
-	title = "German archaeologist head off to Scandinavia"
+	title = "German Archaeologists embark to Tibet"
 	desc = ger.1083.d
 	picture = GFX_report_event_communists_cheer
 
@@ -2759,7 +2767,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "Best of luck to our great scientist"
+		name = "Best of luck to our great scientists"
 			hidden_effect = {
 				GER = { 
 					country_event = { id = ger.10832 days = 120 }
@@ -2767,11 +2775,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 country_event = {
 	id = ger.10832
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ger.10832"}
-	title = "The Bocksten Man"
+	title = "A telegram from Tibet"
 	desc = ger.10832.d
 	picture = GFX_report_event_communists_cheer
 
@@ -2780,7 +2788,50 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "Best of luck to our great scientist"
+		name = "These findings are certainly interesting"
+		add_political_power = 50
+		add_popularity = {
+			ideology = valkist
+			popularity = 0.10
+		}
+	}
+}
+
+country_event = {
+	id = ger.10833
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ger.10833"}
+	title = "Submarine crew embarks to Neuschwabenland"
+	desc = ger.10833.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = "Safe travels to our research crew"
+			hidden_effect = {
+				GER = { 
+					country_event = { id = ger.10834 days = 120 }
+				}
+			}
+	}
+}
+
+
+country_event = {
+	id = ger.10834
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ger.10834"}
+	title = "News from Neuschwabenland"
+	desc = ger.10834.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = "We will send another crew"
 		add_political_power = 50
 		add_popularity = {
 			ideology = valkist
@@ -13492,3 +13543,40 @@ country_event = { # Switzerland War- We've Found the old Kaiser
 		}
 	}
 }
+
+### Berlin Capture
+
+country_event = { # Dressler Dies
+	id = ger.2071
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ger.2071"}
+    title = ger.2071.t
+    desc = ger.2071.d
+    picture = GFX_report_event_GER_berlin_capture
+
+	trigger = {
+		AND = {
+			original_tag = GER
+			NOT = {
+					controls_province = 6521
+				}
+			}
+		}
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    fire_only_once = yes
+
+    option = { # OKW takeover
+    name = ger.2071.a
+		set_politics = {
+			ruling_party = valkist
+			long_name = "Oberkommando der Wehrmacht" 
+			name = "OKW"
+		}
+	retire_character = GER_Adam_Dressler
+	retire_character = GER_Wickedonezz
+    }
+}
+

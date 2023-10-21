@@ -1,8 +1,11 @@
+# AUS
+
 ####################
 ## Austrian Ideas ##
 ####################
 ## Started by CIA ##
 ####################
+
 ideas = {
 	country = {
 		AUS_bundesheer_conscription = {#Bundesheer Conscription

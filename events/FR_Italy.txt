@@ -16,10 +16,11 @@ country_event = {
 	title = ita.0.t
 	desc = ita.0.d
 	picture = GFX_report_event_ITA_firenze
+	is_triggered_only = yes
 
-	 trigger = {
-	 	tag = ITA
-	 }
+	# trigger = {
+		# 	tag = ITA
+		# }
 
 	# mean_time_to_happen = { days = 10 }
 
@@ -190,7 +191,7 @@ country_event = { # Fate of the PPI
 		}
 		set_politics = {
 			ruling_party = social_conservative
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		set_party_name = {
 			ideology = social_democrat
@@ -1159,12 +1160,11 @@ country_event = { # Commies win
 				news_event = { id = itanews.20 }
 			}
 			remove_every_minister = yes
-			add_ideas = {
-				ITA_Antonio_Gramsci_hog_col
-				ITA_Vincenzo_Vacirca_for_col
-				ITA_Achille_Grandi_eco_lib
-				ITA_Vittorio_Vidali_sec_col
-			}
+			activate_advisor = ITA_Antonio_Gramsci_hog_col
+			activate_advisor = ITA_Vincenzo_Vacirca_for_col
+			activate_advisor = ITA_Achille_Grandi_eco_lib
+			activate_advisor = ITA_Vittorio_Vidali_sec_col
+
 		}
 	}
 
@@ -1259,6 +1259,7 @@ country_event = { # Soc Dem win
 		set_country_flag = ITA_sde_win
 		set_politics = {
 			ruling_party = social_democrat
+			elections_allowed = yes
 		}
 		add_political_power = 50
 		remove_coalition_social_democrat = yes
@@ -1327,6 +1328,7 @@ country_event = { # liberal win
 		set_country_flag = ITA_lib_win
 		set_politics = {
 			ruling_party = market_liberal
+			elections_allowed = yes
 		}
 		add_political_power = 50
 		remove_coalition_market_liberal = yes
@@ -1347,7 +1349,7 @@ country_event = { # liberal win
 		activate_advisor = ITA_Luigi_Einaudi_hog_mli
 		activate_advisor = ITA_Manlio_Brosio_for_mli
 		activate_advisor = ITA_Marcello_Soleri_eco_mli
-		activate_advisor = ITA_Manlio_Brosio_sec_mli
+		activate_advisor = ITA_Pietro_Mastino_sec_sli
 	}
 }
 
@@ -1395,6 +1397,7 @@ country_event = { # conservative win
 		set_country_flag = ITA_con_win
 		set_politics = {
 			ruling_party = social_conservative
+			elections_allowed = yes
 		}
 		remove_coalition_social_conservative = yes
 		remove_coalition_libertarian_socialist = yes
@@ -1421,12 +1424,10 @@ country_event = { # conservative win
 				news_event = { id = itanews.20 }
 			}
 			remove_every_minister = yes
-			add_ideas = {
-				ITA_Alcide_De_Gasperi_hog_sco
-				ITA_Giuseppe_Pella_for_sco
-				ITA_Giovanni_Gronchi_eco_sco
-				ITA_Giovanni_Uberti_sec_sco
-			}
+			activate_advisor = ITA_Alcide_De_Gasperi_hog_sco
+			activate_advisor = ITA_Giuseppe_Pella_for_sco
+			activate_advisor = ITA_Giovanni_Gronchi_eco_sco
+			activate_advisor = ITA_Giovanni_Uberti_sec_sco
 		}
 	}
 }
@@ -1499,12 +1500,11 @@ country_event = { # nationalist win
 				}
 				news_event = { id = itanews.20 }
 			}
-			add_ideas = {
-				ITA_Gabriele_D_Annunzio_hog_val
-				ITA_Giacomo_Acerbo_for_val
-				ITA_Edmondo_Rossoni_eco_val
-				ITA_Luigi_Razza_sec_val
-			}
+			activate_advisor = ITA_Gabriele_D_Annunzio_hog_val
+			activate_advisor = ITA_Giacomo_Acerbo_for_val
+			activate_advisor = ITA_Edmondo_Rossoni_eco_val
+			activate_advisor = ITA_Luigi_Razza_sec_val
+
 		}
 	}
 
@@ -1536,12 +1536,11 @@ country_event = { # nationalist win
 				news_event = { id = itanews.20 }
 			}
 			remove_every_minister = yes
-			add_ideas = {
-				ITA_Italo_Balbo_hog_npo
-				ITA_Dino_Alfieri_for_npo
-				ITA_Giuseppe_Volpi_eco_npo
-				ITA_Alessandro_Pavolini_sec_npo
-			}
+
+			activate_advisor = ITA_Italo_Balbo_hog_npo
+			activate_advisor = ITA_Dino_Alfieri_for_npo
+			activate_advisor = ITA_Giuseppe_Volpi_eco_npo
+			activate_advisor = ITA_Alessandro_Pavolini_sec_npo
 		}
 	}
 }
@@ -2695,9 +2694,8 @@ country_event = { # Forming government - foreign minister
 			}
 		}
 		name = ita.50.a
-		add_ideas = {
-			ITA_Sergio_Panunzio_for_van
-		}
+		activate_advisor = ITA_Sergio_Panunzio_for_van
+
 		add_stability = 0.05
 	}
 
@@ -2712,9 +2710,8 @@ country_event = { # Forming government - foreign minister
 			}
 		}
 		name = ita.50.b
-		add_ideas = {
-			ITA_Altiero_Spinelli_for_lib
-		}
+		activate_advisor = ITA_Altiero_Spinelli_for_lib
+
 		add_stability = 0.05
 	}
 
@@ -2730,10 +2727,10 @@ country_event = { # Forming government - foreign minister
 			limit = {
 				has_completed_focus = ITA_conservative_ppi
 			}
-			add_ideas = ITA_Nicolo_Carandini_for_sde
+			activate_advisor = ITA_Nicolo_Carandini_for_sde
 		}
 		else = {
-			add_ideas = ITA_Gaetano_Martino_for_sde
+			activate_advisor = ITA_Gaetano_Martino_for_sde
 		}
 		add_stability = 0.05
 	}
@@ -2746,9 +2743,8 @@ country_event = { # Forming government - foreign minister
 			}
 		}
 		name = ita.50.e
-		add_ideas = {
-			ITA_Manlio_Brosio_for_mli
-		}
+		activate_advisor = ITA_Manlio_Brosio_for_mli
+
 		add_stability = 0.05
 	}
 
@@ -2760,7 +2756,7 @@ country_event = { # Forming government - foreign minister
 			}
 		}
 		name = ita.50.f
-		add_ideas = ITA_Giuseppe_Pella_for_sco
+		activate_advisor = ITA_Giuseppe_Pella_for_sco
 		add_stability = 0.05
 	}
 
@@ -2775,9 +2771,7 @@ country_event = { # Forming government - foreign minister
 			}
 		}
 		name = ita.50.g
-		add_ideas = {
-			ITA_Dino_Alfieri_for_npo
-		}
+		activate_advisor = ITA_Dino_Alfieri_for_npo
 		add_stability = 0.05
 	}
 
@@ -2792,9 +2786,8 @@ country_event = { # Forming government - foreign minister
 			}
 		}
 		name = ita.50.h
-		add_ideas = {
-			ITA_Giacomo_Acerbo_for_val
-		}
+		activate_advisor = ITA_Giacomo_Acerbo_for_val
+
 		add_stability = 0.05
 	}
 
@@ -2885,9 +2878,7 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.51.a
-		add_ideas = {
-			ITA_Alceste_De_Ambris_eco_col
-		}
+		activate_advisor = ITA_Alceste_De_Ambris_eco_col
 		add_stability = 0.05
 	}
 
@@ -2902,9 +2893,8 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.51.b
-		add_ideas = {
-			ITA_Achille_Grandi_eco_lib
-		}
+		activate_advisor = ITA_Achille_Grandi_eco_lib
+
 		add_stability = 0.05
 	}
 
@@ -2920,10 +2910,10 @@ country_event = { # Forming government - economic minister
 			limit = {
 				has_completed_focus = ITA_conservative_ppi
 			}
-			add_ideas = ITA_Giuseppe_Romita_eco_sde
+			activate_advisor = ITA_Giuseppe_Romita_eco_sde
 		}
 		else = {
-			add_ideas = ITA_Rocco_Gullo_eco_sde
+			activate_advisor = ITA_Rocco_Gullo_eco_sde
 		}
 		add_stability = 0.05
 	}
@@ -2936,9 +2926,7 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.51.e
-		add_ideas = {
-			ITA_Marcello_Soleri_eco_mli
-		}
+		activate_advisor = ITA_Marcello_Soleri_eco_mli
 		add_stability = 0.05
 	}
 
@@ -2950,7 +2938,7 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.51.f
-		add_ideas = ITA_Giovanni_Gronchi_eco_sco
+		activate_advisor = ITA_Giovanni_Gronchi_eco_sco
 		add_stability = 0.05
 	}
 
@@ -2965,9 +2953,7 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.51.g
-		add_ideas = {
-			ITA_Giuseppe_Volpi_eco_npo
-		}
+		activate_advisor = ITA_Giuseppe_Volpi_eco_npo
 		add_stability = 0.05
 	}
 
@@ -2982,9 +2968,7 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.51.h
-		add_ideas = {
-			ITA_Edmondo_Rossoni_eco_val
-		}
+		activate_advisor = ITA_Edmondo_Rossoni_eco_val
 		add_stability = 0.05
 	}
 
@@ -3075,9 +3059,8 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.52.a
-		add_ideas = {
-			ITA_Vittorio_Vidali_sec_col
-		}
+		activate_advisor = ITA_Vittorio_Vidali_sec_col
+
 		add_stability = 0.05
 	}
 
@@ -3092,9 +3075,8 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.52.b
-		add_ideas = {
-			ITA_Francesco_De_Martino_sec_lib
-		}
+		activate_advisor = ITA_Francesco_De_Martino_sec_lib
+
 		add_stability = 0.05
 	}
 
@@ -3107,7 +3089,7 @@ country_event = { # Forming government - economic minister
 		}
 		name = ita.52.c
 
-		add_ideas = ITA_Enrico_Mole_sec_sde
+		activate_advisor =  ITA_Enrico_Mole_sec_sde
 		add_stability = 0.05
 	}
 
@@ -3119,9 +3101,8 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.52.e
-		add_ideas = {
-			ITA_Manlio_Brosio_sec_mli
-		}
+		activate_advisor = ITA_Pietro_Mastino_sec_sli
+
 		add_stability = 0.05
 	}
 
@@ -3133,7 +3114,7 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.52.f
-		add_ideas = ITA_Giovanni_Uberti_sec_sco
+		activate_advisor = ITA_Giovanni_Uberti_sec_sco
 		add_stability = 0.05
 	}
 
@@ -3148,9 +3129,8 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.52.g
-		add_ideas = {
-			ITA_Alessandro_Pavolini_sec_npo
-		}
+		activate_advisor = ITA_Alessandro_Pavolini_sec_npo
+
 		add_stability = 0.05
 	}
 
@@ -3165,9 +3145,7 @@ country_event = { # Forming government - economic minister
 			}
 		}
 		name = ita.52.h
-		add_ideas = {
-			ITA_Luigi_Razza_sec_val
-		}
+		activate_advisor = ITA_Luigi_Razza_sec_val
 		add_stability = 0.05
 	}
 
@@ -14936,14 +14914,11 @@ country_event = { # Fate of the Left
 			election_frequency = 60
 			elections_allowed = no
 		}
-
-		add_ideas = {
-			ITA_Palmiro_Togliatti_hog_van
-			ITA_Sergio_Panunzio_for_van
-			ITA_Nicola_Bombacci_eco_van
-			ITA_Ruggiero_Grieco_sec_van
-			one_party_dictatorship
-		}
+		activate_advisor = ITA_Palmiro_Togliatti_hog_van
+		activate_advisor = ITA_Sergio_Panunzio_for_van
+		activate_advisor = ITA_Nicola_Bombacci_eco_van
+		activate_advisor = ITA_Ruggiero_Grieco_sec_van
+		add_ideas = one_party_dictatorship
 
 		if = {
 			limit = {
@@ -14989,13 +14964,11 @@ country_event = { # Fate of the Left
 			elections_allowed = no
 		}
 
-		add_ideas = {
-			ITA_Antonio_Gramsci_hog_col
-			ITA_Vincenzo_Vacirca_for_col
-			ITA_Alceste_De_Ambris_eco_col
-			ITA_Vittorio_Vidali_sec_col
-			workers_republic
-		}
+		activate_advisor = ITA_Antonio_Gramsci_hog_col
+		activate_advisor = ITA_Vincenzo_Vacirca_for_col
+		activate_advisor = ITA_Alceste_De_Ambris_eco_col
+		activate_advisor = ITA_Vittorio_Vidali_sec_col
+		add_ideas = workers_republic
 
 		if = {
 			limit = {
@@ -15040,14 +15013,11 @@ country_event = { # Fate of the Left
 			elections_allowed = no
 		}
 
-		add_ideas = {
-			ITA_Antonio_Gramsci_hog_col
-			ITA_Vincenzo_Vacirca_for_col
-			ITA_Alceste_De_Ambris_eco_col
-			ITA_Vittorio_Vidali_sec_col
-			workers_republic
-		}
-
+		activate_advisor = ITA_Antonio_Gramsci_hog_col
+		activate_advisor = ITA_Vincenzo_Vacirca_for_col
+		activate_advisor = ITA_Alceste_De_Ambris_eco_col
+		activate_advisor = ITA_Vittorio_Vidali_sec_col
+		add_ideas = workers_republic
 		if = {
 			limit = {
 				FRA = {
@@ -15079,12 +15049,10 @@ country_event = { # Fate of the Left
 			elections_allowed = no
 		}
 
-		add_ideas = {
-			ITA_Giacomo_Matteotti_hog_lib
-			ITA_Altiero_Spinelli_for_lib
-			ITA_Achille_Grandi_eco_lib
-			ITA_Francesco_De_Martino_sec_lib
-		}
+		activate_advisor = ITA_Giacomo_Matteotti_hog_lib
+		activate_advisor = ITA_Altiero_Spinelli_for_lib
+		activate_advisor = ITA_Achille_Grandi_eco_lib
+		activate_advisor = ITA_Francesco_De_Martino_sec_lib
 	}
 
 	option = { # Nenni wins
@@ -15099,12 +15067,10 @@ country_event = { # Fate of the Left
 			elections_allowed = no
 		}
 
-		add_ideas = {
-			ITA_Pietro_Nenni_hog_lib
-			ITA_Altiero_Spinelli_for_lib
-			ITA_Achille_Grandi_eco_lib
-			ITA_Francesco_De_Martino_sec_lib
-		}
+		activate_advisor = ITA_Pietro_Nenni_hog_lib
+		activate_advisor = ITA_Altiero_Spinelli_for_lib
+		activate_advisor = ITA_Achille_Grandi_eco_lib
+		activate_advisor = ITA_Francesco_De_Martino_sec_lib
 	}
 }
 
@@ -15294,9 +15260,7 @@ country_event = { # Italy - Balbo returns to Libya
 
 	trigger = {
 		original_tag = ITA
-		ITA = {
-			has_completed_focus = ITA_socialist_revolution
-		}
+		ITA = { has_completed_focus = ITA_socialist_revolution }
 		LBA = {
 			is_puppet_of = ITA
 		}
@@ -15617,12 +15581,10 @@ country_event = { #Italy - Pick Nat Pops or Valkists
 			elections_allowed = no
 		}
 		hidden_effect = {
-			add_ideas = {
-				ITA_Italo_Balbo_hog_npo
-				ITA_Dino_Alfieri_for_npo
-				ITA_Giuseppe_Volpi_eco_npo
-				ITA_Alessandro_Pavolini_sec_npo
-			}
+			activate_advisor = ITA_Italo_Balbo_hog_npo
+			activate_advisor = ITA_Dino_Alfieri_for_npo
+			activate_advisor = ITA_Giuseppe_Volpi_eco_npo
+			activate_advisor = ITA_Alessandro_Pavolini_sec_npo
 		}
 	}
 
@@ -15646,12 +15608,10 @@ country_event = { #Italy - Pick Nat Pops or Valkists
 			elections_allowed = no
 		}
 		hidden_effect = {
-			add_ideas = {
-				ITA_Gabriele_Annunzio_hog_val
-				ITA_Giacomo_Acerbo_for_val
-				ITA_Edmondo_Rossoni_eco_val
-				ITA_Luigi_Razza_sec_val
-			}
+			activate_advisor = ITA_Gabriele_Annunzio_hog_val
+			activate_advisor = ITA_Giacomo_Acerbo_for_val
+			activate_advisor = ITA_Edmondo_Rossoni_eco_val
+			activate_advisor = ITA_Luigi_Razza_sec_val
 		}
 	}
 }

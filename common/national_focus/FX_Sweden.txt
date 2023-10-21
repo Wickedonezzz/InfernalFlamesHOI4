@@ -3154,7 +3154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_codify_religious_education
-		icon = GFX_BEL_Catholic_Education
+		icon = GFX_goal_BRA_catholic_education
 		cost = 8.00
 		prerequisite = {
 			focus = SWE_faith_and_fatherland

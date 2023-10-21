@@ -33,7 +33,7 @@ characters = {
 		name = "Níkos Zachariádis"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/GRE/Portrait_GRE_Nikos_Zachariadis1.png"
+				large = "gfx/leaders/GRE/Portrait_GRE_Nikos_Zachariadis_fx.png"
 			}
 		}
 		country_leader = {
@@ -67,7 +67,7 @@ characters = {
 		}
 	}
 	GRE_Konstantinos_Tsaldaris = {
-		name = "Konstantínos Tsaldáris"
+		name = GRE_Konstantinos_Tsaldaris
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Konstantinos_Tsaldaris.png"
@@ -93,16 +93,9 @@ characters = {
 				hog_charismatic_charmer
 			}
 		}
-		# country_leader = {
-		# 	ideology = social_conservative_subtype
-		# 	traits = {
-		# 		social_conservative
-		# 	}
-		# }
-		
 	}
 	GRE_Ioannis_Michail_Metaxas = {
-		name = "Ioánnis Michaíl Metaxás"
+		name = GRE_Ioannis_Michail_Metaxas
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Michail_Metaxas.png"
@@ -155,7 +148,7 @@ characters = {
 		}
 	}
 	GRE_Eleftherios_Kyriakou_Venizelos = {
-		name = "Elefthérios Kyriákou Venizélos"
+		name = GRE_Eleftherios_Kyriakou_Venizelos
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Eleftherios_Kyriakou_Venizelos.png"
@@ -183,10 +176,10 @@ characters = {
 		}
 	}
 	GRE_Themistoklis_Sofoulis = {
-		name = "Themistoklís Sofoúlis"
+		name = GRE_Themistoklis_Sofoulis
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/GRE/Portrait_GRE_Themistoklis_Sofoulis.png"
+				large = "gfx/leaders/GRE/Portrait_GRE_Themistoklis_Sofoulis_fx.png"
 				small = "gfx/interface/ministers/GRE/GRE_Themistoklis_Sofoulis.png"
 			}
 		}
@@ -208,7 +201,7 @@ characters = {
 		}
 	}
 	GRE_Sofoklis_Venizelos = {
-		name = "Sofoklís Venizélos"
+		name = GRE_Sofoklis_Venizelos
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Sofoklis_Venizelos.png"
@@ -236,7 +229,7 @@ characters = {
 		}
 	}
 	GRE_Georgios_Kondylis = {
-		name = "Geórgios Kondýlis"
+		name = GRE_Georgios_Kondylis
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Georgios_Kondylis.png"
@@ -328,7 +321,7 @@ characters = {
 		}
 	}
 	GRE_Georgios_Papandreou = {
-		name = "Geórgios Papandréou"
+		name = GRE_Georgios_Papandreou
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Georgios_Papandreou.png"
@@ -382,7 +375,7 @@ characters = {
 		}
 	}
 	GRE_Sotirios_Gotzamanis = {
-		name = "Sotírios Gotzamánis"
+		name = GRE_Sotirios_Gotzamanis
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Sotirios_Gotzamanis.png"
@@ -426,6 +419,7 @@ characters = {
 				old_guard
 				politically_connected
 				trait_cautious
+				GRE_venizelist_loyalist
 			}
 			skill = 4
 			attack_skill = 2
@@ -454,7 +448,7 @@ characters = {
 		}
 	}
 	GRE_Alexandros_Koryzis = {
-		name = "Aléxandros Koryzís"
+		name = GRE_Alexandros_Koryzis
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Alexandros_Koryzis.png"
@@ -505,10 +499,10 @@ characters = {
 		}
 	}
 	GRE_Georgios_Kosmidis = {
-		name = "Geórgios Kosmídis"
+		name = GRE_Georgios_Kosmidis
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/GRE/Portrait_GRE_Georgios_Kosmidis.png"
+				large = "gfx/leaders/GRE/Portrait_GRE_Georgios_Kosmidis_fx.png"
 				small = "gfx/interface/ministers/GRE/GRE_Georgios_Kosmidis.png"
 			}
 		}
@@ -537,7 +531,7 @@ characters = {
 		}
 	}
 	GRE_Georgios_Poulos = {
-		name = "Geórgios Poúlos"
+		name = GRE_Georgios_Poulos
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Georgios_Poulos.png"
@@ -572,7 +566,7 @@ characters = {
 		name = "Geórgios Spyrídon Merkoúris"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/GRE/Portrait_GRE_Georgios_Spyridon_Merkouris.png"
+				large = "gfx/leaders/GRE/Portrait_GRE_Georgios_Spyridon_Merkouris_fx.png"
 				small = "gfx/interface/ministers/GRE/GRE_Georgios_Spyridon_Merkouris.png"
 			}
 		}
@@ -602,7 +596,7 @@ characters = {
 		}
 	}
 	GRE_Manolis_Manoleas = {
-		name = "Manólis Manoléas"
+		name = GRE_Manolis_Manoleas
 		portraits = {
 			civilian = {
 				# large = "gfx/leaders/GRE/Portrait_GRE_Manolis_Manoleas.png"
@@ -654,10 +648,10 @@ characters = {
 		}
 	}
 	GRE_Giannis_Ioannidis = {
-		name = "Giánnis Ioannídis"
+		name = GRE_Giannis_Ioannidis
 		portraits = {
 			civilian = {
-				# large = "gfx/leaders/GRE/Portrait_GRE_Giannis_Ioannidis.png"
+				large = "gfx/leaders/GRE/Portrait_GRE_Giannis_Ioannidis.png"
 				small = "gfx/interface/ministers/GRE/GRE_Giannis_Ioannidis.png"
 			}
 		}
@@ -682,7 +676,7 @@ characters = {
 		}
 	}
 	GRE_Pantelis_Pouliopoulos = {
-		name = "Pantelís Pouliópoulos"
+		name = GRE_Pantelis_Pouliopoulos
 		portraits = {
 			civilian = {
 				# large = "gfx/leaders/GRE/Portrait_GRE_Pantelis_Pouliopoulos.png"
@@ -745,9 +739,6 @@ characters = {
 				small = "gfx/interface/ministers/GRE/GRE_Georgios_Athanasiadis_Novas.png"
 			}
 		}
-		country_leader = {
-			ideology = social_liberal_subtype
-		}
 		advisor = {
 			can_be_fired = no
 			slot = security_minister	
@@ -775,10 +766,6 @@ characters = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Rallis.png"
 			}
 		}
-		country_leader = {
-			ideology = social_liberal_subtype
-			traits = { }
-		}
 	}
 	GRE_Dimitris_Glinos = {
 		name = "Dimítris Glinós"
@@ -787,10 +774,6 @@ characters = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Dimitrios_Glinos.png"
 			}
 		}
-		# country_leader = {
-		# 	ideology = venizelism_subtype
-		# 	traits = { }
-		# }
 	}
 	GRE_Stylianos_Gonatas = {
 		name = "Stylianós Gonatás"
@@ -798,10 +781,6 @@ characters = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Stylianos_Gonatas.png"
 			}
-		}
-		country_leader = {
-			ideology = venizelism_subtype
-			traits = { }
 		}
 	}
 	GRE_Filippos_Dragoumis = {
@@ -811,10 +790,6 @@ characters = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Filippos_Dragoumis.png"
 			}
 		}
-		country_leader = {
-			ideology = venizelism_subtype
-			traits = { }
-		}
 	}
 	GRE_Leonidas_Iasonidis = {
 		name = "Leonídas Iasonídis"
@@ -822,10 +797,6 @@ characters = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Leonidas_Iasonidis.png"
 			}
-		}
-		country_leader = {
-			ideology = venizelism_subtype
-			traits = { }
 		}
 	}
 	GRE_Ioannis_Kyrozis = {
@@ -835,10 +806,6 @@ characters = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Kyrozis.png"
 			}
 		}
-		country_leader = {
-			ideology = venizelism_subtype
-			traits = { }
-		}
 	}
 	GRE_Ioannis_Sofianopoulos = {
 		name = "Ioánnis Sofianópoulos"
@@ -846,10 +813,6 @@ characters = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Sofianopoulos.png"
 			}
-		}
-		country_leader = {
-			ideology = venizelism_subtype
-			traits = { }
 		}
 	}
 	GRE_Michalis_Tyrimos = {
@@ -1925,6 +1888,7 @@ characters = {
 				war_hero
 				media_personality
 				trait_reckless
+				GRE_venizelist_loyalist
 			}
 			skill = 3
 			attack_skill = 3
@@ -2208,7 +2172,7 @@ characters = {
 		name = "Ioánnis Toúmbas"
 		portraits = {
 			navy = {
-				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Toumbas1.png"
+				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Toumbas_fx.png"
 				small = "gfx/interface/ministers/GRE/GRE_Ioannis_Toumbas.png"
 			}
 		}

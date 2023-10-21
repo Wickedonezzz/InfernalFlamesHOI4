@@ -32,7 +32,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_60
 	absolute_monarchy
 }
 

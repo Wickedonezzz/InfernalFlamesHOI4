@@ -32,14 +32,14 @@ country_event = { #intro
 			# country_event = {
 				# id = fic.2
 				# days = 2
+				# }
 			# }
-		# }
 		# hidden_effect = {
 			# country_event = {
 				# id = fic_pr.1
 				# months = 7
+				# }
 			# }
-		# }
 	}
 }
 country_event = { #legacy of cognac + resistance#
@@ -541,8 +541,8 @@ country_event = { #urban guerillas#
 		}
 		958 = {
 			damage_building = {
- 				   type = infrastructure
-  				  damage = 2
+				type = infrastructure
+				damage = 2
 			}
 		}
 	}
@@ -747,7 +747,7 @@ country_event = { #hanoi uprising#
 	title = fic_pr.17.t
 	desc = fic_pr.17.d
 	picture  = GFX_report_event_generic_riot
-	immediate = { 
+	immediate = {
 		VIN = {
 			declare_war_on = {
 				target = FIC

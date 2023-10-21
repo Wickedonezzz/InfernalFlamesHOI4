@@ -15,14 +15,14 @@ FNG_JAP_national_populist: "Manshu Tokubetsu Gyosei-ku" #满洲特別行政区
 FNG_JAP_national_populist_DEF: "The Special Administrative Region of Manchuria"
 FNG_JAP_ADJ: "Manchurian"
 #### China
-CHI_JAP_Shogunate: "Kanchu-Reinan Bakufukanrei-tochiku" #关中岭南幕府管領統治区
-CHI_JAP_Shogunate_DEF: "The Shogunal Commissariat of Guanzhong-Lingnan"
-CHI_JAP_Viceroyalty: "Chuka Kokkabenmukan-ku" #中华国家弁務官区
-CHI_JAP_Viceroyalty_DEF: "The Military Commissariat of China" #中华国家弁務官区
-CHI_JAP_national_populist: "Chugoku Seiji Gyōsei Hyōgi-kai" #中国政治行政評議会
-CHI_JAP_national_populist_DEF: "The Political Administrative Council of China"
-CHI_JAP_valkist: "Sina Jōdo Ōhogo-ryo" #支那大浄土护法领
-CHI_JAP_valkist_DEF: "The Grand Purified Protectorate of China"
+KMT_JAP_Shogunate: "Kanchu-Reinan Bakufukanrei-tochiku" #关中岭南幕府管領統治区
+KMT_JAP_Shogunate_DEF: "The Shogunal Commissariat of Guanzhong-Lingnan"
+KMT_JAP_Viceroyalty: "Chuka Kokkabenmukan-ku" #中华国家弁務官区
+KMT_JAP_Viceroyalty_DEF: "The Military Commissariat of China" #中华国家弁務官区
+KMT_JAP_national_populist: "Chugoku Seiji Gyōsei Hyōgi-kai" #中国政治行政評議会
+KMT_JAP_national_populist_DEF: "The Political Administrative Council of China"
+KMT_JAP_valkist: "Sina Jōdo Ōhogo-ryo" #支那大浄土护法领
+KMT_JAP_valkist_DEF: "The Grand Purified Protectorate of China"
 #### Sichuan
 SCH_JAP_Shogunate: "Senkyo Bakufukanrei-tochiku" #川峡幕府管領統治区
 SCH_JAP_Shogunate_DEF: "The Shogunal Commissariat of Chuanxia"

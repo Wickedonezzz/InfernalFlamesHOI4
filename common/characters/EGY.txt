@@ -1,4 +1,44 @@
 characters = {
+	EGY_Fuad_I = {
+		name = "Fuad I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Fuad_I.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = social_liberal_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = market_liberal_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = prussian_constitutionalism_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = national_populist_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = valkist_subtype
+			traits = { }
+		}
+	}
 	EGY_Farouk_I = {
 		name = "Farouk I"
 		portraits = {
@@ -23,7 +63,7 @@ characters = {
 			traits = { }
 		}
 		country_leader = {
-			ideology = colonial_govt_subtype
+			ideology = prussian_constitutionalism_subtype
 			traits = { }
 		}
 		country_leader = {
@@ -48,6 +88,42 @@ characters = {
 		}
 		country_leader = {
 			ideology = valkist_subtype
+			traits = { }
+		}
+	}
+	EGY_Shuhdi_Atiya = {
+		name = "Shudi Atiyah"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Shuhdi_Atiya.png"
+			}
+		}
+		country_leader = {
+			ideology = vanguardist_subtype
+			traits = { }
+		}
+	}
+	EGY_Salama_Moussa = {
+		name = "Salama Mosa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Salama_Moussa.png"
+			}
+		}
+		country_leader = {
+			ideology = collectivist_subtype
+			traits = { }
+		}
+	}
+	EGY_Ahmed_Hussien = {
+		name = "Ahmed Hussien"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Ahmed_Hussien.png"
+			}
+		}
+		country_leader = {
+			ideology = libertarian_socialist_subtype
 			traits = { }
 		}
 	}
@@ -139,6 +215,7 @@ characters = {
 				small = "gfx/interface/ministers/EGY/EGY_Mohammed_Naguib.png"
 			}
 			army = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Mohammed_Naguib.png"
 				small = "gfx/interface/ministers/EGY/EGY_Mohammed_Naguib.png"
 			}
 		}
@@ -163,11 +240,41 @@ characters = {
 		}
 		advisor = {
 			cost = 150
+			slot = security_minister
+			available = { 
+				hidden_trigger = { has_country_flag = EGY_Mohammed_Naguib_sec_sde_hired }
+			}
+			idea_token = EGY_Mohammed_Naguib_sec_sde
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = EGY_Mohammed_Naguib_sec_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = EGY_Mohammed_Naguib_sec_sde_hired }
+			}
+			traits = {
+				authoritarian_democrat
+				sec_compassionate_gentleman
+			}
+		}
+		advisor = {
+			cost = 150
 			slot = army_chief
 			idea_token = EGY_Mohammed_Naguib_carm_sli
 			traits = {
 				carm_guns_and_butter_doctrine
 			}
+		}
+		corps_commander = {
+			traits = {
+				inflexible_strategist
+				career_officer
+			}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
 		}
 	}
 	EGY_Fouad_Serageddin = {
@@ -208,19 +315,38 @@ characters = {
 			cost = 150
 			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = EGY_Makram_Ebeid_hog_mli_hired }
+				hidden_trigger = { has_country_flag = EGY_Makram_Ebeid_hog_sli_hired }
 			}
-			idea_token = EGY_Makram_Ebeid_hog_mli
+			idea_token = EGY_Makram_Ebeid_hog_sli
 			can_be_fired = no
 			on_add = {
-				ROOT = { set_country_flag = EGY_Makram_Ebeid_hog_mli_hired }
+				ROOT = { set_country_flag = EGY_Makram_Ebeid_hog_sli_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = EGY_Makram_Ebeid_hog_mli_hired }
+				ROOT = { clr_country_flag = EGY_Makram_Ebeid_hog_sli_hired }
 			}
 			traits = {
-				market_liberal
+				social_liberal
 				hog_silent_workhorse
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			available = { 
+				hidden_trigger = { has_country_flag = EGY_Makram_Ebeid_eco_sli_hired }
+			}
+			idea_token = EGY_Makram_Ebeid_eco_sli
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = EGY_Makram_Ebeid_eco_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = EGY_Makram_Ebeid_eco_sli_hired }
+			}
+			traits = {
+				social_liberal
+				eco_reformer
 			}
 		}
 	}
@@ -262,18 +388,18 @@ characters = {
 			cost = 150
 			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = EGY_Mostafa_El_Nahas_hog_mli_hired }
+				hidden_trigger = { has_country_flag = EGY_Mostafa_El_Nahas_hog_sli_hired }
 			}
-			idea_token = EGY_Mostafa_El_Nahas_hog_mli
+			idea_token = EGY_Mostafa_El_Nahas_hog_sli
 			can_be_fired = no
 			on_add = {
-				ROOT = { set_country_flag = EGY_Mostafa_El_Nahas_hog_mli_hired }
+				ROOT = { set_country_flag = EGY_Mostafa_El_Nahas_hog_sli_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = EGY_Mostafa_El_Nahas_hog_mli_hired }
+				ROOT = { clr_country_flag = EGY_Mostafa_El_Nahas_hog_sli_hired }
 			}
 			traits = {
-				market_liberal
+				social_liberal
 				hog_naive_optimist
 			}
 		}
@@ -333,7 +459,7 @@ characters = {
 		}
 	}
 	EGY_Aly_Maher = {
-		name = "Aly Maher"
+		name = EGY_Aly_Maher
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ministers/EGY/EGY_Aly_Maher.png"
@@ -343,18 +469,18 @@ characters = {
 			cost = 150
 			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = EGY_Aly_Maher_hog_sco_hired }
+				hidden_trigger = { has_country_flag = EGY_Aly_Maher_hog_ade_hired }
 			}
-			idea_token = EGY_Aly_Maher_hog_sco
+			idea_token = EGY_Aly_Maher_hog_ade
 			can_be_fired = no
 			on_add = {
-				ROOT = { set_country_flag = EGY_Aly_Maher_hog_sco_hired }
+				ROOT = { set_country_flag = EGY_Aly_Maher_hog_ade_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = EGY_Aly_Maher_hog_sco_hired }
+				ROOT = { clr_country_flag = EGY_Aly_Maher_hog_ade_hired }
 			}
 			traits = {
-				social_conservative
+				authoritarian_democrat
 				hog_philosopher_general
 			}
 		}
@@ -517,6 +643,7 @@ characters = {
 		name = "Aziz Ezzat"
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Aziz_Ezzat.png"
 				small = "gfx/interface/ministers/EGY/EGY_Aziz_Ezzat.png"
 			}
 		}
@@ -538,6 +665,37 @@ characters = {
 				paternal_autocrat
 				hog_old_general
 			}
+		}
+		advisor = {
+			cost = 150
+			slot = foreign_minister
+			available = { 
+				hidden_trigger = { has_country_flag = EGY_Aziz_Ezzat_for_pau_hired }
+			}
+			idea_token = EGY_Aziz_Ezzat_for_pau
+			can_be_fired = no
+			on_add = {
+				ROOT = { set_country_flag = EGY_Aziz_Ezzat_for_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = EGY_Aziz_Ezzat_for_pau_hired }
+			}
+			traits = {
+				paternal_autocrat
+				for_apologetic_clerk
+			}
+		}
+		field_marshal = {
+			traits = {
+				defensive_doctrine
+				trait_cautious
+				career_officer
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
 		}
 	}
 	EGY_Sherif_Sabri = {
@@ -668,7 +826,7 @@ characters = {
 		}
 	}
 	EGY_Hassan_Sabry = {
-		name = "Hassan Sabry"
+		name = "Hassan Sabry Pasha"
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ministers/EGY/EGY_Hassan_Sabry.png"
@@ -1130,6 +1288,7 @@ characters = {
 		name = "Hussein Refki"
 		portraits = {
 			army = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Hussein_Refki.png"
 				small = "gfx/interface/ministers/EGY/EGY_Hussein_Refki.png"
 			}
 		}
@@ -1141,11 +1300,24 @@ characters = {
 				cos_school_of_psychology
 			}
 		}
+		field_marshal = {
+			traits = {
+				defensive_doctrine
+				trait_cautious
+				career_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
 	}
 	EGY_Mohamed_Haidar = {
 		name = "Mohamed Haidar"
 		portraits = {
 			army = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Mohamed_Haidar.png"
 				small = "gfx/interface/ministers/EGY/EGY_Mohamed_Haidar.png"
 			}
 		}
@@ -1165,11 +1337,23 @@ characters = {
 				carm_commando_doctrine
 			}
 		}
+		corps_commander = {
+			traits = {
+				inflexible_strategist
+				career_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
 	}
 	EGY_Ahmed_Abdel_Aziz = {
 		name = "Ahmed Abdel Aziz"
 		portraits = {
 			army = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Ahmed_Aziz.png"
 				small = "gfx/interface/ministers/EGY/EGY_Ahmed_Abdel_Aziz.png"
 			}
 		}
@@ -1181,11 +1365,23 @@ characters = {
 				carm_armoured_spearhead_doctrine
 			}
 		}
+		corps_commander = {
+			traits = {
+				inflexible_strategist
+				career_officer
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
 	}
 	EGY_Suleiman_Ezzat = {
 		name = "Suleiman Ezzat"
 		portraits = {
 			navy = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Suleiman_Ezzat.png"
 				small = "gfx/interface/ministers/EGY/EGY_Suleiman_Ezzat.png"
 			}
 		}
@@ -1197,11 +1393,24 @@ characters = {
 				cnav_indirect_approach_doctrine
 			}
 		}
+		navy_leader = {
+			traits = {
+				superior_tactician
+				aviation_enthusiast
+				navy_career_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
 	}
 	EGY_Mahmoud_Hamza = {
 		name = "Mahmoud Hamza"
 		portraits = {
 			navy = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Mahmoud_Hamza.png"
 				small = "gfx/interface/ministers/EGY/EGY_Mahmoud_Hamza.png"
 			}
 		}
@@ -1212,6 +1421,18 @@ characters = {
 			traits = {
 				cnav_power_projection_doctrine
 			}
+		}
+		navy_leader = {
+			traits = {
+				superior_tactician
+				aviation_enthusiast
+				navy_career_officer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 4
 		}
 	}
 	EGY_Mohammed_Sidqi = {

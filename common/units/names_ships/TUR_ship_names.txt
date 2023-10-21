@@ -3,7 +3,7 @@
 TUR_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { TUR TRT }
+	for_countries = { TUR }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			

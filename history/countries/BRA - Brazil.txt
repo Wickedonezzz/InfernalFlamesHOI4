@@ -90,7 +90,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_30
 	limited_conscription
 	BRA_political_instability
 	presidential_republic

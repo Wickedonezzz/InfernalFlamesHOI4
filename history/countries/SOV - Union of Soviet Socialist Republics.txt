@@ -131,7 +131,6 @@ set_popularities = {
 create_faction = 3rd_international
 add_to_faction = SOV
 add_ideas = {
-	party_pop_0_90
 	limited_exports
 	SOV_lacking_industrialization
 	SOV_political_divide

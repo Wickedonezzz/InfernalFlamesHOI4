@@ -358,6 +358,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_polycorp"
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = polymer_corporation
+			custom_effect_tooltip = tooltip_white_line
 			add_resource = {  
  				type = rubber  
  				amount = 8 
@@ -2538,7 +2541,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_king_crackdown_in_quebec
-		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		icon = GFX_goal_CAN_suppress_quebec
 		prerequisite = { focus = CAN_king_compulsory_service }
 		x = 17
 		y = 9
@@ -2593,7 +2596,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_political_assilimation
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_CAN_quebec_flames
 		prerequisite = { focus = CAN_tory_tariffs focus = CAN_tory_nrma focus = CAN_king_loyal_military focus = CAN_king_crackdown_in_quebec }
 		mutually_exclusive = { focus = CAN_draft_bill_of_rights }
 		mutually_exclusive = { focus = CAN_war_measure_act }
@@ -2640,7 +2643,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_tory_lib_reintegration
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_goal_generic_parliament
 		prerequisite = { focus = CAN_tory_victory }
 		x = 21
 		y = 8
@@ -2659,7 +2662,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_tory_prepare_for_war
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_phone_crisis
 		prerequisite = { focus = CAN_tory_victory }
 		x = 23
 		y = 8
@@ -2669,7 +2672,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_tory_prepare_for_war"
-			increase_mobilisation = yes
+			increase_mobilization = yes
 			add_war_support = 0.05
 		}
 	}
@@ -2699,7 +2702,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_tory_tariffs
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_goal_AST_new_markets
 		prerequisite = { focus = CAN_tory_lib_reintegration }
 		x = 21
 		y = 9
@@ -2715,7 +2718,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_war_measure_act
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_war_in_the_plate
 		prerequisite = { focus = CAN_tory_tariffs focus = CAN_tory_nrma focus = CAN_liberal_federal_home_plan focus = CAN_laissez_faire }
 		mutually_exclusive = { focus = CAN_political_assilimation }
 		mutually_exclusive = { focus = CAN_draft_bill_of_rights }
@@ -2772,7 +2775,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_liberal_tariffs
-		icon = GFX_goal_generic_trade
+		icon = GFX_goal_treaty_fails
 		prerequisite = { focus = CAN_liberal_victory }
 		x = 25
 		y = 8
@@ -2904,7 +2907,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_ccf_universal_pensions
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_tourism
 		prerequisite = { focus = CAN_ccf_victory }
 		x = 29
 		y = 8
@@ -2936,7 +2939,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_ccf_unemployment_insurance
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_generic_enforce_labor_regulation
 		prerequisite = { focus = CAN_ccf_victory }
 		x = 31
 		y = 8
@@ -2952,7 +2955,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_ccf_socialized_planning
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_generic_workers_democracy
 		prerequisite = { focus = CAN_ccf_unemployment_insurance }
 		x = 31
 		y = 9
@@ -3063,7 +3066,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_reform_elections
-		icon = GFX_focus_generic_self_management
+		icon = GFX_goal_generic_elections
 		prerequisite = { focus = CAN_socred_immanent_sovereignty focus = CAN_socred_a_b_theorem focus = CAN_ccf_universal_healthcare focus = CAN_ccf_socialized_planning }
 		mutually_exclusive = { focus = CAN_political_assilimation }
 		mutually_exclusive = { focus = CAN_war_measure_act }

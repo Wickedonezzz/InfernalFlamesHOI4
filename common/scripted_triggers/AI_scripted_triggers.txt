@@ -25,7 +25,7 @@ willing_to_send_volunteers_to_FROM = {
 	}
 	NOT = {
 		AND = {
-			tag = SRI
+			tag = UPC
 			OR = {
 				country_exists = ITA
 				country_exists = SIC
@@ -92,7 +92,7 @@ second_weltkrieg_volunteers = {
 			has_opinion = {
 				target = FRA
 				value > 0
-			}			
+			}
 		}
 		AND = {
 			FROM = { tag = GER }
@@ -154,14 +154,14 @@ indian_civil_war_volunteers = {
 
 #### OTHER AI TRIGGERS ####
 country_has_armor_focus = {
-  OR = {
-    tag = FRA
-    tag = GER
-    tag = ENG
-    tag = USA
-    tag = SOV
-    tag = RUS
-  }
+	OR = {
+		tag = FRA
+		tag = GER
+		tag = ENG
+		tag = USA
+		tag = SOV
+		tag = RUS
+	}
 }
 
 has_reached_maximum_divisions = {
@@ -224,9 +224,6 @@ country_has_armor_focus = {
 		tag = GER
 		tag = FRA
 		tag = USA
-		tag = CSA
-		tag = TEX
-		tag = PSA
 		tag = SOV
 	}
 }
@@ -269,7 +266,7 @@ ai_is_naval_invader_trigger = {
 		tag = JAP
 		tag = GBR
 		tag = ENG
-		tag = SRD
+		tag = SAR
 	}
 }
 

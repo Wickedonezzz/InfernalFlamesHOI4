@@ -258,7 +258,7 @@ stt_add_puppet = {
 				save_global_event_target_as = to_be_overlord
 			}
 		}
-		ROOT = { country_event = fr.political.250 }
+		ROOT = { country_event = fx.political.250 }
 	}
 }
 stt_remove_puppet = {
@@ -267,7 +267,7 @@ stt_remove_puppet = {
 			has_event_target = marked_country
 			event_target:marked_country = { is_subject = yes }
 		}
-		ROOT = { country_event = fr.political.251 }
+		ROOT = { country_event = fx.political.251 }
 	}
 }
 stt_add_faction = {
@@ -298,7 +298,7 @@ stt_add_faction = {
 				save_global_event_target_as = to_be_faction_leader
 			}
 		}
-		ROOT = { country_event = fr.political.252 }
+		ROOT = { country_event = fx.political.252 }
 	}
 	else_if = {
 		limit = {
@@ -309,7 +309,7 @@ stt_add_faction = {
 				is_subject = no
 			}
 		}
-		ROOT = { country_event = fr.political.253 }
+		ROOT = { country_event = fx.political.253 }
 	}
 }
 stt_remove_faction = {
@@ -321,7 +321,7 @@ stt_remove_faction = {
 				is_in_faction = yes
 			}
 		}
-		ROOT = { country_event = fr.political.254 }
+		ROOT = { country_event = fx.political.254 }
 	}
 }
 stt_add_peace = {
@@ -339,14 +339,14 @@ stt_add_peace = {
 				save_global_event_target_as = peace_target
 			}
 		}
-		ROOT = { country_event = fr.political.255 }
+		ROOT = { country_event = fx.political.255 }
 	}
 	else_if = {
 		limit = {
 			has_event_target = marked_country
 			event_target:marked_country = { has_war = yes }
 		}
-		ROOT = { country_event = fr.political.256 }
+		ROOT = { country_event = fx.political.256 }
 	}
 }
 stt_add_war = {
@@ -362,7 +362,7 @@ stt_add_war = {
 		THIS = {
 			owner = { save_global_event_target_as = war_target }
 		}
-		ROOT = { country_event = fr.political.257 }
+		ROOT = { country_event = fx.political.257 }
 	}
 }
 stt_add_resource_rights = {
@@ -389,21 +389,21 @@ stt_add_resource_rights = {
 	hidden_effect = {
 		for_each_scope_loop = {
 			array = ROOT.marked_states
-			OWNER = { 
-				FROM.OWNER = { 
-					PREV = { 
-						give_resource_rights = { 
-							receiver = PREV 
-							state = PREV.PREV.PREV 
-						} 
-					} 
-				} 
+			OWNER = {
+				FROM.OWNER = {
+					PREV = {
+						give_resource_rights = {
+							receiver = PREV
+							state = PREV.PREV.PREV
+						}
+					}
+				}
 			}
 			# im a fucking genius for figuring i can use arrays
 			add_to_array = {
 				array = FROM.resource_rights_giver_states
 			}
-		}	
+		}
 		add_to_variable = { ROOT.update_stt_gui = 1 }
 	}
 }
@@ -462,7 +462,7 @@ stt_upgrade_state_category = {
 			has_state_category = small_island
 		}
 		set_state_category = rural
-		set_state_flag = stt_before_island # to convert to needed 
+		set_state_flag = stt_before_island # to convert to needed
 	}
 	else_if = {
 		limit = {
@@ -497,7 +497,7 @@ stt_downgrade_state_category = {
 	if = {
 		limit = { has_state_category = megalopolis }
 		set_state_category = metropolis
-	}	
+	}
 	else_if = {
 		limit = { has_state_category = metropolis }
 		set_state_category = large_city
@@ -542,7 +542,7 @@ stt_downgrade_state_category = {
 			has_state_category = small_island
 		}
 		set_state_category = tiny_island
-	}	
+	}
 }
 stt_upgrade_state_category_effect = {
 	effect_tooltip = {

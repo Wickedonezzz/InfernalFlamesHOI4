@@ -17,16 +17,16 @@ focus_tree = {
 		x = 17
 		y = 0
 		offset = {
-      x = -11
-      y = 0
-      trigger = {
+			x = -11
+			y = 0
+			trigger = {
 				NOT = {
 					has_country_flag = AFG_KALAKANI_TREE
 					has_country_flag = AFG_MONARCHIST_TREE
 					has_country_flag = AFG_REVOLUTION_TREE
 				}
 			}
-    }
+		}
 		available = {
 			has_country_flag = AFG_develop_nation_flag
 		}

@@ -62,7 +62,6 @@ country_event = { id = finland.3 days = 254 } # London crash event
 
 
 add_ideas = {
-	party_pop_0_40
 	limited_conscription
 	parliamentary_republic
 	

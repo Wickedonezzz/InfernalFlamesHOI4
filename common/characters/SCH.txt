@@ -10,5 +10,13 @@ characters = {
 			ideology = soccon_warlordism_subtype
 			traits = { }
 		}
+		field_marshal = {
+			traits = { career_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}
 }

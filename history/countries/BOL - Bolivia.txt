@@ -66,7 +66,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_10
 	civilian_economy
 	export_focus
 	volunteer_only

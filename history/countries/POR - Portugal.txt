@@ -82,11 +82,6 @@ set_popularities = {
 	valkist = 0
 }
 
-add_ideas = {
-	party_pop_0_50
-	#
-}
-
 set_convoys = 100
 set_stability = 0.29
 set_war_support = 0.88

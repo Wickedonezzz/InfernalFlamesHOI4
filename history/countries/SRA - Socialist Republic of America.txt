@@ -25,7 +25,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_20
 	limited_conscription
 
 	SRA_our_right_to_survive

@@ -1381,13 +1381,13 @@ FRA_offense_boost: "Promotion of Offensive Tactics"
 FRA_offense_boost_desc: ""
 ###
 FRA_defense_boost: "Promotion of Defensive Tactics"
-FRA_defense_boost_desc: ""
+FRA_offense_boost_desc: ""
 ###
 FRA_defense_boost2: "Promotion of Defensive Tactics"
-FRA_defense_boost2_desc: ""
+FRA_offense_boost2_desc: ""
 ###
 FRA_defense_boost3: "Promotion of Defensive Tactics"
-FRA_defense_boost3_desc: ""
+FRA_offense_boost3_desc: ""
 ###
 FRA_new_officers: "Newly Trained Officers"
 FRA_new_officers_desc: "The military colleges across France have raised a new generation of officers, who are ready to face this new age of warfare."

@@ -287,6 +287,9 @@ JAP_naval_role_ratios_historical_late = {
 		original_tag = JAP
 		num_of_naval_factories > 60
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = role_ratio

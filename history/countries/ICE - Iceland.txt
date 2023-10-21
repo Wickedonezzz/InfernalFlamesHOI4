@@ -49,7 +49,6 @@ set_popularities = {
 
 add_ideas = {
 	disarmed_nation
-	party_pop_0_90
 	parliamentary_republic
 }
 

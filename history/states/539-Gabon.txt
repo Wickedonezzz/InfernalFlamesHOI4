@@ -8,7 +8,8 @@ state={
 
 	history={
 		add_core_of = GAB
-		owner = NFQ
+		owner = NFA
+		add_core_of = NFA
 		add_core_of = NFQ
 		victory_points = {
 			8193 2 

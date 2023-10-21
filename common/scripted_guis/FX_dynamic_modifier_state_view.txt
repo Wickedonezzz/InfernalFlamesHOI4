@@ -17,8 +17,5 @@ scripted_gui = {
 				modifier = NFA_four_cantons_senegalese
 			}
 		}
-
-
-
 	}
 }

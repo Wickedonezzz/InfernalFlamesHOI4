@@ -117,7 +117,6 @@ if = {
 give_military_access = SPR
 
 add_ideas = {
-	party_pop_0_80
 	SPR_SPM_SPF_SPA_spanish_civil_war_idea
 	SPA_disunity_among_left_idea
 	SPA_opposing_militia_groups_idea

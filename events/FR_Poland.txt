@@ -1836,7 +1836,14 @@ country_event = { #take land focus poland galicia
 	option = { #invade!
 		ai_chance = { factor = 60 }
 		name = poland.53.a
-		declare_war_on = { target = SLO type = annex_everything }
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = SLO
+				}
+			}
+			declare_war_on = { target = SLO type = annex_everything }
+		}
 	}
 	option = { #ok, no means no
 		ai_chance = { factor = 40 }
@@ -2825,7 +2832,7 @@ country_event = {
 		}
 		add_political_power = 50
 		add_stability = 0.05
-		add_ideas = POL_Ignacy_Moscicki_hog_pau
+		activate_advisor = POL_Ignacy_Moscicki_hog_pau
 	}
 		option = {
 		ai_chance = {
@@ -2834,7 +2841,7 @@ country_event = {
 		name = poland.94.b
 		add_political_power = 50
 		army_experience = 25
-		add_ideas = POL_Edward_Rydz_Smigly_hog_pau
+		activate_advisor = POL_Edward_Rydz_Smigly_hog_pau
 	}
 }
 

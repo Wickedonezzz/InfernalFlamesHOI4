@@ -10,7 +10,7 @@ state={
 			air_base = 2
 
 		}
-		add_core_of = KMT
+		add_claim_by = KMT
 		add_claim_by = FNG
 		add_core_of	= ZHI
 	}

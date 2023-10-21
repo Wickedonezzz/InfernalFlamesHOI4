@@ -1,0 +1,51 @@
+characters = {
+	HES_Rudolf_Rocker = {
+		name = "Rudolf Rocker"
+		portraits = {
+		  civilian = {
+			large = "gfx/leaders/HES/Portrait_HES_Rudolf_Rocker_I.png"
+		  }
+		}
+		country_leader = {
+		  ideology = vanguardist_subtype
+		}
+		country_leader = {
+		  ideology = collectivist_subtype
+		}
+		country_leader = {
+		  ideology = libertarian_socialist_subtype
+		}
+	}
+	HES_Georg_Donatus = {
+		name = "George Donatus"
+		portraits = {
+		  civilian = {
+			large = "gfx/leaders/HES/Portrait_HES_Georg_Donatus.png"
+		  }
+		}
+		country_leader = {
+		  ideology = social_democrat_subtype
+		}
+		country_leader = {
+		  ideology = social_liberal_subtype
+		}
+		country_leader = {
+		  ideology = market_liberal_subtype
+		}
+		country_leader = {
+		  ideology = social_conservative_subtype
+		}
+		country_leader = {
+		  ideology = authoritarian_democrat_subtype
+		}
+		country_leader = {
+		  ideology = paternal_autocrat_subtype
+		}
+		country_leader = {
+		  ideology = national_populist_subtype
+		}
+		country_leader = {
+		  ideology = valkist_subtype
+		}
+	}
+}

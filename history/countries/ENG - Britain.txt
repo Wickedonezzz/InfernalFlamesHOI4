@@ -115,6 +115,7 @@ set_technology = {
 	gw_artillery = 1
 	electronic_mechanical_engineering = 1
 	mechanical_computing = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	radio = 1
 	fuel_silos = 1
@@ -124,7 +125,6 @@ set_technology = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	undisturbed_isolation
 	ENG_col_unrest
 	ENG_irb
@@ -185,6 +185,11 @@ if = {
 		freedom_level = 0.5
 	}
 	set_autonomy = {
+		target = RHO
+		autonomy_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
 		target = NGA
 		autonomy_state = autonomy_colony
 	}
@@ -199,6 +204,7 @@ if = {
 		puppet = IRQ
 		puppet = BEA
 		puppet = KEN
+		puppet = RHO
 		puppet = NGA
 	}
 }
@@ -263,6 +269,7 @@ add_to_faction = ISR
 add_to_faction = IRQ
 add_to_faction = BEA
 add_to_faction = KEN
+add_to_faction = RHO
 add_to_faction = NGA
 add_to_faction = MLT
 

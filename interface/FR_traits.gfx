@@ -20,4 +20,16 @@ spriteTypes = {
 		name = "GFX_trait_police_officer"
 		texturefile = "gfx/interface/traits/trait_police_officer.dds"
 	}
+	spriteType = {
+		name = "GFX_trait_GRE_venizelist_loyalist"
+		texturefile = "gfx/interface/traits/trait_gre_venezelist_loyalist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_GRE_eee_loyalist"
+		texturefile = "gfx/interface/traits/trait_gre_fascist_sympathizer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_GRE_kke_loyalist"
+		texturefile = "gfx/interface/traits/trait_gre_marxist_acolyte.dds"
+	}
 }

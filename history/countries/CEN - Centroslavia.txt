@@ -52,7 +52,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	parliamentary_republic
 }
 

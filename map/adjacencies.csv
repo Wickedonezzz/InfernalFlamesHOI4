@@ -33,7 +33,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12444;10222;sea;5515;-1;-1;-1;-1;;Sulawesi-Pulau Buton
 1293;4269;sea;8751;-1;-1;-1;-1;;Surigao-Leyte
 1311;4228;sea;2856;-1;-1;-1;-1;;San Bernardino Strait
-4288;1221;sea;2876;-1;-1;-1;-1;;Mindoro-Batangas
+4288;1221;sea;2876;-1;-1;-1;-1;BATANGAS_STRAIT;Mindoro-Batangas
 4228;7307;sea;2876;-1;-1;-1;-1;;Ticao Pass
 10302;1261;sea;2876;-1;-1;-1;-1;;Panay-Negros
 10186;12153;sea;8751;-1;-1;-1;-1;;Negros-Cebu
@@ -134,6 +134,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 7452;7678;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;Dardanelles
+7419;10272;sea;2971;-1;-1;-1;-1;MINDORO_STRAIT;Mindoro Strait
+10272;7423;sea;2876;-1;-1;-1;-1;;Tablas Strait
+12118;1224;sea;8751;-1;-1;-1;-1;;San Juanico Strait
 849;9887;sea;7678;-1;-1;-1;-1;;Dardanelles-Strait
 11735;13260;sea;5786;-1;-1;-1;-1;;Istria-Zara	
 13260;11901;sea;5786;-1;-1;-1;-1;;Istria-Zara	

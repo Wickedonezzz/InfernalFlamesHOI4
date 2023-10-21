@@ -215,6 +215,7 @@ USA_template_design_2 = {
 		original_tag = USA
 		date > 1940.1.1				
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -276,6 +277,7 @@ USA_naval_role_ratios_historical = {
 		has_dlc = "Man the Guns"
 		original_tag = USA
 	}
+	abort = { always = no }
 
 	ai_strategy = {
 		type = role_ratio
@@ -367,5 +369,28 @@ USA_filipino_relations = {
 		type = befriend
 		id = "PHI"
 		value = 200
+	}
+}
+
+USA_support_kuomintang = {
+	allowed = { original_tag = USA }
+	enable = {
+		KMT = {
+			exists = yes
+			has_socialist_government = no
+			has_war = yes
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		value = 200
+		type = support
+		id = KMT
+	}
+	ai_strategy = {
+		value = 200
+		type = send_volunteers_desire
+		id = KMT
 	}
 }

@@ -1,7 +1,7 @@
 ###########################
 #   Malta Focus Tree  #
 ###########################
-#Made by Ahmedpasha# i hate you
+#Made by Ahmedpasha#
 ###########################
 focus_tree = {
 	id = Malta
@@ -49,6 +49,7 @@ focus_tree = {
 	
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus MLT_Support_Democrats"
+			add_ideas = MLT_support_democrats_idea
 		}
 	}
 	focus = {
@@ -92,19 +93,25 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
-		
 		ai_will_do = {
 			factor = 30
 		}
-		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus MLT_Close_Italian_Schools"
 			add_ideas = {
 				MLT_Close_Italian_Schools
 			}
+			add_popularity = { 
+				ideology = social_conservative 
+				popularity = 0.05
+			}
+			add_popularity = { 
+				ideology = valkist 
+				popularity = 0.05
+			}
 		}
-
 	}
+
 	focus = {
 		id = MLT_Tolerate_Maltese
 		icon = GFX_goal_KTG_Educate_natives
@@ -115,13 +122,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 2
-		
-		
-		
 		ai_will_do = {
 			factor = 30
 		}
-		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus MLT_Tolerate_Maltese"
 			add_political_power = 100
@@ -130,8 +133,8 @@ focus_tree = {
 				popularity = 0.1
 			}
 		}
-
 	}
+
 	focus = {
 		id = MLT_Impose_English
 		icon = GFX_goal_ENG_restoration
@@ -145,17 +148,16 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
-		
 		ai_will_do = {
 			factor = 30
 		}
-		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus MLT_Impose_English"
 			add_political_power = 100
+			add_stability = -0.05
 		}
-
 	}
+	
 	focus = {
 		id = MLT_Fight_Nationalism
 		icon = GFX_goal_national_populism
@@ -209,7 +211,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MLT_More_British_Settlers
-		icon = GFX_goal_Focus_ENG_Colonial_Immigration
+		icon = GFX_goal_ENG_Colonial_Immigration
 		cost = 8
 		relative_position_id = MLT_to_serve_the_Empire
 		prerequisite = {
@@ -402,9 +404,10 @@ focus_tree = {
 			}
 		}	
 	}
+
 	focus = {
 		id = MLT_begin_navy_reforms
-		icon = GFX_goal_navy_decision
+		icon = GFX_goal_generic_sea_focused_navy2
 		x = 0
 		y = 1
 		cost = 5
@@ -421,10 +424,10 @@ focus_tree = {
 			}
 			navy_experience = 30
 			add_doctrine_cost_reduction = {
-	name = naval_doc_bonus
-	cost_reduction = 0.5
-	uses = 1
-	category = naval_doctrine
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
 			}
 		}	
 	}
@@ -449,7 +452,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MLT_modernize_dockyard
-		icon = GFX_goal_generic_shipyard
+		icon = GFX_focus_generic_refit_civilian_ships
 		x = 3
 		y = 2
 		cost = 5
@@ -479,7 +482,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MLT_bigass_guns
-		icon = GFX_goal_national_artillery
+		icon = GFX_goal_generic_air_defense2
 		x = 4
 		y = 1
 		cost = 5
@@ -561,8 +564,10 @@ focus_tree = {
 		relative_position_id = MLT_Strengthern_british_command
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus XSM_three_province_plan"
-			remove_ideas = MLT_garrison2
-			add_ideas = MLT_garrisonoffence
+			swap_ideas = {
+				remove_idea = MLT_garrison2
+				add_idea = MLT_garrisonoffence
+			}
 			if = {
 				limit = { NOT = { has_tech = paratroopers } }
 				set_technology = { paratroopers = 1 }
@@ -576,16 +581,16 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-						name = infantry_weapons_bonus
-						bonus = 1
-						uses = 1
-						category = para_tech
-					}
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = para_tech
+			}
 		}	
 	}
 	focus = {
 		id = MLT_start_air_corp
-		icon = GFX_goal_USA_Army_Air_Service
+		icon = GFX_goal_generic_air_fighter2_new
 		x = 0
 		y = 3
 		cost = 5
@@ -729,7 +734,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MLT_increase_supply_runs
-		icon = GFX_goal_ATH_logistics
+		icon = GFX_goal_ENG_supply_runs
 		x = 3
 		y = 2
 		prerequisite = {
@@ -740,10 +745,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus XSM_three_province_plan"
 			swap_ideas = {
-			remove_idea = MLT_moar_fish
-			add_idea = MLT_actual_supply
+				remove_idea = MLT_moar_fish
+				add_idea = MLT_actual_supply
 			}
-
 		}	
 	}
 	focus = {
@@ -787,7 +791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MLT_deverisy_harbor
-		icon = GFX_goal_HKG_Victoria_Port
+		icon = GFX_goal_ENG_Victoria_Port
 		x = 1
 		y = 2
 		prerequisite = {

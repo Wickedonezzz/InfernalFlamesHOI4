@@ -261,10 +261,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = {
-				defensive_doctrine
-				offensive_doctrine
-			}
+			traits = { old_guard trait_cautious inflexible_strategist defensive_doctrine war_hero }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 1

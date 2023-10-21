@@ -235,6 +235,8 @@ recruit_character = GER_Wilhelm_III
 recruit_character = GER_Ritter_von_Leeb
 recruit_character = GER_Hermann_Goring
 recruit_character = GER_Adam_Dressler
+recruit_character = GER_Wickedonezz
+recruit_character = GER_Wilhelm_Keitel
 recruit_character = GER_Gerd_von_Rundstedt
 recruit_character = GER_Gunther_von_Kluge
 recruit_character = GER_Walter_Model
@@ -263,6 +265,8 @@ recruit_character = GER_Ferdinand_Schoerner
 recruit_character = GER_Rudiger_von_der_Goltz
 recruit_character = GER_Willy_Rohr
 recruit_character = GER_Gottlob_Berger
+recruit_character = GER_Hermann_Fegelein
+recruit_character = GER_Ernst_Junger
 recruit_character = GER_Helmuth_Weidling
 recruit_character = GER_Josias_zu_Waldeck_Pyrmont
 recruit_character = GER_Wilhelm_Bittrich
@@ -366,7 +370,6 @@ recruit_character = GER_Valkist_Council
 recruit_character = GER_Fedor_von_Bock
 recruit_character = GER_Alfred_Saalwachter
 recruit_character = GER_Werner_von_Blomberg
-recruit_character = GER_Wilhelm_Keitel
 recruit_character = GER_Eduard_Dietl
 
 ### Starting Ministers

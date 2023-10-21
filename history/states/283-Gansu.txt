@@ -10,6 +10,7 @@ state={
 		owner = XSM
 		add_core_of = XSM
 		add_claim_by = KMT
+		add_claim_by = ZHI
 		add_claim_by = FNG
 		buildings = {
 			infrastructure = 3

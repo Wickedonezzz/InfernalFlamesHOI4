@@ -322,10 +322,6 @@ spriteTypes = {
 	}
 ######India####
 	spriteType = {
-		name = "GFX_idea_toilets"     #India smh can't even have working toilets. 
-		texturefile = "gfx/interface/ideas/ideas/toilets.png"
-	}
-	spriteType = {
 	name = "GFX_idea_colonial_economy"
 	texturefile = "gfx/interface/ideas/RAJ/colonial_economy.png"
 	}
@@ -380,215 +376,171 @@ spriteTypes = {
 	}
 	#### Japan ####
 	spriteType = {
-		name = "JAP_LCC"
-		texturefile = "gfx/interface/ideas/ideas/JAP_LCC.png"
-	}
-	spriteType = {
-		name = "JAP_Shinjidai"
+		name = "GFX_idea_JAP_Shinjidai"
 		texturefile = "gfx/interface/ideas/ideas/JAP_Shinjidai.png"
 	}
 	spriteType = {
-		name = "JAP_Kyujidai"
+		name = "GFX_idea_JAP_Kyujidai"
 		texturefile = "gfx/interface/ideas/ideas/JAP_Kyujidai.png"
 	}
 	spriteType = {
-		name = "Nagasaki_Protocal"
-		texturefile = "gfx/interface/ideas/ideas/JAP_Nagasaki_Protocal.png"
+		name = "GFX_idea_JAP_Nagasaki_Protocol"
+		texturefile = "gfx/interface/ideas/ideas/JAP_Nagasaki_Protocol.png"
 	}
 	spriteType = {
-		name = "Man_of_HisMen"
+		name = "GFX_idea_Man_of_HisMen"
 		texturefile = "gfx/interface/ideas/ideas/JAP_Man_of_his_men.png"
 	}
 	spriteType = {
-		name = "strong_asian_demo"
-		texturefile = "gfx/interface/ideas/ideas/democratic_rate_up.png"
-	}
-	spriteType = {
-		name = "JAP_deconfuciused_reform"
+		name = "GFX_idea_JAP_deconfuciused_reform"
 		texturefile = "gfx/interface/ideas/ideas/deconfuciused_reform.png"
 	}
 	spriteType = {
-		name = "JAP_seigaku_reform"
-		texturefile = "gfx/interface/ideas/ideas/western_curriculum.png"
-	}
-	spriteType = {
-		name = "universal_right"
-		texturefile = "gfx/interface/ideas/ideas/universal_right.png"
-	}
-	spriteType = {
-		name = "JAP_golden_age"
+		name = "GFX_idea_JAP_golden_age"
 		texturefile = "gfx/interface/ideas/ideas/JAP_golden_age.png"
 	}
 	spriteType = {
-		name = "JAP_separation_of_command"
+		name = "GFX_idea_JAP_separation_of_command"
 		texturefile = "gfx/interface/ideas/ideas/JAP_separation_of_command.png"
 	}
 	spriteType = {
-		name = "JAP_Shuumatsuin"
+		name = "GFX_idea_JAP_Shuumatsuin"
 		texturefile = "gfx/interface/ideas/ideas/JAP_shuumatsuin.png"
 	}
 	spriteType = {
-		name = "JAP_Shogun_Loyalty"
+		name = "GFX_idea_JAP_Shogun_Loyalty"
 		texturefile = "gfx/interface/ideas/ideas/JAP_shogun_loyalty.png"
 	}
 	spriteType = {
-		name = "JAP_nostalgic_period"
+		name = "GFX_idea_JAP_nostalgic_period"
 		texturefile = "gfx/interface/ideas/ideas/JAP_nostalgic_period.png"
 	}
 	spriteType = {
-		name = "heavy_industry"
+		name = "GFX_idea_heavy_industry"
 		texturefile = "gfx/interface/ideas/ideas/heavy_industry.png"
 	}
 	spriteType = {
-		name = "fall_from_grace"
+		name = "GFX_idea_fall_from_grace"
 		texturefile = "gfx/interface/ideas/ideas/fall_from_grace.png"
 	}
 	spriteType = {
-		name = "JAP_weakened_tokugawa_authority"
+		name = "GFX_idea_JAP_weakened_tokugawa_authority"
 		texturefile = "gfx/interface/ideas/ideas/JAP_Tokugawa_wek_auth.png"
 	}
 	spriteType = {
-		name = "JAP_restored_tokugawa_authority"
+		name = "GFX_idea_JAP_restored_tokugawa_authority"
 		texturefile = "gfx/interface/ideas/ideas/JAP_Tokugawa_restored_auth.png"
 	}
 	spriteType = {
-		name = "JAP_full_tokugawa_authority"
+		name = "GFX_idea_JAP_full_tokugawa_authority"
 		texturefile = "gfx/interface/ideas/ideas/JAP_Tokugawa_full_auth.png"
 	}
 	spriteType = {
-		name = "JAP_tanegashima_league"
+		name = "GFX_idea_JAP_tanegashima_league"
 		texturefile = "gfx/interface/ideas/ideas/JAP_tanegashima_league.png"
 	}
 	spriteType = {
-		name = "JAP_izumo_league"
+		name = "GFX_idea_JAP_izumo_league"
 		texturefile = "gfx/interface/ideas/ideas/JAP_izumo_league.png"
 	}
 	spriteType = {
-		name = "naval_advancement"
+		name = "GFX_idea_naval_advancement"
 		texturefile = "gfx/interface/ideas/ideas/generic_naval_advancement.png"
 	}
 	spriteType = {
-		name = "JAP_kuniyuki_regime"
+		name = "GFX_idea_JAP_kuniyuki_regime"
 		texturefile = "gfx/interface/ideas/ideas/JAP_kuniyuki_regime.png"
 	}
 	spriteType = {
-		name = "army_cooperation"
+		name = "GFX_idea_army_cooperation"
 		texturefile = "gfx/interface/ideas/ideas/army_cooperation.png"
 	}
 	spriteType = {
-		name = "socialist_manpower"
+		name = "GFX_idea_socialist_manpower"
 		texturefile = "gfx/interface/ideas/ideas/generic_socialist_manpower.png"
 	}
 	spriteType = {
-		name = "JAP_administration_office"
+		name = "GFX_idea_JAP_administration_office"
 		texturefile = "gfx/interface/ideas/ideas/JAP_administration_office.png"
 	}
 	spriteType = {
-		name = "generic_call_of_war"
+		name = "GFX_idea_generic_call_of_war"
 		texturefile = "gfx/interface/ideas/ideas/call_of_war.png"
 	}
 	spriteType = {
-		name = "land_reform_zer"
+		name = "GFX_idea_land_reform_zer"
 		texturefile = "gfx/interface/ideas/ideas/land_reform_zer.png"
 	}
 	spriteType = {
-		name = "land_reform_one"
+		name = "GFX_idea_land_reform_one"
 		texturefile = "gfx/interface/ideas/ideas/land_reform_one.png"
 	}
 	spriteType = {
-		name = "land_reform_two"
+		name = "GFX_idea_land_reform_two"
 		texturefile = "gfx/interface/ideas/ideas/land_reform_two.png"
 	}
 	spriteType = {
-		name = "land_reform_thr"
+		name = "GFX_idea_land_reform_thr"
 		texturefile = "gfx/interface/ideas/ideas/land_reform_thr.png"
 	}
 	spriteType = {
-		name = "JAP_shikkenate_labour_act"
-		texturefile = "gfx/interface/ideas/ideas/JAP_shikkenate_labor_act.png"
-	}
-	spriteType = {
-		name = "JAP_shikkenate_labour_one"
-		texturefile = "gfx/interface/ideas/ideas/JAP_shikkenate_labor_act_one.png"
-	}
-	spriteType = {
-		name = "maximum_production_activated"
-		texturefile = "gfx/interface/ideas/ideas/max_product_activate.png"
-	}
-	spriteType = {
-		name = "regulated_economy"
+		name = "GFX_idea_regulated_economy"
 		texturefile = "gfx/interface/ideas/ideas/regulated_economy.png"
 	}
 	spriteType = {
-		name = "JAP_fallen_zaibatsu"
+		name = "GFX_idea_JAP_fallen_zaibatsu"
 		texturefile = "gfx/interface/ideas/ideas/JAP_fallen_zaibatsu.png"
 	}
 	spriteType = {
-		name = "JAP_controlling_zaibatsu"
+		name = "GFX_idea_JAP_controlling_zaibatsu"
 		texturefile = "gfx/interface/ideas/ideas/JAP_controlling_zaibatsu.png"
 	}
 	spriteType = {
-		name = "trade_manipulator"
-		texturefile = "gfx/interface/ideas/ideas/trade_manipulator.png"
-	}
-	spriteType = {
-		name = "survival_of_fittest"
-		texturefile = "gfx/interface/ideas/ideas/survival_of_fittest.png"
-	}
-	spriteType = {
-		name = "military_textbook"
+		name = "GFX_idea_military_textbook"
 		texturefile = "gfx/interface/ideas/ideas/military_textbook.png"
 	}
 	spriteType = {
-		name = "generic_education_budget"
+		name = "GFX_idea_generic_education_budget"
 		texturefile = "gfx/interface/ideas/ideas/generic_education_budget.png"
 	}
 	spriteType = {
-		name = "JAP_raise_the_whiteblack_japan_flag"
+		name = "GFX_idea_JAP_raise_the_whiteblack_japan_flag"
 		texturefile = "gfx/interface/ideas/ideas/JAP_raise_flag.png"
 	}
 	spriteType = {
-		name = "train_funding"
+		name = "GFX_idea_train_funding"
 		texturefile = "gfx/interface/ideas/ideas/train_funding.png"
 	}
 	spriteType = {
-		name = "GFX_MEC"
+		name = "GFX_idea_MEC"
 		texturefile = "gfx/interface/ideas/ideas/mec.png"
 	}
 	spriteType = {
-		name = "GFX_mantetsu"
+		name = "GFX_idea_GFX_mantetsu"
 		texturefile = "gfx/interface/ideas/ideas/JAP_mantetsu.png"
 	}
 	spriteType = {
-		name = "infrastructures_project"
+		name = "GFX_idea_infrastructures_project"
 		texturefile = "gfx/interface/ideas/ideas/infrastructures_project.png"
 	}
 	spriteType = {
-		name = "JAP_holy_worker"
-		texturefile = "gfx/interface/ideas/ideas/JAP_holy_worker.png"
-	}
-	spriteType = {
-		name = "JAP_holy_radio"
-		texturefile = "gfx/interface/ideas/ideas/JAP_holy_radio.png"
-	}
-	spriteType = {
-		name = "JAP_true_faith_ministry"
+		name = "GFX_idea_JAP_true_faith_ministry"
 		texturefile = "gfx/interface/ideas/ideas/JAP_true_faith_ministry.png"
 	}
 	spriteType = {
-		name = "JAP_bureau_ftip"
+		name = "GFX_idea_JAP_bureau_ftip"
 		texturefile = "gfx/interface/ideas/ideas/JAP_faith_inquisition.png"
 	}
 	spriteType = {
-		name = "JAP_tuned_blessed_sounds"
+		name = "GFX_idea_JAP_tuned_blessed_sounds"
 		texturefile = "gfx/interface/ideas/ideas/JAP_tuned_blessed_sound.png"
 	}
 	spriteType = {
-		name = "JAP_spirit_of_bodhisatva"
+		name = "GFX_idea_JAP_spirit_of_bodhisatva"
 		texturefile = "gfx/interface/ideas/ideas/JAP_bodhisattva_spirit.png"
 	}
 	spriteType = {
-		name = "GFX_revolts"
+		name = "GFX_idea_GFX_revolts"
 		texturefile = "gfx/interface/ideas/ideas/revolt.png"
 	}
 }

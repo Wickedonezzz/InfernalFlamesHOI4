@@ -1,5 +1,7 @@
 ﻿capital = 183
 
+recruit_character = CYP_Richmond_Palmer
+
 #oob = ""
 
 # Starting tech
@@ -30,6 +32,5 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_10
 	presidential_republic
 }

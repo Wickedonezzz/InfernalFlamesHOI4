@@ -45,7 +45,6 @@ if = {
 set_cosmetic_tag = KAZ_SSR
 
 add_ideas = {
-	party_pop_0_60
 	workers_republic
 }
 

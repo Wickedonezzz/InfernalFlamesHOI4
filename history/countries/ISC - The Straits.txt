@@ -46,7 +46,6 @@ for_each_scope_loop = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	disarmed_nation
 	civilian_economy
 	parliamentary_republic

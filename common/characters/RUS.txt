@@ -3588,20 +3588,20 @@ characters = {
 			}
 		}
 	}
-  RUS_Kyril_I = {
-    name = "Kyril I"
-    portraits = {
-      civilian = {
-        large = "gfx/leaders/RUS/Portrait_RUS_Kyril_I.png"
-      }
-    }
-  }
-  RUS_Vladimir_III = {
-    name = "Vladimir III"
-    portraits = {
-      civilian = {
-        large = "gfx/leaders/RUS/Portrait_RUS_Vladimir_III.png"
-      }
-    }
-  }
+	RUS_Kyril_Romanov = {
+		name = "Kyril Romanov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Kyril_Romanov.png"
+			}
+		}
+	}
+	RUS_Vladimir_Romanov = {
+		name = "Vladimir III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Vladimir_Romanov.png"
+			}
+		}
+	}
 }

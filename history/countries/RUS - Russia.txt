@@ -1,9 +1,8 @@
-capital = 563
+capital = 408
 
 oob = "RUS"
 
 add_ideas = {
-	party_pop_0_30
 	extensive_conscription
   RUS_russian_emigres
   RUS_allied_eastern_comission
@@ -25,6 +24,7 @@ set_technology = {
 	tech_engineers = 1
 	marines = 1
 	gw_artillery = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	#### AIR ####
 	
@@ -290,7 +290,8 @@ recruit_character = RUS_Boris_Makaroff
 recruit_character = RUS_Boris_A_Vilkitsky
 recruit_character = RUS_Igor_I_Sikorsky
 recruit_character = RUS_Vyacheslav_Tkachov
-recruit_character = RUS_Vladimir_III
+recruit_character = RUS_Kyril_Romanov
+recruit_character = RUS_Vladimir_Romanov
 
 ### Starting Ministers
 activate_advisor = RUS_Vasily_Kanin_hog_ade

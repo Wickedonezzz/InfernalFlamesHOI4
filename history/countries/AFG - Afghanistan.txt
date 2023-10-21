@@ -27,7 +27,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	constitutional_monarchy
 	
 	AFG_tribal_influences_afghanistan_idea

@@ -9,7 +9,10 @@ state={
 	history={
 		owner = SIK
 		add_core_of = SIK
-		add_core_of = MON
+		add_claim_by = MON
+		add_claim_by = KMT
+		add_claim_by = ZHI
+		add_claim_by = FNG
 		buildings = {
 			infrastructure = 2
 

@@ -45,21 +45,17 @@ set_politics = {
 }
 
 set_popularities = {
-vanguardist = 10
-collectivist = 17
-libertarian_socialist = 70
-social_democrat = 2
-social_liberal = 1
-market_liberal = 0
-social_conservative = 0
-authoritarian_democrat = 0
-paternal_autocrat = 0
-national_populist = 0
-valkist = 0
-}
-
-add_ideas = {
-	party_pop_0_70
+	vanguardist = 10
+	collectivist = 17
+	libertarian_socialist = 70
+	social_democrat = 2
+	social_liberal = 1
+	market_liberal = 0
+	social_conservative = 0
+	authoritarian_democrat = 0
+	paternal_autocrat = 0
+	national_populist = 0
+	valkist = 0
 }
 
 recruit_character = INC_Shripad_Amrit_Dange

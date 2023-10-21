@@ -9,6 +9,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -57,6 +58,5 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_00
   parliamentary_republic
 }

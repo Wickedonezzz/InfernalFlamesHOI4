@@ -30,7 +30,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_Two_Words_In_Rhodesian
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -44,7 +44,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_They_Walked_In_The_Sand
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_A_Weathery_Storm
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -3
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_Lost_In_The_Wind
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -1
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_Bear_Forth_The_Fruit
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -103,7 +103,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_The_English_Sun_Is_Setting
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Africas_Breadbasket_Once_More
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -4
@@ -131,7 +131,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Two_Countries_One_Cause
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -145,7 +145,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_What_A_Time_It_Was
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = 0
@@ -160,7 +160,7 @@ focus_tree = {
 	###Right side politics
 		  focus = {
 		id = RHO_A_Party_of_Mediation
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = 2
@@ -174,7 +174,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Africa_For_Africans
-		icon = GFX_goal_MAF_Graveyard
+		icon = GFX_goal_Ice_Cold_WIP
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = 2
@@ -184,6 +184,176 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RHO_Africa_For_Africans"
+		}
+	}
+##Operations
+		focus = {
+		id = RHO_Flight_of_827
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+	    x = 15
+		y = 0
+        available = { has_country_flag = unfinishedtreehithereyoureadingthis }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Flight_of_827"
+		}
+	}
+		  focus = {
+		id = RHO_Combined_Arms_Operations
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 0
+		y = 1
+		prerequisite = { focus = RHO_Flight_of_827 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Combined_Arms_Operations"
+		}
+	}
+#Left
+		  focus = {
+		id = RHO_Operation_Ignition
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = -2
+		y = 2
+		prerequisite = { focus = RHO_Combined_Arms_Operations }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Ignition"
+		}
+	}
+		  focus = {
+		id = RHO_Operation_Overload
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = -3
+		y = 3
+		prerequisite = { focus = RHO_Operation_Ignition }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Overload"
+		}
+	}
+		  focus = {
+		id = RHO_Operation_Hectic
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = -1
+		y = 3
+		prerequisite = { focus = RHO_Operation_Ignition }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Hectic"
+		}
+	}
+		  focus = {
+		id = RHO_Operation_Lancaster
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = -2
+		y = 4
+		prerequisite = { focus = RHO_Operation_Ignition }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Lancaster"
+		}
+	}
+		  focus = {
+		id = RHO_Operation_Dingo
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 2
+		y = 2
+		prerequisite = { focus = RHO_Combined_Arms_Operations }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Dingo"
+		}
+	}
+		  focus = {
+		id = RHO_Operation_Vanity
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 1
+		y = 3
+		prerequisite = { focus = RHO_Operation_Dingo }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Vanity"
+		}
+	}
+		  focus = {
+		id = RHO_Operation_Nickel
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 3
+		y = 3
+		prerequisite = { focus = RHO_Operation_Dingo }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Nickel"
+		}
+	}
+		  focus = {
+		id = RHO_Operation_Vengance
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 2
+		y = 4
+		prerequisite = { focus = RHO_Operation_Dingo }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Vengance"
+		}
+	}
+##Bottom stuff
+		  focus = {
+		id = RHO_Cry_For_Help
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 0
+		y = 5
+		prerequisite = { focus = RHO_Operation_Dingo focus = RHO_Operation_Ignition }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Cry_For_Help"
+		}
+	}
+		  focus = {
+		id = RHO_Run_To_America
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = -2
+		y = 6
+		prerequisite = { focus = RHO_Cry_For_Help }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Run_To_America"
+		}
+	}
+		  focus = {
+		id = RHO_We_Stand_Alone
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 0
+		y = 6
+		prerequisite = { focus = RHO_Cry_For_Help }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_We_Stand_Alone"
+		}
+	}
+		  focus = {
+		id = RHO_Demand_Southern_Intervention
+		icon = GFX_goal_Ice_Cold_WIP
+		cost = 0
+		relative_position_id = RHO_Flight_of_827
+	    x = 2
+		y = 6
+		prerequisite = { focus = RHO_Cry_For_Help }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RHO_Demand_Southern_Intervention"
 		}
 	}
 	}

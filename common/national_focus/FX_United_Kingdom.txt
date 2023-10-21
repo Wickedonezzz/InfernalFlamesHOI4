@@ -634,7 +634,7 @@ focus_tree = {
 	
 	focus = {	
 		id = ENG_faith_nation
-		icon = GFX_focus_eng_imperial_federation
+		icon = GFX_focus_eng_god_save_the_king
 		available = {
       has_capitulated = no
       has_government = paternal_autocrat
@@ -3036,13 +3036,14 @@ focus_tree = {
     }
     x = 11
     y = 10
-    cost = 10
+    cost = 6
     ai_will_do = {
       factor = 1
     }
     available_if_capitulated = no  
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus ENG_statute_westminster"
+      custom_effect_tooltip = unlock_focuses
     }
   }
 
@@ -3085,7 +3086,7 @@ focus_tree = {
 
   focus = {
     id = ENG_ris
-    icon = GFX_focus_generic_diplomatic_treaty
+    icon = GFX_focus_generic_monarchy_1
     available = {
       has_capitulated = no
     }
@@ -3112,7 +3113,7 @@ focus_tree = {
 
   focus = {
     id = ENG_sup_loyal
-    icon = GFX_goal_generic_improve_relations 
+    icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold 
     available = {
       has_capitulated = no
     }
@@ -3141,7 +3142,7 @@ focus_tree = {
 
   focus = {
     id = ENG_rej_imp_conf
-    icon = GFX_goal_generic_alliance
+    icon = GFX_focus_generic_monarchy_2
     available = {
       has_capitulated = no
     }
@@ -3180,16 +3181,24 @@ focus_tree = {
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus ENG_imp_parl"
       country_event = { id = emp.21 }
-      CAN = { country_event = { id = emp.21 } }
-      AST = { country_event = { id = emp.21 } }
-      NZL = { country_event = { id = emp.21 } }
-      SAF = { country_event = { id = emp.21 } }
+      custom_effect_tooltip = tooltip_white_line
+      every_subject_country = {
+        limit = {
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+          }
+        }
+        country_event = { id = emp.21 }
+      }
     }
   }
 
   focus = {
     id = ENG_dom_integ
-    icon = GFX_goal_generic_forceful_treaty
+    icon = GFX_goal_tfv_strengthen_commonwealth_ties
     available = {
       has_capitulated = no
     }
@@ -3256,7 +3265,7 @@ focus_tree = {
 
   focus = {
     id = ENG_diss_parl
-    icon = GFX_goal_generic_dangerous_deal
+    icon = GFX_focus_eng_imperial_federation
     available = {
       custom_trigger_tooltip = {
         tooltip = ENG_prep_finished
@@ -3300,21 +3309,21 @@ focus_tree = {
         idea = ENG_imp_instability
         days = 365
       }
-      CAN = { country_event = { id = emp.50 } }
-      AST = { country_event = { id = emp.50 } }
-      NZL = { country_event = { id = emp.50 } }
-      if = {
+      custom_effect_tooltip = tooltip_white_line
+      every_other_country = {
         limit = {
-          SAF = { is_puppet_of = ENG }
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+            tag = NFL
+          }
+          is_subject_of = ROOT
         }
-        SAF = { country_event = { id = emp.50 } }
+        country_event = { id = emp.50 }
       }
-      if = {
-        limit = {
-          NFL = { is_puppet_of = ENG }
-        }
-        NFL = { country_event = { id = emp.50 } }
-      }
+      custom_effect_tooltip = tooltip_white_line
       every_country = {
         limit = {
           is_subject_of = ROOT
@@ -3335,7 +3344,8 @@ focus_tree = {
           }
         }
       }
-      custom_effect_tooltip = new_decision_unlocked
+      custom_effect_tooltip = tooltip_white_line
+      unlock_decision_tooltip = ENG_impfed_annex
     } 
   }
 
@@ -3343,7 +3353,7 @@ focus_tree = {
 
   focus = {
     id = ENG_status_quo
-    icon = GFX_goal_generic_dangerous_deal
+    icon = GFX_focus_SWI_establish_pro_helvetia
     available = {
       custom_trigger_tooltip = {
         tooltip = ENG_has_sq
@@ -3369,7 +3379,7 @@ focus_tree = {
 
   focus = {
     id = ENG_bonds
-    icon = GFX_goal_generic_improve_relations
+    icon = GFX_focus_generic_league_of_nations
     available = {
       has_capitulated = no
     }
@@ -3384,31 +3394,18 @@ focus_tree = {
     available_if_capitulated = no  
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus ENG_bonds"
-      CAN = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_bonds
+      every_subject_country = {
+        limit = {
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+            tag = KEN
+            tag = NGA
+            tag = RAJ
+          }
         }
-      }
-      AST = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_bonds
-        }
-      }
-      SAF = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_bonds
-        }
-      }
-      NZL = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_bonds
-        }
-      }
-      RAJ = {
         add_opinion_modifier = {
           target = ENG
           modifier = IMP_bonds
@@ -3419,7 +3416,7 @@ focus_tree = {
 
   focus = {
     id = ENG_promote_trade
-    icon = GFX_goal_generic_trade
+    icon = GFX_goal_AST_new_markets
     available = {
       has_capitulated = no
     }
@@ -3435,12 +3432,25 @@ focus_tree = {
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus ENG_promote_trade"
       add_political_power = 150
-      add_equipment_to_stockpile = { type = convoy_1 amount = -250 producer = ENG }
-      CAN = { add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = ENG } }
-      AST = { add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = ENG } }
-      NZL = { add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = ENG } }
-      SAF = { add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = ENG } }
-      RAJ = { add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = ENG } }
+      custom_effect_tooltip = tooltip_white_line
+      every_subject_country = {
+        limit = {
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+            tag = KEN
+            tag = NGA
+            tag = RAJ
+          }
+        }
+        send_equipment = { 
+          target = PREV 
+          type = convoy_1
+          amount = 50
+        }
+      }
     }
   }
 
@@ -3462,11 +3472,21 @@ focus_tree = {
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus ENG_mil_coord"
       add_ideas = IMP_coordination
-      CAN = { add_ideas = IMP_coordination }
-      AST = { add_ideas = IMP_coordination }
-      NZL = { add_ideas = IMP_coordination }
-      SAF = { add_ideas = IMP_coordination }
-      RAJ = { add_ideas = IMP_coordination }
+      custom_effect_tooltip = tooltip_white_line
+      every_subject_country = {
+        limit = {
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+            tag = KEN
+            tag = NGA
+            tag = RAJ
+          }
+        }
+        add_ideas = IMP_coordination
+      }
     }
   }
 
@@ -3488,17 +3508,27 @@ focus_tree = {
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus ENG_imp_science"
       add_ideas = IMP_science
-      CAN = { add_ideas = IMP_science }
-      AST = { add_ideas = IMP_science }
-      NZL = { add_ideas = IMP_science }
-      SAF = { add_ideas = IMP_science }
-      RAJ = { add_ideas = IMP_science }
+      custom_effect_tooltip = tooltip_white_line
+      every_subject_country = {
+        limit = {
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+            tag = KEN
+            tag = NGA
+            tag = RAJ
+          }
+        }
+        add_ideas = IMP_science
+      }
     }
   }
 
   focus = {
     id = ENG_empire_unity
-    icon = GFX_goal_generic_national_unity
+    icon = GFX_goal_ENG_empire_of_unity
     available = {
       has_capitulated = no
     }
@@ -3517,45 +3547,43 @@ focus_tree = {
       hidden_effect = {
         remove_ideas = IMP_coordination
         remove_ideas = IMP_science
-        CAN = {
-          remove_ideas = IMP_coordination
-          remove_ideas = IMP_science 
-          remove_ideas = ENG_imp_sq2
-        }
-        AST = {
-          remove_ideas = IMP_coordination
-          remove_ideas = IMP_science 
-          remove_ideas = ENG_imp_sq2
-        }
-        NZL = {
-          remove_ideas = IMP_coordination
-          remove_ideas = IMP_science 
-          remove_ideas = ENG_imp_sq2
-        }
-        SAF = {
-          remove_ideas = IMP_coordination
-          remove_ideas = IMP_science 
-          remove_ideas = ENG_imp_sq2
-        }
-        RAJ = {
-          remove_ideas = IMP_coordination
-          remove_ideas = IMP_science 
-          remove_ideas = ENG_imp_sq2
-        }
-        NFL = {
+        every_subject_country = {
+          limit = {
+            OR = {
+              tag = CAN
+              tag = AST
+              tag = NZL
+              tag = SAF
+              tag = KEN
+              tag = NGA
+              tag = RAJ
+              tag = NFL
+            }
+          }
           remove_ideas = IMP_coordination
           remove_ideas = IMP_science 
           remove_ideas = ENG_imp_sq2
         }
       }
-      add_ideas = IMP_unity
-      CAN = { add_ideas = IMP_unity }
-      AST = { add_ideas = IMP_unity }
-      NZL = { add_ideas = IMP_unity }
-      SAF = { add_ideas = IMP_unity }
-      RAJ = { add_ideas = IMP_unity }
-      NFL = { add_ideas = IMP_unity }
-      remove_ideas = ENG_imp_sq1
+      swap_ideas = {
+        remove_idea = ENG_imp_sq1
+        add_idea = IMP_unity
+      }
+
+      every_subject_country = {
+        limit = {
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+            tag = KEN
+            tag = NGA
+            tag = RAJ
+          }
+        }
+        add_ideas = IMP_unity
+      }
     }
   }
 
@@ -3583,31 +3611,16 @@ focus_tree = {
     available_if_capitulated = no  
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus ENG_decentralise"
-      CAN = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_autonomy
+      every_subject_country = {
+        limit = {
+          OR = {
+            tag = CAN
+            tag = AST
+            tag = NZL
+            tag = SAF
+            tag = RAJ
+          }
         }
-      }
-      AST = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_autonomy
-        }
-      }
-      SAF = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_autonomy
-        }
-      }
-      NZL = {
-        add_opinion_modifier = {
-          target = ENG
-          modifier = IMP_autonomy
-        }
-      }
-      RAJ = {
         add_opinion_modifier = {
           target = ENG
           modifier = IMP_autonomy
@@ -3875,7 +3888,7 @@ focus_tree = {
 
   focus = {
     id = ENG_massingberd
-    icon = GFX_goal_generic_army_tanks
+    icon = GFX_goal_ENG_tanks
     available = {
       has_capitulated = no
     }
@@ -5754,7 +5767,7 @@ focus_tree = {
 
   focus = {
     id = ENG_med_def
-    icon = GFX_goal_generic_position_armies
+    icon = GFX_focus_generic_mediterranean_sea_focus
     available = {
       OR = {
         owns_state = 118
@@ -6347,7 +6360,7 @@ focus_tree = {
 
   focus = {
     id = ENG_east_flank
-    icon = GFX_goal_generic_position_armies
+    icon = GFX_goal_jap_right
     available = {
       has_capitulated = no
     }

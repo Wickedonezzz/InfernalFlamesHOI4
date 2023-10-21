@@ -1,4 +1,4 @@
-
+capital = 230 #Yerevan, Armenia
 
 oob = "ARM"
 
@@ -39,6 +39,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
@@ -79,7 +80,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	extensive_conscription
 	parliamentary_republic
 }
@@ -128,3 +128,30 @@ if = {
 
 recruit_character = ARM_Drastamat_Kanayan
 recruit_character = ARM_Hovhannes_Kajaznuni
+
+every_state = {
+	limit = {
+		OR = {
+			state = 781 
+			state = 350 
+			state = 352 
+			state = 902 
+			state = 903 
+			state = 231 
+			state = 868 
+			state = 905 
+			state = 859 
+			state = 233 
+			state = 860 
+			state = 857 
+			state = 232 
+			state = 229 
+			state = 903 
+			state = 904 
+			state = 1051 
+			state = 419 
+			state = 420 
+		}
+	}
+	add_to_array = { ARM.transcaucasia_states = THIS }
+}

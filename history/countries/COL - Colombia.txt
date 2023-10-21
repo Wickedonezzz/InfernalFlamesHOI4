@@ -88,7 +88,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_20
 	COL_reparations_to_peru
 	COL_patria_revancha
 	presidential_republic

@@ -14,15 +14,16 @@ country_event = { # Intro
 	picture = GFX_report_event_generic_riot
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-	 	tag = MEX
-	 	MEX = { exists = yes }
-	 }
+	# trigger = {
+		# 	tag = MEX
+		# 	MEX = { exists = yes }
+		# }
 
 	# mean_time_to_happen = {
-	# 	days = 1
-	# }
+		# 	days = 1
+		# }
 
 	option = {
 		name = mex.1.a
@@ -164,12 +165,12 @@ country_event = {
 			popularity = 0.25
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			MEX_Plutarco_Elias_Calles_hog_pau
-			MEX_Pazcual_Diaz_Barreto_for_pau
-			MEX_Miguel_Palomar_y_Vizcarra_eco_pau
-			MEX_Jose_Reyes_Vega_sec_pau
-		}
+
+		activate_advisor = MEX_Plutarco_Elias_Calles_hog_pau
+		activate_advisor = MEX_Pazcual_Diaz_Barreto_for_pau
+		activate_advisor = MEX_Miguel_Palomar_y_Vizcarra_eco_pau
+		activate_advisor = MEX_Jose_Reyes_Vega_sec_pau
+
 		set_global_flag = MEX_ROYALISTS
 		ai_chance = { factor = 40 }
 	}
@@ -195,12 +196,12 @@ country_event = {
 			popularity = 0.25
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			MEX_Jose_Antonio_Urquiza_hog_val
-			MEX_Jose_de_Leon_Toral_for_val
-			MEX_Pedro_Zuloaga_Irigoiti_eco_npo
-			MEX_Victoriano_Ramirez_sec_val
-		}
+
+		activate_advisor = MEX_Jose_Antonio_Urquiza_hog_val
+		activate_advisor = MEX_Jose_de_Leon_Toral_for_val
+		activate_advisor = MEX_Pedro_Zuloaga_Irigoiti_eco_npo
+		activate_advisor = MEX_Victoriano_Ramirez_sec_val
+
 		set_global_flag = MEX_VALKISTS
 		ai_chance = { factor = 30 }
 	}
@@ -218,8 +219,8 @@ country_event = {
 	option = {
 		name = mex.6.a
 		hidden_effect = {
-			add_popularity = { 
-				ideology = paternal_autocrat 
+			add_popularity = {
+				ideology = paternal_autocrat
 				popularity = 0.15
 			}
 		}
@@ -243,130 +244,130 @@ country_event = {
 country_event = {
 	id = mex.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.10"}
-    title = mex.10.t
-    desc = mex.10.d
-    picture = report_event_generic_conference
-    is_triggered_only = yes
+	title = mex.10.t
+	desc = mex.10.d
+	picture = report_event_generic_conference
+	is_triggered_only = yes
 
-    option = {
-        name = mex.10.a
-        create_faction = mex_pan_america
-        "PAN" = { country_event = { id = mex.11 days = 1 }}
-        COS = { country_event = { id = mex.11 days = 1 }}
-        NIC = { country_event = { id = mex.11 days = 1 }}
-        HON = { country_event = { id = mex.11 days = 1 }}
-        ELS = { country_event = { id = mex.11 days = 1 }}
-        GUA = { country_event = { id = mex.11 days = 1 }}
-    }
+	option = {
+		name = mex.10.a
+		create_faction = mex_pan_america
+		"PAN" = { country_event = { id = mex.11 days = 1 }}
+		COS = { country_event = { id = mex.11 days = 1 }}
+		NIC = { country_event = { id = mex.11 days = 1 }}
+		HON = { country_event = { id = mex.11 days = 1 }}
+		ELS = { country_event = { id = mex.11 days = 1 }}
+		GUA = { country_event = { id = mex.11 days = 1 }}
+	}
 }
 
 country_event = {
 	id = mex.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.11"}
-    title = mex.11.t
-    desc = mex.11.d
-    picture = report_event_generic_conference
+	title = mex.11.t
+	desc = mex.11.d
+	picture = report_event_generic_conference
 
-    is_triggered_only = yes
-    option = {
-        ai_chance = { factor = 30 }
-        name = mex.11.a
-        MEX = { country_event = mex.12 }
-    }
-    option = {
-        name = mex.11.b
-        ai_chance = { factor = 70 }
-        MEX = { country_event = mex.13 }
-        FROM = { add_to_faction = ROOT }
-    }
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 30 }
+		name = mex.11.a
+		MEX = { country_event = mex.12 }
+	}
+	option = {
+		name = mex.11.b
+		ai_chance = { factor = 70 }
+		MEX = { country_event = mex.13 }
+		FROM = { add_to_faction = ROOT }
+	}
 }
 country_event = {
 	id = mex.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.12"}
-    title = mex.12.t
-    desc = mex.12.d
-    picture = report_event_generic_conference
-    is_triggered_only = yes
+	title = mex.12.t
+	desc = mex.12.d
+	picture = report_event_generic_conference
+	is_triggered_only = yes
 
-    option = {
-        name = mex.12.a
-    }
+	option = {
+		name = mex.12.a
+	}
 }
 
 country_event = {
 	id = mex.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.13"}
-    title = mex.13.t
-    desc = mex.13.d
-    picture = report_event_generic_conference
-    is_triggered_only = yes
+	title = mex.13.t
+	desc = mex.13.d
+	picture = report_event_generic_conference
+	is_triggered_only = yes
 
-    option = {
-        ai_chance = { factor = 100 }
-        name = mex.13.a
-        add_political_power = 10
-    }
+	option = {
+		ai_chance = { factor = 100 }
+		name = mex.13.a
+		add_political_power = 10
+	}
 }
 
 country_event = {
 	id = mex.14
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.14"}
-    title = mex.14.t
-    desc = mex.14.d
-    picture = report_event_generic_conference
+	title = mex.14.t
+	desc = mex.14.d
+	picture = report_event_generic_conference
 
-    is_triggered_only = yes
-
-    option = {
-        ai_chance = { factor = 40 }
-        name = mex.14.a
-        add_political_power = 10
-		MEX = { country_event = { id = mex.15 days = 0 } }
-    }
+	is_triggered_only = yes
 
 	option = {
-        ai_chance = { factor = 60 }
-        name = mex.14.b
-        add_political_power = 10
+		ai_chance = { factor = 40 }
+		name = mex.14.a
+		add_political_power = 10
+		MEX = { country_event = { id = mex.15 days = 0 } }
+	}
+
+	option = {
+		ai_chance = { factor = 60 }
+		name = mex.14.b
+		add_political_power = 10
 		USA = { country_event = { id = US.16 days = 0 } }
-    }
+	}
 }
 
 country_event = {
 	id = mex.15
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.15"}
-    title = mex.15.t
-    desc = mex.15.d
-    picture = report_event_generic_conference
+	title = mex.15.t
+	desc = mex.15.d
+	picture = report_event_generic_conference
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        ai_chance = { factor = 20 }
-        name = mex.15.a
-        add_political_power = -10
+	option = {
+		ai_chance = { factor = 20 }
+		name = mex.15.a
+		add_political_power = -10
 		add_ideas = presidential_republic
 		set_politics = {ruling_party = social_democrat elections_allowed = no }
 		add_popularity = { ideology = social_democrat popularity = 0.40 }
-    }
+	}
 
 	option = {
-        ai_chance = { factor = 30 }
-        name = mex.15.b
-        add_political_power = -10
+		ai_chance = { factor = 30 }
+		name = mex.15.b
+		add_political_power = -10
 		add_ideas = presidential_republic
 		set_politics = {ruling_party = social_liberal elections_allowed = no }
 		add_popularity = { ideology = social_liberal popularity = 0.40 }
-    }
+	}
 
 	option = {
-        ai_chance = { factor = 50 }
-        name = mex.15.c
-        add_political_power = 50
+		ai_chance = { factor = 50 }
+		name = mex.15.c
+		add_political_power = 50
 		add_ideas = presidential_republic
 		set_politics = {ruling_party = social_conservative elections_allowed = no }
 		add_popularity = { ideology = social_conservative popularity = 0.35 }
-    }
+	}
 }
 
 country_event = {
@@ -403,61 +404,61 @@ country_event = {
 country_event = {
 	id = mex.17
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.17"}
-    title = mex.17.t
-    desc = mex.17.d
-    picture = report_event_generic_conference
+	title = mex.17.t
+	desc = mex.17.d
+	picture = report_event_generic_conference
 
-    is_triggered_only = yes
-
-    option = {
-        ai_chance = { factor = 33 }
-        name = mex.17.a
-        add_ideas = MEX_the_drive_for_national_autarky
-    }
+	is_triggered_only = yes
 
 	option = {
-        ai_chance = { factor = 34 }
-        name = mex.17.b
-        add_ideas = MEX_the_people_against_synarchism
-    }
+		ai_chance = { factor = 33 }
+		name = mex.17.a
+		add_ideas = MEX_the_drive_for_national_autarky
+	}
 
 	option = {
-        ai_chance = { factor = 33 }
-        name = mex.17.c
-        add_ideas = MEX_synarchism_revoked
-    }
+		ai_chance = { factor = 34 }
+		name = mex.17.b
+		add_ideas = MEX_the_people_against_synarchism
+	}
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = mex.17.c
+		add_ideas = MEX_synarchism_revoked
+	}
 }
 
 country_event = {
 	id = mex.18
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.18"}
-    title = mex.18.t
-    desc = mex.18.d
-    picture = report_event_generic_conference
+	title = mex.18.t
+	desc = mex.18.d
+	picture = report_event_generic_conference
 	fire_only_once = yes
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-        ai_chance = { factor = 73 }
-        name = mex.18.a
-        set_country_flag = MEX_southern_states
+		ai_chance = { factor = 73 }
+		name = mex.18.a
+		set_country_flag = MEX_southern_states
 		complete_national_focus = MEX_california_arizona_new_mexico
-    }
+	}
 
 	option = {
-        ai_chance = { factor = 27 }
-        name = mex.18.b
-        set_country_flag = MEX_crush_united_states
+		ai_chance = { factor = 27 }
+		name = mex.18.b
+		set_country_flag = MEX_crush_united_states
 		complete_national_focus = MEX_the_bronze_sun
-    }
+	}
 }
 
 country_event = {
 	id = mex.19
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.19"}
-    title = mex.19.t
-    desc = mex.19.d
-    picture = report_event_generic_conference
+	title = mex.19.t
+	desc = mex.19.d
+	picture = report_event_generic_conference
 	fire_only_once = yes
 
 	trigger = {
@@ -474,24 +475,24 @@ country_event = {
 	}
 
 	option = {
-        ai_chance = { factor = 70 }
-        name = mex.19.a
+		ai_chance = { factor = 70 }
+		name = mex.19.a
 		country_event = { id = usa.32 hours = 4 }
-    }
+	}
 
 	option = {
-        ai_chance = { factor = 30 }
-        name = mex.19.b
-        add_political_power = 20
-    }
+		ai_chance = { factor = 30 }
+		name = mex.19.b
+		add_political_power = 20
+	}
 }
 
 country_event = {
 	id = mex.22
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.22"}
-    title = mex.22.t
-    desc = mex.22.d
-    picture = report_event_cinco_de_mayo
+	title = mex.22.t
+	desc = mex.22.d
+	picture = report_event_cinco_de_mayo
 	fire_only_once = yes
 
 	trigger = {
@@ -504,21 +505,21 @@ country_event = {
 	}
 
 	option = {
-        name = mex.22.a
+		name = mex.22.a
 		add_political_power = 20
 
 		hidden_effect = {
 			MEX = { country_event = { id = mex.23 months = 12 } }
 		}
-    }
+	}
 }
 
 country_event = {
 	id = mex.23
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.23"}
-    title = mex.23.t
-    desc = mex.23.d
-    picture = report_event_cinco_de_mayo
+	title = mex.23.t
+	desc = mex.23.d
+	picture = report_event_cinco_de_mayo
 
 	is_triggered_only = yes
 	trigger = {
@@ -526,13 +527,13 @@ country_event = {
 	}
 
 	option = {
-        name = mex.23.a
+		name = mex.23.a
 		add_political_power = 20
 
 		hidden_effect = {
 			MEX = { country_event = { id = mex.23 months = 12 } }
 		}
-    }
+	}
 }
 
 country_event = {

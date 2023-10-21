@@ -75,7 +75,6 @@ if = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	ENG_statute_autonomy
 	SAF_Rhodesia_Unrest
 	SAF_Integration_Resist

@@ -10,13 +10,14 @@ country_event = { #Intro
 	desc = pru.1.d
 	picture = GFX_report_event_soviet_soldiers_tank
 
-	 trigger = {
-	 	tag = PRU
-	 }
+	# trigger = {
+		# 	tag = PRU
+		# }
 
 	# mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = pru.1.a
@@ -125,14 +126,14 @@ country_event = { #Further Democratization (new parlamentary elections)#
 			popularity = 0.25
 		}
 		hidden_effect = {
-      add_country_leader_role = {
-        character = PRU_Luis_Miguel_Sanchez_Cerro
-        promote_leader = yes
-        country_leader = {
-          ideology = social_conservative_subtype
-          traits = {}
-        }
-      }
+			add_country_leader_role = {
+				character = PRU_Luis_Miguel_Sanchez_Cerro
+				promote_leader = yes
+				country_leader = {
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 
@@ -142,7 +143,7 @@ country_event = { #Further Democratization (new parlamentary elections)#
 		activate_advisor = PRU_Rafael_Belaunde_Diez_hog_mli
 		activate_advisor = PRU_Javier_Correa_Elias_for_mli
 		activate_advisor = PRU_Romulo_Ferrero_eco_mli
-		activate_advisor = PRU_Manuel_Gallagher_sec_sli	
+		activate_advisor = PRU_Manuel_Gallagher_sec_sli
 
 		set_politics = { ruling_party = social_liberal }
 		add_popularity = {
@@ -151,13 +152,13 @@ country_event = { #Further Democratization (new parlamentary elections)#
 		}
 		hidden_effect = {
 			add_country_leader_role = {
-        character = PRU_Luis_Miguel_Sanchez_Cerro
-        promote_leader = yes
-        country_leader = {
-          ideology = social_liberal_subtype
-          traits = {}
-        }
-      }
+				character = PRU_Luis_Miguel_Sanchez_Cerro
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 
@@ -171,13 +172,13 @@ country_event = { #Further Democratization (new parlamentary elections)#
 		}
 		hidden_effect = {
 			add_country_leader_role = {
-        character = PRU_Luis_Miguel_Sanchez_Cerro
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
+				character = PRU_Luis_Miguel_Sanchez_Cerro
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -210,13 +211,13 @@ country_event = { #suspending democracy
 		hidden_effect = {
 			set_country_flag = PRU_suspdem
 			add_country_leader_role = {
-        character = PRU_Luis_Miguel_Sanchez_Cerro
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
+				character = PRU_Luis_Miguel_Sanchez_Cerro
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -324,7 +325,7 @@ country_event = { #suspending democracy
 		name = pru.7.b
 		add_political_power = 25
 		add_stability = 0.025
-		hidden_effect = { 
+		hidden_effect = {
 			country_event = { days = 40 id = pru.1337 }
 		}
 	}
@@ -391,7 +392,7 @@ country_event = { #pastaza dispute
 		ai_chance = { factor = 70 }
 		add_political_power = -50
 		ECU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.22
 			}
@@ -401,7 +402,7 @@ country_event = { #pastaza dispute
 		name = pru.21.b
 		ai_chance = { factor = 30 }
 		ECU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.23
 			}
@@ -425,7 +426,7 @@ country_event = { #offertobuyforecuador
 			remove_state_core = 490
 		}
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.24
 			}
@@ -437,7 +438,7 @@ country_event = { #offertobuyforecuador
 		name = pru.22.b
 		ai_chance = { factor = 90 }
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.25
 			}
@@ -489,7 +490,7 @@ country_event = { #askecuador
 			remove_state_core = 490
 		}
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.24
 			}
@@ -501,7 +502,7 @@ country_event = { #askecuador
 		name = pru.23.b
 		ai_chance = { factor = 100 }
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.25
 			}
@@ -522,7 +523,7 @@ country_event = { #arica
 		ai_chance = { factor = 70 }
 		add_political_power = -50
 		CHL = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.27
 			}
@@ -532,7 +533,7 @@ country_event = { #arica
 		name = pru.26.b
 		ai_chance = { factor = 30 }
 		CHL = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.28
 			}
@@ -556,7 +557,7 @@ country_event = { #offertobuyforchile
 			remove_state_core = 877
 		}
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.29
 			}
@@ -568,7 +569,7 @@ country_event = { #offertobuyforchile
 		name = pru.27.b
 		ai_chance = { factor = 90 }
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.30
 			}
@@ -620,7 +621,7 @@ country_event = { #askchile
 			remove_state_core = 877
 		}
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.29
 			}
@@ -632,7 +633,7 @@ country_event = { #askchile
 		name = pru.23.b
 		ai_chance = { factor = 100 }
 		PRU = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = pru.30
 			}
@@ -687,8 +688,8 @@ country_event = { # Fate of Bolivia#
 		add_political_power = -100
 		add_stability = -0.05
 		set_country_flag = PRU_annexbol
-		}
 	}
+}
 country_event = {
 	id = pru.41
 	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.41"}
@@ -993,13 +994,13 @@ country_event = { #vangwar
 
 	option = {
 		name = pru.1337.a
-			add_war_support = 0.1
+		add_war_support = 0.1
 		ai_chance = { factor = 50 }
-			start_civil_war = {
-				ideology = vanguardist
-				size = 0.3
-				capital = 492
-			}
+		start_civil_war = {
+			ideology = vanguardist
+			size = 0.3
+			capital = 492
+		}
 
 	}
 	option = {

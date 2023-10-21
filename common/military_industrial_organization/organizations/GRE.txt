@@ -1,0 +1,120 @@
+# Armour
+
+
+GRE_biamax_organisation = {
+	include = generic_tank_organization
+	name = biamax
+	icon = GFX_idea_biamax
+	allowed = { original_tag = GRE }
+}
+
+saracakis_group_organisation = {
+	include = generic_medium_tank_organization
+	name = saracakis_group
+	icon = GFX_idea_saracakis_group
+	allowed = { original_tag = GRE }
+}
+
+petropoulos_organisation = {
+	include = generic_heavy_tank_organization
+	name = petropoulos
+	icon = GFX_idea_petropoulos
+	allowed = { original_tag = GRE }
+}
+
+# Naval
+
+elefsis_shipyard_organisation = {
+	include = generic_battle_line_ship_organization
+	name = elefsis_shipyard
+	icon = GFX_idea_elefsis_shipyard
+	allowed = { original_tag = GRE }
+}
+
+hellenic_shipyard_organisation = {
+	include = generic_task_force_ship_organization
+	name = hellenic_shipyard
+	icon = GFX_idea_hellenic_shipyard
+	allowed = { original_tag = GRE }
+}
+
+basileiades_organisation = {
+	include = generic_raider_ship_organization
+	name = basileiades
+	icon = GFX_idea_basileiades
+	allowed = { original_tag = GRE }
+}
+
+astilleros_onassis_organisation = {
+	include = generic_escort_ship_organization
+	name = astilleros_onassis
+	icon = GFX_idea_astilleros_onassis
+	allowed = { original_tag = GRE }
+}
+
+# Air
+
+gnaf_organisation = {
+	include = generic_light_aircraft_organization
+	name = gnaf
+	icon = GFX_idea_gnaf
+	allowed = { original_tag = GRE }
+}
+
+aekkea_raab_organisation = {
+	include = generic_general_aircraft_organization
+	name = aekkea_raab
+	icon = GFX_idea_aekkea_raab
+	allowed = { original_tag = GRE }
+}
+
+kea_organisation = {
+	include = generic_multi_role_aircraft_organization
+	name = kea
+	icon = GFX_idea_kea
+	allowed = { original_tag = GRE }
+}
+
+# Materiel
+
+greek_powder_organisation = {
+	include = generic_infantry_equipment_organization
+	name = greek_powder
+	icon = GFX_idea_greek_powder
+	allowed = { original_tag = GRE has_completed_focus = GRE_pyrkal }
+}
+
+biamax_weapons_organisation = {
+	include = generic_infantry_equipment_organization
+	name = biamax_weapons
+	icon = GFX_idea_biamax
+	allowed = { original_tag = GRE }
+}
+
+saracakis_group_weapons_organisation = {
+	include = generic_support_equipment_organization
+	name = saracakis_group_weapons
+	icon = GFX_idea_saracakis_group
+	allowed = { original_tag = GRE }
+}
+
+tangalakis_temax_organisation = {
+	include = generic_motorized_mechanized_organization
+	name = tangalakis_temax
+	icon = GFX_idea_tangalakis_temax
+	allowed = { original_tag = GRE }
+}
+
+bouhagier_patras_organisation = {
+	include = generic_artillery_organization
+	name = bouhagier_patras
+	icon = GFX_idea_bouhagier_patras
+	allowed = { original_tag = GRE }
+}
+
+malkotsis_organisation = {
+	include = generic_multi_role_aircraft_organization
+	name = malkotsis
+	icon = GFX_idea_malkotsis
+	allowed = { original_tag = GRE }
+}

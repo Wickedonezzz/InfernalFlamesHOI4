@@ -526,12 +526,12 @@ focus_tree = {
 		relative_position_id = UKR_roll_out_new_rifles
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_expanding_the_special_forces"
-			add_tech_bonus = {
-				name = UKR_expanding_the_special_forces
-				category = cat_special_units
-				bonus = 1.0
-				uses = 1
-			}
+			# add_tech_bonus = {
+			# 	name = UKR_expanding_the_special_forces
+			# 	category = cat_special_units
+			# 	bonus = 1.0
+			# 	uses = 1
+			# }
 		}
 		search_filters = {
 			FOCUS_FILTER_ARMY_BONUS
@@ -3796,7 +3796,7 @@ focus_tree = {
 		prerequisite = { focus = UKR_natiocracy }
 		relative_position_id = UKR_natiocracy
 		completion_reward = {
-			increase_mobilisation = yes
+			increase_mobilization = yes
 			random_owned_controlled_state = {
 				prioritize = { 192 }
 				if = {
@@ -4412,7 +4412,7 @@ focus_tree = {
 		prerequisite = { focus = UKR_rising_tensions }
 		relative_position_id = UKR_rising_tensions
 		completion_reward = {
-			increase_mobilisation = yes
+			increase_mobilization = yes
 		}
 	}
 
@@ -4905,7 +4905,7 @@ focus_tree = {
 	# Support Greece
 	focus = {
 		id = UKR_support_greece
-		icon = GFX_GRE_megali
+		icon = GFX_goal_GRE_megali
 		x = -2
 		y = 3
 		cost = 6

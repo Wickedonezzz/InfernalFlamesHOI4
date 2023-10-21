@@ -9,13 +9,12 @@ state={
 	history={
 		owner = YUN
 		add_core_of = YUN
-		add_core_of = KMT
-		add_core_of = FNG
+		add_claim_by = KMT
+		add_claim_by = FNG
+		add_claim_by = ZHI
 		buildings = {
 			infrastructure = 2
-
 		}
-
 	}
 
 	provinces={

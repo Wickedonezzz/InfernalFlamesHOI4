@@ -74,7 +74,7 @@ PHI_unit_production = {
 		value = 20
 	}
 
-  ai_strategy = {
+	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
 		value = 20
@@ -272,5 +272,28 @@ PHI_build_navy = {
 		type = template_prio
 		id = marines
 		value = 100
+	}
+}
+
+PHI_support_kuomintang = {
+	allowed = { original_tag = KMT }
+	enable = {
+		KMT = {
+			exists = yes
+			has_socialist_government = no
+			has_war = yes
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		value = 200
+		type = support
+		id = KMT
+	}
+	ai_strategy = {
+		value = 200
+		type = send_volunteers_desire
+		id = KMT
 	}
 }

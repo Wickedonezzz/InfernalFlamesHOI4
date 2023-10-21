@@ -9,7 +9,6 @@ add_ideas = {
 }
 
 add_ideas = {
-	party_pop_0_80
 	limited_conscription
 	minority_rule
 	war_economy 

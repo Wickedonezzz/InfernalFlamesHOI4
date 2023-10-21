@@ -317,19 +317,19 @@ GEO_invite_alliance = {
 			factor = 100
 		}
 	}
-	invite_turkey = {
-		visible = { country_exists = TRT }
-		available = { TRT = { is_in_faction = no } }
-		cost = 30
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision invite_turkey"
-			TRT = { country_event = { id = ge.950 } }
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 100
-		}
-	}
+	# invite_turkey = {
+	# 	visible = { country_exists = TRT }
+	# 	available = { TRT = { is_in_faction = no } }
+	# 	cost = 30
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision invite_turkey"
+	# 		TRT = { country_event = { id = ge.950 } }
+	# 	}
+	# 	fire_only_once = yes
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# }
 	invite_mountain_republic = {
 		visible = { 
 			AND = {

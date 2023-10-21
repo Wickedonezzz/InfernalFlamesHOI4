@@ -3,14 +3,15 @@ state={
 	name="STATE_982"
 	manpower = 1342290
 	
-	state_category = pastoral
+	state_category = small_town
 
 	history={
 		owner = SHX
-		add_core_of = XSM
+		add_claim_by = XSM
 		add_core_of = SHX
-		add_core_of = KMT
-		add_core_of = FNG
+		add_claim_by = KMT
+		add_claim_by = ZHI
+		add_claim_by = FNG
 		buildings = {
 		    infrastructure = 2
 			industrial_complex = 1

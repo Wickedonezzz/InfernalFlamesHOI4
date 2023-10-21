@@ -25,6 +25,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	fuel_silos = 1
@@ -294,10 +295,13 @@ recruit_character = ITA_Italo_Gariboldi
 recruit_character = ITA_Venanzio_Gabriotti
 recruit_character = ITA_Fedele_de_Giorgis
 recruit_character = ITA_Enrico_Riccardi
-recruit_character = ITA_Pope_Julius_IV
+recruit_character = ITA_Alfredo_Ildefonso_Schuster
+recruit_character = ITA_Adalberto_di_Savoia
 
 ### Starting Ministers
 activate_advisor = ITA_Don_Luigi_Sturzo_hog_sde
 activate_advisor = ITA_Gaetano_Martino_for_sde
 activate_advisor = ITA_Rocco_Gullo_eco_sde
 activate_advisor = ITA_Enrico_Mole_sec_sde
+
+ITA_Italo_Balbo = { set_nationality = LBA }

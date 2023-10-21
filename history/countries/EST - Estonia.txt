@@ -56,7 +56,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_40
 	limited_conscription
 	presidential_republic
 	
@@ -125,3 +124,5 @@ activate_advisor = EST_Konstantin_Pats_hog_ade
 activate_advisor = EST_Julius_Seljamaa_for_ade
 activate_advisor = EST_Karl_Selter_eco_ade
 activate_advisor = EST_Oskar_Angelus_sec_npo
+
+save_global_event_target_as = unified_baltic

@@ -5,7 +5,6 @@ oob = "ENG_1936"
 set_research_slots = 4
 
 add_ideas = {
-	party_pop_0_40
 	civilian_economy
 	ENG_war_fatigue
 	UOB_revo_recov

@@ -2502,10 +2502,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GEO_reunite_skhivi"
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
-			remove_ideas_with_trait = economy_minister
-			add_ideas = {
-				GEO_teimuraz_chelidze_eco
-			}
+			activate_advisor = GEO_Giorgi_Tsintsadze_eco_lib
 		}
 		ai_will_do = {
 			factor = 160
@@ -2601,10 +2598,6 @@ focus_tree = {
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 			add_war_support = -0.05
 			add_stability = 0.05
-			remove_ideas_with_trait = head_of_intel
-			add_ideas = {
-				GEO_zori_zoriantsi_int
-			}
 		}
 		ai_will_do = {
 			factor = 160
@@ -3241,7 +3234,7 @@ focus_tree = {
 #### FOREIGN POLICY ####
 	focus = {
 		id = GEO_foreign_policy
-		icon = GFX_goal_generic_alliance
+		icon = GFX_goal_foreign_diplomacy
 		available = {
 			OR = {
 				has_completed_focus = GEO_sudden_betrayal
@@ -3616,7 +3609,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					is_in_faction_with = TUR
-					is_in_faction_with = TRT
+					# is_in_faction_with = TRT
 				}
 			}
 			is_puppet = no
@@ -3722,9 +3715,9 @@ focus_tree = {
 						TUR = {
 							is_in_faction_with = GER
 						}
-						TRT = {
-							is_in_faction_with = GER
-						}	
+						# TRT = {
+						# 	is_in_faction_with = GER
+						# }	
 					}
 				}
 			}

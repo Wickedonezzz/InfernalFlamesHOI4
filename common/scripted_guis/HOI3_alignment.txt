@@ -239,8 +239,8 @@ scripted_gui = {
 				add_to_variable = {
 					HOI3_alignment_grid_dirty = 1
 				}
-			 }
-		 }
+			}
+		}
 	}
 
 

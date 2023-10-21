@@ -13,19 +13,11 @@ country_event = {
 	title = canada.1.t
 	desc = canada.1.d
 	picture = report_event_generic_conference
-
 	fire_only_once = yes
-	
-	trigger = {
-		tag = CAN
-	}
-	
-	mean_time_to_happen = {
-		days = 0
-	}
+	is_triggered_only = yes
 
 	option = {
-		name = "For King, Faith and Empire..."
+		name = canada.1.a
 	}
 }
 
@@ -36,28 +28,28 @@ country_event = {
 	title = "The London Stock Market Crash"
 	desc = canada.2.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = CAN
 		date > 1936.9.1
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
-	
+
 	option = {
 		name = "Christ alive!"
 		add_political_power = -50
 		add_stability = -0.1
 		add_ideas = CAN_black_wednesday
 		hidden_effect = {
-				country_event = { days = 80 id = canada.6 }
-			}
+			country_event = { days = 80 id = canada.6 }
 		}
 	}
+}
 
 # The Exiles
 country_event = {
@@ -66,14 +58,14 @@ country_event = {
 	title = canada.3.t
 	desc = canada.3.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = CAN
 		country_exists = UOB
 	}
-	
+
 	mean_time_to_happen = {
 		days = 0
 	}
@@ -105,7 +97,7 @@ country_event = {
 			ENG_add_albert_windsor = yes
 		}
 	}
-	
+
 	option = {
 		name = "A dark time for the Empire..."
 		trigger = {
@@ -153,17 +145,17 @@ country_event = {
 		tag = CAN
 		has_idea = CAN_black_wednesday
 	}
-	
+
 	mean_time_to_happen = { months = 3 }
 
 	immediate = { set_country_flag = can_vancouver_riots }
-	
+
 	option = {
 		name = "Let them scream their lungs out!"
 		add_popularity = { ideology = libertarian_socialist popularity = 0.03 }
 		473 = {
 			damage_building = { type = industrial_complex damage = 0.5 }
-			damage_building = { type = infrastructure damage = 1 } 
+			damage_building = { type = infrastructure damage = 1 }
 		}
 	}
 	option = {
@@ -189,9 +181,9 @@ country_event = {
 		tag = CAN
 		has_idea = CAN_black_wednesday
 	}
-	
+
 	mean_time_to_happen = { months = 2 }
-	
+
 	option = {
 		name = "Decline the offer."
 		add_political_power = -25
@@ -217,7 +209,7 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Shut your bleeding mouth you idiot!"
 		add_popularity = { ideology = social_conservative popularity = -0.1 }
@@ -243,7 +235,7 @@ country_event = {
 		add_stability = -0.05
 		add_popularity = { ideology = social_conservative popularity = -0.05 }
 		set_country_flag = rb_bennett_dead
-		add_ideas = CAN_RB_Bennett_hog_sco
+		activate_advisor = CAN_RB_Bennett_hog_sco
 		hidden_effect = {
 			country_event = { days = 14 id = canada.700 }
 		}
@@ -259,7 +251,7 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "This can't be happening!"
 		add_popularity = { ideology = market_liberal popularity = 0.15 }
@@ -267,14 +259,14 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = -0.08 }
 		remove_ideas = CAN_red_tories
 		add_stability = -0.1
-		set_party_name = { 
-			ideology = social_conservative 
-			long_name = CAN_conservative_party 
-			name = CAN_tories 
+		set_party_name = {
+			ideology = social_conservative
+			long_name = CAN_conservative_party
+			name = CAN_tories
 		}
 		hidden_effect = {
-				country_event = { days = 7 id = canada.8 }
-			}
+			country_event = { days = 7 id = canada.8 }
+		}
 	}
 }
 
@@ -292,8 +284,8 @@ country_event = {
 		name = "Call a snap Election!"
 		add_stability = -0.05
 		hidden_effect = {
-				country_event = { days = 16 id = canelection.1 }
-			}
+			country_event = { days = 16 id = canelection.1 }
+		}
 	}
 }
 
@@ -305,7 +297,7 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Canadian Coal will stay inside Canadian borders."
 		add_political_power = 75
@@ -326,7 +318,7 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = { factor = 20 }
 		name = "Nope, not a chance."
@@ -358,9 +350,9 @@ country_event = {
 	option = {
 		name = "That's the spirit!"
 		add_autonomy_ratio = {
-				value = 0.10
-				localization = CAN_coal_exports_to_britain
-			}	
+			value = 0.10
+			localization = CAN_coal_exports_to_britain
+		}
 		add_timed_idea = {
 			idea = CAN_coal_exports
 			days = 120
@@ -392,7 +384,7 @@ country_event = {
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = { factor = 40 }
 		name = "Subdize homes? Are you mad?"
@@ -455,24 +447,24 @@ country_event = {
 	title = "The Department of Munitions and Supply"
 	desc = canada.15.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Use the equipment for service in the Canadian Corps."
 		ai_chance = { factor = 5 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7500 producer = CAN }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = CAN }
-		}
+	}
 	option = {
 		name = "Send them to Britain as aid."
 		ai_chance = { factor = 95 }
 		army_experience = 25
 		ENG = { country_event = { id = canada.16 days = 3 } }
-		}
 	}
+}
 
 #what
 country_event = {
@@ -481,19 +473,19 @@ country_event = {
 	title = "Canadian Arms Shipments"
 	desc = canada.16.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "The help is welcome"
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7500 producer = CAN }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = CAN }
 		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 500 producer = CAN }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = CAN }
-		}
 	}
+}
 
 
 #AST REJECTS
@@ -503,15 +495,15 @@ country_event = {
 	title = "The Australians reject"
 	desc = canada.17.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Blasted Australians..."
-		}
 	}
+}
 
 #Military Exchange (CAN INTRO)
 country_event = {
@@ -520,16 +512,16 @@ country_event = {
 	title = "A Military Exchange"
 	desc = canada.18.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Send the proposal."
 		AST = { country_event = { id = canada.19 days = 3 } }
-		}
 	}
+}
 
 #Military Exchange
 country_event = {
@@ -538,11 +530,11 @@ country_event = {
 	title = "Canadian Military Exchange"
 	desc = canada.19.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Us Sister Dominions could definitely learn from eachother."
 		FROM = { country_event = { id = canada.20 days = 3 } }
@@ -550,14 +542,14 @@ country_event = {
 		add_ideas = CAN_canadian_mil_mission
 		army_experience = 15
 		navy_experience = -30
-		}
+	}
 	option = {
 		name = "We don't need Canadian help in the least."
 		ai_chance = { factor = 25 }
 		add_political_power = 50
 		FROM = { country_event = { id = canada.17 days = 3 } }
-		}
 	}
+}
 
 #Military Exchange
 country_event = {
@@ -566,18 +558,18 @@ country_event = {
 	title = "The Australians accept"
 	desc = canada.20.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "A drink to our friends in the Pacific!"
 		add_ideas = CAN_australian_assistance
 		army_experience = -15
 		navy_experience = 30
-		}
 	}
+}
 
 # Removal of East-West divide
 country_event = {
@@ -586,20 +578,20 @@ country_event = {
 	title = "In dire times..."
 	desc = canada.21.d
 	picture = report_event_generic_conference
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = CAN
 		IND = { exists = no }
 		has_war = yes
 		has_idea = CAN_east_west_divide
 	}
-	
+
 	mean_time_to_happen = {
 		days = 10
 	}
-	
+
 	option = {
 		name = "Petty divides must be put aside in face of War."
 		add_war_support = 0.1
@@ -614,9 +606,9 @@ country_event = {
 	title = "Anti-Conscription protests in Quebec!"
 	desc = canada.22.d
 	picture = report_event_generic_conference
-	
+
 	#fire_only_once = yes
-	
+
 	trigger = {
 		tag = CAN
 		has_idea = CAN_anglo_french_tension
@@ -632,11 +624,11 @@ country_event = {
 			has_idea = scraping_the_barrel
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 210
 	}
-	
+
 	option = {
 		name = "Let them riot!"
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
@@ -660,21 +652,21 @@ country_event = { #Waking the Tiger broke the event chain due to how infrastruct
 	title = "Corporate Regulations in Turner Valley"
 	desc = canada.23.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Let the Companies do as they please."
 		ai_chance = { factor = 25 }
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
-		add_resource = {  
- 				type = oil  
- 				amount = 16 
- 				state = 470
- 			}
- 		#hidden_effect = {
- 		#	country_event = { days = 365 id = canada.24 }
- 		#}
+		add_resource = {
+			type = oil
+			amount = 16
+			state = 470
+		}
+		#hidden_effect = {
+			#	country_event = { days = 365 id = canada.24 }
+			#}
 	}
 
 	option = {
@@ -698,9 +690,9 @@ country_event = {
 	title = "Gas Flaring and the end of Turner Valley."
 	desc = canada.24.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "We didn't need this!"
 		set_global_flag = CAN_TURNER_VALLEY_DESTROYED
@@ -716,9 +708,9 @@ country_event = {
 	title = "The W.I.C.B."
 	desc = canada.25.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Apply firm control over prices and wages."
 		ai_chance = { factor = 75 }
@@ -740,9 +732,9 @@ country_event = {
 	title = "Dreams of the Commonwealth"
 	desc = canada.26.d
 	picture = report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "We only need ourselves alone."
 		ai_chance = { factor = 20 }
@@ -762,11 +754,11 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = CAN
 	}
-	
+
 	mean_time_to_happen = {
 		days = 50
 	}
@@ -782,7 +774,7 @@ country_event = {
 	title = "Nationalist Riots"
 	desc = canada.28.d
 	picture = GFX_report_event_generic_riot
-	
+
 	trigger = {
 		tag = CAN
 		AND = {
@@ -794,7 +786,7 @@ country_event = {
 		authoritarian_democrat > 0.1
 		has_war = yes
 	}
-	
+
 	mean_time_to_happen = {
 		days = 210
 	}
@@ -804,10 +796,10 @@ country_event = {
 		add_political_power = -25
 		add_manpower = -1000
 		473 = {
-			damage_building = { type = infrastructure damage = 0.25 } 
-			}
+			damage_building = { type = infrastructure damage = 0.25 }
+		}
 		276 = {
-			damage_building = { type = infrastructure damage = 0.25 } 
+			damage_building = { type = infrastructure damage = 0.25 }
 		}
 	}
 }
@@ -818,7 +810,7 @@ country_event = {
 	title = "Nationalist Anti-War Sabotages"
 	desc = canada.29.d
 	picture = GFX_report_event_generic_riot
-	
+
 	trigger = {
 		tag = CAN
 		AND = {
@@ -830,7 +822,7 @@ country_event = {
 		authoritarian_democrat > 0.15
 		has_war = yes
 	}
-	
+
 	mean_time_to_happen = {
 		days = 210
 	}
@@ -839,10 +831,10 @@ country_event = {
 		name = "Unacceptable!"
 		add_war_support = -0.025
 		473 = {
-			damage_building = { type = arms_factory damage = 0.5 } 
+			damage_building = { type = arms_factory damage = 0.5 }
 		}
 		276 = {
-			damage_building = { type = arms_factory damage = 0.5 } 
+			damage_building = { type = arms_factory damage = 0.5 }
 		}
 	}
 }
@@ -853,7 +845,7 @@ country_event = { #I'd add more events for nationalists being a pain in the ass,
 	title = "Nationalist attacks on Crown Corporations"
 	desc = canada.30.d
 	picture = GFX_report_event_generic_riot
-	
+
 	trigger = {
 		tag = CAN
 		AND = {
@@ -865,7 +857,7 @@ country_event = { #I'd add more events for nationalists being a pain in the ass,
 		authoritarian_democrat > 0.2
 		has_war = yes
 	}
-	
+
 	mean_time_to_happen = {
 		days = 210
 	}
@@ -874,10 +866,10 @@ country_event = { #I'd add more events for nationalists being a pain in the ass,
 		name = "I want the head of that bomber on my desk!"
 		add_stability = -0.025
 		473 = {
-			damage_building = { type = industrial_complex damage = 0.75 } 
+			damage_building = { type = industrial_complex damage = 0.75 }
 		}
 		276 = {
-			damage_building = { type = industrial_complex damage = 0.75 } 
+			damage_building = { type = industrial_complex damage = 0.75 }
 		}
 	}
 }
@@ -902,24 +894,18 @@ country_event = {
 		}
 		name = "The Progressive-Liberal Party gains a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_William_Lyon_Mackenzie_King_hog_mli
-			CAN_George_W_Stephens_for_mli
-			CAN_CD_Howe_eco_mli
-			CAN_Ernest_Lapointe_sec_mli
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_William_Lyon_Mackenzie_King_hog_mli
+		activate_advisor = CAN_George_W_Stephens_for_mli
+		activate_advisor = CAN_CD_Howe_eco_mli
+		activate_advisor = CAN_Ernest_Lapointe_sec_mli
+
 		add_stability = -0.01
 		add_popularity = { ideology = social_liberal popularity = 0.35 }
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 		set_politics = {
 			ruling_party = social_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = {
@@ -928,23 +914,17 @@ country_event = {
 		}
 		name = "The SoCreds secure a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_John_Diefenbaker_hog_npo
-			CAN_George_A_Drew_for_npo
-			CAN_Murdoch_Alexander_MacPherson_eco_npo
-			CAN_Chuck_Crate_sec_npo
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_John_Diefenbaker_hog_npo
+		activate_advisor = CAN_George_A_Drew_for_npo
+		activate_advisor = CAN_Murdoch_Alexander_MacPherson_eco_npo
+		activate_advisor = CAN_Chuck_Crate_sec_npo
+
 		add_stability = 0.005
 		add_popularity = { ideology = national_populist popularity = 0.2 }
 		set_politics = {
 			ruling_party = national_populist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = {
@@ -953,67 +933,46 @@ country_event = {
 		}
 		name = "The Progressive-Liberal Party gains a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_JS_Woodsworth_hog_sde
-			CAN_Thomas_C_Douglas_for_sde
-			CAN_Hazen_Argue_eco_sde
-			CAN_Clarence_Gillis_sec_sde
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_JS_Woodsworth_hog_sde
+		activate_advisor = CAN_Thomas_C_Douglas_for_sde
+		activate_advisor = CAN_Hazen_Argue_eco_sde
+		activate_advisor = CAN_Clarence_Gillis_sec_sde
 		add_stability = 0.005
 		add_popularity = { ideology = social_democrat popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_democrat
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = { #Tories & Liberals will always be around in Canadian Politics.
 		name = "The Liberals dominate the polls!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_William_Lyon_Mackenzie_King_hog_mli
-			CAN_Vincent_Massey_for_mli
-			CAN_CD_Howe_eco_mli
-			CAN_Ernest_Lapointe_sec_mli
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_William_Lyon_Mackenzie_King_hog_mli
+		activate_advisor = CAN_Vincent_Massey_for_mli
+		activate_advisor = CAN_CD_Howe_eco_mli
+		activate_advisor = CAN_Ernest_Lapointe_sec_mli
 		add_stability = 0.01
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
 		set_politics = {
 			ruling_party = market_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = { #Tories & Liberals will always be around in Canadian Politics.
 		name = "The Tories dominate the polls!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_Robert_Manion_hog_sco
-			CAN_Sidney_Earle_Smith_for_sco
-			CAN_Stephen_Leacock_eco_sco
-			CAN_John_Diefenbaker_sec_sco
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_Robert_Manion_hog_sco
+		activate_advisor = CAN_Sidney_Earle_Smith_for_sco
+		activate_advisor = CAN_Stephen_Leacock_eco_sco
+		activate_advisor = CAN_Gordon_Graydon_sec_sco
 		add_stability = 0.01
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_conservative
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -1038,23 +997,16 @@ country_event = {
 		}
 		name = "The Progressive-Liberal Party gains a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_Louis_St_Laurent_hog_sli
-			CAN_Mitchell_Hepburn_for_sli
-			CAN_Gerry_McGeer_eco_sli
-			CAN_Stuart_Garson_sec_sli
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_Louis_St_Laurent_hog_sli
+		activate_advisor = CAN_Mitchell_Hepburn_for_sli
+		activate_advisor = CAN_Gerry_McGeer_eco_sli
+		activate_advisor = CAN_Stuart_Garson_sec_sli
 		add_stability = -0.01
 		add_popularity = { ideology = social_liberal popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = {
@@ -1063,23 +1015,16 @@ country_event = {
 		}
 		name = "The SoCreds secure a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_John_Diefenbaker_hog_npo
-			CAN_George_A_Drew_for_npo
-			CAN_Murdoch_Alexander_MacPherson_eco_npo
-			CAN_Chuck_Crate_sec_npo
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_John_Diefenbaker_hog_npo
+		activate_advisor = CAN_George_A_Drew_for_npo
+		activate_advisor = CAN_Murdoch_Alexander_MacPherson_eco_npo
+		activate_advisor = CAN_Chuck_Crate_sec_npo
 		add_stability = 0.005
 		add_popularity = { ideology = national_populist popularity = 0.2 }
 		set_politics = {
 			ruling_party = national_populist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = {
@@ -1088,67 +1033,46 @@ country_event = {
 		}
 		name = "The Progressive-Liberal Party gains a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_Major_James_Coldwell_hog_sde
-			CAN_David_Lewis_for_sde
-			CAN_Hazen_Argue_eco_sde
-			CAN_Clarence_Gillis_sec_sde
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_Major_James_Coldwell_hog_sde
+		activate_advisor = CAN_David_Lewis_for_sde
+		activate_advisor = CAN_Hazen_Argue_eco_sde
+		activate_advisor = CAN_Clarence_Gillis_sec_sde
 		add_stability = 0.005
 		add_popularity = { ideology = social_democrat popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_democrat
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = { #Tories & Liberals will always be around in Canadian Politics.
 		name = "The Liberals dominate the polls!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_William_Lyon_Mackenzie_King_hog_mli
-			CAN_George_W_Stephens_for_mli
-			CAN_CD_Howe_eco_mli
-			CAN_Ernest_Lapointe_sec_mli
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_William_Lyon_Mackenzie_King_hog_mli
+		activate_advisor = CAN_George_W_Stephens_for_mli
+		activate_advisor = CAN_CD_Howe_eco_mli
+		activate_advisor = CAN_Ernest_Lapointe_sec_mli
 		add_stability = 0.01
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
 		set_politics = {
 			ruling_party = market_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = { #Tories & Liberals will always be around in Canadian Politics.
 		name = "The Tories dominate the polls!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_Robert_Manion_hog_sco
-			CAN_Sidney_Earle_Smith_for_sco
-			CAN_Stephen_Leacock_eco_sco
-			CAN_Gordon_Graydon_sec_sco
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_Robert_Manion_hog_sco
+		activate_advisor = CAN_Sidney_Earle_Smith_for_sco
+		activate_advisor = CAN_Stephen_Leacock_eco_sco
+		activate_advisor = CAN_Gordon_Graydon_sec_sco
 		add_stability = 0.01
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_conservative
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -1173,23 +1097,16 @@ country_event = {
 		}
 		name = "The Progressive-Liberal Party gains a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_William_Lyon_Mackenzie_King_hog_mli
-			CAN_George_W_Stephens_for_mli
-			CAN_CD_Howe_eco_mli
-			CAN_Ernest_Lapointe_sec_mli
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_William_Lyon_Mackenzie_King_hog_mli
+		activate_advisor = CAN_George_W_Stephens_for_mli
+		activate_advisor = CAN_CD_Howe_eco_mli
+		activate_advisor = CAN_Ernest_Lapointe_sec_mli
 		add_stability = -0.01
 		add_popularity = { ideology = social_liberal popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = {
@@ -1198,23 +1115,17 @@ country_event = {
 		}
 		name = "The SoCreds secure a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_Henry_Herbert_Stevens_hog_npo
-			CAN_Adrien_Arcand_for_npo
-			CAN_John_Ross_Taylor_eco_npo
-			CAN_Chuck_Crate_sec_npo
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_Henry_Herbert_Stevens_hog_npo
+		activate_advisor = CAN_Adrien_Arcand_for_npo
+		activate_advisor = CAN_John_Ross_Taylor_eco_npo
+		activate_advisor = CAN_Chuck_Crate_sec_npo
+
 		add_stability = 0.005
 		add_popularity = { ideology = national_populist popularity = 0.2 }
 		set_politics = {
 			ruling_party = national_populist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = {
@@ -1223,67 +1134,46 @@ country_event = {
 		}
 		name = "The Progressive-Liberal Party gains a majority!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_JS_Woodsworth_hog_sde
-			CAN_David_Lewis_for_sde
-			CAN_Hazen_Argue_eco_sde
-			CAN_Clarence_Gillis_sec_sde
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_JS_Woodsworth_hog_sde
+		activate_advisor = CAN_David_Lewis_for_sde
+		activate_advisor = CAN_Hazen_Argue_eco_sde
+		activate_advisor = CAN_Clarence_Gillis_sec_sde
 		add_stability = 0.005
 		add_popularity = { ideology = social_democrat popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_democrat
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = { #Tories & Liberals will always be around in Canadian Politics.
 		name = "The Liberals dominate the polls!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_William_Lyon_Mackenzie_King_hog_mli
-			CAN_George_W_Stephens_for_mli
-			CAN_CD_Howe_eco_mli
-			CAN_Ernest_Lapointe_sec_mli
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_William_Lyon_Mackenzie_King_hog_mli
+		activate_advisor = CAN_George_W_Stephens_for_mli
+		activate_advisor = CAN_CD_Howe_eco_mli
+		activate_advisor = CAN_Ernest_Lapointe_sec_mli
 		add_stability = 0.01
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
 		set_politics = {
 			ruling_party = market_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = { #Tories & Liberals will always be around in Canadian Politics.
 		name = "The Tories dominate the polls!"
 		#ai_chance = { factor = 0 }
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-		add_ideas = {
-			CAN_RB_Bennett_hog_sco
-			CAN_Robert_Manion_for_sco
-			CAN_Stephen_Leacock_eco_sco
-			CAN_John_Diefenbaker_sec_sco
-		}
+		remove_every_minister = yes
+		activate_advisor = CAN_RB_Bennett_hog_sco
+		activate_advisor = CAN_Robert_Manion_for_sco
+		activate_advisor = CAN_Stephen_Leacock_eco_sco
+		activate_advisor = CAN_Gordon_Graydon_sec_sco
 		add_stability = 0.01
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
 		set_politics = {
 			ruling_party = social_conservative
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -1296,7 +1186,7 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Currie, the Great War Hero."
 		set_country_flag = CAN_CURRIE
@@ -1320,13 +1210,13 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = CAN
 		has_country_flag = can_vancouver_riots
 		has_idea = CAN_relief_idea
 	}
-	
+
 	mean_time_to_happen = {
 		days = 115
 	}
@@ -1373,10 +1263,10 @@ country_event = {
 		name = "Agree to the plan of the Collectivist Party of Canada."
 		ai_chance = { factor = 40 }
 		add_popularity = { ideology = collectivist popularity = 0.05 }
-		swap_ideas = { 
-  			remove_idea = CAN_relief_idea 
- 			add_idea = CAN_relief_idea_CPC 
- 		}
+		swap_ideas = {
+			remove_idea = CAN_relief_idea
+			add_idea = CAN_relief_idea_CPC
+		}
 		add_timed_idea = {
 			idea = CAN_flimsy_party_platform
 			days = 31
@@ -1386,10 +1276,10 @@ country_event = {
 		name = "Agree to the plan of the Workers' Unity League."
 		ai_chance = { factor = 30 }
 		add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
-		swap_ideas = { 
-  			remove_idea = CAN_relief_idea 
- 			add_idea = CAN_relief_idea_WUL
- 		}
+		swap_ideas = {
+			remove_idea = CAN_relief_idea
+			add_idea = CAN_relief_idea_WUL
+		}
 		add_timed_idea = {
 			idea = CAN_flimsy_party_platform
 			days = 31
@@ -1399,10 +1289,10 @@ country_event = {
 		name = "Tailor a new plan by working with the Strikers themselves."
 		ai_chance = { factor = 30 }
 		add_political_power = -50
-		swap_ideas = { 
-  			remove_idea = CAN_relief_idea 
- 			add_idea = CAN_relief_idea_Strikers
- 		}
+		swap_ideas = {
+			remove_idea = CAN_relief_idea
+			add_idea = CAN_relief_idea_Strikers
+		}
 		add_timed_idea = {
 			idea = CAN_flimsy_party_platform
 			days = 31
@@ -1436,15 +1326,15 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "This cannot go on any longer! Prepare an ambush at Regina!"
 		ai_chance = { factor = 75 }
 		hidden_effect = { country_event = { id = canada.39 days = 10 } }
-		swap_ideas = { 
-  			remove_idea = CAN_camp_crusade 
- 			add_idea = CAN_camp_crusade2
- 		}
+		swap_ideas = {
+			remove_idea = CAN_camp_crusade
+			add_idea = CAN_camp_crusade2
+		}
 		add_political_power = -50
 		custom_effect_tooltip  = CAN_regina_riot_tooltip
 	}
@@ -1453,10 +1343,10 @@ country_event = {
 		name = "It is their right!"
 		ai_chance = { factor = 25 }
 		hidden_effect = { country_event = { id = canada.40 days = 10 } }
-		swap_ideas = { 
-  			remove_idea = CAN_camp_crusade 
- 			add_idea = CAN_camp_crusade2
- 		}
+		swap_ideas = {
+			remove_idea = CAN_camp_crusade
+			add_idea = CAN_camp_crusade2
+		}
 		add_stability = -0.025
 		custom_effect_tooltip  = CAN_weather_the_storm_tooltip
 	}
@@ -1489,7 +1379,7 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Citizens supporting a gang of revolutionaries? Unacceptable!"
 		ai_chance = { factor = 100 }
@@ -1506,7 +1396,7 @@ country_event = {
 	picture = report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Interfering with the matter may only inflame the situation."
 		ai_chance = { factor = 70 }
@@ -1559,11 +1449,11 @@ country_event = {
 		add_political_power = -100
 		add_stability = 0.1
 		remove_ideas = CAN_camp_crusade2
-		swap_ideas = { 
-  			remove_idea = CAN_relief_idea 
- 			add_idea = CAN_relief_idea_Strikers
- 		}
- 		add_timed_idea = {
+		swap_ideas = {
+			remove_idea = CAN_relief_idea
+			add_idea = CAN_relief_idea_Strikers
+		}
+		add_timed_idea = {
 			idea = CAN_flimsy_party_platform
 			days = 60
 		}
@@ -1640,9 +1530,9 @@ country_event = {
 			has_idea = CAN_recovering_bw
 		}
 	}
-	
+
 	mean_time_to_happen = { months = 8 }
-	
+
 	option = {
 		name = "These socialists prey on the frustrations of good men."
 		add_political_power = -25
@@ -1660,7 +1550,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Attempt to mediate a negotiation."
 		add_political_power = -50
@@ -1687,7 +1577,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Favour the Miners"
 		add_political_power = 50
@@ -1735,7 +1625,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Perhaps the situation will resolve itself!"
 		add_stability = -0.025
@@ -1754,7 +1644,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Why can't they just be satisfied?!"
 		add_stability = -0.025
@@ -1781,9 +1671,9 @@ country_event = {
 			has_idea = CAN_recovering_bw
 		}
 	}
-	
+
 	mean_time_to_happen = { months = 11 }
-	
+
 	option = {
 		name = "Send in Police forces to contain the situation."
 		add_stability = -0.025
@@ -1794,7 +1684,7 @@ country_event = {
 		name = "Allow the riots to fizzle-out."
 		add_political_power = -100
 		276 = {
-			damage_building = { type = infrastructure damage = 3.75 } 
+			damage_building = { type = infrastructure damage = 3.75 }
 		}
 	}
 }
@@ -1807,11 +1697,11 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Break them up, detain troublemakers, and issue arrests for other participants."
 		276 = {
-			damage_building = { type = industrial_complex damage = 0.5 } 
+			damage_building = { type = industrial_complex damage = 0.5 }
 		}
 		add_stability = -0.025
 		add_manpower = -7500
@@ -1830,7 +1720,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Another job well done, Constables."
 		add_stability = 0.03
@@ -1846,7 +1736,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Arrest the leadership, the mob will eventually burn themselves out."
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.015 }
@@ -1880,7 +1770,6 @@ country_event = {
 	title = "Britain Places Newfoundland Under Canadian Administration"
 	desc = canada.55.d
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
 
 	option = {
@@ -1900,11 +1789,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.1"}
 	title = "The Snap Election of '37"
 	desc = canelection.1.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -1925,11 +1811,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.2"}
 	title = "Day One: British Columbia"
 	desc = canelection.2.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -1971,11 +1854,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.3"}
 	title = "Day Two: Alberta"
 	desc = canelection.3.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2017,11 +1897,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.4"}
 	title = "Day Three: Saskatchewan"
 	desc = canelection.4.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2063,11 +1940,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.5"}
 	title = "Day Four: Manitoba"
 	desc = canelection.5.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2109,11 +1983,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.6"}
 	title = "Day Five: Ontario"
 	desc = canelection.6.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2124,10 +1995,10 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = 90
@@ -2143,10 +2014,10 @@ country_event = {
 		ai_chance = {
 			base = 40
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = -40
@@ -2162,10 +2033,10 @@ country_event = {
 		ai_chance = {
 			base = 40
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = -40
@@ -2181,10 +2052,10 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = -10
@@ -2199,11 +2070,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.7"}
 	title = "Day Six: Quebec"
 	desc = canelection.7.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2214,10 +2082,10 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = 90
@@ -2233,10 +2101,10 @@ country_event = {
 		ai_chance = {
 			base = 50
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = -50
@@ -2252,10 +2120,10 @@ country_event = {
 		ai_chance = {
 			base = 30
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = -30
@@ -2271,10 +2139,10 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-			ENG = {
-				OR = {
-					has_country_flag = avenging1776
-					has_country_flag = challengefrance
+				ENG = {
+					OR = {
+						has_country_flag = avenging1776
+						has_country_flag = challengefrance
 					}
 				}
 				add = -10
@@ -2289,11 +2157,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.8"}
 	title = "Day Seven: Yukon"
 	desc = canelection.8.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2331,11 +2196,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.9"}
 	title = "Day Eight: New Brunswick"
 	desc = canelection.9.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2377,11 +2239,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.10"}
 	title = "Day Nine: Nova Scotia"
 	desc = canelection.10.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2423,18 +2282,15 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.11"}
 	title = "Day Ten: Prince Edward Isles"
 	desc = canelection.11.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
 		name = "The CCF nabs a Majority."
 		ai_chance = { factor = 20 }
 		hidden_effect = {
-		country_event = { days = 2 id = canelection.12}
+			country_event = { days = 2 id = canelection.12}
 		}
 		add_popularity = { ideology = social_democrat popularity = 0.01 }
 	}
@@ -2471,13 +2327,10 @@ country_event = {
 country_event = {
 	id = canelection.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.12"}
-
 	is_triggered_only = yes
-
 	hidden = yes
 
 	immediate = {
-
 		if = {
 			limit = {
 				has_country_flag = { flag = CAN_CCF value < 13 }
@@ -2516,26 +2369,21 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.13"}
 	title = "Gridlock"
 	desc = canelection.13.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
 		name = "The Progressives join under the Liberals in a Coalition!"
 		add_stability = -0.1
-		add_ideas = {
-			CAN_William_Lyon_Mackenzie_King_hog_mli
-			CAN_George_W_Stephens_for_mli
-			CAN_CD_Howe_eco_mli
-			CAN_Ernest_Lapointe_sec_mli
-		}
+		activate_advisor = CAN_William_Lyon_Mackenzie_King_hog_mli
+		activate_advisor = CAN_George_W_Stephens_for_mli
+		activate_advisor = CAN_CD_Howe_eco_mli
+		activate_advisor = CAN_Ernest_Lapointe_sec_mli
 		set_global_flag = CAN_LIBERAL
 		set_politics = {
 			ruling_party = market_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		add_popularity = { ideology = social_liberal popularity = 0.2 }
 		hidden_effect = {
@@ -2553,7 +2401,7 @@ country_event = {
 		set_global_flag = CAN_TORY
 		set_politics = {
 			ruling_party = social_conservative
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		add_popularity = { ideology = national_populist popularity = 0.1 }
 		hidden_effect = {
@@ -2573,9 +2421,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.14"}
 	title = "CCF Majority"
 	desc = canelection.14.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
 
 	option = {
@@ -2585,15 +2431,13 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = 0.04 }
 		add_popularity = { ideology = collectivist popularity = 0.03 }
 		add_popularity = { ideology = vanguardist popularity = 0.03 }
-		add_ideas = {
-			CAN_JS_Woodsworth_hog_sde
-			CAN_David_Lewis_for_sde
-			CAN_Hazen_Argue_eco_sde
-			CAN_Clarence_Gillis_sec_sde
-		}
+		activate_advisor = CAN_JS_Woodsworth_hog_sde
+		activate_advisor = CAN_David_Lewis_for_sde
+		activate_advisor = CAN_Hazen_Argue_eco_sde
+		activate_advisor = CAN_Clarence_Gillis_sec_sde
 		set_politics = {
 			ruling_party = social_democrat
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	option = {
@@ -2603,15 +2447,14 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = 0.08 }
 		add_popularity = { ideology = collectivist popularity = 0.06 }
 		add_popularity = { ideology = vanguardist popularity = 0.06 }
-		add_ideas = {
-			CAN_JS_Woodsworth_hog_sde
-			CAN_David_Lewis_for_sde
-			CAN_Hazen_Argue_eco_sde
-			CAN_Clarence_Gillis_sec_sde
-		}
+		activate_advisor = CAN_JS_Woodsworth_hog_sde
+		activate_advisor = CAN_David_Lewis_for_sde
+		activate_advisor = CAN_Hazen_Argue_eco_sde
+		activate_advisor = CAN_Clarence_Gillis_sec_sde
+
 		set_politics = {
 			ruling_party = social_democrat
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -2622,25 +2465,21 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.15"}
 	title = "Liberal Majority"
 	desc = canelection.15.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
 		name = "The heir of Laurier has reclaimed his birthright!"
 		set_global_flag = CAN_LIBERAL
-		add_ideas = {
-			CAN_William_Lyon_Mackenzie_King_hog_mli
-			CAN_George_W_Stephens_for_mli
-			CAN_CD_Howe_eco_mli
-			CAN_Ernest_Lapointe_sec_mli
-		}
+		activate_advisor = CAN_William_Lyon_Mackenzie_King_hog_mli
+		activate_advisor = CAN_George_W_Stephens_for_mli
+		activate_advisor = CAN_CD_Howe_eco_mli
+		activate_advisor = CAN_Ernest_Lapointe_sec_mli
+
 		set_politics = {
 			ruling_party = market_liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		add_popularity = { ideology = social_conservative popularity = -0.05 }
 		add_popularity = { ideology = social_liberal popularity = 0.1 }
@@ -2653,11 +2492,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.16"}
 	title = "Tory Majority"
 	desc = canelection.16.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2665,7 +2501,7 @@ country_event = {
 		set_global_flag = CAN_TORY
 		set_politics = {
 			ruling_party = social_conservative
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -2676,11 +2512,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.17"}
 	title = "A Cry from Canada"
 	desc = canelection.17.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2702,9 +2535,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.18"}
 	title = "Socialists win Canadian elections."
 	desc = canelection.18.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
 
 	option = {
@@ -2744,11 +2575,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.19"}
 	title = "London's Intervention"
 	desc = canelection.19.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2763,21 +2591,19 @@ country_event = {
 			}
 			add_ideas = military_junta
 		}
-		
-		add_ideas = {
-			CAN_Howard_Charles_Green_for_pau
-			CAN_Robert_Manion_for_sco
-			CAN_william_aberhart_eco
-			CAN_adrien_arcand_sec
-		}
+
+		activate_advisor = CAN_Henry_Crerar_hog_pau
+		activate_advisor = CAN_Robert_Manion_for_sco
+		activate_advisor = CAN_Lloyd_Samuel_Breadner_eco_pau
+		activate_advisor = CAN_Solon_Earl_Low_sec_ade
 		set_politics = {
 			ruling_party = paternal_autocrat
-			elections_allowed = no
+			elections_allowed = yes
 		}
-		set_party_name = { 
-			ideology = authoritarian_democrat 
-			long_name = CAN_mil_junta_long 
-			name = CAN_mil_junta_short 
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = CAN_mil_junta_long
+			name = CAN_mil_junta_short
 		}
 		add_popularity = { ideology = paternal_autocrat popularity = 0.25 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.2 }
@@ -2793,25 +2619,20 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.20"}
 	title = "SoCred Majority"
 	desc = canelection.20.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
 		name = "Wait, we won?"
 		set_global_flag = CAN_SOCRED
-		add_ideas = {
-			CAN_Henry_Herbert_Stevens_hog_npo
-			CAN_Adrien_Arcand_for_npo
-			CAN_John_Ross_Taylor_eco_npo
-			CAN_Chuck_Crate_sec_npo
-		}
+		activate_advisor = CAN_Henry_Herbert_Stevens_hog_npo
+		activate_advisor = CAN_Adrien_Arcand_for_npo
+		activate_advisor = CAN_John_Ross_Taylor_eco_npo
+		activate_advisor = CAN_Chuck_Crate_sec_npo
 		set_politics = {
 			ruling_party = national_populist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -2821,11 +2642,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event canelection.21"}
 	title = "Post-parliamentary Reorganization"
 	desc = canelection.21.d
-
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
@@ -2841,12 +2659,10 @@ country_event = {
 			add_ideas = republican_dictatorship
 		}
 		add_stability = 0.05
-		add_ideas = {
-			CAN_Howard_Charles_Green_for_pau
-			CAN_Robert_Manion_for_sco
-			CAN_Lloyd_Samuel_Breadner_eco_pau
-			CAN_Andrew_McNaughton_sec_pau
-		}
+		activate_advisor = CAN_Howard_Charles_Green_for_pau
+		activate_advisor = CAN_Robert_Manion_for_sco
+		activate_advisor = CAN_Lloyd_Samuel_Breadner_eco_pau
+		activate_advisor = CAN_Andrew_McNaughton_sec_pau
 		set_politics = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
@@ -2860,12 +2676,6 @@ country_event = {
 				}
 				add = -100
 			}
-			#modifier = {
-			#	ENG = {
-			#		has_country_flag = avenging1776 #This AI personality results in Absolute Monarchy
-			#		}
-			#	add = 100
-			#}
 		}
 	}
 	option = {
@@ -2879,7 +2689,7 @@ country_event = {
 				}
 			}
 			add_ideas = military_junta
-		}		
+		}
 		add_stability = 0.05
 		CAN_Andrew_McNaughton = {
 			add_country_leader_role = {
@@ -2890,12 +2700,11 @@ country_event = {
 				}
 			}
 		}
-		add_ideas = { #Need to make Ministers for the Military Junta
-			CAN_Arthur_Meighen_hog_ade
-			CAN_Ernest_Manning_for_ade
-			CAN_Andrew_Carnell_eco_ade
-			CAN_Solon_Earl_Low_sec_ade
-		}
+		activate_advisor = CAN_Arthur_Meighen_hog_ade
+		activate_advisor = CAN_Ernest_Manning_for_ade
+		activate_advisor = CAN_Andrew_Carnell_eco_ade
+		activate_advisor = CAN_Solon_Earl_Low_sec_ade
+
 		set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no

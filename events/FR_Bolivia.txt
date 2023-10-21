@@ -18,24 +18,24 @@ country_event = { # coup attemmpt
 	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
-	
+
 	option = {
 		name = bol.1.a
 		ai_chance = { factor = 90 }
 		BOL ={
-		country_event = { 
-			days = 1 
-			id = bol.2
+			country_event = {
+				days = 1
+				id = bol.2
 			}
 		}
-	} 
-	option = { 
+	}
+	option = {
 		name = bol.1.b
 		ai_chance = { factor = 10 }
 		BOL ={
-		country_event = { 
-			days = 1 
-			id = bol.4
+			country_event = {
+				days = 1
+				id = bol.4
 			}
 		}
 	}
@@ -52,23 +52,23 @@ country_event = { #coup succeeds
 	fire_only_once = yes
 
 	option = {
-		name = bol.2.a 
+		name = bol.2.a
 
 		if = {
-      limit = { has_idea = BOL_shameful_defeat }
-      remove_ideas = BOL_shameful_defeat
-    }
+			limit = { has_idea = BOL_shameful_defeat }
+			remove_ideas = BOL_shameful_defeat
+		}
 		set_country_flag = BOL_revolutionary
 		set_global_flag = BOL_left
 		set_cosmetic_tag = BOL_communism
 		add_ideas = workers_republic
 		set_politics = {
 			ruling_party = collectivist
-      elections_allowed = no
+			elections_allowed = no
 		}
 		add_popularity = {
-				ideology = collectivist 
-				popularity = 0.15
+			ideology = collectivist
+			popularity = 0.15
 		}
 		hidden_effect = {
 			set_politics = { ruling_party = collectivist }
@@ -93,8 +93,8 @@ country_event = { #coup fails
 	fire_only_once = yes
 
 	option = {
-		name = bol.4.a 
-		
+		name = bol.4.a
+
 		if = {
 			limit = { has_idea = BOL_shameful_defeat }
 			remove_ideas = BOL_shameful_defeat
@@ -108,63 +108,63 @@ country_event = { #coup fails
 			popularity = 0.3
 		}
 		hidden_effect = {
-      add_field_marshal_role = {
-        character = BOL_Santos_Marka_T_ula
-        skill = 3
-        attack_skill = 3
-        defense_skill = 2
-        planning_skill = 3
-        logistics_skill = 3
-      }
-      add_field_marshal_role = {
-        character = BOL_Francisco_Imana
-        skill = 2
-        attack_skill = 3
-        defense_skill = 3
-        planning_skill = 2
-        logistics_skill = 3
-      }
-      add_corps_commander_role = {
-        character = BOL_Dionisio_Choque
-        skill = 3
-        attack_skill = 2
-        defense_skill = 2
-        planning_skill = 4
-        logistics_skill = 3
-      }
-      add_corps_commander_role = {
-        character = BOL_Joaquin_Quispe
-        skill = 3
-        attack_skill = 2
-        defense_skill = 3
-        planning_skill = 4
-        logistics_skill = 2
-      }
-      add_corps_commander_role = {
-        character = BOL_Mariano_Poma
-        skill = 3
-        attack_skill = 2
-        defense_skill = 3
-        planning_skill = 4
-        logistics_skill = 3
-      }
-      add_corps_commander_role = {
-        character = BOL_Francisco_Saire
-        skill = 3
-        attack_skill = 3
-        defense_skill = 2
-        planning_skill = 3
-        logistics_skill = 3
-      }
-      add_ideas = one_party_dictatorship
-      set_politics = { ruling_party = valkist elections_allowed = no }
-      remove_every_minister = yes
+			add_field_marshal_role = {
+				character = BOL_Santos_Marka_T_ula
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_field_marshal_role = {
+				character = BOL_Francisco_Imana
+				skill = 2
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = BOL_Dionisio_Choque
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = BOL_Joaquin_Quispe
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			add_corps_commander_role = {
+				character = BOL_Mariano_Poma
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = BOL_Francisco_Saire
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_ideas = one_party_dictatorship
+			set_politics = { ruling_party = valkist elections_allowed = no }
+			remove_every_minister = yes
 			activate_advisor = BOL_Gualberto_Villarroel_Lopez_hog_val
 			activate_advisor = BOL_Gonzalo_Romero_Alvarez_Garcia_for_npo
 			activate_advisor = BOL_Juan_Sanjines_eco_npo
 			activate_advisor = BOL_Julian_V_Montellano_Carrasco_sec_npo
-	  }
-  }
+		}
+	}
 }
 
 country_event = { #Intro
@@ -176,8 +176,8 @@ country_event = { #Intro
 	is_triggered_only = yes
 
 	# trigger = {
-	# 	tag = BOL
-	# }
+		# 	tag = BOL
+		# }
 
 	# mean_time_to_happen = { days = 1 }
 
@@ -263,16 +263,16 @@ country_event = {
 			transfer_state = 835
 			set_country_flag = BOL_arg_cooperation
 		}
-	}	
+	}
 	option = { # Keep Tarija
 		name = bol.11.b
 		ai_chance = { base = 35 }
 		add_political_power = 25
 		BOL = {
-			country_event = { id = bol.12 }		
+			country_event = { id = bol.12 }
 		}
 		BOL = {
-		add_opinion_modifier = { target = ARG modifier = BOL_refused_to_negotiate }
+			add_opinion_modifier = { target = ARG modifier = BOL_refused_to_negotiate }
 		}
 	}
 }
@@ -288,22 +288,22 @@ country_event = {
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = bol.12.a
 		ai_chance = { base = 20 }
 		add_political_power = -100
 		BOL = {
 			create_wargoal = {
 				type = annex_everything target = ARG
-				}
+			}
 		}
 	}
-	option = { 
+	option = {
 		name = bol.12.b
 		ai_chance = { base = 80 }
 		add_political_power = 50
-		}
 	}
+}
 
 country_event = { #pact with argentina
 	id = bol.15
@@ -316,19 +316,19 @@ country_event = { #pact with argentina
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = bol.15.a
 		ai_chance = { base = 90 }
 		create_faction = "south_american_internationale"
 		add_to_faction = BOL
 		add_political_power = -50
 	}
-	option = { 
+	option = {
 		name = bol.15.b
 		ai_chance = { base = 10 }
 		add_political_power = 50
-		}
 	}
+}
 country_event = { #death of general
 
 	id = bol.16
@@ -359,8 +359,8 @@ country_event = { #death of general
 				}
 			}
 			# random_country = {
-			# 	limit = { NOT = { TAG = BOL } }
-			# } what even does this mean
+				# 	limit = { NOT = { TAG = BOL } }
+				# } what even does this mean
 		}
 	}
 }
@@ -375,7 +375,7 @@ country_event = { #nina declares himself piqichiri
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = bol.17.a
 		ai_chance = { base = 100 }
 		add_political_power = 50
@@ -396,18 +396,18 @@ country_event = { # Workers Congress 40 part 1
 	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
-	
+
 	option = {
 		name = bol.19.a
 		ai_chance = { factor = 90 }
 		hidden_effect = {
-			country_event = { 
+			country_event = {
 				days = 3
 				id = bol.20
 			}
 			set_country_flag = BOL_workerscongress
 		}
-	} 
+	}
 }
 country_event = { #workers congress 40 part 2
 
@@ -424,8 +424,8 @@ country_event = { #workers congress 40 part 2
 		set_politics = {
 			ruling_party = vanguardist
 		}
-			add_popularity = {
-				ideology = vanguardist popularity = 0.20
+		add_popularity = {
+			ideology = vanguardist popularity = 0.20
 		}
 		hidden_effect = {
 			set_country_flag = BOL_intbois
@@ -444,8 +444,8 @@ country_event = { #workers congress 40 part 2
 		set_politics = {
 			ruling_party = collectivist
 		}
-			add_popularity = {
-				ideology = collectivist popularity = 0.15
+		add_popularity = {
+			ideology = collectivist popularity = 0.15
 		}
 		hidden_effect = {
 			set_country_flag = BOL_colliesbois
@@ -467,9 +467,9 @@ country_event = { #workers congress 40 part 2
 		set_politics = {
 			ruling_party = libertarian_socialist
 		}
-			add_popularity = {
-				ideology = libertarian_socialist popularity = 0.25
-			}
+		add_popularity = {
+			ideology = libertarian_socialist popularity = 0.25
+		}
 		hidden_effect = {
 			set_country_flag = BOL_libboring
 			set_politics = { ruling_party = libertarian_socialist }
@@ -497,25 +497,25 @@ country_event = { #a
 		hidden_effect = {
 			BOL ={
 				country_event = {
-				days = 7
-				id = bol.41
+					days = 7
+					id = bol.41
 				}
 			}
 		}
-	add_political_power = -5
+		add_political_power = -5
 	}
 	option = {
 		name = bol.40.b
 		hidden_effect = {
 			BOL ={
 				country_event = {
-				days = 7
-				id = bol.41
+					days = 7
+					id = bol.41
 				}
 			}
 		}
-			add_popularity = {
-				ideology = vanguardist popularity = 0.025
+		add_popularity = {
+			ideology = vanguardist popularity = 0.025
 		}
 	}
 }
@@ -538,7 +538,7 @@ country_event = { #a
 	option = {
 		name = bol.41.b
 		add_popularity = {
-				ideology = vanguardist popularity = -0.075
+			ideology = vanguardist popularity = -0.075
 		}
 	}
 }
@@ -610,8 +610,8 @@ country_event = { #help ubr
 		name = bol.51.a
 		ai_chance = { factor = 100 }
 		BOL = {
-		send_equipment = {
-			target = UBR type = infantry_equipment amount = 1000
+			send_equipment = {
+				target = UBR type = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -635,14 +635,14 @@ country_event = { #aymara new year
 	option = {
 		name = bol.30.a
 		hidden_effect = {
-		BOL ={
-			country_event = {
-				days = 364
-				id = bol.30
+			BOL ={
+				country_event = {
+					days = 364
+					id = bol.30
+				}
 			}
+			add_political_power = 20
 		}
-		add_political_power = 20
-	}
 
 	}
 }
@@ -676,7 +676,7 @@ country_event = { # Fate of Chile (ind)#
 			factor = 70
 		}
 		CHL = {
-			load_focus_tree = generic_focus 
+			load_focus_tree = generic_focus
 			transfer_state = 279
 			transfer_state = 507
 			transfer_state = 875
@@ -707,7 +707,7 @@ country_event = { # Fate of Chile (ind)#
 			transfer_state = 875
 			transfer_state = 878
 			set_country_flag = CHL_bolpuppet
-			load_focus_tree = generic_focus 
+			load_focus_tree = generic_focus
 		}
 		puppet = CHL
 		send_equipment = {
@@ -722,8 +722,8 @@ country_event = { # Fate of Chile (ind)#
 			factor = 10
 		}
 		add_political_power = -200
-		}
 	}
+}
 
 country_event = { # Fate of Chile (commie)#
 	id = bol.101
@@ -755,7 +755,7 @@ country_event = { # Fate of Chile (commie)#
 		}
 		CHL = {
 			transfer_state = 279
-			load_focus_tree = generic_focus 
+			load_focus_tree = generic_focus
 			transfer_state = 507
 			transfer_state = 875
 			transfer_state = 878
@@ -775,8 +775,8 @@ country_event = { # Fate of Chile (commie)#
 			factor = 10
 		}
 		add_political_power = -200
-		}
 	}
+}
 
 country_event = { # Fate of Paraguay (ind)#
 	id = bol.102
@@ -809,7 +809,7 @@ country_event = { # Fate of Paraguay (ind)#
 			transfer_state = 301
 			set_country_flag = PAR_indpuppet
 			set_cosmetic_tag = PAR_guarani
-			load_focus_tree = generic_focus 
+			load_focus_tree = generic_focus
 		}
 		puppet = PAR
 		set_province_name = { id = 2152 name = "Paraguay"}
@@ -827,7 +827,7 @@ country_event = { # Fate of Paraguay (ind)#
 		PAR = {
 			transfer_state = 301
 			set_country_flag = PAR_bolpuppet
-			load_focus_tree = generic_focus 
+			load_focus_tree = generic_focus
 		}
 		puppet = PAR
 		send_equipment = {
@@ -842,8 +842,8 @@ country_event = { # Fate of Paraguay (ind)#
 			factor = 10
 		}
 		add_political_power = -200
-		}
 	}
+}
 
 country_event = { # Fate of Paraguay (commie)#
 	id = bol.103
@@ -876,7 +876,7 @@ country_event = { # Fate of Paraguay (commie)#
 			transfer_state = 301
 			set_country_flag = PAR_socpuppet
 			set_cosmetic_tag = PAR_socpup
-			load_focus_tree = generic_focus 
+			load_focus_tree = generic_focus
 		}
 		puppet = PAR
 		send_equipment = {
@@ -891,5 +891,5 @@ country_event = { # Fate of Paraguay (commie)#
 			factor = 10
 		}
 		add_political_power = -200
-		}
 	}
+}

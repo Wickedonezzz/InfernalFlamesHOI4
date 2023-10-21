@@ -14,15 +14,16 @@ country_event = {
 	title = carspain.0.t
 	desc = carspain.0.d
 	#picture = NOR_tranmel_tale
-	
-	 trigger = {
-	 	tag = SPF
-	 }
+
+	# trigger = {
+		# 	tag = SPF
+		# }
+	is_triggered_only = yes
 
 	# mean_time_to_happen = { days = 2 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.0.a
 		add_political_power = 5
@@ -37,14 +38,14 @@ country_event = {
 	title = carspain.1.t
 	desc = carspain.1.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		date > 1936.1.8
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.1.a
 		add_manpower = -500
@@ -58,14 +59,14 @@ country_event = {
 	title = carspain.2.t
 	desc = carspain.2.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		date > 1936.1.21
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.2.a
 		add_political_power = 10
@@ -83,14 +84,14 @@ country_event = {
 	title = carspain.3.t
 	desc = carspain.3.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		controls_state = 41
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.3.a
 		add_political_power = 40
@@ -108,14 +109,14 @@ country_event = {
 	title = carspain.4.t
 	desc = carspain.4.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		controls_state = 167
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.4.a
 		add_political_power = 15
@@ -132,14 +133,14 @@ country_event = {
 	title = carspain.5.t
 	desc = carspain.5.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		controls_state = 165
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.5.a
 		add_political_power = 20
@@ -157,15 +158,15 @@ country_event = {
 	title = carspain.6.t
 	desc = carspain.6.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		SPR = { exists = no }
 		SPA = { exists = no }
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.6.a
 		hidden_effect = {
@@ -179,14 +180,14 @@ country_event = {
 	title = carspain.7.t
 	desc = carspain.7.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_war_with = SPM
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.7.a
 		hidden_effect = {
@@ -200,14 +201,14 @@ country_event = {
 	title = carspain.8.t
 	desc = carspain.8.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPM
 		controls_state = 171
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.8.a
 		add_political_power = 15
@@ -225,11 +226,11 @@ country_event = {
 	title = carspain.9.t
 	desc = carspain.9.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.9.a
 		add_stability = -0.10
@@ -237,11 +238,12 @@ country_event = {
 		add_political_power = 50
 		add_ideas = SPR_civil_war_recovery_idea
 		hidden_effect = {
-			load_focus_tree = FR_Falangist_Spain
+			clr_country_flag = SPF_IN_CIVIL_WAR
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = paternal_autocrat popularity = -0.06 }
 			add_popularity = { ideology = national_populist popularity = -0.08 }
 			add_popularity = { ideology = valkist popularity = -0.04 }
-    set_capital = { state = 41 }
+			set_capital = { state = 41 }
 			every_state = {
 				limit = {
 					is_core_of = SPR
@@ -281,6 +283,10 @@ country_event = {
 			add_ideas = volunteer_only
 			add_ideas = SPAIN_very_low_recognition_idea
 			set_cosmetic_tag = SPF_state
+			event_target:unified_spain = {
+				clear_global_event_target = unified_spain
+			}
+			save_global_event_target_as = unified_spain
 			set_global_flag = SPR_spanish_civil_war_ended_flag
 		}
 	}
@@ -292,7 +298,7 @@ country_event = {
 	title = carspain.10.t
 	desc = carspain.10.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		NOT = {
@@ -301,9 +307,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.10.a
 		add_political_power = -50
@@ -326,11 +332,11 @@ country_event = {
 	title = carspain.11.t
 	desc = carspain.11.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.11.a
 		add_stability = -0.03
@@ -349,7 +355,7 @@ country_event = {
 	title = carspain.12.t
 	desc = carspain.12.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -358,9 +364,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.12.a
 		add_political_power = -50
@@ -382,16 +388,16 @@ country_event = {
 	title = carspain.13.t
 	desc = carspain.13.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_global_flag = SPR_spanish_civil_war_ended_flag
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 50 }
-	
+
 	option = {
 		name = carspain.13.a
 		ai_chance = { base = 50 }
@@ -401,18 +407,18 @@ country_event = {
 			country_event = { id = carspain.14 days = 5 }
 		}
 	}
-	
+
 	#option = {
-	#	name = carspain.13.b
-	#	ai_chance = { base = 50 }
-	#	add_political_power = 10
-	#	add_stability = -0.02
-	#	hidden_effect = {
-	#		add_popularity = { ideology = national_populist popularity = -0.03 }
-	#		add_popularity = { ideology = valkist popularity = 0.05 }
-	#		#country_event = { id = carspain.14 days = 5 }
-	#	}
-	#}
+		#	name = carspain.13.b
+		#	ai_chance = { base = 50 }
+		#	add_political_power = 10
+		#	add_stability = -0.02
+		#	hidden_effect = {
+			#		add_popularity = { ideology = national_populist popularity = -0.03 }
+			#		add_popularity = { ideology = valkist popularity = 0.05 }
+			#		#country_event = { id = carspain.14 days = 5 }
+			#	}
+		#}
 }
 
 country_event = {
@@ -421,11 +427,11 @@ country_event = {
 	title = carspain.14.t
 	desc = carspain.14.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.14.a
 		add_stability = -0.03
@@ -442,11 +448,11 @@ country_event = {
 	title = carspain.100.t
 	desc = carspain.100.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.100.a
 	}
@@ -458,11 +464,11 @@ country_event = {
 	title = carspain.101.t
 	desc = carspain.101.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.101.a
 		add_stability = 0.02
@@ -475,11 +481,11 @@ country_event = {
 	title = carspain.102.t
 	desc = carspain.102.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.102.a
 		hidden_effect = {
@@ -494,11 +500,11 @@ country_event = {
 	title = carspain.103.t
 	desc = carspain.103.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.103.a
 		ai_chance = {
@@ -520,7 +526,7 @@ country_event = {
 			country_event = { id = carspain.104 days = 5 }
 		}
 	}
-	
+
 	option = {
 		name = carspain.103.b
 		ai_chance = {
@@ -550,11 +556,11 @@ country_event = {
 	title = carspain.104.t
 	desc = carspain.104.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.104.a
 		add_popularity = { ideology = valkist popularity = 0.01 }
@@ -570,11 +576,11 @@ country_event = {
 	title = carspain.105.t
 	desc = carspain.105.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.105.a
 		add_political_power = -50
@@ -592,11 +598,11 @@ country_event = {
 	title = carspain.106.t
 	desc = carspain.106.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = monspain.106.a
 		add_stability = 0.04
@@ -604,9 +610,9 @@ country_event = {
 			set_country_flag = SPF_internal_struggle_over_flag
 			set_country_flag = SPF_phalanx_secures_power_flag
 			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			set_temp_variable = { coalition_partner_var = token:valkist }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			add_popularity = { ideology = national_populist popularity = 0.05 }
 		}
 	}
@@ -618,11 +624,11 @@ country_event = {
 	title = carspain.107.t
 	desc = carspain.107.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.107.a
 		add_stability = -0.04
@@ -639,11 +645,11 @@ country_event = {
 	title = carspain.108.t
 	desc = carspain.108.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.108.a
 		ai_chance = {
@@ -665,7 +671,7 @@ country_event = {
 			country_event = { id = carspain.109 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = carspain.108.b
 		ai_chance = {
@@ -698,11 +704,11 @@ country_event = {
 	title = carspain.109.t
 	desc = carspain.109.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.109.a
 		add_stability = 0.05
@@ -713,9 +719,9 @@ country_event = {
 			set_country_flag = SPF_internal_struggle_over_flag
 			set_country_flag = SPF_spanish_nationalist_rule_flag
 			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			remove_from_coalition = yes  
+			remove_from_coalition = yes
 			set_temp_variable = { coalition_partner_var = token:valkist }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			add_popularity = { ideology = national_populist popularity = -0.05 }
 			add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
 		}
@@ -728,11 +734,11 @@ country_event = {
 	title = carspain.104.t
 	desc = carspain.104.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.104.a
 		add_popularity = { ideology = valkist popularity = 0.01 }
@@ -748,11 +754,11 @@ country_event = {
 	title = carspain.111.t
 	desc = carspain.111.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.111.a
 		ai_chance = {
@@ -771,7 +777,7 @@ country_event = {
 			country_event = { id = carspain.106 days = 5 }
 		}
 	}
-	
+
 	option = {
 		name = carspain.111.b
 		ai_chance = {
@@ -798,11 +804,11 @@ country_event = {
 	title = carspain.112.t
 	desc = carspain.112.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.112.a
 		add_stability = 0.05
@@ -813,9 +819,9 @@ country_event = {
 			set_country_flag = SPF_internal_struggle_over_flag
 			set_country_flag = SPF_phalanx_secures_power_flag
 			set_temp_variable = { coalition_partner_var = token:valkist }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			remove_from_coalition = yes 
+			remove_from_coalition = yes
 			add_popularity = { ideology = national_populist popularity = -0.05 }
 			add_popularity = { ideology = valkist popularity = 0.05 }
 		}
@@ -828,11 +834,11 @@ country_event = {
 	title = carspain.113.t
 	desc = carspain.113.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-  fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.113.a
 		add_political_power = -25
@@ -894,11 +900,11 @@ country_event = {
 	title = carspain.114.t
 	desc = carspain.114.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.114.a
 		add_political_power = -25
@@ -960,11 +966,11 @@ country_event = {
 	title = carspain.150.t
 	desc = carspain.150.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.150.a
 		ai_chance = { base = 90 }
@@ -975,7 +981,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = carspain.150.b
 		ai_chance = { base = 10 }
@@ -993,11 +999,11 @@ country_event = {
 	title = carspain.151.t
 	desc = carspain.151.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.151.a
 		if = {
@@ -1051,11 +1057,11 @@ country_event = {
 	title = carspain.152.t
 	desc = carspain.152.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.152.a
 	}
@@ -1067,11 +1073,11 @@ country_event = {
 	title = carspain.153.t
 	desc = carspain.153.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.153.a
 	}
@@ -1083,11 +1089,11 @@ country_event = {
 	title = carspain.154.t
 	desc = carspain.154.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = carspain.154.a
 	}
@@ -1099,7 +1105,7 @@ country_event = {
 	title = carspain.160.t
 	desc = carspain.160.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1108,11 +1114,11 @@ country_event = {
 		has_country_flag = SPF_strengthen_german_ties_flag
 		has_idea = SPAIN_very_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = carspain.160.a
 		swap_ideas = {
@@ -1130,7 +1136,7 @@ country_event = {
 	title = carspain.160.t
 	desc = carspain.161.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1139,11 +1145,11 @@ country_event = {
 		has_country_flag = SPF_strengthen_german_ties_flag
 		has_idea = SPAIN_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = carspain.160.a
 		swap_ideas = {
@@ -1161,7 +1167,7 @@ country_event = {
 	title = carspain.160.t
 	desc = carspain.162.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1170,11 +1176,11 @@ country_event = {
 		has_country_flag = SPF_strengthen_german_ties_flag
 		has_idea = SPAIN_medium_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = carspain.160.a
 		swap_ideas = {
@@ -1192,7 +1198,7 @@ country_event = {
 	title = carspain.160.t
 	desc = carspain.163.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1201,11 +1207,11 @@ country_event = {
 		has_country_flag = SPF_strengthen_german_ties_flag
 		has_idea = SPAIN_high_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = carspain.160.a
 		remove_ideas = SPAIN_high_recognition_idea
@@ -1220,7 +1226,7 @@ country_event = {
 	title = carspain.165.t
 	desc = carspain.165.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPF
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -1233,11 +1239,11 @@ country_event = {
 			has_idea = SPAIN_high_recognition_idea
 		}
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 10 }
-	
+
 	option = {
 		name = carspain.165.a
 		if = {

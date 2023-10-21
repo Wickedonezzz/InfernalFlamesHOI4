@@ -1,9 +1,11 @@
 ﻿capital = 65
 
+recruit_character = SAX_George
+recruit_character = SAX_gradnauer
+
 oob = "SAX"
 
 add_ideas = {
-	party_pop_0_40
 	parliamentary_republic
 }
 

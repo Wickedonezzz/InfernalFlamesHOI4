@@ -23,24 +23,24 @@ country_event = { #Collies Rise up
 		}
 		has_country_flag = BCW_begins
 		NOT = { has_country_flag = BCW_collies_risen }
-	}	
+	}
 	mean_time_to_happen = {
 		days = 7
 	}
 	immediate = {
 		set_country_flag = BCW_collies_risen
-		BRA = {		
+		BRA = {
 			add_popularity = {
-			ideology = collectivist 
-			popularity = -0.1
+				ideology = collectivist
+				popularity = -0.1
 			}
 		}
 		every_state = {
-			limit = { 
+			limit = {
 				OR = { is_core_of = BRA
-						is_core_of = BPS
-					}
-			 }
+					is_core_of = BPS
+				}
+			}
 			add_claim_by = UBR
 		}
 		every_owned_state = {
@@ -90,16 +90,16 @@ country_event = {
 	title = bcw.2.t
 	desc = bcw.2.d
 	picture = GFX_report_event_tanks_mexico_city
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bcw.2.a
 		load_oob = "UBR"
 
 		set_country_flag = brazilian_civil_war
-		BRA = { 
-		set_country_flag = brazilian_civil_war }
+		BRA = {
+			set_country_flag = brazilian_civil_war }
 		#add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = SOV }
 		if = {
 			limit = { owns_state = 497 }
@@ -148,24 +148,24 @@ country_event = { #Staters Rise up
 		}
 		has_country_flag = BCW_begins
 		NOT = { has_country_flag = BCW_state_risen }
-	}	
+	}
 	mean_time_to_happen = {
 		days = 7
 	}
 	immediate = {
 		set_country_flag = BCW_state_risen
-		BRA = {		
+		BRA = {
 			add_popularity = {
-			ideology = paternal_autocrat
-			popularity = -0.1
+				ideology = paternal_autocrat
+				popularity = -0.1
 			}
 		}
 		every_state = {
-			limit = { 
+			limit = {
 				OR = { is_core_of = BRA
-						is_core_of = UBR
-					}
-			 }
+					is_core_of = UBR
+				}
+			}
 			add_claim_by = BPS
 		}
 		every_owned_state = {
@@ -214,9 +214,9 @@ country_event = {
 	title = bcw.4.t
 	desc = bcw.4.d
 	picture = GFX_report_event_tanks_mexico_city
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bcw.4.a
 		load_oob = "BPS"
@@ -266,7 +266,7 @@ country_event = { #test event
 		has_country_flag = BRA_lefties
 	}
 	fire_only_once = yes
-	mean_time_to_happen = { days = 5}	
+	mean_time_to_happen = { days = 5}
 	option = {
 		name = bcw.1337.a
 		BRA = { set_country_flag = BCW_begins }
@@ -287,7 +287,7 @@ country_event = { #end of bcw for brazil
 		}
 	}
 	fire_only_once = yes
-	mean_time_to_happen = { days = 7 }	
+	mean_time_to_happen = { days = 7 }
 	option = {
 		name = bcw.25.a
 		set_country_flag = BRA_bcw_ended
@@ -310,7 +310,7 @@ country_event = { #end of bcw for union
 		}
 	}
 	fire_only_once = yes
-	mean_time_to_happen = { days = 7 }	
+	mean_time_to_happen = { days = 7 }
 	option = {
 		name = bcw.26.a
 		set_country_flag = UBR_bcw_ended
@@ -332,7 +332,7 @@ country_event = { #end of bcw for bepis
 		}
 	}
 	fire_only_once = yes
-	mean_time_to_happen = { days = 7 }	
+	mean_time_to_happen = { days = 7 }
 	option = {
 		name = bcw.27.a
 		set_country_flag = BPS_bcw_ended

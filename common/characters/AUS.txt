@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_conservative_subtype
+			ideology = christian_democracy_subtype
 			traits = { }
 		}
 	}

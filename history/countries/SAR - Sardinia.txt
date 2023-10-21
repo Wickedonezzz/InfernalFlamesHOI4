@@ -9,7 +9,6 @@ set_stability = 0.50
 set_war_support = 0.50
 
 add_ideas = {
-	party_pop_0_00
 	parliamentary_republic
 }
 

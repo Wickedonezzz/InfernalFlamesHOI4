@@ -345,38 +345,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ideas/IRE_catholic.png"
 	}
 	spriteType = {
-		name = "GFX_idea_IRE_debt_bproblematic"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_bproblematic.png"
-	}
-	spriteType = {
-		name = "GFX_idea_IRE_debt_dangerous"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_dangerous.png"
-	}
-	spriteType = {
-		name = "GFX_idea_IRE_debt_edangerous"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_edangerous.png"
-	}
-	spriteType = {
-		name = "GFX_idea_IRE_debt_iproblematic"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_iproblematic.png"
-	}
-	spriteType = {
-		name = "GFX_idea_IRE_debt_low"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_low.png"
-	}
-	spriteType = {
-		name = "GFX_idea_IRE_debt_mproblematic"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_mproblematic.png"
-	}
-	spriteType = {
-		name = "GFX_idea_IRE_debt_ruin"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_ruin.png"
-	}
-	spriteType = {
-		name = "GFX_idea_IRE_debt_vlow"
-		texturefile = "gfx/interface/ideas/ideas/IRE_debt_vlow.png"
-	}
-	spriteType = {
 		name = "GFX_idea_IRE_economy_good"
 		texturefile = "gfx/interface/ideas/ideas/IRE_economy_good.png"
 	}

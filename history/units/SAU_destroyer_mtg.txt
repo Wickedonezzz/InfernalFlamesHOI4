@@ -8,7 +8,7 @@ units = {
 				name = "Al Jubail"
 				definition = early_ship_hull_light
 				equipment = { 
-					destroyer_1 = { amount = 1 owner = SAU version_name = "Al Jubail Class" } 
+					early_ship_hull_light = { amount = 1 owner = SAU version_name = "Al Jubail Class" } 
 				}
 			}
     }

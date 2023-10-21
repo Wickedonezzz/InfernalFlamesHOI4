@@ -113,7 +113,7 @@ division_template = {
 units = {
 	division= {	
 		name = "42ème Division d'Infanterie"
-		location = 3457
+		location = 9482
 		division_template = "Division d'Infanterie" 	
 		start_experience_factor = 0.2
 	}
@@ -138,7 +138,7 @@ units = {
 	}
 	division= {	
 		name = "10ème Division Légère Mécanique"
-		location = 3444
+		location = 3512
 		division_template = "Division Légère Mécanique" 		
 		start_experience_factor = 0.2
 	}
@@ -343,7 +343,7 @@ units = {
 
 	division= {	
 		name = "101ème Division d'Infanterie"
-		location = 11470
+		location = 529
 		division_template = "Division d'Infanterie" 	#Reserve Brigade, I might remove these
 		start_experience_factor = 0.2
 

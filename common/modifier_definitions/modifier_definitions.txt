@@ -58,3 +58,24 @@ cannot_call_allies_or_join_wars = {
 	precision = 0
 	category = country
 }
+
+offmap_military_factories_tooltip = { #does nothing - only creates a tooltip
+	color_type = good
+	value_type = number
+	precision = 0
+	category = country
+}
+
+offmap_civilian_factories_tooltip = { #does nothing - only creates a tooltip
+	color_type = good
+	value_type = number
+	precision = 0
+	category = country
+}
+
+offmap_dockyards_tooltip = { #does nothing - only creates a tooltip
+	color_type = good
+	value_type = number
+	precision = 0
+	category = country
+}

@@ -8,6 +8,7 @@ state={
 		add_core_of = SHX
 		add_claim_by = XSM
 		add_claim_by = KMT
+		add_claim_by = ZHI
 		add_claim_by = FNG
 		buildings = {
 			infrastructure = 2

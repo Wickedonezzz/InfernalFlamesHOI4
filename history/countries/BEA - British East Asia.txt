@@ -15,7 +15,6 @@ set_technology = {
 }
 
 add_ideas = {
-	party_pop_0_30
 	volunteer_only
 	
 	BEA_disputes_between_british_and_dutch_idea

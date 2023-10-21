@@ -1,229 +1,6 @@
 #overwrites vanilla file
 
 leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
-	
-	ITA_soldier_king = {
-		random = no
-
-		stability_factor = 0.05
-	}
-	ITA_soldier_king_2 = {
-		random = no
-
-		stability_factor = 0.1
-		war_support_factor = 0.1
-	}
-
-	meddler = {
-		random = no
-		political_power_gain = -0.05
-		political_advisor_cost_factor = 0.25
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	MAC_Alexander_The_Great = {
-		random = no
-		stability_factor = 0.1
-		war_support_factor = 0.1
-		offence = 0.3
-		experience_gain_air_factor = 0.5
-		experience_gain_army_factor = 0.5
-		experience_gain_factor = 0.5
-		command_power_gain_mult = 0.5
-		command_power_gain = 0.5
-		ai_will_do = {
-			factor = 1000
-		}
-	}
-
-	popular_figurehead = {
-		random = no
-		stability_factor = 0.10
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	SOV_father = {
-		random = no
-		stability_factor = 0.10
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_son = {
-		random = no
-		stability_factor = 0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_the_general = {
-		random = no
-		production_speed_arms_factory_factor = 0.03
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_the_spymaster = {
-		random = no
-		stability_factor = 0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_the_soldier = {
-		random = no
-		war_support_factor = 0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_the_metallworker = {
-		random = no
-		industrial_capacity_factory = 0.03
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_the_revolutionary = {
-		random = no
-		consumer_goods_factor = -0.03
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	CLB_american_dressler = {
-		random = no
-		army_armor_attack_factor = 0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_the_theorist = {
-		random = no
-				research_speed_factor = 0.03
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_the_bureaucrat = {
-		random = no
-		industrial_capacity_factory = 0.03
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	charismatic = {
-		random = no
-		stability_factor = 0.05
-		army_morale_factor = 0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	FRA_marshal_of_france = {
-		random = no
-		army_morale_factor = 0.1
-		army_org_factor = 0.1 
-		conscription = 0.01
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	coalition_leader = {
-		random = no
-		mobilization_laws_cost_factor = -0.15
-		economy_cost_factor = -0.15 
-		trade_laws_cost_factor = -0.15
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	marysue = {
-		random = no
-		stability_factor = 0.10 
-		political_power_gain = 0.25
-		conscription = 0.05
-		offence = 0.1
-		consumer_goods_factor = -0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	hothead = { #Congratulations, you got yourself caught. So what's the next step of your master plan?
-		random = no
-		ai_focus_aggressive_factor = 0.5
-		ai_get_ally_desire_factor = 100
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	big_brother = {
-		random = no
-		stability_factor = 0.10 
-		political_power_gain = 0.25
-		drift_defence_factor = 1  
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	hates_democracy = {
-		random = no
-		ai_focus_aggressive_factor = 0.25
-		social_conservative_drift = -0.10
-		market_liberal_drift = -0.10
-		social_liberal_drift = -0.10
-		social_democrat_drift = -0.10
-		authoritarian_democrat_drift = -0.10
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	the_second_meiji = {
-		random = no
-		stability_factor = 0.10
-		political_power_gain = 0.1
-		war_support_factor = 0.05
-		authoritarian_democrat_drift = 0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	
-	
-	
 	### Chief of Staff/Army Chief/Navy Chief/Air Chief Traits ###
 	
 	# 1 is worst, 3 is best
@@ -1521,10 +1298,10 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	light_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
-			cv_fighter_equipment = {
+			cv_small_plane_airframe = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
 		}
@@ -1537,10 +1314,10 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	light_aircraft_manufacturer_2 = { 
 		random = no
 		equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
 				air_agility = 0.2 maximum_speed = 0.1
 			}
-			cv_fighter_equipment = {
+			cv_small_plane_airframe = {
 				air_agility = 0.2 maximum_speed = 0.1
 			}
 		}
@@ -1554,10 +1331,10 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	CAS_manufacturer = {
 		random = no
 		equipment_bonus = {
-			CAS_equipment = {
+			small_plane_cas_airframe = {
 				air_ground_attack = 0.1 reliability = 0.1
 			}
-			cv_CAS_equipment = {
+			cv_small_plane_cas_airframe = {
 				air_ground_attack = 0.1 reliability = 0.1
 			}		
 		}
@@ -1570,10 +1347,10 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	medium_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
-			heavy_fighter_equipment = {
+			medium_plane_fighter_airframe = {
 				reliability = 0.2
 			}
-			tac_bomber_equipment = {
+			medium_plane_airframe = {
 				reliability = 0.2
 			}
 		}
@@ -1586,14 +1363,14 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	fuel_efficient_aircraft_manufacturer = { 
 		random = no
 		equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
 				air_range = 0.1
 			}
-			heavy_fighter_equipment = {
+			medium_plane_fighter_airframe = {
 				air_range = 0.1
 				reliability = 0.2
 			}
-			tac_bomber_equipment = {
+			medium_plane_airframe = {
 				reliability = 0.2
 			}
 		}
@@ -1607,7 +1384,7 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 		random = no
 		equipment_bonus = {
 
-			strat_bomber_equipment = {
+			large_plane_airframe = {
 				air_bombing = 0.1
 			}
 		}
@@ -1621,10 +1398,10 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 		random = no
 		equipment_bonus = {
 			# TODO: how about we boost all carrier plane versions here a bit?
-			nav_bomber_equipment = {
+			small_plane_naval_bomber_airframe = {
 				air_range = 0.1 naval_strike_attack = 0.1
 			}
-			cv_nav_bomber_equipment = {
+			cv_small_plane_naval_bomber_airframe = {
 				air_range = 0.1 naval_strike_attack = 0.1
 			}
 		}
@@ -1694,10 +1471,10 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 			carrier = {
 				carrier_size = 0.25 armor_value = -0.15 naval_range = 0.25
 			}
-			battleship = {
+			ship_hull_heavy = {
 				naval_range = 0.25
 			}
-			heavy_cruiser = {
+			ship_hull_cruiser = {
 				naval_range = 0.25
 			}
 			submarine = {
@@ -1716,7 +1493,7 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 			carrier = {
 				armor_value = 0.5 
 			}
-			battleship = {
+			ship_hull_heavy = {
 				armor_value = 0.1 				
 				hg_attack = 0.1
 				lg_attack = 0.1
@@ -1731,12 +1508,12 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	battlefleet_designer = { #armored carriers, slightly buffed cap ships
 		random = no
 		equipment_bonus = {
-			battleship = {
+			ship_hull_heavy = {
 				armor_value = 0.15 
 				hg_attack = 0.15
 				lg_attack = 0.15
 			}
-			heavy_cruiser = {
+			ship_hull_cruiser = {
 				torpedo_attack = 0.25
 				sub_detection = -0.25
 			}
@@ -1753,12 +1530,12 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 			carrier = {
 				surface_visibility = -0.1 naval_speed = 0.1 carrier_size = -0.1
 			}
-			battleship = {
+			ship_hull_heavy = {
 				surface_visibility = -0.1 naval_speed = 0.1 				
 				hg_attack = -0.1
 				lg_attack = -0.1
 			}
-			heavy_cruiser = {
+			ship_hull_cruiser = {
 				surface_visibility = -0.1 naval_speed = 0.1
 			}
 			submarine = {
@@ -1774,7 +1551,7 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	convoy_escort_naval_manufacturer = {
 		random = no
 		equipment_bonus = {
-			heavy_cruiser = {
+			ship_hull_cruiser = {
 				naval_range = 0.3 sub_detection = 0.1 naval_speed = 0.1 build_cost_ic = 0.1
 			}
 		}
@@ -1790,13 +1567,13 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 			carrier = {
 				build_cost_ic = -0.25 carrier_size = -0.2 naval_range = -0.5
 			}
-			battleship = {
+			ship_hull_heavy = {
 				build_cost_ic = -0.25 armor_value = -0.2 				
 				hg_attack = -0.2
 				lg_attack = -0.2 
 				naval_range = -0.5
 			}
-			heavy_cruiser = {
+			ship_hull_cruiser = {
 				build_cost_ic = -0.25 naval_range = -0.5
 			}
 			submarine = {
@@ -1970,7 +1747,7 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 	dive_bomber = {
 		sprite = 14
 		equipment_bonus = {
-			CAS_equipment = {
+			small_plane_cas_airframe = {
 					instant = yes
 					air_ground_attack = 0.1 
 			}
@@ -2060,4 +1837,196 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 			factor = 500
 		}
 	}
+
+	dictator = {
+		random = no
+		political_power_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	warmonger = {
+		random = no
+		ai_focus_aggressive_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	grand_protector = { # Purged by PDX in 1.4 update
+		random = no
+		political_power_gain = 0.05
+		consumer_goods_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	warrior_prince = { # Purged by PDX in 1.4 Update
+		random = no
+
+		army_org_factor = 0.05
+		army_morale_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#ai_focus_defense_factor
+#ai_focus_aggressive_factor
+#ai_focus_production_factor
+#ai_focus_military_advancements_factor
+#ai_focus_peaceful_factor
+#ai_focus_naval_factor
+#ai_focus_naval_air_factor
+#ai_focus_aviation_factor
+
+	permanent_revolutionary = {
+		random = no
+		political_power_factor = -0.15
+		justify_war_goal_time = 0.15
+		subversive_activites_upkeep = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### Military Minister Traits
+	
+	# 1 is worst, 3 is best
+
+	army_armored_1 = { # +4 armor efficiency
+		sprite = 8
+		army_armor_attack_factor = 0.05
+		army_armor_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	army_armored_2 = { # +8 armor efficiency
+		sprite = 8
+		army_armor_attack_factor = 0.1
+		army_armor_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	army_armored_3 = { # +12 armor efficiency
+		sprite = 8
+		army_armor_attack_factor = 0.15
+		army_armor_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	
+	army_artillery_1 = { # +4 artillery efficiency
+		sprite = 8
+		army_artillery_attack_factor = 0.1
+		army_artillery_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	army_artillery_2 = { # +8 artillery efficiency
+		sprite = 8
+		army_artillery_attack_factor = 0.15
+		army_artillery_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	army_artillery_3 = { # +12 artillery efficiency
+		sprite = 8
+		army_artillery_attack_factor = 0.2
+		army_artillery_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.1
+		special_forces_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.15
+		special_forces_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.2
+		special_forces_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	
+	army_cavalry_1 = { # +4 cavalry/motorized efficiency
+		sprite = 8
+		cavalry_attack_factor = 0.05
+		cavalry_defence_factor = 0.05
+		motorized_attack_factor = 0.05
+		motorized_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	army_cavalry_2 = { # +8 cavalry/motorized efficiency
+		sprite = 8
+		cavalry_attack_factor = 0.1
+		cavalry_defence_factor = 0.1
+		motorized_attack_factor = 0.1
+		motorized_defence_factor =0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	army_cavalry_3 = { # +12 cavalry/motorized efficiency
+		sprite = 8
+		cavalry_attack_factor = 0.15
+		cavalry_defence_factor = 0.15
+		motorized_attack_factor = 0.15
+		motorized_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
 }

@@ -20,8 +20,9 @@ WAR_NAME_SPA_SPF: "Spanish Anarchist and Falangist Conflict"
 WAR_NAME_SPF_SPA: "Spanish Anarchist and Falangist Conflict"
 WAR_NAME_SPR_SPF: "Spanish Republican and Falangist Conflict"
 WAR_NAME_SPF_SPR: "Spanish Republican and Falangist Conflict"
-WAR_NAME_SPM_SPF: "Spanish Monarchist and Falangist Conflict"
+WAR_NAME_SPM_SPF: "Spanish Anarchist and Falangist Conflict"
 WAR_NAME_SPF_SPM: "Spanish Monarchist and Falangist Conflict"
+WAR_NAME_SPA_SPF: "Spanish Monarchist and Falangist Conflict"
 WAR_NAME_SPA_SPR: "Spanish Anarchist and Republican Conflict"
 WAR_NAME_SPR_SPA: "Spanish Anarchist and Republican Conflict"
 WAR_NAME_SPM_SPA: "Spanish Anarchist and Monarchist Conflict"
@@ -33,9 +34,9 @@ WAR_NAME_SPR_SPM: "Spanish Monarchist and Republican Conflict"
 WAR_NAME_POR_PRR: "Portuguese Civil War"
 WAR_NAME_PRR_POR: "Portuguese Civil War"
 
-#Turkish Civil War
-WAR_NAME_TUR_TRT: "Turkish Civil War"
-WAR_NAME_TRT_TUR: "Turkish Civil War"
+# #Turkish Civil War
+# WAR_NAME_TUR_TRT: "Turkish Civil War"
+# WAR_NAME_TRT_TUR: "Turkish Civil War"
 
 #Bulgarian Civil War
 WAR_NAME_BUL_BSR: "Bulgarian Civil War"

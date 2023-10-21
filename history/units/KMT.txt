@@ -327,13 +327,34 @@ units = {
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.5
 	}
-
-	##### Fifth War Area (CO: Li Zongren) #####
-
 }
 
-
-
 instant_effect = {
-	#No instant production
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "KMT"
+		}
+		requested_factories = 5
+		progress = 0.5
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "KMT"
+		}
+		requested_factories = 2
+		progress = 0.6
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "KMT"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
 }

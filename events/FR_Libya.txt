@@ -17,7 +17,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
-	
+
 	hidden = yes
 
 	option = {
@@ -48,7 +48,7 @@ country_event = { # Attack British Kufra
 				country_event = { id = lba.4 days = 1 }
 			}
 		}
-			
+
 	}
 }
 
@@ -106,7 +106,7 @@ country_event = { # London wants Rome to apologies
 				popularity = -0.02
 			}
 		}
-		
+
 		if = {
 			limit = {
 				has_government = social_conservative
@@ -121,7 +121,7 @@ country_event = { # London wants Rome to apologies
 			country_event = lba.5
 		}
 	}
-	
+
 	option = {
 		name = lba.3.b # Never
 		# add_opinion_modifier
@@ -187,29 +187,35 @@ country_event = { # Balbo wants to return to Rome
 		tag = LBA
 		date > 1936.4.15
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
 
 	option = {
 		name = lba.6.a
-    add_country_leader_role = {
-      character = LBA_Rodolfo_Graziani
-      promote_leader = yes
-      country_leader = {
-        ideology = authoritarian_democrat_subtype
-        traits = {}
-      }
-    }	
 		ITA = {
 			country_event = lba.7
+			ITA_Adalberto_di_Savoia = {
+				set_nationality = LBA
+			}
+		}
+		add_country_leader_role = {
+			character = ITA_Adalberto_di_Savoia
+			promote_leader = yes
+			country_leader = {
+				ideology = authoritarian_democrat_subtype
+				traits = {}
+			}
+		}
+		ITA_Italo_Balbo = {
+			set_nationality = ITA
 		}
 	}
 }
-	
+
 # ITALO BALBO returns
 country_event = {
 	id = lba.7
@@ -217,7 +223,6 @@ country_event = {
 	title =  lba.7.t
 	desc = lba.7.d
 	picture = italo_chiarman
-
 	is_triggered_only = yes
 
 	option = {
@@ -226,7 +231,7 @@ country_event = {
 		add_popularity = { ideology = national_populist popularity = 0.02 }
 		set_country_flag = ITA_balbo_boi
 	}
-	
+
 	option = {
 		name = lba.7.b
 		add_political_power = -50
@@ -245,9 +250,9 @@ country_event = { # Fate of the Senussi
 		tag = LBA
 		date > 1936.7.0
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -265,9 +270,9 @@ country_event = { # Fate of the Senussi
 				level = 1
 				instant_build = yes
 			}
-		}	
+		}
 	}
-	
+
 	option = {
 		name = lba.8.b
 		add_stability = 0.05
@@ -282,13 +287,13 @@ country_event = {
 	picture = GFX_report_event_libya
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lba.9.a
 		add_political_power = 50
 		add_stability = -0.05
 	}
-	
+
 	option = {
 		name = lba.9.b
 		add_stability = 0.05
@@ -303,7 +308,7 @@ country_event = { # Italy installs transitional government in Libya
 	picture = GFX_report_event_libya
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lba.10.a
 		LBA_Provisional_Government = {
@@ -328,7 +333,7 @@ country_event = { # Italy installs Idris
 	picture = GFX_report_event_libya
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lba.11.a
 		if = {
@@ -340,6 +345,14 @@ country_event = { # Italy installs Idris
 					}
 				}
 			}
+			swap_ideas = {
+				remove_idea = colonial_government
+				add_idea = constitutional_monarchy
+			}
+			set_politics = {
+				ruling_party = social_conservative
+				elections_allowed = no
+			}
 			add_country_leader_role = {
 				character = LBA_Idris_Senussi
 				promote_leader = yes
@@ -347,9 +360,59 @@ country_event = { # Italy installs Idris
 					ideology = social_conservative_subtype
 					traits = { }
 				}
-		  	}	
+			}
+			add_country_leader_role = {
+				character = LBA_Idris_Senussi
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberal_subtype
+					traits = { }
+				}
+			}
+			add_country_leader_role = {
+				character = LBA_Idris_Senussi
+				promote_leader = yes
+				country_leader = {
+					ideology = market_liberal_subtype
+					traits = { }
+				}
+			}
+			add_country_leader_role = {
+				character = LBA_Idris_Senussi
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democrat_subtype
+					traits = { }
+				}
+			}
+			add_country_leader_role = {
+				character = LBA_Idris_Senussi
+				promote_leader = yes
+				country_leader = {
+					ideology = national_populist_subtype
+					traits = { }
+				}
+			}
+			add_country_leader_role = {
+				character = LBA_Idris_Senussi
+				promote_leader = yes
+				country_leader = {
+					ideology = paternal_autocrat_subtype
+					traits = { }
+				}
+			}
+			add_country_leader_role = {
+				character = LBA_Idris_Senussi
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = { }
+				}
+			}
 		}
+		set_country_flag = LBA_Local_admin
 		add_political_power = 50
 		add_stability = 0.1
+		drop_cosmetic_tag = yes
 	}
 }

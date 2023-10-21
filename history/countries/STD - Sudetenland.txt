@@ -3,7 +3,6 @@ capital = 69
 oob = "STD"
 
 add_ideas = {
-	party_pop_0_40
 	parliamentary_republic
 }
 
@@ -16,7 +15,6 @@ set_politics = {
 	last_election = "1934.6.12"
 	election_frequency = 48
 	elections_allowed = no
-
 }
 
 set_popularities = {

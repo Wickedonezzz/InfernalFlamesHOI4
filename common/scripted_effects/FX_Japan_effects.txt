@@ -1,5 +1,5 @@
 JAP_interservice_rivalry_towards_army = {
-	
+
 	if = {
 		limit = {  has_idea = JAP_interservice_rivalry_army_strengthened }
 		swap_ideas = {
@@ -42,7 +42,7 @@ JAP_interservice_rivalry_towards_navy = {
 			remove_idea = JAP_interservice_rivalry_navy_strengthened
 			add_idea = JAP_interservice_rivalry_navy_dominant
 		}
-	}	
+	}
 	if = {
 		limit = { has_idea = JAP_interservice_rivalry_balanced }
 		swap_ideas = {
@@ -129,7 +129,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_1
-				has_country_flag = JAP_ultranat_1 
+				has_country_flag = JAP_ultranat_1
 				has_country_flag = JAP_admiralty_1
 			}
 		}
@@ -139,7 +139,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_1
-				has_country_flag = JAP_ultranat_1 
+				has_country_flag = JAP_ultranat_1
 				has_country_flag = JAP_admiralty_2
 			}
 		}
@@ -149,7 +149,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_1
-				has_country_flag = JAP_ultranat_2 
+				has_country_flag = JAP_ultranat_2
 				has_country_flag = JAP_admiralty_1
 			}
 		}
@@ -159,7 +159,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_1
-				has_country_flag = JAP_ultranat_2 
+				has_country_flag = JAP_ultranat_2
 				has_country_flag = JAP_admiralty_2
 			}
 		}
@@ -169,7 +169,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_2
-				has_country_flag = JAP_ultranat_1 
+				has_country_flag = JAP_ultranat_1
 				has_country_flag = JAP_admiralty_1
 			}
 		}
@@ -179,7 +179,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_2
-				has_country_flag = JAP_ultranat_1 
+				has_country_flag = JAP_ultranat_1
 				has_country_flag = JAP_admiralty_2
 			}
 		}
@@ -189,7 +189,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_2
-				has_country_flag = JAP_ultranat_2 
+				has_country_flag = JAP_ultranat_2
 				has_country_flag = JAP_admiralty_1
 			}
 		}
@@ -199,7 +199,7 @@ JAP_nagasaki_tribunal_court_idea = {
 		limit = {
 			AND = {
 				has_country_flag = JAP_ultraroy_2
-				has_country_flag = JAP_ultranat_2 
+				has_country_flag = JAP_ultranat_2
 				has_country_flag = JAP_admiralty_2
 			}
 		}

@@ -17280,38 +17280,6 @@ spriteTypes = {
   }
 
 	spriteType = {
-    name = "GFX_BEL_Catholic_Education_shine"
-    texturefile = "gfx/interface/goals/focus_Catholic_Education.png"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-      animationmaskfile = "gfx/interface/goals/focus_Catholic_Education.png"
-      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-      animationrotation = -90.0
-      animationlooping = no
-      animationtime = 0.75
-      animationdelay = 0
-      animationblendmode = "add"
-      animationtype = "scrolling"
-      animationrotationoffset = { x = 0.0 y = 0.0 }
-      animationtexturescale = { x = 1.0 y = 1.0 }
-    }
-
-    animation = {
-      animationmaskfile = "gfx/interface/goals/focus_Catholic_Education.png"
-      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-      animationrotation = 90.0
-      animationlooping = no
-      animationtime = 0.75
-      animationdelay = 0
-      animationblendmode = "add"
-      animationtype = "scrolling"
-      animationrotationoffset = { x = 0.0 y = 0.0 }
-      animationtexturescale = { x = 1.0 y = 1.0 }
-    }
-    legacy_lazy_load = no
-  }
-
-	spriteType = {
     name = "GFX_BEL_Economic_Regions_shine"
     texturefile = "gfx/interface/goals/goal_Economic_Regions.png"
     effectFile = "gfx/FX/buttonstate.lua"
@@ -17377,10 +17345,10 @@ spriteTypes = {
 
 	spriteType = {
     name = "GFX_BEL_Improve_Catholic_Relations_shine"
-    texturefile = "gfx/interface/goals/focus_BEL_Improve_Catholic_Relations.png"
+    texturefile = "gfx/interface/goals/BEL_Improve_Catholic_Relations.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-      animationmaskfile = "gfx/interface/goals/focus_BEL_Improve_Catholic_Relations.png"
+      animationmaskfile = "gfx/interface/goals/BEL_Improve_Catholic_Relations.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = -90.0
       animationlooping = no
@@ -17393,7 +17361,7 @@ spriteTypes = {
     }
 
     animation = {
-      animationmaskfile = "gfx/interface/goals/focus_BEL_Improve_Catholic_Relations.png"
+      animationmaskfile = "gfx/interface/goals/BEL_Improve_Catholic_Relations.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = 90.0
       animationlooping = no
@@ -25120,7 +25088,7 @@ spriteTypes = {
   }
 
 	spriteType = {
-    name = "GFX_GRE_megali_shine"
+    name = "GFX_goal_GRE_megali_shine"
     texturefile = "gfx/interface/goals/GRE_megali.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {

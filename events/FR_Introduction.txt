@@ -10,28 +10,28 @@ country_event = {
 	title = intro.1.t
 	desc = intro.1.d
 	picture = GFX_report_event_aid_pact
+        fire_only_once = yes
+	trigger = {
+		NOT = { has_country_flag = INTRO_FIRED }
+		is_ai = no
+	}
+	immediate = { set_country_flag = INTRO_FIRED }
+	mean_time_to_happen = { days = 2 }
 
-	#trigger = {
-	#	NOT = { has_country_flag = INTRO_FIRED }
-	#	is_ai = no
-	#}
-	#immediate = { set_country_flag = INTRO_FIRED }
-	#mean_time_to_happen = { days = 0 }
-
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
 	option = { #thx
 		name = intro.1.a
 		ai_chance = { factor = 100 }
-		country_event = { id = intro.4 }
+		country_event = { id = intro.5 days = 2 }
 	}
 
-	option = { # whatsup with Party Pop?
-		name = intro.1.b
-		ai_chance = { factor = 0 }
-		add_political_power = 5
-		country_event = { id = intro.3 }
-	}
+	# option = { # whatsup with Party Pop?
+	# 	name = intro.1.b
+	# 	ai_chance = { factor = 0 }
+	# 	add_political_power = 5
+	# 	country_event = { id = intro.3 }
+	# }
 
 	option = { # where faq?
 		name = intro.1.c
@@ -53,7 +53,7 @@ country_event = {
 	option = { # why can't I keep that pp?
 		name = intro.2.a
 		add_political_power = -10
-		country_event = { id = intro.4 }
+		country_event = { id = intro.5 days = 2 }
 	}
 }
 
@@ -69,7 +69,7 @@ country_event = {
 	option = { #so nothing has changed?
 		name = intro.3.a
 		add_political_power = -5
-		country_event = { id = intro.4 }
+		country_event = { id = intro.5 days = 2 }
 	}
 }
 

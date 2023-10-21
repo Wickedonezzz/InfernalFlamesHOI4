@@ -13,16 +13,8 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event socspain.0"}
 	title = socspain.0.t
 	desc = socspain.0.d
-	#picture = NOR_tranmel_tale
-	
-	 trigger = {
-	 	tag = SPA
-	 }
+	is_triggered_only = yes
 
-	# mean_time_to_happen = { days = 2 }
-	
-    fire_only_once = yes
-	
 	option = {
 		name = socspain.0.a
 		add_political_power = 5
@@ -37,14 +29,15 @@ country_event = {
 	title = socspain.1.t
 	desc = socspain.1.d
 	#picture = NOR_tranmel_tale
-	
+	is_triggered_only = yes
+
 	trigger = {
 		tag = SPA
 		date > 1936.1.8
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.1.a
 		add_manpower = -500
@@ -58,14 +51,14 @@ country_event = {
 	title = socspain.2.t
 	desc = socspain.2.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		date > 1936.1.21
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.2.a
 		add_political_power = 10
@@ -81,14 +74,14 @@ country_event = {
 	title = socspain.3.t
 	desc = socspain.3.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		controls_state = 41
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.3.a
 		add_political_power = 40
@@ -106,14 +99,14 @@ country_event = {
 	title = socspain.4.t
 	desc = socspain.4.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		controls_state = 169
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.4.a
 		add_political_power = 15
@@ -131,14 +124,14 @@ country_event = {
 	title = socspain.5.t
 	desc = socspain.5.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		controls_state = 171
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.5.a
 		add_political_power = 15
@@ -156,15 +149,15 @@ country_event = {
 	title = socspain.6.t
 	desc = socspain.6.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		SPM = { exists = no }
 		SPF = { exists = no }
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.6.a
 		hidden_effect = {
@@ -178,14 +171,14 @@ country_event = {
 	title = socspain.7.t
 	desc = socspain.7.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		date > 1936.4.25
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.7.a
 		add_political_power = -10
@@ -201,14 +194,14 @@ country_event = {
 	title = socspain.8.t
 	desc = socspain.8.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_war_with = SPR
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.8.a
 		hidden_effect = {
@@ -222,11 +215,11 @@ country_event = {
 	title = socspain.9.t
 	desc = socspain.9.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.9.a
 		add_stability = -0.10
@@ -280,6 +273,10 @@ country_event = {
 			add_ideas = SPAIN_very_low_recognition_idea
 			set_cosmetic_tag = SPA_republic
 			set_global_flag = SPR_spanish_civil_war_ended_flag
+			event_target:unified_spain = {
+				clear_global_event_target = unified_spain
+			}
+			save_global_event_target_as = unified_spain
 		}
 	}
 }
@@ -290,7 +287,7 @@ country_event = {
 	title = socspain.10.t
 	desc = socspain.10.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		NOT = {
@@ -299,9 +296,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.10.a
 		add_political_power = -50
@@ -324,11 +321,11 @@ country_event = {
 	title = socspain.11.t
 	desc = socspain.11.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.11.a
 		add_stability = -0.03
@@ -347,7 +344,7 @@ country_event = {
 	title = socspain.12.t
 	desc = socspain.12.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -356,9 +353,9 @@ country_event = {
 		}
 		date > 1936.9.5
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.12.a
 		add_political_power = -50
@@ -380,16 +377,16 @@ country_event = {
 	title = socspain.13.t
 	desc = socspain.13.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_global_flag = SPR_spanish_civil_war_ended_flag
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 50 }
-	
+
 	option = {
 		name = socspain.13.a
 		ai_chance = { base = 30 }
@@ -400,7 +397,7 @@ country_event = {
 			add_popularity = { ideology = collectivist popularity = 0.02 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.13.b
 		ai_chance = { base = 50 }
@@ -411,7 +408,7 @@ country_event = {
 			add_popularity = { ideology = libertarian_socialist popularity = 0.02 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.13.c
 		ai_chance = { base = 20 }
@@ -431,11 +428,11 @@ country_event = {
 	title = socspain.100.t
 	desc = socspain.100.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.100.a
 	}
@@ -447,11 +444,11 @@ country_event = {
 	title = socspain.101.t
 	desc = socspain.101.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.101.a
 		add_stability = 0.02
@@ -464,11 +461,11 @@ country_event = {
 	title = socspain.102.t
 	desc = socspain.102.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.102.a
 		add_stability = 0.01
@@ -485,11 +482,11 @@ country_event = {
 	title = socspain.103.t
 	desc = socspain.103.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.103.a
 		ai_chance = {
@@ -513,7 +510,7 @@ country_event = {
 			country_event = { id = socspain.104 days = 5 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.103.b
 		ai_chance = {
@@ -545,11 +542,11 @@ country_event = {
 	title = socspain.104.t
 	desc = socspain.104.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.104.a
 		add_stability = 0.01
@@ -566,11 +563,11 @@ country_event = {
 	title = socspain.105.t
 	desc = socspain.105.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.105.a
 		ai_chance = {
@@ -594,7 +591,7 @@ country_event = {
 			country_event = { id = socspain.106 days = 1 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.105.b
 		ai_chance = {
@@ -626,11 +623,11 @@ country_event = {
 	title = socspain.106.t
 	desc = socspain.106.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.106.a
 		add_stability = -0.05
@@ -646,11 +643,11 @@ country_event = {
 	title = socspain.107.t
 	desc = socspain.107.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.107.a
 		hidden_effect = {
@@ -665,11 +662,11 @@ country_event = {
 	title = socspain.108.t
 	desc = socspain.108.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.108.a
 		ai_chance = {
@@ -694,19 +691,19 @@ country_event = {
 		add_popularity = { ideology = collectivist popularity = -0.04 }
 		set_country_flag = SPA_PSOE_governs_flag
 		set_country_flag = SPA_socialist_divisions_flag
-		remove_coalition_vanguardist = yes 
-		remove_coalition_libertarian_socialist = yes 
+		remove_coalition_vanguardist = yes
+		remove_coalition_libertarian_socialist = yes
 		hidden_effect = {
-			
+
 			country_event = { id = socspain.109 days = 1 }
-			set_party_name = { 
-				ideology = libertarian_socialist 
-				long_name = SPA_PSOE_radical_party_long 
-				name = SPA_PSOE_radical_party 
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = SPA_PSOE_radical_party_long
+				name = SPA_PSOE_radical_party
 			}
 		}
 	}
-	
+
 	option = {
 		name = socspain.108.b
 		ai_chance = {
@@ -730,26 +727,26 @@ country_event = {
 		add_popularity = { ideology = collectivist popularity = -0.02 }
 		set_country_flag = SPA_CNT_FAI_governs_flag
 		set_country_flag = SPA_socialist_divisions_flag
-		remove_coalition_vanguardist = yes 
-		remove_coalition_libertarian_socialist = yes 
-		remove_coalition_social_democrat = yes 
+		remove_coalition_vanguardist = yes
+		remove_coalition_libertarian_socialist = yes
+		remove_coalition_social_democrat = yes
 		set_cosmetic_tag = SPA_anarcho
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 			country_event = { id = socspain.110 days = 1 }
-			set_party_name = { 
-				ideology = libertarian_socialist 
-				long_name = SPA_CNT_FAI_party_long 
-				name = SPA_CNT_FAI_party 
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = SPA_CNT_FAI_party_long
+				name = SPA_CNT_FAI_party
 			}
 			add_country_leader_role = {
-        character = SPA_The_CNT_FAI_Congress
-        promote_leader = yes
-        country_leader = {
-          ideology = libertarian_socialist_subtype
-          traits = {}
-        }
-      }
+				character = SPA_The_CNT_FAI_Congress
+				promote_leader = yes
+				country_leader = {
+					ideology = libertarian_socialist_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -760,11 +757,11 @@ country_event = {
 	title = socspain.109.t
 	desc = socspain.109.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.109.a
 		ai_chance = {
@@ -781,10 +778,10 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 		add_popularity = { ideology = social_democrat popularity = -0.05 }
 		hidden_effect = {
-			add_ideas = SPA_Francisco_Largo_Caballero_hog_lib
+			activate_advisor = SPA_Francisco_Largo_Caballero_hog_lib
 		}
 	}
-	
+
 	option = {
 		name = socspain.109.b
 		ai_chance = {
@@ -801,7 +798,7 @@ country_event = {
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
 		add_popularity = { ideology = libertarian_socialist popularity = -0.05 }
 		hidden_effect = {
-			add_ideas = SPA_Juan_Negrin_hog_sde
+			activate_advisor = SPA_Juan_Negrin_hog_sde
 		}
 	}
 }
@@ -812,11 +809,11 @@ country_event = {
 	title = socspain.110.t
 	desc = socspain.110.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.110.a
 		ai_chance = {
@@ -831,10 +828,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			add_ideas = SPA_Juan_Garcia_Oliver_hog_lib
+			activate_advisor = SPA_Juan_Garcia_Oliver_hog_lib
 		}
 	}
-	
+
 	option = {
 		name = socspain.110.b
 		ai_chance = {
@@ -849,7 +846,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			add_ideas = SPA_Angel_Pestana_Nunez_hog_lib
+			activate_advisor = SPA_Angel_Pestana_Nunez_hog_lib
 		}
 	}
 }
@@ -860,11 +857,11 @@ country_event = {
 	title = socspain.111.t
 	desc = socspain.111.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.111.a
 		add_stability = -0.05
@@ -880,11 +877,11 @@ country_event = {
 	title = socspain.112.t
 	desc = socspain.112.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.112.a
 		add_stability = 0.05
@@ -900,11 +897,11 @@ country_event = {
 	title = socspain.113.t
 	desc = socspain.113.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.113.a
 		add_political_power = 50
@@ -914,7 +911,7 @@ country_event = {
 		add_popularity = { ideology = social_democrat popularity = -0.04 }
 		set_country_flag = SPA_PCE_governs_flag
 		set_country_flag = SPA_socialist_divisions_flag
-		remove_coalition_libertarian_socialist = yes 
+		remove_coalition_libertarian_socialist = yes
 		remove_coalition_social_democrat = yes
 		set_cosmetic_tag = SPA_commie
 		hidden_effect = {
@@ -928,11 +925,11 @@ country_event = {
 	title = socspain.114.t
 	desc = socspain.114.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.114.a
 		add_stability = -0.02
@@ -949,11 +946,11 @@ country_event = {
 	title = socspain.115.t
 	desc = socspain.115.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.115.a
 		add_stability = -0.03
@@ -971,11 +968,11 @@ country_event = {
 	title = socspain.116.t
 	desc = socspain.116.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.116.a
 		ai_chance = {
@@ -997,7 +994,7 @@ country_event = {
 			country_event = { id = socspain.117 days = 2 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.116.b
 		ai_chance = {
@@ -1027,11 +1024,11 @@ country_event = {
 	title = socspain.117.t
 	desc = socspain.117.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.117.a
 		add_stability = -0.01
@@ -1047,11 +1044,11 @@ country_event = {
 	title = socspain.118.t
 	desc = socspain.118.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.118.a
 		add_stability = 0.01
@@ -1068,11 +1065,11 @@ country_event = {
 	title = socspain.119.t
 	desc = socspain.119.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	immediate = {
 		set_country_flag = { flag = SPA_ramos_flag value = 0 }
 		set_country_flag = { flag = SPA_ibarruri_flag value = 0 }
@@ -1080,7 +1077,7 @@ country_event = {
 		set_country_flag = { flag = SPA_maurin_flag value = 0 }
 		set_country_flag = { flag = SPA_nin_flag value = 0 }
 	}
-	
+
 	option = {
 		name = socspain.119.a
 		hidden_effect = {
@@ -1095,11 +1092,11 @@ country_event = {
 	title = socspain.120.t
 	desc = socspain.120.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.120.a
 		ai_chance = {
@@ -1131,7 +1128,7 @@ country_event = {
 			country_event = { id = socspain.121 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.120.b
 		ai_chance = {
@@ -1163,7 +1160,7 @@ country_event = {
 			country_event = { id = socspain.121 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.120.c
 		ai_chance = {
@@ -1195,7 +1192,7 @@ country_event = {
 			country_event = { id = socspain.121 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.120.e
 		ai_chance = {
@@ -1227,7 +1224,7 @@ country_event = {
 			country_event = { id = socspain.121 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.120.f
 		ai_chance = {
@@ -1267,11 +1264,11 @@ country_event = {
 	title = socspain.121.t
 	desc = socspain.121.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.121.a
 		ai_chance = {
@@ -1303,7 +1300,7 @@ country_event = {
 			country_event = { id = socspain.122 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.121.b
 		ai_chance = {
@@ -1334,7 +1331,7 @@ country_event = {
 			country_event = { id = socspain.122 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.121.c
 		ai_chance = {
@@ -1365,7 +1362,7 @@ country_event = {
 			country_event = { id = socspain.122 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.121.e
 		ai_chance = {
@@ -1404,11 +1401,11 @@ country_event = {
 	title = socspain.122.t
 	desc = socspain.122.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.122.a
 		ai_chance = {
@@ -1439,7 +1436,7 @@ country_event = {
 			country_event = { id = socspain.123 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.122.b
 		ai_chance = {
@@ -1470,7 +1467,7 @@ country_event = {
 			country_event = { id = socspain.123 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.122.c
 		ai_chance = {
@@ -1501,7 +1498,7 @@ country_event = {
 			country_event = { id = socspain.123 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.122.e
 		ai_chance = {
@@ -1532,7 +1529,7 @@ country_event = {
 			country_event = { id = socspain.123 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.122.f
 		ai_chance = {
@@ -1571,11 +1568,11 @@ country_event = {
 	title = socspain.123.t
 	desc = socspain.123.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.123.a
 		ai_chance = {
@@ -1606,7 +1603,7 @@ country_event = {
 		hidden_effect = {
 		}
 	}
-	
+
 	option = {
 		name = socspain.123.b
 		ai_chance = {
@@ -1636,7 +1633,7 @@ country_event = {
 		hidden_effect = {
 		}
 	}
-	
+
 	option = {
 		name = socspain.123.c
 		ai_chance = {
@@ -1666,7 +1663,7 @@ country_event = {
 		hidden_effect = {
 		}
 	}
-	
+
 	option = {
 		name = socspain.123.e
 		ai_chance = {
@@ -1704,7 +1701,7 @@ country_event = {
 	title = socspain.124.t
 	desc = socspain.124.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		AND = {
@@ -1715,11 +1712,11 @@ country_event = {
 			has_country_flag = { flag = SPA_nin_flag value < 3 }
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 10 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.124.a
 		ai_chance = {
@@ -1737,7 +1734,7 @@ country_event = {
 			country_event = { id = socspain.125 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.124.b
 		ai_chance = {
@@ -1763,11 +1760,11 @@ country_event = {
 	title = socspain.125.t
 	desc = socspain.125.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.125.a
 		clr_country_flag = SPA_ramos_flag
@@ -1788,11 +1785,11 @@ country_event = {
 	title = socspain.126.t
 	desc = socspain.126.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.126.a
 		clr_country_flag = SPA_ramos_flag
@@ -1804,13 +1801,13 @@ country_event = {
 		hidden_effect = {
 			load_focus_tree = FR_Socialist_Spain_Ibarruri
 			add_country_leader_role = {
-        character = SPA_Dolores_Ibarruri
-        promote_leader = yes
-        country_leader = {
-          ideology = collectivist_subtype
-          traits = {}
-        }
-      }
+				character = SPA_Dolores_Ibarruri
+				promote_leader = yes
+				country_leader = {
+					ideology = collectivist_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -1821,7 +1818,7 @@ country_event = {
 	title = socspain.127.t
 	desc = socspain.127.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		AND = {
@@ -1832,11 +1829,11 @@ country_event = {
 			has_country_flag = { flag = SPA_nin_flag value < 3 }
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 10 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.127.a
 		hidden_effect = {
@@ -1851,7 +1848,7 @@ country_event = {
 	title = socspain.128.t
 	desc = socspain.128.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		AND = {
@@ -1862,11 +1859,11 @@ country_event = {
 			has_country_flag = { flag = SPA_nin_flag value < 3 }
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 10 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.128.a
 		hidden_effect = {
@@ -1881,7 +1878,7 @@ country_event = {
 	title = socspain.129.t
 	desc = socspain.129.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		AND = {
@@ -1892,11 +1889,11 @@ country_event = {
 			has_country_flag = { flag = SPA_nin_flag value < 3 }
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 10 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.129.a
 		ai_chance = {
@@ -1914,7 +1911,7 @@ country_event = {
 			country_event = { id = socspain.130 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.129.b
 		ai_chance = {
@@ -1940,11 +1937,11 @@ country_event = {
 	title = socspain.130.t
 	desc = socspain.130.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.130.a
 		clr_country_flag = SPA_ramos_flag
@@ -1969,11 +1966,11 @@ country_event = {
 	title = socspain.131.t
 	desc = socspain.131.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.131.a
 		add_stability = -0.05
@@ -1985,13 +1982,13 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = socspain.132 days = 2 }
 			add_country_leader_role = {
-        character = SPA_Juan_Modesto
-        promote_leader = yes
-        country_leader = {
-          ideology = collectivist_subtype
-          traits = {}
-        }
-      }
+				character = SPA_Juan_Modesto
+				promote_leader = yes
+				country_leader = {
+					ideology = collectivist_subtype
+					traits = {}
+				}
+			}
 			add_popularity = { ideology = collectivist popularity = -0.05 }
 		}
 	}
@@ -2003,11 +2000,11 @@ country_event = {
 	title = socspain.132.t
 	desc = socspain.132.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.132.a
 		ai_chance = {
@@ -2027,7 +2024,7 @@ country_event = {
 			country_event = { id = socspain.134 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.132.b
 		ai_chance = {
@@ -2053,11 +2050,11 @@ country_event = {
 	title = socspain.133.t
 	desc = socspain.133.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.133.a
 		clr_country_flag = SPA_ramos_flag
@@ -2083,11 +2080,11 @@ country_event = {
 	title = socspain.134.t
 	desc = socspain.134.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.134.a
 		clr_country_flag = SPA_ramos_flag
@@ -2099,13 +2096,13 @@ country_event = {
 		hidden_effect = {
 			load_focus_tree = FR_Socialist_Spain_Ramos
 			add_country_leader_role = {
-        character = SPA_Jose_Diaz_Ramos
-        promote_leader = yes
-        country_leader = {
-          ideology = collectivist_subtype
-          traits = {}
-        }
-      }
+				character = SPA_Jose_Diaz_Ramos
+				promote_leader = yes
+				country_leader = {
+					ideology = collectivist_subtype
+					traits = {}
+				}
+			}
 			add_stability = 0.05
 		}
 	}
@@ -2117,7 +2114,7 @@ country_event = {
 	title = socspain.135.t
 	desc = socspain.135.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		AND = {
@@ -2128,11 +2125,11 @@ country_event = {
 			has_country_flag = { flag = SPA_nin_flag value < 3 }
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 10 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.135.a
 		hidden_effect = {
@@ -2147,11 +2144,11 @@ country_event = {
 	title = socspain.136.t
 	desc = socspain.136.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.136.a
 		clr_country_flag = SPA_ramos_flag
@@ -2167,13 +2164,13 @@ country_event = {
 			}
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 			add_country_leader_role = {
-        character = SPA_Joaquin_Maurin
-        promote_leader = yes
-        country_leader = {
-          ideology = libertarian_socialist_subtype
-          traits = {}
-        }
-      }
+				character = SPA_Joaquin_Maurin
+				promote_leader = yes
+				country_leader = {
+					ideology = libertarian_socialist_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -2184,7 +2181,7 @@ country_event = {
 	title = socspain.137.t
 	desc = socspain.137.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		AND = {
@@ -2195,11 +2192,11 @@ country_event = {
 			has_country_flag = { flag = SPA_maurin_flag value < 3 }
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 10 }
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.137.a
 		ai_chance = {
@@ -2217,7 +2214,7 @@ country_event = {
 			country_event = { id = socspain.138 days = 3 }
 		}
 	}
-	
+
 	option = {
 		name = socspain.137.b
 		ai_chance = {
@@ -2243,11 +2240,11 @@ country_event = {
 	title = socspain.138.t
 	desc = socspain.138.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.138.a
 		clr_country_flag = SPA_ramos_flag
@@ -2258,19 +2255,19 @@ country_event = {
 		custom_effect_tooltip  = SPA_perez_elected_tooltip
 		hidden_effect = {
 			load_focus_tree = FR_Socialist_Spain_Perez
-			set_party_name = { 
-				ideology = collectivist 
-				long_name = SPA_PCE_trot_party_long 
-				name = SPA_PCE_trot_party 
+			set_party_name = {
+				ideology = collectivist
+				long_name = SPA_PCE_trot_party_long
+				name = SPA_PCE_trot_party
 			}
 			add_country_leader_role = {
-        character = SPA_Andres_Nin_Perez
-        promote_leader = yes
-        country_leader = {
-          ideology = collectivist_subtype
-          traits = {}
-        }
-      }
+				character = SPA_Andres_Nin_Perez
+				promote_leader = yes
+				country_leader = {
+					ideology = collectivist_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 }
@@ -2281,11 +2278,11 @@ country_event = {
 	title = socspain.134.t
 	desc = socspain.139.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.134.a
 		clr_country_flag = SPA_ramos_flag
@@ -2297,13 +2294,13 @@ country_event = {
 		hidden_effect = {
 			load_focus_tree = FR_Socialist_Spain_Ramos
 			add_country_leader_role = {
-        character = SPA_Jose_Diaz_Ramos
-        promote_leader = yes
-        country_leader = {
-          ideology = collectivist_subtype
-          traits = {}
-        }
-      }
+				character = SPA_Jose_Diaz_Ramos
+				promote_leader = yes
+				country_leader = {
+					ideology = collectivist_subtype
+					traits = {}
+				}
+			}
 			add_stability = 0.05
 		}
 	}
@@ -2315,11 +2312,11 @@ country_event = {
 	title = socspain.150.t
 	desc = socspain.150.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.150.a
 		ai_chance = { base = 90 }
@@ -2330,7 +2327,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = socspain.150.b
 		ai_chance = { base = 10 }
@@ -2348,11 +2345,11 @@ country_event = {
 	title = socspain.151.t
 	desc = socspain.151.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.151.a
 		if = {
@@ -2406,11 +2403,11 @@ country_event = {
 	title = socspain.152.t
 	desc = socspain.152.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.152.a
 	}
@@ -2422,11 +2419,11 @@ country_event = {
 	title = socspain.153.t
 	desc = socspain.153.d
 	#picture = NOR_tranmel_tale
-	
+
 	is_triggered_only = yes
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	option = {
 		name = socspain.152.a
 	}
@@ -2438,7 +2435,7 @@ country_event = {
 	title = socspain.160.t
 	desc = socspain.160.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -2447,11 +2444,11 @@ country_event = {
 		has_country_flag = SPA_strengthen_soviet_ties_flag
 		has_idea = SPAIN_very_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = socspain.160.a
 		swap_ideas = {
@@ -2469,7 +2466,7 @@ country_event = {
 	title = socspain.160.t
 	desc = socspain.161.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -2478,11 +2475,11 @@ country_event = {
 		has_country_flag = SPA_strengthen_soviet_ties_flag
 		has_idea = SPAIN_low_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = socspain.160.a
 		swap_ideas = {
@@ -2500,7 +2497,7 @@ country_event = {
 	title = socspain.160.t
 	desc = socspain.162.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -2509,11 +2506,11 @@ country_event = {
 		has_country_flag = SPA_strengthen_soviet_ties_flag
 		has_idea = SPAIN_medium_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = socspain.160.a
 		swap_ideas = {
@@ -2531,7 +2528,7 @@ country_event = {
 	title = socspain.160.t
 	desc = socspain.163.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -2540,11 +2537,11 @@ country_event = {
 		has_country_flag = SPA_strengthen_soviet_ties_flag
 		has_idea = SPAIN_high_recognition_idea
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 300 }
-	
+
 	option = {
 		name = socspain.160.a
 		remove_ideas = SPAIN_high_recognition_idea
@@ -2559,7 +2556,7 @@ country_event = {
 	title = socspain.165.t
 	desc = socspain.165.d
 	#picture = NOR_tranmel_tale
-	
+
 	trigger = {
 		tag = SPA
 		has_global_flag = SPR_spanish_civil_war_ended_flag
@@ -2575,11 +2572,11 @@ country_event = {
 			has_idea = SPAIN_high_recognition_idea
 		}
 	}
-	
-    fire_only_once = yes
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = { days = 10 }
-	
+
 	option = {
 		name = socspain.165.a
 		if = {

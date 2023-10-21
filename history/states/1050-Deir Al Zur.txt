@@ -3,8 +3,9 @@ state={
 	id=1050
 	name="STATE_1050"
 	history={ 
-		owner = IRQ
+		owner = KUR
 		add_core_of = IRQ
+		add_core_of = KUR
 	}
 	provinces={
 		901 1578 1606 1634 6883 10882 

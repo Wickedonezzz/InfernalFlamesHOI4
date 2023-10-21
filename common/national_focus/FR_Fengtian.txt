@@ -1,5 +1,5 @@
 focus_tree = {
-	id = FR_Fengtian_base
+	id = fengtian_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -9,298 +9,29 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 50 y = 3200 }
 
-	# shared_focus = FNG_new_political_modernization
-	# shared_focus = FNG_problems_with_industry
-	# shared_focus = FNG_state_of_the_army
-
-	focus = {
-		id = FNG_new_political_modernization
-		icon = GFX_goal_generic_elections
-		x = 5
-		y = 0
-		cost = 7
-
-		available = { always = no }
-
-	}
-
-	focus = {
-		id = FNG_the_future_of_fengtian
-		icon = GFX_goal_generic_elections
-		prerequisite = { focus = FNG_new_political_modernization }
-		x = 5
-		y = 1
-		cost = 7
-
-		available = { always = no }
-
-	}
-
-	focus = {
-		id = FNG_the_succession
-		icon = GFX_goal_authoritarian
-		prerequisite = { focus = FNG_the_future_of_fengtian }
-		x = 5
-		y = 2
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_zhang_xueliang
-		icon = GFX_goal_generic_elections
-		prerequisite = { focus = FNG_the_succession }
-		x = 5
-		y = 3
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_military_inheritance
-		icon = GFX_goal_national_arsenal
-		prerequisite = { focus = FNG_zhang_xueliang }
-		x = 3
-		y = 4
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_execute_disloyal_military_elements
-		icon = GFX_goal_secret_agents
-		prerequisite = { focus = FNG_zhang_xueliang }
-		x = 7
-		y = 4
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_junta
-		icon = GFX_goal_army_guy_2
-		prerequisite = { focus = FNG_military_inheritance }
-		x = 3
-		y = 5
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_descent_into_chaos
-		icon = GFX_goal_HOL_depillarization
-		prerequisite = { focus = FNG_military_inheritance focus = FNG_execute_disloyal_military_elements }
-		x = 5
-		y = 5
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_cult_of_zhang
-		icon = GFX_goal_generic_elections
-		prerequisite = { focus = FNG_execute_disloyal_military_elements }
-		x = 7
-		y = 5
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_ambassadors_enter_through_korea
-		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = FNG_junta }
-		x = 3
-		y = 6
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_demands_from_japan
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = FNG_ambassadors_enter_through_korea }
-		x = 3
-		y = 7
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_total_anarchy
-		icon = GFX_goal_flames_of_rebellion
-		prerequisite = { focus = FNG_ambassadors_enter_through_korea focus = FNG_descent_into_chaos }
-		x = 5
-		y = 7
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_pushover
-		icon = GFX_goal_HOL_pillarization
-		prerequisite = { focus = FNG_cult_of_zhang }
-		x = 7
-		y = 7
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_japans_move
-		icon = GFX_goal_china_deal
-		prerequisite = { focus = FNG_cult_of_zhang }
-		x = 9
-		y = 7
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_preperations
-		icon = GFX_goal_zhang_rifle
-		prerequisite = { focus = FNG_pushover }
-		x = 7
-		y = 8
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_backslide
-		icon = GFX_goal_state_economy
-		prerequisite = { focus = FNG_demands_from_japan }
-		x = 3
-		y = 8
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_the_interests_war
-		icon = GFX_goal_foreign_diplomacy
-		prerequisite = { focus = FNG_total_anarchy }
-		x = 5
-		y = 9
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_awaken_pan_asianism
-		icon = GFX_focus_jap_cast_the_die
-		prerequisite = { focus = FNG_backslide }
-		x = 3
-		y = 9
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_concordian_ascension
-		icon = GFX_focus_HOL_deal_with_right
-		prerequisite = { focus = FNG_the_interests_war }
-		x = 4
-		y = 10
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
-	focus = {
-		id = FNG_communications_in_power
-		icon = GFX_goal_ideology_social_conservative
-		prerequisite = { focus = FNG_the_interests_war }
-		x = 6
-		y = 10
-		cost = 7
-
-		available = { always = no }
-
-
-	}
-
 	#### ECONOMY ####
 
 	focus = {
 		id = FNG_problems_with_industry
-		icon = GFX_focus_generic_treaty
-		x = 18
+		icon = GFX_goal_generic_privatization
+		x = 6
 		y = 0
 		cost = 1
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		bypass = {
 			has_global_flag = FNG_elections_were_held
 		}
-
 		ai_will_do = {
 			factor = 3
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_problems_with_industry"
-
 			add_political_power = 20
-
 		}
-
-
 	}
 
 	focus = {
@@ -308,95 +39,79 @@ focus_tree = {
 		icon = GFX_focus_generic_provoke_border_clashes
 		prerequisite = { focus = FNG_problems_with_industry }
 		mutually_exclusive = { focus = FNG_eliminate_the_bandits }
-		x = 12
+		x = -6
 		y = 1
 		cost = 10
-
+		relative_position_id = FNG_problems_with_industry
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_bandit_issue"
-
 			add_political_power = 100
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_hire_the_bandits
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_generic_paramilitary
 		prerequisite = { focus = FNG_the_bandit_issue }
-		x = 12
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = FNG_the_bandit_issue
 		cost = 10
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_hire_the_bandits"
 
 			load_oob = FNG_integrated
-
 			country_event = man.57
-
 			set_global_flag = FNG_hunters_satisfied
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_military_integration
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_generic_army_cooperation
 		prerequisite = { focus = FNG_hire_the_bandits }
-		x = 12
-		y = 3
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_hire_the_bandits
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_military_integration"
-
 			add_ideas = FNG_bandit_army
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_loot_caravans
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_SOV_the_road_of_life
 		prerequisite = { focus = FNG_military_integration }
-		x = 12
-		y = 4
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_military_integration
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
@@ -405,7 +120,6 @@ focus_tree = {
 			XSM = { has_war = no }
 			ZHI = { has_war = no }
 		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -417,36 +131,31 @@ focus_tree = {
 				factor = 4
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_loot_caravans"
 
 			SOV = { country_event = { id = man.55 days = 2 } }
 			XSM = { country_event = { id = man.55 days = 2 } }
 			ZHI = { country_event = { id = man.55 days = 2 } }
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_the_future_of_industry
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_banking_legislation
 		prerequisite = { focus = FNG_loot_caravans focus = FNG_a_safer_economy }
-		x = 12
-		y = 5
+		x = 1
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_loot_caravans
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_future_of_industry"
 
@@ -458,438 +167,119 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			add_tech_bonus = {
 				name = industry_bonus
 				bonus = 0.35
 				uses = 1
 				category = industry
 			}
-
 		}
-
-	}
-
-	focus = {
-		id = FNG_fengtian_society_for_light_metals
-		icon = GFX_focus_generic_aluminum
-		prerequisite = { focus = FNG_the_future_of_industry focus = FNG_the_future_of_arms }
-		available = {
-			owns_state = 714
-		}
-		x = 12
-		y = 6
-		cost = 5
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_society_for_light_metals"
-
-			add_popularity = { ideology = market_liberal popularity = 0.05 }
-
-			add_resource = {
-				type = aluminium
-				amount = 8
-				state = 714
-			}
-
-			add_resource = {
-				type = chromium
-				amount = 8
-				state = 714
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_fengtian_society_for_heavy_metals
-		icon = GFX_focus_generic_steel
-		prerequisite = { focus = FNG_the_future_of_industry focus = FNG_the_future_of_arms }
-		available = {
-			owns_state = 871
-		}
-		x = 14
-		y = 6
-		cost = 5
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_society_for_heavy_metals"
-
-			add_popularity = { ideology = market_liberal popularity = 0.05 }
-
-			add_resource = {
-				type = steel
-				amount = 12
-				state = 871
-			}
-
-			add_resource = {
-				type = tungsten
-				amount = 8
-				state = 871
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_fengtian_society_for_mechanical_production
-		icon = GFX_goal_oil
-		prerequisite = { focus = FNG_the_future_of_industry focus = FNG_the_future_of_arms }
-		available = {
-			owns_state = 328
-		}
-		x = 16
-		y = 6
-		cost = 5
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_society_for_mechanical_production"
-
-			add_popularity = { ideology = market_liberal popularity = 0.05 }
-
-			add_resource = {
-				type = oil
-				amount = 12
-				state = 328
-			}
-
-			add_resource = {
-				type = rubber
-				amount = 8
-				state = 328
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_fengtian_foundation_for_infrastructure
-		icon = GFX_goal_generic_radar
-		prerequisite = { focus = FNG_the_future_of_industry focus = FNG_the_future_of_arms }
-		x = 18
-		y = 6
-		cost = 5
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_foundation_for_infrastructure"
-
-			add_popularity = { ideology = social_conservative popularity = 0.10 }
-
-			add_tech_bonus = {
-				name = research_bonus
-				bonus = 0.30
-				uses = 2
-				category = electronics
-			}
-
-		}
-
 	}
 
 	focus = {
 		id = FNG_eliminate_the_bandits
-		icon = GFX_goal_generic_defence
+		icon = GFX_focus_ETH_peacekeeping_forces
 		prerequisite = { focus = FNG_problems_with_industry }
 		mutually_exclusive = { focus = FNG_the_bandit_issue }
-		x = 14
+		x = -4
 		y = 1
 		cost = 7
-
+		relative_position_id = FNG_problems_with_industry
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_eliminate_the_bandits"
-
-			add_political_power = 100
-
+			add_stability = 0.1
 		}
-
 	}
 
 	focus = {
 		id = FNG_put_them_down
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = FNG_eliminate_the_bandits }
-		x = 14
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_eliminate_the_bandits
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_put_them_down"
-
+			increase_ruling_party_popularity_by_5 = yes
 			add_manpower = 20000
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_heilungkiang_hunters
 		icon = GFX_heilungkiang_hunters
 		prerequisite = { focus = FNG_put_them_down }
-		x = 14
-		y = 3
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_put_them_down
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_heilungkiang_hunters"
-
 			load_oob = FNG_hunters
-
-			#custom_effect_tooltip = FNG_hunters_tt
-
 			country_event = man.54
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_a_safer_economy
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FNG_heilungkiang_hunters }
-		x = 14
-		y = 4
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_heilungkiang_hunters
 		available = {
 			has_global_flag = FNG_hunters_eliminated
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 3
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_a_safer_economy"
-
 			add_ideas = FNG_thriving_industry
-
 		}
-
-	}
-
-	focus = {
-		id = FNG_fengtian_quality_union
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = FNG_fengtian_society_for_light_metals focus = FNG_fengtian_society_for_heavy_metals focus = FNG_fengtian_society_for_mechanical_production focus = FNG_fengtian_foundation_for_infrastructure }
-		x = 14
-		y = 7
-		cost = 7
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_quality_union"
-
-			add_political_power = -50
-
-			swap_ideas = {
-				remove_idea = iliterate_population
-				add_idea = FNG_industry_woes_1
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_state_run_university_unions
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = FNG_fengtian_quality_union }
-		x = 14
-		y = 8
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_state_run_university_unions"
-
-			add_political_power = -50
-
-			swap_ideas = {
-				remove_idea = FNG_industry_woes_1
-				add_idea = FNG_industry_woes_2
-			}
-
-			add_popularity = { ideology = market_liberal popularity = 0.05 }
-
-			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_military_bureau_quality_officers
-		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = FNG_fengtian_society_for_light_metals focus = FNG_fengtian_society_for_heavy_metals focus = FNG_fengtian_society_for_mechanical_production focus = FNG_fengtian_foundation_for_infrastructure }
-		x = 16
-		y = 7
-		cost = 7
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_military_bureau_quality_officers"
-
-			add_political_power = -50
-
-			swap_ideas = {
-				remove_idea = backwards_economy
-				add_idea = FNG_equipment_woes_1
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_civilian_heroes_initiative
-		icon = GFX_goal_conscription
-		prerequisite = { focus = FNG_military_bureau_quality_officers }
-		x = 16
-		y = 8
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_civilian_heroes_initiative"
-
-			add_political_power = -50
-
-			swap_ideas = {
-				remove_idea = FNG_equipment_woes_1
-				add_idea = FNG_equipment_woes_2
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_patent_military
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = FNG_civilian_heroes_initiative }
-		prerequisite = { focus = FNG_state_run_university_unions }
-		x = 15
-		y = 9
-		cost = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_patent_military"
-			add_political_power = -50
-			swap_ideas = {
-				remove_idea = FNG_industry_woes_2
-				add_idea = FNG_industry_woes_3
-			}
-			add_timed_idea = { idea = FNG_foreign_designer_goods days = 720 }
-		}
-
 	}
 
 	focus = {
 		id = FNG_develop_beijing
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_improve_industry
 		prerequisite = { focus = FNG_problems_with_industry }
 		mutually_exclusive = { focus = FNG_develop_hsinking }
-		x = 16
+		x = -2
 		y = 1
 		cost = 7
-
+		relative_position_id = FNG_problems_with_industry
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
@@ -897,7 +287,6 @@ focus_tree = {
 			has_tech = concentrated_industry
 			owns_state = 608
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_develop_beijing"
 
@@ -909,18 +298,17 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_zhili_expeditions
-		icon = GFX_goal_Zhili_Expedition
+		icon = GFX_goal_generic_attack_zhili
 		prerequisite = { focus = FNG_develop_beijing }
-		x = 16
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
+		relative_position_id = FNG_develop_beijing
 		ai_will_do = {
 			factor = 2
 		}
@@ -929,114 +317,95 @@ focus_tree = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			has_tech = concentrated_industry2
+			country_exists = ZHI
 			ZHI = {
 				controls_state = 597
 			}
-			ZHI = { exists = yes }
 		}
 		bypass = {
-			ZHI = { exists = no }
+			NOT = { country_exists = ZHI }
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_zhili_expeditions"
-
 			country_event = man.105
-
 			ZHI = { country_event = { id = man.106 hours = 3 } }
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_urban_tactics
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = FNG_zhili_expeditions }
-		x = 16
-		y = 3
+		x = 0
+		y = 1
 		cost = 7
-
 		ai_will_do = {
 			factor = 2
 		}
-
+		relative_position_id = FNG_zhili_expeditions
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			has_tech = concentrated_industry3
+			controls_state = 608
+			controls_state = 874
+			controls_state = 614
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_urban_tactics"
 
 			608 = {
-
 				add_building_construction = {
 					type = bunker
 					province = 9843
 					level = 4
 				}
-
 			}
-
 			874 = {
-
 				add_building_construction = {
 					type = bunker
 					province = 4058
 					level = 2
 				}
-
 				add_building_construction = {
 					type = bunker
 					province = 12062
 					level = 2
 				}
-
 				add_building_construction = {
 					type = bunker
 					province = 1169
 					level = 2
 				}
-
 				add_building_construction = {
 					type = bunker
 					province = 9987
 					level = 2
 				}
-
 			}
-
 			614 = {
-
 				add_building_construction = {
 					type = bunker
 					province = 7160
 					level = 2
 				}
-
 				add_building_construction = {
 					type = bunker
 					province = 7189
 					level = 2
 				}
-
 				add_building_construction = {
 					type = bunker
 					province = 1084
 					level = 2
 				}
-
 				add_building_construction = {
 					type = bunker
 					province = 12093
 					level = 2
 				}
-
 			}
-
 		}
 	}
 
@@ -1044,21 +413,20 @@ focus_tree = {
 		id = FNG_build_the_south
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = FNG_urban_tactics }
-		x = 16
-		y = 4
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_urban_tactics
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			has_tech = concentrated_industry4
+			controls_state = 608
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_build_the_south"
 
@@ -1068,7 +436,6 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-
 			608 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1077,76 +444,32 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
-
 	}
-
-	focus = {
-		id = FNG_the_future_of_arms
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = FNG_build_the_south focus = FNG_ports_for_power }
-		x = 18
-		y = 5
-		cost = 7
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_future_of_arms"
-
-			328 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			add_tech_bonus = {
-				name = infantry_bonus
-				bonus = 0.35
-				uses = 1
-				category = infantry_weapons
-			}
-
-		}
-
-	}
-
 
 	focus = {
 		id = FNG_develop_hsinking
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = FNG_problems_with_industry }
 		mutually_exclusive = { focus = FNG_develop_beijing }
-		x = 18
+		x = 0
 		y = 1
 		cost = 7
-
+		relative_position_id = FNG_problems_with_industry
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			has_tech = dispersed_industry
+			controls_state = 328
+			controls_state = 879
+			controls_state = 880
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_develop_hsinking"
-
 			328 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1155,7 +478,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			879 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1164,7 +486,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			880 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1173,30 +494,27 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_countryside_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = FNG_develop_hsinking }
-		x = 18
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_develop_hsinking
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			has_tech = dispersed_industry2
+			controls_state = 715
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_countryside_industry"
 
@@ -1206,7 +524,6 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-
 			715 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1215,51 +532,43 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_interior_defense
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = FNG_countryside_industry }
-		x = 18
-		y = 3
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_countryside_industry
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			has_tech = dispersed_industry3
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_interior_defense"
-
 			add_ideas = FNG_interior_defense_doctrine
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_ports_for_power
-		icon = GFX_goal_BEL_Battleship_Investements
+		icon = GFX_focus_generic_refit_civilian_ships
 		prerequisite = { focus = FNG_interior_defense }
-		x = 18
-		y = 4
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_interior_defense
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
@@ -1268,7 +577,6 @@ focus_tree = {
 			owns_state = 716
 			owns_state = 609
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_ports_for_power"
 
@@ -1280,7 +588,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			609 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1289,180 +596,453 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = tooltip_white_line
 			add_timed_idea = { idea = FNG_electrifying_the_cities days = 90 }
+			custom_effect_tooltip = tooltip_white_line
 			add_timed_idea = { idea = FNG_leasing_ports  days = 90 }
-
 		}
+	}
 
+	focus = {
+		id = FNG_the_future_of_arms
+		icon = GFX_goal_generic_military_equipment
+		prerequisite = { focus = FNG_build_the_south focus = FNG_ports_for_power }
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = FNG_build_the_south
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+			controls_state = 328
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_future_of_arms"
+
+			328 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.35
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_fengtian_society_for_light_metals
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = FNG_the_future_of_industry focus = FNG_the_future_of_arms }
+		available = {
+			owns_state = 714
+		}
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = FNG_the_future_of_industry
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_society_for_light_metals"
+
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = anshan_iron_and_steel
+			custom_effect_tooltip = tooltip_white_line
+
+			add_popularity = { ideology = market_liberal popularity = 0.05 }
+			add_resource = {
+				type = aluminium
+				amount = 8
+				state = 714
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+				state = 714
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_fengtian_society_for_heavy_metals
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = FNG_the_future_of_industry focus = FNG_the_future_of_arms }
+		available = {
+			owns_state = 871
+		}
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = FNG_the_future_of_industry
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_society_for_heavy_metals"
+
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = showa_steel_works
+			custom_effect_tooltip = tooltip_white_line
+			add_popularity = { ideology = market_liberal popularity = 0.05 }
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 871
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+				state = 871
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_fengtian_society_for_mechanical_production
+		icon = GFX_goal_oil
+		prerequisite = { focus = FNG_the_future_of_industry focus = FNG_the_future_of_arms }
+		available = {
+			owns_state = 328
+		}
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = FNG_the_future_of_arms
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_society_for_mechanical_production"
+
+			add_popularity = { ideology = market_liberal popularity = 0.05 }
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 328
+			}
+			add_resource = {
+				type = rubber
+				amount = 8
+				state = 328
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_fengtian_foundation_for_infrastructure
+		icon = GFX_goal_generic_radio_equipment
+		prerequisite = { 
+			focus = FNG_the_future_of_industry 
+			focus = FNG_the_future_of_arms 
+		}
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = FNG_the_future_of_arms
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_foundation_for_infrastructure"
+
+			add_popularity = { ideology = social_conservative popularity = 0.10 }
+			add_tech_bonus = {
+				name = research_bonus
+				bonus = 0.30
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_fengtian_quality_union
+		icon = GFX_goal_production
+		prerequisite = { focus = FNG_fengtian_society_for_light_metals focus = FNG_fengtian_society_for_heavy_metals focus = FNG_fengtian_society_for_mechanical_production focus = FNG_fengtian_foundation_for_infrastructure }
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = FNG_fengtian_society_for_heavy_metals
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_fengtian_quality_union"
+
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = CHI_illiterate_population
+				add_idea = FNG_industry_woes_1
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_state_run_university_unions
+		icon = GFX_goal_KTG_Bookstack
+		prerequisite = { focus = FNG_fengtian_quality_union }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = FNG_fengtian_quality_union
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_state_run_university_unions"
+
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = FNG_industry_woes_1
+				add_idea = FNG_industry_woes_2
+			}
+			add_popularity = { ideology = market_liberal popularity = 0.05 }
+			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
+		}
+	}
+
+	focus = {
+		id = FNG_military_bureau_quality_officers
+		icon = GFX_goal_officers
+		prerequisite = { focus = FNG_fengtian_society_for_light_metals focus = FNG_fengtian_society_for_heavy_metals focus = FNG_fengtian_society_for_mechanical_production focus = FNG_fengtian_foundation_for_infrastructure }
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = FNG_fengtian_society_for_mechanical_production
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_military_bureau_quality_officers"
+
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = CHI_backwards_economy
+				add_idea = FNG_equipment_woes_1
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_civilian_heroes_initiative
+		icon = GFX_goal_generic_army_mass_assault
+		prerequisite = { focus = FNG_military_bureau_quality_officers }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = FNG_military_bureau_quality_officers
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_civilian_heroes_initiative"
+
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = FNG_equipment_woes_1
+				add_idea = FNG_equipment_woes_2
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_patent_military
+		icon = GFX_goal_generic_drafted_army
+		prerequisite = { focus = FNG_civilian_heroes_initiative }
+		prerequisite = { focus = FNG_state_run_university_unions }
+		x = -1
+		y = 1
+		cost = 20
+		relative_position_id = FNG_civilian_heroes_initiative
+		ai_will_do = {
+			factor = 4
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_patent_military"
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = FNG_industry_woes_2
+				add_idea = FNG_industry_woes_3
+			}
+			add_timed_idea = { idea = FNG_foreign_designer_goods days = 720 }
+		}
 	}
 
 	focus = {
 		id = FNG_the_power_of_the_unions
-		icon = GFX_goal_syndicalist_industry
+		icon = GFX_goal_generic_workers_democracy
 		prerequisite = { focus = FNG_problems_with_industry }
-		x = 22
+		x = 4
 		y = 1
 		cost = 7
-
+		relative_position_id = FNG_problems_with_industry
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_power_of_the_unions"
-
 			country_event = man.53
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_union_integration
-		icon = GFX_goal_government_icon
+		icon = GFX_goal_generic_enforce_labor_regulation
 		prerequisite = { focus = FNG_the_power_of_the_unions }
 		mutually_exclusive = { focus = FNG_union_compromise }
 		mutually_exclusive = { focus = FNG_union_elimination }
-		x = 20
-		y = 2
+		x = -2
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_the_power_of_the_unions
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		available = {
 			has_global_flag = FNG_unions_integrated
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_union_integration"
 			add_timed_idea = { idea = FNG_unions_are_integrated days = 45 }
 			add_political_power = 50
 		}
-
 	}
 
 	focus = {
 		id = FNG_union_compromise
-		icon = GFX_goal_syndicalism
+		icon = GFX_goal_generic_workers_rights
 		prerequisite = { focus = FNG_the_power_of_the_unions }
 		mutually_exclusive = { focus = FNG_union_integration }
 		mutually_exclusive = { focus = FNG_union_elimination }
-		x = 22
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_the_power_of_the_unions
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		available = {
 			has_global_flag = FNG_compromise_with_the_unions
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_union_compromise"
 			add_timed_idea = { idea = FNG_compromise_of_the_unions days = 70 }
 		}
-
 	}
 
 	focus = {
 		id = FNG_union_elimination
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_HOL_crackdown_syndie
 		prerequisite = { focus = FNG_the_power_of_the_unions }
 		mutually_exclusive = { focus = FNG_union_integration }
 		mutually_exclusive = { focus = FNG_union_compromise }
-		x = 24
-		y = 2
+		x = 2
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_the_power_of_the_unions
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		available = {
 			has_global_flag = FNG_end_of_the_association
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_union_elimination"
 			add_timed_idea = { idea = FNG_dismantling_the_unions days = 45 }
 			add_political_power = 50
 		}
-
 	}
 
 	focus = {
 		id = FNG_a_stale_culture
 		icon = GFX_goal_constitutional_guarantees
 		prerequisite = { focus = FNG_union_compromise focus = FNG_union_elimination focus = FNG_union_integration }
-		x = 22
-		y = 3
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_union_compromise
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_a_stale_culture"
-
 			country_event = man.52
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_public_works
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = FNG_a_stale_culture }
-		x = 20
-		y = 4
+		x = -2
+		y = 1
 		cost = 10
-
+		relative_position_id = FNG_a_stale_culture
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_public_works"
 
@@ -1470,140 +1050,117 @@ focus_tree = {
 			country_event = man.51
 			add_timed_idea = { idea = FNG_electrifying_the_cities days = 90 }
 			custom_effect_tooltip = 8_FNG_tt
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_in_honor_of_the_warlord
 		icon = GFX_goal_conscription
 		prerequisite = { focus = FNG_public_works }
-		x = 20
-		y = 5
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_public_works
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			has_global_flag = zhang_zuolin_dead
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_in_honor_of_the_warlord"
-
 			add_stability = 0.075
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_dedication_to_china
 		icon = GFX_focus_chi_one_china_policy
 		prerequisite = { focus = FNG_in_honor_of_the_warlord }
-		x = 20
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_in_honor_of_the_warlord
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		ai_will_do = {
 			factor = 3
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_dedication_to_china"
-
 			add_political_power = 100
-
-
 		}
 	}
 
 	focus = {
 		id = FNG_demand_warlord_tribute
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_goal_generic_capitalist_system
 		prerequisite = { focus = FNG_a_stale_culture }
-		x = 22
-		y = 4
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_a_stale_culture
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_demand_warlord_tribute"
 
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 2552 producer = FNG }
 			add_political_power = -20
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_funding_for_the_people
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_deals
 		prerequisite = { focus = FNG_demand_warlord_tribute }
-		x = 22
-		y = 5
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_demand_warlord_tribute
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_funding_for_the_people"
-
 			add_research_slot = 1
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_tianjin_naval_academy
-		icon = GFX_goal_navy_decision
+		icon = GFX_goal_generic_naval_academy
 		prerequisite = { focus = FNG_funding_for_the_people }
-		x = 22
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_funding_for_the_people
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			owns_state = 608
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_tianjin_naval_academy"
 
@@ -1617,58 +1174,49 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_demand_local_tithing
 		icon = GFX_goal_HOL_sustain_neutrality
 		prerequisite = { focus = FNG_a_stale_culture }
-		x = 24
-		y = 4
+		x = 2
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_a_stale_culture
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_demand_local_tithing"
 
 			add_political_power = -50
-
 			add_ideas = FNG_power_from_the_people
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_increase_rural_conscription
 		icon = GFX_goal_army_guy
 		prerequisite = { focus = FNG_demand_local_tithing }
-		x = 24
-		y = 5
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_demand_local_tithing
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_increase_rural_conscription"
 			swap_ideas = {
@@ -1677,33 +1225,28 @@ focus_tree = {
 			}
 			add_political_power = -75
 		}
-
 	}
 
 	focus = {
-		id = FNG_harbin_military_academy
-		icon = GFX_goal_generic_construct_mil_factory
+		id = FNG_mobilize_the_masses
+		icon = GFX_goal_conscription
 		prerequisite = { focus = FNG_increase_rural_conscription }
-		x = 24
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_increase_rural_conscription
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 			owns_state = 328
 		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_harbin_military_academy"
-
-			army_experience = 10
-			add_ideas = FNG_harbin_military_academy_idea
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_mobilize_the_masses"
+			increase_conscription = yes
 			328 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1712,9 +1255,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
-
 	}
 
 	focus = {
@@ -1722,59 +1263,51 @@ focus_tree = {
 		icon = GFX_goal_A_People_At_Sea
 		prerequisite = { focus = FNG_dedication_to_china}
 		prerequisite = { focus = FNG_tianjin_naval_academy }
-		x = 21
-		y = 7
+		x = 1
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_dedication_to_china
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_a_people_at_sea"
 
 			add_political_power = -50
-
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
-
 		}
-
 	}
 
 	focus = {
 		id = FNG_war_ideology
 		icon = GFX_goal_military_academy
-		prerequisite = { focus = FNG_harbin_military_academy}
+		prerequisite = { focus = FNG_mobilize_the_masses}
 		prerequisite = { focus = FNG_tianjin_naval_academy }
-		x = 23
-		y = 7
+		x = -1
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_mobilize_the_masses
 		ai_will_do = {
 			factor = 3
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_war_ideology"
 
 			add_political_power = -60
-
 			add_doctrine_cost_reduction = {
 				name = FNG_war_ideology
 				cost_reduction = 0.5
@@ -1782,7 +1315,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-
 	}
 
 	focus = {
@@ -1790,505 +1322,40 @@ focus_tree = {
 		icon = GFX_goal_great_science
 		prerequisite = { focus = FNG_a_people_at_sea focus = FNG_war_ideology }
 		available = {
-			ZHI = { exists = no }
-			KMT = { exists = no }
-			FNG = {
-				controls_state = 606
-			}
-			FNG = {
-				controls_state = 613
-			}
-			NOT = {
-				has_war_with = JAP
-			}
+			NOT = { country_exists = ZHI }
+			NOT = { country_exists = KMT }
+			606 = { is_owned_by_ROOT_or_ally = yes }
+			613 = { is_owned_by_ROOT_or_ally = yes }
+			NOT = { has_war_with = JAP }
 		}
-		x = 22
-		y = 8
+		x = 1
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_a_people_at_sea
 		ai_will_do = {
 			factor = 10
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_chinese_academies_for_chinese_students"
 			add_research_slot = 1
 		}
-
 	}
 
-	#### MILITARY / AIRFORCE / NAVY ####
-
-	focus = {
-		id = FNG_state_of_the_army
-		icon = GFX_focus_generic_strike_at_democracy1
-		available = {
-		}
-		x = 21
-		y = 9
-		cost = 7
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		available = { always = no }
-
-		bypass = {
-			date > 1936.10.01
-		}
-
-	}
-
-	focus = {
-		id = FNG_the_doctrine_of_war
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = FNG_state_of_the_army }
-		available = {
-		}
-		x = 21
-		y = 10
-		cost = 7
-
-		available = { always = no }
-
-		bypass = { has_global_flag = FNG_advances }
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-	}
-
-	focus = {
-		id = FNG_superior_firepower_doctrine
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = FNG_the_doctrine_of_war }
-		available = {
-		}
-		x = 19
-		y = 11
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-			has_global_flag = FNG_interests
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_superior_firepower_doctrine"
-
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.35
-				uses = 1
-				category = cat_superior_firepower
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_support_for_soldiers
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = FNG_superior_firepower_doctrine }
-		available = {
-		}
-		x = 19
-		y = 12
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_support_for_soldiers"
-
-			add_tech_bonus = {
-				category = support_tech
-				bonus = 0.35
-				uses = 1
-			}
-
-			add_tech_bonus = {
-				category = artillery
-				bonus = 0.35
-				uses = 1
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_grand_battleplan_doctrine
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = FNG_the_doctrine_of_war }
-		available = {
-		}
-		x = 21
-		y = 11
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-			has_global_flag = FNG_making_preperations
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_grand_battleplan_doctrine"
-
-			add_doctrine_cost_reduction  = {
-				cost_reduction = 0.35
-				uses = 1
-				category = cat_grand_battle_plan
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_elite_fighters
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = FNG_grand_battleplan_doctrine }
-		available = {
-		}
-		x = 21
-		y = 12
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_elite_fighters"
-
-			add_tech_bonus = {
-				bonus = 0.2333
-				uses = 1
-				category = marine_tech
-			}
-
-			add_tech_bonus = {
-				bonus = 0.2333
-				uses = 1
-				category = para_tech
-			}
-
-			add_tech_bonus = {
-				bonus = 0.2333
-				uses = 1
-				category = mountaineers_tech
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_mass_assault_doctrine
-		icon = GFX_goal_conscription
-		prerequisite = { focus = FNG_the_doctrine_of_war }
-		available = {
-		}
-		x = 23
-		y = 11
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-			has_global_flag = FNG_japan_is_making_a_move
-			has_global_flag = FNG_pan_asianism
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_mass_assault_doctrine"
-
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.35
-				uses = 1
-				category = cat_mass_assault
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_weapons_for_warriors
-		icon = GFX_goal_panzerwaffe
-		prerequisite = { focus = FNG_mass_assault_doctrine }
-		available = {
-		}
-		x = 23
-		y = 12
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_weapons_for_warriors"
-
-			add_tech_bonus = {
-				bonus = 0.70
-				uses = 1
-				category = infantry_weapons
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_quick
-		icon = GFX_focus_prc_infiltration
-		prerequisite = { focus = FNG_support_for_soldiers }
-		available = {
-		}
-		x = 19
-		y = 13
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_quick"
-
-			army_experience = 10
-			add_ideas = FNG_doctrine_of_speed
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_clean
-		icon = GFX_goal_national_mobilization
-		prerequisite = { focus = FNG_elite_fighters }
-		available = {
-		}
-		x = 21
-		y = 13
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_clean"
-
-			army_experience = 10
-			add_ideas = FNG_doctrine_of_caution
-
-		}
-
-	}
-
-	focus = {
-		id = FNG_piles_of_dead_bodies
-		icon = GFX_goal_checkmate
-		prerequisite = { focus = FNG_weapons_for_warriors }
-		available = {
-		}
-		x = 23
-		y = 13
-		cost = 7
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = ZHI
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_piles_of_dead_bodies"
-
-			army_experience = 10
-			add_ideas = FNG_doctrine_of_dedication
-
-		}
-
-	}
+	###################################################################
+	###################################################################
+	###################################################################
 
 	focus = {
 		id = FNG_state_of_the_navy
-		icon = GFX_goal_generic_coastal_navy2
-		prerequisite = { focus = FNG_quick focus = FNG_clean focus = FNG_piles_of_dead_bodies }
-		available = {
-		}
-		x = 21
-		y = 14
+		icon = GFX_goal_FNG_navy
+		x = 16
+		y = 1
 		cost = 7
-
 		ai_will_do = {
 			factor = 2
 			modifier = {
@@ -2296,33 +1363,45 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_state_of_the_navy"
-
-			navy_experience = 10
-
+			navy_experience = 25
+			random_owned_controlled_state = {
+				prioritize = { 609 }
+        if = {
+          limit = {
+						is_coastal = yes
+            free_building_slots = {
+              building = dockyard
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = dockyard
+            level = 1
+            instant_build = yes
+          }
+        }
+      }
 		}
-
 	}
 
 	focus = {
 		id = FNG_layered_doctrine
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_goal_generic_navy_battleship3
 		prerequisite = { focus = FNG_state_of_the_navy }
-		mutually_exclusive = { focus = FNG_convoy_controllers focus = FNG_high_seas_chokepoints }
-		available = {
-		}
-		x = 19
-		y = 15
+		mutually_exclusive = { focus = FNG_convoy_controllers }
+		x = -1
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_state_of_the_navy
 		ai_will_do = {
 			factor = 2
 			modifier = {
@@ -2330,17 +1409,15 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_layered_doctrine"
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.35
+				cost_reduction = 1
 				uses = 1
 				category = cat_fleet_in_being
 			}
@@ -2348,66 +1425,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FNG_heavy_ships
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = FNG_layered_doctrine }
-		available = {
-		}
-		x = 19
-		y = 16
-		cost = 7
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_heavy_ships"
-
-			add_tech_bonus = {
-				bonus = 0.30
-				uses = 1
-				category = bb_tech
-			}
-
-			add_tech_bonus = {
-				bonus = 0.30
-				uses = 1
-				category = ca_tech
-			}
-
-			add_tech_bonus = {
-				bonus = 0.30
-				uses = 1
-				category = bc_tech
-			}
-
-
-		}
-
-	}
-
-	focus = {
 		id = FNG_convoy_controllers
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_goal_generic_trade_interdiction
 		prerequisite = { focus = FNG_state_of_the_navy }
-		mutually_exclusive = { focus = FNG_layered_doctrine focus = FNG_high_seas_chokepoints }
-		available = {
-		}
-		x = 21
-		y = 15
+		mutually_exclusive = { focus = FNG_layered_doctrine }
+		x = 1
+		y = 1
 		cost = 7
-
+		relative_position_id = FNG_state_of_the_navy
 		ai_will_do = {
 			factor = 2
 			modifier = {
@@ -2415,18 +1440,15 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_convoy_controllers"
-
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.35
+				cost_reduction = 1
 				uses = 1
 				category = cat_trade_interdiction
 			}
@@ -2434,15 +1456,39 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FNG_fast_fleets
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = FNG_convoy_controllers }
-		available = {
-		}
-		x = 21
-		y = 16
+		id = FNG_expand_merchant_marine
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 1
+		y = 1
 		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_layered_doctrine
+		prerequisite = {
+			focus = FNG_layered_doctrine
+			focus = FNG_convoy_controllers
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_expand_merchant_marine"
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 100
+				producer = ROOT
+			}
+		}
+	}
 
+	focus = {
+		id = FNG_heavy_ships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = FNG_expand_merchant_marine }
+		x = -1
+		y = 2
+		cost = 7
+		relative_position_id = FNG_expand_merchant_marine
 		ai_will_do = {
 			factor = 2
 			modifier = {
@@ -2450,13 +1496,53 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_heavy_ships"
+			add_tech_bonus = {
+				bonus = 0.30
+				uses = 1
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.30
+				uses = 1
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.30
+				uses = 1
+				category = bc_tech
+			}
+		}
+	}
 
+	focus = {
+		id = FNG_fast_fleets
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { 
+			focus = FNG_expand_merchant_marine
+		}
+		x = 1
+		y = 2
+		cost = 7
+		relative_position_id = FNG_expand_merchant_marine
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_fast_fleets"
 
@@ -2465,235 +1551,215 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-
 			add_tech_bonus = {
 				bonus = 0.30
 				uses = 1
 				category = cl_tech
 			}
-
 			add_tech_bonus = {
 				bonus = 0.30
 				uses = 1
 				category = ca_tech
 			}
-
 		}
-
 	}
 
 	focus = {
-		id = FNG_high_seas_chokepoints
-		icon = GFX_goal_generic_navy_carrier
+		id = FNG_expand_dockyards
+		icon = GFX_goal_generic_naval_industry
+		x = 0
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_expand_merchant_marine
+		prerequisite = { focus = FNG_expand_merchant_marine }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_expand_dockyards"
+			random_owned_controlled_state = {
+				prioritize = { 932 }
+				if = {
+          limit = {
+						is_coastal = yes
+            free_building_slots = {
+              building = dockyard
+              size > 0
+              include_locked = yes
+            }
+          }
+
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = dockyard
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_naval_exercises
+		icon = GFX_goal_generic_coastal_navy2
+		x = 2
+		y = 2
+		cost = 7
+		available = {
+			has_navy_size = {
+				size > 9
+			}
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_state_of_the_navy
 		prerequisite = { focus = FNG_state_of_the_navy }
-		mutually_exclusive = { focus = FNG_layered_doctrine focus = FNG_convoy_controllers }
-		available = {
-		}
-		x = 23
-		y = 15
-		cost = 7
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_high_seas_chokepoints"
-
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_naval_excersises"
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.35
+				cost_reduction = 0.75
+				category = naval_doctrine
 				uses = 1
-				category = cat_base_strike
 			}
+			navy_experience = 20
 		}
-	}
-
-	focus = {
-		id = FNG_superheavy_fleets
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = FNG_high_seas_chokepoints }
-		available = {
-		}
-		x = 23
-		y = 16
-		cost = 7
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_superheavy_fleets"
-
-			add_tech_bonus = {
-				bonus = 0.22
-				uses = 1
-				category = dd_tech
-			}
-
-			add_tech_bonus = {
-				bonus = 0.22
-				uses = 1
-				category = cl_tech
-			}
-
-			add_tech_bonus = {
-				bonus = 0.22
-				uses = 1
-				category = ca_tech
-			}
-
-			add_tech_bonus = {
-				bonus = 0.22
-				uses = 1
-				category = ss_tech
-			}
-
-		}
-
 	}
 
 	focus = {
 		id = FNG_state_of_the_airforce
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = FNG_heavy_ships focus = FNG_fast_fleets focus = FNG_superheavy_fleets }
-		available = {
-		}
-		x = 21
-		y = 17
+		icon = GFX_goal_FNG_airforce
+		x = 5
+		y = 0
 		cost = 7
-
+		relative_position_id = FNG_state_of_the_navy
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_state_of_the_airforce"
-
-			air_experience = 10
-
+			air_experience = 25
 		}
-
 	}
 
 	focus = {
-		id = FNG_target_cities_and_factories
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = FNG_state_of_the_airforce }
-		mutually_exclusive = { focus = FNG_target_people_in_the_air focus = FNG_target_people_on_the_ground }
-		available = {
-		}
-		x = 19
-		y = 18
+		id = FNG_pilot_training
+		icon = GFX_focus_SOV_flying_clubs
+		x = -1
+		y = 2
 		cost = 7
-
-		ai_will_do = {
-			factor = 2
-		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
+		relative_position_id = FNG_state_of_the_airforce
+		prerequisite = { focus = FNG_state_of_the_airforce }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_target_cities_and_factories"
-
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.50
-				uses = 1
-				category = cat_strategic_destruction
-			}
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_pilot_training"
+			add_manpower = 15000
 		}
 	}
 
 	focus = {
-		id = FNG_target_people_on_the_ground
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = FNG_state_of_the_airforce }
-		mutually_exclusive = { focus = FNG_target_people_in_the_air focus = FNG_target_cities_and_factories }
-		available = {
-		}
-		x = 21
-		y = 18
+		id = FNG_coastal_bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		x = -2
+		y = 1
 		cost = 7
-
-		ai_will_do = {
-			factor = 2
-		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
+		relative_position_id = FNG_state_of_the_airforce
+		prerequisite = { 
+			focus = FNG_state_of_the_navy
+			focus = FNG_state_of_the_airforce
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_target_people_on_the_ground"
-
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.50
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_pilot_training"
+			add_tech_bonus = {
+				category = naval_bomber
+				bonus = 0.5
 				uses = 1
-				category = cat_battlefield_support
 			}
 		}
 	}
 
 	focus = {
-		id = FNG_target_people_in_the_air
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = FNG_state_of_the_airforce }
-		mutually_exclusive = { focus = FNG_target_cities_and_factories focus = FNG_target_people_on_the_ground}
-		available = {
-		}
-		x = 23
-		y = 18
+		id = FNG_anti_air_defenses
+		icon = GFX_goal_generic_air_defense2
+		x = 0
+		y = 2
 		cost = 7
-
-		ai_will_do = {
-			factor = 2
-		}
-
 		available = {
+			OR = {
+				controls_state = 608
+				controls_state = 328
+			}
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
+		relative_position_id = FNG_coastal_bombers
+		prerequisite = { focus = FNG_coastal_bombers }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_target_people_in_the_air"
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_pilot_training"
+			if = {
+				limit = { controls_state = 608 }
+				608 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 328 }
+				328 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.50
-				uses = 1
-				category = cat_operational_integrity
+	focus = {
+		id = FNG_expand_beijing_airbase
+		icon = GFX_goal_generic_airports
+		x = 0
+		y = 1
+		cost = 7
+		available = {
+			controls_state = 608
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_state_of_the_airforce
+		prerequisite = { focus = FNG_state_of_the_airforce }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_expand_beijing_airbase"
+			add_ideas = FNG_buildings_for_the_airforce_air_fields
+			608 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -2701,104 +1767,631 @@ focus_tree = {
 	focus = {
 		id = FNG_plane_manufactories
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = FNG_target_cities_and_factories focus = FNG_target_people_in_the_air focus = FNG_target_people_on_the_ground }
-		available = {
-		}
-		x = 20
-		y = 19
+		x = 1
+		y = 2
 		cost = 7
-
-		ai_will_do = {
-			factor = 2
-		}
-
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
+		relative_position_id = FNG_state_of_the_airforce
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = { focus = FNG_state_of_the_airforce }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_plane_manufactories"
-
 			add_ideas = FNG_buildings_for_the_airforce_arms_factories
-
 		}
-
 	}
 
 	focus = {
-		id = FNG_plane_fields
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = FNG_target_cities_and_factories focus = FNG_target_people_in_the_air focus = FNG_target_people_on_the_ground }
-		available = {
-		}
-		x = 22
-		y = 19
+		id = FNG_beiyang_bombers
+		icon = GFX_goal_MAF_Napalm
+		x = -1
+		y = 1
 		cost = 3
-
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
 		ai_will_do = {
 			factor = 2
 		}
-
-		available = {
-			NOT = {
-				has_global_flag = FNG_in_a_state_of_anarchy
-			}
-		}
-
+		relative_position_id = FNG_plane_manufactories
+		prerequisite = { focus = FNG_plane_manufactories }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_plane_fields"
-
-			add_ideas = FNG_buildings_for_the_airforce_air_fields
-
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_beiyang_bombers"
+			add_tech_bonus = {
+        category = tactical_bomber
+        bonus = 1.0
+        uses = 1
+      }
 		}
-
 	}
 
 	focus = {
-		id = FNG_buildings_for_the_air
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = FNG_plane_manufactories }
-		prerequisite = { focus = FNG_plane_fields }
-		available = {
-		}
-		x = 21
-		y = 20
-		cost = 3
-
-		ai_will_do = {
-			factor = 5
-		}
-
+		id = FNG_fighter_modernization
+		icon = GFX_goal_generic_air_fighter2_new
+		x = 1
+		y = 1
+		cost = 7
 		available = {
 			NOT = {
 				has_global_flag = FNG_in_a_state_of_anarchy
 			}
 		}
-
+		relative_position_id = FNG_plane_manufactories
+		prerequisite = { focus = FNG_plane_manufactories }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FNG_buildings_for_the_air"
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_fighter_modernization"
+			add_tech_bonus = {
+        category = light_fighter
+        bonus = 1.0
+        uses = 1
+      }
+		}
+	}
 
-			328 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+	focus = {
+		id = FNG_harbin_military_academy
+		icon = GFX_goal_FNG_shenyang_academy
+		x = 4
+		y = -1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
 			}
+		}
+		relative_position_id = FNG_state_of_the_airforce
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_harbin_military_academy"
+			add_command_power = 50
+			add_ideas = FNG_harbin_military_academy_idea
+		}
+	}
 
-			328 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = air_base
-					level = 3
-					instant_build = yes
-				}
+	focus = {
+		id = FNG_cooperate_with_the_kwantung_army
+		icon = GFX_goal_JAP_expand_army
+		x = -1
+		y = 1
+		cost = 7
+		available = {
+			FNG_JAP_hostile = no
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_harbin_military_academy
+		mutually_exclusive = { focus = FNG_an_independent_force }
+		prerequisite = { focus = FNG_harbin_military_academy }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_cooperate_with_the_kwantung_army"
+			add_ideas = FNG_japanese_advisors
+		}
+	}
+
+	focus = {
+		id = FNG_an_independent_force
+		icon = GFX_focus_focus_fra_maquis
+		x = 1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_harbin_military_academy
+		mutually_exclusive = { focus = FNG_cooperate_with_the_kwantung_army }
+		prerequisite = { focus = FNG_harbin_military_academy }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_an_independent_force"
+			swap_ideas = {
+				remove_idea = FNG_harbin_military_academy_idea
+				add_idea = FNG_harbin_military_academy_idea_1
 			}
 		}
 	}
+
+	focus = {
+		id = FNG_the_doctrine_of_war
+		icon = GFX_goal_FNG_army
+		x = 1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_cooperate_with_the_kwantung_army
+		prerequisite = {
+			focus = FNG_an_independent_force
+			focus = FNG_cooperate_with_the_kwantung_army
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_doctrine_of_war"
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = FNG_weapons_for_warriors
+		icon = GFX_goal_generic_military_equipment
+		x = -1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		prerequisite = { focus = FNG_the_doctrine_of_war }
+		relative_position_id = FNG_the_doctrine_of_war
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_doctrine_of_war"
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1.0
+				uses = 1
+			}
+			add_equipment_to_stockpile = {
+				amount = 5000
+				producer = ROOT
+				type = infantry_equipment_0
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_elite_mountaineers
+		icon = GFX_goal_generic_mountain_warfare
+		x = 0
+		y = 2
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					has_war_with = ZHI
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		prerequisite = { focus = FNG_weapons_for_warriors }
+		relative_position_id = FNG_weapons_for_warriors
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_elite_mountaineers"
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_support_companies
+		icon = GFX_goal_generic_support_equipment
+		x = -1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_elite_mountaineers
+		prerequisite = { focus = FNG_elite_mountaineers }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_support_companies"
+			add_tech_bonus = {
+				bonus = 2
+				uses = 0.75
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_armament_complex
+		icon = GFX_goal_shenyang_arsenal
+		x = 1
+		y = 1
+		cost = 7
+		available = {
+			controls_state = 328
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_elite_mountaineers
+		prerequisite = { focus = FNG_elite_mountaineers }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_doctrine_of_war"
+			random_owned_controlled_state = {
+				prioritize = { 328 }
+        if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+		}
+	}
+
+	focus = {
+		id = FNG_superior_firepower_doctrine
+		icon = GFX_goal_generic_army_superior_firepower
+		x = 1
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					has_war_with = ZHI
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		mutually_exclusive = { focus = FNG_grand_battleplan_doctrine }
+		relative_position_id = FNG_the_doctrine_of_war
+		prerequisite = { focus = FNG_the_doctrine_of_war }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_superior_firepower_doctrine"
+			add_doctrine_cost_reduction = {
+				name = FNG_superior_firepower_doctrine
+				cost_reduction = 0.35
+				uses = 1
+				category = cat_superior_firepower
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_grand_battleplan_doctrine
+		icon = GFX_goal_generic_army_grand_battleplan
+		x = 5
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					has_war_with = ZHI
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		mutually_exclusive = { focus = FNG_superior_firepower_doctrine }
+		prerequisite = { focus = FNG_the_doctrine_of_war }
+		relative_position_id = FNG_the_doctrine_of_war
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_grand_battleplan_doctrine"
+			add_doctrine_cost_reduction  = {
+				name = FNG_grand_battleplan_doctrine
+				cost_reduction = 0.35
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_support_for_soldiers
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					has_war_with = ZHI
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		relative_position_id = FNG_superior_firepower_doctrine
+		prerequisite = { focus = FNG_superior_firepower_doctrine }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_support_for_soldiers"
+			add_tech_bonus = {
+				category = support_tech
+				bonus = 0.75
+				uses = 1
+			}
+			add_tech_bonus = {
+				category = artillery
+				bonus = 0.75
+				uses = 1
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_artillery_procurement
+		icon = GFX_goal_artillery
+		x = 1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		prerequisite = { focus = FNG_superior_firepower_doctrine }
+		relative_position_id = FNG_superior_firepower_doctrine
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_artillery_procurement"
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 1000
+				producer = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_dadong_artillery_complex
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		prerequisite = { focus = FNG_support_for_soldiers }
+		prerequisite = { focus = FNG_artillery_procurement }
+		relative_position_id = FNG_support_for_soldiers
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_dadong_artillery_complex"
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = dadong_artillery_complex
+			custom_effect_tooltip = tooltip_white_line
+			random_owned_controlled_state = {
+				prioritize = { 328 }
+        if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+		}
+	}
+
+	focus = {
+		id = FNG_armament_factories
+		icon = GFX_goal_national_arsenal
+		x = 2
+		y = 2
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_superior_firepower_doctrine
+		prerequisite = {
+			focus = FNG_superior_firepower_doctrine
+			focus = FNG_grand_battleplan_doctrine
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_armament_factories"
+			random_owned_controlled_state = {
+				prioritize = { 328 }
+        if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+		}
+	}
+
+	focus = {
+		id = FNG_lessons_from_the_zheifeng_wars
+		icon = GFX_goal_generic_barricades
+		x = -1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_armament_factories
+		prerequisite = { focus = FNG_armament_factories }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_lessons_from_the_zheifeng_wars"
+			add_doctrine_cost_reduction = {
+				name = FNG_lessons_from_the_zheifeng_wars
+				category = land_doctrine
+				cost_reduction = 0.75
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_new_training_methodologies
+		icon = GFX_focus_generic_military_academy
+		x = 1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_armament_factories
+		prerequisite = { focus = FNG_armament_factories }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_new_training_methodologies"
+			add_ideas = FNG_new_training_methods
+		}
+	}
+
+	focus = {
+		id = FNG_vehicles_for_men
+		icon = GFX_focus_SOV_the_road_of_life
+		x = -1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		relative_position_id = FNG_grand_battleplan_doctrine
+		prerequisite = { focus = FNG_grand_battleplan_doctrine }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_artillery_procurement"
+			if = {
+				limit = {
+					NOT = { has_tech = motorised_infantry }
+				}
+				set_technology = {
+					motorised_infantry = 1
+				}
+			}
+			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+				producer = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_officer_autonomy
+		icon = GFX_goal_officers
+		x = 0
+		y = 2
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		prerequisite = { focus = FNG_grand_battleplan_doctrine }
+		relative_position_id = FNG_grand_battleplan_doctrine
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_officer_autonomy"
+			army_experience = 15
+			every_unit_leader = {
+				add_attack = 1
+				add_planning = 1
+			}
+		}
+	}
+
+	focus = {
+		id = FNG_adopt_special_tactics
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 1
+		y = 1
+		cost = 7
+		available = {
+			NOT = {
+				has_global_flag = FNG_in_a_state_of_anarchy
+			}
+		}
+		prerequisite = { focus = FNG_grand_battleplan_doctrine }
+		relative_position_id = FNG_grand_battleplan_doctrine
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FNG_adopt_special_tactics"
+			add_doctrine_cost_reduction = {
+				name = FNG_adopt_special_tactics
+				category = land_doctrine
+				cost_reduction = 1
+				uses = 1
+			}
+		}
+	}
+
+	###################################################################
+	###################################################################
+	###################################################################
 
 	# Pan asianism
 
@@ -2835,13 +2428,12 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_zhili_reproachment"
-
 		}
 	}
 
 	focus = {
 		id = FNG_burn_antijapanese_literature
-		icon = KTG_Bookstack
+		icon = GFX_goal_KTG_Bookstack
 		prerequisite = { focus = FNG_sponsored_rallies }
 		cost = 5
 		x = 2
@@ -2865,7 +2457,7 @@ focus_tree = {
 
 	focus = {
 		id = FNG_a_fate_together
-		icon = GFX_Fengitan_Japan_cooperation_2
+		icon = GFX_goal_FNG_fate_together
 		prerequisite = { focus = FNG_sponsored_rallies }
 		cost = 1
 		x = 4
@@ -2898,8 +2490,9 @@ focus_tree = {
 		icon = GFX_goal_AST_new_markets
 		prerequisite = { focus = FNG_sponsored_rallies }
 		cost = 9
-		x = 7
-		y = 12
+		x = 2
+		y = 1
+		relative_position_id = FNG_sponsored_rallies
 		available = {
 			NOT = {
 				has_idea = FNG_japan_subsidized_military
@@ -2925,8 +2518,9 @@ focus_tree = {
 		icon = GFX_goal_arisaka
 		prerequisite = { focus = FNG_sponsored_rallies }
 		cost = 9
-		x = 9
-		y = 12
+		x = 3
+		y = 2
+		relative_position_id = FNG_sponsored_rallies
 		available = {
 			NOT = {
 				has_idea = FNG_japan_subsidized_economy
@@ -2939,34 +2533,32 @@ focus_tree = {
 				var = FNG_fengtian_influence_with_japan
 				value = 1
 			}
-
 			custom_effect_tooltip = 12_FNG_tt
-
 			JAP = { country_event = { id = man.86 days = 1 } }
-
 		}
 	}
 
 	focus = {
 		id = FNG_eliminate_sichuan
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_goal_generic_attack_sichuan
 		prerequisite = { focus = FNG_sponsored_rallies }
 		cost = 5
-		x = 11
-		y = 12
+		x = 5
+		y = 1
+		relative_position_id = FNG_sponsored_rallies
 		available = {
-			SCH = { exists = yes }
-			ZHI = { exists = no }
+			is_subject = no
+			country_exists = SCH
+			NOT = { country_exists = ZHI }
+			is_neighbor_of = SCH
 		}
 		will_lead_to_war_with = SCH
 		bypass = {
-			SCH = { exists = no }
+			NOT = { country_exists = SCH }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_eliminate_sichuan"
-
 			declare_war_on = { type = annex_everything target = SCH }
-
 		}
 	}
 
@@ -2975,17 +2567,15 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = FNG_sponsored_rallies }
 		cost = 5
-		x = 11
-		y = 13
+		x = 0
+		y = 1
+		relative_position_id = FNG_eliminate_sichuan
 		available = {
-			FNG = {
-				controls_state = 605
-			}
-			FNG = {
-				controls_state = 895
-			}
-			SCH = { exists = no }
+			605 = { is_owned_by_ROOT_or_subject = yes }
+			895 = { is_owned_by_ROOT_or_subject = yes }
+			NOT = { country_exists = SCH }
 		}
+		cancel_if_invalid = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_sichuanese_factories"
 
@@ -2997,7 +2587,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			895 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -3006,30 +2595,30 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
 	}
 
 	focus = {
 		id = FNG_the_yunnan_question
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_attack_yunnan
 		prerequisite = { focus = FNG_sponsored_rallies }
 		cost = 5
-		x = 13
-		y = 12
+		x = 2
+		y = 0
+		relative_position_id = FNG_eliminate_sichuan
 		available = {
-			YUN = { exists = yes }
-			ZHI = { exists = no }
+			is_subject = no
+			country_exists = YUN
+			NOT = { country_exists = ZHI }
+			is_neighbor_of = YUN
 		}
 		will_lead_to_war_with = YUN
 		bypass = {
-			YUN = { exists = no }
+			NOT = { country_exists = YUN }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_yunnan_question"
-
 			declare_war_on = { type = annex_everything target = YUN }
-
 		}
 	}
 
@@ -3038,17 +2627,15 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5
 		prerequisite = { focus = FNG_the_yunnan_question }
-		x = 13
-		y = 13
+		x = 0
+		y = 1
+		relative_position_id = FNG_the_yunnan_question
 		available = {
-			FNG = {
-				controls_state = 603
-			}
-			FNG = {
-				controls_state = 325
-			}
-			YUN = { exists = no }
+			603 = { is_owned_by_ROOT_or_subject = yes }
+			325 = { is_owned_by_ROOT_or_subject = yes }
+			NOT = { country_exists = YUN }
 		}
+		cancel_if_invalid = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_yunnanese_factories"
 
@@ -3069,13 +2656,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
 	}
 
 	focus = {
 		id = FNG_japan_sides_with_the_zhili
-		icon = GFX_Fengitan_Flag_2
+		icon = GFX_goal_FNG_fengtian_flag
 		mutually_exclusive = { focus = FNG_japan_sides_with_us }
 		prerequisite = { focus = FNG_burn_antijapanese_literature focus = FNG_a_fate_together }
 		cost = 1
@@ -3086,19 +2672,23 @@ focus_tree = {
 				has_country_flag = JAP_support_ZHI
 			}
 		}
-		available = { always = no }
+		available = {
+			hidden_trigger = { always = no }
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_japan_sides_with_the_zhili"
-
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 
 	focus = {
 		id = FNG_japan_sides_with_us
-		icon = GFX_Fengitan_Japan_cooperation
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		mutually_exclusive = { focus = FNG_japan_sides_with_the_zhili }
-		prerequisite = { focus = FNG_burn_antijapanese_literature }
-		prerequisite = { focus = FNG_a_fate_together }
+		prerequisite = { 
+			focus = FNG_burn_antijapanese_literature 
+		 	focus = FNG_a_fate_together
+		}
 		cost = 1
 		x = 5
 		y = 13
@@ -3107,10 +2697,12 @@ focus_tree = {
 				has_country_flag = JAP_support_FNG
 			}
 		}
-		available = { always = no }
+		available = {
+			hidden_trigger = { always = no }
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_japan_sides_with_us"
-
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 
@@ -3502,11 +3094,28 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = FNG_strike_west }
 		cost = 5
-		x = 2
+		x = 0
 		y = 17
+		available = {
+			is_subject = no
+			country_exists = SHX
+			can_declare_war_on = SHX
+			is_neighbor_of = SHX
+		}
+		will_lead_to_war_with = SHX
+		cancel_if_invalid = yes
+		bypass = {
+			OR = {
+				NOT = { country_exists = SHX }
+				has_war_with = SHX
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_demand_fealty_from_the_shanxi"
-
+			declare_war_on  = {
+				target = SHX
+				type = annex_everything
+			}
 		}
 	}
 
@@ -3519,7 +3128,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_demand_chahar"
-
 		}
 	}
 
@@ -3535,24 +3143,29 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_the_ma"
-
 		}
 	}
 
 	focus = {
 		id = FNG_we_will_take_the_south
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_focus_attack_china
 		cost = 10
 		prerequisite = { focus = FNG_strike_west }
 		x = 2
 		y = 17
-		bypass = {
-			has_war_with = KMT
+		available = {
+			is_subject = no
+			country_exists = KMT
+			can_declare_war_on = KMT
+			is_neighbor_of = KMT
 		}
-		will_lead_to_war_with = GXC
+		will_lead_to_war_with = KMT
+		cancel_if_invalid = yes
 		bypass = {
-			KMT = { exists = no }
-			GXC = { exists = no }
+			OR = {
+				NOT = { country_exists = KMT }
+				has_war_with = KMT
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_we_will_take_the_south"
@@ -3561,23 +3174,18 @@ focus_tree = {
 				type = annex_everything
 				target = KMT
 			}
-
-
-			declare_war_on = { type = annex_everything target = GXC }
-
 		}
 	}
 
 	focus = {
 		id = FNG_demand_the_japanese_leave
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_JAP_feburary_incident
 		cost = 5
 		prerequisite = { focus = FNG_we_will_take_the_south }
 		x = 2
 		y = 18
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FNG_demand_the_japanese_leave"
-
 		}
 	}
 

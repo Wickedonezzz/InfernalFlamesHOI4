@@ -8,7 +8,6 @@ set_research_slots = 3
 set_convoys = 120
 
 add_ideas = {
-	party_pop_0_10
 	civilian_economy
 	export_focus
 	volunteer_only

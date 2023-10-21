@@ -15,18 +15,18 @@ country_event = { # Commies recruiting part 1
 		original_tag = ALB
 		has_idea = ALB_liberation_movement
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 60
-	}	
+	}
 
 	option = {
 		name = alb.1.a
 		add_political_power = -25
 		add_popularity = { ideology = collectivist popularity = 0.02 }
-		
+
 		hidden_effect = {
 			ROOT = {
 				country_event = { id = alb.2 days = 80 }
@@ -42,7 +42,7 @@ country_event = { # Commies recruiting loop. Ends when you remove the related id
 	desc = alb.1.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		name = alb.1.a
@@ -52,7 +52,7 @@ country_event = { # Commies recruiting loop. Ends when you remove the related id
 			}
 			add_political_power = -25
 			add_popularity = { ideology = collectivist popularity = 0.02	 }
-		
+
 			hidden_effect = {
 				ROOT = {
 					country_event = { id = alb.2 days = 80 }
@@ -76,14 +76,14 @@ country_event = { # Commies win, unrest is invalid
 			has_government = libertarian_socialist
 		}
 	}
-	
+
 	hidden = yes
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
 
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	option = {
 		remove_ideas = ALB_liberation_movement
@@ -102,14 +102,14 @@ country_event = { # Military parade in Tirana
 		has_government = paternal_autocrat
 		date > 1936.7.1
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 10
 	}
 
-	option = { # Ferdinand shall attend 
+	option = { # Ferdinand shall attend
 		name = alb.4.a
 		add_political_power = 30
 		add_popularity = {
@@ -120,7 +120,7 @@ country_event = { # Military parade in Tirana
 			country_event = { id = alb.5 days = 30 }
 		}
 	}
-	
+
 	option = { # Too risky
 		name = alb.4.b
 		add_political_power = -20
@@ -130,7 +130,7 @@ country_event = { # Military parade in Tirana
 		}
 		hidden_effect = {
 			country_event = { id = alb.6 days = 30 }
-		}		
+		}
 	}
 }
 
@@ -141,20 +141,20 @@ country_event = { # Parade, Ferdinand does attend
 	desc = alb.5.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # collectivist bomb attack, Ferdinand dead
 		name = alb.5.a
 		add_stability = -0.15
 		add_political_power = -25
-    add_country_leader_role = {
-      character = ALB_Provisional_Government_of_Albania
-      promote_leader = yes
-      country_leader = {
-        ideology = paternal_autocrat_subtype
-        traits = {}
-      }
-    }
+		add_country_leader_role = {
+			character = ALB_Provisional_Government_of_Albania
+			promote_leader = yes
+			country_leader = {
+				ideology = paternal_autocrat_subtype
+				traits = {}
+			}
+		}
 		ITA = {
 			country_event = alb.7
 		}
@@ -168,7 +168,7 @@ country_event = { # Parade, Ferdinand does not attend
 	desc = alb.6.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # collectivist bomb attack, Ferdinand still alive
 		name = alb.5.a
@@ -187,7 +187,7 @@ country_event = { # Parade Bombing, Rome's response
 	desc = alb.7.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # send troops to stabilize Albania
 		name = alb.7.a
@@ -197,7 +197,7 @@ country_event = { # Parade Bombing, Rome's response
 			country_event = { id = alb.8 days = 2 }
 		}
 	}
-	
+
 	option = { # too expensive
 		name = alb.7.b
 		add_political_power = 50
@@ -214,7 +214,7 @@ country_event = { # Rome sends support to counter collectivists
 	desc = alb.8.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # Spawns two units
 		name = alb.8.a
@@ -238,7 +238,7 @@ country_event = { # Rome refuses to spare any support
 	desc = alb.9.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # Italian Albania is pretty much over
 		name = alb.9.a
@@ -258,15 +258,15 @@ country_event = { # Midhat Frashëri demands government support for Balli Kombet
 	desc = alb.10.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # Balli gain support
 		name = alb.10.a
 		add_political_power = -25
 		add_stability = 0.1
 		add_manpower = 10000
-		add_popularity = { 
-			ideology = national_populist 
+		add_popularity = {
+			ideology = national_populist
 			popularity = 0.05
 		}
 		set_country_flag = ALB_balli_supported
@@ -274,9 +274,9 @@ country_event = { # Midhat Frashëri demands government support for Balli Kombet
 			ROOT = {
 				country_event = { id = alb.15 days = 60 }
 			}
-		}	
+		}
 	}
-	
+
 	option = { # Balli are denied
 		name = alb.10.b
 		add_political_power = 25
@@ -285,7 +285,7 @@ country_event = { # Midhat Frashëri demands government support for Balli Kombet
 			ROOT = {
 				country_event = { id = alb.15 days = 60 }
 			}
-		}	
+		}
 	}
 }
 
@@ -296,7 +296,7 @@ country_event = { # Albanian-Italo forces strike at collectivists
 	desc = alb.11.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # Good luck
 		name = alb.11.a
@@ -320,7 +320,7 @@ country_event = { # Albanian-Italo forces win
 	desc = alb.12.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # Hoxha flees across the border
 		name = alb.12.a
@@ -343,7 +343,7 @@ country_event = { # Albanian-Italo forces lose
 	desc = alb.13.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # collectivists are emboldened
 		name = alb.13.a
@@ -366,9 +366,9 @@ country_event = { # Serbia - Albanian communists flee to Northern Albania
 	desc = alb.14.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { # collectivists influence grows	
+	option = { # collectivists influence grows
 		name = alb.14.a
 		add_stability = -0.05
 		add_popularity = { ideology = collectivist popularity = 0.05 }
@@ -382,7 +382,7 @@ country_event = { # Collectivists strike at Tirana
 	desc = alb.15.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # good luck
 		trigger = {
@@ -402,7 +402,7 @@ country_event = { # Collectivists strike at Tirana
 			}
 		}
 	}
-	
+
 	option = { # Better odds of beating lefties if you supported Balli
 		trigger = {
 			has_country_flag = ALB_balli_supported
@@ -428,17 +428,17 @@ country_event = { # Collectivists win
 	desc = alb.16.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # good luck
 		name = alb.16.a
 		add_ideas = workers_republic
 		set_politics = {
-			ruling_party = collectivist 
+			ruling_party = collectivist
 			elections_allowed = no
 		}
-		add_popularity = { 
-			ideology = collectivist 
+		add_popularity = {
+			ideology = collectivist
 			popularity = 0.2
 		}
 		ITA = {
@@ -448,7 +448,7 @@ country_event = { # Collectivists win
 			diplomatic_relation = { country = ALB relation = military_access active = no }
 		}
 		remove_ideas = ALB_liberation_movement
-		add_stability = 0.2		
+		add_stability = 0.2
 	}
 }
 
@@ -459,7 +459,7 @@ country_event = { # Collectivists lose
 	desc = alb.17.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # good luck
 		name = alb.17.a
@@ -491,7 +491,7 @@ country_event = { # Italy - Albanian falls to collectivism
 	desc = alb.18.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # we must intervene
 		name = alb.18.a
@@ -500,7 +500,7 @@ country_event = { # Italy - Albanian falls to collectivism
 		ITA = {
 			end_puppet = ALB
 		}
-		
+
 		if = {
 			limit = {
 				ALB = {
@@ -527,8 +527,8 @@ country_event = { # Italy - Albanian falls to collectivism
 			ITA = {
 				remove_from_faction = ALB
 			}
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				ITA = {
@@ -540,7 +540,7 @@ country_event = { # Italy - Albanian falls to collectivism
 				type = annex_everything
 			}
 		}
-		
+
 		if = {
 			limit = {
 				ITA = {
@@ -553,7 +553,7 @@ country_event = { # Italy - Albanian falls to collectivism
 			}
 		}
 	}
-	
+
 	option = { # too risky, give fleeing Albanians amnesty
 		name = alb.18.b
 		796 = {
@@ -568,24 +568,24 @@ country_event = { # Italy - Albanian falls to collectivism
 	}
 }
 
-country_event = { # National Populists putsch 
+country_event = { # National Populists putsch
 	id = alb.19
 	immediate = {log = "[GetDateText]: [Root.GetName]: event alb.19"}
 	title = alb.19.t
 	desc = alb.19.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # We cant fight back
 		name = alb.19.a
 		add_ideas = one_party_dictatorship
 		set_politics = {
-			ruling_party = national_populist 
+			ruling_party = national_populist
 			elections_allowed = no
 		}
-		add_popularity = { 
-			ideology = national_populist 
+		add_popularity = {
+			ideology = national_populist
 			popularity = 0.2
 		}
 		ITA = {
@@ -593,9 +593,9 @@ country_event = { # National Populists putsch
 			diplomatic_relation = { country = ALB relation = guarantee active = no }
 			diplomatic_relation = { country = ALB relation = military_access active = no }
 		}
-		add_stability = 0.2	
+		add_stability = 0.2
 	}
-	
+
 	option = { # We must call Italy for support
 		trigger = {
 			ITA = {
@@ -610,20 +610,20 @@ country_event = { # National Populists putsch
 	}
 }
 
-country_event = { # Italy - Albania in disarray 
+country_event = { # Italy - Albania in disarray
 	id = alb.20
 	immediate = {log = "[GetDateText]: [Root.GetName]: event alb.20"}
 	title = alb.20.t
 	desc = alb.20.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # we must intervene
 		name = alb.20.a
 		add_political_power = -50
 		add_stability = -0.05
-		
+
 		if = {
 			limit = {
 				ALB = {
@@ -631,13 +631,13 @@ country_event = { # Italy - Albania in disarray
 				}
 			}
 			ITA = {
-				annex_country = { 
-					target = ALB 
-					transfer_troops = yes 
+				annex_country = {
+					target = ALB
+					transfer_troops = yes
 				}
 			}
 		}
-		
+
 		if = {
 			limit = {
 				ALB = {
@@ -652,7 +652,7 @@ country_event = { # Italy - Albania in disarray
 			}
 		}
 	}
-	
+
 	option = { # Albania is lost
 		name = alb.20.b
 		add_stability = 0.05
@@ -670,24 +670,24 @@ country_event = { # Italy - Albania in disarray
 	}
 }
 
-country_event = { # Italy abandons Albania 
+country_event = { # Italy abandons Albania
 	id = alb.21
 	immediate = {log = "[GetDateText]: [Root.GetName]: event alb.21"}
 	title = alb.21.t
 	desc = alb.21.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # We cant fight back
 		name = alb.21.a
 		add_ideas = one_party_dictatorship
 		set_politics = {
-			ruling_party = national_populist 
+			ruling_party = national_populist
 			elections_allowed = no
 		}
-		add_popularity = { 
-			ideology = national_populist 
+		add_popularity = {
+			ideology = national_populist
 			popularity = 0.2
 		}
 		ITA = {
@@ -695,7 +695,7 @@ country_event = { # Italy abandons Albania
 			diplomatic_relation = { country = ALB relation = guarantee active = no }
 			diplomatic_relation = { country = ALB relation = military_access active = no }
 		}
-		add_stability = 0.2	
+		add_stability = 0.2
 	}
 }
 
@@ -707,33 +707,33 @@ country_event = { # Italy takes direct control of Albania
 	desc = alb.22.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { # Purge Nat Pops	
+	option = { # Purge Nat Pops
 		name = alb.22.a
 		add_country_leader_role = {
-      character = ALB_Provisional_Government_of_Albania
-      promote_leader = yes
-      country_leader = {
-        ideology = paternal_autocrat_subtype
-        traits = {}
-      }
-    }
+			character = ALB_Provisional_Government_of_Albania
+			promote_leader = yes
+			country_leader = {
+				ideology = paternal_autocrat_subtype
+				traits = {}
+			}
+		}
 		add_stability = 0.05
 		add_popularity = { ideology = national_populist popularity = -0.15 }
 	}
 }
 
-country_event = { # Communist Albania supports rebels in Serbia 
+country_event = { # Communist Albania supports rebels in Serbia
 	id = alb.23
 	immediate = {log = "[GetDateText]: [Root.GetName]: event alb.23"}
 	title = alb.23.t
 	desc = alb.23.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { # collectivists influence grows	
+	option = { # collectivists influence grows
 		name = alb.23.a
 		add_manpower = -10000
 		SER = {
@@ -749,14 +749,14 @@ country_event = { # SER - Commies recruiting part 1
 	desc = alb.24.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		name = alb.24.a
 		add_ideas = SER_liberation_movement
 		add_political_power = -25
 		add_popularity = { ideology = collectivist popularity = 0.05 }
-		
+
 		hidden_effect = {
 			ROOT = {
 				country_event = { id = alb.25 days = 80 }
@@ -772,7 +772,7 @@ country_event = { # SER - Commies recruiting loop. Ends when you remove the rela
 	desc = alb.25.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		name = alb.25.a
@@ -782,7 +782,7 @@ country_event = { # SER - Commies recruiting loop. Ends when you remove the rela
 			}
 			add_political_power = -25
 			add_popularity = { ideology = collectivist popularity = 0.02 }
-		
+
 			hidden_effect = {
 				ROOT = {
 					country_event = { id = alb.25 days = 80 }
@@ -799,7 +799,7 @@ country_event = { # Serbia - Albania ultimatum for Northern Albania
 	desc = alb.26.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		name = alb.26.a
@@ -824,20 +824,20 @@ country_event = { # Serbia doesn't back down
 	desc = alb.27.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = { # Border war for Shkoder #931
 		name = alb.27.a
 		start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 44	
+				state = 44
 				num_provinces = 2
 				on_win = alb.28
 				on_lose = alb.29
 				on_cancel = alb.30
 			}
-				
+
 			defender = {
 				state = 931
 				num_provinces = 3
@@ -856,7 +856,7 @@ country_event = { # Albania wins Shkoder
 	desc = alb.28.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		ai_chance = {
@@ -866,7 +866,7 @@ country_event = { # Albania wins Shkoder
 		transfer_state = 931
 		add_political_power = 100
 	}
-	
+
 	option = { # Albania pushes to Kosovo
 		name = alb.28.b
 		ai_chance = {
@@ -875,17 +875,17 @@ country_event = { # Albania wins Shkoder
 		transfer_state = 931
 		add_political_power = -100
 		add_stability = -0.05
-		add_war_support = -0.05		
+		add_war_support = -0.05
 		start_border_war = {
 			change_state_after_war = yes
 			attacker = {
-				state = 44	
+				state = 44
 				num_provinces = 2
 				on_win = alb.34
 				on_lose = alb.34
 				on_cancel = alb.34
 			}
-				
+
 			defender = {
 				state = 931
 				num_provinces = 1
@@ -904,9 +904,9 @@ country_event = { # Albania loses Shkoder
 	desc = alb.29.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = alb.29.a
 		add_political_power = -100
 		add_stability = -0.1
@@ -914,16 +914,16 @@ country_event = { # Albania loses Shkoder
 	}
 }
 
-country_event = { # Border War inconclusive 
+country_event = { # Border War inconclusive
 	id = alb.30
 	immediate = {log = "[GetDateText]: [Root.GetName]: event alb.30"}
 	title = alb.30.t
 	desc = alb.30.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = alb.30.a
 		SER = {
 			remove_ideas = SER_liberation_movement
@@ -938,14 +938,14 @@ country_event = { # Serbia wins
 	desc = alb.31.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = alb.31.a
 		remove_ideas = SER_liberation_movement
 		add_popularity = { ideology = collectivist popularity = -0.1 }
 		add_political_power = 100
-		add_stability = 0.1	
+		add_stability = 0.1
 	}
 }
 
@@ -956,14 +956,14 @@ country_event = { # Serbia loses
 	desc = alb.32.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = alb.32.a
 		remove_ideas = SER_liberation_movement
-		add_popularity = { ideology = collectivist popularity = -0.1 }	
+		add_popularity = { ideology = collectivist popularity = -0.1 }
 	}
-	
+
 	option = { # Serbia doesn't accept it
 		name = alb.32.b
 		add_political_power = -100
@@ -980,7 +980,7 @@ country_event = { # Serbia loses
 				type = annex_everything
 			}
 		}
-		
+
 		if = {
 			limit = {
 				SER = {
@@ -1002,9 +1002,9 @@ country_event = { # Albania strikes for Kosovo
 	desc = alb.33.d
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = alb.33.a
 	}
 }
@@ -1012,10 +1012,10 @@ country_event = { # Albania strikes for Kosovo
 country_event = { # Kosovo war
 	id = alb.34
 	immediate = {log = "[GetDateText]: [Root.GetName]: event alb.34"}
-	
+
 	hidden = yes
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 	}

@@ -39,17 +39,17 @@ country_event = {
 	option = {
 		name = mon.alliance.1.a
 		MON = {
-		create_faction = "Samsaran Covenant"
+			create_faction = "Samsaran Covenant"
 		}
-        add_to_faction = MON
-        add_to_faction = TIB
+		add_to_faction = MON
+		add_to_faction = TIB
 	}
 	option = {
 		name = mon.alliance.1.b
 		MON = {
-		country_event = { id = mon.alliance.2 days = 1 }
+			country_event = { id = mon.alliance.2 days = 1 }
+		}
 	}
-}
 }
 country_event = {
 	id = mon.alliance.2
@@ -64,5 +64,5 @@ country_event = {
 
 	option = {
 		name = mon.alliance.2.a
-}
+	}
 }

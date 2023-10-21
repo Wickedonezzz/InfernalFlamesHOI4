@@ -26,7 +26,7 @@ country_event = { # Otaman Assassinated!
 		set_country_flag = BLR_otaman_assassinated
 		set_country_flag = BLR_start_power_struggle
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-		remove_from_coalition = yes 
+		remove_from_coalition = yes
 		set_power_balance = {
 			id = BLR_power_balance
 			left_side = BLR_home_guard_side # will keep the last set side if not specified
@@ -51,6 +51,9 @@ country_event = { # Otaman Assassinated!
 
 		hidden_effect = {
 			country_event = { id = belarus.2 days = 4 }
+			random_other_country = {
+				news_event = { id = fxnews.68 days = 1 }
+			}
 		}
 	}
 }
@@ -338,12 +341,10 @@ country_event = { # The Coup
 			elections_allowed = no
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Panteleimon_Rozhnovsky_hog_pau
-			BLR_Ivan_Jermachenka_for_pau
-			BLR_Anton_Adamovic_eco_pau
-			BLR_Francisak_Kusal_sec_pau
-		}
+		activate_advisor = BLR_Panteleimon_Rozhnovsky_hog_pau
+		activate_advisor = BLR_Ivan_Jermachenka_for_pau
+		activate_advisor = BLR_Anton_Adamovic_eco_pau
+		activate_advisor = BLR_Francisak_Kusal_sec_pau
 		hidden_effect = {
 			set_country_flag = BLR_home_guard_win
 			clr_country_flag = BLR_start_power_struggle
@@ -377,12 +378,11 @@ country_event = { # BNSP Secures Control
 			}
 		}
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Fabijan_Ivanovich_Akintschyz_hog_val
-			BLR_Vladislav_Wenceslaus_Kozlowski_for_val
-			BLR_Leon_Ivanovich_Dubeykovsky_eco_val
-			BLR_Juryj_Sabalieuski_sec_npo
-		}
+		activate_advisor = BLR_Fabijan_Ivanovich_Akintschyz_hog_val
+		activate_advisor = BLR_Vladislav_Wenceslaus_Kozlowski_for_val
+		activate_advisor = BLR_Leon_Ivanovich_Dubeykovsky_eco_val
+		activate_advisor = BLR_Juryj_Sabalieuski_sec_npo
+
 		hidden_effect = {
 			set_country_flag = BLR_nat_soc_win
 			clr_country_flag = BLR_start_power_struggle
@@ -460,7 +460,7 @@ country_event = { # The Belarusian Home Guard
 	}
 	option = { # Disband them!
 		name = belarus.44.c
-		trigger = { 
+		trigger = {
 			has_government = valkist
 		}
 
@@ -542,7 +542,7 @@ country_event = { # Konigsberg Conference
 			}
 			modifier = {
 				factor = 0.6
-				UKR = { 
+				UKR = {
 					is_in_faction_with = GER
 					NOT = { has_government = social_democrat }
 				}
@@ -558,7 +558,7 @@ country_event = { # Konigsberg Conference
 				has_country_flag = GER_ukraine_no_food
 			}
 		}
-		
+
 		add_to_faction = FROM
 		FROM = {
 			set_country_flag = BLR_konigsberg_gut
@@ -749,7 +749,7 @@ country_event = { # Demand Lithuania
 	picture = GFX_report_event_BLR_officers_house
 	is_triggered_only = yes
 
-	option = { # 
+	option = { #
 		name = belarus.25.a
 		ai_chance = {
 			base = 40
@@ -774,7 +774,7 @@ country_event = { # Demand Lithuania
 		}
 	}
 
-	option = { # 
+	option = { #
 		name = belarus.25.b
 		ai_chance = {
 			base = 40
@@ -799,7 +799,7 @@ country_event = { # Lithunia is ded
 				limit = {
 					is_core_of = LIT
 				}
-				
+
 				ROOT = {
 					add_state_claim = PREV
 				}
@@ -920,7 +920,7 @@ country_event = { # Soviets Agree
 					OR = {
 						state = 220
 						state = 242
-            state = 243
+						state = 243
 						state = 948
 						state = 224
 						state = 205
@@ -1108,10 +1108,10 @@ country_event = { # Demand Soviet Territories - Greater Belarus
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 914 
+						state = 914
 						state = 791
-						state = 948 
-						state = 243 
+						state = 948
+						state = 243
 						state = 242
 					}
 				}
@@ -1152,10 +1152,10 @@ country_event = { # Soviets Accept
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 914 
+						state = 914
 						state = 791
-						state = 948 
-						state = 243 
+						state = 948
+						state = 243
 						state = 242
 					}
 				}
@@ -1182,10 +1182,10 @@ country_event = { # Soviets Refuse
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 914 
+						state = 914
 						state = 791
-						state = 948 
-						state = 243 
+						state = 948
+						state = 243
 						state = 242
 					}
 				}
@@ -1360,12 +1360,10 @@ country_event = { # Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Anton_Boryk_hog_sde
-			BLR_Anton_Lutskevic_for_sde
-			BLR_Jan_Sierada_eco_sli
-			BLR_Jazep_Lesik_sec_sde
-		}
+		activate_advisor = BLR_Anton_Boryk_hog_sde
+		activate_advisor = BLR_Anton_Lutskevic_for_sde
+		activate_advisor = BLR_Jan_Sierada_eco_sli
+		activate_advisor = BLR_Jazep_Lesik_sec_sde
 		set_country_flag = BLR_hramada_victory_flag
 	}
 
@@ -1385,12 +1383,10 @@ country_event = { # Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Jazep_Hermanovic_hog_sco
-			BLR_Adam_Stankievic_for_sco
-			BLR_Adolf_Klimovic_eco_sco
-			BLR_Jan_Pazniak_sec_sco
-		}
+		activate_advisor = BLR_Jazep_Hermanovic_hog_sco
+		activate_advisor = BLR_Adam_Stankievic_for_sco
+		activate_advisor = BLR_Adolf_Klimovic_eco_sco
+		activate_advisor = BLR_Jan_Pazniak_sec_sco
 		set_country_flag = BLR_christian_democrats_victory_flag
 	}
 }
@@ -1403,9 +1399,9 @@ country_event = { # Second Elections
 	is_triggered_only = yes
 
 	trigger = {
-    tag = BLR
-    has_country_flag = BLR_has_second_elections
-  }
+		tag = BLR
+		has_country_flag = BLR_has_second_elections
+	}
 
 	option = { # Hramada
 		name = belarus.42.a
@@ -1415,12 +1411,10 @@ country_event = { # Second Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Anton_Boryk_hog_sde
-			BLR_Anton_Lutskevic_for_sde
-			BLR_Jan_Sierada_eco_sli
-			BLR_Jazep_Lesik_sec_sde
-		}
+		activate_advisor = BLR_Anton_Boryk_hog_sde
+		activate_advisor = BLR_Anton_Lutskevic_for_sde
+		activate_advisor = BLR_Jan_Sierada_eco_sli
+		activate_advisor = BLR_Jazep_Lesik_sec_sde
 		set_country_flag = BLR_has_second_elections
 	}
 
@@ -1432,12 +1426,10 @@ country_event = { # Second Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Jazep_Hermanovic_hog_sco
-			BLR_Adam_Stankievic_for_sco
-			BLR_Adolf_Klimovic_eco_sco
-			BLR_Jan_Pazniak_sec_sco
-		}
+		activate_advisor = BLR_Jazep_Hermanovic_hog_sco
+		activate_advisor = BLR_Adam_Stankievic_for_sco
+		activate_advisor = BLR_Adolf_Klimovic_eco_sco
+		activate_advisor = BLR_Jan_Pazniak_sec_sco
 		set_country_flag = BLR_has_second_elections
 	}
 
@@ -1449,12 +1441,11 @@ country_event = { # Second Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Jazep_Varonka_hog_sli_hired
-			BLR_Mitrofan_Dovnar_Zapolsky_for_mli
-			BLR_Jan_Sierada_eco_sli
-			BLR_Alyaksandr_Tsvikyevich_sec_sli
-		}
+		activate_advisor = BLR_Jazep_Varonka_hog_sli_hired
+		activate_advisor = BLR_Mitrofan_Dovnar_Zapolsky_for_mli
+		activate_advisor = BLR_Jan_Sierada_eco_sli
+		activate_advisor = BLR_Alyaksandr_Tsvikyevich_sec_sli
+
 		set_country_flag = BLR_has_second_elections
 	}
 }
@@ -1467,9 +1458,9 @@ country_event = { # Third Elections
 	is_triggered_only = yes
 
 	trigger = {
-    tag = BLR
-    has_country_flag = BLR_has_third_elections
-  }
+		tag = BLR
+		has_country_flag = BLR_has_third_elections
+	}
 
 	option = { # Hramada
 		name = belarus.43.a
@@ -1479,12 +1470,11 @@ country_event = { # Third Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Anton_Boryk_hog_sde
-			BLR_Anton_Lutskevic_for_sde
-			BLR_Jan_Sierada_eco_sli
-			BLR_Jazep_Lesik_sec_sde
-		}
+		activate_advisor = BLR_Anton_Boryk_hog_sde
+		activate_advisor = BLR_Anton_Lutskevic_for_sde
+		activate_advisor = BLR_Jan_Sierada_eco_sli
+		activate_advisor = BLR_Jazep_Lesik_sec_sde
+
 		set_country_flag = BLR_has_third_elections
 	}
 
@@ -1496,12 +1486,11 @@ country_event = { # Third Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Jazep_Hermanovic_hog_sco
-			BLR_Adam_Stankievic_for_sco
-			BLR_Adolf_Klimovic_eco_sco
-			BLR_Jan_Pazniak_sec_sco
-		}
+		activate_advisor = BLR_Jazep_Hermanovic_hog_sco
+		activate_advisor = BLR_Adam_Stankievic_for_sco
+		activate_advisor = BLR_Adolf_Klimovic_eco_sco
+		activate_advisor = BLR_Jan_Pazniak_sec_sco
+
 		set_country_flag = BLR_has_third_elections
 	}
 
@@ -1513,12 +1502,11 @@ country_event = { # Third Elections
 		}
 		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
-		add_ideas = {
-			BLR_Jazep_Varonka_hog_sli_hired
-			BLR_Mitrofan_Dovnar_Zapolsky_for_mli
-			BLR_Jan_Sierada_eco_sli
-			BLR_Alyaksandr_Tsvikyevich_sec_sli
-		}
+		activate_advisor = BLR_Jazep_Varonka_hog_sli_hired
+		activate_advisor = BLR_Mitrofan_Dovnar_Zapolsky_for_mli
+		activate_advisor = BLR_Jan_Sierada_eco_sli
+		activate_advisor = BLR_Alyaksandr_Tsvikyevich_sec_sli
+
 		set_country_flag = BLR_has_third_elections
 	}
 }

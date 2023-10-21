@@ -123,7 +123,7 @@ characters = {
 		}
 	}
 	ITA_Don_Luigi_Sturzo = {
-		name = "Don Luigi Sturzo"
+		name = ITA_Don_Luigi_Sturzo
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ITA/Portrait_ITA_Don_Luigi_Sturzo.png"
@@ -270,7 +270,7 @@ characters = {
 		}
 	}
 	ITA_Alcide_De_Gasperi = {
-		name = "Alcide De Gasperi"
+		name = ITA_Alcide_De_Gasperi
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ITA/Portrait_ITA_Alcide_De_Gasperi.png"
@@ -389,7 +389,7 @@ characters = {
 		}
 	}
 	ITA_Italo_Balbo = {
-		name = "Italo Balbo"
+		name = ITA_Italo_Balbo
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ITA/Portrait_ITA_Italo_Balbo_fx.png"
@@ -399,6 +399,10 @@ characters = {
 				large = "gfx/leaders/ITA/Portrait_ITA_Italo_Balbo_fx.png"
 				small = "gfx/interface/ministers/ITA/ITA_Italo_Balbo.png"
 			}
+		}
+		country_leader = {
+			ideology = colonial_govt_subtype
+			traits = { }
 		}
 		advisor = {
 			cost = 150
@@ -1462,7 +1466,16 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ministers/ITA/ITA_Mario_Roatta.png"
+				large = "gfx/leaders/ITA/Portrait_ITA_Mario_Roatta.png"
 			}
+		}
+		corps_commander = {
+			traits = { harsh_leader }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		advisor = {
 			cost = 150
@@ -1515,6 +1528,8 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
+				politically_connected
+				inflexible_strategist
 			}
 			skill = 1
 			attack_skill = 3
@@ -1670,7 +1685,7 @@ characters = {
 			traits = { ITA_soldier_king }
 		}
 		country_leader = {
-			ideology = social_democrat_subtype
+			ideology = socdem_christian_democracy_subtype
 			traits = { ITA_soldier_king }
 		}
 		country_leader = {
@@ -1682,7 +1697,7 @@ characters = {
 			traits = { ITA_soldier_king }
 		}
 		country_leader = {
-			ideology = social_conservative_subtype
+			ideology = christian_democracy_subtype
 			traits = { ITA_soldier_king }
 		}
 		country_leader = {
@@ -1832,6 +1847,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
+				inflexible_strategist career_officer
 			}
 			skill = 1
 			attack_skill = 4
@@ -1849,6 +1865,8 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
+				career_officer
+				trait_cautious
 			}
 			skill = 3
 			attack_skill = 4
@@ -2186,7 +2204,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = { old_guard trait_engineer fortress_buster trait_reckless }
 			skill = 3
 			attack_skill = 4
 			defense_skill = 2
@@ -2194,11 +2212,19 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	ITA_Pope_Julius_IV = {
-		name = "Pope Julius IV"
+	ITA_Alfredo_Ildefonso_Schuster = {
+		name = "Julius IV"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/ITA/Portrait_ITA_Pope_Julius_IV.png"
+				large = "gfx/leaders/ITA/Portrait_ITA_Alfredo_Ildefonso_Schuster.png"
+			}
+		}
+	}
+	ITA_Adalberto_di_Savoia = {
+		name = "Adalberto, Duke of Bergamo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Portrait_ITA_Adalberto_di_Savoia.png"
 			}
 		}
 	}

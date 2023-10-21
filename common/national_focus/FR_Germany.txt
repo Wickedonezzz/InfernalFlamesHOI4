@@ -20,7 +20,144 @@ focus_tree = {
     x = 26
     y = 0
   }
-	
+  focus = {
+	id = GER_Ice_Reich
+	icon = GFX_goal_CLB_ISAWolf
+	cost = 7
+	available = { 
+		has_country_flag = WackyAndQuirkyIceReich
+		}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_Ice_Reich"
+	add_ideas = CLB_enemies_on_all_sides
+	}
+	x = 3
+	y = 26
+}
+focus = {
+	id = GER_BREAKIN_REALITY
+	icon = GFX_goal_EGY_shatter_copts
+	cost = 7
+	prerequisite = {
+		focus = GER_Ice_Reich
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_BREAKIN_REALITY"
+		MEX = {
+			country_event = usa.27
+		}
+	}
+	relative_position_id = GER_Ice_Reich
+	x = 0
+	y = 1
+}
+focus = {
+	id = GER_SMASH_IN_FXs_DOOR
+	icon = GFX_goal_CZE_crush_volksfront
+	cost = 7
+	will_lead_to_war_with = FRA
+	will_lead_to_war_with = BEL
+	will_lead_to_war_with = HOL
+	will_lead_to_war_with = RHI 
+	will_lead_to_war_with = SWI
+	prerequisite = {
+		focus = GER_Ice_Reich
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_SMASH_IN_FXs_DOOR"
+	country_event = shofrei.11
+	}
+	relative_position_id = GER_Ice_Reich
+	x = -2
+	y = 1
+}
+focus = {
+	id = GER_FINISH_OFF_KX
+	icon = GFX_goal_split_helmet
+	cost = 7
+	prerequisite = {
+		focus = GER_SMASH_IN_FXs_DOOR
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_FINISH_OFF_KX"
+		declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+		add_ideas = SHO_Finishing_The_Troubles
+	}
+	relative_position_id = GER_Ice_Reich
+	x = -3
+	y = 2
+}
+focus = {
+	id = GER_DAWNWALK
+	icon = GFX_goal_CLB_Sunrise_Horizion
+	cost = 7
+	prerequisite = { focus = GER_SMASH_IN_FXs_DOOR }
+	prerequisite = { focus = GER_BREAKIN_REALITY }
+	prerequisite = { focus = GER_A_SLIENT_KNOCK }
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_DAWNWALK"
+	add_ideas = SHO_Saws_Revd
+	}
+	relative_position_id = GER_Ice_Reich
+	x = 0
+	y = 2
+}
+focus = {
+	id = GER_A_SLIENT_KNOCK
+	icon = GFX_goal_FRA_World_Revolution
+	cost = 7
+	prerequisite = { focus = GER_Ice_Reich }
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_A_SLIENT_KNOCK"
+		add_ideas = SHO_Breakin_Jaws
+		country_event = shofrei.13
+	}
+	relative_position_id = GER_Ice_Reich
+	x = 2
+	y = 1
+}
+focus = {
+	id = GER_MELTING_CANDLES
+	icon = GFX_goal_SER_macedonia_in_flames
+	cost = 7
+	prerequisite = { focus = GER_A_SLIENT_KNOCK }
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_MELTING_CANDLES"
+	add_ideas = SHO_Triple_Threat
+	}
+	relative_position_id = GER_Ice_Reich
+	x = 3
+	y = 2
+}
+focus = {
+	id = GER_IT_NEVER_ENDS
+	icon = GFX_goal_CLB_Unstoppable_War_Machine
+	cost = 7
+	prerequisite = { focus = GER_DAWNWALK }
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_IT_NEVER_ENDS"
+	add_ideas = SHO_Fight_For_Our_Lives
+	}
+	relative_position_id = GER_Ice_Reich
+	x = 1
+	y = 3
+}
+focus = {
+	id = GER_SMOTHER_FILIPINO_NATIONALISTS
+	icon = GFX_goal_CLB_Exterminate_Communist_Sympathisers
+	cost = 7
+	prerequisite = { focus = GER_DAWNWALK }
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus GER_SMOTHER_FILIPINO_NATIONALISTS"
+	annex_country = { target = PHI transfer_troops = yes }
+	}
+	relative_position_id = GER_Ice_Reich
+	x = -1
+	y = 3
+}
   ## Forming a Government
 	focus = {
 		id = GER_form_govt
@@ -29,10 +166,6 @@ focus_tree = {
 		y = 0
 		cost = 2
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = unlocked_later
-				has_country_flag = GER_VANILLA
-			}
 		}
 		allow_branch = {
 			NOT = { has_country_flag = GER_VALKYRIE }
@@ -7855,8 +7988,31 @@ focus_tree = {
 		}
 		relative_position_id = GER_germanic_research
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GER_archeology_mission"
+			log = "[GetDateText]: [Root.GetName]: Focus GER_archaeology_mission"
 			country_event = ger.1083			
+		}
+	}
+
+	focus = {
+		id = GER_swabia_mission
+		icon = GFX_goal_NOR_scandinavia
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		prerequisite = {
+			focus = GER_germanic_research
+		}
+		relative_position_id = GER_germanic_research
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GER_swabia_mission"
+			country_event = ger.10833			
 		}
 	}
 	

@@ -4,14 +4,16 @@ state={
 	name="STATE_618" # Dzungaria
 	manpower = 670800
 
-	state_category = pastoral
+	state_category = small_town
 
 	history={
 		owner = SIK
 		add_core_of = SIK
+		add_claim_by = KMT
+		add_claim_by = ZHI
+		add_claim_by = FNG
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 		}
 
 	}

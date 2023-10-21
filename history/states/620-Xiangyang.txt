@@ -14,8 +14,8 @@ state={
 		victory_points = {
 			1612 1 
 		}
-		add_core_of = KMT
-		add_claim_by = FNG 
+		add_claim_by = KMT
+		add_claim_by = FNG
 		add_core_of = ZHI
 	}
 

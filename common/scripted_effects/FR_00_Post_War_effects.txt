@@ -5,62 +5,224 @@
 # Capitulation of France
 france_capitulates = {
 	hidden_effect = {
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			NOT = { is_controlled_by = FRA }
-		}
-		every_country = {
+		every_state = {
 			limit = {
-				has_war_with = FRA
-				controls_state = PREV
+				is_owned_by = FRA
+				is_on_continent = europe
+				NOT = { is_controlled_by = FRA }
 			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-			any_neighbor_state = {
-				owner = {
+			every_country = {
+				limit = {
 					has_war_with = FRA
-					OR = { is_faction_leader = yes
-						AND = { 
-							is_in_faction = no
-							is_major = yes 
+					controls_state = PREV
+				}
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+				any_neighbor_state = {
+					owner = {
+						has_war_with = FRA
+						OR = { is_faction_leader = yes
+							AND = {
+								is_in_faction = no
+								is_major = yes
+							}
 						}
 					}
 				}
 			}
-		}
-		every_country = {
-			limit = {
-				has_war_with = FRA
-				is_owner_neighbor_of = FRA
-				capital_scope = {
-					is_on_continent = europe
+			every_country = {
+				limit = {
+					has_war_with = FRA
+					is_owner_neighbor_of = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+					OR = {
+						is_faction_leader = yes
+						AND = {
+							is_in_faction = no
+							is_major = yes
+						}
+					}
 				}
-				OR = {
-					is_faction_leader = yes
-					AND = {
-						is_in_faction = no
-						is_major = yes
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+				any_neighbor_state = {
+					owner = {
+						has_war_with = FRA
+						OR = {
+							is_faction_leader = yes
+							AND = {
+								is_in_faction = no
+								is_major = yes
+							}
+						}
 					}
 				}
 			}
-			transfer_state = PREV
+			every_country = {
+				limit = {
+					has_war_with = FRA
+					is_owner_neighbor_of = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+					OR = {
+						is_faction_leader = yes
+						AND = {
+							is_in_faction = no
+							is_major = yes
+						}
+					}
+				}
+				transfer_state = PREV
+			}
 		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-			any_neighbor_state = {
-				owner = {
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+				any_neighbor_state = {
+					owner = {
+						has_war_with = FRA
+						OR = {
+							is_faction_leader = yes
+							AND = {
+								is_in_faction = no
+								is_major = yes
+							}
+						}
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_with = FRA
+					is_owner_neighbor_of = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+					OR = {
+						is_faction_leader = yes
+						AND = {
+							is_in_faction = no
+							is_major = yes
+						}
+					}
+				}
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+				any_neighbor_state = {
+					owner = {
+						has_war_with = FRA
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_with = FRA
+					is_owner_neighbor_of = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+				any_neighbor_state = {
+					owner = {
+						has_war_with = FRA
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_with = FRA
+					is_owner_neighbor_of = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+				any_neighbor_state = {
+					owner = {
+						has_war_with = FRA
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_with = FRA
+					is_owner_neighbor_of = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+			}
+			every_country = {
+				limit = {
+					has_war_with = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+					OR = {
+						is_faction_leader = yes
+						AND = {
+							is_in_faction = no
+							is_major = yes
+						}
+					}
+				}
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
+			}
+			every_country = {
+				limit = {
 					has_war_with = FRA
 					OR = {
 						is_faction_leader = yes
@@ -70,182 +232,20 @@ france_capitulates = {
 						}
 					}
 				}
+				transfer_state = PREV
 			}
 		}
-		every_country = {
+		every_state = {
 			limit = {
-				has_war_with = FRA
-				is_owner_neighbor_of = FRA
-				capital_scope = {
-					is_on_continent = europe
-				}
-				OR = {
-					is_faction_leader = yes
-					AND = {
-						is_in_faction = no
-						is_major = yes
-					}
-				}
+				is_owned_by = FRA
+				is_on_continent = europe
+				is_controlled_by = FRA
 			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-			any_neighbor_state = {
-				owner = {
-					has_war_with = FRA
-					OR = {
-						is_faction_leader = yes
-						AND = {
-							is_in_faction = no
-							is_major = yes
-						}
-					}
-				}
+			every_country = {
+				limit = { has_war_with = FRA }
+				transfer_state = PREV
 			}
 		}
-		every_country = {
-			limit = {
-				has_war_with = FRA
-				is_owner_neighbor_of = FRA
-				capital_scope = {
-					is_on_continent = europe
-				}
-				OR = {
-					is_faction_leader = yes
-					AND = {
-						is_in_faction = no
-						is_major = yes
-					}
-				}
-			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-			any_neighbor_state = {
-				owner = {
-					has_war_with = FRA
-				}
-			}
-		}
-		every_country = {
-			limit = {
-				has_war_with = FRA
-				is_owner_neighbor_of = FRA
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-			any_neighbor_state = {
-				owner = {
-					has_war_with = FRA
-				}
-			}
-		}
-		every_country = {
-			limit = {
-				has_war_with = FRA
-				is_owner_neighbor_of = FRA
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-			any_neighbor_state = {
-				owner = {
-					has_war_with = FRA
-				}
-			}
-		}
-		every_country = {
-			limit = {
-				has_war_with = FRA
-				is_owner_neighbor_of = FRA
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-		}
-		every_country = {
-			limit = {
-				has_war_with = FRA
-				capital_scope = {
-					is_on_continent = europe
-				}
-				OR = {
-					is_faction_leader = yes
-					AND = {
-						is_in_faction = no
-						is_major = yes
-					}
-				}
-			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-		}
-		every_country = {
-			limit = {
-				has_war_with = FRA
-				OR = {
-					is_faction_leader = yes
-					AND = {
-						is_in_faction = no
-						is_major = yes
-					}
-				}
-			}
-			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_owned_by = FRA
-			is_on_continent = europe
-			is_controlled_by = FRA
-		}
-		every_country = {
-			limit = { has_war_with = FRA }
-			transfer_state = PREV
-		}
-	}
 		every_state = {
 			limit = {
 				is_core_of = FRA
@@ -273,7 +273,7 @@ white_peace_with_ROOT = {
 	hidden_effect = {
 		# See if they're actually at war first
 		if = {
-			limit = { has_war_with = ROOT } 
+			limit = { has_war_with = ROOT }
 
 			# First check if THIS is in a faction
 			if = {
@@ -297,7 +297,7 @@ white_peace_with_ROOT = {
 					event_target:white_peace_defender = { add_to_faction = PREV }
 				}
 			}
-			
+
 			# Then check if ROOT is in a faction
 			if = {
 				limit = {
@@ -323,10 +323,10 @@ white_peace_with_ROOT = {
 			}
 		}
 	}
-	
+
 	# Now white peace as per normal
 	white_peace = ROOT
-	
+
 	# Then dismantle factions if necessary
 	hidden_effect = {
 		if = {
@@ -352,7 +352,7 @@ white_peace_with_TARGET = {
 		# See if they're actually at war first
 		if = {
 			limit = { has_war_with = event_target:white_peace_receiver }
-		
+
 			# First check if defender is in a faction
 			if = {
 				limit = {
@@ -375,7 +375,7 @@ white_peace_with_TARGET = {
 					event_target:white_peace_offer = { add_to_faction = PREV }
 				}
 			}
-			
+
 			# Then check if EVENT_TARGET is in a faction
 			if = {
 				limit = {
@@ -401,10 +401,10 @@ white_peace_with_TARGET = {
 			}
 		}
 	}
-	
+
 	# Now white peace as per normal
 	white_peace = event_target:white_peace_receiver
-	
+
 	# Then dismantle factions if necessary
 	hidden_effect = {
 		if = {

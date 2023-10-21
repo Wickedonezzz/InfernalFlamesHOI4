@@ -48,7 +48,7 @@ FLA = "countries/WestEuropean.txt" # Flanders
 WLL = "countries/WestEuropean.txt" # Wallonia
 DEN = "countries/WestEuropean.txt" # Denmark
 ICE = "countries/WestEuropean.txt" # Iceland
-WGR = "countries/WestEuropean.txt" # West Germany
+PRS = "countries/WestEuropean.txt" # Prussia
 DDR = "countries/WestEuropean.txt" # East Germany
 FRP = "countries/WestEuropean.txt" # French Puppet
 FIN = "countries/WestEuropean.txt" # Finland
@@ -155,7 +155,7 @@ TMS = "countries/MiddleEastern.txt" # Turkmenistan
 
 ### Middle East
 TUR = "countries/MiddleEastern.txt" # Turkey
-TRT = "countries/MiddleEastern.txt" # Turkish Revolt
+# TRT = "countries/MiddleEastern.txt" # Turkish Revolt
 AFG = "countries/MiddleEastern.txt" # Afghanistan
 YEM = "countries/MiddleEastern.txt" # Yemen
 OMA = "countries/MiddleEastern.txt" # Oman
@@ -203,7 +203,7 @@ MAL = "countries/Asian.txt" # Malaysia
 INS = "countries/Asian.txt" # Insulindia
 GUO = "countries/Asian.txt" # Yuxiang
 GXC = "countries/Asian.txt" # Zongren
-GDC = "countries/Asian.txt" # Jingwei
+GDC = "countries/Asian.txt" # Guangdong
 SHX = "countries/Asian.txt" # Shanxi
 TAN = "countries/Asian.txt" # Tannu Tuva
 BRM = "countries/Asian.txt" # Burma
@@ -299,4 +299,4 @@ GYA = "countries/Indian.txt" # Guyana
 HAW = "countries/WestEuropean.txt" # Hawaii
 
 ### Others
-XXB = "countries/WestEuropean.txt" # GFX TWO?
+XXB = "countries/WestEuropean.txt" # Debug

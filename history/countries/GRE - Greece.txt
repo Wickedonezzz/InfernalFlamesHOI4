@@ -2,13 +2,22 @@ capital = 1045
 
 oob = "GRE"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GRE_1936_naval_mtg"
+	else = {
+		set_naval_oob = "GRE_1936_naval_legacy"
+	}
+}
+
+
 set_research_slots = 3
-set_stability = 0.35
+set_stability = 0.9
 set_war_support = 0.25
 set_convoys = 150
+give_guarantee = BUL
 
 add_ideas = {
-	party_pop_0_40
 	limited_conscription
 	parliamentary_republic
 	GRE_abysmal_economy
@@ -16,81 +25,42 @@ add_ideas = {
 	GRE_minority_unrests
 	GRE_anathema
 	GRE_venizelist_officers
+	GRE_golden_dawn
 	GEN_entente_member
 }
 
+
+set_temp_variable = {
+	coalition_partner_var = token:social_liberal
+}
+add_to_coalition = yes
+set_temp_variable = {
+	coalition_partner_var = token:market_liberal
+}
+add_to_coalition = yes
+set_temp_variable = {
+	coalition_partner_var = token:social_democrat
+}
+add_to_coalition = yes
+set_temp_variable = {
+	coalition_partner_var = token:social_conservative
+}
+add_to_coalition = yes
+set_coalition_government_popularity = yes
+
 set_technology = {
 	infantry_weapons = 1
+	basic_train = 1
 	tech_mountaineers = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
 	trench_warfare = 1
+	early_fighter = 1
+	early_bomber = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
-}
-
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	set_technology = {
-		iw_small_airframe = 1
-		aa_lmg = 1
-		engines_1 = 1
-		early_bombs = 1
-	}
-	else = {
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
-	}
-}
-
-if = {
-  limit = { has_dlc = "No Step Back" }
-  set_technology = {
-    gwtank_chassis = 1
-  }
-	else = {
-		set_technology = {
-			gwtank = 1
-		}
-	}
-}
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_naval_oob = "GRE_1936_naval_mtg"
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_battery = 1
-		basic_cruiser_armor_scheme = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-		pre_dreadnoughts = 1
-		mtg_transport = 1
-	}
-
-	else = {
-		set_naval_oob = "GRE_1936_naval_legacy"
-		set_technology = {
-			early_submarine = 1
-			early_destroyer = 1
-			early_light_cruiser = 1
-			early_heavy_cruiser = 1
-			early_battleship = 1
-			transport = 1
-		}
-	}
 }
 
 set_politics = {	
@@ -98,33 +68,21 @@ set_politics = {
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
-
 }
-
-set_temp_variable = {
-	coalition_partner_var = token:libertarian_socialist
-}
-add_to_coalition = yes
-set_temp_variable = {
-	coalition_partner_var = token:collectivist
-}
-add_to_coalition = yes	
 
 set_popularities = {
-  vanguardist = 0
-  collectivist = 3
-  libertarian_socialist = 5
-  social_democrat = 4
-  social_liberal = 37
-  market_liberal = 22
-  social_conservative = 19
-  authoritarian_democrat = 2
-  paternal_autocrat = 3
-  national_populist = 5
-  valkist = 0
+	vanguardist = 0 #KAKE
+	collectivist = 9 #Communist Party of Greece
+	libertarian_socialist = 10 #Communist Party of Greece
+	social_democrat = 1  #Progressives
+	social_liberal = 20 #liberal party
+	market_liberal = 15 # GLRE
+	social_conservative = 20 #People's Party
+	authoritarian_democrat = 0 #MEK
+	paternal_autocrat = 11 #FREETHINKERS
+	national_populist = 7 #EEE
+	valkist = 7 #GOLDEN DAWN
 }
-
-set_stability = 0.9
 
 if = {
 	limit = {
@@ -143,187 +101,64 @@ if = {
 	}
 }
 
-### Ship Variants ###
+GRE_add_technologies = yes
+GRE_add_variants = yes
 
-### VARIANTS ###
-# 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Hydra Class"
-		type = destroyer_1
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Katsonis Class"				
-		type = ship_hull_submarine_1
-		name_group = GRE_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Glafkos Class"				
-		type = ship_hull_submarine_2
-		name_group = GRE_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Aetos Class"					
-		type = ship_hull_light_1
-		name_group = GRE_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Hydra Class"	
-		type = ship_hull_light_1
-		name_group = GRE_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_mine_layer_1
-		}
-	}
-	# Cruisers #
-	create_equipment_variant = {
-		name = "Averof Class"				
-		type = ship_hull_cruiser_coastal_defense_ship
-		name_group = GRE_CA_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_medium_battery_1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Elli Class"				
-		type = ship_hull_cruiser_1
-		name_group = GRE_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = empty
-			fixed_ship_secondaries_slot = empty
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_mine_layer_1
-		}
-	}
-	# Battleships #
-	create_equipment_variant = {
-		name = "Kilkis Class"	
-		type = ship_hull_pre_dreadnought
-		name_group = GRE_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-}
+add_to_variable = { golden_dawn_influence = 20 }
 
+# Events
 
+country_event = { id = gre.49 days = 148 }
+country_event = { id = gre.50 days = 168 }
+country_event = { id = gre.51 days = 432 }
+country_event = { id = gre.37 days = 49 }
+country_event = { id = gre.4 days = 62 }
+country_event = { id = gre.2 days = 144 }
+country_event = { id = gre.13 days = 364 }
+set_rule = { can_join_factions = no }
 
+recruit_character = GRE_Alexandros_Zaimis # Starting HOS - Dies later
+recruit_character = GRE_Georgios_Athanasiadis_Novas #HOS - Moderate Democrat
+recruit_character = GRE_Ioannis_Rallis #HOS - Paternal Conservative
+recruit_character = GRE_Dimitris_Glinos #HOS - Socialist
+recruit_character = GRE_Nikos_Zachariadis #HOS - LibSocs, Colls
+recruit_character = GRE_Dimitris_Giotopoulos #HOS - Vangs
+recruit_character = GRE_Ioannis_Michail_Metaxas #HOS - PatAut
+recruit_character = GRE_Georgios_Kosmidis #HOS - NatPops
+recruit_character = GRE_Georgios_Spyridon_Merkouris #HOS - Valkists
+recruit_character = GRE_Eleftherios_Kyriakou_Venizelos # Starting HOG
 
-recruit_character = GRE_Eleftherios_Kyriakou_Venizelos
-recruit_character = GRE_Themistoklis_Sofoulis
-
-# recruit_character = GRE_Sofoklis_Venizelos
-recruit_character = GRE_Georgios_Kondylis
-# recruit_character = GRE_Ioannis_Theotokis
-# recruit_character = GRE_Georgios_Kafantaris
-recruit_character = GRE_Georgios_Papandreou
+recruit_character = GRE_Alexandros_Papanastasiou
+recruit_character = GRE_Konstantinos_Tsaldaris
 recruit_character = GRE_Panagiotis_Kanellopoulos
-# recruit_character = GRE_Sotirios_Gotzamanis
+recruit_character = GRE_Georgios_Papandreou 
+recruit_character = GRE_Benjamin_I
+recruit_character = GRE_Georgios_II
+recruit_character = GRE_Themistoklis_Sofoulis
+recruit_character = GRE_Sofoklis_Venizelos
+recruit_character = GRE_Georgios_Kondylis
+recruit_character = GRE_Ioannis_Theotokis
+recruit_character = GRE_Georgios_Kafantaris
+recruit_character = GRE_Sotirios_Gotzamanis
 recruit_character = GRE_Alexandros_Othonaios
-recruit_character = GRE_Ioannis_Michail_Metaxas
 recruit_character = GRE_Alexandros_Koryzis
-recruit_character = GRE_Georgios_Kosmidis
 recruit_character = GRE_Georgios_Poulos
-recruit_character = GRE_Georgios_Spyridon_Merkouris
-# recruit_character = GRE_Manolis_Manoleas
-# recruit_character = GRE_Miltiadis_Porfyrogenis
+recruit_character = GRE_Manolis_Manoleas
+recruit_character = GRE_Miltiadis_Porfyrogenis
 recruit_character = GRE_Giannis_Ioannidis
 recruit_character = GRE_Pantelis_Pouliopoulos
-recruit_character = GRE_Alexandros_Zaimis
-recruit_character = GRE_Georgios_Athanasiadis_Novas
-recruit_character = GRE_Ioannis_Rallis
-recruit_character = GRE_Dimitris_Glinos
 recruit_character = GRE_Stylianos_Gonatas
 recruit_character = GRE_Filippos_Dragoumis
-#recruit_character = GRE_Nikos_Ploumpidis
 recruit_character = GRE_Leonidas_Iasonidis
 recruit_character = GRE_Ioannis_Kyrozis
 recruit_character = GRE_Ioannis_Sofianopoulos
 recruit_character = GRE_Michalis_Tyrimos
 recruit_character = GRE_Kostas_Speras
 recruit_character = GRE_Xenofon_Giosmas
-#recruit_character = GRE_Sitsa_Karaiskaki_Nikolaou
+# recruit_character = GRE_Sitsa_Karaiskaki_Nikolaou
 recruit_character = GRE_Stelios_Sklavainas
-recruit_character = GRE_Nikos_Zachariadis
-recruit_character = GRE_Dimitris_Giotopoulos
 recruit_character = GRE_Andreas_Michalakopoulos
 recruit_character = GRE_Dimitrios_Maximos
-recruit_character = GRE_Alexandros_Papanastasiou
 recruit_character = GRE_Konstantinos_Logothetopoulos
 recruit_character = GRE_Anastasios_Tavoularis
 recruit_character = GRE_Dimitrios_Delivanis
@@ -370,6 +205,7 @@ recruit_character = GRE_Sokratis_Louka_Dimaratos
 recruit_character = GRE_Georgios_Stanotas
 recruit_character = GRE_Sotirios_Moutousis
 recruit_character = GRE_Theodoros_Lymperakis
+# recruit_character = GRE_Ioannis_Toumpas
 recruit_character = GRE_Epameinondas_Kavvadias
 recruit_character = GRE_Petros_Voulgaris
 recruit_character = GRE_Dimitrios_Oikonomou
@@ -394,11 +230,37 @@ recruit_character = GRE_Alexandros_Pilatos_Sakellariou
 recruit_character = GRE_Grigorios_Mezeviris
 recruit_character = GRE_Stylianos_Lykoudis
 recruit_character = GRE_Dimitrios_Gounaris
-recruit_character = GRE_Konstantinos_Tsaldaris
 recruit_character = GRE_Konstantinos_Karamanlis
+recruit_character = GRE_Lucas_Karreris
+recruit_character = GRE_Dimitrios_Partsalidis
+recruit_character = GRE_Monarchist_Comitee
 
-# 🖕🖕🖕🖕 this also doesn't work, fuck paradox 🖕🖕🖕
-# activate_advisor = GRE_Eleftherios_Kyriakou_Venizelos_hog_sli
-# activate_advisor = GRE_Georgios_Maris_sec_sli
-# activate_advisor = GRE_Andreas_Michalakopoulos_for_sli
-# activate_advisor = GRE_Alexandros_Diomidis_eco_sli
+# Starting Advisors
+GRE_hire_soclibs = yes
+
+
+set_variable = { byzvar = 100 }
+
+add_to_array = { GRE.megaliteri_idea_states = 44 }
+add_to_array = { GRE.megaliteri_idea_states = 796 }
+add_to_array = { GRE.megaliteri_idea_states = 787 }
+add_to_array = { GRE.megaliteri_idea_states = 106 }
+add_to_array = { GRE.megaliteri_idea_states = 931 }
+add_to_array = { GRE.megaliteri_idea_states = 941 }
+add_to_array = { GRE.megaliteri_idea_states = 764 }
+add_to_array = { GRE.megaliteri_idea_states = 164 }
+add_to_array = { GRE.megaliteri_idea_states = 116 }
+add_to_array = { GRE.megaliteri_idea_states = 115 }
+add_to_array = { GRE.megaliteri_idea_states = 850 }
+add_to_array = { GRE.megaliteri_idea_states = 156 }
+add_to_array = { GRE.megaliteri_idea_states = 117 }
+add_to_array = { GRE.megaliteri_idea_states = 849 }
+add_to_array = { GRE.megaliteri_idea_states = 345 }
+add_to_array = { GRE.megali_turkey_states = 777 }
+add_to_array = { GRE.megali_turkey_states = 356 }
+add_to_array = { GRE.megali_turkey_states = 355 }
+add_to_array = { GRE.megali_turkey_states = 778 }
+add_to_array = { GRE.megali_turkey_states = 343 }
+add_to_array = { GRE.megali_balkan_states = 787 }
+add_to_array = { GRE.megali_balkan_states = 764 }
+add_to_array = { GRE.megali_balkan_states = 796 }

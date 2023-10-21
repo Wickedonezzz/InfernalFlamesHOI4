@@ -1,5 +1,5 @@
 JAP_interservice_rivalry_towards_army = {
-	
+
 	if = {
 		limit = {  has_idea = JAP_interservice_rivalry_army_strengthened }
 		swap_ideas = {
@@ -42,7 +42,7 @@ JAP_interservice_rivalry_towards_navy = {
 			remove_idea = JAP_interservice_rivalry_navy_strengthened
 			add_idea = JAP_interservice_rivalry_navy_dominant
 		}
-	}	
+	}
 	if = {
 		limit = { has_idea = JAP_interservice_rivalry_balanced }
 		swap_ideas = {

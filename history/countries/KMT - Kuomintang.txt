@@ -7,6 +7,9 @@ oob = "KMT"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	gw_artillery = 1
 	fuel_silos = 1
 	basic_train = 1
 }
@@ -35,13 +38,12 @@ if = {
 	set_technology = {
 	  gwtank_chassis = 1
 	}
-  
-	  else = {
-		  set_technology = {
-			  gwtank = 1
-		  }
-	  }
-  }
+	else = {
+		set_technology = {
+			gwtank = 1
+		}
+	}
+}
   
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -64,24 +66,26 @@ if = {
 }
 
 add_ideas = {
-	backwards_economy
-	iliterate_population
+	CHI_illiterate_population
+	CHI_backwards_economy
 	KMT_factionism
+	KMT_american_support
 	
 	semi_presidential_republic
 }
+
+add_offsite_building = { type = arms_factory level = 1 }
+add_offsite_building = { type = industrial_complex level = 1 }
 
 set_convoys = 60
 set_stability = 0.35
 set_war_support = 0.30
 
-
-
-set_variable = { FNG_fengtian_influence_with_japan = 0 }
-country_event = { id = man.48 days = 6 }
-country_event = { id = man.82 days = 4 }
-
 set_cosmetic_tag = KMT_nanjing
+
+FNG = { embargo_ROOT = yes }
+ZHI = { embargo_ROOT = yes }
+JAP = { embargo_ROOT = yes }
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -104,35 +108,49 @@ set_popularities = {
 	valkist = 0
 }
   
-  recruit_character = KMT_Zhang_Guotao
-  recruit_character = KMT_Li_Dazhao
-  recruit_character = KMT_Chiang_Kai_Shek
-  recruit_character = KMT_Wang_Jingwei
-  recruit_character = KMT_Sun_Fo
-  recruit_character = KMT_Hu_Hanmin
-  recruit_character = KMT_He_Yingqin
-  recruit_character = KMT_Chen_Lifu
-  recruit_character = KMT_Zhang_Lingfu
-  recruit_character = KMT_Chen_Jitang
-  recruit_character = KMT_Du_Yuming
-  recruit_character = KMT_Fang_Zhimin
-  recruit_character = KMT_Li_Zongren
-  recruit_character = KMT_Xiao_Ke
-  recruit_character = KMT_Xiong_Xianghui
-  recruit_character = KMT_Ye_Ting
-  recruit_character = KMT_Sun_Liren
-  recruit_character = KMT_Feng_Yuxiang
-  recruit_character = KMT_Zhang_Zhizhong
+recruit_character = KMT_Zhang_Guotao
+recruit_character = KMT_Li_Dazhao
+recruit_character = KMT_Chiang_Kai_Shek
+recruit_character = KMT_Wang_Jingwei
+recruit_character = KMT_Sun_Fo
+recruit_character = KMT_Hu_Hanmin
+recruit_character = KMT_He_Yingqin
+recruit_character = KMT_Chen_Lifu
+recruit_character = KMT_Chen_Jitang
+recruit_character = KMT_Du_Yuming
+recruit_character = KMT_Fang_Zhimin
+recruit_character = KMT_Li_Zongren
+recruit_character = KMT_Xiao_Ke
+recruit_character = KMT_Xiong_Xianghui
+recruit_character = KMT_Ye_Ting
+recruit_character = KMT_Sun_Liren
+recruit_character = KMT_Feng_Yuxiang
+recruit_character = KMT_Zhang_Zhizhong
+recruit_character = KMT_Tang_Enbo
+recruit_character = KMT_Cheng_Qian
+recruit_character = KMT_Chen_Jiliang
+recruit_character = KMT_Chen_Shaokuan
+recruit_character = KMT_Deng_Wenyi
+recruit_character = KMT_Deng_Yanda
+recruit_character = KMT_Huang_Qixiang
+recruit_character = KMT_Hu_Zongnan
+recruit_character = KMT_Li_Jinsen
+recruit_character = KMT_Yang_Waoyu
+recruit_character = KMT_Dai_Chunfeng
+recruit_character = KMT_Chiang_Ching_Kuo
+recruit_character = KMT_Zhou_Zhirou
+recruit_character = KMT_Mao_Bangchu
+
+### Starting Ministers
+activate_advisor = KMT_Li_Zongren_hog_ade
+activate_advisor = KMT_Sun_Fo_for_sli
+activate_advisor = KMT_Chiang_Ching_Kuo_eco_mli
+activate_advisor = KMT_Dai_Chunfeng_sec_npo
   
-
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = { has_dlc_mtg = yes }
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Jianwei Class"			
@@ -205,3 +223,5 @@ if = {
 		}
 	}
 }
+
+save_global_event_target_as = unified_china

@@ -27,8 +27,8 @@ FX_welcome_splash_tab_1_header: "[ROOT.GetCountryIntroHeader]"
 FX_welcome_splash_tab_1_content: "[ROOT.GetCountryIntroContent]"
 
 ### Credits
-FX_SPLASH_TITLE: "§YSaved by Ice Cold:§!"
-FX_SPLASH_CREDITS: "Captain Kaiczer · Dej · Lextzo · BobRossHD · AngryCatholic · JoeBidenWhatAreYouHiding · David Lu · RAus · ainsley · the feets guy · Smigly · ATonyAtLaw2021 · thanasislanaras · terroristguy · tmiklos · Log · 9504 · Crazy Green Hair Guy · Mitchell · Fokel · Mapper History · Mr. Saltine · The Man who sold the World · Thought_West · karimlebg · Fire · Maisel · Wickedonezz · bookthecook · KillerKemzstar · guerrillero · scipion34 · naran_hol · literallycamusenjoyer · Panzerschokolade Addict · Professional Janny Curbstomper · Eternia · Illyria · TRZ · Captivator · RedTitan · Pol.\n\n§CThank you to the FR Team for letting us fork their mod:§!\nKalmoire\n\nThank you to, §OMnCnNn§! and §OSwordOfWrynn§! whom created the unit models and special forces mods respectively that are integrated in this mod.\n\n§CAnd Thank you, the player, for playing our mod!§!"
+FX_SPLASH_TITLE: "§YAnotherDay:§!"
+FX_SPLASH_CREDITS: "\n\n§CThank you to the FR Team for letting us fork their mod:§!\nKalmoire\n\nThank you to, §OMnCnNn§! and §OSwordOfWrynn§! whom created the unit models and special forces mods respectively that are integrated in this mod.\n\n§CAnd Thank you, the player, for playing our mod!§!"
 
 ### Intro Event
 intro.1.t: "FührerReich: Ice Cold Build 0.7 (Left Behind)"

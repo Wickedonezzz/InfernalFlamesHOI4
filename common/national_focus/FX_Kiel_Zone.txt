@@ -1338,8 +1338,8 @@ focus_tree = {
 				#LIT
 				189 = { add_core_of = SHO }
 				##Final focus requires
-				16 = { add_claim_by = SHO }
-				219 = { add_claim_by = SHO }
+				#16 = { add_claim_by = SHO }
+				#219 = { add_claim_by = SHO }
 			}
 		}
 		relative_position_id = SHO_Legacy_of_The_Hanseatic_Leauge
@@ -1520,8 +1520,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			controls_state = 64
-			controls_state = 16
-			controls_state = 219
+			has_war = no
 		}
 		prerequisite = {
 			focus = SHO_Demanding_Our_Colonies

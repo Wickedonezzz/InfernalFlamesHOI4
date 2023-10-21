@@ -25,8 +25,7 @@ state={
 		}
 		add_core_of = RHI
                 add_core_of = GER
-
-	
+				set_demilitarized_zone = yes
 	}
 
 	provinces={

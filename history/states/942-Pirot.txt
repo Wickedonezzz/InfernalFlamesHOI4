@@ -9,7 +9,7 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = SER
-
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

@@ -1704,4 +1704,524 @@ focus_tree = {
 	  x = -2
 		y = 3
 	}
+       focus = {
+		id = SHO_The_Commune_of_Hamburg
+		icon = GFX_Socialist_Law
+		cost = 5
+
+		available = {
+			has_government = vanguardist
+		}
+		prerequisite = {
+			focus = SHO_Chaos_In_Kiel
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_The_Commune_of_Hamburg"
+		}
+	relative_position_id = SHO_Chaos_In_Kiel
+	    x = -4
+		y = 1
+}
+       focus = {
+		id = SHO_Flames_of_The_Revolution
+		icon = GFX_goal_Communist_Discourse
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_The_Commune_of_Hamburg
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Flames_of_The_Revolution"
+			add_ideas = SHO_Revolutionary_Flames
+		}
+	relative_position_id = SHO_Chaos_In_Kiel
+	    x = -4
+		y = 2
+}
+       focus = {
+		id = SHO_A_Parade_In_Denmark
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Flames_of_The_Revolution
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_A_Parade_In_Denmark"
+			add_political_power = 150
+		}
+	relative_position_id = SHO_Chaos_In_Kiel
+	    x = -3
+		y = 3
+}
+       focus = {
+		id = SHO_Seizure_Of_Danish_Treasurey
+		icon = GFX_goal_endless_money
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Flames_of_The_Revolution
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Seizure_Of_Danish_Treasurey"
+			add_ideas = SHO_Treasury_Seized
+		}
+	relative_position_id = SHO_Chaos_In_Kiel
+	    x = -5
+		y = 3
+}
+
+       focus = {
+		id = SHO_Distribution_of_Wealth
+		icon = GFX_goal_bag_of_money
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_A_Parade_In_Denmark
+		}
+		prerequisite = {
+			focus = SHO_Seizure_Of_Danish_Treasurey
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Distribution_of_Wealth"
+			add_ideas = SHO_Wealth_Distribution
+		}
+	relative_position_id = SHO_Chaos_In_Kiel
+	    x = -4
+		y = 4
+}
+       focus = {
+		id = SHO_The_North_Star
+		icon = GFX_goal_social_commune
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Distribution_of_Wealth
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_The_North_Star"
+			set_country_flag = CommuneProspers
+			add_ideas = SHO_North_Star
+		}
+	relative_position_id = SHO_Chaos_In_Kiel
+	    x = -4
+		y = 5
+}
+##Kiel red expanse
+focus = {
+		id = SHO_The_Red_Skies
+		icon = GFX_goal_CLB_KILL_EVERYTHING
+		cost = 3
+		available = {
+			has_country_flag = CommuneProspers
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_The_Red_Skies"
+			add_war_support = 0.1
+		}
+		x = 20
+		y = 10
+	}
+       focus = {
+		id = SHO_Spreading_The_Revolution
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_The_Red_Skies
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Spreading_The_Revolution"
+			add_ideas = SHO_Revolutionary_Volunteers
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 0
+		y = 1
+}
+########################Soviets
+      focus = {
+		id = SHO_International_Revolutionarys
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Spreading_The_Revolution
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_International_Revolutionarys"
+			add_ideas = SHO_International_Volunteers
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 2
+		y = 2
+}
+      focus = {
+		id = SHO_Assisting_Spain
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_International_Revolutionarys
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Assisting_Spain"
+			country_event = shocommune.10
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 1
+		y = 3
+}
+      focus = {
+		id = SHO_Joining_The_International
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_International_Revolutionarys
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Joining_The_International"
+			SOV = {
+				country_event = shocommune.7
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 3
+		y = 3
+}
+      focus = {
+		id = SHO_Share_Our_Research
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Assisting_Spain
+		}
+		prerequisite = {
+			focus = SHO_Joining_The_International
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Share_Our_Research"
+			add_ideas = SHO_Technology_Sharing
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 2
+		y = 4
+}
+######################SCANDI
+      focus = {
+		id = SHO_Swacking_The_Swedes
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Spreading_The_Revolution
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Swacking_The_Swedes"
+			create_wargoal = {
+				type = annex_everything
+				target = SWE	
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = -2
+		y = 2
+}
+      focus = {
+		id = SHO_Splitting_The_Fins
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Swacking_The_Swedes
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_Splitting_The_Fins"
+			SOV = {
+				country_event = shocommune.4
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = -1
+		y = 3
+}
+      focus = {
+		id = SHO_The_Push_To_The_Alantic
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Swacking_The_Swedes
+		}
+		bypass = {
+			NOR = {
+				OR = {
+					is_in_faction = yes
+					is_puppet = yes
+					exists = no
+				}
+			}
+		}
+		available = {
+			NOR = {
+				OR = {
+					is_in_faction = no
+					is_puppet = no
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_The_Push_To_The_Alantic"
+			NOR = {
+				country_event = shocommune.1
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = -3
+		y = 3
+}
+      focus = {
+		id = SHO_A_Red_Nordic_State
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_The_Push_To_The_Alantic
+		}
+		prerequisite = {
+			focus = SHO_Splitting_The_Fins
+		}
+
+
+		completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SHO_A_Red_Nordic_State"
+				# Sweden
+				138 = { add_core_of = SHO }
+				139 = { add_core_of = SHO }
+				124= { add_core_of = SHO }
+				141 = { add_core_of = SHO }
+				140 = { add_core_of = SHO }
+				907 = { add_core_of = SHO }
+				38 = { add_core_of = SHO }
+				906 = { add_core_of = SHO }
+				666 = { add_core_of = SHO }
+				909 = { add_core_of = SHO }
+				# Norway
+				910 = { add_core_of = SHO }
+				144 = { add_core_of = SHO }
+				143 = { add_core_of = SHO }
+				110 = { add_core_of = SHO }
+				142 = { add_core_of = SHO }
+				# Finland
+				148 = { add_core_of = SHO }
+				844 = { add_core_of = SHO }
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = -2
+		y = 4
+}
+#############RedGermany
+      focus = {
+		id = SHO_A_Red_Wave
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_Share_Our_Research
+		}
+		prerequisite = {
+			focus = SHO_A_Red_Nordic_State
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_A_Red_Wave"
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+			####Aditional cores are for if the previous germany had these land occupied 
+			hidden_effect = {
+				56 = { add_core_of = SHO }
+				59 = { add_core_of = SHO }
+				61 = { add_core_of = SHO }
+				62 = { add_core_of = SHO }
+				64 = { add_core_of = SHO }
+				57 = { add_core_of = SHO }
+				51 = { add_core_of = SHO }
+				746 = { add_core_of = SHO }
+				8 = { add_core_of = SHO }
+				##Beligum
+				802 = { add_core_of = SHO }
+				806 = { add_core_of = SHO }
+				42 = { add_core_of = SHO }
+				55 = { add_core_of = SHO }
+				60 = { add_core_of = SHO }
+				54 = { add_core_of = SHO }
+				50 = { add_core_of = SHO }
+				783 = { add_core_of = SHO }
+				782 = { add_core_of = SHO }
+				52 = { add_core_of = SHO }
+				773 = { add_core_of = SHO }
+				53 = { add_core_of = SHO }
+				65 = { add_core_of = SHO }
+				795 = { add_core_of = SHO }
+				794 = { add_core_of = SHO }
+				66 = { add_core_of = SHO }
+				67 = { add_core_of = SHO }
+				786 = { add_core_of = SHO }
+				63 = { add_core_of = SHO }
+				85 = { add_core_of = SHO }
+				807 = { add_core_of = SHO }
+				5 = { add_core_of = SHO }
+				188 = { add_core_of = SHO }
+				86 = { add_core_of = SHO }
+				752 = { add_core_of = SHO }
+				####Austria
+				153 = { add_core_of = SHO }
+				912 = { add_core_of = SHO }
+				4 = { add_core_of = SHO }
+				913 = { add_core_of = SHO }
+				152 = { add_core_of = SHO }
+				803 = { add_core_of = SHO }
+				772 = { add_core_of = SHO }
+				####CZECH
+				775 = { add_core_of = SHO }
+				69 = { add_core_of = SHO }
+				74 = { add_core_of = SHO }
+				####SWI
+				151 = { add_core_of = SHO }
+				937 = { add_core_of = SHO }
+				###Italy
+				39 = { add_core_of = SHO }
+				774 = { add_core_of = SHO }
+				###Serbia
+				102 = { add_core_of = SHO }
+				767 = { add_core_of = SHO }
+				#LIT
+				189 = { add_core_of = SHO }
+				##Final focus requires
+				16 = { add_claim_by = SHO }
+				219 = { add_claim_by = SHO }
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 0
+		y = 5
+}
+      focus = {
+		id = SHO_In_Exile_No_More
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		
+		prerequisite = {
+			focus = SHO_A_Red_Wave
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_In_Exile_No_More"
+			country_event = shocommune.13
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 0
+		y = 6
+}
+      focus = {
+		id = SHO_The_Workers_of_Austria
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		prerequisite = {
+			focus = SHO_In_Exile_No_More
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_The_Workers_of_Austria"
+			AUS = {
+				country_event = shocommune.14
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = -1
+		y = 7
+}
+      focus = {
+		id = SHO_Holding_Plebiscites
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		prerequisite = {
+			focus = SHO_In_Exile_No_More
+		}
+
+		completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SHO_Holding_Plebiscites"
+			CZE = {
+				country_event = shocommune.17
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 1
+		y = 7
+}
+      focus = {
+		id = SHO_The_2nd_Paris_Commune
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		prerequisite = {
+			focus = SHO_Holding_Plebiscites
+		}
+		prerequisite = {
+			focus = SHO_The_Workers_of_Austria
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_The_2nd_Paris_Commune"
+			create_wargoal = {
+				type = annex_everything
+				target = FRA	
+			}
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 0
+		y = 8
+}
+      focus = {
+		id = SHO_European_Revolution_Achieved
+		icon = GFX_goal_red_star_soldier
+		cost = 5
+		prerequisite = {
+			focus = SHO_Holding_Plebiscites
+		}
+		prerequisite = {
+			focus = SHO_The_Workers_of_Austria
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SHO_European_Revolution_Achieved"
+			add_ideas = SHO_Collectivist_Vanguard
+			set_cosmetic_tag = SHO_KHC
+		}
+	relative_position_id = SHO_The_Red_Skies
+	    x = 0
+		y = 9
+}
 }

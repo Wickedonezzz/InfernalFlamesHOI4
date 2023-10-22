@@ -2,6 +2,7 @@ add_namespace = shodec
 add_namespace = shofrei
 add_namespace = shonews
 add_namespace = kielhell
+add_namespace = shocommune
 country_event = { # Controlling stockholm syndrome
 	id = shodec.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event shodec.1"}
@@ -731,7 +732,419 @@ country_event = { # Kielhell
 
 }
 
+### Kiel Commune Events
+country_event = { # Trade offer for norway
+    id = shocommune.1
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.1"}
+    title = "The Kiel Commune Wants Our Lands!"
+    desc = shocommune.1.d
+    picture = GFX_report_event_chinese_soldiers_running
 
+    is_triggered_only = yes
 
+    fire_only_once = yes
 
+    option = { # annex
+    name = shocommune.1.a 
+    ai_chance = { factor = 75 }
+        SHO = {
+            annex_country = { target = NOR transfer_troops = yes }
+            country_event = shocommune.2
+        }
+
+    }
+
+    option = { # Norway says no
+    name = shocommune.1.b 
+        ai_chance = { factor = 25 }
+        add_political_power = 100
+        SHO = {
+            country_event = shocommune.3
+        }
+    }
+}
+
+country_event = { # Norway accepted
+    id = shocommune.2
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.2"}
+    title = "Norway Accepts!"
+    desc = shocommune.2.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = { # annex
+    name = shocommune.2.a 
+    ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { # Norway Denied
+    id = shocommune.3
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.3"}
+    title = "Norway Accepts!"
+    desc = shocommune.3.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+    name = shocommune.3.a 
+    ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { # Request for splitting Finland
+    id = shocommune.4
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.4"}
+    title = "Kiel Commune Requests Partitioning of Finland"
+    desc = shocommune.4.d
+    picture = GFX_report_event_chinese_soldiers_running
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = { # splitting
+    name = shocommune.4.a 
+    ai_chance = { factor = 75 }
+		148 = { add_claim_by = SHO }
+		844 = { add_claim_by = SHO }
+		SOV = {
+			create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}		
+		}
+		SHO = {
+			create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}		
+			country_event = shocommune.5
+		}
+
+    }
+
+    option = { # Soviets say no
+    name = shocommune.4.b 
+        ai_chance = { factor = 25 }
+        add_political_power = 100
+        SHO = {
+            country_event = shocommune.6
+        }
+    }
+}
+
+country_event = { #Soviets accepted
+	id = shocommune.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.5"}
+	title = shocommune.5.t
+	desc = shocommune.5.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.5.a
+		}
+	}
+country_event = { #Soviets said no
+	id = shocommune.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.6"}
+	title = shocommune.6.t
+	desc = shocommune.6.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.6.a
+		}
+	}
+
+country_event = { #International Alliance
+    id = shocommune.7
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.7"}
+    title = shocommune.7.t
+    desc = shocommune.7.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = shocommune.7.a
+        ai_chance = { factor = 95 }
+		SOV = {
+            country_event = shocommune.8
+            add_to_faction = SHO
+			}
+		SHO = {
+			country_event = shocommune.8
+			}
+        }
+    option = {
+        name = shocommune.7.b
+        ai_chance = { factor = 5 }
+		SOV = {
+            country_event = shocommune.9
+           }
+		SHO = {
+            country_event = shocommune.9
+           }
+		  
+    }
+}
+
+country_event = { #Soviets accepted
+	id = shocommune.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.8"}
+	title = shocommune.8.t
+	desc = shocommune.8.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.8.a
+		}
+	}
+country_event = { #Soviets said no
+	id = shocommune.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.9"}
+	title = shocommune.9.t
+	desc = shocommune.9.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.9.a
+		}
+	}
+
+country_event = {   #Spain requesting infantry equip
+	id = shocommune.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.10"}
+	title = "Supplying Spain"
+	desc = shocommune.10.d
+
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We will provide them with it"
+		add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 }
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+		    SPA = {
+		        country_event = { 
+		            id = shocommune.11 days = 3 
+		        }
+            }
+		}
+	}
+    option = {
+		name = "They are a waste of time"
+		hidden_effect = {		
+			SPA = {
+		        country_event = { 
+		            id = shocommune.12 days = 3 
+		    	}
+       		}
+		}
+	}
+}
+
+country_event = {   #We accept
+	id = shocommune.11 
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.11"}
+	title = "Military Aid from Kiel"
+	desc = shocommune.11.d
+
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We are happy to have such generous friends"
+		   	add_popularity = { 
+		        ideology = vanguardist
+		        popularity = 0.05
+		    }
+			hidden_effect = {
+		        add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+        }
+    }
+}
+country_event = {   #We deny
+	id = shocommune.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.12"}
+	title = "Kiel Zone sends nothing"
+	desc = shocommune.12.d
+
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "What a shame"
+    }
+}
+
+country_event = { # Capital Relocation
+    id = shocommune.13
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.13"}
+    title = shocommune.13.t
+    desc = shocommune.13.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = shocommune.13.a
+        ai_chance = { factor = 50 }
+		set_capital = {state = 64}
+        }
+    option = {
+        name = shocommune.13.b
+        ai_chance = { factor = 25 }
+		set_capital = {state = 58}
+    }
+    option = {
+        name = shocommune.13.c
+        ai_chance = { factor = 25 }
+		set_capital = {state = 52}
+    }
+
+}
+
+country_event = { # Austria Annexation
+    id = shocommune.14
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.14"}
+    title = shocommune.14.t
+    desc = shocommune.14.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = shocommune.14.a
+        ai_chance = { factor = 75 }
+        SHO = {
+            annex_country = { target = AUS transfer_troops = yes }
+            country_event = shocommune.15
+        }
+        }
+    option = {
+        name = shocommune.14.b
+        ai_chance = { factor = 25 }
+		SHO = {
+			create_wargoal = {
+				type = annex_everything
+				target = AUS
+			}
+            country_event = shocommune.16			
+		}
+    }
+}
+
+country_event = { # Austria accepted
+	id = shocommune.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.15"}
+	title = shocommune.15.t
+	desc = shocommune.15.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.15.a
+		}
+	}
+	
+country_event = { # Austria denied
+	id = shocommune.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.16"}
+	title = shocommune.16.t
+	desc = shocommune.16.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.16.a
+		}
+	}
+
+country_event = { # Czech Annexation
+    id = shocommune.17
+    immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.17"}
+    title = shocommune.17.t
+    desc = shocommune.17.d
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = shocommune.17.a
+        ai_chance = { factor = 75 }
+        SHO = {
+            annex_country = { target = CZE transfer_troops = yes }
+            country_event = shocommune.18
+        }
+        }
+    option = {
+        name = shocommune.17.b
+        ai_chance = { factor = 25 }
+		SHO = {
+			create_wargoal = {
+				type = annex_everything
+				target = CZE
+			}
+            country_event = shocommune.19	
+		}
+    }
+}
+
+country_event = { # Czech accepted
+	id = shocommune.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.18"}
+	title = shocommune.18.t
+	desc = shocommune.18.d
+	picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.18.a
+		}
+	}
+	
+country_event = { # Czech denied
+	id = shocommune.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shocommune.19"}
+	title = shocommune.19.t
+	desc = shocommune.19.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = shocommune.19.a
+		}
+	}
 

@@ -275,6 +275,68 @@ ideas = {
 				surrender_limit = -1.0
             }
 		}
+		 SHO_Revolutionary_Flames = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Revolutionary_Flames"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				stability_factor = 0.1
+				vanguardist_drift = 0.1
+				army_org_regain = 0.05
+            }
+		}
+		 SHO_Treasury_Seized = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Treasury_Seized"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				consumer_goods_factor = -0.05
+            }
+		}
+		 SHO_Wealth_Distribution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Wealth_Distribution"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				stability_weekly = 0.025
+				political_power_gain = -0.1
+            }
+		}
+		 SHO_North_Star = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_North_Star"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.1
+            }
+		}
+		 SHO_Revolutionary_Volunteers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Revolutionary_Volunteers"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				send_volunteer_size = 5
+            }
+		}
+		 SHO_International_Volunteers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_International_Volunteers"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				weekly_manpower = 200
+            }
+		}
+		 SHO_Technology_Sharing = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Technology_Sharing"}
+			picture = chi_war_of_resistance2
+			modifier = {
+				research_speed_factor = 0.1
+            }
+		}
+		 SHO_Collectivist_Vanguard = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea = SHO_Collectivist_Vanguard"}
+			picture = chi_war_of_resistance2	
+			modifier = {
+			stability_factor = 0.15
+			political_power_factor = 0.1
+	        army_core_defence_factor = 0.1
+            army_core_attack_factor = 0.1
+            }
+		}
 	}
 
 }

@@ -6079,4 +6079,34 @@ spriteTypes = {
 		name = "GFX_goal_Ice_Cold_WIP"
 		texturefile = "gfx/interface/goals/Ice_Cold_WIP.png"
 	}
+##########Rhodesia stuff
+spriteType = {
+  name = "GFX_goal_RHO_TheyWalked"
+  texturefile = "gfx/interface/goals/RHO_TheyWalked.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_SaluteRhodesia"
+  texturefile = "gfx/interface/goals/RHO_SaluteRhodesia.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_MoneyPlan"
+  texturefile = "gfx/interface/goals/RHO_MoneyPlan.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_FairAndGreat"
+  texturefile = "gfx/interface/goals/RHO_FairAndGreat.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_CrackBritian"
+  texturefile = "gfx/interface/goals/RHO_CrackBritian.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_BreadBasket"
+  texturefile = "gfx/interface/goals/RHO_BreadBasket.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_38Elections"
+  texturefile = "gfx/interface/goals/RHO_38Elections.png"
+}
+####################
 }

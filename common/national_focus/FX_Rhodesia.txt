@@ -16,7 +16,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 3000 }
 		focus = {
 		id = RHO_Elections_of_38
-		icon = GFX_goal_flames_of_rebellion
+		icon = GFX_goal_RHO_38Elections
 		cost = 3
         available = {
         has_country_flag = unfinishedtreehithereyoureadingthis
@@ -30,7 +30,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_Two_Words_In_Rhodesian
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_SaluteRhodesia
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_Bear_Forth_The_Fruit
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_BreadBasket
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -103,7 +103,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_The_English_Sun_Is_Setting
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_CrackBritian
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -160,7 +160,7 @@ focus_tree = {
 	###Right side politics
 		  focus = {
 		id = RHO_A_Party_of_Mediation
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_FairAndGreat
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = 2

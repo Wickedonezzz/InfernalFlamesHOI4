@@ -1,0 +1,111 @@
+add_namespace = rhodec
+add_namespace = rhoflavor
+
+country_event = { # Elections of 38
+	id = rhodec.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhodec.1"}
+	title = rhodec.1.t
+	desc = rhodec.1.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rhodec.1.a
+		}
+	option = { #scrapped for now
+		name = rhodec.1.b
+		}
+	}
+country_event = { # Dodge sanctions
+	id = rhodec.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhodec.2"}
+	title = rhodec.2.t
+	desc = rhodec.2.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rhodec.2.a
+		}
+	}
+country_event = { # Unite with SA goes to SA
+	id = rhodec.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhodec.3"}
+	title = rhodec.3.t
+	desc = rhodec.3.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #sure
+		name = rhodec.3.a
+		}
+	option = { #no
+		name = rhodec.3.b
+		}
+	}
+country_event = { # Unite with SA goes to RHO they said no
+	id = rhodec.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhodec.4"}
+	title = rhodec.4.t
+	desc = rhodec.4.d
+	picture = GFX_report_event_SHO_DestroyedTiger
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #they can be left alone
+		name = rhodec.4.a
+		}
+	option = { #Liberation is a need
+		name = rhodec.4.b
+		}
+	}
+country_event = { # flight of 827
+	id = rhodec.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhodec.5"}
+	title = rhodec.5.t
+	desc = rhodec.5.d
+	picture = GFX_report_event_RHO_827Flight
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Direct INTERVENTION 
+		name = rhodec.5.a
+		}
+	option = { #we must wait
+		name = rhodec.5.b
+		}
+	}
+country_event = { # ignition
+	id = rhodec.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhodec.6"}
+	title = rhodec.6.t
+	desc = rhodec.6.d
+	picture = GFX_report_event_RHO_Protests
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Direct INTERVENTION 
+		name = rhodec.6.a
+		}
+	}
+country_event = { # landmine
+	id = rhoflavor.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhoflavor.1"}
+	title = rhoflavor.1.t
+	desc = rhoflavor.1.d
+	picture = GFX_report_event_RHO_LandmineConvoy
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Direct INTERVENTION 
+		name = rhoflavor.1.a
+		}
+	}
+country_event = { # iansmith gun
+	id = rhoflavor.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rhoflavor.2"}
+	title = rhoflavor.2.t
+	desc = rhoflavor.2.d
+	picture = GFX_report_event_RHO_IanSmithGun
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Direct INTERVENTION 
+		name = rhoflavor.2.a
+		}
+	}

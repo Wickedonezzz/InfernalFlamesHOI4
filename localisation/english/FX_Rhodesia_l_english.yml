@@ -65,7 +65,20 @@ NGA_DEF: "The Nigerian State"
 NGA_social_conservative_party: "British Administration"
 RHO_social_conservative_party: "British Administration"
 KEN_social_conservative_party: "British Administration"
+#########Events
+#flavor
+rhoflavor.1.t: "Another Landmine Strikes"
+rhoflavor.1.d: "Amidst an expedition to the remote and less-developed countryside, a harrowing turn of events unfolded as multiple convoy vehicles found themselves ensnared by landmines. Fortunately, most of the soldiers emerged unharmed, thanks to the placement of sandbags on the truck floor. Something must be done about these incursions that lay mines along our vital pathways."
+rhoflavor.1.a "Some mines won't stop the Rhodesian spirit!"
 
+#main attack
+rhodec.5.t: "The Flight of 827 Taken Down"
+rhodec.5.d: "Early this morning a passenger aircraft took off towards the Indian sea. Just a few hours later it was down over the eastern regions./n/nRhodesian security forces later conducted a rescue operation to save the survivors. Tragically, many passengers and crew members lost their lives during the crash, the initial attack, and the subsequent assault by the hijackers. Only a small number of individuals survived."
+rhodec.5.a: "Those Red's Will die for this!"
+rhodec.5.b: "There is nothing we can do just yet..."
+rhodec.6.t: "Operation Ignition"
+rhodec.6.d: "Information has been leaked about the arrival of Soviet advisors in the western regions. They aren't here for peace talks, that's for sure! It's time to send them back to where they came from, and that place might as well be hell!"
+rhodec.6.a: "The Scouts will handle them!"
 ### Initial Tree
 RHO_Elections_of_38: "Elections Of '38"
 RHO_Elections_of_38_desc: ""

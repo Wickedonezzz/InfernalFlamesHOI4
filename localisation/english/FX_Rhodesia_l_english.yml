@@ -69,7 +69,7 @@ KEN_social_conservative_party: "British Administration"
 #flavor
 rhoflavor.1.t: "Another Landmine Strikes"
 rhoflavor.1.d: "Amidst an expedition to the remote and less-developed countryside, a harrowing turn of events unfolded as multiple convoy vehicles found themselves ensnared by landmines. Fortunately, most of the soldiers emerged unharmed, thanks to the placement of sandbags on the truck floor. Something must be done about these incursions that lay mines along our vital pathways."
-rhoflavor.1.a "Some mines won't stop the Rhodesian spirit!"
+rhoflavor.1.a: "Some mines won't stop the Rhodesian spirit!"
 
 #main attack
 rhodec.5.t: "The Flight of 827 Taken Down"

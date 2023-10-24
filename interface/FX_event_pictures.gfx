@@ -348,6 +348,25 @@ spriteTypes = {
     name = "GFX_report_event_SHO_WarTornBerlin"
     texturefile = "gfx/event_pictures/Europe/Kiel/report_event_SHO_WarTornBerlin.png"
   }
+  #########
+  ######RHO
+  spriteType = {
+    name = "GFX_report_event_RHO_IanSmithGun"
+    texturefile = "gfx/event_pictures/Africa/Rhodesia/report_event_RHO_IanSmithGun.png"
+  }
+  spriteType = {
+    name = "GFX_report_event_RHO_LandmineConvoy"
+    texturefile = "gfx/event_pictures/Africa/Rhodesia/report_event_RHO_LandmineConvoy.png"
+  }
+  spriteType = {
+    name = "GFX_report_event_RHO_827Flight"
+    texturefile = "gfx/event_pictures/Africa/Rhodesia/report_event_RHO_827Flight.png"
+  }
+    spriteType = {
+    name = "GFX_report_event_RHO_Protests"
+    texturefile = "gfx/event_pictures/Africa/Rhodesia/report_event_RHO_Protests.png"
+  }
+  ###########
   ###############################################
   # Belgium
   ###############################################

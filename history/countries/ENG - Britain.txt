@@ -185,11 +185,6 @@ if = {
 		freedom_level = 0.5
 	}
 	set_autonomy = {
-		target = RHO
-		autonomy_state = autonomy_colony
-		freedom_level = 0.5
-	}
-	set_autonomy = {
 		target = NGA
 		autonomy_state = autonomy_colony
 	}
@@ -204,7 +199,6 @@ if = {
 		puppet = IRQ
 		puppet = BEA
 		puppet = KEN
-		puppet = RHO
 		puppet = NGA
 	}
 }
@@ -269,7 +263,6 @@ add_to_faction = ISR
 add_to_faction = IRQ
 add_to_faction = BEA
 add_to_faction = KEN
-add_to_faction = RHO
 add_to_faction = NGA
 add_to_faction = MLT
 
@@ -315,12 +308,6 @@ KEN = {
 	}
 }
 
-RHO = {
-	add_opinion_modifier = {
-		target = ENG
-		modifier = IMP_no_statute
-	}
-}
 
 NGA = {
 	add_opinion_modifier = {

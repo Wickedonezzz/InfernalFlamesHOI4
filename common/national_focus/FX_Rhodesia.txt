@@ -44,7 +44,7 @@ focus_tree = {
 	}
 	  focus = {
 		id = RHO_They_Walked_In_The_Sand
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_TheyWalked
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Africas_Breadbasket_Once_More
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_CLB_Rejuvination_of_Rural_Life
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -4
@@ -131,7 +131,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Two_Countries_One_Cause
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_TwoCountries
 		cost = 0
 		relative_position_id = RHO_Elections_of_38
 	    x = -2
@@ -189,7 +189,7 @@ focus_tree = {
 ##Operations
 		focus = {
 		id = RHO_Flight_of_827
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_close_air_support
 		cost = 0
 	    x = 15
 		y = 0
@@ -200,7 +200,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Combined_Arms_Operations
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_TwoSidedWar
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = 0
@@ -213,7 +213,7 @@ focus_tree = {
 #Left
 		  focus = {
 		id = RHO_Operation_Ignition
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_Soviet_End
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = -2
@@ -225,7 +225,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Operation_Overload
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_civil_service
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = -3
@@ -237,19 +237,19 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Operation_Hectic
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_air_red
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
-	    x = -1
+	    x = 1
 		y = 3
-		prerequisite = { focus = RHO_Operation_Ignition }
+		prerequisite = { focus = RHO_Operation_Dingo }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Hectic"
 		}
 	}
 		  focus = {
 		id = RHO_Operation_Lancaster
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_generic_army_mass_assault
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = -2
@@ -261,7 +261,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Operation_Dingo
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_SHO_WolfTeeth
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = 2
@@ -273,19 +273,19 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Operation_Vanity
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_focus_generic_support_the_left
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
-	    x = 1
+	    x = -1
 		y = 3
-		prerequisite = { focus = RHO_Operation_Dingo }
+		prerequisite = { focus = RHO_Operation_Ignition }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RHO_Operation_Vanity"
 		}
 	}
 		  focus = {
 		id = RHO_Operation_Nickel
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_LandMineTruck
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = 3
@@ -297,7 +297,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Operation_Vengance
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_GunToTheHead
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = 2
@@ -310,7 +310,7 @@ focus_tree = {
 ##Bottom stuff
 		  focus = {
 		id = RHO_Cry_For_Help
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_BasilHell
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = 0
@@ -322,7 +322,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Run_To_America
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_USA_pacific_guardian
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = -2
@@ -334,7 +334,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_We_Stand_Alone
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_CLB_A_New_American_Culture
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = 0
@@ -346,7 +346,7 @@ focus_tree = {
 	}
 		  focus = {
 		id = RHO_Demand_Southern_Intervention
-		icon = GFX_goal_Ice_Cold_WIP
+		icon = GFX_goal_RHO_BasilHell
 		cost = 0
 		relative_position_id = RHO_Flight_of_827
 	    x = 2

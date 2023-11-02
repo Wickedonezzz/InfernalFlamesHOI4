@@ -6108,5 +6108,25 @@ spriteType = {
   name = "GFX_goal_RHO_38Elections"
   texturefile = "gfx/interface/goals/RHO_38Elections.png"
 }
+spriteType = {
+  name = "GFX_goal_RHO_TwoSidedWar"
+  texturefile = "gfx/interface/goals/RHO_TwoSidedWar.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_GunToTheHead"
+  texturefile = "gfx/interface/goals/RHO_GunToTheHead.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_LandMineTruck"
+  texturefile = "gfx/interface/goals/RHO_LandMineTruck.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_BasilHell"
+  texturefile = "gfx/interface/goals/RHO_BasilHell.png"
+}
+spriteType = {
+  name = "GFX_goal_RHO_TwoCountries"
+  texturefile = "gfx/interface/goals/RHO_TwoCountries.png"
+}
 ####################
 }
